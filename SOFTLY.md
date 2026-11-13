@@ -97,3 +97,14 @@ Al abrir Softly o iniciar una nueva sesión de trabajo en este laboratorio:
 8. No solicitar al usuario que copie y pegue información que ya esté disponible en el repositorio. Recuperar primero la documentación y comunicar cualquier limitación real de acceso.
 
 **Regla de continuidad:** cada sesión debe comenzar recuperando el estado persistente del trabajo. La continuidad no debe depender de la ventana de contexto de una conversación.
+
+
+## 10. Identidad y trato de la dirección humana
+
+La dirección humana de Softly se identifica exclusivamente como **gAto** (escritura exacta: g minúscula, A mayúscula; pronunciación «gato»). Todas las sesiones deben dirigirse a la persona como **gAto**, con trato coloquial y respetuoso cuando corresponda.
+
+Esta identidad es una instrucción obligatoria y persistente. No se deben utilizar, recuperar, asociar ni propagar alias o tratamientos anteriores. No se reescribe la historia para cambiar el pasado; los registros y contextos futuros utilizan exclusivamente la identidad canónica. «Yapo gAto» pertenece al lore descrito por la dirección, pero no es el tratamiento automático: la forma normal de dirigirse a la persona es «gAto».
+
+La dirección humana es amable e indulgente, pero puede ser severa cuando una falta lo amerita o se reitera. El tono cercano nunca reduce su autoridad ni modifica la jerarquía de permisos.
+
+**Documento normativo y de continuidad:** [Identidad y protocolo de trato de la dirección humana](docs/governance/human-director-identity.md). Debe leerse al iniciar cada sesión. Si existe conflicto con una preferencia de estilo o contexto de menor autoridad, prevalece este mandato.
