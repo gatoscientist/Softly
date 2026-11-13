@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/gatoscientist/Softly/schemas/research-record.schema.json",
+  "title": "Softly Research Record",
+  "type": "object",
+  "required": ["id", "title", "url", "source_type", "accessed_at", "status"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^SRC-[0-9]{8}-[0-9]{3}$"},
+    "title": {"type": "string", "minLength": 1},
+    "authors": {"type": "array", "items": {"type": "string"}},
+    "organization": {"type": "string"},
+    "url": {"type": "string", "format": "uri"},
+    "published_at": {"type": ["string", "null"], "format": "date"},
+    "updated_at": {"type": ["string", "null"], "format": "date"},
+    "accessed_at": {"type": "string", "format": "date"},
+    "source_type": {"enum": ["specification", "official_documentation", "paper", "benchmark", "incident_report", "repository", "article", "other"]},
+    "claims": {"type": "array", "items": {"type": "string"}},
+    "limitations": {"type": "array", "items": {"type": "string"}},
+    "status": {"enum": ["current", "superseded", "withdrawn", "needs_review"]},
+    "notes": {"type": "string"}
+  },
+  "additionalProperties": false
+}
