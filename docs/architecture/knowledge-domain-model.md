@@ -180,3 +180,8 @@ El mapa conceptual será adecuado si permite:
 **Pendiente de revisión:** validar si estas familias cubren los casos representativos de Softly y si alguna debe dividirse o combinarse.
 
 **Siguiente etapa:** especificar identificadores y campos mínimos para cada familia, junto con ejemplos de registros y reglas iniciales de procedencia. La selección tecnológica seguirá aplazada.
+
+
+## 9. Desarrollo de la etapa 2
+
+La especificación inicial de identificadores y campos mínimos está en [Especificación inicial del modelo de datos de conocimiento](knowledge-data-model-v0.1.md). Es una propuesta lógica v0.1, neutral respecto de la tecnología y pendiente de validación. Distingue identidad estable, versión del registro, procedencia, contexto y política de acceso.
