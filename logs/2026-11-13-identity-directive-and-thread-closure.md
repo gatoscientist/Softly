@@ -52,3 +52,27 @@ La dirección humana declaró este hilo cerrado. No continuar tareas en este hil
 - Una vez confirmado el cierre, considerar este hilo cerrado y no continuar tareas en él.
 
 **Respuesta de continuidad anterior:** se recuperaron el mandato de Softly, el modelo operativo, la síntesis de continuidad y el estado del modelo reutilizable de agentes. El siguiente trabajo de laboratorio pendiente es validar ese modelo con tres briefs contrastantes.
+
+
+## Addendum — Norma de comunicación y plan de TITAN
+
+- **Fecha:** 2026-11-13
+- **Estado:** instrucciones persistidas; trabajo de desarrollo aún pendiente.
+
+### Norma incorporada
+
+Se creó `docs/governance/communication-style.md` y se actualizó `SOFTLY.md` para exigir su lectura al inicio de cada sesión. La norma establece brevedad por defecto, comunicación directa, no repetición de contexto conocido, mínima narración de procedimientos, prioridad a la ejecución y transparencia completa cuando se solicite detalle. También exige distinguir con precisión entre diseño, escritura, ejecución, prueba, validación y persistencia.
+
+### Secuencia acordada para TITAN
+
+1. Consolidar el molde reutilizable de agentes y sus plantillas/contratos.
+2. Definir y crear los perfiles del equipo DEVAGENTS que desarrollará TITAN, sin confundirlos con los tripulantes del runtime.
+3. Ejecutar tres ciclos iterativos de desarrollo. Como experimento inicial, se buscará que el conjunto ronde media hora, ajustándolo a la complejidad real.
+4. Al cierre de cada ciclo, registrar avances, pendientes, fallos, información/capacidades faltantes y cambios para el ciclo siguiente.
+5. Después del tercer ciclo, realizar una retrospectiva global y redefinir el molde según la evidencia. Tres ciclos no equivalen automáticamente a validación.
+
+El objetivo no es que la primera versión sea perfecta, sino usar el trabajo real para descubrir brechas y mejorar iterativamente.
+
+**Checkpoint actualizado:** sección 17.11 y 17.12 de `research/syntheses/2026-11-13-de-agentes-que-construyen-agentes.md`.
+
+**Siguiente acción:** recuperar el contexto y artefactos de TITAN, completar el molde mínimo y diseñar el equipo DEVAGENTS antes de iniciar el ciclo 1.
