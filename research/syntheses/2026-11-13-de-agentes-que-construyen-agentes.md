@@ -837,3 +837,19 @@ No se eligió base de datos, serialización ni motor de recuperación. La especi
 **Siguiente punto:** validar el modelo con casos reales de Softly y TITAN y un dominio no relacionado con agentes; resolver decisiones pendientes antes de formalizar relaciones, procedencia y versionado.
 
 **Documento:** [Especificación inicial del modelo de datos de conocimiento](../../docs/architecture/knowledge-data-model-v0.1.md).
+
+
+### 17.8 Principio transversal: evolución iterativa
+
+**Fecha:** 2026-11-13  
+**Estado:** principio metodológico aceptado y documentado.
+
+El usuario establece que el trabajo sobre Softly debe ser iterativo: será normal volver a etapas anteriores y redefinir elementos según el desempeño observado en la versión actual. Ningún diseño, esquema o decisión se considera definitivo por el solo hecho de haber sido documentado o implementado.
+
+Se incorporó el ciclo diseñar → probar → observar → evaluar → redefinir → volver a probar en `docs/operating-model.md`, junto con reglas para fundamentar cambios, preservar historia, documentar migraciones y registrar regresiones.
+
+La especificación `docs/architecture/knowledge-data-model-v0.1.md` ahora declara explícitamente que es revisable y exige registrar evidencia, alternativas, impacto, migración y pruebas en cada revisión. Los datos históricos deben conservar su versión de esquema y no pueden reinterpretarse silenciosamente.
+
+**Consecuencia para el trabajo siguiente:** la validación de los casos Softly, TITAN y un dominio ajeno a agentes no es solo una prueba de aceptación de v0.1. También debe buscar límites del modelo y producir propuestas de redefinición cuando exista evidencia. Si se requiere volver a la etapa 1 o 2, se vuelve; no se fuerza el avance lineal.
+
+**Documentos:** `docs/operating-model.md`; `docs/architecture/knowledge-data-model-v0.1.md`.
