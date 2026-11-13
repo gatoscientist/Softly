@@ -610,3 +610,135 @@ Por tanto, las evaluaciones deben mantener dos conjuntos de evidencia:
 No se deben mezclar métricas ni atribuir capacidades de un grupo al otro.
 
 **Estado:** conclusión conceptual aceptada en la conversación de trabajo; su traducción a requisitos y mecanismos técnicos queda pendiente de diseño y validación.
+
+---
+
+## 16. Arquitectura de conocimiento: acumulación exhaustiva, comprensión condensada y auditoría bajo demanda
+
+Esta sección formaliza el problema arquitectónico identificado en la conversación de trabajo del 13 de noviembre de 2026: Softly debe poder acumular y consultar grandes volúmenes de información sin exigir que sus agentes lean o incorporen todo el dataset en sus contextos de trabajo.
+
+### 16.1 Necesidad central
+
+El problema no consiste en limitar cuánto conocimiento puede acumular un sistema, sino en evitar que cada agente tenga que consumir información irrelevante para su tarea.
+
+**Principio:** acumulación exhaustiva, comprensión condensada y auditoría bajo demanda.
+
+El sistema debe conservar la información original, mantener representaciones estructuradas y actualizadas de lo conocido, y permitir navegar desde cualquier afirmación sintetizada hasta la evidencia que la sustenta.
+
+La síntesis no reemplaza la fuente. Es una representación navegable, derivada y verificable del conocimiento.
+
+### 16.2 Tres capacidades complementarias
+
+1. **Preservar:** conservar los registros originales y sus metadatos de procedencia, integridad, tiempo, origen, ámbito y versión, conforme a las políticas de seguridad y retención aplicables.
+2. **Comprender:** producir representaciones condensadas que organicen hallazgos, problemas, mecanismos, hipótesis, decisiones, relaciones, incertidumbres y evidencia.
+3. **Recuperar y auditar:** localizar información pertinente para una tarea y permitir que cada afirmación relevante se contraste con sus fuentes originales.
+
+Estas capacidades son distintas. La preservación no implica lectura constante; la comprensión no autoriza a descartar fuentes; y la recuperación no debe cargar indiscriminadamente todo el dataset en el contexto del agente.
+
+### 16.3 Capas de conocimiento
+
+**A. Dataset o evidencia original**
+
+Conserva los artefactos de origen: documentos, registros de actividad, eventos, mensajes, decisiones, resultados de experimentos, trazas de ejecución y otros datos efectivamente capturados.
+
+Cada elemento debe mantener, cuando corresponda:
+- identificador estable;
+- universo y ámbito de origen;
+- autoría o emisor declarado y nivel de verificación;
+- marca temporal y orden de eventos;
+- versión, integridad y relaciones con otros artefactos;
+- clasificación de acceso, sensibilidad y política de retención;
+- referencia recuperable al contenido original.
+
+La aspiración de observabilidad amplia no debe confundirse con una garantía de que todo estado interno de un modelo es accesible. Se registra exhaustivamente lo que el sistema puede observar e instrumentar de forma legítima y técnicamente definida. No se debe presentar una traza como acceso literal a pensamientos privados no observables.
+
+**B. Conocimiento condensado y estructurado**
+
+Organiza lo aprendido sin convertirlo en una colección de resúmenes sueltos. Puede contener:
+- conceptos y definiciones;
+- problemas y mecanismos identificados;
+- hipótesis y su estado;
+- hallazgos y conclusiones;
+- decisiones vigentes, alternativas y justificaciones;
+- patrones y principios generalizables;
+- relaciones entre conceptos y proyectos;
+- evidencia favorable, contradictoria o insuficiente;
+- incertidumbre, alcance y condiciones de validez.
+
+Cada afirmación sustantiva debe incluir referencias a las fuentes que la respaldan, además de su fecha de elaboración, versión, estado y responsable de curaduría cuando corresponda.
+
+**C. Recuperación contextual y auditoría**
+
+Un motor de recuperación selecciona información en función de la tarea, el agente, el universo, sus permisos y el nivel de detalle requerido. Debe poder:
+- recuperar primero una síntesis pertinente;
+- seguir referencias hacia fuentes originales;
+- ampliar la búsqueda cuando la evidencia sea insuficiente;
+- detectar contradicciones, vacíos o cambios posteriores;
+- entregar al agente solo el subconjunto necesario;
+- registrar qué fuentes se recuperaron y para qué tarea.
+
+La recuperación debe ser escalonada: síntesis primero, evidencia específica después, y dataset más amplio solo cuando la investigación lo justifique.
+
+### 16.4 Síntesis versionadas y auditables
+
+Las síntesis deben tratarse como vistas derivadas del dataset, no como nuevas fuentes primarias. Para mantenerlas confiables:
+- conservar historial de versiones y cambios;
+- registrar las fuentes utilizadas para cada afirmación;
+- distinguir hechos, observaciones, inferencias, hipótesis y recomendaciones;
+- indicar cobertura y límites de la búsqueda;
+- identificar evidencia contradictoria y asuntos pendientes;
+- definir criterios para invalidar o revisar conclusiones;
+- permitir reconstruir qué información sustentaba una versión anterior.
+
+Una síntesis puede quedar obsoleta cuando aparecen registros nuevos. El sistema debe detectar esa posibilidad y marcarla para revisión, en vez de mantener silenciosamente una conclusión desactualizada.
+
+### 16.5 Flujo de trabajo del conocimiento
+
+1. Capturar un registro o artefacto en su universo de origen.
+2. Preservar el original y sus metadatos.
+3. Indexarlo para búsqueda y recuperación.
+4. Relacionarlo con conceptos, tareas, eventos y artefactos existentes.
+5. Actualizar o proponer una síntesis estructurada.
+6. Vincular cada afirmación con evidencia identificable.
+7. Recuperar evidencia adicional cuando haya dudas, contradicciones o decisiones de impacto.
+8. Auditar y corregir la síntesis cuando corresponda.
+9. Versionar el resultado y conservar el historial de cambios.
+
+La automatización de este flujo debe distinguir entre una actualización propuesta y una conclusión validada. La evidencia nueva no convierte automáticamente una hipótesis en hecho.
+
+### 16.6 Relación entre los universos de Softly, DEVAGENTS y TITAN
+
+La arquitectura reconoce universos distintos, con identidades, responsabilidades y ciclos de ejecución propios. La visibilidad y el acceso se definen por la relación de desarrollo y observación, no por una fusión de identidades.
+
+- **TITAN / tripulantes:** producen actividad y registros operacionales. Durante el desarrollo, la instrumentación debe permitir conservar los eventos y artefactos observables necesarios para reconstruir su comportamiento.
+- **DEVAGENTS:** desarrollan TITAN y necesitan acceso a la información operacional pertinente —incluidos los registros originales y las representaciones estructuradas— para diagnosticar, implementar y verificar soluciones. Ese acceso no convierte a los desarrolladores en tripulantes ni fusiona sus memorias o estados.
+- **Softly:** opera como capa de análisis y conocimiento de alcance macro. Puede acceder a los registros originales y a las representaciones estructuradas de los universos bajo su ámbito de observación, sin tener que leerlos íntegramente de manera continua. Puede analizar patrones, auditar síntesis y generalizar problemas y aprendizajes.
+
+La observación no implica identidad compartida, y el acceso no implica que todos los agentes tengan acceso recíproco. En particular, los tripulantes no necesitan consultar las bases de DEVAGENTS o Softly; la relación de acceso de desarrollo y análisis es asimétrica y debe estar explícitamente definida.
+
+### 16.7 Límites y controles
+
+La conservación amplia de registros debe implementarse con controles explícitos, no mediante una captura indiscriminada sin gobierno. Se deben definir:
+- qué datos son técnicamente observables y cuáles no;
+- clasificación de información sensible y confidencial;
+- autorización por universo, agente, finalidad y operación;
+- redacción o exclusión de secretos y credenciales;
+- integridad, control de acceso y auditoría de consultas;
+- retención, expiración y eliminación cuando corresponda;
+- separación entre trazas operacionales, datos privados y conocimiento derivado.
+
+Los registros de deliberación deben describir eventos y artefactos observables de manera verificable. No se debe afirmar que se conserva literalmente el razonamiento interno completo de un modelo si la plataforma no lo expone.
+
+### 16.8 Hipótesis y criterios de evaluación
+
+**Hipótesis:** una arquitectura que preserve evidencia original, mantenga síntesis estructuradas con procedencia y recupere información por etapas permitirá que los agentes trabajen con contextos acotados sin perder capacidad de auditoría ni continuidad del conocimiento.
+
+Experimentos iniciales sugeridos:
+1. Comparar una tarea con contexto completo frente a recuperación escalonada desde síntesis y fuentes.
+2. Medir precisión de recuperación, tiempo hasta la primera acción correcta, tokens consumidos y costo.
+3. Introducir evidencia contradictoria y medir si la síntesis se invalida o actualiza correctamente.
+4. Comprobar que cada afirmación seleccionada puede rastrearse hasta fuentes originales.
+5. Verificar que la recuperación respeta las fronteras de acceso entre universos.
+6. Medir pérdida de información, falsos positivos, falsos negativos y obsolescencia de síntesis.
+
+**Estado:** problema arquitectónico y principios conceptuales identificados en conversación. La implementación, el modelo de datos, la política de retención, el motor de indexación/recuperación y los experimentos siguen pendientes de diseño y validación. Esta sección no afirma que esas capacidades ya estén implementadas.
