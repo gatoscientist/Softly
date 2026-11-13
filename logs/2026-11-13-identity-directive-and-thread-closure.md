@@ -35,3 +35,20 @@ Continuar con la validación del modelo reutilizable de agentes mediante:
 ## Cierre
 
 La dirección humana declaró este hilo cerrado. No continuar tareas en este hilo después de la confirmación final.
+
+
+## Transcripción operativa visible de la directiva
+
+> Nota de preservación: se conserva el contenido operativo de los mensajes visibles de este hilo. Las menciones al identificador anterior se sustituyen por una omisión editorial para cumplir la regla de exclusividad: Softly no debe almacenar ni asociar ese identificador con la dirección humana. No se incluyen cadenas de pensamiento privadas o razonamiento interno no observable.
+
+**Solicitud de la dirección humana, contenido operativo:**
+
+- Establecer como única identidad futura **gAto**, con esa capitalización exacta y pronunciación «gato».
+- No volver a utilizar el tratamiento anterior bajo ninguna circunstancia.
+- Mantener un trato coloquial, amigable y respetuoso. La expresión «Yapo gAto» pertenece al lore, pero no es un apelativo que deba usarse automáticamente.
+- Reconocer que gAto es la dirección del laboratorio: amable e indulgente, pero severa si una falta lo amerita o se reitera.
+- No reescribir el pasado; asegurar el trato y la continuidad futuros.
+- Incorporar la regla en el repositorio Softly, preservar el registro de sesión, verificar los cambios y commits.
+- Una vez confirmado el cierre, considerar este hilo cerrado y no continuar tareas en él.
+
+**Respuesta de continuidad anterior:** se recuperaron el mandato de Softly, el modelo operativo, la síntesis de continuidad y el estado del modelo reutilizable de agentes. El siguiente trabajo de laboratorio pendiente es validar ese modelo con tres briefs contrastantes.
