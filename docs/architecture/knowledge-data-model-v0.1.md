@@ -332,3 +332,21 @@ La propuesta será aceptable cuando:
 Esta especificación es una propuesta lógica v0.1. No demuestra que exista un sistema de persistencia, autorización, versionado o recuperación implementado.
 
 El siguiente trabajo será revisar el modelo con casos representativos de Softly, TITAN y un dominio no relacionado con agentes; resolver las decisiones pendientes y después especificar relaciones, procedencia y versionado con mayor precisión.
+
+
+## 11. Evolución iterativa de esta especificación
+
+La versión 0.1 es una hipótesis de diseño revisable, no un contrato definitivo. Se podrá volver a modificar cualquier familia, campo, relación, vocabulario o regla cuando las pruebas y observaciones muestren que el modelo no representa adecuadamente los casos de uso.
+
+Toda revisión debe registrar:
+- versión anterior y versión propuesta;
+- problema o limitación observada;
+- casos, registros o resultados que aportan evidencia;
+- alternativas consideradas y motivo de la elección;
+- impacto sobre compatibilidad, consultas y datos históricos;
+- estrategia de migración y validación, cuando corresponda;
+- pruebas de regresión y criterio de aceptación.
+
+Los cambios del esquema no deben reinterpretar silenciosamente registros antiguos. Debe conservarse la versión del esquema con la que se creó cada registro y definirse explícitamente cómo se interpreta o migra. Cuando una migración no sea segura, el registro debe permanecer identificable como pendiente o incompatible, no transformarse mediante supuestos ocultos.
+
+Una versión nueva puede corregir o simplificar el modelo, e incluso revertir una decisión anterior. La reversión también debe quedar documentada y no borrar la evidencia que motivó la iteración.
