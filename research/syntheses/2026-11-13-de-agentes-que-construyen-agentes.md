@@ -789,3 +789,29 @@ No volver a debatir desde cero las conclusiones anteriores. El siguiente paso es
 Al retomar este trabajo, leer primero las secciones 15, 16 y 17 de este documento. Tratar las conclusiones de 17.2 como decisiones conceptuales acordadas, no como capacidades ya implementadas. Continuar desde 17.4: diseño técnico del sistema de conocimiento de Softly. No reabrir la separación de universos ni la transferencia por generalización salvo que aparezca nueva evidencia o el usuario solicite revisarlas.
 
 **Fuente de continuidad:** conversación de trabajo del 13 de noviembre de 2026 y síntesis documental SYN-20261113-001.
+
+
+### 17.6 Avance: etapa 1 del modelo conceptual
+
+**Fecha:** 2026-11-13  
+**Estado:** mapa conceptual inicial documentado; pendiente de revisión.
+
+Se creó `docs/architecture/knowledge-domain-model.md`, que define siete familias conceptuales:
+
+1. Entidades.
+2. Conceptos.
+3. Fuentes y registros.
+4. Afirmaciones.
+5. Síntesis.
+6. Actividades.
+7. Contextos y ámbitos.
+
+También identifica dimensiones transversales: identidad, procedencia, tiempo y vigencia, versionado, confianza y evaluación, acceso y retención, e integridad.
+
+La decisión central es mantener un núcleo de conocimiento genérico, no especializado en agentes. El modelo distingue aquello de lo que se habla, lo que se afirma sobre ello y la evidencia que respalda o contradice esas afirmaciones. Las síntesis son vistas derivadas y trazables.
+
+No se han fijado campos, identificadores, cardinalidades, tecnología ni almacenamiento. No existe implementación derivada de este diseño.
+
+**Siguiente punto:** etapa 2 — especificar identificadores y campos mínimos para cada familia, con ejemplos de distintos dominios y reglas iniciales de procedencia.
+
+**Documento:** [Modelo conceptual del conocimiento de Softly](../../docs/architecture/knowledge-domain-model.md).
