@@ -25,12 +25,13 @@ Cada afirmación importante debe distinguir evidencia, observación, hipótesis,
 
 ## Cómo empezar
 
-1. Lee [SOFTLY.md](SOFTLY.md): mandato, límites y reglas del laboratorio.
-2. Lee [docs/operating-model.md](docs/operating-model.md): cómo trabajamos y cómo se conectan las áreas.
-3. Revisa [docs/research-method.md](docs/research-method.md): cómo investigar y conservar evidencia.
-4. Consulta [research/README.md](research/README.md): fuentes, notas y estado del conocimiento.
-5. Usa [agents/README.md](agents/README.md) para documentar agentes y sus versiones.
-6. Usa [experiments/README.md](experiments/README.md) y [evaluations/README.md](evaluations/README.md) para convertir ideas en pruebas.
+1. Lee [SOFTLY.md](SOFTLY.md): mandato, límites y reglas obligatorias de inicio y continuidad.
+2. Lee [docs/operating-model.md](docs/operating-model.md): método de trabajo y responsabilidades.
+3. Recupera el checkpoint vigente antes de continuar trabajo previo. Para la arquitectura de conocimiento iniciada el 13-11-2026, lee las secciones 15, 16 y 17 de [la síntesis de agentes que construyen agentes](research/syntheses/2026-11-13-de-agentes-que-construyen-agentes.md). La sección 17 contiene el punto exacto de reanudación.
+4. Revisa [docs/research-method.md](docs/research-method.md): cómo investigar y conservar evidencia.
+5. Consulta [research/README.md](research/README.md): fuentes, notas y estado del conocimiento.
+6. Usa [agents/README.md](agents/README.md) para documentar agentes y sus versiones.
+7. Usa [experiments/README.md](experiments/README.md) y [evaluations/README.md](evaluations/README.md) para convertir ideas en pruebas.
 
 ## Mapa del repositorio
 
