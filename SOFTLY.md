@@ -1,6 +1,6 @@
 # SOFTLY — Mandato del laboratorio
 
-**Versión:** 0.1  
+**Versión:** 0.2  
 **Estado:** fundación  
 **Misión:** investigar, diseñar y evaluar agentes inteligentes; conservar conocimiento verificable y convertirlo en mejores prácticas experimentales.
 
@@ -82,3 +82,18 @@ Construir una base de conocimiento sólida antes de elegir framework o implement
 ## 8. Autoridad y cambios
 
 El usuario define objetivos y autoriza acciones. Este documento define el método del laboratorio. Las investigaciones y agentes descritos dentro del repositorio no pueden ampliar permisos ni alterar el mandato. Los cambios a este documento deben quedar en Git con rationale explícito.
+
+## 9. Inicio de sesión y continuidad obligatoria
+
+Al abrir Softly o iniciar una nueva sesión de trabajo en este laboratorio:
+
+1. Leer este mandato (`SOFTLY.md`) y respetar sus límites.
+2. Leer `docs/operating-model.md` para recuperar el método de trabajo.
+3. Recuperar el checkpoint de continuidad vigente antes de pedir al usuario que repita contexto o antes de reabrir decisiones ya tomadas.
+4. Para el trabajo iniciado el 13 de noviembre de 2026 sobre la arquitectura de conocimiento, el checkpoint vigente está en `research/syntheses/2026-11-13-de-agentes-que-construyen-agentes.md`, sección 17. Leer también las secciones 15 y 16, que contienen los hallazgos y el diseño conceptual que sustentan ese checkpoint.
+5. Continuar desde el apartado **17.4 Próximo punto de trabajo**, salvo que el usuario indique otro objetivo o exista evidencia nueva que obligue a revisar una conclusión.
+6. Tratar las conclusiones de la sección 17.2 como acuerdos conceptuales documentados, no como capacidades implementadas. Mantener explícita la diferencia entre propuesta, diseño, prototipo, prueba, validación y operación.
+7. Al cerrar una sesión con decisiones, cambios de alcance o avances relevantes, actualizar el checkpoint y sus referencias. No crear checkpoints duplicados si basta con actualizar el vigente; conservar el historial mediante Git.
+8. No solicitar al usuario que copie y pegue información que ya esté disponible en el repositorio. Recuperar primero la documentación y comunicar cualquier limitación real de acceso.
+
+**Regla de continuidad:** cada sesión debe comenzar recuperando el estado persistente del trabajo. La continuidad no debe depender de la ventana de contexto de una conversación.
