@@ -742,3 +742,50 @@ Experimentos iniciales sugeridos:
 6. Medir pérdida de información, falsos positivos, falsos negativos y obsolescencia de síntesis.
 
 **Estado:** problema arquitectónico y principios conceptuales identificados en conversación. La implementación, el modelo de datos, la política de retención, el motor de indexación/recuperación y los experimentos siguen pendientes de diseño y validación. Esta sección no afirma que esas capacidades ya estén implementadas.
+
+---
+
+## 17. Punto de continuidad: arquitectura de conocimiento de Softly
+
+**Fecha:** 2026-11-13  
+**Estado:** checkpoint de conversación; conclusiones conceptuales documentadas, implementación técnica pendiente.
+
+Esta sección permite retomar el trabajo en una conversación nueva sin reconstruir el contexto desde cero.
+
+### 17.1 Objetivo actual
+
+Diseñar Softly como una arquitectura de conocimiento capaz de observar sistemas multiagente, conservar evidencia a gran escala, producir conocimiento condensado y recuperar información precisa para cada tarea, sin saturar los contextos ni fusionar las identidades de los universos observados.
+
+### 17.2 Conclusiones acordadas
+
+1. **Transferencia por generalización:** la unidad de transferencia entre proyectos es el problema generalizado, no el agente que lo experimentó. Se transfieren aprendizajes, hipótesis y patrones validados; no identidades, memorias particulares ni conversaciones como contexto compartido.
+2. **Universos diferenciados:** Softly, DEVAGENTS y TITAN mantienen identidades, responsabilidades y ciclos propios. La observación y el acceso pueden ser asimétricos; no implican fusión ni acceso recíproco.
+3. **Relación de desarrollo y observación:** DEVAGENTS desarrolla los tripulantes de TITAN y necesita observar sus registros para diagnosticar y validar. Softly puede observar a nivel macro tanto sus propios procesos como los registros originales y las representaciones estructuradas de DEVAGENTS y TITAN dentro del ámbito autorizado. Los tripulantes no necesitan consultar las bases de DEVAGENTS ni Softly.
+4. **Observabilidad amplia:** conservar registros y artefactos de todo lo que sea técnicamente observable e instrumentable. No afirmar que se captura literalmente el razonamiento interno privado de un modelo cuando la plataforma no lo expone.
+5. **Memoria en tres capas:** (a) dataset original íntegro y trazable; (b) conocimiento condensado, estructurado y versionado; (c) recuperación contextual y auditoría bajo demanda.
+6. **Síntesis derivadas:** una síntesis no reemplaza a la fuente. Cada afirmación sustantiva debe poder rastrearse a evidencia; las síntesis deben registrar versión, alcance, fecha, incertidumbre y contradicciones conocidas.
+7. **Recuperación escalonada:** comenzar por la síntesis pertinente, descender a evidencia específica cuando sea necesario y ampliar la consulta solo si la investigación lo justifica. No cargar todo el dataset en el contexto de cada agente.
+8. **Principio rector:** acumulación exhaustiva, comprensión condensada y auditoría bajo demanda.
+
+### 17.3 Documentación existente
+
+- Sección 15: hallazgo transversal entre Dev Team y tripulantes de TITAN; mismo problema estructural, universos distintos.
+- Sección 16: arquitectura de conocimiento, preservación, síntesis, recuperación, auditoría, límites y experimentos propuestos.
+- Este checkpoint, sección 17: resumen operativo para continuidad entre conversaciones.
+
+### 17.4 Próximo punto de trabajo
+
+No volver a debatir desde cero las conclusiones anteriores. El siguiente paso es convertir la arquitectura conceptual en un diseño técnico evaluable, empezando por:
+
+1. Definir el modelo de datos y los identificadores/procedencia de los registros originales.
+2. Definir cómo se estructuran conceptos, afirmaciones, síntesis, versiones y enlaces a evidencia.
+3. Diseñar indexación y recuperación híbrida/escalonada, con filtros por universo, permisos, tarea y vigencia.
+4. Especificar cómo se detectan contradicciones, obsolescencia y necesidad de reauditoría.
+5. Definir instrumentación, límites de observabilidad, privacidad, retención y controles de acceso.
+6. Proponer un experimento mínimo que compare recuperación desde síntesis más evidencia frente a cargar contexto amplio, midiendo precisión, costo, tokens y tiempo hasta una acción correcta.
+
+### 17.5 Instrucción de continuidad
+
+Al retomar este trabajo, leer primero las secciones 15, 16 y 17 de este documento. Tratar las conclusiones de 17.2 como decisiones conceptuales acordadas, no como capacidades ya implementadas. Continuar desde 17.4: diseño técnico del sistema de conocimiento de Softly. No reabrir la separación de universos ni la transferencia por generalización salvo que aparezca nueva evidencia o el usuario solicite revisarlas.
+
+**Fuente de continuidad:** conversación de trabajo del 13 de noviembre de 2026 y síntesis documental SYN-20261113-001.
