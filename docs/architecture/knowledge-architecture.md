@@ -81,3 +81,10 @@ Las conclusiones de la sección 17.2 de la síntesis SYN-20261113-001 se mantien
 ## 7. Próximo punto concreto
 
 El siguiente artefacto será una especificación mínima del modelo de datos: entidades, campos obligatorios, identificadores, relaciones y ejemplos de registros. Debe ser lo bastante pequeña para evaluarse y evolucionar sin comprometer prematuramente la tecnología de implementación.
+
+
+## 8. Desarrollo del modelo conceptual
+
+La etapa 1 quedó desarrollada en [Modelo conceptual del conocimiento de Softly](knowledge-domain-model.md). El documento define siete familias —entidades, conceptos, fuentes y registros, afirmaciones, síntesis, actividades y contextos— y dimensiones transversales de identidad, procedencia, tiempo, versionado, evaluación, acceso, retención e integridad.
+
+Este mapa sigue siendo conceptual: no fija campos, identificadores, tecnología ni almacenamiento. El siguiente paso es especificar los campos e identificadores mínimos y probar el modelo con ejemplos de distintos dominios.
