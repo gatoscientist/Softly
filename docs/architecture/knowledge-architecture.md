@@ -88,3 +88,8 @@ El siguiente artefacto será una especificación mínima del modelo de datos: en
 La etapa 1 quedó desarrollada en [Modelo conceptual del conocimiento de Softly](knowledge-domain-model.md). El documento define siete familias —entidades, conceptos, fuentes y registros, afirmaciones, síntesis, actividades y contextos— y dimensiones transversales de identidad, procedencia, tiempo, versionado, evaluación, acceso, retención e integridad.
 
 Este mapa sigue siendo conceptual: no fija campos, identificadores, tecnología ni almacenamiento. El siguiente paso es especificar los campos e identificadores mínimos y probar el modelo con ejemplos de distintos dominios.
+
+
+## 9. Especificación inicial de datos
+
+La etapa 2 se desarrolla en [knowledge-data-model-v0.1.md](knowledge-data-model-v0.1.md). El documento propone un sobre común, IDs opacos con prefijo de familia, separación entre identidad y versión, y campos mínimos para las siete familias conceptuales. UUIDv7 se mantiene como candidato, no como decisión cerrada. No se selecciona almacenamiento ni tecnología.
