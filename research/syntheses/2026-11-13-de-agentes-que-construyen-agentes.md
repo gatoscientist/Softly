@@ -898,3 +898,39 @@ La instrucción es prospectiva: no reescribir el pasado ni alterar registros his
 **Continuidad obligatoria para el próximo hilo:** leer primero `SOFTLY.md`, `docs/governance/human-director-identity.md` y esta sección 17.10. Reconocer a la dirección exclusivamente como **gAto**. No pedir que repita la instrucción. El siguiente trabajo del laboratorio sigue siendo la validación del modelo reutilizable de agentes mediante tres briefs contrastantes, salvo nueva instrucción de gAto.
 
 **Cierre:** este hilo se declara cerrado por instrucción de la dirección humana. No ejecutar nuevas tareas de trabajo en este hilo después de confirmar el cierre.
+
+
+
+### 17.11 Norma de comunicación y colaboración
+
+**Fecha:** 2026-11-13  
+**Estado:** norma vigente, incorporada al mandato.
+
+La dirección establece un estilo de trabajo breve, directo y orientado a resultados:
+- brevedad por defecto y respuestas concretas;
+- no repetir información ni decisiones ya conocidas;
+- no narrar procedimientos o avances intermedios que no aporten valor;
+- priorizar la ejecución y los resultados verificables;
+- transparencia completa cuando se solicite detalle;
+- declarar con precisión qué se propuso, escribió, ejecutó, probó, validó y persistió;
+- preguntar solo cuando un dato sea realmente bloqueante.
+
+Se creó `docs/governance/communication-style.md` y se incorporó su lectura obligatoria al inicio de sesión en `SOFTLY.md`. Esta norma rige las sesiones futuras; no altera registros históricos.
+
+### 17.12 Nuevo plan de trabajo: molde de agentes y desarrollo iterativo de TITAN
+
+**Fecha:** 2026-11-13  
+**Estado:** objetivo acordado; ejecución pendiente.
+
+La dirección define la siguiente secuencia de trabajo:
+
+1. **Consolidar el molde reutilizable de agentes.** Revisar y completar el modelo v0.1, sus contratos, estructura de carpetas, plantilla de perfiles, instrucciones, capacidades, herramientas, memoria, autonomía, seguridad, evaluación y versionado. El molde debe permitir crear agentes para distintos proyectos sin mezclar identidades, memorias, permisos ni contextos.
+2. **Construir el equipo DEVAGENTS para TITAN.** A partir del molde y del brief de TITAN, definir el conjunto de agentes desarrolladores/investigadores que el proyecto realmente necesita. Cada perfil debe tener responsabilidad, entregables, interfaces, límites y criterios de revisión claros. No confundir estos agentes de desarrollo con los tripulantes que operarán dentro del runtime de TITAN.
+3. **Ejecutar tres ciclos iterativos de desarrollo.** Cada ciclo debe tener un objetivo acotado, trabajo coordinado, entregables observables y revisión. La duración conjunta objetivo puede rondar media hora como experimento inicial, ajustable según complejidad y ritmo real; no es una garantía ni una restricción rígida.
+4. **Cerrar cada ciclo con una evaluación explícita:** qué avanzó, qué quedó incompleto, qué falló, qué capacidades o información faltaron, qué decisiones requieren revisión y qué debe entrar al siguiente ciclo.
+5. **Después del tercer ciclo, realizar una retrospectiva consolidada:** comparar objetivo inicial y resultado, identificar brechas del molde y de los perfiles, registrar deuda y riesgos, y decidir qué redefinir antes de otra iteración.
+
+La primera ejecución no busca perfección ni presupone que el molde cubra todo. Busca someterlo a trabajo real, descubrir vacíos y mejorar de forma trazable. No declarar validado el molde ni los agentes solo por haberlos definido o por completar tres ciclos.
+
+**Próximo paso inmediato:** revisar el brief y los artefactos actuales de TITAN, contrastarlos con el molde v0.1, y diseñar el molde/perfiles mínimos antes de iniciar el primer ciclo. Mantener la validación con briefs contrastantes como prueba de portabilidad del molde, sin permitir que desplace el objetivo inmediato de preparar el equipo de TITAN.
+
