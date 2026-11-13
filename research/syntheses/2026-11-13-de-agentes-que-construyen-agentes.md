@@ -550,3 +550,63 @@ La mejor forma de avanzar no es construir una jerarquía cada vez mayor. Es cons
 - Auditora: agent.md; identity/IDENTITY.md; identity/BOUNDARIES.md; policy/WRITE_POLICY.md; policy/LOG_POLICY.md; logs/2026-11-12-TITAN-session-handoff.md.
 - Cytryna: AGENTS.md; core/IDENTITY.md; AGENTDEV/AGENT.md; AGENTGUI/AGENT.md; devteam/README.md; devteam/PENDIENTES.md; Cytryna/coordinator.py; tools/base.py; guardian/policy.py.
 - TITAN: README.txt; DEVAGENTS/DEVAGENTS.md; DEVAGENTS/DEVTEAM/governance.json; DEVAGENTS/DEVTEAM/decisions/DEC-20261112-001-estructura-y-autoridad.md; DEVAGENTS/DEVTEAM/workflow.md; DEVAGENTS/DEVTEAM/audit/AUDIT-TEAM-20261112-001-coordinacion-y-trabajo.md; DEVAGENTS/AGENTEDEV/SOFAGENT.md; DEVAGENTS/AGENTEGUI/SOFAGENT.md; DEVAGENTS/AGENTEMATH/SOFAGENT.md; tripulantes/Contrato_Base.md; tripulantes/Primus_Contrato.md; tripulantes/PrimusPrivado_Contrato.md; src/RelojPrimus.ps1; DEVAGENTS/DEVTEAM/handoffs/HANDOFF-20261113-002-contexto-primus-privado.md.
+
+
+---
+
+## 15. Hallazgo transversal: dos equipos distintos, un mismo problema estructural
+
+Esta conclusión surge de la conversación de trabajo del 13 de noviembre de 2026 y complementa el análisis anterior.
+
+### 15.1 La distinción de universos
+
+En TITAN existen dos grupos de agentes que deben mantenerse separados:
+
+- **Dev Team (desarrollo):** Tania, Teresa y Trinidad. Son agentes desarrolladores que colaboran para diseñar, implementar y validar TITAN.
+- **Tripulantes de TITAN (runtime/producto):** Primus, Secundus, Sensori y PrimusPrivado. Son las entidades operativas del sistema multiagente que el Dev Team está construyendo.
+
+No comparten identidad, rol, estado, memoria, permisos ni ciclo de ejecución. Tania no es Primus; Teresa no es una tripulante. El Dev Team y los tripulantes no viven en el mismo universo arquitectónico.
+
+### 15.2 El problema común
+
+Aunque son grupos independientes, ambos enfrentan el mismo desafío estructural:
+
+**Cómo comunicarse, coordinarse, tomar decisiones y avanzar autónomamente sin depender de que una persona emita un nuevo prompt para activar cada paso.**
+
+En el Dev Team, el problema se manifiesta en la colaboración entre desarrolladoras: continuidad de tareas, iniciativa, handoffs, decisiones dentro del dominio y resolución de bloqueos.
+
+En los tripulantes runtime, el mismo problema se manifiesta como requisito del producto: comunicación interagente, coordinación operativa, decisiones dentro de sus mandatos, continuidad de ejecución y escalamiento adecuado.
+
+### 15.3 Relación de aprendizaje, no de fusión
+
+El Dev Team no es una instancia de los tripulantes ni un prototipo que comparta su runtime. Sin embargo, su experiencia real de colaboración constituye una fuente de observaciones para diseñar y evaluar la coordinación de los tripulantes.
+
+La relación correcta es:
+
+1. Observar conductas y bloqueos reales en el Dev Team.
+2. Describir el mecanismo estructural implicado sin atribuirlo automáticamente a una persona o agente.
+3. Formular hipótesis sobre qué capacidad de coordinación falta.
+4. Traducir esas hipótesis en requisitos verificables para el runtime de TITAN.
+5. Evaluar los requisitos en el universo de los tripulantes, con sus propios contratos, estados, herramientas y pruebas.
+6. Conservar los resultados como aprendizaje para futuras iteraciones del Dev Team y del producto.
+
+La transferencia es de **aprendizaje y principios de diseño**, no de identidades, conversaciones, memoria, permisos ni arquitectura interna.
+
+### 15.4 Principio derivado
+
+> **El Dev Team no solo construye TITAN: también experimenta, en su propio trabajo, el mismo desafío de coordinación autónoma que TITAN debe resolver como producto.**
+>
+> Las dificultades observadas en el equipo desarrollador pueden aportar evidencia para diseñar mejores mecanismos de colaboración en los tripulantes. Ambos grupos siguen siendo sistemas independientes; el problema compartido permite aprender entre ellos, no fusionarlos.
+
+### 15.5 Consecuencia metodológica
+
+Este hallazgo convierte al Dev Team en un contexto de observación útil, pero no en evidencia suficiente por sí solo para afirmar que una solución funcionará en runtime. Toda transferencia debe pasar por requisitos explícitos, diseño separado y validación propia en cada universo.
+
+Por tanto, las evaluaciones deben mantener dos conjuntos de evidencia:
+
+- **Evidencia Dev Team:** comunicación, delegación, iniciativa, continuidad, decisiones, bloqueos y handoffs entre Tania, Teresa y Trinidad.
+- **Evidencia runtime TITAN:** comunicación, coordinación, autonomía, límites, escalamiento y continuidad entre Primus, Secundus, Sensori y los canales autorizados de Primus.
+
+No se deben mezclar métricas ni atribuir capacidades de un grupo al otro.
+
+**Estado:** conclusión conceptual aceptada en la conversación de trabajo; su traducción a requisitos y mecanismos técnicos queda pendiente de diseño y validación.
