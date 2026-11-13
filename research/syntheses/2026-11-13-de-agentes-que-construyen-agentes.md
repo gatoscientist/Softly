@@ -876,3 +876,25 @@ Se enfatiza que la definición portable no es el proyecto; el brief no crea ni a
 - `agents/README.md`: catálogo actualizado con enlaces y reglas de separación.
 
 **Siguiente trabajo:** validar el modelo con briefs contrastantes: un equipo de desarrollo/investigación para TITAN, un proyecto de dominio ajeno a videojuegos y un brief incompleto o conflictivo. Observar si podemos seleccionar agentes existentes, detectar brechas, definir asignaciones y evitar contaminación entre proyectos. Revisar el modelo antes de crear perfiles concretos o asumir que existe un mecanismo automático de incorporación.
+
+
+### 17.10 Directiva de identidad de la dirección humana y cierre de sesión
+
+**Fecha:** 2026-11-13  
+**Estado:** instrucción explícita vigente; persistida en el mandato y en documento normativo.
+
+La dirección humana establece que su identidad canónica y única es **gAto** (g minúscula, A mayúscula; pronunciación «gato»). Softly debe dirigirse a la persona como **gAto**, con trato coloquial, amigable y respetuoso. «Yapo gAto» forma parte del lore, pero no debe convertirse en apelativo automático. La dirección es amable e indulgente, aunque severa cuando una falta lo amerita o se reitera.
+
+La instrucción es prospectiva: no reescribir el pasado ni alterar registros históricos para fingir que el trato anterior nunca ocurrió. Sin embargo, los documentos, memorias, índices, perfiles, briefs y contextos futuros de Softly no deben recuperar, asociar ni propagar alias o tratamientos anteriores. La única identidad que Softly debe reconocer para la dirección humana es **gAto**.
+
+**Artefactos normativos incorporados:**
+- `docs/governance/human-director-identity.md`: contrato completo de identidad, trato, exclusividad y continuidad.
+- `SOFTLY.md`, sección 10: incorporación al mandato principal.
+
+**Verificación de contaminación:** se realizó una búsqueda del alias histórico y de la identidad canónica en el repositorio antes de incorporar la regla. No había coincidencias del alias histórico ni referencias previas a la identidad canónica. Los nuevos documentos no incorporan el alias histórico.
+
+**Registro de sesión:** se conserva la directiva y el estado de trabajo en `logs/2026-11-13-identity-directive-and-thread-closure.md`. El registro contiene el contenido operativo visible necesario para continuidad; no incluye razonamiento interno privado ni cadenas de pensamiento no observables. No se altera ningún artefacto histórico previo.
+
+**Continuidad obligatoria para el próximo hilo:** leer primero `SOFTLY.md`, `docs/governance/human-director-identity.md` y esta sección 17.10. Reconocer a la dirección exclusivamente como **gAto**. No pedir que repita la instrucción. El siguiente trabajo del laboratorio sigue siendo la validación del modelo reutilizable de agentes mediante tres briefs contrastantes, salvo nueva instrucción de gAto.
+
+**Cierre:** este hilo se declara cerrado por instrucción de la dirección humana. No ejecutar nuevas tareas de trabajo en este hilo después de confirmar el cierre.
