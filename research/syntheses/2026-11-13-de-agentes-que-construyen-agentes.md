@@ -853,3 +853,26 @@ La especificación `docs/architecture/knowledge-data-model-v0.1.md` ahora declar
 **Consecuencia para el trabajo siguiente:** la validación de los casos Softly, TITAN y un dominio ajeno a agentes no es solo una prueba de aceptación de v0.1. También debe buscar límites del modelo y producir propuestas de redefinición cuando exista evidencia. Si se requiere volver a la etapa 1 o 2, se vuelve; no se fuerza el avance lineal.
 
 **Documentos:** `docs/operating-model.md`; `docs/architecture/knowledge-data-model-v0.1.md`.
+
+
+### 17.9 Inicio del modelo reutilizable de agentes
+
+**Fecha:** 2026-11-13  
+**Estado:** primera propuesta lógica v0.1 documentada; pendiente de validación.
+
+El usuario establece como siguiente trabajo construir un modelo de agentes que permita solicitar, mediante un brief, la incorporación de agentes a un proyecto. Los agentes deben poder desarrollar, interactuar y colaborar en proyectos de dominios distintos; TITAN es el proyecto actual, no el único dominio previsto.
+
+Se documentó una separación fundamental:
+1. **Definición del agente:** identidad funcional, responsabilidad, capacidades, método, instrucciones, requisitos de herramientas, memoria, autonomía, seguridad y evaluación. Es portable y versionada.
+2. **Brief de incorporación:** solicitud declarativa de misión, proyecto, entregables, alcance, contexto, capacidades requeridas, herramientas solicitadas, permisos, supervisión y criterios de éxito.
+3. **Asignación al proyecto:** vincula una versión concreta del agente con un proyecto y un brief; fija contexto, memoria, herramientas, permisos efectivos, presupuesto, coordinación y aprobaciones.
+4. **Sesión de trabajo:** estado temporal de ejecución, tareas, decisiones, handoffs, resultados y trazas.
+
+Se enfatiza que la definición portable no es el proyecto; el brief no crea ni autoriza por sí solo; las asignaciones aíslan contexto, memoria y permisos por proyecto; y los agentes que desarrollan TITAN son distintos de los tripulantes que operarán dentro del runtime de TITAN.
+
+**Artefactos creados:**
+- `docs/architecture/agent-model-v0.1.md`: modelo lógico reutilizable.
+- `agents/templates/agent-brief.md`: plantilla de brief para incorporar agentes a proyectos.
+- `agents/README.md`: catálogo actualizado con enlaces y reglas de separación.
+
+**Siguiente trabajo:** validar el modelo con briefs contrastantes: un equipo de desarrollo/investigación para TITAN, un proyecto de dominio ajeno a videojuegos y un brief incompleto o conflictivo. Observar si podemos seleccionar agentes existentes, detectar brechas, definir asignaciones y evitar contaminación entre proyectos. Revisar el modelo antes de crear perfiles concretos o asumir que existe un mecanismo automático de incorporación.
