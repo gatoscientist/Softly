@@ -815,3 +815,25 @@ No se han fijado campos, identificadores, cardinalidades, tecnología ni almacen
 **Siguiente punto:** etapa 2 — especificar identificadores y campos mínimos para cada familia, con ejemplos de distintos dominios y reglas iniciales de procedencia.
 
 **Documento:** [Modelo conceptual del conocimiento de Softly](../../docs/architecture/knowledge-domain-model.md).
+
+
+### 17.7 Avance: etapa 2 — identificadores y campos mínimos
+
+**Fecha:** 2026-11-13  
+**Estado:** especificación lógica v0.1 documentada; pendiente de validación con casos representativos.
+
+Se creó `docs/architecture/knowledge-data-model-v0.1.md`. Define:
+- un sobre común para identidad, tipo, versión, esquema, tiempo, estado, universo, contexto, acceso y procedencia;
+- IDs opacos y estables con prefijo de familia; UUIDv7 queda como candidato;
+- separación entre ID lógico, version_id y número de versión;
+- campos mínimos para entidades, conceptos, fuentes/registros, afirmaciones, síntesis, actividades y contextos;
+- referencias tipadas para evidencia favorable, contradictoria o matizada;
+- reglas iniciales de calidad, evolución y aceptación.
+
+Se corrigió explícitamente la distinción entre el estado de vida común de un registro y el estado de ejecución de una actividad.
+
+No se eligió base de datos, serialización ni motor de recuperación. La especificación no constituye implementación.
+
+**Siguiente punto:** validar el modelo con casos reales de Softly y TITAN y un dominio no relacionado con agentes; resolver decisiones pendientes antes de formalizar relaciones, procedencia y versionado.
+
+**Documento:** [Especificación inicial del modelo de datos de conocimiento](../../docs/architecture/knowledge-data-model-v0.1.md).
