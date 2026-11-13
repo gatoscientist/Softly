@@ -92,3 +92,20 @@ No reabrir deliberaciones ya resueltas. No presentar propuestas como decisiones.
 5. Construir una matriz fuente → observación → riesgo → requisito candidato → estado de decisión.
 6. Contrastar brechas con el modelo v0.1, sin reescribirlo todavía.
 7. Proponer cambios mínimos y un plan de validación con briefs reales.
+
+
+## Principio transversal aclarado: visibilidad asimétrica
+
+Leer también `docs/architecture/general-agent-model-principles-v0.1.md` antes de continuar. La distinción central debe mantenerse:
+
+- La visibilidad asimétrica es un **principio arquitectónico fundamental del modelo general de agentes**, no solamente un principio de Softly. El modelo general debe servir para desarrollar agentes blandos y otras clases/familias de agentes.
+- Los niveles superiores pueden observar registros y artefactos de niveles inferiores dentro del alcance definido; los inferiores no pueden acceder hacia arriba a espacios, contextos, registros ni decisiones de los niveles superiores.
+- Los datos se originan abajo y se ponen a disposición de arriba. “De arriba hacia abajo” describe la dirección de visibilidad, no el origen de los datos.
+- Visibilidad/lectura no concede automáticamente autoridad de escritura, modificación, intervención, dirección, aprobación ni auditoría. Estas dimensiones deben mantenerse separadas y controlarse explícitamente.
+- Softly es una aplicación particular de ese principio: puede observar información de capas inferiores, pero no audita ni participa en los ciclos; espera su cierre para leer y analizar registros y resultados. No observa el ciclo en tiempo real ni influye en las conclusiones de los auditores.
+- No convertir la arquitectura propia de Softly en el modelo general, ni asumir que todas las familias de agentes tienen el rol o el calendario de Softly.
+- Mantener separados los agentes blandos/desarrolladores, los equipos de desarrollo y los agentes internos que forman parte del producto/runtime (por ejemplo, tripulantes de TITAN). No transferir identidad, memoria, permisos ni autoridad entre ellos.
+
+La auditoría después de cada ciclo de trabajo es una regla del proceso descrito por el usuario y debe preservarse en ese contexto. La pluralidad e independencia de auditores y la deliberación científica posterior son aspectos distintos; no deben fusionarse ni imponerse como una única configuración universal. La deliberación científica no es auditoría. Softly tampoco es auditora.
+
+**Regla de continuidad:** el principio de visibilidad asimétrica ya está acordado en el nivel del modelo general. No volver a preguntarlo como si fuera una decisión pendiente. Sí quedan pendientes su formalización técnica, los límites detallados de cada relación y su validación con los diagramas originales y casos contrastantes.
