@@ -59,3 +59,28 @@ Cada fase produce un artefacto enlazado. No se debe saltar desde una lectura int
 ## Cierre de trabajo
 
 Un trabajo queda cerrado cuando el resultado, las pruebas, los pendientes y las limitaciones están registrados. “Terminado” no equivale a “validado”.
+
+
+## Evolución iterativa de modelos y diseños
+
+Los modelos, esquemas, taxonomías y arquitecturas de Softly son hipótesis de diseño sujetas a revisión mediante evidencia. Ninguna versión debe tratarse como definitiva por el solo hecho de estar documentada o implementada.
+
+Ciclo obligatorio de mejora:
+1. **Diseñar:** declarar versión, alcance, supuestos y criterios de aceptación.
+2. **Probar:** aplicar el diseño a casos representativos y registrar el protocolo.
+3. **Observar:** documentar resultados, errores, fricciones, casos no cubiertos y efectos secundarios.
+4. **Evaluar:** comparar el desempeño con criterios y una línea base cuando sea posible.
+5. **Redefinir:** proponer cambios vinculados a observaciones y evidencia concreta.
+6. **Regresar:** repetir las pruebas relevantes y comprobar que la modificación mejora el resultado sin degradaciones inaceptables.
+
+### Reglas de evolución
+
+- **Ninguna versión es sagrada:** se puede volver a etapas anteriores y revisar decisiones cuando el desempeño o nueva evidencia lo justifique.
+- **Cambios con fundamento:** registrar el problema observado, evidencia, alternativas, impacto esperado y criterio para aceptar el cambio. Una idea nueva por sí sola no obliga a modificar el diseño.
+- **Historia preservada:** no sobrescribir artefactos ni datos históricos para hacerlos coincidir con el modelo nuevo. Versionar decisiones, esquemas, pruebas y resultados.
+- **Migraciones explícitas:** todo cambio que afecte datos existentes debe definir compatibilidad, transformación, validación, reversibilidad cuando sea viable y tratamiento de registros que no puedan migrarse.
+- **Separar diseño de desempeño:** una versión documentada o implementada no se considera validada hasta superar pruebas representativas, negativas y de regresión.
+- **Registrar regresiones:** si una nueva versión empeora una capacidad, conservar el resultado y permitir volver a una versión anterior sin perder trazabilidad.
+- **No confundir estabilidad con inmovilidad:** mantener interfaces estables cuando sea útil, pero no conservar estructuras defectuosas solo para evitar cambios.
+
+Cada iteración debe dejar enlazados el diseño probado, los casos y datos utilizados, las observaciones, los resultados, la decisión de cambio y la versión resultante.
