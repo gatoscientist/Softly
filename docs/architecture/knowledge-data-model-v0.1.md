@@ -202,7 +202,7 @@ Representa una investigación, experimento, evaluación, auditoría o tarea deli
 | activity_type | Sí | Tipo de actividad |
 | title | Sí | Nombre legible |
 | objective | Sí | Objetivo verificable |
-| status | Sí | proposed, planned, running, completed, failed o cancelled |
+| execution_status | Sí | proposed, planned, running, completed, failed o cancelled |
 | input_refs | No | Fuentes, entidades o síntesis utilizadas |
 | output_refs | No | Registros, afirmaciones o síntesis producidas |
 | started_at / ended_at | No | Tiempos reales de ejecución, cuando existan |
@@ -274,7 +274,7 @@ Los valores siguientes son ficticios y muestran la forma lógica, no una seriali
     activity_type: research
     title: Análisis de contratos de TITAN
     objective: Identificar límites entre desarrollo y runtime.
-    status: completed
+    execution_status: completed
     output_refs: [CLM-<UUID>]
     universe_id: SOFTLY
     status: active
