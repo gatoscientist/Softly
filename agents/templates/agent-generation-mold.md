@@ -190,3 +190,24 @@ Al recibir un brief, entregar:
 ## 10. Principio rector
 
 Crear el agente mínimo que cumpla bien su misión, con identidad clara, responsabilidades delimitadas, autoridad explícita, memoria trazable y complejidad proporcional. El mismo molde debe servir para generar agentes distintos sin imponerles una personalidad, jerarquía, especialidad, estructura de carpetas o contexto de proyecto que el brief no haya solicitado.
+
+## 11. Puertas de entrega y habilitación
+
+El proceso distingue dos puertas independientes y no intercambiables:
+
+### 11.1 Puerta de Entrega Documental
+
+Cuando la definición del agente y su paquete documental requerido están completos y coherentes, se entrega como versión **1.0.0**, estado **Diseñado**, dentro de la taxonomía oficial: **Propuesto, Diseñado, Prototipado, Probado, Validado, Operativo**.
+
+La entrega documental no se retiene por falta de pruebas de runtime. No usar etiquetas ajenas a la taxonomía —incluidas `Experimental` o `draft`— como estados de madurez. Los vacíos no críticos se registran como pendientes, supuestos o riesgos, sin bloquear el artefacto principal.
+
+### 11.2 Puerta de Habilitación en Runtime
+
+La habilitación, integración o despliegue en un runtime es una decisión posterior e independiente. Requiere las pruebas, permisos, controles, supervisión y evidencia que correspondan al entorno. Entregar un paquete Diseñado no implica que esté habilitado, desplegado, probado ni validado en runtime.
+
+## 12. Cierre de decisiones y avance por etapas
+
+- Las decisiones aprobadas por gAto se consideran cerradas y no se reabren por preferencia, especulación o una alternativa nueva sin evidencia. Solo se revisan ante evidencia nueva, concreta y pertinente; registrar el motivo y preservar la decisión anterior.
+- Los detalles pendientes que no sean críticos para la integridad, coherencia o seguridad del artefacto se documentan como pendientes explícitos y no detienen la entrega del artefacto principal.
+- Avanzar por etapas con entregables verificables. No convertir una mejora futura o una prueba de runtime todavía no ejecutada en condición retroactiva para retener la entrega documental.
+- Si un faltante sí afecta identidad, alcance, permisos, seguridad o coherencia esencial, describirlo con precisión y escalarlo como bloqueo crítico.
