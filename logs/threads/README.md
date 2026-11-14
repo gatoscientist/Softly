@@ -8,6 +8,7 @@ Este directorio conserva la historia documental de hilos cerrados. Los archivos 
 - [Hilo del 13-11-2026, hora inicial no registrada–23:23](hilo%20I%202026-11-13%20hora-no-registrada%20F%202026-11-13%2023-23.md)
 - [Hilo del 14-11-2026, 02:36–04:38](hilo%20I%202026-11-14%2002-36%20F%202026-11-14%2004-38.md)
 - [Hilo del 14-11-2026, horas no registradas](hilo%20I%202026-11-14%20hora-no-registrada%20F%202026-11-14%20hora-no-registrada.md)
+- [Hilo del 14-11-2026, hora inicial no registrada–11:25](hilo%20I%202026-11-14%2011-25%20F%202026-11-14%2011-25.md)
 
 ## Uso
 
