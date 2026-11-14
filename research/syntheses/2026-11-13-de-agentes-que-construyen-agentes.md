@@ -959,3 +959,37 @@ Durante la sesión se ordenó navegación, índices, procedencia y continuidad e
 3. Si gAto pide continuar con limpieza autónoma, la próxima tarea documental propuesta es la matriz de procedencia y respaldo, sin tocar contratos ni agentes.
 4. Preservar PDFs, ZIP, snapshots históricos, arenero y cAjita; inspeccionar contenido antes de cualquier propuesta de eliminación.
 5. No presentar el registro del hilo anterior como transcripción completa: fue una síntesis por limitación de contexto. No pedir a gAto que repita información ya persistida.
+
+
+### 17.14 Cambio de prioridad: integridad y funcionamiento de Softly
+
+**Fecha:** 2026-11-14  
+**Estado:** prioridad vigente; mejoras en ejecución; cierre pendiente.
+
+gAto establece que la prioridad inmediata es asegurar la integridad y el funcionamiento de Softly. El desarrollo de agentes queda en pausa hasta terminar las tareas de mejora de Softly. Esta instrucción supersede temporalmente el próximo paso operativo descrito en 17.12; el plan de agentes se conserva como antecedente y no se ejecuta mientras esta prioridad siga vigente.
+
+**Ciclo de auditorías:** se reconoce un ciclo de tres auditorías:
+1. Primera auditoría, enfocada en Softly: observación externa sin intervención de gAto ni Softly durante la inspección.
+2. Segunda auditoría, enfocada en gAto: observación externa sin intervención de gAto ni Softly durante la inspección.
+3. Tercera auditoría, pendiente: observará el trabajo posterior a la lectura de los dos informes y las mejoras realizadas en colaboración. Su propósito es evaluar el aprendizaje y la mejora mutua, no repetir las dos auditorías anteriores.
+
+**Frente inmediato de mantenimiento de Softly:**
+- construir y completar matriz de procedencia y respaldo;
+- inventariar recursivamente el repositorio y reconciliar archivos con índices;
+- localizar archivos huérfanos, duplicados candidatos, referencias rotas y residuos;
+- inspeccionar PDF/ZIP y otros binarios antes de declarar su contenido conocido;
+- revisar coherencia de instrucciones, rutas y documentación;
+- verificar cambios, commits y límites de lo realmente probado;
+- no eliminar ni mover materiales sin demostrar respaldo y dependencias.
+
+**Trabajo persistido en esta sesión:**
+- Se creó `logs/maintenance/matriz-procedencia-respaldo-2026-11-14.md` como línea base preliminar del arenero y la cAjita. Incluye 9 PDF y 1 TXT registrados en el índice del arenero, hashes Git y estado de inspección/respaldo. No es inventario recursivo completo ni certificación.
+- Se enlazó la matriz desde `logs/maintenance/README.md`.
+- Se actualizó `SOFTLY.md` para hacer explícita la prioridad de integridad de Softly y la pausa del desarrollo de agentes.
+
+**Commits de esta intervención:**
+- `a78ed194b11b824472520495e163ddc6e6432a43` — matriz preliminar.
+- `330e1e0059cf4792ab7e2e76e3f94f76844ddc9b` — índice de mantenimiento actualizado.
+- `9c2ba5914f9e33cf1aab3b9da0bfb0f1017aa676` — prioridad operativa actualizada en el mandato.
+
+**Límites y pendientes:** no se ha obtenido todavía una enumeración recursiva completa del árbol en esta intervención; no se han inspeccionado internamente los PDF/ZIP; no se ha realizado limpieza destructiva; no se han ejecutado pruebas runtime. La matriz permanece abierta. No declarar Softly íntegra ni la tercera auditoría superada hasta completar verificaciones y mejoras con evidencia.
