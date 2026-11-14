@@ -26,9 +26,9 @@ Cada sesión de mantenimiento debe registrar:
 
 ## Registros
 
+- [Auditoría de integridad Softly — etapas 1 a 5 (2026-11-14)](2026-11-14-integrity-audit-stages-1-5.md): inventario, cobertura Markdown, limitaciones PDF, JSONL, namespaces y propuestas de seguridad Git.
 - [Seguimiento de auditorías y mantenimiento — 2026-11-14](2026-11-14-audit-follow-up.md): registro técnico detallado de las pasadas documentales, inventarios, verificaciones y pendientes.
 - [Bitácora de orden de la casita](housekeeping-log.md): causas, acciones y aprendizajes acumulados entre pasadas.
-
 - [Matriz de procedencia y respaldo — línea base 2026-11-14](matriz-procedencia-respaldo-2026-11-14.md): inventario preliminar del arenero y la cAjita, hashes conocidos, estado de inspección, respaldos candidatos y pendientes de verificación. Estado abierto; no autoriza eliminaciones.
 
 ## Convención
