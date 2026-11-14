@@ -107,3 +107,13 @@ A petición de gAto, se amplió el mantenimiento a tareas documentales autónoma
 5. Revisar el registro de hilos/checkpoint para identificar si falta archivar el hilo actual cuando gAto lo cierre.
 
 Esta pasada fue de indexación, clasificación y verificación estática. No se realizó limpieza destructiva.
+
+
+### Ampliación de navegación del Laboratorio
+
+Durante la misma pasada se completó también la entrada de proyectos del repositorio `gatoscientist/Laboratorio-de-agentes`:
+
+- Se creó `Proyectos/README.md` como índice de proyectos.
+- Se creó `Proyectos/TITAN/README.md` con inventario de los ocho ZIP, tamaños y blob SHAs.
+- Se actualizó el README raíz para enlazar el índice de proyectos.
+- Los ZIP siguen sin inspección interna; los nombres solo permiten una clasificación provisional. No se borró ni se declaró redundante ningún paquete.
