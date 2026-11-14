@@ -145,3 +145,15 @@ Commits:
 - `d300fabff42c8f440fd2252e04b7681eb9839b47` — índice de decisiones actualizado.
 
 El árbol tras esta corrección contiene 126 entradas (92 blobs y 34 directorios), 78 Markdown y 31 README. No hay blobs duplicados por SHA ni ZIP en el árbol. No hay código ejecutable ni workflows de CI; Softly es un laboratorio documental y no un runtime.
+
+
+## 2026-11-14 — Verificación de enlaces externos de investigación
+
+Se extrajeron 14 URLs únicas de la bibliografía y del panorama de diseño de agentes. Doce resolvieron directamente. Se corrigieron dos destinos: la ruta antigua de OWASP Agentic Top 10 no resolvía y se sustituyó por la página oficial vigente; la ruta heredada de LangGraph Persistence redirigía y se sustituyó por la documentación oficial actual. Ambos enlaces nuevos fueron abiertos y verificados. La guía Anthropic de 2024 permanece accesible y conserva su advertencia de obsolescencia parcial del tooling.
+
+Archivos actualizados: `research/bibliography.md` y `research/sources/2026-11-agent-design-landscape.md`.
+Commits:
+- `efedb64c083d43d89720ac59ec9f6d5b8680f2f8` — bibliografía.
+- `8918d70000dd2c4a8f73afb01238bd25a6f8e456` — panorama de fuentes.
+
+El alcance fue limitado a las 14 URLs de esos dos documentos; no se certifica el estado de todos los enlaces externos del repositorio.
