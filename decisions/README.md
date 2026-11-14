@@ -25,3 +25,4 @@ Propuesta, Aceptada, Rechazada, Reemplazada.
 - Criterio para revisar la decisión.
 
 No modificar una decisión aceptada como si siempre hubiera sido así. Crear una ADR nueva que la reemplace y enlazar ambas.
+- [ADR-0003 — Aislamiento y ledger encadenado en Mini 0.2](ADR-0003-aislamiento-y-ledger-encadenado-mini-0.2.md): decisión aceptada para incorporar el prototipo Mini 0.2; CODE AUD independiente pendiente.
