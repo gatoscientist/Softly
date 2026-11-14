@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "runtime": "Softly Runtime Mini",
+  "version": "0.1",
+  "task": {
+    "task_id": "runtime-mini-smoke-test",
+    "description": "Tarea de prueba para verificar autorización y creación controlada de archivos de texto."
+  },
+  "workspace": "softly-runtime/workspace/",
+  "allowed_operations": [
+    "create_text_file"
+  ]
+}
