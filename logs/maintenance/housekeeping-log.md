@@ -116,3 +116,21 @@ Los índices restantes sin README corresponden a directorios de un solo archivo,
 ### Verificación adicional de enlaces Markdown — 2026-11-14
 
 Se leyeron los 76 archivos Markdown desde el árbol actual y se comprobaron los destinos relativos de todos los enlaces Markdown inline detectados. Resultado: **cero destinos locales rotos**. Los destinos HTTP/HTTPS no se validaron; tampoco se evaluaron referencias semánticas no expresadas como enlaces.
+
+
+## 2026-11-14 — Índices de artefactos restantes y auditoría Markdown completa
+
+Se completó la navegación directa de cinco artefactos que aún no estaban enlazados desde su índice: perfil Audelin, plantilla ADR, derivado Hiloderivado, plantilla de observación y esquema JSON de investigación. Se creó `schemas/README.md` y se actualizaron los índices de sus directorios.
+
+Se repitió la auditoría de enlaces Markdown inline locales sobre el árbol actualizado: **77 archivos Markdown, cero destinos locales rotos**. Las URLs externas y las relaciones semánticas no expresadas como enlaces no se validaron.
+
+El árbol actualizado contiene 125 entradas (91 blobs y 34 directorios), 77 Markdown, 31 README, 9 PDF, 1 TXT, 2 JSONL y 1 JSON. No hay ZIP en el árbol Softly. Los seis directorios que contienen solo README siguen siendo estructuras preparadas deliberadamente; se conservan.
+
+Commits adicionales:
+- `c01496517ee482f961240926ea4c31ee8907b9a2` — índice de perfiles de agentes.
+- `35e90edfca98936070094afc7a946dace2702c64` — índice de plantilla ADR.
+- `e6246a22cb2eb871ca9bdb3650f64b2f8ed52c14` — índice de derivados.
+- `ef0add1e27bcc86234693424fc57852b122e3d0e` — índice de observaciones.
+- `99783ed48aec2e289b26c94d6a7966a9fdb27335` — índice de esquemas.
+
+Pendiente: inspección interna de los nueve PDF y verificación de sus respaldos binarios; comprobación de URLs externas y de procedencia por archivo.
