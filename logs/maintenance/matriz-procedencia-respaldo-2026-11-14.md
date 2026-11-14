@@ -68,7 +68,7 @@ El README del arenero declara expresamente que `el gAto dice.txt` permanece y no
 ## 5. Próximas acciones seguras
 
 1. **Completado:** obtener la enumeración recursiva completa de `main` y reconciliarla con los índices principales.
-2. Inspeccionar internamente cada PDF y ZIP, registrar páginas/entradas, contenido, metadatos útiles y hash criptográfico calculado sobre el archivo descargado.
+2. Inspeccionar internamente los nueve PDF, registrar páginas, contenido, metadatos útiles y hash criptográfico calculado sobre cada archivo descargado. No hay ZIP en el árbol actual de Softly.
 3. Localizar el origen y destino de cada artefacto y buscar respaldos independientes; registrar rutas, hashes y versiones.
 4. **Completado parcialmente:** se detectaron y enlazaron tres documentos sin enlace desde sus índices. Se comprobaron todos los enlaces Markdown locales en los 76 archivos y no se encontraron destinos locales rotos; quedan pendientes referencias externas, relaciones semánticas y dependencias no expresadas como enlaces.
 5. Añadir metadatos de procedencia solo cuando estén respaldados por evidencia; marcar desconocidos como desconocidos.
@@ -89,21 +89,27 @@ Esta matriz solo podrá declararse completa cuando:
 
 ## 7. Auditoría recursiva del árbol Git — corte 2026-11-14
 
-Árbol consultado: `main`, HEAD `9037434d793bbdbd6aca510b474dea1d9ac8ae2e`; respuesta recursiva completa (`truncated=false`).
+Árbol consultado: `main`, HEAD `99783ed48aec2e289b26c94d6a7966a9fdb27335`; respuesta recursiva completa (`truncated=false`).
 
-- 124 entradas: 90 blobs y 34 directorios.
-- 76 archivos Markdown, incluidos 30 README.
+- 125 entradas: 91 blobs y 34 directorios.
+- 77 archivos Markdown, incluidos 31 README.
 - 9 PDF, 1 TXT, 2 JSONL y 1 JSON; 1 archivo `.gitattributes`.
+- No hay archivos ZIP en el árbol de Softly.
 - No se encontraron dos blobs con el mismo SHA dentro del árbol actual.
 - La única colisión de rutas ignorando mayúsculas/minúsculas corresponde a `eL aRenero del gAto/` y `eL arenero del gAto/`, incluidas sus respectivas README. Es una diferencia ya conocida y documentada; no se fusionó.
 - Seis directorios contienen únicamente README: `evaluations/datasets/`, `evaluations/plans/`, `evaluations/runs/`, `experiments/cases/`, `experiments/protocols/` y `experiments/results/`. Se clasifican como estructuras preparadas sin artefactos todavía, no como archivos huérfanos ni basura. Se conservan.
 
 ### Archivos que estaban sin enlace desde sus índices
 
-Se detectaron y enlazaron:
+Se detectaron y enlazaron desde sus índices:
 - `archive/threads/2026-11-13-hilo-audelin.md` desde `archive/README.md`.
 - `logs/2026-11-13-identity-directive-and-thread-closure.md` desde `logs/README.md`.
 - `research/bibliography.md` desde `research/README.md`.
+- `agents/profiles/audelin.md` desde `agents/profiles/README.md`.
+- `decisions/template-adr.md` desde `decisions/README.md`.
+- `logs/derived/Hiloderivado.md` desde `logs/derived/README.md`.
+- `observations/template-observation.md` desde `observations/README.md`.
+- `schemas/research-record.schema.json` desde el nuevo `schemas/README.md`.
 
 No se movieron ni eliminaron estos archivos; la corrección fue de navegación.
 
@@ -117,9 +123,16 @@ No se movieron ni eliminaron estos archivos; la corrección fue de navegación.
 
 La API de GitHub permite recuperar los PDF como base64, pero el entorno de inspección disponible no permite materializar esos bytes directamente desde el conector. La Biblioteca ofrece texto indexado para un único `Auditoría TITAN.pdf`, pero no permite cotejar el binario del repositorio. Los otros ocho PDF no tienen una copia identificada en el inventario de Biblioteca consultado. Por tanto, el contenido binario de los nueve PDF sigue pendiente de inspección; no se declaran validados.
 
-**Resultado de esta pasada:** inventario recursivo completo y clasificaciones estructurales verificadas; navegación e instrucciones de prioridad corregidas; ninguna eliminación realizada. La auditoría de enlaces Markdown locales se ejecutó sobre los 76 archivos y no detectó destinos locales rotos. El análisis no valida URLs externas, enlaces de referencia no capturados por el patrón de enlaces inline ni dependencias semánticas no expresadas como enlaces.
+**Resultado de esta pasada:** inventario recursivo completo y clasificaciones estructurales verificadas; navegación e instrucciones de prioridad corregidas; ninguna eliminación realizada. La auditoría de enlaces Markdown locales se ejecutó sobre los 77 archivos y no detectó destinos locales rotos. El análisis no valida URLs externas, enlaces de referencia no capturados por el patrón de enlaces inline ni dependencias semánticas no expresadas como enlaces.
 
 
 ## 8. Verificación de enlaces Markdown locales
 
-Se inspeccionaron los 76 archivos `.md` del árbol mediante lectura desde GitHub y resolución de destinos relativos de enlaces Markdown inline. **Resultado: 0 destinos locales rotos detectados.** Los destinos absolutos HTTP/HTTPS y las referencias externas se excluyeron de esta comprobación y no se consideran validados. Tampoco se certifican dependencias semánticas que no estén expresadas como enlaces.
+Se inspeccionaron los 77 archivos `.md` del árbol mediante lectura desde GitHub y resolución de destinos relativos de enlaces Markdown inline. **Resultado: 0 destinos locales rotos detectados.** Los destinos absolutos HTTP/HTTPS y las referencias externas se excluyeron de esta comprobación y no se consideran validados. Tampoco se certifican dependencias semánticas que no estén expresadas como enlaces.
+
+
+## 9. Índices complementarios y recuento final de enlaces
+
+Se añadieron referencias directas para el perfil Audelin, la plantilla ADR, el derivado Hiloderivado, la plantilla de observación y el esquema JSON de investigación. Se creó `schemas/README.md` para que el esquema no quede como artefacto sin índice.
+
+La auditoría de enlaces Markdown inline locales se repitió sobre los **77 archivos Markdown** del árbol actualizado, en seis lotes. **Resultado: cero destinos locales rotos detectados.** Las URLs externas y las dependencias no expresadas como enlaces siguen fuera de alcance.
