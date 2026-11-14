@@ -26,3 +26,9 @@ El modelo de referencia está en [`docs/architecture/agent-model-v0.1.md`](../do
 Usar [`templates/agent-brief.md`](templates/agent-brief.md) para solicitar agentes para un proyecto. El brief no crea agentes ni concede permisos; sirve para analizar la necesidad, seleccionar definiciones existentes, proponer brechas y diseñar asignaciones que deben pasar por las aprobaciones correspondientes.
 
 No mezclar la definición maestra con el contexto de un proyecto. La memoria y los permisos quedan aislados por proyecto salvo autorización explícita y controlada.
+
+## Snapshot histórico del molde
+
+- [agent-generation-mold.v0.1.old.md](templates/agent-generation-mold.v0.1.old.md): copia íntegra de la versión anterior del molde, conservada deliberadamente como respaldo histórico.
+
+El archivo `.old` es un snapshot histórico, no una plantilla operativa. La fuente canónica vigente sigue siendo [agent-generation-mold.md](templates/agent-generation-mold.md). Se aplica el criterio L-01 de Laboratorio de Agentes para distinguir preservación histórica y fuente canónica.
