@@ -49,3 +49,10 @@ Registro acumulativo de mantenimiento. Su propósito es aprender de los problema
 - Resolver la diferencia de capitalización entre las dos carpetas del arenero Softly.
 - Inspeccionar internamente los PDF/ZIP y comprobar respaldos antes de proponer eliminaciones.
 - Continuar auditoría exhaustiva de enlaces externos y Markdown históricos del Laboratorio.
+
+
+### Extensión de la misma pasada: recuperación de investigación
+
+Se revisaron los dos documentos de investigación/guía del arenero del Laboratorio y se contrastaron con el modelo y molde vigentes de Softly. Se confirmó que son complementarios, no duplicados exactos. Se creó una síntesis en `research/notes/2026-11-14-cruce-estructura-agentes-soft.md`, se indexó desde investigación y se enlazó desde el índice del arenero del Laboratorio. Los originales permanecen en su ubicación.
+
+**Aprendizaje añadido:** antes de descartar material del arenero, compararlo con el conocimiento canónico y buscar aportes complementarios. Un documento que comparte tema con otro no es necesariamente redundante; puede contener un nivel distinto (fundamentos, guía operativa, modelo lógico o procedimiento).
