@@ -1,13 +1,47 @@
-# eL aRenero del gAto
+# eL arenero del gAto
 
-Este directorio contiene actualmente la instrucción de limpieza:
+Espacio temporal de recepción y clasificación de materiales que gAto deja para revisar. No equivale a una autorización general para borrar.
 
-- [iNstrucciones.md](iNstrucciones.md)
+## Instrucciones localizadas
 
-## Importante: ruta distinta
+El árbol actual contiene las instrucciones en [el índice de eL aRenero del gAto](../eL%20aRenero%20del%20gAto/README.md), dentro de una carpeta distinta. Atención: Git distingue mayúsculas y minúsculas; no se fusionan carpetas sin confirmación.
 
-No es la misma ruta que `eL arenero del gAto/`. Git distingue mayúsculas y minúsculas, por lo que ambas carpetas coexisten como directorios diferentes.
+La instrucción establece que solo se puede eliminar material cuando exista certeza suficiente de que está respaldado y registrado. Cada limpieza autorizada debe dejar un registro llamado `aRenero limpio 'fecha y hora actual'.md`, identificando quién limpió y por qué.
 
-La instrucción de este directorio describe cuándo se permite limpiar el arenero y exige dejar un registro `aRenero limpio 'fecha y hora actual'.md` cuando se elimina material respaldado. El índice del directorio que contiene los documentos está en [eL arenero del gAto](../eL%20arenero%20del%20gAto/README.md).
+## Inventario actual
 
-No se fusionan ni renombran estas rutas automáticamente. La diferencia queda documentada para evitar que las instrucciones se pierdan o se apliquen a una ubicación equivocada.
+| Archivo | Tipo | Tamaño | Blob SHA (Git) | Estado de revisión |
+|---|---:|---:|---|---|
+| Arquitectura de Agentes Blandos.pdf | PDF | 2.270.214 bytes | `c8d45d2e48d4605d75671f1afc0f635dad16303c` | No inspeccionado en esta pasada |
+| Auditoría TITAN.pdf | PDF | 314.786 bytes | `f16511bace92cb0ba75a077f8110837f89952409` | Texto indexado consultado en Biblioteca; no se pudo cotejar el binario exacto |
+| Auditoría de Fusión de Agentes.pdf | PDF | 280.377 bytes | `cfd3479003c1b34d7f8a4682473812f051248096` | No inspeccionado en esta pasada |
+| Auditoría y refactorización de código Titan.pdf | PDF | 214.535 bytes | `2fb15f8097cf866164088dcf3514ffaa06fc9eb7` | No inspeccionado en esta pasada |
+| Cytryna fusión de agentes blandos en el agente duro y costo de limpieza.pdf | PDF | 164.558 bytes | `f771ad179983f2bfcbbef35b62e2ef774f7f702d` | No inspeccionado en esta pasada |
+| Informe_Auditoria_TITAN_2026-11-12.pdf | PDF | 44.362 bytes | `0bb722f46ca991d833221c76b8c268736e02661b` | No inspeccionado en esta pasada |
+| Manual de Onboarding Multidisciplinario — Proyecto TITAN.pdf | PDF | 568.084 bytes | `1f05e1c5e1615f510908f3148c5a4c8a9dbf792b` | No inspeccionado en esta pasada |
+| Revisión de código y consejos - Claude.pdf | PDF | 116.916 bytes | `1ca24f0f994762aa475b3a2e19363afda4e793aa` | No inspeccionado en esta pasada |
+| Revisión de código y consejos.pdf | PDF | 120.359 bytes | `da9d4f097c29139a61c7ff16c91f964280f85c27` | No inspeccionado en esta pasada |
+| el gAto dice.txt | TXT | 358 bytes | `3275a37e61c651994b63c0525e8da643d0632a2d` | Contenido leído: pide postergar el orden de la casa y registrar futuras limpiezas; conservar |
+
+Los tamaños corresponden al árbol Git inspeccionado. No implican que los documentos hayan sido leídos o validados.
+
+## Criterio de trabajo
+
+1. Identificar el contenido y su propósito.
+2. Compararlo con respaldos concretos, no solo con nombres parecidos.
+3. Registrar ruta, hash y destino de cualquier respaldo comprobado.
+4. No borrar si existe duda, si el respaldo es parcial o si la procedencia no está clara.
+5. Tras una limpieza realmente justificada, dejar el registro exigido por la instrucción.
+
+## Nota de integridad
+
+En la revisión del 14 de noviembre de 2026 se detectó una carpeta de instrucciones con capitalización distinta (`eL aRenero del gAto`). No se renombró, fusionó ni eliminó contenido. Tampoco se borraron documentos de este arenero. El TXT que permanece en el árbol no contiene la frase «pico pal que lee»; por tanto, no se debe confundir con el archivo que gAto dijo haber eliminado. La eliminación de ese otro TXT no queda identificada en este árbol.
+
+
+## Comparación con la Biblioteca de ChatGPT
+
+La consulta actual de la Biblioteca devuelve un único registro llamado `Auditoría TITAN.pdf`, de 314.786 bytes (no aparece un segundo registro `Auditoría TITAN(1).pdf` en el inventario vigente). El índice de texto permite consultar fragmentos de un informe de cuatro páginas sobre TITAN v0.2.0-alpha. El PDF del arenero tiene el mismo tamaño, pero no se obtuvo acceso a los bytes originales de ambos archivos para calcular hashes independientes; por lo tanto, no se declara identidad binaria ni duplicación confirmada. Se corrige aquí la observación histórica de dos registros: la evidencia disponible en el inventario actual solo confirma uno.
+
+El informe indexado presenta afirmaciones sobre el estado operativo de TITAN, commits y cambios técnicos, y también señala que ciertos jobs de GitHub Actions no iniciaban por una restricción administrativa de facturación. Estas son afirmaciones del informe histórico, no una validación actual del runtime. Deben contrastarse con el repositorio TITAN y sus pruebas antes de reutilizarlas como hechos vigentes.
+
+Los demás PDF del inventario no aparecen como copias exactas identificables en la Biblioteca consultada. La ausencia de una coincidencia en Biblioteca no demuestra que no existan respaldos en otro lugar.
