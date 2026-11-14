@@ -10,3 +10,7 @@ Cada archivo debe indicar:
 - relación con el hilo o artefactos fuente.
 
 Los derivados pueden moverse o reemplazarse mediante una nueva versión cuando se complete el registro final. No deben presentarse como evidencia primaria ni como cierre de conversación.
+
+## Derivados disponibles
+
+- [Hiloderivado](Hiloderivado.md): nota intermedia histórica; no sustituye el registro final del hilo.
