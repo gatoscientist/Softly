@@ -5,6 +5,10 @@ Cada decisión importante se registra para evitar que preferencias o supuestos s
 ## ID
 `ADR-NNNN-titulo-corto.md`.
 
+## Plantilla
+
+- [Plantilla ADR](template-adr.md): estructura mínima para registrar decisiones de arquitectura.
+
 ## Estados
 Propuesta, Aceptada, Rechazada, Reemplazada.
 
