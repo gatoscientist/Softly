@@ -145,9 +145,9 @@ El commit que añade este propio corte hará avanzar el HEAD de Softly una vez m
 
 ### Auditoría de enlaces Markdown
 
-- Se revisaron los enlaces Markdown locales de los 64 archivos Markdown de Softly. No se detectaron destinos locales rotos en ese recorrido.
-- En el Laboratorio se revisaron portadas e índices principales, además de los documentos de investigación/auditoría del arenero. Se detectó un enlace roto en `eL arenero del gAto/AUDITORIA/README.md`: apuntaba a `../Soft Agents/Auditoria/README.md`, resolviendo dentro del arenero. Se corrigió a `../../Soft Agents/Auditoria/README.md` y se publicó el cambio.
-- No se hizo auditoría exhaustiva de todos los Markdown del Laboratorio ni de cada enlace externo. Los archivos de agentes/contratos no se modificaron.
+- Se revisaron los enlaces Markdown locales de los 66 archivos Markdown de Softly (64 presentes antes de crear el índice y la bitácora de mantenimiento, más esos dos archivos nuevos). No se detectaron destinos locales rotos.
+- Se revisaron los 71 archivos Markdown vigentes del Laboratorio (excluidos los snapshots históricos bajo `.old/`). Se detectó un enlace roto en `eL arenero del gAto/AUDITORIA/README.md`: apuntaba a `../Soft Agents/Auditoria/README.md`, resolviendo dentro del arenero. Se corrigió a `../../Soft Agents/Auditoria/README.md` y se publicó el cambio.
+- Los snapshots históricos `.old/` y los destinos externos no se incluyeron en esta auditoría. Los archivos de agentes/contratos se revisaron solo para sus enlaces locales y no se modificaron.
 
 ### Inventario TXT y discrepancia de eliminación
 
