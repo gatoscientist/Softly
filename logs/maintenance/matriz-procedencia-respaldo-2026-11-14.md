@@ -67,10 +67,10 @@ El README del arenero declara expresamente que `el gAto dice.txt` permanece y no
 
 ## 5. Próximas acciones seguras
 
-1. Obtener una enumeración recursiva completa del árbol `main` y compararla con todos los README/índices.
+1. **Completado:** obtener la enumeración recursiva completa de `main` y reconciliarla con los índices principales.
 2. Inspeccionar internamente cada PDF y ZIP, registrar páginas/entradas, contenido, metadatos útiles y hash criptográfico calculado sobre el archivo descargado.
 3. Localizar el origen y destino de cada artefacto y buscar respaldos independientes; registrar rutas, hashes y versiones.
-4. Resolver referencias entrantes/salientes, enlaces rotos, archivos huérfanos y duplicados candidatos.
+4. **Completado parcialmente:** se detectaron y enlazaron tres documentos sin enlace desde sus índices. Se comprobaron todos los enlaces Markdown locales en los 76 archivos y no se encontraron destinos locales rotos; quedan pendientes referencias externas, relaciones semánticas y dependencias no expresadas como enlaces.
 5. Añadir metadatos de procedencia solo cuando estén respaldados por evidencia; marcar desconocidos como desconocidos.
 6. Proponer acciones de clasificación o limpieza por separado. No ejecutar borrados hasta demostrar respaldo, identidad y ausencia de dependencias.
 
@@ -117,4 +117,9 @@ No se movieron ni eliminaron estos archivos; la corrección fue de navegación.
 
 La API de GitHub permite recuperar los PDF como base64, pero el entorno de inspección disponible no permite materializar esos bytes directamente desde el conector. La Biblioteca ofrece texto indexado para un único `Auditoría TITAN.pdf`, pero no permite cotejar el binario del repositorio. Los otros ocho PDF no tienen una copia identificada en el inventario de Biblioteca consultado. Por tanto, el contenido binario de los nueve PDF sigue pendiente de inspección; no se declaran validados.
 
-**Resultado de esta pasada:** inventario recursivo completo y clasificaciones estructurales verificadas; navegación e instrucciones de prioridad corregidas; ninguna eliminación realizada. La auditoría de enlaces de los 76 Markdown no se declara completa en esta pasada.
+**Resultado de esta pasada:** inventario recursivo completo y clasificaciones estructurales verificadas; navegación e instrucciones de prioridad corregidas; ninguna eliminación realizada. La auditoría de enlaces Markdown locales se ejecutó sobre los 76 archivos y no detectó destinos locales rotos. El análisis no valida URLs externas, enlaces de referencia no capturados por el patrón de enlaces inline ni dependencias semánticas no expresadas como enlaces.
+
+
+## 8. Verificación de enlaces Markdown locales
+
+Se inspeccionaron los 76 archivos `.md` del árbol mediante lectura desde GitHub y resolución de destinos relativos de enlaces Markdown inline. **Resultado: 0 destinos locales rotos detectados.** Los destinos absolutos HTTP/HTTPS y las referencias externas se excluyeron de esta comprobación y no se consideran validados. Tampoco se certifican dependencias semánticas que no estén expresadas como enlaces.
