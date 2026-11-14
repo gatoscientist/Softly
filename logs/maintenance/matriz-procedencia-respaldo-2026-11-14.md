@@ -176,3 +176,40 @@ Los seis subdirectorios de evaluaciones/experimentos que solo contienen README q
 Los cuatro índices modificados y el mapa raíz fueron leídos nuevamente; sus enlaces locales nuevos resuelven a rutas existentes. La verificación dirigida registró cero destinos rotos.
 
 **Corte inmediatamente anterior a esta ampliación:** `main` HEAD `866bb1e6eb2e6fc04e97b0223fe8f88d283d5dcb`; 126 entradas, 92 blobs, 34 directorios, 78 Markdown y 31 README.
+
+
+## 12. Reconciliación de inventario y trazabilidad — corte posterior
+
+**Corte Git previo a este registro:** rama `main`, HEAD `7fbec91eaeaf3a6e5e04928053ff87b725206bd0`; árbol recursivo completo, 127 entradas, 93 blobs y 34 directorios. El árbol contiene 79 Markdown, 31 README, 9 PDF, 1 TXT, 2 JSONL, 1 JSON y `.gitattributes`. No hay blobs con SHA repetido.
+
+### Reconciliación del arenero y de la cAjita
+
+- El inventario del arenero en `eL arenero del gAto/README.md` enumera 9 PDF y 1 TXT; coincide con las extensiones y cantidades del árbol actual.
+- La cAjita contiene únicamente README e instrucciones, de acuerdo con su índice.
+- Las dos rutas de arenero con capitalización distinta siguen separadas y documentadas.
+- No se identificó ZIP en el árbol de Softly.
+- No se realizó movimiento, renombrado ni eliminación.
+
+### Trazabilidad de investigación: brecha identificada
+
+La nota `research/notes/2026-11-13-material-titan-sofa-agent.md` registra ocho identificadores `SRC-20261113-001` a `SRC-20261113-008` para documentos originales aportados, pero los metadatos y resúmenes están agrupados en una sola nota. No existen ocho fichas individuales correspondientes en `research/sources/`; el índice de fuentes solo enlaza el panorama general. Por ello, las referencias pueden seguirse dentro de la nota, pero no consultarse como registros independientes.
+
+El esquema `schemas/research-record.schema.json` define registros `SRC-YYYYMMDD-NNN` y exige título, URL, tipo, fecha de consulta y estado. Los ocho documentos aportados son archivos locales cuya URL externa puede no existir; antes de crear fichas individuales habrá que decidir cómo representar fuentes internas/adjuntos sin inventar URLs ni debilitar el esquema por conveniencia. El panorama `SRCSET-20261113-001` es un conjunto/síntesis, no debe confundirse con un ID de fuente individual.
+
+**Clasificación:** deuda de trazabilidad documental, no pérdida de archivos ni corrupción. No se modificó el esquema ni se generaron fichas artificiales.
+
+### Otros registros de decisión y actividad
+
+- `logs/decisions.jsonl` contiene una entrada para ADR-0001 y el documento formal correspondiente existe; la ADR declara que fue reconstruida desde el registro.
+- `logs/activity.jsonl` contiene el evento de bootstrap y referencia un commit histórico. El campo de actor conserva el valor histórico tal como fue registrado; no se reescribe retrospectivamente.
+- Los registros JSONL leídos contienen una línea JSON válida cada uno. No se ejecutó un validador automático del esquema de eventos porque no existe esquema de actividad/decisiones asociado en el árbol.
+
+### Acciones siguientes
+
+1. Definir una convención de procedencia para adjuntos y documentos internos sin URL pública.
+2. Crear fichas individuales solo cuando la fuente original esté disponible y se puedan registrar sus metadatos reales; mantener los resúmenes como derivados.
+3. Enlazar las fichas desde `research/sources/README.md` y las notas que las utilizan.
+4. Evaluar si el esquema debe admitir una ubicación local/referencia de archivo y un campo de procedencia, mediante cambio versionado y ejemplos válidos; no cambiarlo hasta acordar el contrato.
+5. Mantener pendiente la inspección binaria de los nueve PDF y el cotejo de respaldos independientes.
+
+**Estado:** inventario de rutas y tipos reconciliado para este corte; trazabilidad de fuentes adjuntas incompleta; inspección binaria pendiente; ninguna limpieza autorizada.
