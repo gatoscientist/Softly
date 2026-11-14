@@ -1042,3 +1042,6 @@ Se completó la entrega documental del equipo DEVAGENTS TITAN en `gatoscientist/
 Cada paquete incluye README, AGENT, PROFILE, CONTRACT, OPERATING-PROCEDURE, PERMISSIONS, version.json y CHANGELOG. Se actualizaron los índices del equipo y de TITAN. Los commits se registran en el historial del repositorio; la entrega se verificó mediante lectura de artefactos principales desde `main`.
 
 **Límites respetados:** no se ejecutaron pruebas runtime, no se abrieron ciclos experimentales y no se habilitó ni desplegó ningún agente. El estado es exclusivamente documental: Diseñado. Las competencias no se consideran demostradas y los permisos declarados requieren enforcement del entorno.
+
+
+**Ampliación de completitud de paquetes:** cada uno de los cuatro paquetes incorpora además `instructions/system.md`, `expertise/domain.md`, `skills/primary-skill.md` y `tools/catalog.md`. El catálogo declara requisitos y controles; no afirma que las herramientas estén conectadas ni concede permisos. Los índices del Laboratorio describen el equipo vigente como 1.0.0 Diseñado.
