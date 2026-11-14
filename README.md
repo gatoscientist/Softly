@@ -1,6 +1,6 @@
 # Softly — Laboratorio de agentes inteligentes
 
-Softly es el laboratorio de investigación, diseño y experimentación dedicado a comprender cómo construir agentes inteligentes útiles, confiables, coordinados y verificables. Incluye ahora Softly Runtime Mini 0.2 en `softly-runtime/`, un prototipo de enforcement con controles de aislamiento y ledger encadenado.
+Softly es el laboratorio de investigación, diseño y experimentación dedicado a comprender cómo construir agentes inteligentes útiles, confiables, coordinados y verificables. El ciclo de Softly Runtime Mini 0.2 quedó cerrado administrativamente en el corte `9e8bc10` de `main`, con sus limitaciones documentadas. La prioridad activa es el desarrollo de TITAN con el equipo DEVAGENTS 1.0.0 ya entregado en [Laboratorio-de-agentes](https://github.com/gatoscientist/Laboratorio-de-agentes/tree/main/Soft%20Agents/TITAN/eL%20equipo%20del%20gAto).
 
 Softly no es un framework general de ejecución ni una colección de prompts. Reúne evidencia, formula hipótesis, diseña arquitecturas, prueba comportamientos y convierte aprendizajes en criterios reutilizables.
 
@@ -27,7 +27,7 @@ Cada afirmación importante debe distinguir evidencia, observación, hipótesis,
 
 1. Lee [SOFTLY.md](SOFTLY.md): mandato, límites y reglas obligatorias de inicio y continuidad.
 2. Usa [docs/README.md](docs/README.md) como índice de documentación transversal y consulta [docs/operating-model.md](docs/operating-model.md) para recuperar el método de trabajo.
-3. Recupera el checkpoint vigente antes de continuar trabajo previo y consulta la sección 17.15 de [la síntesis de continuidad](research/syntheses/2026-11-13-de-agentes-que-construyen-agentes.md) para el registro del runtime.
+3. Recupera el checkpoint vigente antes de continuar trabajo previo y consulta la sección 17.16 de [la síntesis de continuidad](research/syntheses/2026-11-13-de-agentes-que-construyen-agentes.md) para el cierre administrativo de Mini 0.2 y la prioridad actual de TITAN.
 4. Revisa [docs/research-method.md](docs/research-method.md): cómo investigar y conservar evidencia.
 5. Consulta [research/README.md](research/README.md): fuentes, notas y estado del conocimiento.
 6. Usa [agents/README.md](agents/README.md) para documentar agentes y sus versiones.
@@ -54,8 +54,9 @@ Cada afirmación importante debe distinguir evidencia, observación, hipótesis,
 
 ## Estado
 
-**Fase:** laboratorio con prototipo técnico en evolución.  
-**Alcance actual:** investigación, documentación y Softly Runtime Mini 0.2 en `softly-runtime/`, desarrollado por Katarina (`agentdev-katarina`). Corte `e1014932fcfe9bf5d69c8aaa3ed6adf157bfeef2`: **Prototipado** / **Probado preliminarmente** (6/6 pruebas reportadas en Python 3.13.5); CODE AUD independiente de Autumn pendiente. No **Validado** ni **Operativo** para producción.  
+**Fase:** investigación y desarrollo documental; prioridad activa: TITAN.  
+**Cierre anterior:** el ciclo de Softly Runtime Mini 0.2 quedó cerrado administrativamente en el corte `9e8bc10` de `main`, con limitaciones documentadas. El cierre no declara validación ni operación de producción.  
+**Equipo activo de desarrollo:** Tiffany (AgentDEV), Tara (AgentSEC), Thea (AgentMUS) y Tábata (AgentSCI), paquetes completos `1.0.0` en estado `Diseñado`, entregados en [Laboratorio-de-agentes](https://github.com/gatoscientist/Laboratorio-de-agentes/tree/main/Soft%20Agents/TITAN/eL%20equipo%20del%20gAto).  
 **Regla:** no declarar una capacidad implementada, validada u operativa más allá de la evidencia correspondiente.
 
 ## Contribución
