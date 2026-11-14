@@ -7,7 +7,7 @@ Los experimentos convierten hipótesis sobre agentes en resultados que otras per
 - `protocols/`: diseño antes de ejecutar.
 - `results/`: resultados y análisis.
 - `cases/`: casos de prueba sintéticos/anonimizados.
-- `artifacts/`: solo artefactos no sensibles necesarios para reproducir.
+- Los artefactos no sensibles necesarios para reproducir pueden adjuntarse cuando exista un experimento que los requiera; no hay un directorio `artifacts/` creado actualmente.
 
 ## ID
 
