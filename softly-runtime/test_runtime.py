@@ -282,7 +282,7 @@ class SoftlyRuntimeTests(unittest.TestCase):
         head = self.package / 'events.head'
         original_ledger = ledger.read_bytes()
         original_head = head.read_bytes()
-        head.write_bytes(b'0' * 64 + b'\\n')
+        head.write_bytes(b'0' * 64 + b'\n')
         foreign_head = head.read_bytes()
         result = self.runtime.recover_ledger()
         self.assertEqual(result['status'], 'rejected')
@@ -308,12 +308,12 @@ class SoftlyRuntimeTests(unittest.TestCase):
     def test_f03_recovery_genesis_checkpoint_discards_unconfirmed_bytes(self) -> None:
         ledger = self.package / 'events.jsonl'
         head = self.package / 'events.head'
-        ledger.write_bytes(b'not-json\\npartial')
-        head.write_bytes(b'GENESIS\\n')
+        ledger.write_bytes(b'not-json\npartial')
+        head.write_bytes(b'GENESIS\n')
         result = self.runtime.recover_ledger()
         self.assertEqual(result['status'], 'recovered')
         self.assertEqual(ledger.read_bytes(), b'')
-        self.assertEqual(head.read_bytes(), b'GENESIS\\n')
+        self.assertEqual(head.read_bytes(), b'GENESIS\n')
         self.assertTrue(self.runtime.verify_ledger()['ok'])
 
     def test_f03_recovery_never_deletes_workspace_artifacts(self) -> None:

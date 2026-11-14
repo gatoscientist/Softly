@@ -503,7 +503,7 @@ class SoftlyRuntime:
     def _write_recovery_report(self, report: dict[str, Any]) -> str:
         """Persiste un informe administrativo exclusivo, independiente del ledger."""
         name = f'.events.recovery.{report["attempt_id"]}.json'
-        payload = (json.dumps(report, ensure_ascii=False, sort_keys=True, separators=(',', ':')) + '\\n').encode('utf-8')
+        payload = (json.dumps(report, ensure_ascii=False, sort_keys=True, separators=(',', ':')) + '\n').encode('utf-8')
         flags = os.O_WRONLY | os.O_CREAT | os.O_EXCL | os.O_NOFOLLOW | getattr(os, 'O_CLOEXEC', 0)
         fd = os.open(name, flags, 384, dir_fd=self._runtime_fd)
         try:
@@ -535,9 +535,9 @@ class SoftlyRuntime:
                 head_info = self._assert_open_path_identity(head_fd, self._runtime_fd, self.HEAD_NAME)
                 original = self._read_all(ledger_fd)
                 head_raw = self._read_all(head_fd)
-                if head_raw == b'GENESIS\\n':
+                if head_raw == b'GENESIS\n':
                     checkpoint = self.GENESIS
-                elif (len(head_raw) == 65 and head_raw.endswith(b'\\n')
+                elif (len(head_raw) == 65 and head_raw.endswith(b'\n')
                       and all(ch in b'0123456789abcdef' for ch in head_raw[:-1])):
                     checkpoint = head_raw[:-1].decode('ascii')
                 else:
@@ -552,7 +552,7 @@ class SoftlyRuntime:
                     offset = 0
                     match_end: int | None = None
                     for line_number, line in enumerate(original.splitlines(keepends=True), 1):
-                        if not line.endswith(b'\\n'):
+                        if not line.endswith(b'\n'):
                             break
                         try:
                             event = json.loads(line[:-1].decode('utf-8'))
