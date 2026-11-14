@@ -157,3 +157,17 @@ Commits:
 - `8918d70000dd2c4a8f73afb01238bd25a6f8e456` — panorama de fuentes.
 
 El alcance fue limitado a las 14 URLs de esos dos documentos; no se certifica el estado de todos los enlaces externos del repositorio.
+
+
+## 2026-11-14 — Navegación completa de índices de directorio
+
+Se conectaron los índices restantes: el mapa raíz enlaza los directorios principales; el catálogo de agentes enlaza perfiles; evaluaciones enlaza datasets/planes/runs; experimentos enlaza protocolos/resultados/casos. Los seis subdirectorios de evaluaciones/experimentos se explicitan como estructuras preparadas sin artefactos, no como basura.
+
+Los cuatro índices modificados y el README raíz se leyeron de nuevo; sus nuevos enlaces locales resuelven. Verificación dirigida: cero destinos rotos.
+Commits:
+- `503dc6b36586fefd6eeb8ab137ad27a4a00ebd42` — mapa raíz.
+- `38e9a022777c0136b2579e6683aeeeefd8df1d11` — índice de agentes/perfiles.
+- `b10b492223f9eb10c98ea97cf3becae282a4be4b` — índice de evaluaciones.
+- `866bb1e6eb2e6fc04e97b0223fe8f88d283d5dcb` — índice de experimentos.
+
+Corte previo a este registro: 126 entradas, 92 blobs, 34 directorios, 78 Markdown y 31 README.
