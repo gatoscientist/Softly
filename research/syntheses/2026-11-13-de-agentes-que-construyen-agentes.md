@@ -1072,3 +1072,5 @@ gAto solicitó completar la sincronización documental final y preparar el cierr
 
 
 **Archivo de hilo persistido y verificado:** `logs/threads/hilo I hora-no-registrada F 2026-11-14 17-17.md` — commit `b4febc4841d9216ee2a9e61ef866366f333110bf`. Índice `logs/threads/README.md` actualizado en commit `b66ca0dd7cc272a915d4e46ca0f689a21ed52245`. Ambos se releen desde `main`. El hilo queda archivado conforme a la sección 11; hora inicial no disponible y no estimada.
+
+**Corrección de cierre del registro:** se actualizó la síntesis para dejar constancia del cierre archivado (no pendiente) en el commit `f741507129898331a7e1c1f807a9222db8b3217f`; índice de hilos `b66ca0dd7cc272a915d4e46ca0f689a21ed52245`. Se releen ambos desde `main`.
