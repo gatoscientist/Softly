@@ -41,3 +41,11 @@ Medir si un agente cumple su tarea de manera fiable, segura, eficiente y consist
 ## ID
 
 `EVAL-YYYYMMDD-NNN` para planes; `RUN-YYYYMMDD-NNN` para ejecuciones.
+
+## Índices de trabajo
+
+- [Datasets](datasets/README.md): conjuntos de evaluación versionados.
+- [Planes](plans/README.md): criterios y protocolos definidos antes de ejecutar.
+- [Ejecuciones](runs/README.md): reportes y resultados de evaluaciones realizadas.
+
+Estos tres subdirectorios contienen actualmente solo sus README de preparación; todavía no hay datasets, planes ni ejecuciones registrados.
