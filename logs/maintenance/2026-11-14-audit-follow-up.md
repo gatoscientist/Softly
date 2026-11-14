@@ -57,3 +57,12 @@ Se recuperaron nuevamente las ramas `main` y sus árboles recursivos después de
   - El snapshot `Auditoras.old/TEAM/TEAM.md` permanece conservado.
 
 **Resultado:** los cambios documentales descritos están publicados en `main` y verificados por lectura de los árboles actuales. No se ejecutaron pruebas runtime ni se certificaron capacidades operativas.
+
+## Material posterior al corte de Auditoría
+
+La comparación Git también mostró dos archivos del Laboratorio que no estaban incluidos en el corte auditado y que no fueron creados por este mantenimiento:
+
+- `lA cAjita del gAto/Aurora Hilo Inicial Wachito gAto - no comprueba.md`: se leyó como registro del intercambio inicial con Aurora. Conserva que la copia inicial no se había realizado en ese momento y la evidencia contextual de que la cAjita ya existía. Se respetaron su contenido y nombre históricos.
+- `lA cAjita del gAto/iNstrucciones.md`: se leyó como instrucción de gAto que distingue la cAjita como lugar para material interesante/valioso.
+
+Para evitar que ese material vuelva a quedar escondido, se agregó un índice `lA cAjita del gAto/README.md` y se enlazó desde el README raíz del Laboratorio. No se movieron, editaron ni borraron los dos archivos originales.
