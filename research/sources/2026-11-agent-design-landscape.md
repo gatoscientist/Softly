@@ -63,7 +63,7 @@ El modelo conceptual separa configuración de agente, entorno de ejecución, ses
 ## 6. LangGraph — Persistence
 
 URLs:
-- https://langchain-ai.github.io/langgraphjs/how-tos/persistence-postgres/
+- https://docs.langchain.com/oss/javascript/langgraph/persistence
 - https://github.com/langchain-ai/docs/blob/main/src/oss/langgraph/checkpointers.mdx
 
 Distingue checkpoints de estado de hilo (continuidad, interrupción, recuperación y revisión) de stores de conocimiento de largo plazo compartido entre hilos.
@@ -74,7 +74,7 @@ Distingue checkpoints de estado de hilo (continuidad, interrupción, recuperaci�
 
 ## 7. OWASP — Top 10 for Agentic Applications
 
-URL: https://genai.owasp.org/2025/12/09/owasp-top-10-for-agentic-applications-the-benchmark-for-autonomous-ai/
+URL: https://genai.owasp.org/2025/12/09/owasp-top-10-for-agentic-applications-the-benchmark-for-agentic-security-in-the-age-of-autonomous-ai/
 
 Taxonomía de riesgos que incluye goal hijacking, tool misuse, identity/privilege abuse, supply-chain vulnerabilities, unexpected code execution, memory/context poisoning, insecure inter-agent communication, cascading failures, human-agent trust exploitation y rogue agents.
 
@@ -108,6 +108,8 @@ DOI: https://doi.org/10.6028/NIST.AI.600-1
 Marco de gestión de riesgos para IA generativa durante el ciclo de vida. Puede aportar estructura de gobernanza, medición, gestión y documentación.
 
 **Implicación:** los riesgos y controles de Softly deben mantenerse durante diseño, pruebas, despliegue y operación.
+
+**Mantenimiento de enlaces (2026-11-14):** los destinos de LangGraph Persistence y OWASP Agentic Top 10 se actualizaron tras verificar sus páginas oficiales vigentes. La URL anterior de OWASP no resolvía; la URL anterior de LangGraph redirigía a una página antigua, por lo que se prefiere la documentación oficial actual en `docs.langchain.com`.
 
 ## Síntesis provisional
 
