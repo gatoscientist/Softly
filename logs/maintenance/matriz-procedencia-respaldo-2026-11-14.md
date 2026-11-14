@@ -91,8 +91,8 @@ Esta matriz solo podrá declararse completa cuando:
 
 Árbol consultado: `main`, HEAD `99783ed48aec2e289b26c94d6a7966a9fdb27335`; respuesta recursiva completa (`truncated=false`).
 
-- 125 entradas: 91 blobs y 34 directorios.
-- 77 archivos Markdown, incluidos 31 README.
+- 126 entradas: 92 blobs y 34 directorios.
+- 78 archivos Markdown, incluidos 31 README.
 - 9 PDF, 1 TXT, 2 JSONL y 1 JSON; 1 archivo `.gitattributes`.
 - No hay archivos ZIP en el árbol de Softly.
 - No se encontraron dos blobs con el mismo SHA dentro del árbol actual.
@@ -110,6 +110,7 @@ Se detectaron y enlazaron desde sus índices:
 - `logs/derived/Hiloderivado.md` desde `logs/derived/README.md`.
 - `observations/template-observation.md` desde `observations/README.md`.
 - `schemas/research-record.schema.json` desde el nuevo `schemas/README.md`.
+- `decisions/ADR-0001-laboratorio-documental-antes-de-runtime.md` desde `decisions/README.md`; el documento se reconstruyó desde la entrada `ADR-0001` de `logs/decisions.jsonl` porque faltaba el artefacto formal.
 
 No se movieron ni eliminaron estos archivos; la corrección fue de navegación.
 
@@ -123,16 +124,25 @@ No se movieron ni eliminaron estos archivos; la corrección fue de navegación.
 
 La API de GitHub permite recuperar los PDF como base64, pero el entorno de inspección disponible no permite materializar esos bytes directamente desde el conector. La Biblioteca ofrece texto indexado para un único `Auditoría TITAN.pdf`, pero no permite cotejar el binario del repositorio. Los otros ocho PDF no tienen una copia identificada en el inventario de Biblioteca consultado. Por tanto, el contenido binario de los nueve PDF sigue pendiente de inspección; no se declaran validados.
 
-**Resultado de esta pasada:** inventario recursivo completo y clasificaciones estructurales verificadas; navegación e instrucciones de prioridad corregidas; ninguna eliminación realizada. La auditoría de enlaces Markdown locales se ejecutó sobre los 77 archivos y no detectó destinos locales rotos. El análisis no valida URLs externas, enlaces de referencia no capturados por el patrón de enlaces inline ni dependencias semánticas no expresadas como enlaces.
+**Resultado de esta pasada:** inventario recursivo completo y clasificaciones estructurales verificadas; navegación e instrucciones de prioridad corregidas; ninguna eliminación realizada. La auditoría de enlaces Markdown locales se ejecutó sobre los 78 archivos y no detectó destinos locales rotos. El análisis no valida URLs externas, enlaces de referencia no capturados por el patrón de enlaces inline ni dependencias semánticas no expresadas como enlaces.
 
 
 ## 8. Verificación de enlaces Markdown locales
 
-Se inspeccionaron los 77 archivos `.md` del árbol mediante lectura desde GitHub y resolución de destinos relativos de enlaces Markdown inline. **Resultado: 0 destinos locales rotos detectados.** Los destinos absolutos HTTP/HTTPS y las referencias externas se excluyeron de esta comprobación y no se consideran validados. Tampoco se certifican dependencias semánticas que no estén expresadas como enlaces.
+Se inspeccionaron los 78 archivos `.md` del árbol mediante lectura desde GitHub y resolución de destinos relativos de enlaces Markdown inline. **Resultado: 0 destinos locales rotos detectados.** Los destinos absolutos HTTP/HTTPS y las referencias externas se excluyeron de esta comprobación y no se consideran validados. Tampoco se certifican dependencias semánticas que no estén expresadas como enlaces.
 
 
 ## 9. Índices complementarios y recuento final de enlaces
 
 Se añadieron referencias directas para el perfil Audelin, la plantilla ADR, el derivado Hiloderivado, la plantilla de observación y el esquema JSON de investigación. Se creó `schemas/README.md` para que el esquema no quede como artefacto sin índice.
 
-La auditoría de enlaces Markdown inline locales se repitió sobre los **77 archivos Markdown** del árbol actualizado, en seis lotes. **Resultado: cero destinos locales rotos detectados.** Las URLs externas y las dependencias no expresadas como enlaces siguen fuera de alcance.
+La auditoría de enlaces Markdown inline locales se repitió sobre los **78 archivos Markdown** del árbol actualizado, en seis lotes. **Resultado: cero destinos locales rotos detectados.** Las URLs externas y las dependencias no expresadas como enlaces siguen fuera de alcance.
+
+
+## 10. Recuperación de ADR-0001 y perfil operativo del repositorio
+
+El registro `logs/decisions.jsonl` declaraba una decisión aceptada `ADR-0001`, pero el archivo correspondiente no existía. Se reconstruyó `decisions/ADR-0001-laboratorio-documental-antes-de-runtime.md` usando exclusivamente los campos de esa entrada (fecha, estado, título, contexto, decisión, rationale, condición de revisión y commit relacionado), se explicitó la procedencia de la reconstrucción y se enlazó desde `decisions/README.md`. El ID de decisión ahora tiene su artefacto documental.
+
+El árbol contiene Markdown, PDF, TXT, JSONL, JSON y `.gitattributes`; no contiene código ejecutable ni workflows de CI. Softly se define como laboratorio documental y de investigación, no como runtime. Por tanto, esta auditoría puede verificar integridad documental y de Git, pero no certificar un funcionamiento runtime inexistente en este repositorio.
+
+El registro de actividad lista rutas de directorios como artefactos del bootstrap. Esas rutas están presentes como árboles Git; no son archivos faltantes.
