@@ -5,7 +5,7 @@
 - `sources/`: fichas de fuentes primarias y secundarias ([índice de fuentes](sources/README.md)).
 - `notes/`: notas de lectura y preguntas abiertas.
 - `syntheses/`: síntesis temáticas construidas a partir de varias fuentes.
-- `bibliography.md`: índice humano de referencias relevantes.
+- [Bibliografía inicial](bibliography.md): índice humano de referencias relevantes.
 
 ## Convenciones
 
