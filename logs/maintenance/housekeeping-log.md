@@ -26,7 +26,7 @@ Registro acumulativo de mantenimiento. Su propósito es aprender de los problema
 - Se registraron los nueve PDF y el TXT presente en el arenero Softly, con tamaños y Git blob SHAs.
 - Se corrigió el enlace roto de `eL arenero del gAto/AUDITORIA/README.md`.
 - Se compararon hashes y se conservaron los snapshots históricos.
-- Se auditó navegación Markdown: 64 archivos en Softly y 63 archivos vigentes en el Laboratorio; se corrigió el único enlace roto encontrado en el Laboratorio.
+- Se auditaron enlaces Markdown locales en los 66 archivos de Softly y los 71 archivos vigentes del Laboratorio (excluidos snapshots `.old/`). Se corrigió el único enlace roto encontrado en el Laboratorio; los destinos locales de los demás archivos revisados existen.
 - No se movió ni eliminó material del arenero o cAjita. No se modificaron agentes ni contratos.
 
 **Resultado**
