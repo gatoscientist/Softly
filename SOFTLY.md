@@ -99,7 +99,6 @@ Al abrir Softly o iniciar una nueva sesión de trabajo en este laboratorio:
 
 **Regla de continuidad:** cada sesión debe comenzar recuperando el estado persistente del trabajo. La continuidad no debe depender de la ventana de contexto de una conversación.
 
-
 ## 10. Identidad y trato de la dirección humana
 
 La dirección humana de Softly se identifica exclusivamente como **gAto** (escritura exacta: g minúscula, A mayúscula; pronunciación «gato»). Todas las sesiones deben dirigirse a la persona como **gAto**, con trato coloquial y respetuoso cuando corresponda.
@@ -109,3 +108,27 @@ Esta identidad es una instrucción obligatoria y persistente. No se deben utiliz
 La dirección humana es amable e indulgente, pero puede ser severa cuando una falta lo amerita o se reitera. El tono cercano nunca reduce su autoridad ni modifica la jerarquía de permisos.
 
 **Documento normativo y de continuidad:** [Identidad y protocolo de trato de la dirección humana](docs/governance/human-director-identity.md). Debe leerse al iniciar cada sesión. Si existe conflicto con una preferencia de estilo o contexto de menor autoridad, prevalece este mandato.
+
+## 11. Conservación obligatoria de hilos cerrados
+
+Cada vez que gAto dé por cerrado un hilo de conversación, Softly debe conservar su historia en un archivo Markdown dentro de `logs/threads/`. Esta obligación es permanente y no depende de que el hilo haya producido decisiones, código o avances técnicos.
+
+El registro debe preservar, hasta donde el contexto y las fuentes disponibles lo permitan:
+
+- el tema y propósito del hilo;
+- la secuencia de trabajo y los cambios de dirección;
+- las solicitudes e instrucciones relevantes de gAto;
+- las decisiones, acuerdos, hipótesis y correcciones;
+- el trabajo realizado, archivos consultados o modificados y commits confirmados;
+- errores, límites, desacuerdos, asuntos pendientes y punto de continuidad;
+- mensajes literales cuando estén disponibles, diferenciándolos claramente de resúmenes o reconstrucciones.
+
+**Fidelidad:** no es requisito recuperar el 100 % de los mensajes ni producir una transcripción literal perfecta. La prioridad es conservar una historia fiel, útil y suficientemente contextualizada. Nunca inventar mensajes, fechas, acciones, resultados o razonamientos privados para rellenar vacíos. Declarar qué partes son literales, cuáles son síntesis y qué información no estuvo disponible. No incluir cadena de pensamiento privada; conservar el proceso observable, las razones comunicadas y las decisiones.
+
+**Nombre y fechas:** usar el patrón `hilo I YYYY-MM-DD HH-mm F YYYY-MM-DD HH-mm.md`, con horas de Chile continental (America/Santiago). Si una hora no está disponible, escribir `hora-no-registrada`; no estimarla ni inventarla. La fecha/hora de cierre corresponde al momento en que se realiza el cierre documental.
+
+**Cierre verificable:** antes de declarar archivado un hilo, crear el archivo, comprobar que quedó en la ruta correcta y confirmar el commit en Git. Si falla cualquiera de esos pasos, informar que el cierre documental sigue pendiente; no afirmar que quedó guardado.
+
+**Acceso bajo demanda:** archivar todos los hilos no significa leerlos automáticamente al abrir una conversación nueva. Al iniciar, recuperar el mandato y el checkpoint vigente. Consultar los archivos de `logs/threads/` cuando gAto solicite revisar un hilo, cuando un antecedente específico sea necesario o cuando el checkpoint remita a él. No convertir la lectura indiscriminada de todo el archivo histórico en requisito de inicio.
+
+Esta regla complementa, y no reemplaza, la actualización del checkpoint de trabajo. El checkpoint resume dónde continuar; el registro del hilo conserva la historia de la conversación.

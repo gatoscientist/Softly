@@ -60,6 +60,23 @@ Cada fase produce un artefacto enlazado. No se debe saltar desde una lectura int
 
 Un trabajo queda cerrado cuando el resultado, las pruebas, los pendientes y las limitaciones están registrados. “Terminado” no equivale a “validado”.
 
+## Conservación de hilos de conversación
+
+El cierre de un hilo de conversación activa una obligación documental específica, independiente del cierre de una tarea técnica:
+
+1. Crear un archivo Markdown por cada hilo cerrado en `logs/threads/`.
+2. Conservar la historia del hilo: propósito, secuencia, instrucciones, decisiones, cambios, trabajo realizado, errores, pendientes y continuidad.
+3. Incluir mensajes literales cuando estén disponibles y marcar claramente las partes resumidas o reconstruidas.
+4. No exigir una transcripción literal del 100 %: prima la fidelidad histórica y contextual. No inventar contenido faltante ni incluir razonamiento privado oculto.
+5. Registrar la fecha y hora de inicio y cierre con zona horaria America/Santiago. Si la hora exacta no está disponible, indicarlo expresamente como `hora-no-registrada`.
+6. Nombrar el archivo con el patrón `hilo I YYYY-MM-DD HH-mm F YYYY-MM-DD HH-mm.md`.
+7. Comprobar ruta y contenido, realizar el commit y verificar que el archivo quedó persistido antes de declarar completado el cierre.
+8. Si no se puede guardar o confirmar el commit, comunicar el bloqueo y dejar el cierre documental como pendiente.
+9. No leer todos los hilos archivados al iniciar una conversación. Se consultan bajo demanda o cuando un antecedente concreto sea necesario para el trabajo.
+
+El checkpoint de continuidad y el archivo del hilo cumplen funciones distintas: el checkpoint permite retomar el trabajo rápidamente; el registro conserva la historia para consulta posterior.
+
+---
 
 ## Evolución iterativa de modelos y diseños
 
