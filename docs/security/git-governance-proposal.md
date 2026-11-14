@@ -1,6 +1,6 @@
 # Propuesta de gobernanza y seguridad Git para Softly
 
-**Estado:** diseño para aprobación. No se aplicó ninguna configuración. La lectura actual de branch protection/rulesets fue denegada por la integración; la última línea base documental disponible señala `main` sin protección ni checks requeridos. El último commit observado (`0f00037b60a9f40025d5773cd115c1da0232fb71`) figura como unsigned.
+**Estado:** CONGELADA por instrucción de gAto. No normativa; sin aprobación ni implementación. No revisar ni activar hasta después del tercer ciclo de auditoría.
 
 ## Objetivos
 
