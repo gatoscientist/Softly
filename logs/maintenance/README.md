@@ -26,6 +26,7 @@ Cada sesión de mantenimiento debe registrar:
 
 ## Registros
 
+- [Tercer ciclo de auditoría — unicidad de IDs y grafo documental (2026-11-14)](2026-11-14-third-audit-cycle.md): revisión de los 83 Markdown, unicidad global de declaraciones, dependencias semánticas y cierre de índices sin referencias entrantes.
 - [Auditoría de integridad Softly — etapas 1 a 5 (2026-11-14)](2026-11-14-integrity-audit-stages-1-5.md): inventario, cobertura Markdown, limitaciones PDF, JSONL, namespaces y propuestas de seguridad Git.
 - [Seguimiento de auditorías y mantenimiento — 2026-11-14](2026-11-14-audit-follow-up.md): registro técnico detallado de las pasadas documentales, inventarios, verificaciones y pendientes.
 - [Bitácora de orden de la casita](housekeeping-log.md): causas, acciones y aprendizajes acumulados entre pasadas.
