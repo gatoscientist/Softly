@@ -257,3 +257,18 @@ No se cambió ningún ID, título, esquema, fuente, índice ni artefacto histór
 5. Mantener separados los hechos históricos, las referencias de procedencia y las instrucciones operativas actuales.
 
 **Estado:** hallazgos confirmados y registrados; no se realizaron cambios estructurales ni limpieza. La trazabilidad transversal sigue abierta.
+
+
+## 14. Resolución de colisión de síntesis y estado de trazabilidad — 2026-11-14
+
+**Autorización:** gAto autorizó expresamente conservar `SYN-20261113-001` para `2026-11-13-de-agentes-que-construyen-agentes.md` y reasignar la línea base multi-rama al siguiente identificador disponible, `SYN-20261113-003`.
+
+**Cambios ejecutados:** se actualizó el encabezado y las referencias internas del documento `research/syntheses/2026-11-13-linea-base-contaminacion-multirrama-titan.md`; `research/README.md` ahora indexa las tres síntesis con IDs únicos y enlaza la propuesta de registro de namespaces; `research/syntheses/README.md` enumera las tres síntesis. El documento de gobernanza multiagente conserva `SYN-20261113-001`; `SYN-20261113-002` no cambia.
+
+**Límite de rastreo:** se verificaron los documentos de síntesis y los índices de investigación consultados. La búsqueda de código de GitHub no entregó resultados indexados (respuesta incompleta), por lo que no se afirma una búsqueda exhaustiva de cada blob del repositorio. Las referencias adicionales que aparezcan fuera de esos índices/documentos deberán corregirse al detectarse.
+
+**Fuentes TITAN/Cytryna:** gAto indicó que los ocho PDF originales se revisarán después. Se mantiene la relación entre los ocho IDs `SRC-20261113-001` a `SRC-20261113-008` y sus originales como **no cotejada**; los dos títulos divergentes frente al arenero no se equiparan. No se declara inspección binaria ni equivalencia de versiones.
+
+**Modelo documental:** se prepara una propuesta descriptiva de namespaces y relaciones, sin modificar `schemas/research-record.schema.json`, validaciones ni contratos. Los JSONL consultados contienen una línea cada uno y son JSON sintácticamente válido; no existe esquema de eventos asociado, por lo que no se declara validación contra schema.
+
+**Gobernanza Git y alcance:** `main` continúa sin protección ni checks requeridos; el commit consultado previo estaba unsigned. No se modificó la configuración. No se hizo limpieza, movimiento, borrado ni cambio de contratos/agentes. La auditoría sigue siendo documental y no certifica runtime.
