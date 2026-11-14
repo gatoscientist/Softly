@@ -1,6 +1,6 @@
 # Softly — Laboratorio de agentes inteligentes
 
-Softly es el laboratorio de investigación, diseño y experimentación dedicado a comprender cómo construir agentes inteligentes útiles, confiables, coordinados y verificables. Incluye ahora un primer prototipo de enforcement: Softly Runtime Mini 0.1 en `softly-runtime/`.
+Softly es el laboratorio de investigación, diseño y experimentación dedicado a comprender cómo construir agentes inteligentes útiles, confiables, coordinados y verificables. Incluye ahora Softly Runtime Mini 0.2 en `softly-runtime/`, un prototipo de enforcement con controles de aislamiento y ledger encadenado.
 
 Softly no es un framework general de ejecución ni una colección de prompts. Reúne evidencia, formula hipótesis, diseña arquitecturas, prueba comportamientos y convierte aprendizajes en criterios reutilizables.
 
@@ -54,8 +54,8 @@ Cada afirmación importante debe distinguir evidencia, observación, hipótesis,
 
 ## Estado
 
-**Fase:** laboratorio con prototipo técnico inicial.  
-**Alcance actual:** investigación, documentación y Softly Runtime Mini 0.1 en `softly-runtime/`, desarrollado por Katarina (`agentdev-katarina`). Estado: **Prototipado** / **Probado preliminarmente** (3/3 casos en Python 3.13); no **Validado** ni **Operativo** para producción. Auditoría independiente de Autumn pendiente.  
+**Fase:** laboratorio con prototipo técnico en evolución.  
+**Alcance actual:** investigación, documentación y Softly Runtime Mini 0.2 en `softly-runtime/`, desarrollado por Katarina (`agentdev-katarina`). Corte `e1014932fcfe9bf5d69c8aaa3ed6adf157bfeef2`: **Prototipado** / **Probado preliminarmente** (6/6 pruebas reportadas en Python 3.13.5); CODE AUD independiente de Autumn pendiente. No **Validado** ni **Operativo** para producción.  
 **Regla:** no declarar una capacidad implementada, validada u operativa más allá de la evidencia correspondiente.
 
 ## Contribución
