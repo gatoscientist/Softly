@@ -101,3 +101,16 @@ Ciclo obligatorio de mejora:
 - **No confundir estabilidad con inmovilidad:** mantener interfaces estables cuando sea útil, pero no conservar estructuras defectuosas solo para evitar cambios.
 
 Cada iteración debe dejar enlazados el diseño probado, los casos y datos utilizados, las observaciones, los resultados, la decisión de cambio y la versión resultante.
+
+## Puerta de Entrega Documental y Puerta de Habilitación en Runtime
+
+La entrega de un agente y su habilitación técnica son decisiones separadas:
+
+1. **Puerta de Entrega Documental:** cuando el paquete documental requerido está completo y coherente, se entrega como versión **1.0.0**, estado **Diseñado**, dentro de la taxonomía oficial **Propuesto → Diseñado → Prototipado → Probado → Validado → Operativo**. No se retiene la entrega por falta de pruebas de runtime. No se usan estados ajenos a la taxonomía, como `Experimental` o `draft`.
+2. **Puerta de Habilitación en Runtime:** habilitar, integrar o desplegar exige una evaluación posterior de permisos, controles, pruebas, supervisión y evidencia del entorno. La entrega documental no equivale a habilitación, despliegue ni validación.
+
+Los detalles pendientes no críticos se registran como pendientes, supuestos o riesgos y no detienen la entrega del artefacto principal. Solo un faltante que comprometa integridad, coherencia esencial, identidad, alcance, permisos o seguridad puede bloquearla; el bloqueo debe explicitarse.
+
+## Cierre de decisiones y avance por etapas
+
+Las decisiones aprobadas por gAto quedan cerradas y no se reabren por preferencia, especulación o una alternativa nueva. Solo se revisan cuando aparece evidencia nueva, concreta y pertinente; se registra el fundamento y se preserva la decisión anterior. Los detalles no críticos se documentan sin detener el entregable principal. El trabajo avanza por etapas con resultados verificables, sin imponer requisitos futuros de runtime a una entrega documental ya completa.
