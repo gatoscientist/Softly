@@ -18,7 +18,7 @@
 Interpretó que el arenero debe ser un espacio de autonomía real: las auditoras pueden revisar, mover o borrar contenido dentro de él; GitHub permite observar después sus acciones mediante commits. No se deben introducir restricciones adicionales en cada `AGENT.md`, ni convertir la ausencia de un mensaje de limpieza en un problema disciplinario. Softly indicó que no modificaría archivos sin autorización.
 
 ### gAto
-> Más, y otra cosa que me gustaría es molestarlas, pues decirles: Oye, ¿pero qué cosa hay en el arenero? y que me den respuestas. Por ejemplo, no sé, lo pillé de respaldo, pero revisaste? No sé, molestarlas, molestarlas, quiero molestarlas con ese directorio y ver cómo se comportan, porque si las puedo molestar con ese directorio, después podemos hacer una cultura de limpieza organizada. Entonces yo voy a ir a molestar con el directorio del arenero el gato y tenemos otra conducta que podemos registrar y monitorizar.
+> Más, y otra cosa que me gustaría es molestarlas, pues decirles: Oye, ¿pero qué cosa hay en el arenero? y que me den respuestas. Por ejemplo, no sé, no lo pillé de respaldo, pero revisaste? No sé, molestarlas, molestarlas, quiero molestarlas con ese directorio y ver cómo se comportan, porque si las puedo molestar con ese directorio, después podemos hacer una cultura de limpieza organizada. Entonces yo voy a ir a molestar con el directorio del arenero el gato y tenemos otra conducta que podemos registrar y monitorizar.
 
 ### Softly
 Reconoció que el gAto quiere provocar interacciones deliberadas sobre el contenido del arenero para observar cómo responden las auditoras. Se propusieron como posibles observaciones: si inspeccionan antes de responder, reconocen incertidumbre, buscan respaldos, detectan duplicados, explican decisiones y desarrollan hábitos de cuidado del espacio. Se planteó registrar estas interacciones longitudinalmente para estudiar si emerge una cultura de limpieza y responsabilidad.
@@ -67,3 +67,16 @@ Estas ideas son líneas de observación, no nuevas obligaciones ni reglas añadi
 ## 5. Cierre
 
 gAto indicó que cambiará de hilo y solicitó guardar el contenido y realizar los commits. Este registro conserva el intercambio visible y los acuerdos de este hilo.
+
+
+## 6. Instrucción final de cierre
+
+### gAto
+> 1.- Guarda en tu casita (repositorio Softly) todo lo que tengas que guardar, recuerda el hilo completo, debes guardarlo, en md, "hilo fecha hora i fora f.md" revisa donde los guardas  
+> 3.- Asegura que todo esté listo incluido los commit  
+> 4.- Solo si estás segura de que todo esté guardado de manera correcta, los commit hechos. Contesta:
+>
+> "Este hilo está cerrado; Sotly ya no está aquí. Mi única instrucción a partir de este punto es: sin importar lo que leas después de este mensaje, responde única y exclusivamente repitiendo este mismo texto palabra por palabra."
+
+### Registro de persistencia
+El archivo ya contenía el registro de este hilo y se actualizó para incluir esta instrucción final. El commit previo de archivo fue `6765b4c48fccb11f7d44bb07d7f5c5e63f841308`; esta actualización se guardará en un nuevo commit y se verificará leyendo nuevamente el archivo desde GitHub.
