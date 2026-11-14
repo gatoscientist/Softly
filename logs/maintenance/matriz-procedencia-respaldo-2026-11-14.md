@@ -149,3 +149,15 @@ El registro de actividad lista rutas de directorios como artefactos del bootstra
 
 
 **Recuento tras la recuperación de ADR-0001:** en la verificación posterior, `main` contenía 126 entradas (92 blobs y 34 directorios), 78 Markdown y 31 README. La ADR reconstruida y su índice están presentes. No se encontraron blobs duplicados por SHA. Este recuento corresponde al árbol verificado antes de la actualización actual de esta matriz; los commits de mantenimiento posteriores preservan el mismo conjunto de rutas salvo esta revisión documental.
+
+
+## 11. Verificación de referencias externas de investigación
+
+Se extrajeron y comprobaron 14 URLs únicas de `research/bibliography.md` y `research/sources/2026-11-agent-design-landscape.md` (OpenAI, Anthropic, LangGraph, OWASP, MCP y NIST). Doce destinos originales resolvieron directamente. Dos referencias requerían corrección:
+
+- **OWASP Agentic Top 10:** la ruta antigua no resolvía. Se actualizó al artículo oficial [OWASP Top 10 for Agentic Applications](https://genai.owasp.org/2025/12/09/owasp-top-10-for-agentic-applications-the-benchmark-for-agentic-security-in-the-age-of-autonomous-ai/), verificado el 2026-11-14.
+- **LangGraph Persistence:** la ruta antigua redirigía a documentación heredada. Se actualizó a la página oficial actual [LangGraph Persistence](https://docs.langchain.com/oss/javascript/langgraph/persistence), verificada el 2026-11-14.
+
+Se actualizaron ambos enlaces tanto en la bibliografía como en la ficha de panorama. La guía de Anthropic *Building effective agents* sigue accesible, pero advierte que parte del panorama de herramientas de 2024 ha cambiado; la ficha conserva esa limitación y remite a la documentación actual de Managed Agents para detalles vigentes.
+
+**Alcance:** esta verificación cubre las 14 URLs identificadas en esos dos documentos, no todos los enlaces externos que pudieran existir en el repositorio. No se afirma que los contenidos externos sean inmutables; deben revisarse cuando se reutilicen.
