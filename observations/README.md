@@ -19,3 +19,7 @@ Aquí se registran comportamientos vistos en agentes, modelos o sistemas. Una ob
 - Próxima prueba que permitiría discriminar hipótesis.
 
 No almacenar conversaciones privadas completas ni secretos. Redactar identificadores personales. Enlazar experimento si se reproduce de forma controlada.
+
+## Plantilla
+
+- [Plantilla de observación](template-observation.md): campos mínimos para registrar comportamiento observable.
