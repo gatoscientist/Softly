@@ -27,7 +27,7 @@ Cada afirmación importante debe distinguir evidencia, observación, hipótesis,
 
 1. Lee [SOFTLY.md](SOFTLY.md): mandato, límites y reglas obligatorias de inicio y continuidad.
 2. Usa [docs/README.md](docs/README.md) como índice de documentación transversal y consulta [docs/operating-model.md](docs/operating-model.md) para recuperar el método de trabajo.
-3. Recupera el checkpoint vigente antes de continuar trabajo previo. Para el trabajo de molde y agentes blandos, lee las secciones 15, 16 y 17 de [la síntesis de agentes que construyen agentes](research/syntheses/2026-11-13-de-agentes-que-construyen-agentes.md): la prioridad inmediata está en 17.12. La sección 17.4 conserva una línea anterior sobre el modelo técnico de conocimiento.
+3. Recupera el checkpoint vigente antes de continuar trabajo previo. La prioridad operativa actual es asegurar la integridad y el funcionamiento de Softly; el desarrollo de agentes descrito en la sección 17.12 está en pausa hasta que gAto confirme el cierre de las mejoras. Consulta la sección 17.14 de [la síntesis de continuidad](research/syntheses/2026-11-13-de-agentes-que-construyen-agentes.md).
 4. Revisa [docs/research-method.md](docs/research-method.md): cómo investigar y conservar evidencia.
 5. Consulta [research/README.md](research/README.md): fuentes, notas y estado del conocimiento.
 6. Usa [agents/README.md](agents/README.md) para documentar agentes y sus versiones.
