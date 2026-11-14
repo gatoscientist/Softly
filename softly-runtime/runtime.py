@@ -301,15 +301,18 @@ class SoftlyRuntime:
         except (OSError, LedgerError) as exc:
             return {'ok': False, 'event_count': 0, 'head_hash': None, 'error': str(exc)}
 
-    def _atomic_write_head(self, head_hash: str) -> None:
+    def _atomic_write_head_bytes(self, payload: bytes) -> None:
+        """Publica bytes exactos del checkpoint mediante replace + fsync del directorio."""
         temp_name = f'.events.head.{uuid.uuid4().hex}.tmp'
         flags = os.O_WRONLY | os.O_CREAT | os.O_EXCL | os.O_NOFOLLOW | getattr(os, 'O_CLOEXEC', 0)
         fd = os.open(temp_name, flags, 384, dir_fd=self._runtime_fd)
         try:
-            payload = (head_hash + '\n').encode('ascii')
             offset = 0
             while offset < len(payload):
-                offset += os.write(fd, payload[offset:])
+                written = os.write(fd, payload[offset:])
+                if written <= 0:
+                    raise OSError('Escritura incompleta del checkpoint.')
+                offset += written
             os.fsync(fd)
         except BaseException:
             try:
@@ -329,24 +332,48 @@ class SoftlyRuntime:
                 pass
             raise
 
-    def _append_event_locked(self, ledger_fd: int, event: dict[str, Any], previous: str) -> None:
+    def _atomic_write_head(self, head_hash: str) -> None:
+        self._atomic_write_head_bytes((head_hash + '\n').encode('ascii'))
+
+    def _append_event_locked(self, ledger_fd: int, head_fd: int, event: dict[str, Any], previous: str) -> None:
         event['previous_event_hash'] = previous
         event['event_hash'] = self._canonical_hash(event)
         payload = (json.dumps(event, ensure_ascii=False, sort_keys=True, separators=(',', ':')) + '\n').encode('utf-8')
         old_size = os.fstat(ledger_fd).st_size
+        previous_head_bytes = self._read_all(head_fd)
+        if not previous_head_bytes.endswith(b'\n'):
+            raise LedgerIntegrityError('Checkpoint previo no termina en newline.')
         try:
             offset = 0
             while offset < len(payload):
-                offset += os.write(ledger_fd, payload[offset:])
+                written = os.write(ledger_fd, payload[offset:])
+                if written <= 0:
+                    raise OSError('Escritura incompleta del evento.')
+                offset += written
             os.fsync(ledger_fd)
             self._atomic_write_head(event['event_hash'])
-        except BaseException:
+        except BaseException as original_error:
+            # Restaurar el head antes de truncar el ledger: nunca retirar el evento
+            # dejando el checkpoint apuntando al hash que acabamos de retirar.
+            try:
+                self._atomic_write_head_bytes(previous_head_bytes)
+            except BaseException as checkpoint_error:
+                raise LedgerError(
+                    'Falló la publicación y también la restauración del checkpoint; '
+                    'ledger preservado para recuperación explícita.'
+                ) from checkpoint_error
             try:
                 os.ftruncate(ledger_fd, old_size)
                 os.fsync(ledger_fd)
-            except OSError:
-                pass
-            raise
+            except BaseException as ledger_error:
+                raise LedgerError(
+                    'Checkpoint previo restaurado, pero falló el rollback del ledger; '
+                    'se requiere recuperación explícita.'
+                ) from ledger_error
+            raise LedgerError(
+                f'No se pudo confirmar el evento; ledger y checkpoint restaurados: '
+                f'{original_error.__class__.__name__}'
+            ) from original_error
 
     def execute(self, task_id: Any, operation: Any, **parameters: Any) -> dict[str, Any]:
         """Ejecuta con ledger verificado/bloqueado y emite un evento encadenado."""
@@ -406,8 +433,8 @@ class SoftlyRuntime:
             else:
                 result = {'ok': True, 'artifact_reference': event['artifact_reference']}
             try:
-                self._append_event_locked(ledger_fd, event, previous)
-            except OSError as exc:
+                self._append_event_locked(ledger_fd, head_fd, event, previous)
+            except BaseException as exc:
                 if created is not None:
                     parent_fd, filename = created
                     try:
@@ -417,6 +444,9 @@ class SoftlyRuntime:
                         pass
                     finally:
                         os.close(parent_fd)
+                    created = None
+                if isinstance(exc, LedgerError):
+                    raise
                 raise LedgerError(f'No se pudo persistir el evento; operación no confirmada: {exc.__class__.__name__}') from exc
             if created is not None:
                 os.close(created[0])
