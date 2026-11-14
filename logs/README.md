@@ -10,7 +10,7 @@ La bitácora conserva eventos de trabajo, no conclusiones implícitas.
 - `observations.jsonl`: referencias a observaciones.
 - `threads/`: historia documental de cada hilo de conversación cerrado.
 - `derived/`: notas intermedias o derivados de análisis que no sustituyen transcripciones ni cierres de hilo.
-- `maintenance/`: registros de mantenimiento documental, seguimiento de hallazgos y verificación de cambios. Ver [seguimiento de auditorías 2026-11-14](maintenance/2026-11-14-audit-follow-up.md).
+- `maintenance/`: registros de mantenimiento documental, seguimiento de hallazgos y verificación de cambios. Ver el [índice de mantenimiento](maintenance/README.md), la [bitácora de orden de la casita](maintenance/housekeeping-log.md) y el [seguimiento de auditorías 2026-11-14](maintenance/2026-11-14-audit-follow-up.md).
 
 ## Conservación obligatoria de hilos
 
