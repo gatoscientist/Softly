@@ -117,3 +117,17 @@ Durante la misma pasada se completó también la entrada de proyectos del reposi
 - Se creó `Proyectos/TITAN/README.md` con inventario de los ocho ZIP, tamaños y blob SHAs.
 - Se actualizó el README raíz para enlazar el índice de proyectos.
 - Los ZIP siguen sin inspección interna; los nombres solo permiten una clasificación provisional. No se borró ni se declaró redundante ningún paquete.
+
+
+## Corte de verificación de esta pasada
+
+Comparación de ramas contra el estado previo a esta segunda pasada:
+
+- Softly: `feef2301d322cd226c265a70f1f19d3c2a22aef1` → `e3596a172aee05fb5ca3c3590fce5794d87bbb56`; 7 commits, 5 rutas modificadas/añadidas, rama adelantada y sin commits detrás.
+- Laboratorio de Agentes: `19a86e0ab219e9792d4f5f36b9f68e07ccbf4b9f` → `3d58eb013915203b43641d1ad881d910c01dc2cc`; 5 commits, 4 rutas modificadas/añadidas, rama adelantada y sin commits detrás.
+
+Las rutas cambiadas en Softly fueron README raíz, los tres índices de cAjita/arenero y este registro. En Laboratorio fueron README raíz, índices de `Proyectos/`, `Proyectos/TITAN/` y arenero. Las comparaciones no muestran cambios en archivos de agentes, perfiles, contratos, permisos, equipos ni procedimientos.
+
+Se verificó además que los enlaces Markdown locales de los índices y portadas seleccionados resuelven a rutas presentes en los árboles actuales. Los árboles completos se recuperaron sin truncamiento. Este corte documenta verificación estática de Git y navegación, no ejecución de pruebas.
+
+El commit que añade este propio corte hará avanzar el HEAD de Softly una vez más; la verificación terminal de la rama se realiza inmediatamente después de publicarlo.
