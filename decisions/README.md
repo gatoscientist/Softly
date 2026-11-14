@@ -7,7 +7,8 @@ Cada decisión importante se registra para evitar que preferencias o supuestos s
 
 ## Plantilla
 
-- [ADR-0001 — Laboratorio documental antes de runtime](ADR-0001-laboratorio-documental-antes-de-runtime.md): decisión aceptada, reconstruida desde `logs/decisions.jsonl`.
+- [ADR-0001 — Laboratorio documental antes de runtime](ADR-0001-laboratorio-documental-antes-de-runtime.md): decisión inicial, conservada como antecedente histórico.
+- [ADR-0002 — Incorporar Softly Runtime Mini 0.1](ADR-0002-incorporacion-runtime-mini-0.1.md): decisión aceptada que actualiza el alcance e incorpora el prototipo.
 - [Plantilla ADR](template-adr.md): estructura mínima para registrar decisiones de arquitectura.
 
 ## Estados
