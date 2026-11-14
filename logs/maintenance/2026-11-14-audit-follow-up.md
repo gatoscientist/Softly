@@ -159,3 +159,21 @@ El árbol actual de Softly contiene un único TXT: `eL arenero del gAto/el gAto 
 - Laboratorio: enlace relativo corregido en el índice `eL arenero del gAto/AUDITORIA/README.md`.
 
 La revisión es estática y documental. No se inspeccionaron todos los PDF/ZIP, no se ejecutaron pruebas de runtime y no se realizaron borrados.
+
+
+### Contraste externo con el repositorio TITAN
+
+Como el informe `Auditoría TITAN.pdf` describe el estado de `gatoscientist/TITAN`, se consultó su estado actual para evitar tratar el informe del 12 de noviembre como vigente sin contraste:
+
+- `main` estaba en `58d11dcf9bbf0881ed308efe7767033cd32ea7c3` al momento de la consulta, con último commit del 14 de noviembre de 2026 a las 07:19:49 UTC (mensaje: «eL gAto agregando a su equipo»).
+- El archivo `VERSION` sigue indicando `0.2.0-alpha`.
+- La consulta del historial mostró commits posteriores al informe, incluidos «Limpieza Agentes Soft» (14 de noviembre) y otros cambios de auditoría/coordinación (13 de noviembre). Por lo tanto, el informe histórico no representa por sí solo el árbol actual.
+- La consulta de Actions devolvió 179 ejecuciones. Las 15 más recientes listadas estaban en estado completado con conclusión `failure`; incluyen ejecuciones del 12 y 13 de noviembre. No se encontró evidencia de una ejecución exitosa entre esas 15.
+- La ejecución más reciente listada (#179, run ID `43348076033`) corresponde a `dbf47c91c2f75b752f483bda204ec0fda1db8dda`, no al HEAD actual `58d11dcf9bbf0881ed308efe7767033cd32ea7c3`. La descarga de logs devolvió 404 y no se pudieron inspeccionar los pasos; por eso no se atribuye la causa de los fallos a facturación, aunque el informe previo lo afirmaba para ejecuciones anteriores.
+- La rama `main` no tiene protección ni checks obligatorios configurados en la respuesta consultada. Esto es una observación de configuración, no una recomendación de cambiarla en esta tarea.
+
+**Conclusión prudente:** el identificador de versión sigue en 0.2.0-alpha, pero la afirmación histórica de que TITAN estaba «operativo» no queda respaldada por CI exitoso reciente en las ejecuciones consultadas. Tampoco se ejecutó runtime local ni se validó el HEAD actual. No se modificó el repositorio TITAN.
+
+### Comparación de paquetes ZIP
+
+En `Proyectos/TITAN/` del Laboratorio, los ocho ZIP tienen Git blob SHAs distintos: no existen duplicados binarios exactos entre esos ocho archivos. Se añadió esta conclusión al índice del directorio. La equivalencia parcial o funcional solo puede evaluarse inspeccionando el contenido interno; no se eliminó ningún ZIP.
