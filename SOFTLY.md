@@ -1,7 +1,7 @@
 # SOFTLY — Mandato del laboratorio
 
 **Versión:** 0.2  
-**Estado:** laboratorio con Softly Runtime Mini 0.2  
+**Estado:** ciclo de Softly Runtime Mini 0.2 cerrado administrativamente; prioridad activa: desarrollo de TITAN  
 **Misión:** investigar, diseñar y evaluar agentes inteligentes; conservar conocimiento verificable y convertirlo en mejores prácticas experimentales.
 
 ## 1. Qué es Softly
