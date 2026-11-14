@@ -174,9 +174,47 @@ class SoftlyRuntimeTests(unittest.TestCase):
         second_runtime.close()
         self.assertTrue(all((item['ok'] for item in concurrent_results)))
         self.assertTrue(self.runtime.verify_ledger()['ok'])
+
+        # Regresión F-03: falla el fsync del directorio después de publicar
+        # events.head mediante os.replace. El rollback debe restaurar ambos.
+        before_ledger = ledger.read_bytes()
+        before_head = (self.package / 'events.head').read_bytes()
+        real_replace = os.replace
+        real_fsync = os.fsync
+        checkpoint_replaced = False
+        injected_failure = False
+
+        def observe_checkpoint_replace(src, dst, *, src_dir_fd=None, dst_dir_fd=None):
+            nonlocal checkpoint_replaced
+            result = real_replace(src, dst, src_dir_fd=src_dir_fd, dst_dir_fd=dst_dir_fd)
+            if dst == 'events.head':
+                checkpoint_replaced = True
+            return result
+
+        def fail_directory_fsync_once(fd: int) -> None:
+            nonlocal injected_failure
+            if checkpoint_replaced and not injected_failure and runtime_module.stat.S_ISDIR(os.fstat(fd).st_mode):
+                injected_failure = True
+                raise OSError('fsync de directorio simulado después de os.replace')
+            return real_fsync(fd)
+
+        with patch.object(runtime_module.os, 'replace', side_effect=observe_checkpoint_replace):
+            with patch.object(runtime_module.os, 'fsync', side_effect=fail_directory_fsync_once):
+                with self.assertRaises(LedgerError):
+                    self.runtime.execute('runtime-mini-smoke-test', 'create_text_file', path='head-fsync-failure.txt', content='no confirmar')
+
+        self.assertTrue(injected_failure)
+        self.assertEqual(ledger.read_bytes(), before_ledger)
+        self.assertEqual((self.package / 'events.head').read_bytes(), before_head)
+        self.assertTrue(self.runtime.verify_ledger()['ok'])
+        self.assertFalse((self.workspace / 'head-fsync-failure.txt').exists())
+        recovered = self.runtime.execute('runtime-mini-smoke-test', 'create_text_file', path='after-head-recovery.txt', content='recuperado')
+        self.assertTrue(recovered['ok'])
+        self.assertTrue(self.runtime.verify_ledger()['ok'])
+
         complete_ledger = ledger.read_bytes()
         complete_lines = complete_ledger.splitlines(keepends=True)
-        self.assertEqual(len(complete_lines), 14)
+        self.assertEqual(len(complete_lines), 15)
         ledger_identity = os.stat(ledger)
         real_write = os.write
         partial_written = False
