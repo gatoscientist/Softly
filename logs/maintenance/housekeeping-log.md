@@ -63,3 +63,11 @@ Se revisaron los dos documentos de investigación/guía del arenero del Laborato
 Se completó la navegación de directorios de mayor valor: en Softly se añadieron índices para documentación, arquitectura, gobernanza, plantillas, hilos y fuentes; en el Laboratorio se añadieron índices para la raíz de Soft Agents, TITAN, Cytryna, GatoSD, gAtoSD y los perfiles de referencia de auditoría. Se enlazaron dos comentarios de gAto que estaban sin índice: la obsolescencia observada de la estructura de auditoras y la crítica al manual de TITAN.
 
 Los índices restantes sin README corresponden a directorios de un solo archivo, snapshots o carpetas TEAM que no se modificaron. La ausencia de un README se deja como decisión consciente, no como deuda automática.
+
+
+## Verificación terminal de la pasada — 2026-11-14
+
+- Softly: 74 archivos Markdown, 30 README; enlaces locales de todos los documentos nuevos/actualizados comprobados y cobertura de los 66 archivos previos completada.
+- Laboratorio: 127 archivos Markdown en total; 77 vigentes fuera de `.old/`, con enlaces locales revisados. Se corrigió el único enlace roto encontrado.
+- Árboles completos y ramas sin divergencia respecto del punto de inicio de la pasada. No se modificaron contratos ni agentes.
+- La cobertura se limita a enlaces locales; no equivale a validar destinos externos, ejecución runtime ni contenido binario de PDF/ZIP.
