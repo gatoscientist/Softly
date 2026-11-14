@@ -27,4 +27,4 @@ La primera revisión del panorama está en `sources/2026-11-agent-design-landsca
 
 - [Material de investigación TITAN y antecedente SOFA Agent (13-11-2026)](notes/2026-11-13-material-titan-sofa-agent.md): ficha de ingesta de cinco documentos aportados sobre TITAN, sus alcances y discrepancias, y registro del antecedente SOFA Agent pendiente de incorporar como artefacto original. Es dataset consultable bajo demanda, no lectura obligatoria.
 
-- [SYN-20261113-001 — Línea base de contaminación multi-rama en TITAN](syntheses/2026-11-13-linea-base-contaminacion-multirrama-titan.md): inventario de las siete ramas observadas, residuos por árbol, evidencia de coordinación/integración y protocolo de medición posterior a la limpieza. Investigación preliminar; no es auditoría final.
+- [SYN-20261113-001 — Contaminación por fusión desarrollador–proyecto](syntheses/2026-11-13-linea-base-contaminacion-multirrama-titan.md): investigación centrada en cómo la identidad, preferencias, supuestos y modelos mentales de desarrolladores humanos o agentes se incorporan al proyecto sin decisión consciente. La proliferación de ramas queda como línea base operacional secundaria.
