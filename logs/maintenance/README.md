@@ -35,3 +35,5 @@ Cada sesión de mantenimiento debe registrar:
 ## Convención
 
 Mantener un registro detallado por pasada cuando el trabajo sea amplio. La bitácora de orden resume las causas y aprendizajes para poder detectar patrones entre sesiones. No sobrescribir registros anteriores: agregar una nueva entrada.
+
+- [Revisión de implementación F-03 — recuperación conservadora del ledger (2026-11-14)](2026-11-14-f03-recovery-review.md): revisión estática del candidato, verificación del lock, seis bloqueadores y punto de continuación. No certifica pruebas ejecutadas.
