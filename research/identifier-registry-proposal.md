@@ -1,6 +1,6 @@
 # Propuesta de registro de identificadores y relaciones
 
-**Estado:** propuesta descriptiva no normativa. No modifica el esquema JSON vigente ni autoriza migraciones.
+**Estado:** CONGELADA por instrucción de gAto. No normativa; sin aprobación ni implementación. No revisar ni activar hasta después del tercer ciclo de auditoría.
 
 ## Objetivo
 
