@@ -26,6 +26,7 @@ Cada afirmación importante debe distinguir evidencia, observación, hipótesis,
 ## Cómo empezar
 
 1. Lee [SOFTLY.md](SOFTLY.md): mandato, límites y reglas obligatorias de inicio y continuidad.
+2. Usa [docs/README.md](docs/README.md) como índice de documentación transversal; luego revisa [docs/operating-model.md](docs/operating-model.md) para recuperar el método de trabajo y responsabilidades.
 2. Lee [docs/operating-model.md](docs/operating-model.md): método de trabajo y responsabilidades.
 3. Recupera el checkpoint vigente antes de continuar trabajo previo. Para el trabajo de molde y agentes blandos, lee las secciones 15, 16 y 17 de [la síntesis de agentes que construyen agentes](research/syntheses/2026-11-13-de-agentes-que-construyen-agentes.md): la prioridad inmediata está en 17.12. La sección 17.4 conserva una línea anterior sobre el modelo técnico de conocimiento.
 4. Revisa [docs/research-method.md](docs/research-method.md): cómo investigar y conservar evidencia.
