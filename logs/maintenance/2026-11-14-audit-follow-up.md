@@ -191,3 +191,16 @@ Se compararon con `docs/architecture/agent-model-v0.1.md`, `agents/templates/age
 Se creó `research/notes/2026-11-14-cruce-estructura-agentes-soft.md` con síntesis, procedencia, aportes, diferencias y límites. Se enlazó desde `research/README.md` y `research/notes/README.md`. En el Laboratorio se actualizaron los estados de ambos elementos en el índice del arenero y se enlazó la síntesis de Softly. Los originales permanecen intactos; no se movieron ni se modificaron agentes, contratos o plantillas.
 
 Aporte recuperado especialmente útil: estructura física progresiva por etapas (definición mínima → trabajo → continuidad → evaluación), sin crear carpetas vacías para aparentar madurez. Se deja como recomendación a evaluar, no como cambio normativo aprobado.
+
+
+### Cobertura de índices y navegación de directorios
+
+Se revisó qué directorios con archivos carecían de README y se añadieron índices en los espacios de navegación que concentran varios documentos o requieren orientación:
+
+**Softly:** `docs/README.md`, `docs/architecture/README.md`, `docs/governance/README.md`, `agents/templates/README.md`, `logs/threads/README.md`, `templates/README.md` y `research/sources/README.md`. Se enlazaron desde las portadas correspondientes. Los directorios restantes sin README contienen un solo archivo (handoff, research, security, schema o hilo archivado); se dejaron sin índice adicional para evitar ruido.
+
+**Laboratorio:** se crearon índices en `Soft Agents/README.md`, `Soft Agents/TITAN/README.md`, `Soft Agents/Cytryna/README.md`, `Soft Agents/GatoSD/README.md`, `Soft Agents/gAtoSD/README.md` y `eL arenero del gAto/AUDITORIA/agentes/README.md`. Se enlazó el índice general de Soft Agents desde la portada y se incorporaron enlaces a dos notas de gAto que estaban sin indexar: el comentario de que la estructura de auditoras ya había quedado obsoleta y el feedback sobre el manual de TITAN.
+
+Se preservaron los textos originales. El argumento de `Soft Agents/gAtoSD/Argumento malo pero con fundamentos.txt` quedó clasificado como borrador argumental con afirmaciones técnicas y jurídicas no verificadas; no se trata como conclusión legal. Las carpetas de Cytryna y GatoSD solo contienen marcadores `gitkeep` en sus equipos actual e histórico; los índices declaran esa limitación y no infieren despliegue.
+
+No se añadieron README a directorios `TEAM`, snapshots históricos o carpetas de un solo archivo donde un índice no aportaría navegación significativa. Los enlaces locales de los nuevos índices y portadas actualizadas se comprobaron contra los árboles actuales.
