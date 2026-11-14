@@ -55,7 +55,7 @@ Los tres documentos indican explícitamente que no son normativos y que no deben
 
 ## 5. Cambios y verificación
 
-Se actualizaron los índices de investigación, notas y bitácora; se marcaron las tres propuestas como congeladas; se creó este informe. Los archivos modificados se releen desde GitHub. Árbol posterior: 131 entradas, 97 blobs, 34 directorios y 83 Markdown. HEAD final verificado: `09f9322cbdfa6dc729e828d1b6a83a6a5834a2aa`.
+Se actualizaron los índices de investigación, notas y bitácora; se marcaron las tres propuestas como congeladas; se creó este informe. Los archivos modificados se releen desde GitHub. Antes de incorporar este informe y su enlace, el árbol contenía 131 entradas, 97 blobs, 34 directorios y 83 Markdown. Tras registrar el informe y actualizar su índice, el árbol final contiene 132 entradas, 98 blobs, 34 directorios y 84 Markdown. HEAD final verificado: `bafa73b260c439c168f7a7baae4250c5f188b87c`.
 
 ## Cierre
 
