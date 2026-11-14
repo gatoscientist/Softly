@@ -934,3 +934,28 @@ La primera ejecución no busca perfección ni presupone que el molde cubra todo.
 
 **Próximo paso inmediato:** revisar el brief y los artefactos actuales de TITAN, contrastarlos con el molde v0.1, y diseñar el molde/perfiles mínimos antes de iniciar el primer ciclo. Mantener la validación con briefs contrastantes como prueba de portabilidad del molde, sin permitir que desplace el objetivo inmediato de preparar el equipo de TITAN.
 
+
+
+### 17.13 Cierre documental y continuidad tras mantenimiento del 14-11-2026
+
+**Fecha:** 2026-11-14  
+**Estado:** mantenimiento documental persistido; siguiente fase de limpieza autónoma pendiente.
+
+Durante la sesión se ordenó navegación, índices, procedencia y continuidad en `gatoscientist/Softly` y `gatoscientist/Laboratorio-de-agentes`, sin modificar contratos ni agentes. Se crearon y actualizaron README de directorios significativos, se corrigieron enlaces relativos, se documentó el cruce de dos documentos de estructura de agentes blandos con el modelo/molde de Softly, se inventarió el arenero y se creó una bitácora de mantenimiento iterativo.
+
+**Estado heredado de la pasada de mantenimiento:**
+- Softly `main`: `6aa78a4bbacbd6235f9c6e05e5f51681f55cbd0c`.
+- Laboratorio-de-agentes `main`: `4d1d1da87c9b368cbc2115d7622778598a0f4c69`.
+- No se modificaron `AGENT.md`, `CONTRACT.md`, `PROFILE.md`, `PERMISSIONS.md`, TEAM ni procedimientos de agentes.
+- No se modificó el repositorio Auditoria ni TITAN.
+- No se ejecutaron pruebas runtime o de aceptación. PDFs y ZIP no inspeccionados internamente no se consideran validados.
+- Se dejó propuesta como siguiente tarea autónoma construir una matriz de procedencia y respaldo e inspeccionar paquetes históricos cuando sea posible.
+
+**Registro del hilo recién cerrado:** `logs/threads/hilo I 2026-11-14 hora-no-registrada F 2026-11-14 11-25.md`. Se guardó como síntesis fiel del contexto disponible, no como transcripción íntegra: el historial completo no estaba disponible en el contexto de cierre. La hora inicial se dejó como no registrada, sin inventarla. El archivo y el índice se volvieron a leer desde `main`; commits de archivo, índice, corrección de nombre y eliminación del provisional quedaron confirmados. El último commit de esa secuencia fue `4d3f4142c1eff087a0762bed5d636b73b487448e`.
+
+**Instrucciones para el siguiente hilo:**
+1. Leer `SOFTLY.md`, `docs/operating-model.md`, `docs/governance/human-director-identity.md`, `docs/governance/communication-style.md` y este checkpoint.
+2. Mantener la prioridad estratégica 17.12: molde de agentes y desarrollo iterativo de TITAN. No iniciar esa ejecución sin revisar primero el brief y artefactos actuales de TITAN.
+3. Si gAto pide continuar con limpieza autónoma, la próxima tarea documental propuesta es la matriz de procedencia y respaldo, sin tocar contratos ni agentes.
+4. Preservar PDFs, ZIP, snapshots históricos, arenero y cAjita; inspeccionar contenido antes de cualquier propuesta de eliminación.
+5. No presentar el registro del hilo anterior como transcripción completa: fue una síntesis por limitación de contexto. No pedir a gAto que repita información ya persistida.
