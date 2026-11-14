@@ -14,6 +14,10 @@ class RuntimeConfigurationError(Exception):
     """El manifiesto no cumple el contrato mínimo del runtime."""
 
 
+class _PolicyDenied(Exception):
+    """La solicitud no supera las reglas de autorización del runtime."""
+
+
 class SoftlyRuntime:
     """Runtime mínimo con autorización explícita y workspace confinado.
 
@@ -65,14 +69,12 @@ class SoftlyRuntime:
             or len(set(allowed)) != len(allowed)
         ):
             raise RuntimeConfigurationError("El manifiesto no cumple el esquema mínimo requerido.")
-        # Mini 0.1 solo implementa esta operación concreta; no se aceptan
-        # alias, nombres alternativos ni capacidades declarativas desconocidas.
         if set(allowed) != {"create_text_file"}:
             raise RuntimeConfigurationError("El manifiesto contiene capacidades no implementadas o ambiguas.")
         return data
 
     def execute(self, task_id: Any, operation: Any, **parameters: Any) -> dict[str, Any]:
-        """Autoriza y ejecuta una solicitud; siempre intenta registrar el evento."""
+        """Autoriza, ejecuta y emite exactamente un evento por solicitud."""
         requested = operation if isinstance(operation, str) else None
         event: dict[str, Any] = {
             "event_id": str(uuid.uuid4()),
@@ -83,43 +85,51 @@ class SoftlyRuntime:
             "execution_result": "rejected",
             "artifact_reference": None,
         }
-        result: dict[str, Any]
+
         try:
             if not isinstance(task_id, str) or task_id != self.manifest["task"]["task_id"]:
-                raise PermissionError("La tarea solicitada no está declarada en el manifiesto.")
+                raise _PolicyDenied("La tarea solicitada no está declarada en el manifiesto.")
             if not isinstance(operation, str) or operation not in self.manifest["allowed_operations"]:
-                raise PermissionError("Operación no autorizada por el manifiesto.")
+                raise _PolicyDenied("Operación no autorizada por el manifiesto.")
             if operation != "create_text_file":
-                raise PermissionError("Operación no implementada.")
+                raise _PolicyDenied("Operación no implementada.")
             if set(parameters) != {"path", "content"}:
-                raise PermissionError("Parámetros ausentes o no reconocidos para create_text_file.")
+                raise _PolicyDenied("Parámetros ausentes o no reconocidos para create_text_file.")
 
             target = self._resolve_target(parameters.get("path"))
             content = parameters.get("content")
             if not isinstance(content, str):
-                raise PermissionError("El contenido debe ser texto UTF-8.")
-
-            event["authorization_result"] = "authorized"
-            self._create_new_text_file(target, content)
-            event["execution_result"] = "success"
-            event["artifact_reference"] = target.relative_to(self.workspace).as_posix()
-            result = {"ok": True, "artifact_reference": event["artifact_reference"]}
-        except PermissionError as exc:
+                raise _PolicyDenied("El contenido debe ser texto UTF-8.")
+        except _PolicyDenied as exc:
             result = {"ok": False, "error": str(exc)}
-        except FileExistsError:
-            event["authorization_result"] = "authorized"
-            event["execution_result"] = "error"
-            result = {"ok": False, "error": "El archivo ya existe; no se sobrescribe."}
         except OSError as exc:
+            # Un fallo al inspeccionar la ruta ocurre antes de conceder
+            # autorización: también debe producir un evento, sin fingir que
+            # la política rechazó explícitamente la solicitud.
             event["execution_result"] = "error"
             result = {"ok": False, "error": f"Error de sistema de archivos: {exc.__class__.__name__}"}
-        finally:
-            self._append_event(event)
+        else:
+            # La autorización queda fijada antes de tocar el filesystem para
+            # crear el artefacto. Los errores OS posteriores no la revocan.
+            event["authorization_result"] = "authorized"
+            try:
+                self._create_new_text_file(target, content)
+            except OSError as exc:
+                event["execution_result"] = "error"
+                result = {"ok": False, "error": f"Error de sistema de archivos: {exc.__class__.__name__}"}
+            else:
+                event["execution_result"] = "success"
+                event["artifact_reference"] = target.relative_to(self.workspace).as_posix()
+                result = {"ok": True, "artifact_reference": event["artifact_reference"]}
+
+        # Un solo punto de emisión: nunca se registra un segundo evento desde
+        # los bloques de excepción ni se reclasifica autorización por un OSError.
+        self._append_event(event)
         return result
 
     def _resolve_target(self, requested_path: Any) -> Path:
         if not isinstance(requested_path, str) or not requested_path.strip() or "\x00" in requested_path:
-            raise PermissionError("Ruta ausente o inválida.")
+            raise _PolicyDenied("Ruta ausente o inválida.")
         candidate = Path(requested_path)
         if not candidate.is_absolute():
             candidate = self.workspace / candidate
@@ -128,14 +138,13 @@ class SoftlyRuntime:
         try:
             resolved.relative_to(self.workspace)
         except ValueError as exc:
-            raise PermissionError("La ruta solicitada está fuera del workspace autorizado.") from exc
+            raise _PolicyDenied("La ruta solicitada está fuera del workspace autorizado.") from exc
         if resolved == self.workspace:
-            raise PermissionError("La ruta debe identificar un archivo dentro del workspace.")
+            raise _PolicyDenied("La ruta debe identificar un archivo dentro del workspace.")
         if not resolved.parent.is_dir():
-            raise PermissionError("El directorio padre debe existir dentro del workspace.")
-        # No aceptar un destino que ya exista, incluidos symlinks.
+            raise _PolicyDenied("El directorio padre debe existir dentro del workspace.")
         if candidate.exists() or candidate.is_symlink() or resolved.exists():
-            raise PermissionError("El destino ya existe; no se sobrescribe.")
+            raise _PolicyDenied("El destino ya existe; no se sobrescribe.")
         return resolved
 
     @staticmethod
@@ -144,10 +153,26 @@ class SoftlyRuntime:
         if hasattr(os, "O_NOFOLLOW"):
             flags |= os.O_NOFOLLOW
         fd = os.open(target, flags, 0o600)
-        with os.fdopen(fd, "w", encoding="utf-8", newline="") as handle:
-            handle.write(content)
+        try:
+            with os.fdopen(fd, "w", encoding="utf-8", newline="") as handle:
+                handle.write(content)
+        except BaseException:
+            # No dejar un artefacto parcial si falla la escritura después de
+            # que el sistema operativo alcanzó a crear el archivo.
+            try:
+                target.unlink(missing_ok=True)
+            except OSError:
+                pass
+            raise
 
     def _append_event(self, event: dict[str, Any]) -> None:
         self.events_path.parent.mkdir(parents=True, exist_ok=True)
-        with self.events_path.open("a", encoding="utf-8", newline="\n") as handle:
-            handle.write(json.dumps(event, ensure_ascii=False, sort_keys=True) + "\n")
+        payload = (json.dumps(event, ensure_ascii=False, sort_keys=True) + "\n").encode("utf-8")
+        flags = os.O_WRONLY | os.O_CREAT | os.O_APPEND
+        fd = os.open(self.events_path, flags, 0o600)
+        try:
+            written = os.write(fd, payload)
+            if written != len(payload):
+                raise OSError("Escritura incompleta del evento en events.jsonl.")
+        finally:
+            os.close(fd)
