@@ -13,7 +13,7 @@ Los tamaños y hashes siguientes provienen del índice `eL arenero del gAto/READ
 | Archivo | Tipo / tamaño | Blob SHA | Inspección del contenido | Respaldo demostrado | Estado / acción |
 |---|---:|---|---|---|---|
 | Arquitectura de Agentes Blandos.pdf | PDF · 2.270.214 B | `c8d45d2e48d4605d75671f1afc0f635dad16303c` | No inspeccionado | No | Conservar; inspección pendiente |
-| Auditoría TITAN.pdf | PDF · 314.786 B | `f16511bace92cb0ba75a077f8110837f89952409` | Texto indexado consultado; binario exacto no cotejado | Candidato: dos registros de Biblioteca con mismo tamaño y fragmentos coincidentes; sin hash binario independiente | Posible duplicado lógico, no confirmado; no borrar |
+| Auditoría TITAN.pdf | PDF · 314.786 B | `f16511bace92cb0ba75a077f8110837f89952409` | Texto indexado consultado; binario exacto no cotejado | Biblioteca: un registro de mismo nombre y tamaño; sin cotejo binario | Coincidencia posible, no demostrada; no borrar |
 | Auditoría de Fusión de Agentes.pdf | PDF · 280.377 B | `cfd3479003c1b34d7f8a4682473812f051248096` | No inspeccionado | No | Conservar; inspección pendiente |
 | Auditoría y refactorización de código Titan.pdf | PDF · 214.535 B | `2fb15f8097cf866164088dcf3514ffaa06fc9eb7` | No inspeccionado | No | Conservar; inspección pendiente |
 | Cytryna fusión de agentes blandos en el agente duro y costo de limpieza.pdf | PDF · 164.558 B | `f771ad179983f2bfcbbef35b62e2ef774f7f702d` | No inspeccionado | No | Conservar; inspección pendiente |
@@ -46,7 +46,7 @@ Git distingue mayúsculas y minúsculas. Los README explican la diferencia y enl
 
 ### 3.2 Posible duplicación de Auditoría TITAN.pdf
 
-El inventario previo registra dos elementos de Biblioteca (`Auditoría TITAN.pdf` y `Auditoría TITAN(1).pdf`) con igual tamaño y fragmentos de texto indexado coincidentes. Esto respalda una hipótesis de duplicación de contenido, pero no prueba identidad binaria. El PDF del arenero tiene el mismo tamaño; tampoco se ha probado que sea el mismo binario. No eliminar ninguna copia.
+El inventario actual de la Biblioteca muestra un único registro `Auditoría TITAN.pdf` de 314.786 bytes; no aparece un segundo registro `Auditoría TITAN(1).pdf`. El índice de texto ofrece fragmentos de un informe de cuatro páginas. El PDF del arenero tiene el mismo tamaño, pero no se pudo comparar el contenido binario ni calcular un hash independiente. Se corrige la anotación previa que afirmaba la existencia de dos registros. No se declara duplicación binaria ni se elimina ninguna copia.
 
 ### 3.3 Materiales mencionados fuera del inventario
 
@@ -62,7 +62,7 @@ El README del arenero declara expresamente que `el gAto dice.txt` permanece y no
 2. La trazabilidad es parcial: hay hashes Git y tamaños para los archivos del arenero, pero faltan fecha de incorporación, aportante/origen específico, finalidad, referencias de uso y estado de respaldo verificable por elemento.
 3. La cAjita tiene una política de conservación clara y un inventario pequeño.
 4. Las dos rutas del arenero están documentadas como distintas; la duplicidad nominal es una fuente de error operativo, no autorización para fusionarlas.
-5. Hay una hipótesis de duplicación de Auditoría TITAN que requiere cotejo binario.
+5. Hay una coincidencia de nombre y tamaño entre el PDF del arenero y un único registro de Biblioteca; requiere cotejo binario y no prueba duplicación.
 6. No hay evidencia suficiente para eliminar ningún archivo del inventario.
 
 ## 5. Próximas acciones seguras
@@ -85,3 +85,36 @@ Esta matriz solo podrá declararse completa cuando:
 - toda intervención esté registrada y verificada en Git.
 
 **Estado actual: ABIERTO.** No se ha certificado la integridad total del repositorio, no se han validado los PDF/ZIP y no se ha autorizado ninguna eliminación.
+
+
+## 7. Auditoría recursiva del árbol Git — corte 2026-11-14
+
+Árbol consultado: `main`, HEAD `9037434d793bbdbd6aca510b474dea1d9ac8ae2e`; respuesta recursiva completa (`truncated=false`).
+
+- 124 entradas: 90 blobs y 34 directorios.
+- 76 archivos Markdown, incluidos 30 README.
+- 9 PDF, 1 TXT, 2 JSONL y 1 JSON; 1 archivo `.gitattributes`.
+- No se encontraron dos blobs con el mismo SHA dentro del árbol actual.
+- La única colisión de rutas ignorando mayúsculas/minúsculas corresponde a `eL aRenero del gAto/` y `eL arenero del gAto/`, incluidas sus respectivas README. Es una diferencia ya conocida y documentada; no se fusionó.
+- Seis directorios contienen únicamente README: `evaluations/datasets/`, `evaluations/plans/`, `evaluations/runs/`, `experiments/cases/`, `experiments/protocols/` y `experiments/results/`. Se clasifican como estructuras preparadas sin artefactos todavía, no como archivos huérfanos ni basura. Se conservan.
+
+### Archivos que estaban sin enlace desde sus índices
+
+Se detectaron y enlazaron:
+- `archive/threads/2026-11-13-hilo-audelin.md` desde `archive/README.md`.
+- `logs/2026-11-13-identity-directive-and-thread-closure.md` desde `logs/README.md`.
+- `research/bibliography.md` desde `research/README.md`.
+
+No se movieron ni eliminaron estos archivos; la corrección fue de navegación.
+
+### Referencias a estructuras inexistentes corregidas
+
+- `README.md` todavía señalaba la sección 17.12 como prioridad inmediata; se alineó con la prioridad vigente de integridad de Softly y la pausa del desarrollo de agentes.
+- `logs/README.md` enumeraba `incidents.jsonl` y `observations.jsonl` como archivos presentes, aunque no existen en el árbol. Ahora se declara explícitamente que aún no existen.
+- `experiments/README.md` describía un directorio `artifacts/` que no existe; ahora aclara que los artefactos se incorporarán cuando un experimento los requiera.
+
+### Límite de inspección binaria
+
+La API de GitHub permite recuperar los PDF como base64, pero el entorno de inspección disponible no permite materializar esos bytes directamente desde el conector. La Biblioteca ofrece texto indexado para un único `Auditoría TITAN.pdf`, pero no permite cotejar el binario del repositorio. Los otros ocho PDF no tienen una copia identificada en el inventario de Biblioteca consultado. Por tanto, el contenido binario de los nueve PDF sigue pendiente de inspección; no se declaran validados.
+
+**Resultado de esta pasada:** inventario recursivo completo y clasificaciones estructurales verificadas; navegación e instrucciones de prioridad corregidas; ninguna eliminación realizada. La auditoría de enlaces de los 76 Markdown no se declara completa en esta pasada.
