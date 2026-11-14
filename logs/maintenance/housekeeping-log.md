@@ -71,3 +71,43 @@ Los índices restantes sin README corresponden a directorios de un solo archivo,
 - Laboratorio: 127 archivos Markdown en total; 77 vigentes fuera de `.old/`, con enlaces locales revisados. Se corrigió el único enlace roto encontrado.
 - Árboles completos y ramas sin divergencia respecto del punto de inicio de la pasada. No se modificaron contratos ni agentes.
 - La cobertura se limita a enlaces locales; no equivale a validar destinos externos, ejecución runtime ni contenido binario de PDF/ZIP.
+
+
+## 2026-11-14 — Auditoría recursiva del árbol y reconciliación de índices
+
+**Corte Git verificado:** `main`, HEAD `9037434d793bbdbd6aca510b474dea1d9ac8ae2e`, árbol recursivo completo (`truncated=false`).
+
+**Estado observado**
+- El repositorio contiene 124 entradas: 90 blobs y 34 directorios; 76 Markdown, 30 README, 9 PDF, 1 TXT, 2 JSONL y 1 JSON.
+- No hay blobs con SHA repetido en el árbol actual.
+- La única colisión de ruta sin distinguir mayúsculas/minúsculas es la pareja documentada de directorios del arenero.
+- Seis directorios de evaluación/experimentos contienen solo su README y no tienen aún artefactos. Se consideran scaffolding intencional, no basura.
+- Tres archivos históricos no aparecían enlazados desde su índice: el hilo archivado de Audelin, el registro de directiva de identidad y la bibliografía.
+- Había referencias documentales a una prioridad operativa antigua, dos JSONL inexistentes y un directorio `experiments/artifacts/` inexistente.
+- El inventario actual de Biblioteca muestra un único `Auditoría TITAN.pdf` de 314.786 bytes; no aparece el segundo registro citado en la nota anterior.
+
+**Acciones realizadas**
+- Se actualizó el README raíz para reflejar que la integridad de Softly es la prioridad y que el desarrollo de agentes está en pausa.
+- Se aclaró en `logs/README.md` que `incidents.jsonl` y `observations.jsonl` todavía no existen.
+- Se corrigió `experiments/README.md` para no presentar `artifacts/` como directorio presente.
+- Se enlazó el hilo de Audelin desde `archive/README.md`, el registro de identidad desde `logs/README.md` y la bibliografía desde `research/README.md`.
+- Se corrigió la nota de comparación con Biblioteca en el README del arenero: el inventario actual muestra un solo registro de Auditoría TITAN, y la igualdad de tamaño no prueba identidad binaria.
+- Se amplió la matriz de procedencia con el inventario recursivo, los seis directorios scaffolding, las colisiones, los enlaces añadidos y las limitaciones de inspección binaria.
+
+**Commits de esta intervención**
+- `ed062d1b7374f29e0521752acacf1aa2ba33cd96` — README raíz.
+- `1e2dabcb8828c5471f776ac780df8bd2579745a0` — índice de logs.
+- `93231b0c46f8bdb41b9d0049fe96712f2782bf58` — índice de experimentos.
+- `8c66f84e594b64f7085cc0f0bef04525bede03ef` — índice del archivo histórico.
+- `2efb9f3d0347988a05b0fd755ce6483fc6bbb68d` — índice de logs/registro de identidad.
+- `9037434d793bbdbd6aca510b474dea1d9ac8ae2e` — índice de investigación/bibliografía y HEAD observado antes de esta ampliación.
+- `3e646d58da6bb85e478c3d84b82d6af89e5c1e73` — corrección de evidencia de Biblioteca en el README del arenero.
+- `500d97b35129df7b2865a11a4d6a252a05768c96` — ampliación de la matriz.
+
+**Pendientes**
+- Inspeccionar internamente los nueve PDF y cotejar respaldos binarios independientes. La Biblioteca solo expone texto indexado de un archivo y no permite comparar el binario con el blob Git.
+- Ejecutar una auditoría automatizada completa de enlaces Markdown en los 76 archivos.
+- Completar la matriz de procedencia con fechas de incorporación, aportantes y destinos de respaldo cuando haya evidencia.
+- No borrar ni fusionar carpetas del arenero sin resolver su intención con evidencia suficiente.
+
+**Aprendizaje preventivo:** los índices también envejecen. Una revisión de árbol debe contrastar README, rutas reales y prioridad normativa, no limitarse a comprobar que los archivos existen. Los directorios que solo contienen README pueden ser estructuras deliberadas y no deben tratarse como residuos automáticamente.
