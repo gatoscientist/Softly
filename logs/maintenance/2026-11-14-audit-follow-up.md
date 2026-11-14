@@ -177,3 +177,17 @@ Como el informe `Auditoría TITAN.pdf` describe el estado de `gatoscientist/TITA
 ### Comparación de paquetes ZIP
 
 En `Proyectos/TITAN/` del Laboratorio, los ocho ZIP tienen Git blob SHAs distintos: no existen duplicados binarios exactos entre esos ocho archivos. Se añadió esta conclusión al índice del directorio. La equivalencia parcial o funcional solo puede evaluarse inspeccionando el contenido interno; no se eliminó ningún ZIP.
+
+
+### Recuperación y cruce de investigación sobre agentes Soft
+
+Se leyeron los dos documentos del arenero del Laboratorio:
+
+- `eL arenero del gAto/INVESTIGACION/estructura-de-agentes-soft.md` (blob `431949c2ddbdef8834b2e0365f4bae369f85d9f4`).
+- `eL arenero del gAto/INSTRUCCIONES-PARA-CREAR-AGENTES-SOFT.md` (blob `42b20aabb961a90a4d9eb3e078a2d2c82512800c`).
+
+Se compararon con `docs/architecture/agent-model-v0.1.md`, `agents/templates/agent-generation-mold.md` y `agents/templates/agent-profile.md` de Softly. No son duplicados exactos: la investigación aporta fundamentos y separación de espacios; la guía aporta crecimiento por etapas y reglas operativas; Softly contiene el modelo lógico de definición/brief/asignación/sesión y el molde de generación desde brief.
+
+Se creó `research/notes/2026-11-14-cruce-estructura-agentes-soft.md` con síntesis, procedencia, aportes, diferencias y límites. Se enlazó desde `research/README.md` y `research/notes/README.md`. En el Laboratorio se actualizaron los estados de ambos elementos en el índice del arenero y se enlazó la síntesis de Softly. Los originales permanecen intactos; no se movieron ni se modificaron agentes, contratos o plantillas.
+
+Aporte recuperado especialmente útil: estructura física progresiva por etapas (definición mínima → trabajo → continuidad → evaluación), sin crear carpetas vacías para aparentar madurez. Se deja como recomendación a evaluar, no como cambio normativo aprobado.
