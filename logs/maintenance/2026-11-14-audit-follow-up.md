@@ -204,3 +204,15 @@ Se revisó qué directorios con archivos carecían de README y se añadieron ín
 Se preservaron los textos originales. El argumento de `Soft Agents/gAtoSD/Argumento malo pero con fundamentos.txt` quedó clasificado como borrador argumental con afirmaciones técnicas y jurídicas no verificadas; no se trata como conclusión legal. Las carpetas de Cytryna y GatoSD solo contienen marcadores `gitkeep` en sus equipos actual e histórico; los índices declaran esa limitación y no infieren despliegue.
 
 No se añadieron README a directorios `TEAM`, snapshots históricos o carpetas de un solo archivo donde un índice no aportaría navegación significativa. Los enlaces locales de los nuevos índices y portadas actualizadas se comprobaron contra los árboles actuales.
+
+
+## Verificación terminal de navegación y alcance (antes del commit de este cierre)
+
+- Softly: el árbol contiene 74 archivos Markdown y 30 README. Se comprobaron los enlaces locales de los índices, documentos de navegación y registros creados/actualizados; la auditoría previa cubrió los 66 Markdown existentes antes de la ampliación de índices y los archivos nuevos se comprobaron individualmente. No quedan destinos locales rotos identificados.
+- Laboratorio: el árbol contiene 127 archivos Markdown en total; 77 corresponden a la estructura vigente excluyendo snapshots `.old/`. Se comprobaron los enlaces locales de los 71 Markdown vigentes de la pasada inicial y los seis índices nuevos/actualizados de forma individual. El único enlace roto detectado fue corregido; no quedan destinos locales rotos identificados en ese alcance.
+- Softly mantiene 30 README y Laboratorio 37 README. Los directorios sin README restantes son archivos individuales, snapshots o carpetas TEAM deliberadamente no alteradas; no se persigue crear un índice en cada carpeta por obligación mecánica.
+- Los árboles recursivos de ambos repositorios se recuperaron completos (`truncated=false`).
+- La comparación de cambios contra los HEAD iniciales de esta pasada no muestra modificaciones a `AGENT.md`, `CONTRACT.md`, `PROFILE.md`, `PERMISSIONS.md`, archivos `TEAM/` ni procedimientos de agentes.
+- HEAD consultado antes de registrar esta verificación: Softly `d3ddc6c25a0c2f49b7274d144761732fc2336ebe`; Laboratorio `4d1d1da87c9b368cbc2115d7622778598a0f4c69`.
+
+El presente registro se actualizará mediante un commit adicional en Softly; la rama y el árbol se vuelven a consultar inmediatamente después para confirmar el HEAD final.
