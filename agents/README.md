@@ -5,7 +5,7 @@ Este directorio conserva definiciones, contratos y versiones de agentes que estu
 ## Estructura
 
 - `profiles/`: fichas por agente.
-- `templates/`: plantilla común.
+- `templates/`: briefs, molde de generación y perfiles ([índice de plantillas](templates/README.md)).
 - Cada perfil debe tener ID, versión, propósito, límites, capacidades, herramientas, memoria, autonomía, supervisión, evaluaciones y cambios.
 
 ## Versionado
