@@ -21,6 +21,7 @@ La primera revisión del panorama está en `sources/2026-11-agent-design-landsca
 ## Notas de investigación
 
 - [SOFT-RES-001 — Anatomía de un agente persistente](notes/2026-11-13-anatomia-agente-persistente.md): ficha exploratoria sobre contrato común, estructura específica e híbrida; hipótesis y preguntas abiertas, no normativa.
+- [Conocí a Cytryna](notes/Conocí%20a%20Cytryna.md): registro histórico de la primera revisión de Cytryna, sus componentes y hallazgos estáticos. No equivale a una validación runtime.
 
 ## Material histórico incorporado
 
