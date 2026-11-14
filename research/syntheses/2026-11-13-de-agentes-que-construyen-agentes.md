@@ -1045,3 +1045,27 @@ Cada paquete incluye README, AGENT, PROFILE, CONTRACT, OPERATING-PROCEDURE, PERM
 
 
 **Ampliación de completitud de paquetes:** cada uno de los cuatro paquetes incorpora además `instructions/system.md`, `expertise/domain.md`, `skills/primary-skill.md` y `tools/catalog.md`. El catálogo declara requisitos y controles; no afirma que las herramientas estén conectadas ni concede permisos. Los índices del Laboratorio describen el equipo vigente como 1.0.0 Diseñado.
+
+
+### Cierre de sincronización 17.16 — 2026-11-14
+
+gAto solicitó completar la sincronización documental final y preparar el cierre del hilo.
+
+**Softly (gatoscientist/Softly):**
+- SOFTLY.md se sincronizó en sus secciones 1 y 9 y en su encabezado de estado: el ciclo de Softly Runtime Mini 0.2 quedó cerrado administrativamente por gAto en el corte 9e8bc10 de main, con limitaciones documentadas; la prioridad activa es el desarrollo de TITAN con DEVAGENTS 1.0.0 ya entregado.
+- El README.md raíz refleja el mismo cierre administrativo, enlaza los paquetes del Laboratorio y apunta al checkpoint 17.16.
+- Commits: ffca12abb0c34bc1749724beabbcd74c8c29b974 (SOFTLY.md), d60b5454cd4693bb5002cb641fdfa66c86a810b2 (encabezado SOFTLY.md), b610686ca20cd3638dbe7a6402342b8ca453a62d (README.md).
+
+**Tara (gatoscientist/Laboratorio-de-agentes):**
+- Se precisó el alcance AgentSEC 1.0.0: auditoría de ejecución PowerShell y AST (incluido Invoke-Expression); integridad de leases/hashes (vinculación, expiración, consumo único, replay y concurrencia); TLS (protocolos, certificados, validación y clientes HTTP); aislamiento del canal confidencial PrimusPrivado (contexto, historial, memoria, UI, rutas, mensajes, logs y telemetría).
+- Se alinearon AGENT, PROFILE, CONTRACT, OPERATING-PROCEDURE, README, expertise/domain, skills/primary-skill, tools/catalog y CHANGELOG. El alcance queda definido; no se afirma que las auditorías se hayan ejecutado ni que Tara esté habilitada.
+- Commits de los documentos principales: c8d31d41d79c5309a47078be54ec60ceeca13244 (AGENT), 98c92e00becc95f9fd4ba397d848f75555ed37b1 (PROFILE), c5433f78e5c52b3dbd9c080f831e2b50facb64c0 (CONTRACT), e186a22091095b19423e08810e52c41c37cb1534 (procedimiento), 66a9592af0484191ef9ff3bd37fce77fb5a79bdc (expertise), 8501740f7489898ba1c0530414b227cc4e25371a (skill), 37627b682b20ec1df998d180fc1089694f645b71 (tools), 30f7e85994c0742dcdf3f3fa66b82a48682630fb (README) y b2b7565f4881b6f034f2aea20fc78a3c24130aaa (CHANGELOG).
+
+**Manual y limpieza del Laboratorio:**
+- Soft Agents/TITAN/eL equipo del gAto/MANUAL-DE-USO.md se reescribió para cubrir únicamente copia de los cuatro paquetes completos, inicialización de cada especialista en conversación y primera tarea de TITAN.
+- Se eliminó el archivo el gAto quiere que leas esto Sotly.md de esa carpeta y se retiró su referencia del README del equipo.
+- Commits: 694043e4b3603b5be2d2fdcc84c594f0d33cb6a0 (manual), 2926bcaf6d31c2144a346fe3da504f37e1361e86 (eliminación), 155364f151ccf72a4d3c72e1414593da67cf5cbb (README equipo).
+
+**Verificación y límites:** los archivos principales modificados se releen desde main. La nota retirada responde 404. No se ejecutaron pruebas runtime ni auditorías dinámicas; el alcance de Tara es documental y profesional, no evidencia de una auditoría ya realizada. El análisis de referencia de TITAN se limitó a inspección documental/estática de los contratos y archivos relevantes, sin ejecutar comandos ni modificar el repositorio TITAN.
+
+**Cierre:** queda pendiente únicamente crear y verificar el registro documental de este hilo en logs/threads/ conforme a la sección 11 de SOFTLY.md. No declarar archivado hasta confirmar el archivo, el índice y el commit correspondiente.
