@@ -18,4 +18,4 @@ Consultar bajo demanda cuando un antecedente sea necesario. El checkpoint vigent
 
 - [Hilo del 14-11-2026, hora inicial no registrada–14:54 — creación de Katarina AgentDEV y cierre](hilo%20I%20hora-no-registrada%20F%202026-11-14%2014-54.md)
 
-- [Hilo del 14-11-2026, horas no registradas — implementación acotada y revisión F-03](hilo%20I%202026-11-14%20hora-no-registrada%20F%202026-11-14%20hora-no-registrada.md): snapshot de continuidad; diseño aprobado, rama y commits, revisión interna y bloqueadores pendientes. No es transcripción literal completa.
+- [Hilo del 14-11-2026, horas no registradas — implementación acotada y revisión F-03](hilo%20I%202026-11-14%20hora-no-registrada%20F%202026-11-14%20hora-no-registrada%20F03.md): snapshot de continuidad; diseño aprobado, rama y commits, revisión interna y bloqueadores pendientes. No es transcripción literal completa.
