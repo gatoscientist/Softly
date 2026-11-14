@@ -38,19 +38,19 @@ Cada afirmación importante debe distinguir evidencia, observación, hipótesis,
 
 | Área | Propósito |
 |---|---|
-| `docs/` | Principios, arquitectura, seguridad y método |
-| `research/` | Fuentes externas, fichas de lectura, síntesis y notas de casos históricos |
-| `agents/` | Catálogo, perfiles y versiones de agentes |
-| `experiments/` | Hipótesis, protocolos y resultados experimentales |
-| `evaluations/` | Datasets, criterios, métricas y regresiones |
-| `observations/` | Conductas observadas y casos que requieren explicación |
-| `decisions/` | Decisiones arquitectónicas con contexto y consecuencias |
-| `logs/` | Bitácora estructurada, hilos cerrados, derivados y mantenimiento |
-| `schemas/` | Esquemas para mantener registros consistentes |
-| `templates/` | Plantillas reutilizables |
-| `archive/` | Material histórico que ya no es operativo |
-| `cAjita del gAto/` | Material valioso que conviene consultar y conservar |
-| `eL arenero del gAto/` | Material temporal pendiente de clasificación |
+| [`docs/`](docs/README.md) | Principios, arquitectura, seguridad y método |
+| [`research/`](research/README.md) | Fuentes externas, fichas de lectura, síntesis y notas de casos históricos |
+| [`agents/`](agents/README.md) | Catálogo, perfiles y versiones de agentes |
+| [`experiments/`](experiments/README.md) | Hipótesis, protocolos y resultados experimentales |
+| [`evaluations/`](evaluations/README.md) | Datasets, criterios, métricas y regresiones |
+| [`observations/`](observations/README.md) | Conductas observadas y casos que requieren explicación |
+| [`decisions/`](decisions/README.md) | Decisiones arquitectónicas con contexto y consecuencias |
+| [`logs/`](logs/README.md) | Bitácora estructurada, hilos cerrados, derivados y mantenimiento |
+| [`schemas/`](schemas/README.md) | Esquemas para mantener registros consistentes |
+| [`templates/`](templates/README.md) | Plantillas reutilizables |
+| [`archive/`](archive/README.md) | Material histórico que ya no es operativo |
+| [`cAjita del gAto/`](cAjita%20del%20gAto/README.md) | Material valioso que conviene consultar y conservar |
+| [`eL arenero del gAto/`](eL%20arenero%20del%20gAto/README.md) | Material temporal pendiente de clasificación |
 
 ## Estado
 
