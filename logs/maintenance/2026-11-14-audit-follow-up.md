@@ -47,11 +47,11 @@ Los commits de cada archivo están registrados en el historial Git de ambos repo
 
 Se recuperaron nuevamente las ramas `main` y sus árboles recursivos después de los cambios. Ambos árboles respondieron completos (`truncated=false`).
 
-- **Softly HEAD:** `75d870503a050048305eddac22649c9075c05414`.
+- **Softly HEAD:** `e6ce1c7f06a51117d0490f925424944451212b08`.
   - `research/notes/Conocí a Cytryna.md` existe y la copia de raíz ya no existe.
   - `logs/derived/Hiloderivado.md` existe y la copia de raíz ya no existe.
   - El puntero actualizado, índices y este registro de mantenimiento existen.
-- **Laboratorio HEAD:** `164719f638d6a1202f10bf1527cc169ad33ee8a1`.
+- **Laboratorio HEAD:** `19a86e0ab219e9792d4f5f36b9f68e07ccbf4b9f`.
   - README raíz, índice de Auditoría y etiquetas de fuente canónica/snapshot histórico existen.
   - `Proyectos/el gAto estuvo aquí.txt` ya no aparece en el árbol.
   - El snapshot `Auditoras.old/TEAM/TEAM.md` permanece conservado.
