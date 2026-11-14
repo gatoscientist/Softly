@@ -171,3 +171,16 @@ Commits:
 - `866bb1e6eb2e6fc04e97b0223fe8f88d283d5dcb` — índice de experimentos.
 
 Corte previo a este registro: 126 entradas, 92 blobs, 34 directorios, 78 Markdown y 31 README.
+
+
+## 2026-11-14 — Archivo y cierre del hilo de mantenimiento
+
+Se archivó el hilo observable de mantenimiento y continuidad en `logs/threads/hilo I hora-no-registrada F 2026-11-14 hora-no-registrada.md`. Las horas se marcaron como no registradas porque no estaban disponibles de forma verificable. El registro conserva los mensajes visibles, las acciones técnicas reportadas, los identificadores de commits y los pendientes; excluye razonamiento privado y declara los límites de fidelidad.
+
+Se añadió el hilo al índice `logs/threads/README.md`.
+
+Commits:
+- `7b1f7838922d2efd3517201d0c4aabdcf24b69c6` — archivo del hilo.
+- `ab5b5b439aad91c6eb44540a5bfa596f07b03e11` — índice de hilos.
+
+No se borraron ni movieron archivos. El cierre no declara completada la inspección binaria de los nueve PDF ni valida un runtime.
