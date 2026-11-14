@@ -6,6 +6,7 @@ La bitácora conserva eventos de trabajo, no conclusiones implícitas.
 
 - `activity.jsonl`: acciones y eventos relevantes.
 - `decisions.jsonl`: referencias a decisiones formales.
+- [Registro de directiva de identidad y cierre de sesión (2026-11-13)](2026-11-13-identity-directive-and-thread-closure.md): antecedente de gobernanza; consultar junto con los documentos normativos vigentes.
 - `incidents.jsonl` y `observations.jsonl` no existen todavía en el árbol actual; sus registros se crearán cuando haya eventos que documentar.
 - `threads/`: historia documental de cada hilo de conversación cerrado ([índice de hilos](threads/README.md)).
 - `derived/`: notas intermedias o derivados de análisis que no sustituyen transcripciones ni cierres de hilo.
