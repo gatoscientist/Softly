@@ -8,15 +8,19 @@
 
 ## 1. Pregunta de investigación y corrección del foco
 
-La pregunta central no es cuánto desorden técnico u organizacional deja un equipo que trabaja mal. Esa clase de residuos —errores, duplicaciones, ramas, deuda técnica, archivos temporales, documentación inconsistente— puede detectarse mediante revisión y herramientas convencionales. Es información contextual útil, pero no define el fenómeno que Softly busca estudiar.
+La unidad de estudio no es una persona que desarrolla software ni un equipo humano que deja su estilo en un proyecto. **El objeto de estudio es la relación entre agentes cuando un agente desarrolla, configura, genera o modifica a otro agente.**
 
-**La contaminación fundamental que interesa estudiar es la que aparece cuando desarrolladores humanos o agentes se fusionan con el proyecto que desarrollan.** Es decir, cuando su identidad, preferencias, supuestos, criterios, hábitos, modelos mentales y necesidades particulares pasan a incorporarse al proyecto, a veces sin ser reconocidos como decisiones personales ni justificados por los objetivos originales del sistema.
+La contaminación fundamental que interesa estudiar aparece durante ese proceso de creación de agentes: el agente creador puede transferir al agente creado estructuras, instrucciones, supuestos, criterios, patrones de comportamiento, límites, preferencias arquitectónicas, modelos de memoria, mecanismos de coordinación o rasgos de su propia configuración que no necesariamente corresponden al brief ni a los requisitos del agente nuevo.
 
-Esta contaminación puede producirse incluso con desarrolladores técnicamente competentes y entregables de alta calidad. No equivale necesariamente a mala conducta, código defectuoso ni incumplimiento. El objeto de estudio es la huella que deja la incorporación no examinada de la visión particular de quienes desarrollan sobre la identidad, arquitectura, lenguaje, prioridades y comportamiento futuro del proyecto.
+El problema no se limita a una copia literal. Puede ocurrir una transferencia parcial o indirecta: el agente creador interpreta el brief desde su propio marco, reutiliza su molde sin discriminar, incorpora dependencias innecesarias, replica sus convenciones, reduce la autonomía del agente creado o lo configura para operar como una extensión de sí mismo.
 
-La proliferación de ramas y los residuos convencionales observados en TITAN se conservan como contexto y como línea base operacional secundaria. No deben confundirse con el fenómeno principal ni sustituir su investigación.
+La contaminación puede propagarse recursivamente. Un agente creado con características heredadas puede convertirse después en creador de otros agentes y transmitirles, a su vez, esas características. Así pueden formarse linajes de agentes con rasgos compartidos que no proceden de requisitos explícitos ni de decisiones deliberadas de arquitectura.
 
-La hipótesis central requiere operacionalización: identificar qué rasgos del proyecto provienen de sus requisitos y decisiones legítimas, cuáles fueron introducidos por contribuyentes concretos, cuáles se volvieron dependencias o convenciones implícitas y cuáles alteran el proyecto sin una decisión consciente de sus responsables.
+Esta contaminación puede ocurrir incluso cuando el agente creador es competente y produce un agente funcional. No equivale necesariamente a error técnico, mala conducta o incumplimiento. El fenómeno central es la **transmisión no examinada de características entre agentes durante la creación de otros agentes**.
+
+Los residuos convencionales —ramas, duplicaciones, deuda técnica, archivos temporales y documentación inconsistente— se conservan como contexto y línea base operacional secundaria. No definen el fenómeno principal.
+
+La investigación debe distinguir qué características del agente creado proceden del brief, cuáles responden a decisiones explícitas de diseño, cuáles fueron heredadas del agente creador y cuáles aparecieron como efectos emergentes de la interacción entre ambos.
 
 ## 2. Snapshot observado
 
@@ -133,95 +137,95 @@ Esta es una propuesta experimental para el siguiente ciclo, no una política ya 
 - `DEVAGENTS/AGENTEGUI/audit/AUDIT-20261112-002-validacion-runtime-gui.md`, rama `work/tania-core-recovery-20261112`.
 
 
-## 9. Fenómeno central: fusión del desarrollador con el proyecto
+## 9. Fenómeno central: contaminación en la creación de agentes
 
 ### 9.1 Definición de trabajo
 
-Se denomina **contaminación por fusión desarrollador–proyecto** al proceso por el cual preferencias, supuestos, hábitos, lenguaje, identidad, modelos mentales o intereses particulares de un desarrollador (humano o agente) se incorporan al proyecto y comienzan a condicionar su diseño, evolución, interpretación o funcionamiento, sin que esa incorporación haya sido necesariamente solicitada, explicitada, evaluada o adoptada conscientemente por la dirección del proyecto.
+Se denomina **contaminación por transferencia creador–creado** al proceso por el cual un agente que desarrolla o configura otro agente transmite al agente resultante estructuras, instrucciones, supuestos, criterios, patrones, dependencias o características propias que no están justificadas por el brief, los requisitos ni una decisión explícita y autorizada de diseño.
 
-La definición no presupone mala intención ni incompetencia. Una contribución puede ser técnicamente correcta y aun así introducir una orientación ajena a la misión o convertir una preferencia local en una característica estructural.
+La transferencia puede ser directa (copiar instrucciones, herramientas, memoria, estructura o políticas) o indirecta (interpretar el encargo desde el marco del creador y reproducir sus convenciones como si fueran requisitos).
 
-### 9.2 Distinciones necesarias
+### 9.2 Unidad y niveles de análisis
 
-No toda influencia del desarrollador es contaminación. Desarrollar implica tomar decisiones e introducir conocimiento. Para estudiar el fenómeno hay que distinguir:
-
-- **Contribución legítima:** cambio solicitado o necesario, trazable a requisitos, restricciones o una decisión autorizada.
-- **Decisión de diseño explícita:** alternativa elegida conscientemente, con rationale, autoridad y consecuencias conocidas.
-- **Influencia no examinada:** preferencia o supuesto del desarrollador que se incorpora sin hacerse visible como decisión.
-- **Fusión:** la influencia no examinada se vuelve parte de la identidad, las convenciones, los contratos, el lenguaje o las dependencias del proyecto y condiciona el trabajo posterior.
-- **Contaminación acumulativa:** sucesivas fusiones o influencias no examinadas se superponen, se normalizan y hacen cada vez más difícil distinguir el diseño del proyecto de la visión de sus contribuyentes.
+- **Agente creador:** agente que interpreta el brief y produce la definición, configuración, estructura o implementación de otro agente.
+- **Agente creado:** agente resultante de ese proceso.
+- **Brief/requisitos:** fuente de autoridad para determinar qué debía tener el agente nuevo.
+- **Transferencia:** característica que pasa del creador al creado durante el proceso.
+- **Linaje:** secuencia de agentes en la que un agente creado participa después como creador de otros.
+- **Propagación:** persistencia y transmisión de características a través de uno o más niveles del linaje.
 
 ### 9.3 Dimensiones candidatas para observar
 
-Estas dimensiones son hipótesis de observación, no hallazgos ya demostrados en TITAN:
+Estas dimensiones son hipótesis de observación, no hallazgos demostrados:
 
-1. **Conceptual:** el desarrollador redefine qué es el proyecto, qué problema resuelve o qué significa que esté terminado.
-2. **Arquitectónica:** introduce patrones, capas, abstracciones, frameworks o complejidad que responden a su modelo mental más que a requisitos comprobados.
-3. **Semántica y lingüística:** impone nombres, metáforas, vocabulario, taxonomías o conceptos propios que luego condicionan cómo el equipo entiende el sistema.
-4. **Normativa:** transforma preferencias personales en reglas, principios o políticas del proyecto sin autorización explícita.
-5. **Funcional:** agrega capacidades, comportamientos o flujos que no fueron solicitados y que desplazan prioridades originales.
-6. **Operacional:** incorpora herramientas, rutinas, procesos, formatos o dependencias que hacen que el proyecto se adapte al modo de trabajo de ese contribuyente.
-7. **Relacional y de autoridad:** instala dependencias respecto de una persona/agente, privilegios implícitos, canales informales de decisión o una distribución de autoridad no acordada.
-8. **Memoria e histórica:** deja explicaciones, documentación o relatos que presentan sus propias decisiones como si siempre hubieran sido parte del diseño original.
-9. **Estética y estilística:** convierte preferencias de presentación, interacción o estilo en convenciones estructurales sin que exista una razón de producto.
-10. **Epistémica:** hace que el proyecto adopte sus criterios de evidencia, prioridades, tolerancia a la incertidumbre o formas de validar como si fueran universales.
+1. **Identitaria:** el agente creado hereda nombre, rol, misión, personalidad o autoconcepto del creador sin que el brief lo solicite.
+2. **Instruccional:** hereda prompts, reglas, jerarquías o instrucciones específicas del creador que no corresponden a su función.
+3. **Arquitectónica:** recibe directorios, módulos, abstracciones, frameworks o complejidad que responden al molde preferido del creador y no a sus necesidades.
+4. **Capacidades y herramientas:** incorpora herramientas, permisos, capacidades o restricciones innecesarias o impropias de su misión.
+5. **Memoria y contexto:** recibe recuerdos, datos, supuestos, contexto de proyecto o dependencias del creador que deberían permanecer separados.
+6. **Epistémica:** hereda los criterios del creador para buscar, razonar, validar, expresar incertidumbre o decidir qué cuenta como evidencia.
+7. **Conductual:** reproduce hábitos de interacción, delegación, deliberación, iniciativa, cautela o autonomía que no fueron diseñados para el agente creado.
+8. **Relacional:** hereda dependencias, lealtades, jerarquías o relaciones con otros agentes que no corresponden a su asignación.
+9. **Operacional:** hereda rutinas, ciclos, formatos, convenciones de registro o mecanismos de coordinación del creador sin evaluar su pertinencia.
+10. **Evolutiva:** el agente creado transmite las características heredadas cuando pasa a crear o modificar otros agentes.
 
-### 9.4 Pregunta de auditoría del fenómeno
+### 9.4 Preguntas de investigación
 
-No preguntar solamente «¿qué quedó mal?». Preguntar:
-
-- ¿Qué parte del proyecto responde a una necesidad demostrable y qué parte responde a una preferencia del contribuyente?
-- ¿Qué supuestos personales se convirtieron en contratos, dependencias, convenciones o restricciones?
-- ¿Qué decisiones fueron tomadas por la dirección y cuáles fueron introducidas silenciosamente durante la implementación?
-- ¿El proyecto puede ser comprendido, mantenido y extendido por otro equipo sin adoptar la identidad, hábitos o marco mental de sus autores anteriores?
-- ¿Qué elementos sobreviven porque son necesarios y cuáles sobreviven porque nadie cuestionó su origen?
-- ¿Qué cambios alteraron la misión, el lenguaje, la arquitectura o la experiencia del proyecto sin una decisión explícita?
-- ¿Qué partes del sistema hacen que los siguientes desarrolladores deban adaptarse al autor anterior, en vez de adaptarse a los requisitos del proyecto?
+- ¿Qué características del agente creado están respaldadas por el brief?
+- ¿Qué elementos fueron decisiones explícitas del proceso de diseño?
+- ¿Qué elementos aparecen porque el agente creador los reutilizó o los introdujo desde su propia configuración?
+- ¿El agente creador puede separar su identidad y sus convenciones de las necesidades del agente que está construyendo?
+- ¿El agente creado conserva una identidad, permisos, memoria y contexto propios, o queda configurado como extensión del creador?
+- ¿Qué características se propagan a generaciones posteriores?
+- ¿La reutilización de un molde común transmite solo estructura necesaria o también contenido contingente del agente creador?
+- ¿Qué mecanismos permiten detectar y detener transferencias no justificadas?
 
 ### 9.5 Método de investigación propuesto
 
-Para cada contribución o conjunto de cambios, reconstruir una cadena de procedencia:
+Para cada proceso de creación, reconstruir la cadena:
 
-**requisito/objetivo → decisión autorizada → contribución → artefacto introducido → dependencia o convención creada → efecto sobre el trabajo posterior.**
+**brief → interpretación del agente creador → decisiones de diseño → artefactos generados → configuración del agente creado → comportamiento observado → posible transmisión a agentes descendientes.**
 
 Registrar por separado:
-- origen y autoría de la influencia;
-- evidencia observable en commits, código, configuración, documentación, interfaces y comportamiento;
-- justificación declarada al introducirla;
-- autoridad con la que se incorporó;
-- persistencia y alcance dentro del proyecto;
-- costo de revertirla o sustituirla;
-- efecto sobre la capacidad de un nuevo equipo para trabajar sin heredar el marco mental del equipo anterior.
+- requisitos explícitos del brief;
+- decisiones justificadas y quién las autorizó;
+- características preexistentes del agente creador;
+- elementos incorporados al agente creado;
+- procedencia de cada elemento;
+- justificación declarada;
+- diferencias entre lo solicitado y lo producido;
+- efectos sobre identidad, autonomía, permisos, memoria, contexto y herramientas;
+- características que reaparecen en generaciones posteriores.
 
-No inferir estados psicológicos ni atribuir intenciones. La investigación trata sobre huellas observables en el proyecto y su procedencia, no sobre juzgar personas.
+No atribuir intención psicológica al agente. La investigación trata de transferencias y efectos observables en artefactos y comportamientos.
 
-### 9.6 Diseño del experimento con nuevas generaciones de agentes
+### 9.6 Diseño experimental con agentes que desarrollan agentes
 
-La limpieza de ramas y el archivo de snapshots permiten establecer un punto de partida operacional. El experimento principal debe observar si una nueva generación de agentes introduce elementos propios que se fusionan con el proyecto.
+El experimento principal debe observar agentes creadores trabajando sobre briefs de agentes nuevos.
 
 Para cada ciclo:
-1. Registrar la misión, requisitos, límites y estado inicial del proyecto.
-2. Dar a los agentes una asignación acotada, evitando prescribir soluciones innecesarias.
-3. Conservar trazabilidad de sus propuestas, decisiones, cambios y justificaciones.
-4. Comparar el estado final con el inicial y con los requisitos autorizados.
-5. Identificar elementos nuevos que no se expliquen por requisitos o decisiones explícitas.
-6. Examinar si esos elementos se convierten en dependencias, convenciones o condicionantes para el siguiente ciclo.
-7. Probar si un equipo distinto puede continuar el trabajo sin adoptar supuestos particulares de los agentes anteriores.
-8. Clasificar cada influencia como legítima, explícitamente adoptada, no examinada o fusión confirmada con evidencia.
+1. Registrar el brief, los requisitos, restricciones y criterios de aceptación del agente que se quiere crear.
+2. Registrar el estado inicial relevante del agente creador, incluidos sus moldes, instrucciones, herramientas y convenciones.
+3. Permitir que el agente creador diseñe y genere el agente solicitado dentro de sus permisos.
+4. Comparar el resultado con el brief y con el estado del creador para identificar procedencia y posibles transferencias.
+5. Separar reutilización justificada, decisiones explícitas y elementos heredados sin fundamento en el encargo.
+6. Ejecutar al agente creado en tareas representativas y observar si manifiesta las características transferidas.
+7. En una etapa posterior, permitir que el agente creado genere otro agente y observar qué rasgos transmite.
+8. Comparar generaciones para identificar persistencia, amplificación, mutación o pérdida de características.
 
-No se debe penalizar automáticamente la creatividad, la iniciativa ni las mejoras propuestas. El problema no es que el desarrollador influya en el proyecto; el problema investigable es que esa influencia se vuelva parte del proyecto sin visibilidad, procedencia ni decisión consciente.
+No se debe clasificar toda reutilización como contaminación. Compartir un contrato común, una estructura mínima o controles de seguridad puede ser deliberado y beneficioso. La pregunta es si cada elemento transferido es pertinente, autorizado y trazable respecto del agente que se está creando.
 
 ### 9.7 Relación con la línea base de ramas
 
-La proliferación de ramas, la dispersión de archivos y la duplicación son residuos convencionales y medibles. Pueden ser síntomas de un sistema de trabajo deficiente, pero no demuestran por sí solos fusión desarrollador–proyecto.
+La proliferación de ramas y los residuos convencionales son fenómenos secundarios. Pueden revelar dificultades operacionales del entorno donde trabajaron los agentes, pero no demuestran transferencia creador–creado.
 
 Por lo tanto:
-- mantener el inventario de ramas como línea base histórica;
+- mantener el inventario de ramas como evidencia histórica;
 - no usar el número de ramas como medida principal de contaminación;
-- no equiparar limpieza técnica con ausencia de fusión;
-- analizar los ZIP como evidencia de procedencia y evolución, no solo como paquetes de archivos;
-- evaluar la contaminación fundamental a partir de la relación entre contribuciones, decisiones, artefactos y efectos persistentes.
+- analizar los ZIP como evidencia de los artefactos producidos por los agentes y su procedencia;
+- priorizar la comparación entre briefs, configuraciones de agentes creadores y agentes creados;
+- estudiar si las características transmitidas reaparecen en agentes descendientes.
 
 ### 9.8 Estado epistemológico
 
-La definición y las dimensiones anteriores son una **propuesta conceptual de investigación** derivada de la corrección de foco del director humano. No son todavía un modelo validado ni hallazgos concluyentes sobre los agentes de TITAN. Deben someterse a contraste con los archivos históricos, las auditorías disponibles y el comportamiento de nuevas generaciones de agentes.
+Esta definición y sus dimensiones son una propuesta conceptual derivada de la corrección del director humano. No constituyen un modelo validado ni hallazgos concluyentes sobre TITAN. Deben contrastarse con los paquetes históricos de agentes, los moldes utilizados, sus briefs, sus configuraciones y el comportamiento de nuevas generaciones.
