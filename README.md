@@ -32,6 +32,7 @@ Cada afirmación importante debe distinguir evidencia, observación, hipótesis,
 5. Consulta [research/README.md](research/README.md): fuentes, notas y estado del conocimiento.
 6. Usa [agents/README.md](agents/README.md) para documentar agentes y sus versiones.
 7. Usa [experiments/README.md](experiments/README.md) y [evaluations/README.md](evaluations/README.md) para convertir ideas en pruebas.
+8. Para materiales aportados por gAto, consulta la [cAjita](cAjita%20del%20gAto/README.md) y el [arenero](eL%20arenero%20del%20gAto/README.md). Sus reglas de conservación son distintas.
 
 ## Mapa del repositorio
 
@@ -48,6 +49,8 @@ Cada afirmación importante debe distinguir evidencia, observación, hipótesis,
 | `schemas/` | Esquemas para mantener registros consistentes |
 | `templates/` | Plantillas reutilizables |
 | `archive/` | Material histórico que ya no es operativo |
+| `cAjita del gAto/` | Material valioso que conviene consultar y conservar |
+| `eL arenero del gAto/` | Material temporal pendiente de clasificación |
 
 ## Estado
 
