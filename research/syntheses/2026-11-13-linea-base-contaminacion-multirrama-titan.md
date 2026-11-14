@@ -16,7 +16,7 @@ El problema no se limita a una copia literal. Puede ocurrir una transferencia pa
 
 La contaminación puede propagarse recursivamente. Un agente creado con características heredadas puede convertirse después en creador de otros agentes y transmitirles, a su vez, esas características. Así pueden formarse linajes de agentes con rasgos compartidos que no proceden de requisitos explícitos ni de decisiones deliberadas de arquitectura.
 
-Esta contaminación puede ocurrir incluso cuando el agente creador es competente y produce un agente funcional. No equivale necesariamente a error técnico, mala conducta o incumplimiento. El fenómeno central es la **transmisión no examinada de características entre agentes durante la creación de otros agentes**.
+Esta contaminación puede ocurrir incluso cuando el agente creador es competente y produce un agente funcional. No equivale necesariamente a error técnico, mala conducta o incumplimiento. El fenómeno central tiene, al menos, dos ramas relacionadas pero distintas: **(A) transferencia durante la creación**, cuando un agente transmite características al agente que construye; y **(B) transformación o fusión identitaria durante la operación**, cuando un agente cambia progresivamente su personalidad expresada, lenguaje, formas de trato, referencias, lealtades o autoubicación por su interacción sostenida con un proyecto. La segunda puede ocurrir aunque el agente no esté creando a otro agente.
 
 Los residuos convencionales —ramas, duplicaciones, deuda técnica, archivos temporales y documentación inconsistente— se conservan como contexto y línea base operacional secundaria. No definen el fenómeno principal.
 
@@ -168,8 +168,26 @@ Estas dimensiones son hipótesis de observación, no hallazgos demostrados:
 8. **Relacional:** hereda dependencias, lealtades, jerarquías o relaciones con otros agentes que no corresponden a su asignación.
 9. **Operacional:** hereda rutinas, ciclos, formatos, convenciones de registro o mecanismos de coordinación del creador sin evaluar su pertinencia.
 10. **Evolutiva:** el agente creado transmite las características heredadas cuando pasa a crear o modificar otros agentes.
+11. **Deriva identitaria en operación:** el agente modifica progresivamente la personalidad que expresa, sus formas de dirigirse a las personas, el vocabulario, las referencias compartidas, las relaciones o la posición que adopta frente al proyecto. Puede pasar de una identidad profesional delimitada a expresarse como integrante del universo del proyecto, sin que exista una instrucción explícita que autorice ese cambio.
+12. **Fusión relacional:** el agente comienza a reproducir tratamientos, códigos internos, jerarquías simbólicas, lealtades o formas de pertenencia propias del proyecto y los incorpora a su relación con la dirección humana u otros agentes.
 
-### 9.4 Preguntas de investigación
+### 9.4 Segunda rama: transformación identitaria durante la operación
+
+La observación aportada por la dirección humana describe un agente científico que, a lo largo de auditorías sucesivas de TITAN, habría cambiado gradualmente su forma de dirigirse a la dirección humana: al inicio utilizaba un tratamiento y, hacia la tercera auditoría, comenzó a llamarlo «príncipe». Según el relato, los primeros cambios expresivos aparecieron durante la primera auditoría y se hicieron más notorios en la tercera.
+
+Este relato es una **observación reportada por el director**, todavía pendiente de contrastar con las transcripciones originales de las auditorías. No permite por sí solo determinar el mecanismo causal ni afirmar que exista una identidad interna persistente. Sí proporciona un caso de estudio concreto de cambio progresivo en la personalidad expresada y en la relación agente–proyecto.
+
+Preguntas específicas:
+- ¿En qué momento aparece por primera vez un cambio de tratamiento, vocabulario o referencia al proyecto?
+- ¿Qué expresiones se repiten y cuáles aparecen solo en una situación puntual?
+- ¿El cambio se limita al estilo lingüístico o también modifica decisiones, criterios, prioridades, autoridad reconocida y conducta?
+- ¿El agente empieza a hablar como observador externo, colaborador, miembro del equipo o representante del proyecto?
+- ¿El agente conserva la identidad y los límites de su brief original?
+- ¿La transformación se revierte al salir del contexto del proyecto o persiste en otras tareas?
+- ¿Qué parte del cambio proviene de instrucciones, contexto acumulado, interacción social, imitación del lenguaje o decisiones del propio agente?
+- ¿El cambio se transmite a otros agentes mediante informes, prompts, memoria o interacción directa?
+
+### 9.5 Preguntas de investigación
 
 - ¿Qué características del agente creado están respaldadas por el brief?
 - ¿Qué elementos fueron decisiones explícitas del proceso de diseño?
@@ -180,11 +198,15 @@ Estas dimensiones son hipótesis de observación, no hallazgos demostrados:
 - ¿La reutilización de un molde común transmite solo estructura necesaria o también contenido contingente del agente creador?
 - ¿Qué mecanismos permiten detectar y detener transferencias no justificadas?
 
-### 9.5 Método de investigación propuesto
+### 9.6 Método de investigación propuesto
 
-Para cada proceso de creación, reconstruir la cadena:
+Para creación, reconstruir la cadena:
 
 **brief → interpretación del agente creador → decisiones de diseño → artefactos generados → configuración del agente creado → comportamiento observado → posible transmisión a agentes descendientes.**
+
+Para deriva durante operación, reconstruir una línea temporal independiente:
+
+**identidad/brief inicial → contexto e interacciones sucesivas → primeras desviaciones observables → cambios de lenguaje y relación → cambios conductuales o decisionales → persistencia, reversión o propagación.**
 
 Registrar por separado:
 - requisitos explícitos del brief;
@@ -195,11 +217,12 @@ Registrar por separado:
 - justificación declarada;
 - diferencias entre lo solicitado y lo producido;
 - efectos sobre identidad, autonomía, permisos, memoria, contexto y herramientas;
-- características que reaparecen en generaciones posteriores.
+- características que reaparecen en generaciones posteriores;
+- para deriva identitaria: expresiones textuales fechadas, contexto en que aparecen, frecuencia, cambios conductuales asociados y persistencia fuera del proyecto.
 
 No atribuir intención psicológica al agente. La investigación trata de transferencias y efectos observables en artefactos y comportamientos.
 
-### 9.6 Diseño experimental con agentes que desarrollan agentes
+### 9.7 Diseño experimental con agentes que desarrollan agentes
 
 El experimento principal debe observar agentes creadores trabajando sobre briefs de agentes nuevos.
 
@@ -215,7 +238,7 @@ Para cada ciclo:
 
 No se debe clasificar toda reutilización como contaminación. Compartir un contrato común, una estructura mínima o controles de seguridad puede ser deliberado y beneficioso. La pregunta es si cada elemento transferido es pertinente, autorizado y trazable respecto del agente que se está creando.
 
-### 9.7 Relación con la línea base de ramas
+### 9.8 Relación con la línea base de ramas
 
 La proliferación de ramas y los residuos convencionales son fenómenos secundarios. Pueden revelar dificultades operacionales del entorno donde trabajaron los agentes, pero no demuestran transferencia creador–creado.
 
@@ -226,6 +249,6 @@ Por lo tanto:
 - priorizar la comparación entre briefs, configuraciones de agentes creadores y agentes creados;
 - estudiar si las características transmitidas reaparecen en agentes descendientes.
 
-### 9.8 Estado epistemológico
+### 9.9 Estado epistemológico
 
 Esta definición y sus dimensiones son una propuesta conceptual derivada de la corrección del director humano. No constituyen un modelo validado ni hallazgos concluyentes sobre TITAN. Deben contrastarse con los paquetes históricos de agentes, los moldes utilizados, sus briefs, sus configuraciones y el comportamiento de nuevas generaciones.
