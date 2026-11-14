@@ -2,7 +2,7 @@
 
 - **Fecha de inicio:** 2026-11-14 (hora no registrada)
 - **Corte documental:** 2026-11-14 (hora no registrada)
-- **Estado:** snapshot de continuidad; el hilo no se declara cerrado
+- **Estado:** archivado para continuidad; cierre documental de este hilo preparado al terminar esta conversación
 - **Fuente:** conversación disponible en ChatGPT y estado GitHub consultado durante este hilo
 - **Fidelidad:** síntesis cronológica; no es transcripción literal completa. Las horas no están disponibles y no se estiman.
 
