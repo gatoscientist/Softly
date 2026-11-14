@@ -251,3 +251,14 @@ La consulta de la rama indica que `main` no está protegida y que los checks req
 4. No se ejecutó limpieza, movimiento, renombrado ni modificación de contratos/agentes.
 
 **Estado:** integridad estructural del árbol confirmada para este corte; trazabilidad binaria y controles preventivos de rama siguen abiertos. No se declara cerrada la auditoría global.
+
+
+## 2026-11-14 — Cierre de tareas documentales autorizadas en este ciclo
+
+- Se resolvió la colisión de IDs por autorización expresa: `SYN-20261113-001` queda en la síntesis de gobernanza multiagente y `SYN-20261113-003` identifica la línea base multi-rama. Se actualizaron el documento reasignado y los índices `research/README.md` y `research/syntheses/README.md`.
+- Se incorporó una propuesta no normativa de registro de namespaces, cardinalidad y relaciones; el esquema vigente permanece intacto.
+- Se revisaron los dos JSONL: cada uno contiene una línea JSON sintácticamente válida. No hay esquema de eventos para validar semántica ni unicidad automáticamente.
+- Los ocho PDF originales de TITAN/Cytryna quedan expresamente pendientes de cotejo. No se afirma identidad con archivos del arenero ni se inspeccionan binarios por hash solamente.
+- La revisión de enlaces externos se limita a las 14 URLs registradas previamente en bibliografía y panorama; no se declara verificación global de todos los enlaces del repositorio. La cobertura local histórica de 78 Markdown queda como último alcance registrado; los índices y archivos tocados en este ciclo se verifican de forma dirigida.
+- La rama `main` sigue sin protección y sin checks requeridos; no se cambió esa configuración. No existe runtime ni CI en el árbol, por lo que no hay pruebas de ejecución que reportar.
+- No se movió ni eliminó material, ni se alteraron contratos, agentes o esquemas.
