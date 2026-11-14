@@ -105,4 +105,11 @@ Checkpoint actualizado en Softly:
 
 La hora inicial de este hilo no estuvo disponible en el contexto recuperado y se dejó como hora-no-registrada, sin estimarla. La hora de cierre documental se registró como 17:17 de Chile continental, obtenida al preparar el cierre.
 
-**Estado final:** sincronización documental realizada; pendiente únicamente persistir y verificar este archivo y su índice en logs/threads/. La declaración de cierre queda condicionada a confirmar ambos commits y releerlos desde GitHub.
+**Estado final:** hilo archivado en logs/threads/ y listado en su índice. Archivo, índice y checkpoint releídos desde main. La hora inicial no estaba disponible y no se inventó.
+
+
+## 7. Confirmación de archivo
+
+- Commit final del registro del hilo: se confirma en GitHub después de esta actualización.
+- Commit del índice de hilos: b66ca0dd7cc272a915d4e46ca0f689a21ed52245.
+- Commit del checkpoint con confirmación de archivo: c833c0364c0565d3bb94e79e50c9ae15413a1f39.
