@@ -134,3 +134,14 @@ Commits adicionales:
 - `99783ed48aec2e289b26c94d6a7966a9fdb27335` — índice de esquemas.
 
 Pendiente: inspección interna de los nueve PDF y verificación de sus respaldos binarios; comprobación de URLs externas y de procedencia por archivo.
+
+
+## 2026-11-14 — Recuperación de decisión formal faltante
+
+La revisión de `logs/decisions.jsonl` mostró que la decisión aceptada `ADR-0001` no tenía un archivo formal bajo `decisions/`. Se reconstruyó `decisions/ADR-0001-laboratorio-documental-antes-de-runtime.md` desde los campos existentes en el registro JSONL, se declaró explícitamente la reconstrucción y se enlazó desde `decisions/README.md`. No se inventó rationale ni contexto adicional.
+
+Commits:
+- `eed7a027b0cb4796e2523a1d4a57b162c22be2a1` — creación de ADR-0001 reconstruida.
+- `d300fabff42c8f440fd2252e04b7681eb9839b47` — índice de decisiones actualizado.
+
+El árbol tras esta corrección contiene 126 entradas (92 blobs y 34 directorios), 78 Markdown y 31 README. No hay blobs duplicados por SHA ni ZIP en el árbol. No hay código ejecutable ni workflows de CI; Softly es un laboratorio documental y no un runtime.
