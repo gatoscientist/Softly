@@ -4,6 +4,7 @@ Este directorio conserva la historia documental de hilos cerrados. Los archivos 
 
 ## Registros disponibles
 
+- [Hilo del 14-11-2026, hora inicial no registrada–13:06 — cierre de auditoría y continuidad de Softly](hilo%20I%20hora-no-registrada%20F%202026-11-14%2013-06.md)
 - [Hilo del 14-11-2026, horas no registradas — mantenimiento y continuidad de Softly](hilo%20I%20hora-no-registrada%20F%202026-11-14%20hora-no-registrada.md)
 - [Hilo del 13-11-2026, 17:49–19:31](hilo%20I%202026-11-13%2017-49%20F%202026-11-13%2019-31.md)
 - [Hilo del 13-11-2026, hora inicial no registrada–23:23](hilo%20I%202026-11-13%20hora-no-registrada%20F%202026-11-13%2023-23.md)
