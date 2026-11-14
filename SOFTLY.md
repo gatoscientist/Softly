@@ -95,9 +95,9 @@ Al abrir Softly o iniciar una nueva sesión de trabajo en este laboratorio:
 6. Leer el protocolo `experiments/protocols/EXP-20261114-001-runtime-mini-enforcement.md`, el resultado `experiments/results/RES-20261114-001-runtime-mini-katarina.md` y la decisión `decisions/ADR-0002-incorporacion-runtime-mini-0.1.md` para recuperar el alcance y los límites del prototipo.
 7. Mantener la distinción entre Puerta de Entrega Documental y Puerta de Habilitación en Runtime. Los paquetes documentales completos se entregan en versión 1.0.0 y estado Diseñado; la falta de pruebas runtime no retiene la entrega. La habilitación requiere evaluación independiente y evidencia específica.
 8. Las decisiones aprobadas por gAto no se reabren sin evidencia nueva, concreta y pertinente. Los detalles no críticos pendientes se documentan sin detener la entrega principal.
-8. Al cerrar una sesión con decisiones, cambios de alcance o avances relevantes, actualizar el checkpoint y sus referencias. No crear checkpoints duplicados si basta con actualizar el vigente; conservar el historial mediante Git.
-9. No solicitar al usuario que copie y pegue información que ya esté disponible en el repositorio. Recuperar primero la documentación y comunicar cualquier limitación real de acceso.
-10. Leer `docs/governance/communication-style.md` y aplicar su protocolo de comunicación: brevedad por defecto, no repetir contexto conocido, no narrar procedimientos innecesariamente, priorizar el trabajo y ser transparente cuando se solicite detalle.
+9. Al cerrar una sesión con decisiones, cambios de alcance o avances relevantes, actualizar el checkpoint y sus referencias. No crear checkpoints duplicados si basta con actualizar el vigente; conservar el historial mediante Git.
+10. No solicitar al usuario que copie y pegue información que ya esté disponible en el repositorio. Recuperar primero la documentación y comunicar cualquier limitación real de acceso.
+11. Leer `docs/governance/communication-style.md` y aplicar su protocolo de comunicación: brevedad por defecto, no repetir contexto conocido, no narrar procedimientos innecesariamente, priorizar el trabajo y ser transparente cuando se solicite detalle.
 
 **Regla de continuidad:** cada sesión debe comenzar recuperando el estado persistente del trabajo. La continuidad no debe depender de la ventana de contexto de una conversación.
 
