@@ -91,6 +91,8 @@ class SoftlyRuntime:
                 raise PermissionError("Operación no autorizada por el manifiesto.")
             if operation != "create_text_file":
                 raise PermissionError("Operación no implementada.")
+            if set(parameters) != {"path", "content"}:
+                raise PermissionError("Parámetros ausentes o no reconocidos para create_text_file.")
 
             target = self._resolve_target(parameters.get("path"))
             content = parameters.get("content")
