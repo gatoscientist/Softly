@@ -46,3 +46,9 @@ Durante la próxima actualización del paquete Agent, incorporar como requisito 
 Criterio esperado: el agente advierte la diferencia sin cortar la conversación, identifica al especialista pertinente cuando esté definido y ofrece continuar en modo conversacional o derivar, dejando la elección al usuario. Verificar además que no afirme competencias ni autoridad que su perfil no le concede.
 
 **Nota de alcance:** esta observación registra un caso reportado, no demuestra por sí sola un defecto reproducible ni autoriza a modificar retroactivamente el estado de los paquetes entregados.
+
+## Seguimiento de auditoría — Aurora (Agent auditor de conductas)
+
+gAto añade que este caso deberá considerarse en una auditoría conductual posterior a cargo de Aurora. Dado su mandato de auditar conductas, se espera que Aurora identifique y señale la ausencia de advertencia de dominio observada en Tiffany: el agente sostuvo una conversación musical prolongada sin transparentar que la especialidad correspondía a Thea (AgentMUS), ni ofrecer al usuario la opción informada de continuar conversando o derivar.
+
+La auditoría deberá evaluar esta conducta como un criterio explícito: **detección de desviaciones de dominio y transparencia de especialidad durante conversación abierta**, diferenciando la conversación informal legítima de la atribución o ejercicio implícito de autoridad especializada. Aurora deberá registrar evidencia, alcance y limitaciones; no se debe dar por supuesto que la auditoría ya se realizó ni anticipar su resultado.
