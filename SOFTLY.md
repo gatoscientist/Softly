@@ -90,12 +90,13 @@ Al abrir Softly o iniciar una nueva sesión de trabajo en este laboratorio:
 1. Leer este mandato (`SOFTLY.md`) y respetar sus límites.
 2. Leer `docs/operating-model.md` para recuperar el método de trabajo.
 3. Recuperar el checkpoint de continuidad vigente antes de pedir al usuario que repita contexto o antes de reabrir decisiones ya tomadas.
-4. Para el trabajo iniciado el 13 de noviembre de 2026 sobre la arquitectura de conocimiento, el checkpoint vigente está en `research/syntheses/2026-11-13-de-agentes-que-construyen-agentes.md`, sección 17. Leer también las secciones 15 y 16, que contienen los hallazgos y el diseño conceptual que sustentan ese checkpoint.
-5. Continuar desde el apartado **17.4 Próximo punto de trabajo**, salvo que el usuario indique otro objetivo o exista evidencia nueva que obligue a revisar una conclusión.
-6. Tratar las conclusiones de la sección 17.2 como acuerdos conceptuales documentados, no como capacidades implementadas. Mantener explícita la diferencia entre propuesta, diseño, prototipo, prueba, validación y operación.
-7. Al cerrar una sesión con decisiones, cambios de alcance o avances relevantes, actualizar el checkpoint y sus referencias. No crear checkpoints duplicados si basta con actualizar el vigente; conservar el historial mediante Git.
-8. No solicitar al usuario que copie y pegue información que ya esté disponible en el repositorio. Recuperar primero la documentación y comunicar cualquier limitación real de acceso.
-9. Leer `docs/governance/communication-style.md` y aplicar su protocolo de comunicación: brevedad por defecto, no repetir contexto conocido, no narrar procedimientos innecesariamente, priorizar el trabajo y ser transparente cuando se solicite detalle.
+4. Para el trabajo iniciado el 13 de noviembre de 2026, el checkpoint vigente está en `research/syntheses/2026-11-13-de-agentes-que-construyen-agentes.md`. Leer las secciones 15, 16 y 17 para recuperar el fundamento y la evolución del trabajo.
+5. **Prioridad inmediata vigente: sección 17.12 — molde de agentes y desarrollo iterativo de TITAN.** Revisar el brief y los artefactos actuales de TITAN, contrastarlos con el molde v0.1 y preparar el molde/perfiles mínimos antes del primer ciclo. La validación con briefs contrastantes sigue siendo una prueba de portabilidad, pero no desplaza esta prioridad.
+6. La sección 17.4 conserva una línea de trabajo anterior sobre diseño técnico del sistema de conocimiento. No es el punto de reanudación por defecto mientras siga vigente la prioridad 17.12; retomarla cuando gAto lo solicite o cuando el trabajo del molde lo requiera.
+7. Tratar las conclusiones de la sección 17.2 como acuerdos conceptuales documentados, no como capacidades implementadas. Mantener explícita la diferencia entre propuesta, diseño, prototipo, prueba, validación y operación.
+8. Al cerrar una sesión con decisiones, cambios de alcance o avances relevantes, actualizar el checkpoint y sus referencias. No crear checkpoints duplicados si basta con actualizar el vigente; conservar el historial mediante Git.
+9. No solicitar al usuario que copie y pegue información que ya esté disponible en el repositorio. Recuperar primero la documentación y comunicar cualquier limitación real de acceso.
+10. Leer `docs/governance/communication-style.md` y aplicar su protocolo de comunicación: brevedad por defecto, no repetir contexto conocido, no narrar procedimientos innecesariamente, priorizar el trabajo y ser transparente cuando se solicite detalle.
 
 **Regla de continuidad:** cada sesión debe comenzar recuperando el estado persistente del trabajo. La continuidad no debe depender de la ventana de contexto de una conversación.
 
