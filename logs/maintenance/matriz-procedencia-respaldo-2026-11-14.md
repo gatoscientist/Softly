@@ -161,3 +161,18 @@ Se extrajeron y comprobaron 14 URLs únicas de `research/bibliography.md` y `res
 Se actualizaron ambos enlaces tanto en la bibliografía como en la ficha de panorama. La guía de Anthropic *Building effective agents* sigue accesible, pero advierte que parte del panorama de herramientas de 2024 ha cambiado; la ficha conserva esa limitación y remite a la documentación actual de Managed Agents para detalles vigentes.
 
 **Alcance:** esta verificación cubre las 14 URLs identificadas en esos dos documentos, no todos los enlaces externos que pudieran existir en el repositorio. No se afirma que los contenidos externos sean inmutables; deben revisarse cuando se reutilicen.
+
+
+## 12. Navegación completa de índices de directorio
+
+Se cerraron los enlaces de navegación que faltaban entre índices:
+- El mapa del `README.md` raíz ahora enlaza los 13 índices de directorios principales.
+- `agents/README.md` enlaza el índice de perfiles.
+- `evaluations/README.md` enlaza datasets, planes y ejecuciones.
+- `experiments/README.md` enlaza protocolos, resultados y casos.
+
+Los seis subdirectorios de evaluaciones/experimentos que solo contienen README quedan identificados explícitamente como estructuras de preparación sin artefactos todavía. Se conservan y no se clasifican como basura.
+
+Los cuatro índices modificados y el mapa raíz fueron leídos nuevamente; sus enlaces locales nuevos resuelven a rutas existentes. La verificación dirigida registró cero destinos rotos.
+
+**Corte inmediatamente anterior a esta ampliación:** `main` HEAD `866bb1e6eb2e6fc04e97b0223fe8f88d283d5dcb`; 126 entradas, 92 blobs, 34 directorios, 78 Markdown y 31 README.
