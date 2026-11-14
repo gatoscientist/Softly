@@ -4,7 +4,7 @@ Espacio temporal de recepción y clasificación de materiales que gAto deja para
 
 ## Instrucciones localizadas
 
-El árbol actual contiene las instrucciones en [../eL aRenero del gAto/iNstrucciones.md](../eL%20aRenero%20del%20gAto/iNstrucciones.md). Atención: Git distingue mayúsculas y minúsculas; esa ruta pertenece a un directorio distinto del presente. Se conserva la diferencia y no se fusionan carpetas sin confirmación.
+El árbol actual contiene las instrucciones en [el índice de eL aRenero del gAto](../eL%20aRenero%20del%20gAto/README.md), dentro de una carpeta distinta. Atención: Git distingue mayúsculas y minúsculas; no se fusionan carpetas sin confirmación.
 
 La instrucción establece que solo se puede eliminar material cuando exista certeza suficiente de que está respaldado y registrado. Cada limpieza autorizada debe dejar un registro llamado `aRenero limpio 'fecha y hora actual'.md`, identificando quién limpió y por qué.
 
@@ -21,7 +21,7 @@ La instrucción establece que solo se puede eliminar material cuando exista cert
 | Manual de Onboarding Multidisciplinario — Proyecto TITAN.pdf | PDF | 568.084 bytes | No inspeccionado en esta pasada |
 | Revisión de código y consejos - Claude.pdf | PDF | 116.916 bytes | No inspeccionado en esta pasada |
 | Revisión de código y consejos.pdf | PDF | 120.359 bytes | No inspeccionado en esta pasada |
-| el gAto dice.txt | TXT | 358 bytes | Contenido leído; pendiente de clasificar |
+| el gAto dice.txt | TXT | 358 bytes | Contenido leído: pide dejar pendiente el orden de la casa y registrar futuras limpiezas; conservar |
 
 Los tamaños corresponden al árbol Git inspeccionado. No implican que los documentos hayan sido leídos o validados.
 
@@ -35,4 +35,4 @@ Los tamaños corresponden al árbol Git inspeccionado. No implican que los docum
 
 ## Nota de integridad
 
-En la revisión del 14 de noviembre de 2026 se detectó una carpeta de instrucciones con capitalización distinta (`eL aRenero del gAto`). No se renombró, fusionó ni eliminó contenido. Tampoco se borraron documentos de este arenero.
+En la revisión del 14 de noviembre de 2026 se detectó una carpeta de instrucciones con capitalización distinta (`eL aRenero del gAto`). No se renombró, fusionó ni eliminó contenido. Tampoco se borraron documentos de este arenero. El TXT que permanece en el árbol no contiene la frase «pico pal que lee»; por tanto, no se debe confundir con el archivo que gAto dijo haber eliminado. La eliminación de ese otro TXT no queda identificada en este árbol.
