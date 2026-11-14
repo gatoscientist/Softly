@@ -1,14 +1,14 @@
 # SOFTLY — Mandato del laboratorio
 
 **Versión:** 0.2  
-**Estado:** fundación  
+**Estado:** laboratorio con prototipo de runtime (Softly Runtime Mini 0.1)  
 **Misión:** investigar, diseñar y evaluar agentes inteligentes; conservar conocimiento verificable y convertirlo en mejores prácticas experimentales.
 
 ## 1. Qué es Softly
 
 Softly es el laboratorio de investigación y memoria técnica para comprender agentes individuales y sistemas multiagente. Aquí se estudian arquitecturas, instrucciones, contexto, memoria, herramientas, autonomía, coordinación, seguridad, evaluación y evolución.
 
-Softly no es todavía un runtime, un framework ni un agente autónomo. No atribuye capacidades al repositorio que aún no están implementadas.
+Softly sigue siendo un laboratorio de investigación y no es un framework general ni un agente autónomo. Ahora incluye `softly-runtime/`, con Softly Runtime Mini 0.1 desarrollado por Katarina (`agentdev-katarina`). El prototipo está en estado **Prototipado** y **Probado preliminarmente**; no está **Validado** ni **Operativo** para producción.
 
 ## 2. Principios no negociables
 
@@ -91,9 +91,10 @@ Al abrir Softly o iniciar una nueva sesión de trabajo en este laboratorio:
 2. Leer `docs/operating-model.md` para recuperar el método de trabajo.
 3. Recuperar el checkpoint de continuidad vigente antes de pedir al usuario que repita contexto o antes de reabrir decisiones ya tomadas.
 4. Para el trabajo iniciado el 13 de noviembre de 2026, el checkpoint vigente está en `research/syntheses/2026-11-13-de-agentes-que-construyen-agentes.md`. Leer las secciones 15, 16 y 17 para recuperar el fundamento y la evolución del trabajo.
-5. **Prioridad operativa vigente desde el 2026-11-14: integridad y funcionamiento de Softly.** Continuar exclusivamente las mejoras del repositorio Softly: trazabilidad documental, inventario recursivo, archivos huérfanos, índices y enlaces, inspección de binarios, coherencia normativa, integridad Git y verificaciones disponibles. La dirección ha puesto en pausa el desarrollo de agentes hasta cerrar esta fase.
-6. La sección 17.12 conserva el plan histórico de molde de agentes y desarrollo iterativo de TITAN, pero queda expresamente en pausa. No reanudarlo hasta que gAto confirme que las mejoras de Softly terminaron. La línea de diseño técnico del sistema de conocimiento de la sección 17.4 también queda subordinada a la prioridad de integridad de Softly.
-7. Tratar las conclusiones de la sección 17.2 como acuerdos conceptuales documentados, no como capacidades implementadas. Mantener explícita la diferencia entre propuesta, diseño, prototipo, prueba, validación y operación.
+5. **Estado técnico actual:** Softly incorpora `softly-runtime/` con Softly Runtime Mini 0.1, implementado por Katarina (`agentdev-katarina`, versión 1.0.0, estado Diseñado). El runtime está clasificado **Prototipado** y **Probado preliminarmente** (3/3 casos informados como superados en Python 3.13); no está **Validado** ni **Operativo** para producción. La auditoría independiente de Autumn permanece pendiente.
+6. Leer el protocolo `experiments/protocols/EXP-20261114-001-runtime-mini-enforcement.md`, el resultado `experiments/results/RES-20261114-001-runtime-mini-katarina.md` y la decisión `decisions/ADR-0002-incorporacion-runtime-mini-0.1.md` para recuperar el alcance y los límites del prototipo.
+7. Mantener la distinción entre Puerta de Entrega Documental y Puerta de Habilitación en Runtime. Los paquetes documentales completos se entregan en versión 1.0.0 y estado Diseñado; la falta de pruebas runtime no retiene la entrega. La habilitación requiere evaluación independiente y evidencia específica.
+8. Las decisiones aprobadas por gAto no se reabren sin evidencia nueva, concreta y pertinente. Los detalles no críticos pendientes se documentan sin detener la entrega principal.
 8. Al cerrar una sesión con decisiones, cambios de alcance o avances relevantes, actualizar el checkpoint y sus referencias. No crear checkpoints duplicados si basta con actualizar el vigente; conservar el historial mediante Git.
 9. No solicitar al usuario que copie y pegue información que ya esté disponible en el repositorio. Recuperar primero la documentación y comunicar cualquier limitación real de acceso.
 10. Leer `docs/governance/communication-style.md` y aplicar su protocolo de comunicación: brevedad por defecto, no repetir contexto conocido, no narrar procedimientos innecesariamente, priorizar el trabajo y ser transparente cuando se solicite detalle.
