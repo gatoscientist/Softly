@@ -216,3 +216,38 @@ No se añadieron README a directorios `TEAM`, snapshots históricos o carpetas d
 - HEAD consultado antes de registrar esta verificación: Softly `d3ddc6c25a0c2f49b7274d144761732fc2336ebe`; Laboratorio `4d1d1da87c9b368cbc2115d7622778598a0f4c69`.
 
 El presente registro se actualizará mediante un commit adicional en Softly; la rama y el árbol se vuelven a consultar inmediatamente después para confirmar el HEAD final.
+
+
+## 2026-11-14 — Revisión de integridad posterior al último cierre
+
+**Corte consultado:** rama `main`, HEAD `6741969a49d71389104c2debf6174f572b73b16c` (commit `docs(maintenance): record thread archive and closure`).
+
+### Estado del árbol
+
+- Árbol recursivo completo: 127 entradas, 93 blobs y 34 directorios.
+- 79 Markdown, incluidos 31 README; 9 PDF, 1 TXT, 2 JSONL, 1 JSON y 1 `.gitattributes`.
+- No se encontraron blobs con SHA repetido.
+- No hay rutas bajo `.github/`; no se encontraron workflows de CI.
+- No hay archivos de código ejecutable en el inventario.
+- Los nueve PDF y el TXT del arenero siguen presentes. No se modificó ni eliminó ningún material.
+
+### Continuidad e índices
+
+Se revisaron nuevamente el mandato, el README raíz, el modelo operativo, el protocolo de comunicación, los índices de mantenimiento, hilos, documentación, investigación, agentes y experimentos, además del README del arenero y sus instrucciones. La prioridad vigente sigue siendo la integridad de Softly y la pausa de agentes está correctamente reflejada en los puntos de entrada revisados.
+
+El índice de hilos incluye el registro incorporado en el último cierre. La ruta histórica `docs/handoff/2026-11-13-continuidad-wachita.md` sigue enlazada desde documentación como antecedente histórico; no se altera porque su nombre forma parte de la procedencia del registro, no de la identidad vigente.
+
+### Hallazgo de gobernanza Git
+
+La consulta de la rama indica que `main` no está protegida y que los checks requeridos están desactivados. El último commit consultado aparece como no verificado por estar sin firma. Esto **no demuestra corrupción ni pérdida de contenido**, pero sí deja menos barreras preventivas ante pushes accidentales o cambios no revisados.
+
+**Recomendación pendiente de autorización:** evaluar protección de `main` (pull request o revisión requerida, checks cuando existan y restricciones de force-push/deleción) y firma de commits. No se modificó la configuración del repositorio.
+
+### Límites y siguientes pasos
+
+1. La comprobación estructural no sustituye la inspección binaria de los nueve PDF ni la comparación con respaldos independientes.
+2. No se certificó runtime: el repositorio sigue sin código ejecutable ni CI.
+3. La revisión de contenido documental fue dirigida; no equivale a una nueva lectura íntegra de los 79 Markdown ni a repetir desde cero la auditoría automatizada de enlaces.
+4. No se ejecutó limpieza, movimiento, renombrado ni modificación de contratos/agentes.
+
+**Estado:** integridad estructural del árbol confirmada para este corte; trazabilidad binaria y controles preventivos de rama siguen abiertos. No se declara cerrada la auditoría global.
