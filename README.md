@@ -27,7 +27,7 @@ Cada afirmación importante debe distinguir evidencia, observación, hipótesis,
 
 1. Lee [SOFTLY.md](SOFTLY.md): mandato, límites y reglas obligatorias de inicio y continuidad.
 2. Lee [docs/operating-model.md](docs/operating-model.md): método de trabajo y responsabilidades.
-3. Recupera el checkpoint vigente antes de continuar trabajo previo. Para la arquitectura de conocimiento iniciada el 13-11-2026, lee las secciones 15, 16 y 17 de [la síntesis de agentes que construyen agentes](research/syntheses/2026-11-13-de-agentes-que-construyen-agentes.md). La sección 17 contiene el punto exacto de reanudación.
+3. Recupera el checkpoint vigente antes de continuar trabajo previo. Para el trabajo de molde y agentes blandos, lee las secciones 15, 16 y 17 de [la síntesis de agentes que construyen agentes](research/syntheses/2026-11-13-de-agentes-que-construyen-agentes.md): la prioridad inmediata está en 17.12. La sección 17.4 conserva una línea anterior sobre el modelo técnico de conocimiento.
 4. Revisa [docs/research-method.md](docs/research-method.md): cómo investigar y conservar evidencia.
 5. Consulta [research/README.md](research/README.md): fuentes, notas y estado del conocimiento.
 6. Usa [agents/README.md](agents/README.md) para documentar agentes y sus versiones.
@@ -38,13 +38,13 @@ Cada afirmación importante debe distinguir evidencia, observación, hipótesis,
 | Área | Propósito |
 |---|---|
 | `docs/` | Principios, arquitectura, seguridad y método |
-| `research/` | Fuentes externas, fichas de lectura y síntesis |
+| `research/` | Fuentes externas, fichas de lectura, síntesis y notas de casos históricos |
 | `agents/` | Catálogo, perfiles y versiones de agentes |
 | `experiments/` | Hipótesis, protocolos y resultados experimentales |
 | `evaluations/` | Datasets, criterios, métricas y regresiones |
 | `observations/` | Conductas observadas y casos que requieren explicación |
 | `decisions/` | Decisiones arquitectónicas con contexto y consecuencias |
-| `logs/` | Bitácora estructurada del laboratorio |
+| `logs/` | Bitácora estructurada, hilos cerrados, derivados y mantenimiento |
 | `schemas/` | Esquemas para mantener registros consistentes |
 | `templates/` | Plantillas reutilizables |
 | `archive/` | Material histórico que ya no es operativo |

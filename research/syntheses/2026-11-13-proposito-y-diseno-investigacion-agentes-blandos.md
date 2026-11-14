@@ -1,4 +1,4 @@
-# SYN-20261113-002 — Propósito y diseño de investigación para la construcción de agentes blandos en Softly
+# SYN-20261113-002 — Propósito y diseño de investigación para la creación de agentes blandos
 
 - **Fecha:** 2026-11-13
 - **Proyecto:** Softly
@@ -6,9 +6,11 @@
 - **Estado:** fundamento para el siguiente ciclo de construcción; no es una especificación aprobada ni una validación empírica.
 - **Fuentes:** documentos aportados sobre arquitectura de agentes blandos, auditorías y operación de TITAN y Cytryna.
 
+> **Aclaración conceptual incorporada el 2026-11-14:** el objeto de esta investigación es crear agentes blandos reales. El molde es el instrumento para darles forma; Softly es el laboratorio que investiga, diseña, documenta y evalúa ese proceso. No se está proponiendo que el producto sean agentes de software ni que el propósito sea construir agentes programadores.
+
 ## 1. Por qué se realizó esta investigación
 
-Esta investigación se realiza para preparar la construcción inmediata del modelo de agentes blandos de Softly. No busca estudiar agentes en abstracto ni producir una revisión académica desconectada del desarrollo. Busca extraer, de experiencias previas de construcción, operación, auditoría y recuperación de agentes, los problemas que Softly debe prevenir, detectar y estudiar desde su diseño inicial.
+Esta investigación se realiza para preparar la creación de agentes blandos mediante un molde reutilizable. No busca estudiar agentes en abstracto ni producir una revisión académica desconectada del desarrollo. Busca extraer, de experiencias previas de construcción, operación, auditoría y recuperación de agentes, los problemas que deben prevenirse, detectarse y estudiarse durante el diseño y la vida de los agentes creados. Softly es el laboratorio de investigación y documentación de ese proceso.
 
 Los documentos describen dos familias de problemas que se relacionan, pero no deben confundirse:
 
@@ -21,9 +23,9 @@ También se estudian fallos de arquitectura y gobernanza que pueden facilitar am
 
 ## 2. Propósito operativo
 
-**Entregar los fundamentos y criterios verificables para que Softly pueda definir, generar, desplegar, operar, observar y evolucionar agentes blandos sin confundir la identidad del creador con la del agente creado, sin transferencias no justificadas y sin perder trazabilidad de los cambios que ocurren durante su ciclo de vida.**
+**Entregar fundamentos y criterios verificables para diseñar un molde que permita definir y crear agentes blandos con propósito propio, y para orientar su aprobación, despliegue, operación, observación y evolución sin confundir la identidad del creador con la del agente creado, sin transferencias no justificadas y sin perder trazabilidad.**
 
-El resultado debe utilizarse para construir el molde de agentes y su flujo de creación a partir de briefs. Debe permitir que una persona entregue un brief, que Softly produzca una definición candidata, que esta sea revisada y aprobada, y que solo después se habilite su despliegue. Generar una definición no equivale a desplegar un agente.
+El resultado debe utilizarse para diseñar el molde de agentes y su flujo de creación a partir de briefs. Una persona entrega un brief; el proceso produce una definición candidata, que debe revisarse y aprobarse antes de habilitar el despliegue. Softly investiga y documenta ese proceso; generar una definición no equivale a desplegar un agente.
 
 La investigación convierte experiencias de TITAN y Cytryna en controles concretos, sin copiar sus arquitecturas completas ni asumir que sus informes demuestran todos los mecanismos que describen.
 
@@ -280,9 +282,9 @@ No se debe ejecutar este experimento hasta tener briefs, criterios de aceptació
 
 La investigación documental se considera suficientemente orientada para iniciar el diseño del molde, pero no para declarar validadas sus hipótesis. El siguiente trabajo debe convertir las dimensiones de la sección 6 en una primera definición estructurada de agente y construir el flujo de brief → definición candidata → revisión/aprobación → despliegue.
 
-En paralelo, debe prepararse el protocolo de observación para que la primera generación de agentes de Softly no solo sea construida, sino que produzca evidencia útil para estudiar transferencia y deriva desde el comienzo.
+En paralelo, debe prepararse el protocolo de observación para que los primeros agentes creados mediante el molde no solo existan, sino que produzca evidencia útil para estudiar transferencia y deriva desde el comienzo.
 
-**La investigación existe para informar y proteger la construcción de Softly. Su éxito se mide por si permite crear agentes con propósito propio, límites explícitos, capacidades justificadas, permisos verificables y una historia de cambios comprensible; y por si hace posible detectar cuándo esos límites comienzan a cambiar.**
+**La investigación existe para informar y proteger la creación de agentes blandos mediante el molde estudiado en Softly. Su éxito se mide por si permite crear agentes con propósito propio, límites explícitos, capacidades justificadas, permisos verificables y una historia de cambios comprensible; y por si hace posible detectar cuándo esos límites comienzan a cambiar.**
 
 ## 12. Fuentes documentales
 
