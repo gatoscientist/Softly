@@ -1,6 +1,6 @@
 # Propuesta de esquemas para registros JSONL
 
-**Estado:** propuesta para aprobación; no normativa. No reemplaza ni modifica `schemas/research-record.schema.json`, `logs/activity.jsonl` ni `logs/decisions.jsonl`.
+**Estado:** CONGELADA por instrucción de gAto. No normativa; sin aprobación ni implementación. No revisar ni activar hasta después del tercer ciclo de auditoría.
 
 ## Diagnóstico
 
