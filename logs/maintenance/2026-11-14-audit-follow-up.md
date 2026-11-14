@@ -66,3 +66,44 @@ La comparación Git también mostró dos archivos del Laboratorio que no estaban
 - `lA cAjita del gAto/iNstrucciones.md`: se leyó como instrucción de gAto que distingue la cAjita como lugar para material interesante/valioso.
 
 Para evitar que ese material vuelva a quedar escondido, se agregó un índice `lA cAjita del gAto/README.md` y se enlazó desde el README raíz del Laboratorio. No se movieron, editaron ni borraron los dos archivos originales.
+
+
+## Segunda pasada autónoma — índices, inventario y conservación (2026-11-14; hora no registrada)
+
+A petición de gAto, se amplió el mantenimiento a tareas documentales autónomas después de que indicó que había dejado instrucciones nuevas en la cAjita y el arenero de Softly.
+
+### Cambios publicados
+
+**Softly**
+
+- Se creó `cAjita del gAto/README.md` como índice de conservación y consulta.
+- Se creó `eL arenero del gAto/README.md` con inventario de los nueve PDF y el TXT presente en el árbol, tamaños y estado de inspección.
+- Se creó `eL aRenero del gAto/README.md` para documentar que esta carpeta distinta contiene la instrucción de limpieza.
+- Se actualizó el README raíz para enlazar la cAjita y el arenero.
+- Se documentó explícitamente la diferencia de capitalización entre `eL aRenero del gAto/` y `eL arenero del gAto/`. No se renombraron ni fusionaron.
+- El archivo `eL arenero del gAto/el gAto dice.txt` sigue presente en el HEAD consultado. Su contenido leído pide postergar el orden de la casa y registrar futuras limpiezas; no contiene la frase «pico pal que lee». No se eliminó ni modificó. La eliminación mencionada por gAto no pudo asociarse a este archivo ni verificarse en el árbol consultado.
+
+**Laboratorio de Agentes**
+
+- Se creó `eL arenero del gAto/README.md` con índice de primer nivel, instrucciones y cautelas sobre ZIPs no inspeccionados.
+- Se actualizó el README raíz para enlazar el índice.
+
+### Verificaciones realizadas
+
+- Se recuperaron árboles recursivos completos de ambos repositorios (`truncated=false`).
+- Se compararon hashes SHA de blobs entre y dentro de los repositorios. Se detectaron coincidencias exactas entre snapshots `.old` y sus directorios vigentes de Auditoría y TITAN; se conservaron intencionalmente porque documentan historia/versiones. También coinciden archivos de instrucciones de cAjita entre Softly y Laboratorio. No se borró ningún duplicado.
+- Se verificaron los enlaces Markdown locales de los README de navegación tocados y de los índices de investigación/bitácora seleccionados: todos los destinos comprobados existen en el árbol actual. Esto no constituye auditoría exhaustiva de todos los enlaces del repositorio.
+- No se modificaron `AGENT.md`, `CONTRACT.md`, `PROFILE.md`, `PERMISSIONS.md`, `TEAM` ni procedimientos de agentes.
+- No se borró ni movió material del arenero o de la cAjita.
+- Los PDF y ZIP permanecen sin inspección interna; el inventario por tamaño y SHA no prueba que su contenido esté respaldado.
+- No se ejecutaron pruebas runtime ni pruebas de aceptación.
+
+### Pendientes explícitos
+
+1. Identificar con gAto cuál era exactamente el TXT eliminado que contenía «pico pal que lee», porque no corresponde al TXT que sigue presente en la ruta inventariada.
+2. Resolver si `eL aRenero del gAto/` es una carpeta intencional separada o un error histórico de capitalización. Hasta entonces, conservar ambas.
+3. Inspeccionar PDF/ZIP y comparar su contenido con artefactos canónicos antes de considerar cualquier limpieza.
+4. Completar auditoría de enlaces de todos los Markdown, no solo de los índices principales.
+5. Revisar el registro de hilos/checkpoint para identificar si falta archivar el hilo actual cuando gAto lo cierre.
+
+Esta pasada fue de indexación, clasificación y verificación estática. No se realizó limpieza destructiva.
