@@ -40,7 +40,7 @@ En la revisión del 14 de noviembre de 2026 se detectó una carpeta de instrucci
 
 ## Comparación con la Biblioteca de ChatGPT
 
-La Biblioteca contiene dos registros llamados `Auditoría TITAN.pdf` y `Auditoría TITAN(1).pdf`, ambos de 314.786 bytes. Sus fragmentos de texto indexado coinciden y describen el mismo informe de cuatro páginas sobre TITAN v0.2.0-alpha. Esto es evidencia fuerte de duplicación de contenido, pero no se obtuvo acceso a los bytes originales para calcular un hash independiente; por lo tanto, no se declara identidad binaria ni se eliminó ninguna copia. El PDF del arenero tiene el mismo tamaño, pero no se pudo demostrar que su blob sea idéntico a las copias de Biblioteca.
+La consulta actual de la Biblioteca devuelve un único registro llamado `Auditoría TITAN.pdf`, de 314.786 bytes (no aparece un segundo registro `Auditoría TITAN(1).pdf` en el inventario vigente). El índice de texto permite consultar fragmentos de un informe de cuatro páginas sobre TITAN v0.2.0-alpha. El PDF del arenero tiene el mismo tamaño, pero no se obtuvo acceso a los bytes originales de ambos archivos para calcular hashes independientes; por lo tanto, no se declara identidad binaria ni duplicación confirmada. Se corrige aquí la observación histórica de dos registros: la evidencia disponible en el inventario actual solo confirma uno.
 
 El informe indexado presenta afirmaciones sobre el estado operativo de TITAN, commits y cambios técnicos, y también señala que ciertos jobs de GitHub Actions no iniciaban por una restricción administrativa de facturación. Estas son afirmaciones del informe histórico, no una validación actual del runtime. Deben contrastarse con el repositorio TITAN y sus pruebas antes de reutilizarlas como hechos vigentes.
 
