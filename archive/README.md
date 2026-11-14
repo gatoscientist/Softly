@@ -20,3 +20,7 @@ El archivo no es un vertedero: debe seguir siendo navegable.
 - [operating-model.old.md](operating-model.old.md): copia íntegra previa a la actualización del modelo operativo.
 
 Los archivos `.old` son respaldos históricos inmutables por convención; la fuente canónica vigente sigue siendo `SOFTLY.md` y `docs/operating-model.md`, respectivamente. Se conservan siguiendo el criterio L-01 aplicado en Laboratorio de Agentes: no confundir snapshot histórico con documento operativo.
+
+## Snapshot histórico del resultado Mini 0.1
+
+- [RES-20261114-001.v1.old.md](RES-20261114-001.v1.old.md): copia íntegra del resultado original de Mini 0.1, preservada antes de incorporar la adenda de cierre del Ciclo 1. Es un snapshot histórico deliberado; la fuente canónica vigente sigue siendo `experiments/results/RES-20261114-001-runtime-mini-katarina.md`.
