@@ -131,3 +131,31 @@ Las rutas cambiadas en Softly fueron README raíz, los tres índices de cAjita/a
 Se verificó además que los enlaces Markdown locales de los índices y portadas seleccionados resuelven a rutas presentes en los árboles actuales. Los árboles completos se recuperaron sin truncamiento. Este corte documenta verificación estática de Git y navegación, no ejecución de pruebas.
 
 El commit que añade este propio corte hará avanzar el HEAD de Softly una vez más; la verificación terminal de la rama se realiza inmediatamente después de publicarlo.
+
+
+## Tercera pasada — inspección de evidencias disponibles y enlaces (2026-11-14; hora no registrada)
+
+### Inspección de PDF y ZIP: alcance real
+
+- El árbol de Softly contiene nueve PDF en `eL arenero del gAto/`. Se registraron sus Git blob SHAs en el README del arenero. Los hashes permiten reconocer exactamente los blobs dentro de Git, pero no sustituyen lectura del documento.
+- La Biblioteca de ChatGPT contiene dos registros (`Auditoría TITAN.pdf` y `Auditoría TITAN(1).pdf`) de 314.786 bytes, con fragmentos de texto indexado coincidentes y el mismo informe de cuatro páginas. Es evidencia fuerte de duplicación de contenido en Biblioteca, pero no se pudo obtener el binario para comparar hashes. No se eliminó ninguna copia ni se afirma identidad binaria.
+- El informe indexado declara TITAN v0.2.0-alpha, enumera commits y cambios de multi-API/failover, controles GUI y HopCount, y reporta que determinados jobs de Actions no iniciaron por una restricción administrativa de facturación. Es un documento histórico con afirmaciones de su autor; no prueba por sí solo el estado actual ni reemplaza la verificación de código y pruebas.
+- La Biblioteca consultada no expuso copias verificables de los otros ocho PDF del arenero. Tampoco expuso los ZIP de TITAN del Laboratorio. Los ZIP de `Proyectos/TITAN/` siguen sin inspección interna. No se eliminó ni modificó ningún PDF o ZIP.
+- Se intentó acceder a los binarios del repositorio mediante las capacidades disponibles, pero no hubo una vía autorizada de materialización de bytes. Por eso no se declara inspección interna completa.
+
+### Auditoría de enlaces Markdown
+
+- Se revisaron los enlaces Markdown locales de los 64 archivos Markdown de Softly. No se detectaron destinos locales rotos en ese recorrido.
+- En el Laboratorio se revisaron portadas e índices principales, además de los documentos de investigación/auditoría del arenero. Se detectó un enlace roto en `eL arenero del gAto/AUDITORIA/README.md`: apuntaba a `../Soft Agents/Auditoria/README.md`, resolviendo dentro del arenero. Se corrigió a `../../Soft Agents/Auditoria/README.md` y se publicó el cambio.
+- No se hizo auditoría exhaustiva de todos los Markdown del Laboratorio ni de cada enlace externo. Los archivos de agentes/contratos no se modificaron.
+
+### Inventario TXT y discrepancia de eliminación
+
+El árbol actual de Softly contiene un único TXT: `eL arenero del gAto/el gAto dice.txt` (358 bytes, blob `3275a37e61c651994b63c0525e8da643d0632a2d`). Su texto indica dejar pendiente el orden de la casa y registrar las futuras limpiezas; no contiene «pico pal que lee». No aparece otro TXT en el árbol de Softly. Por lo tanto, el archivo que gAto dice haber eliminado no está identificado en el HEAD consultado; no se recreó ni se alteró el TXT que sí permanece.
+
+### Publicaciones de esta pasada
+
+- Softly: README del arenero ampliado con Git blob SHAs y nota de comparación prudente con Biblioteca; registro de mantenimiento actualizado.
+- Laboratorio: enlace relativo corregido en el índice `eL arenero del gAto/AUDITORIA/README.md`.
+
+La revisión es estática y documental. No se inspeccionaron todos los PDF/ZIP, no se ejecutaron pruebas de runtime y no se realizaron borrados.
