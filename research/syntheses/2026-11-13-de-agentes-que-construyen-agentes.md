@@ -993,3 +993,25 @@ gAto establece que la prioridad inmediata es asegurar la integridad y el funcion
 - `9c2ba5914f9e33cf1aab3b9da0bfb0f1017aa676` — prioridad operativa actualizada en el mandato.
 
 **Límites y pendientes:** no se ha obtenido todavía una enumeración recursiva completa del árbol en esta intervención; no se han inspeccionado internamente los PDF/ZIP; no se ha realizado limpieza destructiva; no se han ejecutado pruebas runtime. La matriz permanece abierta. No declarar Softly íntegra ni la tercera auditoría superada hasta completar verificaciones y mejoras con evidencia.
+
+
+### 17.15 Creación de Katarina — AgentDEV para implementar el Runtime de Softly
+
+**Fecha:** 2026-11-14  
+**Estado:** paquete profesional 1.0.0 creado y persistido en Laboratorio de Agentes; ejecución y validación runtime no realizadas.
+
+Por instrucción explícita de gAto, se revisó el directorio Katarina y el historial de `gatoscientist/Laboratorio-de-agentes`. Se consultaron la guía de creación de agentes Soft, la investigación de estructura de agentes, perfiles AgentDEV/Auditoría de referencia y el modelo reutilizable de agentes de Softly.
+
+Se creó `Katarina/` como paquete profesional **AgentDEV**, ID `agentdev-katarina`, versión `1.0.0`. Su misión es implementar, integrar y mantener el Runtime de Softly sobre la arquitectura, contratos y código existentes, inspeccionando primero el sistema real y preservando lo que funciona. El paquete incluye README, AGENT, PROFILE, CONTRACT, OPERATING-PROCEDURE, PERMISSIONS, version.json, instrucciones especializadas, mapa de Runtime Engineering, skill de implementación, catálogo de herramientas y CHANGELOG.
+
+Se actualizaron además `README.md` y `Soft Agents/README.md` del Laboratorio para indexar la casa de Katarina.
+
+**Commits:** 17 commits confirmados en Laboratorio de Agentes. El último fue `7c56a30350a2609ebc5abcd1b75f142012f8e402` (índice Soft Agents). Los archivos clave del paquete y los índices fueron leídos nuevamente desde la rama principal y se encontraron correctamente.
+
+**Límites:** no se ejecutaron experimentos, pruebas, verificaciones runtime ni validaciones funcionales, por instrucción expresa. El paquete está diseñado y persistido; no se afirma que Katarina esté desplegada ni que el Runtime esté implementado por este trabajo. No se modificó código del Runtime de Softly en este hilo.
+
+**Relación con la prioridad 17.14:** la pausa general del desarrollo de agentes se mantiene para trabajo no solicitado. La creación de Katarina fue una instrucción directa, específica y acotada de gAto, registrada como excepción autorizada. No implica reanudar el plan general de agentes o los ciclos de TITAN.
+
+**Registro del hilo:** `logs/threads/hilo I hora-no-registrada F 2026-11-14 14-54.md`. La hora inicial no estaba disponible y no se estimó. El registro es una síntesis fiel del contexto visible, no una transcripción literal íntegra; se declaran los límites de recuperación y no se incluyen razonamientos privados.
+
+**Continuidad:** en el siguiente hilo, leer mandato, modelo operativo, identidad y estilo de comunicación, y este checkpoint. Mantener la prioridad de integridad de Softly. No iniciar nuevas tareas de desarrollo de agentes salvo instrucción explícita de gAto. Katarina queda disponible como paquete AgentDEV definido para una futura asignación de implementación del Runtime.
