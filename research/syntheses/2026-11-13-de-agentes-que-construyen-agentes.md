@@ -1068,4 +1068,7 @@ gAto solicitó completar la sincronización documental final y preparar el cierr
 
 **Verificación y límites:** los archivos principales modificados se releen desde main. La nota retirada responde 404. No se ejecutaron pruebas runtime ni auditorías dinámicas; el alcance de Tara es documental y profesional, no evidencia de una auditoría ya realizada. El análisis de referencia de TITAN se limitó a inspección documental/estática de los contratos y archivos relevantes, sin ejecutar comandos ni modificar el repositorio TITAN.
 
-**Cierre:** queda pendiente únicamente crear y verificar el registro documental de este hilo en logs/threads/ conforme a la sección 11 de SOFTLY.md. No declarar archivado hasta confirmar el archivo, el índice y el commit correspondiente.
+**Cierre:** registro documental del hilo creado y verificado en logs/threads/ conforme a la sección 11 de SOFTLY.md. Archivo e índice confirmados en main; ver detalles de commits al final de esta sección.
+
+
+**Archivo de hilo persistido y verificado:** `logs/threads/hilo I hora-no-registrada F 2026-11-14 17-17.md` — commit `b4febc4841d9216ee2a9e61ef866366f333110bf`. Índice `logs/threads/README.md` actualizado en commit `b66ca0dd7cc272a915d4e46ca0f689a21ed52245`. Ambos se releen desde `main`. El hilo queda archivado conforme a la sección 11; hora inicial no disponible y no estimada.
