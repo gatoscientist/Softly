@@ -106,8 +106,13 @@ Los índices restantes sin README corresponden a directorios de un solo archivo,
 
 **Pendientes**
 - Inspeccionar internamente los nueve PDF y cotejar respaldos binarios independientes. La Biblioteca solo expone texto indexado de un archivo y no permite comparar el binario con el blob Git.
-- Ejecutar una auditoría automatizada completa de enlaces Markdown en los 76 archivos.
+- Revisar destinos externos y dependencias semánticas no expresadas como enlaces; la comprobación de enlaces Markdown locales en los 76 archivos terminó con cero destinos rotos.
 - Completar la matriz de procedencia con fechas de incorporación, aportantes y destinos de respaldo cuando haya evidencia.
 - No borrar ni fusionar carpetas del arenero sin resolver su intención con evidencia suficiente.
 
 **Aprendizaje preventivo:** los índices también envejecen. Una revisión de árbol debe contrastar README, rutas reales y prioridad normativa, no limitarse a comprobar que los archivos existen. Los directorios que solo contienen README pueden ser estructuras deliberadas y no deben tratarse como residuos automáticamente.
+
+
+### Verificación adicional de enlaces Markdown — 2026-11-14
+
+Se leyeron los 76 archivos Markdown desde el árbol actual y se comprobaron los destinos relativos de todos los enlaces Markdown inline detectados. Resultado: **cero destinos locales rotos**. Los destinos HTTP/HTTPS no se validaron; tampoco se evaluaron referencias semánticas no expresadas como enlaces.
