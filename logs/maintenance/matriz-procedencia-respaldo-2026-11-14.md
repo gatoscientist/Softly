@@ -213,3 +213,47 @@ El esquema `schemas/research-record.schema.json` define registros `SRC-YYYYMMDD-
 5. Mantener pendiente la inspección binaria de los nueve PDF y el cotejo de respaldos independientes.
 
 **Estado:** inventario de rutas y tipos reconciliado para este corte; trazabilidad de fuentes adjuntas incompleta; inspección binaria pendiente; ninguna limpieza autorizada.
+
+
+## 13. Auditoría transversal de identificadores y relaciones — 2026-11-14
+
+**Corte consultado:** `main`, HEAD `288569c592d997f205c1b5a14ef6783d48888509`; árbol recursivo completo (`truncated=false`). Se releen los índices de investigación, las tres síntesis, las notas de investigación relevantes, la bibliografía, la ADR-0001, el registro de decisiones y el esquema de registros de investigación.
+
+### Hallazgos confirmados
+
+1. **Colisión de ID de síntesis:** dos documentos distintos declaran `SYN-20261113-001`:
+   - `research/syntheses/2026-11-13-de-agentes-que-construyen-agentes.md` — Cytryna, TITAN y gobernanza de equipos multiagente.
+   - `research/syntheses/2026-11-13-linea-base-contaminacion-multirrama-titan.md` — línea base de contaminación multi-rama en TITAN.
+   
+   Son artefactos y preguntas diferentes. La colisión está confirmada; no se reasigna ningún ID sin resolver cuál debe conservar el identificador histórico y cómo actualizar sus referencias.
+
+2. **Síntesis no indexada:** `research/README.md` lista dos síntesis y enlaza `SYN-20261113-001` a la línea base multi-rama y `SYN-20261113-002` al propósito/diseño de agentes blandos. No incluye `2026-11-13-de-agentes-que-construyen-agentes.md`, que queda sin entrada en el índice de investigación. Su omisión no implica que el archivo esté perdido.
+
+3. **Correspondencia de fuentes adjuntas y nombres del arenero no resuelta:** la tabla de `research/notes/2026-11-13-material-titan-sofa-agent.md` registra ocho títulos originales. Al contrastarlos con `eL arenero del gAto/README.md`, al menos dos nombres no coinciden literalmente:
+   - `SRC-20261113-001`: “Auditoría Total de Código y Estado del Proyecto TITAN.pdf”; el inventario actual incluye “Auditoría TITAN.pdf”.
+   - `SRC-20261113-006`: “Arquitectura de Agentes Blandos y Dinámicas de Fusión en Sistemas Multi-Agente Auto-Evolutivos.pdf”; el inventario actual incluye “Arquitectura de Agentes Blandos.pdf”.
+   
+   La nota declara que los originales fueron adjuntos de conversación y no están replicados como binarios en el repositorio. No se puede inferir que los archivos del arenero sean los mismos documentos renombrados, versiones abreviadas o fuentes distintas. La relación queda **no demostrada**, no se declara pérdida ni equivalencia.
+
+4. **Convención de identificadores incompleta:** `research/README.md` define IDs `SRC-YYYYMMDD-NNN` y `SYN-YYYYMMDD-NNN`, mientras `research/bibliography.md` usa `SRCSET-20261113-001` para un conjunto/panorama y la nota de ingesta usa `ING-20261113-001`; la ficha de anatomía usa `SOFT-RES-001`. Son clases semánticas distintas, pero no existe un registro central que declare sus namespaces, cardinalidad, reglas de unicidad o relaciones. El esquema actual solo modela `SRC-...` y exige `url`; no modela explícitamente conjuntos, ingestas ni fuentes adjuntas locales.
+
+5. **Relaciones registradas y límites:** `ADR-0001` tiene un artefacto formal enlazado desde `decisions/README.md` y una entrada correspondiente en `logs/decisions.jsonl`. La ADR identifica su reconstrucción desde el registro y conserva el commit histórico relacionado. No se detecta una discrepancia en esa relación en los documentos consultados.
+
+### Clasificación y acciones seguras
+
+- Colisión de ID: **ambigüedad de identidad documental**, requiere decisión de asignación antes de corregir referencias.
+- Síntesis no indexada: **deuda de navegación**, corrección posterior de bajo riesgo cuando se resuelva cómo citarla sin perpetuar la colisión.
+- Correspondencia de nombres de fuentes: **procedencia no demostrada**, requiere cotejar adjuntos originales, metadatos o hashes antes de asociar registros.
+- Namespaces: **brecha de gobernanza del modelo documental**, requiere propuesta versionada; no modificar el esquema actual durante esta auditoría.
+
+No se cambió ningún ID, título, esquema, fuente, índice ni artefacto histórico. No se movió ni eliminó material. La revisión fue dirigida a los documentos enumerados y no equivale a un análisis semántico exhaustivo de cada Markdown del repositorio.
+
+### Próximas acciones propuestas
+
+1. Resolver la colisión de `SYN-20261113-001` con una decisión explícita y actualizar todas las referencias afectadas en una sola operación verificable.
+2. Incorporar la síntesis actualmente no indexada una vez resuelta la colisión.
+3. Cotejar los ocho adjuntos originales con los archivos del arenero y registrar correspondencias solo con evidencia verificable.
+4. Diseñar un registro de tipos de identificador y relaciones (fuente, conjunto, ingesta, nota, síntesis, decisión y artefacto derivado), sin alterar aún los contratos vigentes.
+5. Mantener separados los hechos históricos, las referencias de procedencia y las instrucciones operativas actuales.
+
+**Estado:** hallazgos confirmados y registrados; no se realizaron cambios estructurales ni limpieza. La trazabilidad transversal sigue abierta.
