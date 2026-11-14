@@ -452,6 +452,192 @@ class SoftlyRuntime:
                 os.close(created[0])
             return result
 
+
+    @staticmethod
+    def _assert_open_path_identity(fd: int, directory_fd: int, name: str) -> os.stat_result:
+        """Exige que el nombre siga apuntando al mismo archivo regular abierto."""
+        opened = os.fstat(fd)
+        try:
+            named = os.stat(name, dir_fd=directory_fd, follow_symlinks=False)
+        except OSError as exc:
+            raise LedgerSecurityError(f'{name} dejó de estar disponible durante la recuperación.') from exc
+        if (not stat.S_ISREG(opened.st_mode) or not stat.S_ISREG(named.st_mode)
+                or (opened.st_dev, opened.st_ino) != (named.st_dev, named.st_ino)):
+            raise LedgerSecurityError(f'{name} cambió de identidad durante la recuperación.')
+        return opened
+
+    def _preserve_recovery_evidence(self, ledger_bytes: bytes) -> str:
+        """Guarda el ledger original en un archivo exclusivo y durable."""
+        name = f'.events.recovery.{uuid.uuid4().hex}.jsonl'
+        flags = (os.O_WRONLY | os.O_CREAT | os.O_EXCL | os.O_NOFOLLOW
+                 | getattr(os, 'O_CLOEXEC', 0))
+        fd = os.open(name, flags, 384, dir_fd=self._runtime_fd)
+        try:
+            offset = 0
+            while offset < len(ledger_bytes):
+                written = os.write(fd, ledger_bytes[offset:])
+                if written <= 0:
+                    raise OSError('Escritura incompleta del respaldo.')
+                offset += written
+            os.fsync(fd)
+            verify_fd = os.open(name, os.O_RDONLY | os.O_NOFOLLOW | getattr(os, 'O_CLOEXEC', 0), dir_fd=self._runtime_fd)
+            try:
+                saved = self._read_all(verify_fd)
+            finally:
+                os.close(verify_fd)
+            if len(saved) != len(ledger_bytes) or not secrets.compare_digest(
+                    hashlib.sha256(saved).digest(), hashlib.sha256(ledger_bytes).digest()):
+                raise LedgerError('El respaldo no coincide byte a byte con el ledger original.')
+        except BaseException:
+            try:
+                os.unlink(name, dir_fd=self._runtime_fd)
+                os.fsync(self._runtime_fd)
+            except OSError:
+                pass
+            raise
+        finally:
+            os.close(fd)
+        os.fsync(self._runtime_fd)
+        return name
+
+    def _write_recovery_report(self, report: dict[str, Any]) -> str:
+        """Persiste un informe administrativo exclusivo, independiente del ledger."""
+        name = f'.events.recovery.{report["attempt_id"]}.json'
+        payload = (json.dumps(report, ensure_ascii=False, sort_keys=True, separators=(',', ':')) + '\\n').encode('utf-8')
+        flags = os.O_WRONLY | os.O_CREAT | os.O_EXCL | os.O_NOFOLLOW | getattr(os, 'O_CLOEXEC', 0)
+        fd = os.open(name, flags, 384, dir_fd=self._runtime_fd)
+        try:
+            offset = 0
+            while offset < len(payload):
+                written = os.write(fd, payload[offset:])
+                if written <= 0:
+                    raise OSError('Escritura incompleta del informe.')
+                offset += written
+            os.fsync(fd)
+        finally:
+            os.close(fd)
+        os.fsync(self._runtime_fd)
+        return name
+
+    def recover_ledger(self) -> dict[str, Any]:
+        """Recupera únicamente el sufijo posterior al checkpoint íntegro.
+
+        Nunca restaura el respaldo ni modifica events.head. Los estados ambiguos
+        se rechazan y cualquier fallo tras iniciar el truncamiento queda bloqueado
+        por la verificación obligatoria que execute() realiza antes de operar.
+        """
+        attempt_id = uuid.uuid4().hex
+        backup_name: str | None = None
+        modification_started = False
+        try:
+            with self._locked_ledger() as (ledger_fd, head_fd):
+                ledger_info = self._assert_open_path_identity(ledger_fd, self._runtime_fd, self.LEDGER_NAME)
+                head_info = self._assert_open_path_identity(head_fd, self._runtime_fd, self.HEAD_NAME)
+                original = self._read_all(ledger_fd)
+                head_raw = self._read_all(head_fd)
+                if head_raw == b'GENESIS\\n':
+                    checkpoint = self.GENESIS
+                elif (len(head_raw) == 65 and head_raw.endswith(b'\\n')
+                      and all(ch in b'0123456789abcdef' for ch in head_raw[:-1])):
+                    checkpoint = head_raw[:-1].decode('ascii')
+                else:
+                    return {'status': 'rejected', 'reason': 'Checkpoint ausente o con formato no canónico.',
+                            'modified': False, 'attempt_id': attempt_id}
+
+                prefix_end = 0
+                if checkpoint == self.GENESIS:
+                    prefix = b''
+                else:
+                    previous = self.GENESIS
+                    offset = 0
+                    match_end: int | None = None
+                    for line_number, line in enumerate(original.splitlines(keepends=True), 1):
+                        if not line.endswith(b'\\n'):
+                            break
+                        try:
+                            event = json.loads(line[:-1].decode('utf-8'))
+                        except (UnicodeDecodeError, json.JSONDecodeError):
+                            break
+                        if not isinstance(event, dict) or event.get('previous_event_hash') != previous:
+                            break
+                        recorded = event.get('event_hash')
+                        calculated = self._canonical_hash(event)
+                        if not isinstance(recorded, str) or not secrets.compare_digest(recorded, calculated):
+                            break
+                        previous = recorded
+                        offset += len(line)
+                        if secrets.compare_digest(recorded, checkpoint):
+                            if match_end is not None:
+                                return {'status': 'rejected', 'reason': 'Checkpoint ambiguo.',
+                                        'modified': False, 'attempt_id': attempt_id}
+                            match_end = offset
+                    if match_end is None:
+                        return {'status': 'rejected', 'reason': 'Checkpoint no corresponde a un prefijo íntegro.',
+                                'modified': False, 'attempt_id': attempt_id}
+                    prefix_end = match_end
+                    prefix = original[:prefix_end]
+
+                # El ledger ya está exactamente en el límite confirmado: no escribir.
+                if original == prefix:
+                    verified = self._verify_open_ledger(ledger_fd, head_fd)
+                    if not verified['ok']:
+                        return {'status': 'rejected', 'reason': verified['error'],
+                                'modified': False, 'attempt_id': attempt_id}
+                    return {'status': 'already_consistent', 'integrity_verified': True,
+                            'modified': False, 'attempt_id': attempt_id}
+
+                # Respaldo durable previo a cualquier cambio del ledger.
+                backup_name = self._preserve_recovery_evidence(original)
+                self._assert_open_path_identity(ledger_fd, self._runtime_fd, self.LEDGER_NAME)
+                self._assert_open_path_identity(head_fd, self._runtime_fd, self.HEAD_NAME)
+                if os.fstat(ledger_fd).st_size != len(original) or self._read_all(ledger_fd) != original:
+                    return {'status': 'rejected', 'reason': 'Ledger cambió después de preservar evidencia.',
+                            'modified': False, 'backup': backup_name, 'attempt_id': attempt_id}
+                if self._read_all(head_fd) != head_raw:
+                    return {'status': 'rejected', 'reason': 'Checkpoint cambió durante la recuperación.',
+                            'modified': False, 'backup': backup_name, 'attempt_id': attempt_id}
+
+                modification_started = True
+                os.ftruncate(ledger_fd, prefix_end)
+                os.fsync(ledger_fd)
+                actual = self._read_all(ledger_fd)
+                if actual != prefix or self._read_all(head_fd) != head_raw:
+                    raise LedgerError('La verificación byte a byte posterior al truncamiento falló.')
+                verified = self._verify_open_ledger(ledger_fd, head_fd)
+                if not verified['ok']:
+                    raise LedgerError(verified['error'] or 'Ledger inválido después de recuperar.')
+
+                report = {
+                    'schema': 'softly-ledger-recovery-report-v1',
+                    'attempt_id': attempt_id,
+                    'timestamp': datetime.now(timezone.utc).isoformat(),
+                    'original_size': len(original),
+                    'original_sha256': hashlib.sha256(original).hexdigest(),
+                    'checkpoint': checkpoint,
+                    'confirmed_prefix_size': prefix_end,
+                    'confirmed_prefix_sha256': hashlib.sha256(prefix).hexdigest(),
+                    'discarded_suffix_size': len(original) - prefix_end,
+                    'backup': backup_name,
+                    'result': 'recovered',
+                    'integrity_verified': True,
+                }
+                try:
+                    report_name = self._write_recovery_report(report)
+                except OSError as exc:
+                    return {'status': 'recovered', 'integrity_verified': True,
+                            'administrative_report': 'failed',
+                            'report_error': exc.__class__.__name__, 'backup': backup_name,
+                            'attempt_id': attempt_id}
+                return {'status': 'recovered', 'integrity_verified': True,
+                        'administrative_report': 'written', 'report': report_name,
+                        'backup': backup_name, 'discarded_suffix_size': len(original) - prefix_end,
+                        'attempt_id': attempt_id}
+        except (OSError, LedgerError) as exc:
+            return {'status': 'failed' if modification_started else 'rejected',
+                    'reason': f'{exc.__class__.__name__}: {exc}',
+                    'modified': modification_started, 'backup': backup_name,
+                    'attempt_id': attempt_id}
+
     def _open_target_parent(self, requested_path: Any) -> tuple[int, str]:
         if not isinstance(requested_path, str) or not requested_path.strip() or os.path.isabs(requested_path):
             raise _PolicyDenied('La ruta debe ser relativa al workspace.')

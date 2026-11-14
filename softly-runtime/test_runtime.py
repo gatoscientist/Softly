@@ -252,5 +252,80 @@ class SoftlyRuntimeTests(unittest.TestCase):
             SoftlyRuntime(self.manifest)
         os.chmod(self.package, 448)
         self.runtime = SoftlyRuntime(self.manifest)
+
+    def test_f03_recovery_truncates_only_unconfirmed_suffix_and_is_idempotent(self) -> None:
+        self.runtime.execute('runtime-mini-smoke-test', 'create_text_file', path='kept.txt', content='keep')
+        ledger = self.package / 'events.jsonl'
+        head = self.package / 'events.head'
+        confirmed = ledger.read_bytes()
+        checkpoint = head.read_bytes()
+        with ledger.open('ab') as handle:
+            handle.write(b'{"unconfirmed":')
+            handle.flush()
+            os.fsync(handle.fileno())
+        result = self.runtime.recover_ledger()
+        self.assertEqual(result['status'], 'recovered')
+        self.assertEqual(ledger.read_bytes(), confirmed)
+        self.assertEqual(head.read_bytes(), checkpoint)
+        self.assertTrue(result['backup'])
+        self.assertEqual((self.package / result['backup']).read_bytes(), confirmed + b'{"unconfirmed":')
+        second = self.runtime.recover_ledger()
+        self.assertEqual(second['status'], 'already_consistent')
+        self.assertEqual(ledger.read_bytes(), confirmed)
+        self.assertEqual(head.read_bytes(), checkpoint)
+        self.assertTrue(self.runtime.execute('runtime-mini-smoke-test', 'create_text_file',
+                                              path='after-recovery.txt', content='ok')['ok'])
+
+    def test_f03_recovery_rejects_foreign_checkpoint_without_ledger_changes(self) -> None:
+        self.runtime.execute('runtime-mini-smoke-test', 'create_text_file', path='kept.txt', content='keep')
+        ledger = self.package / 'events.jsonl'
+        head = self.package / 'events.head'
+        original_ledger = ledger.read_bytes()
+        original_head = head.read_bytes()
+        head.write_bytes(b'0' * 64 + b'\\n')
+        foreign_head = head.read_bytes()
+        result = self.runtime.recover_ledger()
+        self.assertEqual(result['status'], 'rejected')
+        self.assertEqual(ledger.read_bytes(), original_ledger)
+        self.assertEqual(head.read_bytes(), foreign_head)
+        self.assertFalse(self.runtime.execute('runtime-mini-smoke-test', 'create_text_file',
+                                              path='blocked.txt', content='no')['ok'])
+
+    def test_f03_recovery_rejects_corruption_before_checkpoint(self) -> None:
+        self.runtime.execute('runtime-mini-smoke-test', 'create_text_file', path='kept.txt', content='keep')
+        ledger = self.package / 'events.jsonl'
+        original = ledger.read_bytes()
+        damaged = bytearray(original)
+        damaged[10] ^= 1
+        ledger.write_bytes(bytes(damaged) + b'junk')
+        before = ledger.read_bytes()
+        head_before = (self.package / 'events.head').read_bytes()
+        result = self.runtime.recover_ledger()
+        self.assertEqual(result['status'], 'rejected')
+        self.assertEqual(ledger.read_bytes(), before)
+        self.assertEqual((self.package / 'events.head').read_bytes(), head_before)
+
+    def test_f03_recovery_genesis_checkpoint_discards_unconfirmed_bytes(self) -> None:
+        ledger = self.package / 'events.jsonl'
+        head = self.package / 'events.head'
+        ledger.write_bytes(b'not-json\\npartial')
+        head.write_bytes(b'GENESIS\\n')
+        result = self.runtime.recover_ledger()
+        self.assertEqual(result['status'], 'recovered')
+        self.assertEqual(ledger.read_bytes(), b'')
+        self.assertEqual(head.read_bytes(), b'GENESIS\\n')
+        self.assertTrue(self.runtime.verify_ledger()['ok'])
+
+    def test_f03_recovery_never_deletes_workspace_artifacts(self) -> None:
+        self.runtime.execute('runtime-mini-smoke-test', 'create_text_file', path='artifact.txt', content='preserve')
+        artifact = self.workspace / 'artifact.txt'
+        before = artifact.read_bytes()
+        ledger = self.package / 'events.jsonl'
+        with ledger.open('ab') as handle:
+            handle.write(b'corrupt-suffix')
+        result = self.runtime.recover_ledger()
+        self.assertEqual(result['status'], 'recovered')
+        self.assertEqual(artifact.read_bytes(), before)
+
 if __name__ == '__main__':
     unittest.main(verbosity=2)
