@@ -1,14 +1,14 @@
 # SOFTLY — Mandato del laboratorio
 
 **Versión:** 0.2  
-**Estado:** laboratorio con prototipo de runtime (Softly Runtime Mini 0.1)  
+**Estado:** laboratorio con Softly Runtime Mini 0.2  
 **Misión:** investigar, diseñar y evaluar agentes inteligentes; conservar conocimiento verificable y convertirlo en mejores prácticas experimentales.
 
 ## 1. Qué es Softly
 
 Softly es el laboratorio de investigación y memoria técnica para comprender agentes individuales y sistemas multiagente. Aquí se estudian arquitecturas, instrucciones, contexto, memoria, herramientas, autonomía, coordinación, seguridad, evaluación y evolución.
 
-Softly sigue siendo un laboratorio de investigación y no es un framework general ni un agente autónomo. Ahora incluye `softly-runtime/`, con Softly Runtime Mini 0.1 desarrollado por Katarina (`agentdev-katarina`). El prototipo está en estado **Prototipado** y **Probado preliminarmente**; no está **Validado** ni **Operativo** para producción.
+Softly sigue siendo un laboratorio de investigación y no es un framework general ni un agente autónomo. Ahora incluye `softly-runtime/`, con Softly Runtime Mini 0.2 desarrollado por Katarina (`agentdev-katarina`). El corte `e1014932fcfe9bf5d69c8aaa3ed6adf157bfeef2` está en estado **Prototipado** y **Probado preliminarmente** (6/6 pruebas reportadas en Python 3.13.5); CODE AUD independiente de Autumn pendiente. No está **Validado** ni **Operativo** para producción.
 
 ## 2. Principios no negociables
 
@@ -91,8 +91,8 @@ Al abrir Softly o iniciar una nueva sesión de trabajo en este laboratorio:
 2. Leer `docs/operating-model.md` para recuperar el método de trabajo.
 3. Recuperar el checkpoint de continuidad vigente antes de pedir al usuario que repita contexto o antes de reabrir decisiones ya tomadas.
 4. Para el trabajo iniciado el 13 de noviembre de 2026, el checkpoint vigente está en `research/syntheses/2026-11-13-de-agentes-que-construyen-agentes.md`. Leer las secciones 15, 16 y 17 para recuperar el fundamento y la evolución del trabajo.
-5. **Estado técnico actual:** Softly incorpora `softly-runtime/` con Softly Runtime Mini 0.1, implementado por Katarina (`agentdev-katarina`, versión 1.0.0, estado Diseñado). El runtime está clasificado **Prototipado** y **Probado preliminarmente** (3/3 casos informados como superados en Python 3.13); no está **Validado** ni **Operativo** para producción. La auditoría independiente de Autumn permanece pendiente.
-6. Leer el protocolo `experiments/protocols/EXP-20261114-001-runtime-mini-enforcement.md`, el resultado `experiments/results/RES-20261114-001-runtime-mini-katarina.md` y la decisión `decisions/ADR-0002-incorporacion-runtime-mini-0.1.md` para recuperar el alcance y los límites del prototipo.
+5. **Estado técnico actual:** Softly incorpora `softly-runtime/` con Softly Runtime Mini 0.2, implementado por Katarina (`agentdev-katarina`). El corte `e1014932fcfe9bf5d69c8aaa3ed6adf157bfeef2` está clasificado **Prototipado** / **Probado preliminarmente** (6/6 pruebas reportadas en Python 3.13.5); CODE AUD independiente de Autumn pendiente. No está **Validado** ni **Operativo** para producción.
+6. Recuperar el cierre del Ciclo 1 en `experiments/results/RES-20261114-001-runtime-mini-katarina.md`; consultar `experiments/protocols/EXP-20261114-002-runtime-mini-0.2-isolation-ledger.md`, `experiments/results/RES-20261114-002-runtime-mini-0.2-katarina.md` y `decisions/ADR-0003-aislamiento-y-ledger-encadenado-mini-0.2.md` para el estado y los límites de Mini 0.2.
 7. Mantener la distinción entre Puerta de Entrega Documental y Puerta de Habilitación en Runtime. Los paquetes documentales completos se entregan en versión 1.0.0 y estado Diseñado; la falta de pruebas runtime no retiene la entrega. La habilitación requiere evaluación independiente y evidencia específica.
 8. Las decisiones aprobadas por gAto no se reabren sin evidencia nueva, concreta y pertinente. Los detalles no críticos pendientes se documentan sin detener la entrega principal.
 9. Al cerrar una sesión con decisiones, cambios de alcance o avances relevantes, actualizar el checkpoint y sus referencias. No crear checkpoints duplicados si basta con actualizar el vigente; conservar el historial mediante Git.
