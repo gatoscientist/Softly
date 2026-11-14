@@ -23,16 +23,6 @@ La instrucción establece que solo se puede eliminar material cuando exista cert
 | Revisión de código y consejos.pdf | PDF | 120.359 bytes | `da9d4f097c29139a61c7ff16c91f964280f85c27` | No inspeccionado en esta pasada |
 | el gAto dice.txt | TXT | 358 bytes | `3275a37e61c651994b63c0525e8da643d0632a2d` | Contenido leído: pide postergar el orden de la casa y registrar futuras limpiezas; conservar |
 
-
-
-
-
-
-
-
-
-| el gAto dice.txt | TXT | 358 bytes | Contenido leído: pide dejar pendiente el orden de la casa y registrar futuras limpiezas; conservar |
-
 Los tamaños corresponden al árbol Git inspeccionado. No implican que los documentos hayan sido leídos o validados.
 
 ## Criterio de trabajo
