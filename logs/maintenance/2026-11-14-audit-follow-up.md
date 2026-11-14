@@ -47,7 +47,7 @@ Los commits de cada archivo están registrados en el historial Git de ambos repo
 
 Se recuperaron nuevamente las ramas `main` y sus árboles recursivos después de los cambios. Ambos árboles respondieron completos (`truncated=false`).
 
-- **Softly HEAD:** `e6ce1c7f06a51117d0490f925424944451212b08`.
+- **Softly:** el HEAD inmediatamente anterior a la última actualización de este registro fue `e6ce1c7f06a51117d0490f925424944451212b08`; el commit que incorpora esta versión final del registro se verificó después como HEAD de `main`.
   - `research/notes/Conocí a Cytryna.md` existe y la copia de raíz ya no existe.
   - `logs/derived/Hiloderivado.md` existe y la copia de raíz ya no existe.
   - El puntero actualizado, índices y este registro de mantenimiento existen.
