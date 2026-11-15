@@ -18,3 +18,6 @@ Esta área reúne principios y documentación transversal del laboratorio. No co
 Los documentos de arquitectura y gobernanza pueden tener estados distintos. Revisar el estado indicado en cada documento; una propuesta no equivale a una decisión aprobada ni a una capacidad implementada.
 
 - [Modos y autocoordinación](architecture/operational-modes-and-autocoordination.md): conmutador, espera activa, eventos y handoffs.
+
+- [Checklist de Entrega Documental](agent-delivery-checklist.md): auto-revisión declarativa y no bloqueante de paquetes de agentes.
+- [Checkpoint operativo](../CHECKPOINT.md): decisiones vigentes y punto actual, lectura ligera al inicio.
