@@ -19,3 +19,6 @@ Documentos conceptuales y propuestas del modelo general de agentes y del sistema
 ## Estado
 
 Estos documentos son diseños, propuestas y mapas de investigación. No declaran un runtime ni una base de datos implementada. Consultar el estado y las preguntas abiertas de cada archivo antes de reutilizar sus conclusiones.
+
+- [Modos y autocoordinación](operational-modes-and-autocoordination.md): selección de modo, Active Standby y handoffs.
+- [Taxonomías y validación de moldes](taxonomy-and-mold-validation.md): generación estructurada y controles profesionales.
