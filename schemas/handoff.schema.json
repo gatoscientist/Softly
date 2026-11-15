@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/gatoscientist/Softly/blob/main/schemas/handoff.schema.json",
+  "title": "Softly Handoff",
+  "description": "Contrato de transferencia entre agentes; no ejecuta ni autoriza herramientas.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["handoff_id", "event_id", "status", "from", "to", "assignment_id", "task", "result", "evidence", "next", "acceptance", "created_at"],
+  "properties": {
+    "handoff_id": {"type": "string", "minLength": 1},
+    "event_id": {"type": "string", "minLength": 1},
+    "status": {"enum": ["ready", "accepted", "rejected", "blocked", "closed"]},
+    "from": {"$ref": "#/$defs/agentRef"},
+    "to": {"oneOf": [{"$ref": "#/$defs/agentRef"}, {"type": "string", "minLength": 1}]},
+    "assignment_id": {"type": "string", "minLength": 1},
+    "task": {"type": "string", "minLength": 1},
+    "result": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "evidence": {"type": "array", "items": {"type": "string"}},
+    "decisions": {"type": "array", "items": {"type": "string"}},
+    "open": {"type": "array", "items": {"type": "string"}},
+    "next": {"type": "string", "minLength": 1},
+    "acceptance": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "context_refs": {"type": "array", "items": {"type": "string"}},
+    "created_at": {"type": "string", "format": "date-time"},
+    "lease": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["claim_id", "expires_at"],
+      "properties": {
+        "claim_id": {"type": "string"},
+        "expires_at": {"type": "string", "format": "date-time"}
+      }
+    }
+  },
+  "$defs": {
+    "agentRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["agent_id", "version", "taxonomy"],
+      "properties": {
+        "agent_id": {"type": "string"},
+        "version": {"type": "string"},
+        "taxonomy": {"type": "string"}
+      }
+    }
+  }
+}
