@@ -16,6 +16,8 @@ Cada nota debe enlazar sus fuentes. Las citas textuales deben ser breves y clara
 
 ## Estado inicial
 
+La investigación conjunta Godot (14-11-2026) integra el análisis técnico de Auditoría y la lectura sistémica de Softly. Sus documentos de origen se preservan por separado; ver la [síntesis Parte II](syntheses/2026-11-14-investigacion-conjunta-godot-parte-ii.md) y la [entrega de Auditoría Parte I](../audsay/res/Investigacion_Auditoria_Godot_Parte_I.md).
+
 La primera revisión del panorama está en `sources/2026-11-agent-design-landscape.md`. Es una síntesis exploratoria, no una revisión sistemática ni una conclusión final.
 
 ## Notas de investigación
@@ -30,6 +32,8 @@ La primera revisión del panorama está en `sources/2026-11-agent-design-landsca
 - [Propuesta de registro de namespaces y relaciones](identifier-registry-proposal.md): documento descriptivo congelado, no normativo; su revisión queda pospuesta hasta después del tercer ciclo de auditoría.
 
 ## Síntesis
+
+- [SYN-20261114-001 — Investigación conjunta Godot: contraste e integración de Auditoría y Softly (Parte II)](syntheses/2026-11-14-investigacion-conjunta-godot-parte-ii.md): integra las investigaciones de ambos equipos sobre agentes de desarrollo y runtime en Godot; distingue evidencia documental, inferencias e hipótesis y registra discrepancias y pruebas pendientes.
 
 - [SYN-20261113-001 — De agentes que construyen agentes: Cytryna, TITAN y gobernanza multiagente](syntheses/2026-11-13-de-agentes-que-construyen-agentes.md): síntesis documental de roles, autoridad, límites técnicos y coordinación entre equipos constructores y sistemas creados.
 - [SYN-20261113-002 — Investigación para la creación de agentes blandos mediante un molde](syntheses/2026-11-13-proposito-y-diseno-investigacion-agentes-blandos.md): explica por qué se estudian las experiencias de TITAN y Cytryna y cómo se usarán para construir el molde de agentes, el flujo brief → definición → aprobación → despliegue, la política de no herencia por defecto y la observación de deriva identitaria durante la operación.
