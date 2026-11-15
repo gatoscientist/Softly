@@ -65,10 +65,10 @@ El estado de disponibilidad se registra por versión y proyecto, no se deduce de
 | Thea | AgentMUS | Active Standby declarado por esta asignación; verificar paquete vigente en Laboratorio de Agentes |
 | Tábata | AgentSCI | Active Standby declarado por esta asignación; verificar paquete vigente en Laboratorio de Agentes |
 | Katarina | AgentDEV | Active Standby declarado por esta asignación; paquete 1.1.0 |
-| Melina | Por resolver en registro maestro | Active Standby declarado por esta asignación |
-| Audeline | Auditoría | Active Standby declarado por esta asignación |
-| Aurora | Auditoría | Active Standby declarado por esta asignación |
-| Autumn | Auditoría | Active Standby declarado por esta asignación |
+| Melina | AgentMUS | Active Standby; paquete 1.0.0 identificado en Laboratorio de Agentes |
+| Audeline | Auditoría | Active Standby; paquete 1.0.0 identificado en Laboratorio de Agentes |
+| Aurora | Auditoría | Active Standby; paquete 1.0.0 identificado en Laboratorio de Agentes |
+| Autumn | Auditoría | Active Standby; paquete 1.0.0 identificado en Laboratorio de Agentes |
 
 El estado declarado aquí es disponibilidad documental/contractual comunicada por gAto; no certifica conexión, ejecución ni prueba de vida del agente. El registro maestro debe completar ID, versión exacta, dominio, endpoint/canal, permisos y última evidencia de disponibilidad antes de despachar.
 
