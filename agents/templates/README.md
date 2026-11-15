@@ -11,3 +11,4 @@ Mantener separadas la definición del agente, el brief de incorporación, la asi
 - [Handoff compacto](handoff.md): transferencia estructurada entre especialistas (5–12 líneas).
 
 - [Handoff compacto](handoff.md): transferencia estructurada entre especialistas (5–12 líneas).
+- [Contrato de generación y validación](../../docs/architecture/taxonomy-and-mold-validation.md): proceso de generación estructurada y validación de paquetes.
