@@ -18,6 +18,9 @@ Este directorio conserva la historia documental de hilos cerrados. Los archivos 
 - [Hilo del 14-11-2026, horas no registradas](hilo%20I%202026-11-14%20hora-no-registrada%20F%202026-11-14%20hora-no-registrada.md)
 - [Hilo del 14-11-2026, hora inicial no registrada–11:25](hilo%20I%202026-11-14%20hora-no-registrada%20F%202026-11-14%2011-25.md)
 
+
+- [Hilo del 15-11-2026, hora no registrada — demonio de síntesis y continuidad](hilo%20I%202026-11-15%2018-23%20F%20hora-no-registrada.md)
+
 ## Uso
 
 Consultar bajo demanda cuando un antecedente sea necesario. El checkpoint vigente resume dónde continuar; estos archivos preservan la historia. No es necesario cargar todo el archivo histórico al iniciar una sesión nueva.
