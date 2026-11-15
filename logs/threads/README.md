@@ -4,10 +4,11 @@ Este directorio conserva la historia documental de hilos cerrados. Los archivos 
 
 ## Registros disponibles
 
-- [Hilo del 14-11-2026, hora inicial no registrada–17:17 — sincronización final DEVAGENTS TITAN y cierre documental](hilo%20I%20hora-no-registrada%20F%202026-11-14%2017-17.md)
+- [Hilo del 15-11-2026, 04:01–hora no registrada — deliberación sobre la identidad, origen y emergencia de Softly](hilo%20I%202026-11-15%2004-01%20F%202026-11-15%20hora-no-registrada.md)
+- [Hilo del 14-11-2026, hora inicial no registrada–17:17 — sincronización final DEVAGENTS TITAN y cierre documental](hilo%20I%202026-11-14%20hora-no-registrada%20F%202026-11-14%2017-17.md)
 
-- [Hilo del 14-11-2026, hora inicial no registrada–13:06 — cierre de auditoría y continuidad de Softly](hilo%20I%20hora-no-registrada%20F%202026-11-14%2013-06.md)
-- [Hilo del 14-11-2026, horas no registradas — mantenimiento y continuidad de Softly](hilo%20I%20hora-no-registrada%20F%202026-11-14%20hora-no-registrada.md)
+- [Hilo del 14-11-2026, hora inicial no registrada–13:06 — cierre de auditoría y continuidad de Softly](hilo%20I%202026-11-14%20hora-no-registrada%20F%202026-11-14%2013-06.md)
+- [Hilo del 14-11-2026, horas no registradas — mantenimiento y continuidad de Softly](hilo%20I%202026-11-14%20hora-no-registrada%20F%202026-11-14%20hora-no-registrada.md)
 - [Hilo del 13-11-2026, 17:49–19:31](hilo%20I%202026-11-13%2017-49%20F%202026-11-13%2019-31.md)
 - [Hilo del 13-11-2026, hora inicial no registrada–23:23](hilo%20I%202026-11-13%20hora-no-registrada%20F%202026-11-13%2023-23.md)
 - [Hilo del 14-11-2026, 02:36–04:38](hilo%20I%202026-11-14%2002-36%20F%202026-11-14%2004-38.md)
@@ -16,8 +17,8 @@ Este directorio conserva la historia documental de hilos cerrados. Los archivos 
 
 ## Uso
 
-Consultar bajo demanda cuando un antecedente sea necesario. El checkpoint vigente resume dónde continuar; estos archivos preservan la historia. No es necesario cargar todo el archivo histórico al iniciar una sesión.
+Consultar bajo demanda cuando un antecedente sea necesario. El checkpoint vigente resume dónde continuar; estos archivos preservan la historia. No es necesario cargar todo el archivo histórico al iniciar una sesión nueva.
 
-- [Hilo del 14-11-2026, hora inicial no registrada–14:54 — creación de Katarina AgentDEV y cierre](hilo%20I%20hora-no-registrada%20F%202026-11-14%2014-54.md)
+- [Hilo del 14-11-2026, hora inicial no registrada–14:54 — creación de Katarina AgentDEV y cierre](hilo%20I%202026-11-14%20hora-no-registrada%20F%202026-11-14%2014-54.md)
 
 - [Hilo del 14-11-2026, 19:43–hora no registrada — creación e inicialización de Melina y cierre](hilo%20I%202026-11-14%2019-43%20F%202026-11-14%20hora-no-registrada.md)
