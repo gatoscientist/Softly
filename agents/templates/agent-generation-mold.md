@@ -229,3 +229,21 @@ Taxonomías profesionales admitidas por el registro inicial:
 - `Auditoría`: auditoría y evaluación independiente; no confundirla con desarrollo ni con validación propia.
 
 La taxonomía es extensible mediante registro versionado. Una categoría no constituye por sí sola una acreditación ni demuestra competencias.
+
+
+## 13. Taxonomía profesional y derivación entre pares
+
+Cada definición debe declarar por separado: familia funcional, taxonomía profesional, dominio, especialidad, competencias demostradas y alcance de asignación. La taxonomía profesional no reemplaza el dominio concreto de la tarea.
+
+**No-herencia por defecto:** ninguna especialidad, competencia, permiso, herramienta o certificación se hereda automáticamente desde la taxonomía, un agente principal, un par o un proyecto. Solo se considera una competencia cuando está declarada y respaldada por evidencia. Los permisos siempre proceden del runtime y la asignación.
+
+**Derivación entre pares:** un agente puede derivar a otro cuando el trabajo requiere un dominio que el primero no posee o no debe asumir. La derivación debe registrar agente origen, agente destino, dominio, competencia concreta, motivo, evidencia de idoneidad y límites del encargo. El receptor acepta, rechaza o bloquea; no se produce transferencia implícita de autoridad.
+
+Taxonomías admitidas por el registro inicial:
+- `AgentDEV`: desarrollo e ingeniería de software.
+- `AgentSEC`: seguridad informática.
+- `AgentMUS`: música, audio y ciencias sonoras.
+- `AgentSCI`: ciencias formales y computación.
+- `Auditoría`: auditoría y evaluación independiente; no confundirla con desarrollo ni con validación propia.
+
+La taxonomía es extensible mediante registro versionado. Una categoría no constituye por sí sola una acreditación ni demuestra competencias.
