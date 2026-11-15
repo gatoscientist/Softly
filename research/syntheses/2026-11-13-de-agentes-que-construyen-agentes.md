@@ -1172,3 +1172,42 @@ gAto asignó a Katarina (AgentDEV 1.1.0) la ampliación de la arquitectura opera
 **Cierre administrativo:** el corte `9e8bc10` de Softly Runtime Mini 0.2 permanece intacto; esta intervención es una ampliación documental posterior y no reabre su alcance.
 
 **Continuidad:** al iniciar un hilo nuevo, leer `SOFTLY.md`, `docs/operating-model.md`, `docs/architecture/operational-modes-and-autocoordination.md` y esta sección 17.19. Seleccionar modo mediante `/softly mode status`; comenzar en Laboratorio si no existe estado. Para Fábrica, usar handoff compacto y no afirmar autodespacho hasta integrar y probar un runner.
+
+
+#### 17.19.1 Corrección ejecutiva del mandato de Softly y checkpoint ligero
+
+**Fecha:** 2026-11-15  
+**Estado:** implementado y persistido en main.
+
+gAto aclaró que Softly no necesita un runtime de software ni procesos autónomos. El problema a corregir era el mandato del propio agente: su orientación académica y la lectura histórica obligatoria estaban interfiriendo con la entrega directa. El objetivo central pasa a ser que Softly opere como **agente creador y coordinador**, mientras que el repositorio gatoscientist/Softly es únicamente su biblioteca de trabajo.
+
+**Cambios realizados:**
+- Se reestructuró SOFTLY.md como mandato ejecutivo 1.0.0, separando identidad del agente y repositorio.
+- Se sustituyó el conmutador anterior por tres modos obligatorios: Fábrica / Entrega Directa (predeterminado ante encargos concretos de gAto), Coordinación / Orquestación e Investigación / Deliberación (solo por petición explícita).
+- Se estableció la Puerta de Entrega Documental: agentes nuevos en versión 1.0.0 / Diseñado por defecto. La checklist se aplica durante la producción; los pendientes no críticos no bloquean. No se exigen pruebas previas ni ciclos de investigación no solicitados.
+- Se creó CHECKPOINT.md en la raíz para recuperar decisiones vigentes y punto de trabajo sin cargar síntesis históricas.
+- Se desintoxicó el inicio de sesión: lectura obligatoria limitada a SOFTLY.md y CHECKPOINT.md. El archivo histórico research/syntheses/2026-11-13-de-agentes-que-construyen-agentes.md tiene ID interno SYN-20261113-001 y queda para consulta bajo demanda.
+- Se creó docs/agent-delivery-checklist.md como validador declarativo y no bloqueante.
+- Se alinearon README.md, docs/operating-model.md, docs/architecture/operational-modes-and-autocoordination.md, docs/architecture/taxonomy-and-mold-validation.md y agents/templates/agent-generation-mold.md con el mandato ejecutivo.
+- Se incorporó el estado documental Diseñado al esquema de definición de agente y se actualizaron los índices pertinentes.
+
+**Archivos creados:**
+- CHECKPOINT.md
+- docs/agent-delivery-checklist.md
+
+**Archivos modificados:**
+- SOFTLY.md
+- README.md
+- docs/operating-model.md
+- docs/architecture/operational-modes-and-autocoordination.md
+- docs/architecture/taxonomy-and-mold-validation.md
+- agents/templates/agent-generation-mold.md
+- schemas/agent-definition.schema.json
+- docs/README.md
+- schemas/README.md
+- agents/templates/README.md
+- Este registro, mediante esta subsección 17.19.1. Las secciones 17.17 y 17.18 se preservan sin modificación.
+
+**Verificación:** los archivos principales se releen desde main; los esquemas JSON se analizan sintácticamente. No se ejecutó software ni se creó runtime. La intervención es una corrección del mandato y del flujo documental del agente.
+
+**Criterio de continuidad:** al iniciar un hilo nuevo, leer únicamente SOFTLY.md y CHECKPOINT.md, clasificar el encargo en el modo correspondiente y ejecutar. La investigación queda bajo demanda; la entrega directa es la conducta predeterminada ante encargos concretos de gAto.
