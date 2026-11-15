@@ -12,3 +12,5 @@ Mantener separadas la definición del agente, el brief de incorporación, la asi
 
 - [Handoff compacto](handoff.md): transferencia estructurada entre especialistas (5–12 líneas).
 - [Contrato de generación y validación](../../docs/architecture/taxonomy-and-mold-validation.md): proceso de generación estructurada y validación de paquetes.
+- [Molde universal canónico](agent-generation-mold.md): creación y evolución directa de agentes con entrega 1.0.0 / Diseñado por defecto.
+- [Checklist documental](../../docs/agent-delivery-checklist.md): auto-revisión durante la producción, sin fase de aprobación adicional.
