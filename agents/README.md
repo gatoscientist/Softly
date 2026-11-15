@@ -32,3 +32,8 @@ No mezclar la definición maestra con el contexto de un proyecto. La memoria y l
 - [agent-generation-mold.v0.1.old.md](templates/agent-generation-mold.v0.1.old.md): copia íntegra de la versión anterior del molde, conservada deliberadamente como respaldo histórico.
 
 El archivo `.old` es un snapshot histórico, no una plantilla operativa. La fuente canónica vigente sigue siendo [agent-generation-mold.md](templates/agent-generation-mold.md). Se aplica el criterio L-01 de Laboratorio de Agentes para distinguir preservación histórica y fuente canónica.
+
+
+## Taxonomías y coordinación
+
+El registro profesional inicial está en [schemas/agent-taxonomy-registry.json](../schemas/agent-taxonomy-registry.json) y su contrato en [agent-taxonomy.schema.json](../schemas/agent-taxonomy.schema.json). La no-herencia por defecto y la derivación entre pares forman parte del molde vigente. Las definiciones disponibles en Active Standby no representan procesos ejecutándose.
