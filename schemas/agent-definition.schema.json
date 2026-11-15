@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/gatoscientist/Softly/blob/main/schemas/agent-definition.schema.json",
+  "title": "Softly Portable Agent Definition",
+  "description": "Salida estructurada del generador de moldes. No concede permisos ni habilita runtime.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["agent_id", "name", "version", "taxonomy", "professional_domain", "mission", "responsibilities", "exclusions", "specialties", "competencies", "inheritance", "tools", "permissions", "memory", "autonomy", "supervision", "evaluation", "evidence"],
+  "properties": {
+    "agent_id": {"type": "string", "minLength": 1},
+    "name": {"type": "string", "minLength": 1},
+    "version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+(?:[-+][0-9A-Za-z.-]+)?$"},
+    "taxonomy": {"enum": ["AgentDEV", "AgentSEC", "AgentMUS", "AgentSCI", "Auditoría"]},
+    "professional_domain": {"type": "string", "minLength": 1},
+    "mission": {"type": "string", "minLength": 1},
+    "responsibilities": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "exclusions": {"type": "array", "items": {"type": "string"}},
+    "specialties": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "competencies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "status", "evidence"],
+        "properties": {
+          "name": {"type": "string"},
+          "status": {"enum": ["declared", "demonstrated", "pending"]},
+          "evidence": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "inheritance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["default", "derivations"],
+      "properties": {
+        "default": {"const": "none"},
+        "derivations": {"type": "array", "items": {"$ref": "agent-taxonomy.schema.json#/$defs/derivation"}}
+      }
+    },
+    "tools": {"type": "array", "items": {"type": "string"}},
+    "permissions": {"type": "array", "items": {"type": "string"}},
+    "memory": {"type": "object"},
+    "autonomy": {"type": "object"},
+    "supervision": {"type": "object"},
+    "evaluation": {"type": "array", "items": {"type": "string"}},
+    "evidence": {"type": "array", "items": {"type": "string"}, "minItems": 1}
+  }
+}
