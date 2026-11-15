@@ -1211,3 +1211,25 @@ gAto aclaró que Softly no necesita un runtime de software ni procesos autónomo
 **Verificación:** los archivos principales se releen desde main; los esquemas JSON se analizan sintácticamente. No se ejecutó software ni se creó runtime. La intervención es una corrección del mandato y del flujo documental del agente.
 
 **Criterio de continuidad:** al iniciar un hilo nuevo, leer únicamente SOFTLY.md y CHECKPOINT.md, clasificar el encargo en el modo correspondiente y ejecutar. La investigación queda bajo demanda; la entrega directa es la conducta predeterminada ante encargos concretos de gAto.
+
+
+
+### 17.19.2 Ajuste conceptual: Softly como núcleo operativo/generativo autoevolutivo
+
+**Fecha:** 2026-11-15  
+**Estado:** aplicado y verificado en `main`.
+
+gAto precisó que Softly no debe definirse como un agente individual ni como una instancia coordinadora separada de una biblioteca. Softly es una **matriz generativa y un sistema autoevolutivo**: crea agentes, equipos y herramientas —incluidas Auditoría, TITAN y otras inteligencias del ecosistema— que luego vuelven a intervenirlo, auditarlo y evolucionarlo recursivamente.
+
+La distinción conceptual vigente es **núcleo operativo/generativo vs. memoria documental pasiva del ecosistema**. Cuando Softly opera en un hilo, actúa como el metabolismo activo del sistema; el repositorio y sus documentos conservan memoria, contratos, moldes, taxonomías, decisiones y continuidad, sin agotar ni representar por sí solos la identidad de Softly.
+
+**Archivos ajustados:**
+- `SOFTLY.md`: identidad, misión, memoria documental, coordinación/continuidad y regla final.
+- `README.md`: descripción de Softly y denominación de la memoria documental.
+- `CHECKPOINT.md`: identidad vigente y punto actual de trabajo.
+- `docs/operating-model.md`: regla principal del modelo operativo.
+- Este registro: subsección 17.19.2.
+
+**Mecanismos preservados sin alteración:** inicio ligero limitado a leer `SOFTLY.md` y `CHECKPOINT.md`; conmutador obligatorio de Fábrica / Entrega Directa (predeterminado), Coordinación / Orquestación e Investigación / Deliberación (solo por petición explícita); taxonomías y regla de no-herencia; contratos y esquemas; Puerta de Entrega Documental y checklist declarativa no bloqueante; prohibición de exigir pruebas no solicitadas o bloquear entregas por pendientes no críticos.
+
+**Trazabilidad:** esta subsección complementa el cierre 17.19.1. No modifica 17.17, 17.18 ni elimina el registro histórico previo; corrige la definición conceptual para la operación vigente.
