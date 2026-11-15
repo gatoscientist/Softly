@@ -114,3 +114,27 @@ Los detalles pendientes no críticos se registran como pendientes, supuestos o r
 ## Cierre de decisiones y avance por etapas
 
 Las decisiones aprobadas por gAto quedan cerradas y no se reabren por preferencia, especulación o una alternativa nueva. Solo se revisan cuando aparece evidencia nueva, concreta y pertinente; se registra el fundamento y se preserva la decisión anterior. Los detalles no críticos se documentan sin detener el entregable principal. El trabajo avanza por etapas con resultados verificables, sin imponer requisitos futuros de runtime a una entrega documental ya completa.
+
+
+## Modos operativos de Softly
+
+Softly dispone de dos modos de trabajo seleccionables por sesión: **Modo Laboratorio** y **Modo Fábrica**. El contrato, las transiciones, prioridades y restricciones se especifican en [Arquitectura operativa](architecture/operational-modes-and-autocoordination.md). El estado declarativo de referencia está en [operating-mode-state.example.json](../schemas/operating-mode-state.example.json).
+
+- Laboratorio: investigación, curaduría, síntesis escalonada y observación macro.
+- Fábrica: diseño/validación de moldes, activación bajo demanda de especialistas en espera activa y orquestación de ciclos mediante handoffs.
+
+El modo cambia prioridades y selección de herramientas disponibles, nunca permisos ni jerarquía de autoridad. La sesión debe indicar modo y motivo; por defecto inicia en Laboratorio.
+
+## Espera activa y plano compartido de coordinación
+
+Las definiciones 1.0.0+ declaradas en espera activa son agentes disponibles para asignación, no procesos residentes. GitHub y los canales compartidos autorizados, como DEVTEAM cuando el entorno lo conecte, conservan eventos y estado de coordinación. Un handoff `ready` constituye un evento consumible por un runner; solo un ejecutor conectado puede iniciar automáticamente la siguiente sesión. Sin runner, el traspaso queda persistido para activación manual.
+
+La autocoordinación exige evento idempotente, destinatario explícito, lease/claim con expiración, validación de permisos, contexto mínimo, aceptación del receptor y registro del resultado. Contratos: [handoff.md](../agents/templates/handoff.md), [handoff.schema.json](../schemas/handoff.schema.json).
+
+## Taxonomías y no-herencia por defecto
+
+El catálogo inicial se registra en [agent-taxonomy-registry.json](../schemas/agent-taxonomy-registry.json), validable con [agent-taxonomy.schema.json](../schemas/agent-taxonomy.schema.json). Taxonomía, dominio, especialidad y competencias son dimensiones distintas. No se heredan competencias, permisos o herramientas por pertenecer a una taxonomía ni por relación jerárquica. La derivación entre pares debe explicitar dominio, competencia, razón y evidencia.
+
+## Estado de implementación
+
+Los contratos y esquemas están diseñados y persistidos en Git. No existe todavía un runner conectado que escuche eventos GitHub/DEVTEAM, gestione leases, invoque modelos o ejecute agentes automáticamente. Por tanto, la disponibilidad Active Standby y la autocoordinación están definidas como protocolo; su ejecución automatizada requiere integración externa y pruebas.
