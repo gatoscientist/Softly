@@ -1109,6 +1109,6 @@ gAto mantuvo la conversación en Modo Diseño y pidió expresamente no cerrar ni
 
 **Límites:** no se analizó código, no se ejecutaron pruebas ni experimentos, no se modificaron agentes ni runtime y no se adoptó una definición de Softly. El relato histórico corresponde a lo expuesto por gAto y no a una auditoría independiente.
 
-**Registro del hilo:** `logs/threads/hilo I 2026-11-15 04-01 F 2026-11-15 hora-no-registrada.md`. Se archivó como síntesis fiel del contexto disponible, no como transcripción literal íntegra. La hora de cierre no se estimó.
+**Registro del hilo:** `logs/threads/hilo I 2026-11-15 04-01 F 2026-11-15 05-01.md`. Se archivó como síntesis fiel del contexto disponible, no como transcripción literal íntegra. El commit de archivo confirmó el cierre documental a las 05:01 (America/Santiago); el nombre del archivo refleja esa hora.
 
 **Continuidad:** el siguiente hilo debe recuperar el mandato y este checkpoint. Si se retoma la deliberación, mantener Modo Diseño sin generar tareas, sin cerrar definiciones y sin analizar código salvo petición explícita.
