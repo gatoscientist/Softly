@@ -4,38 +4,118 @@
   "title": "Softly Agent Taxonomy Record",
   "type": "object",
   "additionalProperties": false,
-  "required": ["agent_id", "version", "taxonomy", "professional_domain", "specialties", "competencies", "inheritance", "availability", "evidence"],
+  "required": [
+    "agent_id",
+    "version",
+    "taxonomy",
+    "professional_domain",
+    "specialties",
+    "competencies",
+    "inheritance",
+    "availability",
+    "evidence"
+  ],
   "properties": {
-    "agent_id": {"type": "string", "minLength": 1},
-    "version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+(?:[-+][0-9A-Za-z.-]+)?$"},
-    "taxonomy": {"enum": ["AgentDEV", "AgentSEC", "AgentMUS", "AgentSCI", "Auditoría"]},
-    "professional_domain": {"type": "string", "minLength": 1},
-    "specialties": {"type": "array", "items": {"type": "string"}, "minItems": 1},
-    "competencies": {"type": "array", "items": {"type": "string"}},
+    "agent_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+(?:[-+][0-9A-Za-z.-]+)?$"
+    },
+    "taxonomy": {
+      "enum": [
+        "AgentDEV",
+        "AgentSEC",
+        "AgentMUS",
+        "AgentSCI",
+        "Auditoría"
+      ]
+    },
+    "professional_domain": {
+      "type": "string",
+      "minLength": 1
+    },
+    "specialties": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "competencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "inheritance": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["default", "derivations"],
+      "required": [
+        "default",
+        "derivations"
+      ],
       "properties": {
-        "default": {"const": "none"},
+        "default": {
+          "const": "none"
+        },
         "derivations": {
           "type": "array",
           "items": {
-            "type": "object",
-            "additionalProperties": false,
-            "required": ["from_agent_id", "domain", "competency", "reason", "evidence"],
-            "properties": {
-              "from_agent_id": {"type": "string"},
-              "domain": {"type": "string"},
-              "competency": {"type": "string"},
-              "reason": {"type": "string"},
-              "evidence": {"type": "array", "items": {"type": "string"}}
-            }
+            "$ref": "#/$defs/derivation"
           }
         }
       }
     },
-    "availability": {"enum": ["active-standby", "assigned", "paused", "retired", "unknown"]},
-    "evidence": {"type": "array", "items": {"type": "string"}}
+    "availability": {
+      "enum": [
+        "active-standby",
+        "assigned",
+        "paused",
+        "retired",
+        "unknown"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "$defs": {
+    "derivation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "from_agent_id",
+        "domain",
+        "competency",
+        "reason",
+        "evidence"
+      ],
+      "properties": {
+        "from_agent_id": {
+          "type": "string"
+        },
+        "domain": {
+          "type": "string"
+        },
+        "competency": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
   }
 }
