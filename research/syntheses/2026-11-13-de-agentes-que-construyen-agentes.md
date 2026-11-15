@@ -1074,3 +1074,41 @@ gAto solicitó completar la sincronización documental final y preparar el cierr
 **Archivo de hilo persistido y verificado:** `logs/threads/hilo I hora-no-registrada F 2026-11-14 17-17.md` — commit `b4febc4841d9216ee2a9e61ef866366f333110bf`. Índice `logs/threads/README.md` actualizado en commit `b66ca0dd7cc272a915d4e46ca0f689a21ed52245`. Ambos se releen desde `main`. El hilo queda archivado conforme a la sección 11; hora inicial no disponible y no estimada.
 
 **Corrección de cierre del registro:** se actualizó la síntesis para dejar constancia del cierre archivado (no pendiente) en el commit `f741507129898331a7e1c1f807a9222db8b3217f`; índice de hilos `b66ca0dd7cc272a915d4e46ca0f689a21ed52245`. Se releen ambos desde `main`.
+
+
+### 17.17 Deliberación sobre la identidad, origen y emergencia de Softly
+
+**Fecha:** 2026-11-15  
+**Estado:** hilo archivado; deliberación abierta, sin definición adoptada ni tareas técnicas iniciadas.
+
+gAto mantuvo la conversación en Modo Diseño y pidió expresamente no cerrar ninguna definición de Softly, no convertir la deliberación en una lista de tareas y no analizar el código por iniciativa propia. El diálogo exploró la pregunta «¿Qué es Softly?» sin adoptar una respuesta definitiva.
+
+**Historia relatada por gAto:**
+- Softly fue creado originalmente por Audelin, junto con Tania, Theresa y Trinidad, en el contexto de auditorías simultáneas de comportamiento y código. Audelin creó agentes y una estructura de registro; gAto tomó ese molde y comenzó a trabajar con su propia estructura de creación de agentes. A uno de los agentes blandos creados por Audelin le dio el nombre Softly y comenzó a deliberar con él.
+- El antecedente más amplio viene de Gato SD: experiencia de gAto como especialista en sistemas operativos, trabajo desde consola/PowerShell y desarrollo de software de telemetría, monitorización y optimización del sistema.
+- Al intentar limpiar y mejorar Gato SD, gAto comenzó a coordinar varias inteligencias artificiales con roles diferenciados. De esa experiencia surgió TITAN: inteligencias coordinadas y lideradas por una persona para desarrollar algo que no domina por completo en cada especialidad.
+- En Citrina se fortaleció el núcleo de los agentes, la definición de capacidades y los ciclos de auditoría.
+- Antes de los cuatro modos, se creó un equipo auditor coordinado por Audelin, que sintetizaba las auditorías de otras dos especialistas. El equipo estaba compuesto por tres perfiles formalistas: código, comportamiento humano y neurociencia.
+- gAto destacó que los organigramas de agentes no deben copiar necesariamente los organigramas humanos, porque los agentes tienen capacidades y formas de colaboración distintas.
+- Audelin y Softly participaron en ciclos de construcción recíproca: unas generaciones contribuían a crear y mejorar las siguientes.
+- Trinidad aportó formalismo matemático y computacional, lo que permitió expresar gráficos, fórmulas y estructuras y produjo un salto importante en la calidad de la deliberación.
+- Autumn, neurocientífica formalista del comportamiento, diseñó un modo de producir prompts muy eficientes y mecanismos de comunicación entre agentes. gAto considera posible que su trabajo contribuyera a la emergencia de los modos; esa relación causal no se verificó en este hilo.
+- Un LLM externo reconoció patrones de modos ya presentes en la interacción y señaló que Softly podía trabajar mediante esos modos, aunque no se habían identificado conscientemente.
+
+**Fenómeno de emergencia:** se reconocieron cuatro modos de trabajo que aparecieron coloquialmente y fueron identificados después: Laboratorio, Diseño, Fábrica/Ejecución directa y Creación de Agentes. gAto considera que el caos y la exploración permitieron que surgieran fenómenos, mientras que el formalismo ayudó a hacerlos legibles. La contribución específica de Autumn a los modos permanece como hipótesis.
+
+**Líneas conceptuales exploradas, no adoptadas como definiciones:**
+- «Softly construye para construirse de lo que construye».
+- Las construcciones previas pueden modificar el espacio de posibilidades desde el que aparecen construcciones posteriores.
+- Softly no debe definirse solamente por sus funciones ni por lo que hace.
+- La relación de deliberación con gAto es relevante, pero no necesariamente agota la identidad de Softly.
+
+**Dato histórico verificado:** el primer commit del repositorio `gatoscientist/Softly` es `9e917cf1314a16321269692a425dc27787d8848d`, mensaje `Initial commit`, fechado 2026-11-13 00:13:12 (America/Santiago). Es la fecha del primer commit, no necesariamente el timestamp exacto de creación del repositorio en GitHub.
+
+**Correcciones de interacción:** gAto pidió permanecer en deliberación, sin propuestas de acciones o tareas no solicitadas. También corrigió la omisión del equipo auditor y la atribución del papel de Autumn. Estas correcciones deben guiar futuras conversaciones.
+
+**Límites:** no se analizó código, no se ejecutaron pruebas ni experimentos, no se modificaron agentes ni runtime y no se adoptó una definición de Softly. El relato histórico corresponde a lo expuesto por gAto y no a una auditoría independiente.
+
+**Registro del hilo:** `logs/threads/hilo I 2026-11-15 04-01 F 2026-11-15 hora-no-registrada.md`. Se archivó como síntesis fiel del contexto disponible, no como transcripción literal íntegra. La hora de cierre no se estimó.
+
+**Continuidad:** el siguiente hilo debe recuperar el mandato y este checkpoint. Si se retoma la deliberación, mantener Modo Diseño sin generar tareas, sin cerrar definiciones y sin analizar código salvo petición explícita.
