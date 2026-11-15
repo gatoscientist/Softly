@@ -1134,3 +1134,41 @@ gAto corrigió una brecha de comportamiento de Softly: aunque Softly diseña y c
 **Límites:** gAto anunció que Katarina intervendría para corregir a Softly. No hay evidencia en este hilo de que Katarina haya leído, respondido o modificado archivos. No se afirma que esa intervención haya ocurrido.
 
 **Continuidad:** esperar la información que gAto comparta sobre la intervención de Katarina. No iniciar una actualización de agentes ni convertir observaciones en tareas sin una instrucción explícita. Mantener como criterio que Softly debe ejecutar el cierre documental real antes de declararlo completado.
+
+
+### 17.19 Habilitación documental de modos operativos y coordinación multiagente
+
+**Fecha:** 2026-11-15  
+**Estado:** contratos y esquemas documentales persistidos en `main`; ejecución automática pendiente de runner externo.
+
+gAto asignó a Katarina (AgentDEV 1.1.0) la ampliación de la arquitectura operativa de Softly sobre `main`, autorizando expresamente la modificación de `SOFTLY.md`, `README.md`, `docs/operating-model.md`, arquitectura, agentes y este checkpoint. La intervención no reabre ni altera el cierre administrativo de Softly Runtime Mini 0.2 en el corte `9e8bc10`.
+
+**Diagnóstico:** el repositorio estaba centrado en investigación y entrega documental, sin conmutador de modos ni contrato integrado de espera activa/autocoordinación. No se encontró código fuente de runtime, scripts, workflow de GitHub Actions ni runner; tampoco un documento independiente con ID `SYN-20261113-001`. La observación de dominio musical se encontró como `observations/OBS-20261114-001-tiffany-dominio-musical.md`. La sección 17.17 ya existía como deliberación de identidad/origen de Softly y 17.18 como corrección de autonomía operativa; por preservación histórica, esta intervención se registra en 17.19.
+
+**Implementación documental persistida:**
+- Se definieron Modo Laboratorio y Modo Fábrica, comandos de selección, estado inicial, condiciones deterministas de transición, prioridades y límites de herramientas.
+- Se formalizó Active Standby como disponibilidad de una definición 1.0.0+ para asignación, no como proceso vivo. GitHub y canales compartidos autorizados son el plano de estado/eventos; el consumo automático requiere runner, webhook/Actions, leases, control de concurrencia y permisos efectivos.
+- Se incorporó un handoff compacto de 5–12 líneas, estados de aceptación/rechazo/bloqueo, referencias de evidencia, evento idempotente y criterio de aceptación.
+- Se creó registro inicial de taxonomías AgentDEV, AgentSEC, AgentMUS, AgentSCI y Auditoría; se separaron dominio, especialidad y competencias y se estableció no-herencia por defecto y derivación entre pares con motivo/evidencia.
+- Se actualizaron las instrucciones de arranque para recuperar arquitectura, modo, agentes declarados en espera activa y este checkpoint.
+
+**Archivos creados:**
+- `docs/architecture/operational-modes-and-autocoordination.md`
+- `schemas/handoff.schema.json`
+- `schemas/agent-taxonomy.schema.json`
+- `schemas/agent-taxonomy-registry.json`
+- `schemas/operating-mode-state.example.json`
+- `agents/templates/handoff.md`
+
+**Archivos modificados:**
+- `SOFTLY.md`, `README.md`, `docs/operating-model.md`, `docs/README.md`
+- `agents/README.md`, `agents/templates/README.md`, `agents/templates/agent-generation-mold.md`, `schemas/README.md`
+- Este checkpoint (sección 17.19).
+
+**Disponibilidad declarada por gAto:** Tiffany, Tara, Thea, Tábata, Katarina, Melina, Audeline, Aurora y Autumn. Los IDs/versiones/dominios no confirmados quedan expresamente pendientes en el registro; no se inventa prueba de vida ni conectividad.
+
+**Límites:** se implementaron contratos, esquemas, registro y documentación. No se implementó ni ejecutó un runner, webhook, GitHub Action, cola DEVTEAM, lease store ni invocación automática de modelos. Por tanto, no se afirma que un handoff despierte por sí solo a otro agente ni que Active Standby represente ejecución persistente. No se ejecutaron pruebas runtime ni validadores JSON en un entorno de ejecución. La integración automática queda como siguiente fase técnica separada.
+
+**Cierre administrativo:** el corte `9e8bc10` de Softly Runtime Mini 0.2 permanece intacto; esta intervención es una ampliación documental posterior y no reabre su alcance.
+
+**Continuidad:** al iniciar un hilo nuevo, leer `SOFTLY.md`, `docs/operating-model.md`, `docs/architecture/operational-modes-and-autocoordination.md` y esta sección 17.19. Seleccionar modo mediante `/softly mode status`; comenzar en Laboratorio si no existe estado. Para Fábrica, usar handoff compacto y no afirmar autodespacho hasta integrar y probar un runner.
