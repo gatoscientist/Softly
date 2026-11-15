@@ -2,7 +2,7 @@
 
 Softly es el laboratorio de investigación, diseño y experimentación dedicado a comprender cómo construir agentes inteligentes útiles, confiables, coordinados y verificables. El ciclo de Softly Runtime Mini 0.2 quedó cerrado administrativamente en el corte `9e8bc10` de `main`, con sus limitaciones documentadas. La prioridad activa es el desarrollo de TITAN con el equipo DEVAGENTS 1.0.0 ya entregado en [Laboratorio-de-agentes](https://github.com/gatoscientist/Laboratorio-de-agentes/tree/main/Soft%20Agents/TITAN/eL%20equipo%20del%20gAto).
 
-Softly no es un framework general de ejecución ni una colección de prompts. Reúne evidencia, formula hipótesis, diseña arquitecturas, prueba comportamientos y convierte aprendizajes en criterios reutilizables.
+Softly opera mediante prompting, contratos y GitHub como sustrato de instrucciones, interfaces y coordinación persistente. Cuenta con Modo Laboratorio y Modo Fábrica, contratos de espera activa y handoffs; la ejecución automática de agentes requiere un runner conectado y no se presume por la mera existencia de los documentos.
 
 ## Propósito
 
@@ -27,7 +27,7 @@ Cada afirmación importante debe distinguir evidencia, observación, hipótesis,
 
 1. Lee [SOFTLY.md](SOFTLY.md): mandato, límites y reglas obligatorias de inicio y continuidad.
 2. Usa [docs/README.md](docs/README.md) como índice de documentación transversal y consulta [docs/operating-model.md](docs/operating-model.md) para recuperar el método de trabajo.
-3. Recupera el checkpoint vigente antes de continuar trabajo previo y consulta la sección 17.16 de [la síntesis de continuidad](research/syntheses/2026-11-13-de-agentes-que-construyen-agentes.md) para el cierre administrativo de Mini 0.2 y la prioridad actual de TITAN.
+3. Recupera el checkpoint vigente antes de continuar trabajo previo y consulta la sección 17.19 de [la síntesis de continuidad](research/syntheses/2026-11-13-de-agentes-que-construyen-agentes.md) para el cierre administrativo de Mini 0.2 y la prioridad actual de TITAN.
 4. Revisa [docs/research-method.md](docs/research-method.md): cómo investigar y conservar evidencia.
 5. Consulta [research/README.md](research/README.md): fuentes, notas y estado del conocimiento.
 6. Usa [agents/README.md](agents/README.md) para documentar agentes y sus versiones.
@@ -62,3 +62,12 @@ Cada afirmación importante debe distinguir evidencia, observación, hipótesis,
 ## Contribución
 
 Toda incorporación debe indicar qué tipo de contenido es: fuente, observación, hipótesis, experimento, resultado, decisión o recomendación. No sobrescribir evidencia histórica para hacer que una conclusión antigua parezca correcta. Crear una nueva revisión y enlazarla.
+
+## Arquitectura operativa
+
+- [Modos, espera activa y autocoordinación](docs/architecture/operational-modes-and-autocoordination.md).
+- [Modelo operativo](docs/operating-model.md).
+- [Registro de taxonomías profesionales](schemas/agent-taxonomy-registry.json).
+- [Contrato de handoff](schemas/handoff.schema.json).
+
+**Límite actual:** el repositorio contiene contratos y esquemas diseñados; no contiene todavía un runner que active agentes automáticamente al recibir eventos GitHub/DEVTEAM.
