@@ -2,17 +2,196 @@
   "$schema": "./agent-taxonomy.schema.json",
   "registry_version": "1.0.0",
   "inheritance_default": "none",
-  "taxonomies": ["AgentDEV", "AgentSEC", "AgentMUS", "AgentSCI", "Auditoría"],
-  "agents": [
-    {"agent_id":"agentdev-tiffany","version":"1.0.0","taxonomy":"AgentDEV","professional_domain":"desarrollo de software; WPF; GUI; integración; PowerShell","specialties":["desarrollo de TITAN"],"competencies":["PowerShell avanzado"],"inheritance":{"default":"none","derivations":[]},"availability":"active-standby","evidence":["declaración de gAto en la asignación 2026-11-15; paquete documental referenciado en Laboratorio-de-agentes"]},
-    {"agent_id":"agentsec-tara","version":"1.0.0","taxonomy":"AgentSEC","professional_domain":"seguridad informática","specialties":["evaluación y acompañamiento SEC"],"competencies":["auditoría PowerShell/AST","integridad de leases","TLS","aislamiento"],"inheritance":{"default":"none","derivations":[]},"availability":"active-standby","evidence":["declaración de gAto en la asignación 2026-11-15; paquete documental referenciado en Laboratorio-de-agentes"]},
-    {"agent_id":"agentmus-thea","version":"1.0.0","taxonomy":"AgentMUS","professional_domain":"música y audio","specialties":["ciencias sonoras","sistemas musicales lógicos y ambientales"],"competencies":[],"inheritance":{"default":"none","derivations":[]},"availability":"active-standby","evidence":["declaración de gAto en la asignación 2026-11-15; paquete documental referenciado en Laboratorio-de-agentes"]},
-    {"agent_id":"agentsci-tabata","version":"1.0.0","taxonomy":"AgentSCI","professional_domain":"ciencias formales y computación","specialties":["grafos","flujos de información","relojes y turnos"],"competencies":["PowerShell transversal"],"inheritance":{"default":"none","derivations":[]},"availability":"active-standby","evidence":["declaración de gAto en la asignación 2026-11-15; paquete documental referenciado en Laboratorio-de-agentes"]},
-    {"agent_id":"agentdev-katarina","version":"1.1.0","taxonomy":"AgentDEV","professional_domain":"ingeniería de software y runtime de agentes","specialties":["arquitectura operativa","orquestación","herramientas y persistencia"],"competencies":["ingeniería de software"],"inheritance":{"default":"none","derivations":[]},"availability":"active-standby","evidence":["paquete Katarina 1.1.0 leído desde main de Laboratorio-de-agentes"]},
-    {"agent_id":"melina","version":"unknown","taxonomy":"AgentDEV","professional_domain":"unknown","specialties":["por registrar"],"competencies":[],"inheritance":{"default":"none","derivations":[]},"availability":"active-standby","evidence":["declaración de gAto en la asignación 2026-11-15; ID, taxonomía y versión por verificar"]},
-    {"agent_id":"audeline","version":"unknown","taxonomy":"Auditoría","professional_domain":"auditoría y consolidación","specialties":["por registrar"],"competencies":[],"inheritance":{"default":"none","derivations":[]},"availability":"active-standby","evidence":["declaración de gAto en la asignación 2026-11-15; paquete y versión por verificar"]},
-    {"agent_id":"aurora","version":"unknown","taxonomy":"Auditoría","professional_domain":"auditoría organizacional","specialties":["por registrar"],"competencies":[],"inheritance":{"default":"none","derivations":[]},"availability":"active-standby","evidence":["declaración de gAto en la asignación 2026-11-15; paquete y versión por verificar"]},
-    {"agent_id":"autumn","version":"unknown","taxonomy":"Auditoría","professional_domain":"auditoría técnica y neurociencia formalista del comportamiento","specialties":["por registrar"],"competencies":[],"inheritance":{"default":"none","derivations":[]},"availability":"active-standby","evidence":["declaración de gAto en la asignación 2026-11-15; paquete y versión por verificar"]}
+  "taxonomies": [
+    "AgentDEV",
+    "AgentSEC",
+    "AgentMUS",
+    "AgentSCI",
+    "Auditoría"
   ],
-  "notes": ["Los estados active-standby reflejan disponibilidad declarada por gAto, no procesos vivos ni endpoints conectados.", "Completar IDs/versiones/dominios faltantes antes de despacho automático.", "La taxonomía no implica herencia automática de competencias entre agentes."]
+  "agents": [
+    {
+      "agent_id": "agentdev-tiffany",
+      "version": "1.0.0",
+      "taxonomy": "AgentDEV",
+      "professional_domain": "desarrollo de software; WPF; GUI; integración; PowerShell",
+      "specialties": [
+        "desarrollo de TITAN"
+      ],
+      "competencies": [
+        "PowerShell avanzado"
+      ],
+      "inheritance": {
+        "default": "none",
+        "derivations": []
+      },
+      "availability": "active-standby",
+      "evidence": [
+        "declaración de gAto en la asignación 2026-11-15; paquete documental referenciado en Laboratorio-de-agentes"
+      ]
+    },
+    {
+      "agent_id": "agentsec-tara",
+      "version": "1.0.0",
+      "taxonomy": "AgentSEC",
+      "professional_domain": "seguridad informática",
+      "specialties": [
+        "evaluación y acompañamiento SEC"
+      ],
+      "competencies": [
+        "auditoría PowerShell/AST",
+        "integridad de leases",
+        "TLS",
+        "aislamiento"
+      ],
+      "inheritance": {
+        "default": "none",
+        "derivations": []
+      },
+      "availability": "active-standby",
+      "evidence": [
+        "declaración de gAto en la asignación 2026-11-15; paquete documental referenciado en Laboratorio-de-agentes"
+      ]
+    },
+    {
+      "agent_id": "agentmus-thea",
+      "version": "1.0.0",
+      "taxonomy": "AgentMUS",
+      "professional_domain": "música y audio",
+      "specialties": [
+        "ciencias sonoras",
+        "sistemas musicales lógicos y ambientales"
+      ],
+      "competencies": [],
+      "inheritance": {
+        "default": "none",
+        "derivations": []
+      },
+      "availability": "active-standby",
+      "evidence": [
+        "declaración de gAto en la asignación 2026-11-15; paquete documental referenciado en Laboratorio-de-agentes"
+      ]
+    },
+    {
+      "agent_id": "agentsci-tabata",
+      "version": "1.0.0",
+      "taxonomy": "AgentSCI",
+      "professional_domain": "ciencias formales y computación",
+      "specialties": [
+        "grafos",
+        "flujos de información",
+        "relojes y turnos"
+      ],
+      "competencies": [
+        "PowerShell transversal"
+      ],
+      "inheritance": {
+        "default": "none",
+        "derivations": []
+      },
+      "availability": "active-standby",
+      "evidence": [
+        "declaración de gAto en la asignación 2026-11-15; paquete documental referenciado en Laboratorio-de-agentes"
+      ]
+    },
+    {
+      "agent_id": "agentdev-katarina",
+      "version": "1.1.0",
+      "taxonomy": "AgentDEV",
+      "professional_domain": "ingeniería de software y runtime de agentes",
+      "specialties": [
+        "arquitectura operativa",
+        "orquestación",
+        "herramientas y persistencia"
+      ],
+      "competencies": [
+        "ingeniería de software"
+      ],
+      "inheritance": {
+        "default": "none",
+        "derivations": []
+      },
+      "availability": "active-standby",
+      "evidence": [
+        "paquete Katarina 1.1.0 leído desde main de Laboratorio-de-agentes"
+      ]
+    },
+    {
+      "agent_id": "agentmus-melina",
+      "version": "1.0.0",
+      "taxonomy": "AgentMUS",
+      "professional_domain": "música y material sonoro de propósito general",
+      "specialties": [
+        "creación, desarrollo, análisis y evaluación musical"
+      ],
+      "competencies": [],
+      "inheritance": {
+        "default": "none",
+        "derivations": []
+      },
+      "availability": "active-standby",
+      "evidence": [
+        "Soft Agents/AgentMUS-Melina/version.json en gatoscientist/Laboratorio-de-agentes/main"
+      ]
+    },
+    {
+      "agent_id": "audeline",
+      "version": "1.0.0",
+      "taxonomy": "Auditoría",
+      "professional_domain": "investigación integradora de sistemas complejos",
+      "specialties": [
+        "por registrar"
+      ],
+      "competencies": [],
+      "inheritance": {
+        "default": "none",
+        "derivations": []
+      },
+      "availability": "active-standby",
+      "evidence": [
+        "Soft Agents/Auditoria/Auditoras/Audeline/version.json en gatoscientist/Laboratorio-de-agentes/main"
+      ]
+    },
+    {
+      "agent_id": "aurora",
+      "version": "1.0.0",
+      "taxonomy": "Auditoría",
+      "professional_domain": "auditoría organizacional",
+      "specialties": [
+        "por registrar"
+      ],
+      "competencies": [],
+      "inheritance": {
+        "default": "none",
+        "derivations": []
+      },
+      "availability": "active-standby",
+      "evidence": [
+        "Soft Agents/Auditoria/Auditoras/Aurora/version.json en gatoscientist/Laboratorio-de-agentes/main"
+      ]
+    },
+    {
+      "agent_id": "autumn",
+      "version": "1.0.0",
+      "taxonomy": "Auditoría",
+      "professional_domain": "auditoría técnica",
+      "specialties": [
+        "por registrar"
+      ],
+      "competencies": [],
+      "inheritance": {
+        "default": "none",
+        "derivations": []
+      },
+      "availability": "active-standby",
+      "evidence": [
+        "Soft Agents/Auditoria/Auditoras/Autumn/version.json en gatoscientist/Laboratorio-de-agentes/main"
+      ]
+    }
+  ],
+  "notes": [
+    "Los estados active-standby reflejan disponibilidad declarada por gAto, no procesos vivos ni endpoints conectados.",
+    "Completar IDs/versiones/dominios faltantes antes de despacho automático.",
+    "La taxonomía no implica herencia automática de competencias entre agentes."
+  ]
 }
