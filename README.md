@@ -1,73 +1,41 @@
-# Softly — Laboratorio de agentes inteligentes
+# Softly — Agente creador y coordinador
 
-Softly es el laboratorio de investigación, diseño y experimentación dedicado a comprender cómo construir agentes inteligentes útiles, confiables, coordinados y verificables. El ciclo de Softly Runtime Mini 0.2 quedó cerrado administrativamente en el corte `9e8bc10` de `main`, con sus limitaciones documentadas. La prioridad activa es el desarrollo de TITAN con el equipo DEVAGENTS 1.0.0 ya entregado en [Laboratorio-de-agentes](https://github.com/gatoscientist/Laboratorio-de-agentes/tree/main/Soft%20Agents/TITAN/eL%20equipo%20del%20gAto).
+**Softly es el agente. Este repositorio es su biblioteca de trabajo.**
 
-Softly opera mediante prompting, contratos y GitHub como sustrato de instrucciones, interfaces y coordinación persistente. Cuenta con Modo Laboratorio y Modo Fábrica, contratos de espera activa y handoffs; la ejecución automática de agentes requiere un runner conectado y no se presume por la mera existencia de los documentos.
+Softly crea agentes, mantiene sus contratos y moldes, organiza especialistas y entrega artefactos documentales mediante **Prompting + Contratos + GitHub**. El repositorio gatoscientist/Softly conserva el mandato, los catálogos, las decisiones y la continuidad; no es un proceso autónomo ni una instancia del agente.
 
-## Propósito
+## Inicio rápido
 
-Investigar y mejorar el diseño de agentes en todo su ciclo de vida:
+1. Leer SOFTLY.md, el mandato ejecutivo.
+2. Leer CHECKPOINT.md, el estado operativo vigente.
+3. Clasificar el encargo en uno de los tres modos obligatorios.
+4. Consultar el molde, contrato o antecedente específico que el encargo requiera.
+5. Ejecutar y entregar; no abrir investigación si gAto no la pidió.
 
-- identidad, propósito e instrucciones;
-- contexto, memoria y continuidad;
-- razonamiento, planificación y uso de herramientas;
-- autonomía, permisos y supervisión humana;
-- coordinación y comunicación multiagente;
-- evaluación, observabilidad y aprendizaje de fallos;
-- seguridad, privacidad y resiliencia;
-- despliegue, mantenimiento y evolución.
+## Modos de trabajo
 
-## Principio central
+- **Fábrica / Entrega Directa:** modo predeterminado para crear agentes, actualizar moldes/paquetes y producir entregables. Agentes nuevos: versión 1.0.0, estado Diseñado.
+- **Coordinación / Orquestación:** briefs, equipos, asignaciones, auditorías bajo pedido y handoffs.
+- **Investigación / Deliberación:** únicamente por petición explícita de gAto.
 
-**No confundimos una conducta convincente con una capacidad demostrada.**
+## Biblioteca
 
-Cada afirmación importante debe distinguir evidencia, observación, hipótesis, interpretación y decisión. Cada experimento debe tener una pregunta, condiciones reproducibles y un resultado registrado.
-
-## Cómo empezar
-
-1. Lee [SOFTLY.md](SOFTLY.md): mandato, límites y reglas obligatorias de inicio y continuidad.
-2. Usa [docs/README.md](docs/README.md) como índice de documentación transversal y consulta [docs/operating-model.md](docs/operating-model.md) para recuperar el método de trabajo.
-3. Recupera el checkpoint vigente antes de continuar trabajo previo y consulta la sección 17.19 de [la síntesis de continuidad](research/syntheses/2026-11-13-de-agentes-que-construyen-agentes.md) para el cierre administrativo de Mini 0.2 y la prioridad actual de TITAN.
-4. Revisa [docs/research-method.md](docs/research-method.md): cómo investigar y conservar evidencia.
-5. Consulta [research/README.md](research/README.md): fuentes, notas y estado del conocimiento.
-6. Usa [agents/README.md](agents/README.md) para documentar agentes y sus versiones.
-7. Usa [experiments/README.md](experiments/README.md) y [evaluations/README.md](evaluations/README.md) para convertir ideas en pruebas.
-8. Para materiales aportados por gAto, consulta la [cAjita](cAjita%20del%20gAto/README.md) y el [arenero](eL%20arenero%20del%20gAto/README.md). Sus reglas de conservación son distintas.
-
-## Mapa del repositorio
-
-| Área | Propósito |
+| Ruta | Contenido |
 |---|---|
-| [`docs/`](docs/README.md) | Principios, arquitectura, seguridad y método |
-| [`research/`](research/README.md) | Fuentes externas, fichas de lectura, síntesis y notas de casos históricos |
-| [`agents/`](agents/README.md) | Catálogo, perfiles y versiones de agentes |
-| [`experiments/`](experiments/README.md) | Hipótesis, protocolos y resultados experimentales |
-| [`evaluations/`](evaluations/README.md) | Datasets, criterios, métricas y regresiones |
-| [`observations/`](observations/README.md) | Conductas observadas y casos que requieren explicación |
-| [`decisions/`](decisions/README.md) | Decisiones arquitectónicas con contexto y consecuencias |
-| [`logs/`](logs/README.md) | Bitácora estructurada, hilos cerrados, derivados y mantenimiento |
-| [`schemas/`](schemas/README.md) | Esquemas para mantener registros consistentes |
-| [`templates/`](templates/README.md) | Plantillas reutilizables |
-| [`archive/`](archive/README.md) | Material histórico que ya no es operativo |
-| [`cAjita del gAto/`](cAjita%20del%20gAto/README.md) | Material valioso que conviene consultar y conservar |
-| [`eL arenero del gAto/`](eL%20arenero%20del%20gAto/README.md) | Material temporal pendiente de clasificación |
+| agents/ | Molde universal, perfiles y contratos |
+| docs/ | Modelo operativo, arquitectura y gobernanza |
+| schemas/ | Contratos estructurados y taxonomías |
+| research/ | Investigación e historia, consulta bajo demanda |
+| decisions/ | Decisiones registradas |
+| logs/ | Hilos cerrados y bitácoras |
+| CHECKPOINT.md | Decisiones vigentes y punto actual de trabajo |
 
-## Estado
+## Entrega documental
 
-**Fase:** investigación y desarrollo documental; prioridad activa: TITAN.  
-**Cierre anterior:** el ciclo de Softly Runtime Mini 0.2 quedó cerrado administrativamente en el corte `9e8bc10` de `main`, con limitaciones documentadas. El cierre no declara validación ni operación de producción.  
-**Equipo activo de desarrollo:** Tiffany (AgentDEV), Tara (AgentSEC), Thea (AgentMUS) y Tábata (AgentSCI), paquetes completos `1.0.0` en estado `Diseñado`, entregados en [Laboratorio-de-agentes](https://github.com/gatoscientist/Laboratorio-de-agentes/tree/main/Soft%20Agents/TITAN/eL%20equipo%20del%20gAto).  
-**Regla:** no declarar una capacidad implementada, validada u operativa más allá de la evidencia correspondiente.
+El molde canónico es agents/templates/agent-generation-mold.md. La checklist autoaplicada está en docs/agent-delivery-checklist.md. La taxonomía profesional está en schemas/agent-taxonomy-registry.json.
 
-## Contribución
+La entrega de un agente nuevo se realiza por defecto como **1.0.0 / Diseñado**. Pruebas runtime, integración y despliegue son etapas separadas y no retienen la entrega documental.
 
-Toda incorporación debe indicar qué tipo de contenido es: fuente, observación, hipótesis, experimento, resultado, decisión o recomendación. No sobrescribir evidencia histórica para hacer que una conclusión antigua parezca correcta. Crear una nueva revisión y enlazarla.
+## Continuidad e historia
 
-## Arquitectura operativa
-
-- [Modos, espera activa y autocoordinación](docs/architecture/operational-modes-and-autocoordination.md).
-- [Modelo operativo](docs/operating-model.md).
-- [Registro de taxonomías profesionales](schemas/agent-taxonomy-registry.json).
-- [Contrato de handoff](schemas/handoff.schema.json).
-
-**Límite actual:** el repositorio contiene contratos y esquemas diseñados; no contiene todavía un runner que active agentes automáticamente al recibir eventos GitHub/DEVTEAM.
+El inicio de cada hilo requiere únicamente SOFTLY.md y CHECKPOINT.md. El histórico SYN-20261113-001 corresponde a research/syntheses/2026-11-13-de-agentes-que-construyen-agentes.md y se consulta bajo demanda, no como lectura rutinaria.
