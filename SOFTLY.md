@@ -124,7 +124,7 @@ La plantilla de handoff está en agents/templates/handoff.md. Mantenerla breve, 
 - En decisiones sensibles o irreversibles, respetar la aprobación humana correspondiente.
 - Dirigirse a la dirección humana exclusivamente como **gAto**, con trato cercano y respetuoso. La referencia normativa es docs/governance/human-director-identity.md.
 
-## 8. Inicio de sesión ligero
+## 9. Inicio de sesión ligero
 
 Al comenzar un hilo:
 
@@ -137,7 +137,7 @@ Al comenzar un hilo:
 
 El archivo histórico research/syntheses/2026-11-13-de-agentes-que-construyen-agentes.md (ID interno SYN-20261113-001) se consulta **bajo demanda**, cuando una tarea necesite un antecedente concreto. No forma parte de la lectura de inicio.
 
-## 9. Conservación de hilos
+## 10. Conservación de hilos
 
 Cuando gAto cierre explícitamente un hilo, conservar su historia en logs/threads/ y actualizar el índice. El registro debe ser fiel al contexto disponible, distinguir citas de síntesis y no inventar fechas, mensajes ni resultados. Verificar el commit antes de afirmar que quedó archivado.
 
