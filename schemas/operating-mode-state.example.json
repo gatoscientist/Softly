@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "mode": "laboratory",
+  "default_mode": "laboratory",
+  "allowed_modes": ["laboratory", "factory"],
+  "mode_is_not_authority": true,
+  "session_scoped": true,
+  "transition_requires": {
+    "laboratory_to_factory": ["explicit_build_or_validation_goal", "approved_assignment", "acceptance_criteria", "effective_permissions"],
+    "factory_to_laboratory": ["cycle_closed_paused_or_cancelled", "handoff_or_checkpoint_recorded"]
+  },
+  "runtime_status": "declarative-contract-only",
+  "executor_connected": false
+}
