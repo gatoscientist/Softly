@@ -7,3 +7,5 @@ Plantillas para definir agentes y describir sus perfiles. Son artefactos de dise
 - [Plantilla de perfil](agent-profile.md): campos para documentar especialidad, capacidades, permisos, evaluación y limitaciones.
 
 Mantener separadas la definición del agente, el brief de incorporación, la asignación a un proyecto y la sesión de trabajo. No declarar capacidades probadas sin evidencia.
+
+- [Handoff compacto](handoff.md): transferencia estructurada entre especialistas (5–12 líneas).
