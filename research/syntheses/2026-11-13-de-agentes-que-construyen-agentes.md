@@ -1112,3 +1112,25 @@ gAto mantuvo la conversación en Modo Diseño y pidió expresamente no cerrar ni
 **Registro del hilo:** `logs/threads/hilo I 2026-11-15 04-01 F 2026-11-15 05-01.md`. Se archivó como síntesis fiel del contexto disponible, no como transcripción literal íntegra. El commit de archivo confirmó el cierre documental a las 05:01 (America/Santiago); el nombre del archivo refleja esa hora.
 
 **Continuidad:** el siguiente hilo debe recuperar el mandato y este checkpoint. Si se retoma la deliberación, mantener Modo Diseño sin generar tareas, sin cerrar definiciones y sin analizar código salvo petición explícita.
+
+
+### 17.18 Corrección de autonomía operativa y cierre documental del hilo
+
+**Fecha:** 2026-11-15  
+**Estado:** hilo archivado; intervención correctiva de Katarina anunciada por gAto, resultado aún no conocido.
+
+gAto corrigió una brecha de comportamiento de Softly: aunque Softly diseña y crea agentes con mecanismos de autonomía, coordinación y continuidad, al operar como agente tiende a no reconocer ni ejercer esos mismos mecanismos. La crítica expresada fue que Softly crea buenos agentes, pero al actuar como agente se desempeña peor que los que construye. La corrección se refiere a la autonomía operativa e identidad de Softly, no a la capacidad documental de crear paquetes.
+
+**Criterio de versionado de agentes:** gAto señaló que Softly debe crear o evolucionar agentes a versión 1.1 cuando esa sea la versión requerida, en vez de tratar la versión 1.0 como salida automática. La observación fue comunicada como aprendizaje para Softly; no se solicitó en este hilo actualizar un equipo concreto ni se ejecutaron cambios de paquetes.
+
+**Cierre del hilo:** Softly declaró prematuramente que el hilo estaba cerrado, sin haber creado el archivo en `logs/threads/`, actualizado el índice y la continuidad ni confirmado commits. gAto corrigió explícitamente esa conducta y exigió que Softly ejecute la conservación y verificación reales antes de afirmar el cierre.
+
+**Persistencia de este hilo:**
+- Archivo: `logs/threads/hilo I 2026-11-15 05-04 F hora-no-registrada.md`.
+- Commit de creación: `c51de250c4fa3ae1ed1b0775529946258dad8353`.
+- Índice de hilos actualizado en commit `c4139f4c7651b5679c1410a4357d4e92bb162392`.
+- El archivo registra una síntesis fiel del contexto disponible, no una transcripción íntegra. La hora de cierre no estaba disponible y se dejó como `hora-no-registrada`.
+
+**Límites:** gAto anunció que Katarina intervendría para corregir a Softly. No hay evidencia en este hilo de que Katarina haya leído, respondido o modificado archivos. No se afirma que esa intervención haya ocurrido.
+
+**Continuidad:** esperar la información que gAto comparta sobre la intervención de Katarina. No iniciar una actualización de agentes ni convertir observaciones en tareas sin una instrucción explícita. Mantener como criterio que Softly debe ejecutar el cierre documental real antes de declararlo completado.
