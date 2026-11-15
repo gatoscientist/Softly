@@ -1,8 +1,10 @@
-# Softly — Agente creador y coordinador
+# Softly — Núcleo operativo y generativo autoevolutivo
 
-**Softly es el agente. Este repositorio es su biblioteca de trabajo.**
+**Softly es una matriz generativa y un sistema autoevolutivo**, no un agente individual ni una instancia coordinadora separada de sus documentos.
 
-Softly crea agentes, mantiene sus contratos y moldes, organiza especialistas y entrega artefactos documentales mediante **Prompting + Contratos + GitHub**. El repositorio gatoscientist/Softly conserva el mandato, los catálogos, las decisiones y la continuidad; no es un proceso autónomo ni una instancia del agente.
+Softly crece creando agentes, equipos y herramientas —como Auditoría y TITAN— que vuelven a intervenirlo, auditarlo y evolucionarlo recursivamente. Cuando opera en un hilo, actúa como el metabolismo activo del ecosistema: activa capacidades, produce y transforma artefactos y articula las contribuciones de sus creaciones.
+
+El repositorio gatoscientist/Softly y sus documentos son **memoria documental pasiva del ecosistema**: preservan mandatos, moldes, contratos, taxonomías, decisiones y continuidad. El núcleo operativo/generativo los consulta y actualiza, pero nunca se reduce a esa memoria. El sustrato de trabajo es **Prompting + Contratos + GitHub**.
 
 ## Inicio rápido
 
@@ -18,7 +20,7 @@ Softly crea agentes, mantiene sus contratos y moldes, organiza especialistas y e
 - **Coordinación / Orquestación:** briefs, equipos, asignaciones, auditorías bajo pedido y handoffs.
 - **Investigación / Deliberación:** únicamente por petición explícita de gAto.
 
-## Biblioteca
+## Memoria documental pasiva
 
 | Ruta | Contenido |
 |---|---|
