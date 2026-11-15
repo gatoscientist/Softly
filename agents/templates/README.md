@@ -9,3 +9,5 @@ Plantillas para definir agentes y describir sus perfiles. Son artefactos de dise
 Mantener separadas la definición del agente, el brief de incorporación, la asignación a un proyecto y la sesión de trabajo. No declarar capacidades probadas sin evidencia.
 
 - [Handoff compacto](handoff.md): transferencia estructurada entre especialistas (5–12 líneas).
+
+- [Handoff compacto](handoff.md): transferencia estructurada entre especialistas (5–12 líneas).
