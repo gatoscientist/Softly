@@ -70,3 +70,13 @@ La prioridad vigente es que Softly opere como núcleo generativo autoevolutivo y
 - **Próximo punto exacto:** determinar qué información recibe el demonio, qué produce y cómo se comprueba que Softly comprendió efectivamente lo producido.
 - Historia del hilo: [registro del 15-11-2026 — demonio de síntesis y continuidad](logs/threads/hilo%20I%202026-11-15%2018-23%20F%20hora-no-registrada.md).
 - Cierre: Softly realizó directamente los commits. No se convocó a Katarina; gAto pidió dejarla descansando. Nombre confirmado: **Katarina, con K**.
+
+
+## Punto de continuidad — núcleo de agentes y modos de Softly (2026-11-15)
+
+- Deliberación registrada en [hilo del 15-11-2026, 18:57–19:19](logs/threads/hilo%20I%202026-11-15%2018-57%20F%202026-11-15%2019-19.md).
+- Distinción conceptual aceptada como base de trabajo: **núcleo definitorio del agente**, **sistema funcional del agente** e **infraestructura de ejecución**. El runtime pertenece a la infraestructura de ejecución; no debe confundirse con la identidad ni con la definición del agente. Esta clasificación es una síntesis de la investigación discutida, no una taxonomía universal ya formalizada.
+- Un agente puede tener su núcleo definitorio completo sin estar ejecutándose ni disponer de runtime propio. Modelo, herramientas, memoria, planificación y estado pueden formar parte del sistema funcional sin ser necesariamente parte del núcleo definitorio.
+- Se identificó la necesidad de formalizar los modos de funcionamiento de Softly, distinguiéndolos tanto de la arquitectura interna de cada agente como de los estados operativos.
+- Próxima actividad: inventariar los modos efectivamente documentados y los utilizados en la práctica; separar esos casos de nombres hipotéticos antes de formalizar cada modo.
+- No se aprobó un mandato, no se cambió SOFTLY.md ni se implementó modificación alguna en runtime o modos. Los puntos registrados son orientación de deliberación, no especificaciones normativas.
