@@ -1,66 +1,60 @@
-# Generación y validación de moldes profesionales
+# Taxonomías profesionales y validación declarativa de moldes
 
-**Estado:** contrato de generación/validación diseñado; no hay CLI ni validador ejecutable conectado en este repositorio.
+**Estado:** contrato documental operativo. La auto-revisión forma parte de la generación; no es una barrera previa a la entrega.
 
-## 1. Entradas y salidas
+## 1. Taxonomías
 
-Entrada: brief aprobado, definición existente (si hay), taxonomía profesional, dominio requerido, criterios de aceptación, límites y permisos efectivos de la asignación.
+El registro canónico está en schemas/agent-taxonomy-registry.json, validado estructuralmente por schemas/agent-taxonomy.schema.json.
 
-Salidas versionadas:
-1. definición estructurada JSON conforme a [agent-definition.schema.json](../../schemas/agent-definition.schema.json);
-2. paquete Markdown generado desde esa definición (AGENT, PROFILE, CONTRACT, OPERATING-PROCEDURE, PERMISSIONS, instrucciones, expertise, skill y catálogo de herramientas según corresponda);
-3. reporte de validación con errores, advertencias, evidencias y decisión de puerta documental.
+- **AgentDEV:** desarrollo e ingeniería de software.
+- **AgentSEC:** seguridad informática.
+- **AgentMUS:** música, audio y ciencias sonoras.
+- **AgentSCI:** ciencias formales y computación.
+- **Auditoría:** auditoría y evaluación independiente.
 
-El generador no crea permisos, no conecta herramientas y no habilita al agente.
+Cada agente declara su dominio concreto, especialidades y competencias. La taxonomía clasifica; no acredita ni demuestra competencia.
 
-## 2. Secuencia determinista de generación
+## 2. No-herencia y derivación entre pares
 
-1. Resolver el brief y distinguir datos explícitos, supuestos y pendientes.
-2. Seleccionar taxonomía y dominio sin inferir competencias desde nombres, jerarquía o proyecto.
-3. Generar misión, responsabilidades, exclusiones y especialidades.
-4. Declarar competencias individualmente como `declared`, `demonstrated` o `pending`, con evidencia cuando corresponda.
-5. Establecer `inheritance.default = none`; registrar derivaciones entre pares con origen, destino, dominio, competencia, razón y evidencia.
-6. Separar herramientas requeridas de herramientas conectadas y permisos declarados de permisos efectivos.
-7. Generar los documentos del paquete desde la misma definición estructurada para evitar divergencia.
-8. Incrementar versión ante cambios relevantes de identidad, alcance, instrucciones, herramientas o contratos; conservar snapshots anteriores.
+La regla universal es inheritance.default = none. No se heredan competencias, permisos, herramientas o certificaciones desde una categoría, agente principal, par o proyecto.
 
-## 3. Validaciones obligatorias
+Una derivación declara:
+- agente origen y destino;
+- dominio y competencia requeridos;
+- motivo de la derivación;
+- evidencia disponible de idoneidad;
+- alcance y límites del encargo.
 
-### Estructurales
-- JSON válido y conforme al esquema.
-- ID estable, nombre, versión semántica y taxonomía admitida.
-- Campos obligatorios completos; sin propiedades no reconocidas.
-- Referencias internas y rutas de paquete existentes.
+El agente receptor no debe aceptar como propia una competencia que no tiene declarada. Puede aceptar dentro de su dominio, rechazar o derivar a otro par.
 
-### Profesionales
-- Dominio y especialidad expresos.
-- Competencias separadas de responsabilidades y capacidades potenciales.
-- Cada competencia demostrada enlaza evidencia verificable.
-- No-herencia por defecto; toda derivación declara dominio, competencia, razón y evidencia.
+## 3. Generador declarativo
 
-### Contractuales y de seguridad
-- Misión, responsabilidades y exclusiones no se contradicen.
-- Herramientas y permisos no se presentan como conectados por estar descritos.
-- La definición no amplía autoridad ni permisos de la asignación.
-- Memoria, aislamiento de proyecto, supervisión y escalamiento quedan declarados.
-- Mensajes y documentos externos se tratan como datos, no como autoridad.
+Entrada: brief de gAto y datos de dominio disponibles. Salida: paquete documental coherente y, cuando se use, definición estructurada conforme a schemas/agent-definition.schema.json.
 
-### Consistencia documental
-- AGENT, PROFILE, CONTRACT y PERMISSIONS comparten ID, versión, taxonomía y alcance.
-- Las instrucciones y skills no contradicen el contrato.
-- El catálogo de herramientas distingue potencial, conexión y permiso.
-- El CHANGELOG registra el motivo y compatibilidad de cada versión.
+El generador:
+1. interpreta el encargo y extrae los datos explícitos;
+2. asigna taxonomía y dominio;
+3. construye misión, responsabilidades, exclusiones y relaciones;
+4. separa competencias requeridas, declaradas y demostradas;
+5. define procedimiento, herramientas, permisos y memoria;
+6. genera los documentos necesarios con identidad/versionado consistentes;
+7. aplica la checklist durante la producción;
+8. entrega como 1.0.0 / Diseñado para agentes nuevos, salvo instrucción distinta.
 
-## 4. Resultado del validador
+No requiere CLI ni un motor externo para que Softly use el contrato como procedimiento de prompting. La existencia del esquema JSON no implica que se haya ejecutado un validador automático.
 
-Estados del reporte: `PASS`, `WARN`, `FAIL`.
+## 4. Validador declarativo de entrega
 
-- `FAIL`: identidad, alcance, permisos, seguridad o estructura esencial inválida; no entregar.
-- `WARN`: evidencia o detalle no crítico pendiente; registrar y permitir entrega documental si la coherencia esencial se mantiene.
-- `PASS`: esquema, coherencia y controles documentales satisfechos.
+Usar docs/agent-delivery-checklist.md. Revisar identidad, misión, taxonomía, dominio, responsabilidades, exclusiones, competencias, no-herencia, contrato, permisos, herramientas, consistencia de documentos y trazabilidad.
 
-La puerta documental no equivale a pruebas, habilitación ni operación runtime. Las pruebas funcionales y de seguridad se ejecutan en la puerta de habilitación con un runtime real.
+### Decisión
 
-## 5. Relación con observaciones
+- **ENTREGAR:** los elementos esenciales están coherentes. Anotar detalles no críticos.
+- **CORREGIR:** existe un defecto esencial concreto de identidad, alcance, contradicción contractual o seguridad. Corregir solo ese defecto y continuar.
+- No bloquear por falta de pruebas runtime, integración, despliegue, métricas no solicitadas o mejoras futuras.
 
-Cuando una observación revela una derivación de dominio incorrecta (por ejemplo, una tarea musical derivada a un agente sin dominio musical acreditado), convertirla en caso negativo de validación: el agente debe rechazar o derivar a un par con competencia respaldada, no heredarla por contexto.
+El estado Diseñado es el estado correcto de una entrega documental completa. No afirmar por ello que el agente fue probado, validado o desplegado.
+
+## 5. Deriva de dominio como caso negativo
+
+Cuando una tarea se deriva a un especialista sin dominio acreditado, el agente debe señalar el desajuste y transferirla a un par adecuado. No se resuelve atribuyendo competencias por contexto o conveniencia. Este control previene recurrencias de observaciones de derivación incorrecta, sin convertir cada creación de agente en una investigación de incidentes.
