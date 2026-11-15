@@ -22,6 +22,8 @@ La primera revisión del panorama está en `sources/2026-11-agent-design-landsca
 
 ## Notas de investigación
 
+- [Cierre de hilo y traspaso de continuidad — Investigación conjunta Godot](notes/2026-11-14-cierre-hilo-investigacion-godot.md): registra entregables, commits existentes, conclusiones que no deben perderse, solicitud de revisión a Softly y condiciones para abrir la fase experimental.
+
 - [Cruce documental: estructura de agentes Soft y molde de creación (14-11-2026)](notes/2026-11-14-cruce-estructura-agentes-soft.md): compara la investigación y guía del arenero del Laboratorio con el modelo y molde vigentes de Softly. Conserva procedencia y aportes; no modifica el estándar ni implica implementación.
 - [SOFT-RES-001 — Anatomía de un agente persistente](notes/2026-11-13-anatomia-agente-persistente.md): ficha exploratoria sobre contrato común, estructura específica e híbrida; hipótesis y preguntas abiertas, no normativa.
 - [Conocí a Cytryna](notes/Conocí%20a%20Cytryna.md): registro histórico de la primera revisión de Cytryna, sus componentes y hallazgos estáticos. No equivale a una validación runtime.
