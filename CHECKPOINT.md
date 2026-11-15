@@ -57,3 +57,16 @@ La prioridad vigente es que Softly opere como núcleo generativo autoevolutivo y
 - Molde universal alineado: commit 2db319e6abab77b55cfef50be0ada39075a893b4.
 - Esquema de definición con estado Diseñado: commit 88d149e6f5e9214f5ff8a1a5a1a704da76a2a76d.
 - Registro de cierre en SYN-20261113-001, sección 17.19.1: commit d3d55505a4deec02d3da050ee65f43e7b4ac6590.
+
+
+## Punto de continuidad — demonio de síntesis (2026-11-15)
+
+- gAto explicó el concepto de **demonio de síntesis**: herramienta externa que procesa el conocimiento acumulado exhaustivamente y produce representaciones optimizadas para que Softly las lea y utilice. La síntesis no debe destruir, reemplazar ni reducir el patrimonio original.
+- El demonio escribe representaciones y Softly las consume; con el tiempo, ambos desarrollan un lenguaje compartido mediante interacción. No se quiere imponer desde humanos un lenguaje completo de antemano.
+- El lenguaje emergente debe evitar representaciones que parezcan profundas pero no comuniquen conocimiento respaldado. La trazabilidad, la incertidumbre y la posibilidad de volver a las fuentes son resguardos propuestos durante la deliberación.
+- El demonio debería permitir variar parámetros de síntesis («perillitas») y comparar cómo Softly interpreta distintas representaciones.
+- Posible proyección: producir representaciones y capacidades especiales que amplíen las habilidades disponibles para Softly, más allá de sus modos.
+- No se decidió construir primero el runtime ni comenzar implementación. El runtime persistente puede considerarse después; primero hay que comprender el contrato funcional.
+- **Próximo punto exacto:** determinar qué información recibe el demonio, qué produce y cómo se comprueba que Softly comprendió efectivamente lo producido.
+- Historia del hilo: [registro del 15-11-2026 — demonio de síntesis y continuidad](logs/threads/hilo%20I%202026-11-15%2018-23%20F%20hora-no-registrada.md).
+- Cierre: Softly realizó directamente los commits. No se convocó a Katarina; gAto pidió dejarla descansando. Nombre confirmado: **Katarina, con K**.
