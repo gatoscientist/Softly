@@ -45,3 +45,20 @@ La conexión GitHub disponible no concede acceso a los endpoints de branch prote
 ## 5. Dictamen de corte
 
 La clasificación documental de las siete ramas está completada. La consolidación física no está completada: las ramas siguen presentes. La protección de `main` no pudo leerse ni modificarse por falta de permiso. Ninguna de estas limitaciones justifica detener tareas independientes ni altera el cierre administrativo de Runtime o KAT-006.
+
+
+## Revalidación de divergencia — corte posterior a los commits de coordinación (2026-11-16)
+
+Se repitieron las comparaciones contra `main` después de registrar los handoffs, checkpoint y matriz. Los conteos actualizados son:
+
+| Repositorio | Rama | Ahead | Behind | Estado |
+|---|---|---:|---:|---|
+| Softly | `fix/f03-recover-ledger` | 5 | 426 | diverged |
+| Softly | `recovery/AUD-20261116-001` | 3 | 174 | diverged |
+| Katarina | `kat-006-stage3-softly-2026-11-16` | 8 | 89 | diverged |
+| Auditoria | `amelia/propuesta-mejora-auditoria-2026-11-15` | 2 | 32 | diverged |
+| Auditoria | `proposal/AUD-20261115-001-refactor-equipo-auditoria` | 2 | 32 | diverged |
+| Auditoria | `recovery/AUD-20261116-001` | 19 | 26 | diverged |
+| Laboratorio-de-agentes | `proposal/auditoria-reforma-normativa-2026-11-15` | 1 | 176 | diverged |
+
+Los siete casos continúan divergidos. Los conteos anteriores de Softly se reemplazan por estos valores actualizados; no se ha borrado ni fusionado ninguna rama.
