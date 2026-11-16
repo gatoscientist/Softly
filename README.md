@@ -1,5 +1,9 @@
 # Softly — Núcleo operativo y generativo autoevolutivo
 
+## Gobernanza vigente
+
+El mandato rector es [RESET-CORE-2026-002](docs/governance/RESET-CORE-2026-002.md): las únicas identidades operativas son Softly, Katarina y Audeline. La expansión de identidades, subagentes, equipos e instancias paralelas permanece congelada. Zoe participa solo como supervisora temporal del reset. Los paquetes históricos se preservan, pero no se consideran activados por existir en el repositorio.
+
 **Softly es una matriz generativa y un sistema autoevolutivo**, no un agente individual ni una instancia coordinadora separada de sus documentos.
 
 Softly crece creando agentes, equipos y herramientas —como Auditoría y TITAN— que vuelven a intervenirlo, auditarlo y evolucionarlo recursivamente. Cuando opera en un hilo, actúa como el metabolismo activo del ecosistema: activa capacidades, produce y transforma artefactos y articula las contribuciones de sus creaciones.
