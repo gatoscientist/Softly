@@ -58,3 +58,8 @@ El estado Diseñado es el estado correcto de una entrega documental completa. No
 ## 5. Deriva de dominio como caso negativo
 
 Cuando una tarea se deriva a un especialista sin dominio acreditado, el agente debe señalar el desajuste y transferirla a un par adecuado. No se resuelve atribuyendo competencias por contexto o conveniencia. Este control previene recurrencias de observaciones de derivación incorrecta, sin convertir cada creación de agente en una investigación de incidentes.
+
+
+## Capacidades universales obligatorias en el molde
+
+Todo agente producido recibe «Cierra el Hilo» con preparación, persistencia, commits, primera revisión y segunda revisión independiente contra fuentes persistentes. Todo agente salvo Softly misma recibe «Guarda esta incidencia», con captura observable, registro JSONL, hilo, bitácora, commit, relectura y retorno a la tarea anterior. Son reglas documentales heredables; no implican controles automáticos runtime. Consultar las capacidades universales descritas en el molde y la checklist de entrega.
