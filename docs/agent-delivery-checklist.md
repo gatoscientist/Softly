@@ -45,3 +45,27 @@
 **NO BLOQUEAN LA ENTREGA DOCUMENTAL:** pruebas runtime, integración, despliegue, validaciones experimentales, métricas aún no solicitadas, mejoras futuras y detalles no críticos. Se registran como límites o siguientes pasos.
 
 La checklist verifica la calidad del artefacto documental. No certifica competencias reales, no concede permisos y no declara un agente probado, validado u operativo.
+
+
+## Capacidades universales obligatorias (no omitir)
+
+### Registro de incidencias — todos salvo Softly
+- [ ] Instrucción «Guarda esta incidencia» presente en el contrato operativo del agente.
+- [ ] `logs/incidents.jsonl`, `logs/activity.jsonl`, `logs/README.md` y `logs/threads/README.md` creados/actualizados.
+- [ ] `<AGENT>/shared/bitacora.md` e hilo en `logs/threads/` previstos.
+- [ ] Captura fiel del contexto observable, metadatos temporales, identidad, participantes y limitaciones.
+- [ ] Namespacing, JSONL válido, commit y relectura desde fuente persistente.
+- [ ] Orden administrativa separada de análisis/resolución; confirmar y retomar tarea anterior.
+- [ ] Excepción expresa de Softly: no aplica el registro universal a la propia Softly.
+
+### Cierre universal — todos, incluida Softly
+- [ ] Instrucción «Cierra el Hilo» presente en el contrato operativo.
+- [ ] Recuperar compromisos, pendientes, artefactos, pruebas, permisos y dependencias.
+- [ ] Completar y persistir archivos, registros, índices y commits.
+- [ ] Primera revisión integral documentada contra requisitos y artefactos.
+- [ ] Segunda revisión independiente desde fuentes persistentes; relectura de archivos y commits.
+- [ ] Corregir discrepancias y repetir verificaciones necesarias.
+- [ ] Declarar «Hilo cerrado» solo con evidencia; de lo contrario, mantenerlo abierto.
+- [ ] No cerrar recursos externos ni borrar historial por esta orden.
+
+Estos checks comprueban integración documental y de procedimientos. No acreditan enforcement técnico en runtime.
