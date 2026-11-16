@@ -419,3 +419,20 @@ La inspección directa confirma:
 - `AGENTGUI/workspace/test_gui_tkinter.py` (blob `17d9be633e22925d4b9ac2a88b1292f86307989a`) contiene cinco pruebas GUI, pero `.github/workflows/tests.yml` (blob `5be63a88027f4218d8813d0c39e8d4be13c4b969`) ejecuta `unittest discover -s tests`, por lo que no descubre esa carpeta. La GUI está en main y deshabilita herramientas, pero sus pruebas no están en la matriz CI.
 
 Cytryna permanece fuera del alcance operativo provisional; esta verificación es solo de lectura y no autoriza cambios ni ejecución de pruebas.
+
+
+## 32. Registro canónico de identidades y brecha de taxonomía
+
+La lectura directa de `schemas/agent-taxonomy-registry.json` (blob `ceca667cfb912a0f7c43b32ee0eead86030b4b5f`) confirma nueve entradas `active-standby`: Tiffany/AgentDEV 1.0.0, Tara/AgentSEC 1.0.0, Thea/AgentMUS 1.0.0, Tabata/AgentSCI 1.0.0, Katarina/AgentDEV 1.1.0, Melina/AgentMUS 1.0.0, Audeline/Auditoría 1.0.0, Aurora/Auditoría 1.0.0 y Autumn/Auditoría 1.0.0.
+
+Discrepancias verificadas:
+
+- Softly no figura como identidad en el registro ni existe taxonomía `AgentCORE`/`AgentSYS` o equivalente; el enum solo admite AgentDEV, AgentSEC, AgentMUS, AgentSCI y Auditoría.
+- Katarina figura como 1.1.0, pero su casa canónica es 2.0.1 / Agent Softly. El registro cita el paquete histórico del Laboratorio.
+- Audeline figura como 1.0.0 desde `Soft Agents/Auditoria/Auditoras/Audeline/version.json` del Laboratorio, no desde su casa canónica `gatoscientist/Audeline`.
+- Aurora y Autumn siguen como `active-standby`, pese al reset de identidad única auditora; sus paquetes deben preservarse como históricos/capacidades fuente, no seguir como identidades operativas.
+- Tiffany, Tara, Thea y Tabata siguen `active-standby`; Melina también. El Equipo Softly y Melina tienen HOLD operacional, por lo que el registro contradice el estado de invocación.
+- Los paquetes especialistas de TITAN y otros paquetes diseñados no están representados exhaustivamente en el registro. Por tanto, el registro no es inventario completo del ecosistema.
+- `agents/profiles/audelin.md` es un perfil experimental 0.1.0 / Propuesto, distinto del paquete canónico Audeline 1.0.0; debe clasificarse como perfil histórico o actualizarse sin confundirlo con identidad activa.
+
+La nota del propio registro aclara que `active-standby` no implica proceso vivo, endpoint ni herramientas conectadas. El problema es de coherencia de catálogo y disponibilidad declarada, no evidencia de nueve procesos ejecutándose. Antes de cambiar el schema debe decidirse si el catálogo distingue **identidades operativas** de **capacidades/perfiles profesionales**. No se modificó el registro ni sus schemas; la reconciliación queda pendiente de auditoría independiente y decisión de gAto.
