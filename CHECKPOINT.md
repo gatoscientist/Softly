@@ -100,3 +100,14 @@ Cuando gAto cierre explícitamente un hilo, conservar la historia en logs/thread
 - **Registro de decisión:** `research/coordination/2026-11-16-decision-direccion-task-centric-tres-dimensiones.md`.
 - **Límites:** la dirección de investigación queda adoptada; no se autorizó piloto específico, migración, cambio normativo, actualización de schemas/contratos/moldes ni runtime. No se ejecutaron experimentos.
 - **Próxima etapa:** profundizar las tres dimensiones y responder la pregunta sistémica con análisis explícito; definir el modelo conceptual mínimo y devolver opciones para decisión de gAto antes de cualquier piloto.
+
+
+## Decisión vigente — cierre administrativo KAT-006 y reinicio integral (2026-11-16)
+
+- **KAT-006 queda cerrado administrativamente por sustitución del proceso**, debido a la dirección de gAto de retirar las instancias de agentes existentes y reconstruir el ecosistema.
+- Este cierre **no equivale a aceptación técnica**. La implementación de KAT-006 no queda certificada; la evidencia y los handoffs se preservan.
+- Registro: `logs/2026-11-16-cierre-administrativo-kat-006-reinicio-integral.md`.
+- La evidencia consultada no identifica una entrega de implementación en `main` de Softly ni en los commits recientes visibles de Katarina; esto no excluye progreso en sesiones o ramas no consultadas.
+- La eliminación de agentes **no se ha ejecutado**. Antes se requiere inventario, respaldo, registro canónico de identidades/versiones/instancias y plan de retiro/reconstrucción.
+- La pregunta de Katarina sobre coordinación sistémica permanece abierta y debe pasar al diseño de la nueva arquitectura.
+- **Próxima acción:** preparar inventario integral de agentes y dependencias, preservando evidencia antes de retirar cualquier instancia.
