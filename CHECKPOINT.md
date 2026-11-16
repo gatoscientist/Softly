@@ -15,7 +15,7 @@
 - **HOLDs:** REC-002 en TITAN, Equipo Softly y Melina preservados sin invocación. El Equipo del gAto queda sin intervenir hasta clasificar alcance. gAtoSD es proyecto independiente con Lucyna y Andy NAMED_LOCKED; no intervenir.
 - **Canales:** Softly, Katarina y Zoe ya tienen Softlysay/Katarinasay/Audelinesay. Softly PR #4 se cerró como supersedido, sin merge ni borrado de rama. Audeline tiene los tres canales, pero sus TEAM y README todavía describen Aurora/Autumn. Auditoria conserva su canal histórico Softlysay.
 - **Issues Softly:** #6 cerrado como supersedido por RESET-CORE-2026-002; #5 abierto para decisión humana KAT-006; #7 alerta de continuidad abierta.
-- **Ramas y protección:** main informa `protected:false` en Softly, Katarina y Auditoria. Último corte medido antes de la actualización documental: Softly F03 5/345, Softly recovery 3/93, Katarina KAT-006 8/31, Auditoria recovery 19/18, propuestas Auditoria 2/24 y Laboratorio 1/176. Recalcular antes de cualquier integración/retiro. No se fusionaron ni borraron ramas.
+- **Ramas y protección:** main informa `protected:false` en los nueve repositorios consultados: Softly, Katarina, Auditoria, Audeline, Zoe, TITAN, Cytryna, Laboratorio-de-agentes y gAtoSD. Último corte medido antes de la actualización documental: Softly F03 5/345, Softly recovery 3/93, Katarina KAT-006 8/31, Auditoria recovery 19/18, propuestas Auditoria 2/24 y Laboratorio 1/176. Recalcular antes de cualquier integración/retiro. No se fusionaron ni borraron ramas.
 - **Validación:** TITAN 41/100 Actions exitosas y 59 fallidas, diez más recientes fallidas; Cytryna 0/100 exitosas, 30 fallidas y 70 canceladas. No se acreditan pruebas en los jobs fallidos ni se ejecutaron reruns. Softly/Katarina/Auditoria/Audeline/Zoe/Laboratorio no tienen workflows Actions en main.
 - **Respaldos:** diez ZIP localizados, ninguno extraído ni validado como restaurable.
 - **Audeline pendientes:** reconciliar TEAM/TEAM, TEAM/COORDINATION, TEAM/TASK_BOARD y README de sus tres canales; corregir enlaces cross-repo rotos en Auditoria/TEAM/TASK_BOARD; corregir tamaños erróneos en adenda ZIP 08.
@@ -328,3 +328,10 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 - Comparación 2026-11-16 19:10 UTC: Softly F03 5/345, Softly recovery 3/93, Katarina KAT-006 8/31, Auditoria recovery 19/18, propuestas Auditoria 2/24, Laboratorio 1/176.
 - El commit actual actualiza informe y checkpoint en una sola revisión; las ramas Softly quedarán una revisión adicional detrás. Recalcular antes de integrar.
 - Informe ampliado vigente: logs/reset/2026-11-16-reconocimiento-ampliado.md, blob SHA 692aaf50695bd510312482ecb87c6a5c37c745ec.
+
+
+### Protección de main — corte ampliado
+
+GitHub devuelve `protected:false` para main en Softly, Katarina, Auditoria, Audeline, Zoe, TITAN, Cytryna, Laboratorio-de-agentes y gAtoSD. No se cambiaron reglas de protección. La decisión debe coordinarse con permisos y CI; el riesgo de pushes directos queda abierto.
+
+Informe ampliado vigente: logs/reset/2026-11-16-reconocimiento-ampliado.md, blob SHA 3a80535fda8d16ae77ff74a279655f03ea799b5c.

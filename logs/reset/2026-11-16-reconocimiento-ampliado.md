@@ -441,3 +441,10 @@ La nota del propio registro aclara que `active-standby` no implica proceso vivo,
 ## 33. Último corte verificado de ramas antes del commit de checkpoint
 
 Comparación de ramas ejecutada después de las últimas entregas documentales (corte 2026-11-16, 19:10 UTC): Softly `fix/f03-recover-ledger` 5/345; Softly `recovery/AUD-20261116-001` 3/93; Katarina `kat-006-stage3-softly-2026-11-16` 8/31; Auditoria `recovery/AUD-20261116-001` 19/18; propuestas Auditoria 2/24 cada una; Laboratorio proposal 1/176. Los metadatos siguen indicando `protected:false` para main de Softly, Katarina y Auditoria. Este corte precede al commit único que actualiza este informe y CHECKPOINT, por lo que las dos ramas Softly quedarán una revisión adicional detrás al publicarse. Recalcular inmediatamente antes de cualquier integración. No se fusionó ni borró ninguna rama.
+
+
+## 34. Protección de ramas — ampliación a todos los repositorios inspeccionados
+
+La consulta de metadatos `GET /branches/main` devuelve `protected:false` en los nueve repositorios consultados: Softly, Katarina, Auditoria, Audeline, Zoe, TITAN, Cytryna, Laboratorio-de-agentes y gAtoSD. Se registraron los heads observados: Softly `f7b8785494eca8b0c9770bda9b485e548389b797`; Katarina `0d610a264f6c16bbb2706bb8e6bf028636035ac2`; Auditoria `b9f641cbefe9d78633605c065c02e9ec39995b16`; Audeline `143d25d7b1c32625fad5bf53d65d003c68c9c9ea`; Zoe `b0892d5b647523b6792fd5f38281ff70024ac272`; TITAN `9f688906d725ee4851ae60908148ac542b68bf40`; Cytryna `1fa7176beb69e8e1c74d8491fc428dfbbb6049d6`; Laboratorio `1220e1d53efa7a45a965032d972f7e680ad5831b`; gAtoSD `c5924dbb0200e8228d41d8a2310afbe95e65ed7e`.
+
+Por tanto, ninguno de esos main tiene protección activa reportada por GitHub. No se modificaron reglas de protección; su activación requiere decisión de gAto y revisión de permisos/CI para evitar bloquear la operación. La condición aumenta el riesgo de pushes directos y no sustituye la necesidad de conservar ramas y PR divergidos.
