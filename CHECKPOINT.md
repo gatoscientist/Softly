@@ -185,3 +185,11 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 - AUD-20261116-017 corregido es NO-GO OPERACIONAL específicamente para KAT-006. AUD-20261116-018 registra un incidente grave de criterio y coordinación. Ambos son compatibles con el dictamen documental general.
 - Audeline no invocó a Autumn ni Aurora en la misión general. El procedimiento que depende de ellas debe reconciliarse con la identidad única Audeline exigida por RESET-CORE-2026-002.
 - Informe ampliado actualizado: commit c3303890cd57f5ad6aa0d373eb10f6cad74d5f34; blob c1b442b5d3d1b5a91ba514acf46712153d985cb9 (versión anterior) y nuevo blob por verificar.
+
+
+### Corrección de estado KAT-006 y registro de identidades
+
+- **KAT-006 por etapas:** etapa 1 documental completada en Softly/main; etapa 2 GO CON RESERVAS; etapa 3 adaptación documental persistida en rama Draft de Katarina, PR #1 abierto sin merge; etapa 4 auditoría independiente completada por Audeline con dictamen corregido NO-GO OPERACIONAL (AUD-20261116-017) e incidente grave registrado (AUD-20261116-018); etapa 5 aceptación humana no declarada y reservada a gAto. El expediente anterior que marcaba etapa 4 pendiente por activación quedó superado por los informes posteriores.
+- **Registro de identidades:** schemas/agent-taxonomy-registry.json contiene nueve entradas con availability active-standby: Tiffany, Tara, Thea, Tábata, Katarina 1.1.0, Melina, Audeline, Aurora y Autumn. No demuestra sesiones vivas, pero debe reconciliarse con el estado final de tres identidades. El schema no contempla Agent Softly, aunque Katarina 2.0.1 la declara.
+- **Taxonomías:** SOF-001 sigue abierto hasta decisión y reconciliación de identidad/taxonomía; SOF-004 es duplicación editorial en agents/README.md. No se modificaron estos contratos ni el registro durante el reconocimiento.
+- **Informe ampliado actualizado:** commit 11e235e7a8dab2d0f241b3a6625be0f9e5878742; blob 7b13cb0b70e028026f31b4b39ada2a2b7fcc1193.
