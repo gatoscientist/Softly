@@ -219,7 +219,7 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 - REC-002 asigna tareas a cinco paquetes diseñados/no desplegados. No invocarlos bajo RESET-CORE-2026-002; preservar los documentos y mantener la activación congelada.
 
 
-- **Informe ampliado vigente:** logs/reset/2026-11-16-reconocimiento-ampliado.md; blob SHA verificado b706007ec61b38cc21768e53a570cf88e81d6ccf.
+- **Informe ampliado vigente:** logs/reset/2026-11-16-reconocimiento-ampliado.md; blob SHA verificado be3b8087d6649ae2764bd74ae75e78c9a9c47e4f.
 
 
 ### Contención documental aplicada
@@ -234,7 +234,7 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 
 - Se amplió el handoff de Audeline en Auditoria/Softlysay/res, con evidencia de trece repositorios, KAT-006, Runtime Mini, registro de identidades, TITAN, Cytryna y límites de auditoría. Addendum commit 16397b05e8669f328fd36eee8be9dae29e851064; indexado en commit 53d1f26fbc76149cbb0b9c70022a0baa1cdbb824. Sin acuse.
 - Se envió a Katarina un addendum con la secuencia Git de su instancia documental en Cytryna, la errata de SHA y solicitud de contraste. Commit 1ffe733526182575f6046e7854b624ae25347f29; indexado en Softlysay/README y bitácora, commits 18de1c665faab24ea8da31e41d625af3a0a0616e y a42e0202121d4d75a53ddd42b68f089969cac627. El acuse RESET original está confirmado; la explicación de Cytryna sigue pendiente.
-- Informe ampliado vigente: logs/reset/2026-11-16-reconocimiento-ampliado.md, blob SHA b706007ec61b38cc21768e53a570cf88e81d6ccf.
+- Informe ampliado vigente: logs/reset/2026-11-16-reconocimiento-ampliado.md, blob SHA be3b8087d6649ae2764bd74ae75e78c9a9c47e4f.
 
 
 ### HOLDs adicionales en Laboratorio
@@ -249,3 +249,10 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 
 - gAtoSD es un proyecto independiente con Lucyna (SOFAGENT 1.0.0 / NAMED_LOCKED) y Andy (SOFAGENTGUI 1.1.0 / NAMED_LOCKED), confirmadas por el usuario responsable. No se encontró dependencia operativa con Softly; queda provisionalmente fuera del alcance y no se interviene. No se inspeccionó código del producto, respetando las restricciones de Lucyna.
 - Informe ampliado vigente: logs/reset/2026-11-16-reconocimiento-ampliado.md, blob SHA 991ace9de5451e09596f43eb890f001af1c75cbd.
+
+
+### Repositorios externos y vacíos
+
+- StroLi se clasifica como proyecto externo provisional; no se sondeó su endpoint protegido y no hay referencias desde Softly/Laboratorio.
+- Dabra, Laboratorio-Musical y asdasd están vacíos; sin dependencia demostrada, no intervenir.
+- Informe ampliado vigente: logs/reset/2026-11-16-reconocimiento-ampliado.md, blob SHA be3b8087d6649ae2764bd74ae75e78c9a9c47e4f.
