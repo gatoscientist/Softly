@@ -132,3 +132,17 @@ La prioridad vigente es que Softly opere como núcleo generativo autoevolutivo y
 - La misma respuesta declara que la misión fue ejecutada y que los cuatro paquetes y el documento constitutivo del equipo quedaron persistidos en GitHub.
 - El tiempo registrado es el tiempo de procesamiento que muestra la interfaz para esa ejecución; no debe confundirse con tiempo total de trabajo humano, ni con tiempo de activación o pruebas de los agentes.
 - La persistencia documental se corroboró posteriormente en `gatoscientist/Laboratorio-de-agentes`, mediante la presencia de los cuatro paquetes y el commit `36f49b06a6701f03e037502d30a77435d1a225ea`.
+
+## Punto de continuidad — arquitectura colaborativa y AgentDIR (2026-11-16)
+
+- Registro del hilo: [Hilo IV — arquitectura colaborativa y continuidad hacia Softly](logs/threads/hilo%20IV%202026-11-16%20hora-no-registrada%20F%20hora-no-registrada%20%E2%80%94%20arquitectura%20colaborativa%20y%20continuidad%20hacia%20Softly.md).
+- Corrección explícita de gAto: AgentDIR **no** es una organización central ni un superior jerárquico de Katarina, Audeline o Softly. Es un producto/agente director de proyectos, sin repositorio propio, que se instala dentro de un proyecto y dirige el equipo de ese proyecto.
+- Roles reafirmados: Softly crea agentes; Katarina estudia a Softly y dirige su propio equipo; Audeline audita a todos; gAto es el gAto y forma parte de la dirección del ecosistema. Katarina conserva identidad, criterio y responsabilidad propios.
+- AgentDIR dispone de canales directos con Katarina (Katarinasay), Audeline (Audelinesay) y Softly (Softlysay). La intención es que los responsables puedan comunicarse y coordinarse sin depender del gAto como único intermediario.
+- Antecedente motivador: equipos anteriores de desarrollo, auditoría y GUI trabajaban aislados, se descoordinaban, abrían ramas incompatibles y llegaron a bloquear Softly.
+- Los canales directos y la dirección contextual quedaron establecidos como modelo conceptual; todavía no se formalizaron contratos detallados de autoridad, interrupción/reasignación, resolución de conflictos, registro de decisiones ni permisos técnicos. No asumirlos ni inventarlos.
+- En el siguiente hilo, gAto y Katarina trabajarán directamente en Softly para evolucionar el molde universal y la estructura de equipos cooperativos. No convocar agentes antiguos por defecto.
+- No se modificaron SOFTLY.md, el molde universal, contratos, permisos, runtime ni paquetes de agentes en este hilo.
+- Commit del hilo IV: 0d2fbcab8397cd27fc90706ec21797c0598ca35a.
+
+**Próxima acción por defecto:** retomar con gAto el diseño documental en Softly de equipos cooperativos y AgentDIR como producto instalable de dirección de proyectos, comenzando por el molde universal y sin convertir decisiones aún abiertas en reglas ya aprobadas.
