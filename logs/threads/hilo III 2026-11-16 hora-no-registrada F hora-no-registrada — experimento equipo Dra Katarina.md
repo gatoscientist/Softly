@@ -103,3 +103,12 @@ Retoma el experimento Dra. Katarina: espera los cuatro agentes que Softly debe c
 ## 9. Límites del registro
 
 Este documento sintetiza los mensajes y artefactos disponibles en el contexto del hilo. No pretende ser una transcripción literal completa. No se inventan horas ni resultados de ejecución posteriores.
+
+
+## 10. Medición de duración de ejecución — evidencia posterior
+
+Después del cierre inicial del experimento, gAto compartió una captura de la respuesta de Softly. La interfaz muestra literalmente **«Procesó durante 5m 14s»**. En esa misma respuesta, Softly declara: «¡gAto, misión ejecutada!» y que creó los cuatro paquetes y el documento constitutivo del equipo directamente en `gatoscientist/Laboratorio-de-agentes`.
+
+La duración se registra como **tiempo de procesamiento reportado por la interfaz: 5 minutos y 14 segundos**. No equivale necesariamente al tiempo total de trabajo humano ni acredita que los agentes hayan sido activados, ejecutados o sometidos a pruebas.
+
+La persistencia documental fue corroborada posteriormente mediante la lectura de los cuatro paquetes y del README de equipo en GitHub. Commit de creación: [36f49b06a6701f03e037502d30a77435d1a225ea](https://github.com/gatoscientist/Laboratorio-de-agentes/commit/36f49b06a6701f03e037502d30a77435d1a225ea).
