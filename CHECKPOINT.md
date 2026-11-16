@@ -386,3 +386,16 @@ La revisión crítica solicitada en Softly issue #3 fue completada y persistida 
 - Softly issue #3 recibió el enlace, dictamen y límites de la revisión (comentario 6927443895).
 
 **Residual global RESET-002:** el informe 22 de Audeline mantiene NO-GO para certificación integral mientras no se resuelva el modelo del registro canónico, la disposición verificable de las siete ramas adicionales y la decisión de preservación de respaldos. Esos frentes no dependen de Runtime. La revisión Godot no los bloquea.
+
+
+## Análisis complementario — modelo de identidades y taxonomías (2026-11-16)
+
+Se contrastaron los diagramas de referencia de tipos/taxonomías con `schemas/agent-taxonomy-registry.json`. El análisis quedó en `research/reviews/2026-11-16-analisis-consistencia-registro-taxonomias.md`.
+
+- Se detectó mezcla conceptual entre identidad, tipo/familia, dominio profesional, especialidad, capacidad y disponibilidad.
+- Los diagramas representan UX, GUI como disciplina especializada, AUD con TeamWork/Code, SCI, SEC y DEV; el registro actual contiene AgentDEV, AgentSEC, AgentMUS, AgentSCI y Auditoría. No se agregaron ni retiraron categorías.
+- Recomendación técnica: modelo conceptual de tres dimensiones (identidad, dominio/taxonomía y capacidades); paquetes/commits como procedencia y asignaciones temporales como registros de vigencia.
+- **NO-GO** para modificar el JSON vigente hasta decisión de Dirección.
+- Se preserva la pregunta de Katarina sobre si la orquestación cubre la coordinación sistémica transversal. No se presume respuesta ni se crea una cuarta dimensión.
+- Commit del análisis: `e16febcc90731102c7d490af7e90fb8c5c0d3250`; blob SHA verificado: `373e8fe26e0285d4371154340a59575eaa93dee1`.
+- Softly issue #7 recibió el hallazgo y la recomendación (comentario 6927474991).
