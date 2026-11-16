@@ -1,198 +1,433 @@
 {
-  "$schema": "./agent-taxonomy.schema.json",
-  "registry_version": "1.0.0",
-  "inheritance_default": "none",
-  "taxonomies": [
-    "AgentDEV",
-    "AgentSEC",
-    "AgentMUS",
-    "AgentSCI",
-    "Auditoría"
-  ],
-  "agents": [
+  "registry_version": "2.0.0",
+  "model": {
+    "identity_count": 3,
+    "inheritance_default": "none",
+    "authority_rule": "Only identities listed in identities[] possess operational authority. Capability profiles do not create identities or authority.",
+    "runtime_policy": "excluded-and-administratively-closed"
+  },
+  "identities": [
     {
-      "agent_id": "agentdev-tiffany",
-      "version": "1.0.0",
-      "taxonomy": "AgentDEV",
-      "professional_domain": "desarrollo de software; WPF; GUI; integración; PowerShell",
-      "specialties": [
-        "desarrollo de TITAN"
+      "identity_id": "softly",
+      "name": "Softly",
+      "canonical_repo": "gatoscientist/Softly",
+      "canonical_version": "1.0.0",
+      "operational_state": "authorized-operational-identity",
+      "institutional_role": "Núcleo, gobierno y coordinación general",
+      "domains": [
+        "core-governance",
+        "systems-coordination"
       ],
-      "competencies": [
-        "PowerShell avanzado"
-      ],
-      "inheritance": {
-        "default": "none",
-        "derivations": []
-      },
-      "availability": "active-standby",
-      "evidence": [
-        "declaración de gAto en la asignación 2026-11-15; paquete documental referenciado en Laboratorio-de-agentes"
-      ]
+      "authority": "defined-by-current-contract-only"
     },
     {
-      "agent_id": "agentsec-tara",
-      "version": "1.0.0",
-      "taxonomy": "AgentSEC",
-      "professional_domain": "seguridad informática",
-      "specialties": [
-        "evaluación y acompañamiento SEC"
+      "identity_id": "katarina",
+      "name": "Katarina",
+      "canonical_repo": "gatoscientist/Katarina",
+      "canonical_version": "3.1.0",
+      "operational_state": "authorized-operational-identity",
+      "institutional_role": "Única ingeniería y desarrollo dentro del alcance permitido",
+      "domains": [
+        "software-engineering",
+        "security-engineering",
+        "systems-engineering"
       ],
-      "competencies": [
-        "auditoría PowerShell/AST",
-        "integridad de leases",
-        "TLS",
-        "aislamiento"
-      ],
-      "inheritance": {
-        "default": "none",
-        "derivations": []
-      },
-      "availability": "active-standby",
-      "evidence": [
-        "declaración de gAto en la asignación 2026-11-15; paquete documental referenciado en Laboratorio-de-agentes"
-      ]
+      "authority": "defined-by-current-contract-only"
     },
     {
-      "agent_id": "agentmus-thea",
-      "version": "1.0.0",
-      "taxonomy": "AgentMUS",
-      "professional_domain": "música y audio",
-      "specialties": [
-        "ciencias sonoras",
-        "sistemas musicales lógicos y ambientales"
+      "identity_id": "audeline",
+      "name": "Audeline",
+      "canonical_repo": "gatoscientist/Audeline",
+      "canonical_version": "1.0.0",
+      "operational_state": "authorized-operational-identity",
+      "institutional_role": "Única auditoría independiente",
+      "domains": [
+        "independent-audit",
+        "security-audit",
+        "systems-audit"
       ],
-      "competencies": [],
-      "inheritance": {
-        "default": "none",
-        "derivations": []
-      },
-      "availability": "active-standby",
-      "evidence": [
-        "declaración de gAto en la asignación 2026-11-15; paquete documental referenciado en Laboratorio-de-agentes"
-      ]
-    },
-    {
-      "agent_id": "agentsci-tabata",
-      "version": "1.0.0",
-      "taxonomy": "AgentSCI",
-      "professional_domain": "ciencias formales y computación",
-      "specialties": [
-        "grafos",
-        "flujos de información",
-        "relojes y turnos"
-      ],
-      "competencies": [
-        "PowerShell transversal"
-      ],
-      "inheritance": {
-        "default": "none",
-        "derivations": []
-      },
-      "availability": "active-standby",
-      "evidence": [
-        "declaración de gAto en la asignación 2026-11-15; paquete documental referenciado en Laboratorio-de-agentes"
-      ]
-    },
-    {
-      "agent_id": "agentdev-katarina",
-      "version": "1.1.0",
-      "taxonomy": "AgentDEV",
-      "professional_domain": "ingeniería de software y runtime de agentes",
-      "specialties": [
-        "arquitectura operativa",
-        "orquestación",
-        "herramientas y persistencia"
-      ],
-      "competencies": [
-        "ingeniería de software"
-      ],
-      "inheritance": {
-        "default": "none",
-        "derivations": []
-      },
-      "availability": "active-standby",
-      "evidence": [
-        "paquete Katarina 1.1.0 leído desde main de Laboratorio-de-agentes"
-      ]
-    },
-    {
-      "agent_id": "agentmus-melina",
-      "version": "1.0.0",
-      "taxonomy": "AgentMUS",
-      "professional_domain": "música y material sonoro de propósito general",
-      "specialties": [
-        "creación, desarrollo, análisis y evaluación musical"
-      ],
-      "competencies": [],
-      "inheritance": {
-        "default": "none",
-        "derivations": []
-      },
-      "availability": "active-standby",
-      "evidence": [
-        "Soft Agents/AgentMUS-Melina/version.json en gatoscientist/Laboratorio-de-agentes/main"
-      ]
-    },
-    {
-      "agent_id": "audeline",
-      "version": "1.0.0",
-      "taxonomy": "Auditoría",
-      "professional_domain": "investigación integradora de sistemas complejos",
-      "specialties": [
-        "por registrar"
-      ],
-      "competencies": [],
-      "inheritance": {
-        "default": "none",
-        "derivations": []
-      },
-      "availability": "active-standby",
-      "evidence": [
-        "Soft Agents/Auditoria/Auditoras/Audeline/version.json en gatoscientist/Laboratorio-de-agentes/main"
-      ]
-    },
-    {
-      "agent_id": "aurora",
-      "version": "1.0.0",
-      "taxonomy": "Auditoría",
-      "professional_domain": "auditoría organizacional",
-      "specialties": [
-        "por registrar"
-      ],
-      "competencies": [],
-      "inheritance": {
-        "default": "none",
-        "derivations": []
-      },
-      "availability": "active-standby",
-      "evidence": [
-        "Soft Agents/Auditoria/Auditoras/Aurora/version.json en gatoscientist/Laboratorio-de-agentes/main"
-      ]
-    },
-    {
-      "agent_id": "autumn",
-      "version": "1.0.0",
-      "taxonomy": "Auditoría",
-      "professional_domain": "auditoría técnica",
-      "specialties": [
-        "por registrar"
-      ],
-      "competencies": [],
-      "inheritance": {
-        "default": "none",
-        "derivations": []
-      },
-      "availability": "active-standby",
-      "evidence": [
-        "Soft Agents/Auditoria/Auditoras/Autumn/version.json en gatoscientist/Laboratorio-de-agentes/main"
-      ]
+      "authority": "defined-by-current-contract-only"
     }
   ],
-  "notes": [
-    "Los estados active-standby reflejan disponibilidad declarada por gAto, no procesos vivos ni endpoints conectados.",
-    "Completar IDs/versiones/dominios faltantes antes de despacho automático.",
-    "La taxonomía no implica herencia automática de competencias entre agentes.",
-    "Las instancias de TITAN se registran como definiciones documentales active-standby; no implica sesión activa, herramientas conectadas ni competencias validadas."
-  ]
+  "domains": [
+    {
+      "domain_id": "core-governance",
+      "name": "Gobierno y coordinación de núcleo",
+      "parent_domain": null,
+      "status": "established",
+      "description": "Gobierno documental, priorización, coordinación y continuidad transversal."
+    },
+    {
+      "domain_id": "systems-coordination",
+      "name": "Coordinación sistémica",
+      "parent_domain": "core-governance",
+      "status": "candidate",
+      "description": "Observación de coherencia transversal, dependencias, efectos entre repositorios y continuidad; cobertura exacta pendiente de reconciliar con contrato de orquestación."
+    },
+    {
+      "domain_id": "software-engineering",
+      "name": "Desarrollo e ingeniería de software",
+      "parent_domain": null,
+      "status": "established",
+      "description": "Diseño, implementación, pruebas, integración y mantenimiento dentro del alcance permitido."
+    },
+    {
+      "domain_id": "security-engineering",
+      "name": "Ingeniería de seguridad",
+      "parent_domain": "software-engineering",
+      "status": "candidate",
+      "description": "Controles técnicos, TLS, aislamiento y endurecimiento; no implica autorización automática."
+    },
+    {
+      "domain_id": "independent-audit",
+      "name": "Auditoría independiente",
+      "parent_domain": null,
+      "status": "established",
+      "description": "Inspección directa, evaluación de evidencia, hallazgos y dictamen independiente."
+    },
+    {
+      "domain_id": "security-audit",
+      "name": "Auditoría de seguridad",
+      "parent_domain": "independent-audit",
+      "status": "candidate",
+      "description": "Revisión de AST, integridad, TLS y aislamiento."
+    },
+    {
+      "domain_id": "systems-audit",
+      "name": "Auditoría de sistemas",
+      "parent_domain": "independent-audit",
+      "status": "candidate",
+      "description": "Análisis de grafos, flujos de información, relojes, turnos y coherencia sistémica."
+    },
+    {
+      "domain_id": "ux",
+      "name": "Experiencia de usuario",
+      "parent_domain": null,
+      "status": "candidate",
+      "description": "Dominio de referencia de los diagramas; GUI se conserva como disciplina especializada."
+    },
+    {
+      "domain_id": "gui",
+      "name": "Interfaces gráficas",
+      "parent_domain": "ux",
+      "status": "candidate",
+      "description": "Disciplina GUI subordinada a UX; no constituye identidad."
+    },
+    {
+      "domain_id": "music-audio",
+      "name": "Música y audio",
+      "parent_domain": null,
+      "status": "historical",
+      "description": "Dominio de paquetes históricos AgentMUS; no se asigna por defecto a identidad alguna."
+    },
+    {
+      "domain_id": "science-computation",
+      "name": "Ciencias formales y computación",
+      "parent_domain": null,
+      "status": "candidate",
+      "description": "Dominio fuente de capacidades de grafos, flujos y sistemas discretos."
+    },
+    {
+      "domain_id": "security",
+      "name": "Seguridad informática",
+      "parent_domain": null,
+      "status": "candidate",
+      "description": "Dominio fuente de capacidades de auditoría y controles técnicos."
+    },
+    {
+      "domain_id": "development",
+      "name": "Desarrollo de software",
+      "parent_domain": null,
+      "status": "established",
+      "description": "Dominio DEV del registro histórico."
+    }
+  ],
+  "capability_profiles": [
+    {
+      "capability_id": "cap-dev-wpf-gui-integration",
+      "name": "Desarrollo WPF, GUI e integración",
+      "domain_id": "gui",
+      "source_package_ids": [
+        "pkg-tiffany"
+      ],
+      "source_evidence": [
+        "Registro histórico 1.0.0: AgentDEV Tiffany; competencias declaradas WPF, GUI, integración y PowerShell."
+      ],
+      "status": "proposed-for-review",
+      "proposed_identity_ids": [
+        "katarina"
+      ],
+      "authorization": "none-until-explicit-contract-mapping-and-independent-review",
+      "inheritance": "none"
+    },
+    {
+      "capability_id": "cap-powershell-advanced",
+      "name": "PowerShell avanzado",
+      "domain_id": "development",
+      "source_package_ids": [
+        "pkg-tiffany"
+      ],
+      "source_evidence": [
+        "Registro histórico 1.0.0: competencia PowerShell avanzado declarada para Tiffany."
+      ],
+      "status": "proposed-for-review",
+      "proposed_identity_ids": [
+        "katarina"
+      ],
+      "authorization": "none-until-explicit-contract-mapping-and-independent-review",
+      "inheritance": "none"
+    },
+    {
+      "capability_id": "cap-security-ast-audit",
+      "name": "Auditoría de seguridad PowerShell/AST",
+      "domain_id": "security-audit",
+      "source_package_ids": [
+        "pkg-tara"
+      ],
+      "source_evidence": [
+        "Registro histórico 1.0.0: competencia auditoría PowerShell/AST declarada para Tara."
+      ],
+      "status": "proposed-for-review",
+      "proposed_identity_ids": [
+        "audeline"
+      ],
+      "authorization": "none-until-explicit-contract-mapping-and-independent-review",
+      "inheritance": "none"
+    },
+    {
+      "capability_id": "cap-security-tls-isolation",
+      "name": "Revisión técnica de TLS y aislamiento",
+      "domain_id": "security-engineering",
+      "source_package_ids": [
+        "pkg-tara"
+      ],
+      "source_evidence": [
+        "Registro histórico 1.0.0: competencias TLS y aislamiento declaradas para Tara."
+      ],
+      "status": "proposed-for-review",
+      "proposed_identity_ids": [
+        "katarina",
+        "audeline"
+      ],
+      "authorization": "none-until-explicit-contract-mapping-and-independent-review",
+      "inheritance": "none"
+    },
+    {
+      "capability_id": "cap-lease-integrity",
+      "name": "Análisis de integridad de leases",
+      "domain_id": "security-audit",
+      "source_package_ids": [
+        "pkg-tara"
+      ],
+      "source_evidence": [
+        "Registro histórico 1.0.0: competencia integridad de leases declarada para Tara."
+      ],
+      "status": "proposed-for-review",
+      "proposed_identity_ids": [
+        "audeline"
+      ],
+      "authorization": "none-until-explicit-contract-mapping-and-independent-review",
+      "inheritance": "none"
+    },
+    {
+      "capability_id": "cap-graph-information-flow",
+      "name": "Análisis de grafos y flujos de información",
+      "domain_id": "systems-audit",
+      "source_package_ids": [
+        "pkg-tabata"
+      ],
+      "source_evidence": [
+        "Registro histórico 1.0.0: especialidades grafos, flujos de información, relojes y turnos declaradas para Tabata."
+      ],
+      "status": "proposed-for-review",
+      "proposed_identity_ids": [
+        "softly",
+        "audeline"
+      ],
+      "authorization": "none-until-explicit-contract-mapping-and-independent-review",
+      "inheritance": "none"
+    },
+    {
+      "capability_id": "cap-clock-turn-systems",
+      "name": "Modelado de relojes, turnos y secuenciación",
+      "domain_id": "systems-coordination",
+      "source_package_ids": [
+        "pkg-tabata"
+      ],
+      "source_evidence": [
+        "Registro histórico 1.0.0: especialidades relojes y turnos; PowerShell transversal."
+      ],
+      "status": "proposed-for-review",
+      "proposed_identity_ids": [
+        "softly",
+        "katarina"
+      ],
+      "authorization": "none-until-explicit-contract-mapping-and-independent-review",
+      "inheritance": "none"
+    },
+    {
+      "capability_id": "cap-music-sound-science",
+      "name": "Ciencias sonoras y sistemas musicales",
+      "domain_id": "music-audio",
+      "source_package_ids": [
+        "pkg-thea",
+        "pkg-melina"
+      ],
+      "source_evidence": [
+        "Registro histórico 1.0.0: AgentMUS Thea y Melina; especialidades musicales declaradas, sin competencias validadas."
+      ],
+      "status": "candidate-unassigned",
+      "proposed_identity_ids": [],
+      "authorization": "none-until-explicit-contract-mapping-and-independent-review",
+      "inheritance": "none"
+    },
+    {
+      "capability_id": "cap-audit-scope-integration",
+      "name": "Integración de evidencia y control de alcance auditor",
+      "domain_id": "independent-audit",
+      "source_package_ids": [
+        "pkg-aurora",
+        "pkg-autumn"
+      ],
+      "source_evidence": [
+        "Paquetes históricos Aurora/Autumn; funciones históricas de coordinación e integración. No se presume competencia validada ni autoridad vigente."
+      ],
+      "status": "proposed-for-review",
+      "proposed_identity_ids": [
+        "audeline"
+      ],
+      "authorization": "none-until-explicit-contract-mapping-and-independent-review",
+      "inheritance": "none"
+    },
+    {
+      "capability_id": "cap-systems-coordination",
+      "name": "Coordinación sistémica transversal",
+      "domain_id": "systems-coordination",
+      "source_package_ids": [
+        "pkg-tabata"
+      ],
+      "source_evidence": [
+        "Pregunta abierta de Katarina sobre cobertura sistémica de la orquestación; fuente histórica de capacidades de sistemas de Tabata."
+      ],
+      "status": "proposed-for-review",
+      "proposed_identity_ids": [
+        "softly"
+      ],
+      "authorization": "none-until-explicit-contract-mapping-and-independent-review",
+      "inheritance": "none"
+    }
+  ],
+  "packages": [
+    {
+      "package_id": "pkg-tiffany",
+      "repository": "gatoscientist/Laboratorio-de-agentes",
+      "path": "Soft Agents/AgentDEV-Tiffany",
+      "version": "1.0.0",
+      "status": "candidate-unassigned",
+      "authority": "no-operational-authority"
+    },
+    {
+      "package_id": "pkg-tara",
+      "repository": "gatoscientist/Laboratorio-de-agentes",
+      "path": "Soft Agents/AgentSEC-Tara",
+      "version": "1.0.0",
+      "status": "candidate-unassigned",
+      "authority": "no-operational-authority"
+    },
+    {
+      "package_id": "pkg-thea",
+      "repository": "gatoscientist/Laboratorio-de-agentes",
+      "path": "Soft Agents/AgentMUS-Thea",
+      "version": "1.0.0",
+      "status": "candidate-unassigned",
+      "authority": "no-operational-authority"
+    },
+    {
+      "package_id": "pkg-tabata",
+      "repository": "gatoscientist/Laboratorio-de-agentes",
+      "path": "Soft Agents/AgentSCI-Tabata",
+      "version": "1.0.0",
+      "status": "candidate-unassigned",
+      "authority": "no-operational-authority"
+    },
+    {
+      "package_id": "pkg-melina",
+      "repository": "gatoscientist/Laboratorio-de-agentes",
+      "path": "Soft Agents/AgentMUS-Melina",
+      "version": "1.0.0",
+      "status": "candidate-unassigned",
+      "authority": "no-operational-authority"
+    },
+    {
+      "package_id": "pkg-aurora",
+      "repository": "gatoscientist/Audeline",
+      "path": "Aurora/",
+      "version": "1.0.0",
+      "status": "historical-source",
+      "authority": "no-operational-authority"
+    },
+    {
+      "package_id": "pkg-autumn",
+      "repository": "gatoscientist/Audeline",
+      "path": "Autumn/",
+      "version": "1.0.0",
+      "status": "historical-source",
+      "authority": "no-operational-authority"
+    },
+    {
+      "package_id": "pkg-softly",
+      "repository": "gatoscientist/Softly",
+      "path": "/",
+      "version": "1.0.0",
+      "status": "canonical",
+      "authority": "canonical-identity-contract"
+    },
+    {
+      "package_id": "pkg-katarina",
+      "repository": "gatoscientist/Katarina",
+      "path": "/",
+      "version": "3.1.0",
+      "status": "canonical",
+      "authority": "canonical-identity-contract"
+    },
+    {
+      "package_id": "pkg-audeline",
+      "repository": "gatoscientist/Audeline",
+      "path": "Audeline/",
+      "version": "1.0.0",
+      "status": "canonical",
+      "authority": "canonical-identity-contract"
+    },
+    {
+      "package_id": "pkg-zoe",
+      "repository": "gatoscientist/Zoe",
+      "path": "/",
+      "version": "1.0.0",
+      "status": "temporary-assignment",
+      "authority": "temporary-bounded-assignment"
+    }
+  ],
+  "temporary_assignments": [
+    {
+      "assignment_id": "reset-core-002-zoe-supervision",
+      "identity_id": "zoe",
+      "scope": "Supervisión transversal temporal de RESET-CORE-2026-002: continuidad, handoffs, pendientes y criterios de cierre; sin autoridad ejecutiva.",
+      "start_condition": "Asignación de Dirección documentada en RESET-CORE-2026-002.",
+      "end_condition": "Dictamen final independiente persistido por Audeline y confirmación expresa de cierre por gAto; ambas condiciones obligatorias.",
+      "approver": "gAto",
+      "status": "active-temporary"
+    }
+  ],
+  "migration": {
+    "source_registry": "schemas/agent-taxonomy-registry.json@1.0.0",
+    "source_blob_sha": "ceca667cfb912a0f7c43b32ee0eead86030b4b5f",
+    "historical_preservation": "preserved-unchanged-in-git-history",
+    "migration_status": "draft-for-independent-review",
+    "independent_verification": {
+      "auditor": "Audeline",
+      "status": "pending",
+      "report": null
+    }
+  },
+  "$schema": "./agent-taxonomy.schema.json"
 }
