@@ -22,16 +22,24 @@
 - La arquitectura de agentes, los modos de Softly, el demonio de síntesis, Katarina 2.0.0, el equipo de la Dra. Katarina, AgentDIR y la mejora continua están registrados en los hilos anteriores de logs/threads/.
 - Hilo V (2026-11-16): responsabilidad de mejora continua, trazabilidad de incidencias y auditoría equilibrada.
 - Hilo VI (2026-11-16): continuidad y activación de TITAN y CYTRYNA; registro parcial debido a que solo se dispone del fragmento conversacional visible.
+- **Hilo VII (2026-11-16):** Katarina produjo y persistió la investigación SOFTLY-MIN sobre el núcleo funcional mínimo y la independencia del contexto personal. El hilo y el checkpoint se actualizaron con commits y relectura verificada.
 
-## Punto actual — activación de TITAN y CYTRYNA (2026-11-16)
+## Punto actual — investigación SOFTLY-MIN (2026-11-16)
 
-- gAto aclaró que el hilo anterior no se había cerrado correctamente y que podían existir tareas ya realizadas que no debían repetirse.
-- El pendiente actual comunicado por gAto es activar los equipos nuevos de TITAN y CYTRYNA.
+- Entregable: `research/syntheses/2026-11-16-softly-min-nucleo-minimo-y-equivalencia-funcional.md`.
+- Commit de creación del research: `47bff985de6915b777064f9b033d515b713888f2`.
+- Blob SHA verificado por relectura: `fa1a9ec3a83fd727b06057b55847fcc5da2c16e2`.
+- La investigación propone separar núcleo funcional, método, interfaces/capacidades y contexto variable; parametrizar la función de dirección humana y mantener memoria documental recuperable bajo demanda.
+- Se propone comparar A (Softly de referencia), B (SOFTLY-MIN sin historia personal) y C (núcleo mínimo sin memoria externa).
+- **Estado:** investigación documental persistida; el experimento no se ha ejecutado y la equivalencia funcional no está demostrada. No modificar SOFTLY.md ni sustituir el núcleo oficial por inferencia.
+- La construcción de B y la ejecución del experimento quedan como propuesta pendiente de instrucción/decisión de gAto.
+
+## Punto pendiente — activación de TITAN y CYTRYNA
+
+- gAto indicó que él se encargará de activar ambos equipos. Softly debe esperar la confirmación/resultado y luego verificar el estado real en los repositorios antes de continuar.
 - TITAN está constituido documentalmente con Elara (AgentDIR), Dante (AgentDEV), Mira (AgentMUS), Sofía (AgentSCI) y Nox (AgentSEC). No reconstruir los paquetes ni confundir estado Diseñado con activación.
 - En CYTRYNA se preservan la estructura y los antecedentes existentes. Katarina forma parte del equipo y tiene una investigación que desarrollar.
-- gAto indicó que él se encargará de activar ambos equipos. Softly debe esperar la confirmación/resultado y luego verificar el estado real en los repositorios antes de continuar.
 - No repetir la reparación preliminar de CYTRYNA ni modificar el core de Softly.
-- Registro: logs/threads/hilo VI 2026-11-16 hora-no-registrada F hora-no-registrada — continuidad activación TITAN y CYTRYNA.md. Captura parcial; hora exacta no registrada.
 
 ## Regla de cierre
 
@@ -39,4 +47,6 @@ Cuando gAto cierre explícitamente un hilo, conservar la historia en logs/thread
 
 ## Próxima acción
 
-Esperar a que gAto active los equipos de TITAN y CYTRYNA. Al recibir confirmación, verificar la activación real y continuar desde el siguiente pendiente, sin repetir la constitución ni la reparación preliminar.
+- Esperar la confirmación de gAto sobre la activación de TITAN y CYTRYNA; después verificar su estado real.
+- Para SOFTLY-MIN, esperar decisión/instrucción de gAto antes de construir la instancia experimental B o ejecutar comparaciones.
+- No reabrir ni modificar el núcleo normativo por iniciativa propia.
