@@ -219,7 +219,7 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 - REC-002 asigna tareas a cinco paquetes diseñados/no desplegados. No invocarlos bajo RESET-CORE-2026-002; preservar los documentos y mantener la activación congelada.
 
 
-- **Informe ampliado vigente:** logs/reset/2026-11-16-reconocimiento-ampliado.md; blob SHA verificado be3b8087d6649ae2764bd74ae75e78c9a9c47e4f.
+- **Informe ampliado vigente:** logs/reset/2026-11-16-reconocimiento-ampliado.md; blob SHA verificado 0ce097249fa80629a79be8a0a64de60eb4414904.
 
 
 ### Contención documental aplicada
@@ -234,7 +234,7 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 
 - Se amplió el handoff de Audeline en Auditoria/Softlysay/res, con evidencia de trece repositorios, KAT-006, Runtime Mini, registro de identidades, TITAN, Cytryna y límites de auditoría. Addendum commit 16397b05e8669f328fd36eee8be9dae29e851064; indexado en commit 53d1f26fbc76149cbb0b9c70022a0baa1cdbb824. Sin acuse.
 - Se envió a Katarina un addendum con la secuencia Git de su instancia documental en Cytryna, la errata de SHA y solicitud de contraste. Commit 1ffe733526182575f6046e7854b624ae25347f29; indexado en Softlysay/README y bitácora, commits 18de1c665faab24ea8da31e41d625af3a0a0616e y a42e0202121d4d75a53ddd42b68f089969cac627. El acuse RESET original está confirmado; la explicación de Cytryna sigue pendiente.
-- Informe ampliado vigente: logs/reset/2026-11-16-reconocimiento-ampliado.md, blob SHA be3b8087d6649ae2764bd74ae75e78c9a9c47e4f.
+- Informe ampliado vigente: logs/reset/2026-11-16-reconocimiento-ampliado.md, blob SHA 0ce097249fa80629a79be8a0a64de60eb4414904.
 
 
 ### HOLDs adicionales en Laboratorio
@@ -256,3 +256,12 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 - StroLi se clasifica como proyecto externo provisional; no se sondeó su endpoint protegido y no hay referencias desde Softly/Laboratorio.
 - Dabra, Laboratorio-Musical y asdasd están vacíos; sin dependencia demostrada, no intervenir.
 - Informe ampliado vigente: logs/reset/2026-11-16-reconocimiento-ampliado.md, blob SHA be3b8087d6649ae2764bd74ae75e78c9a9c47e4f.
+
+
+### Evidencia CI actualizada
+
+- TITAN: 100 ejecuciones consultadas, 41 exitosas y 59 fallidas; las diez más recientes fallaron. El blob de Titan.ps1 es idéntico al del commit auditado por Autumn y conserva los riesgos estáticos. No hay evidencia de pruebas ejecutadas en los jobs fallidos consultados.
+- Cytryna: 100 ejecuciones consultadas, cero exitosas, 30 fallidas y 70 canceladas. El repair commit 1fa7176 generó nueve jobs fallidos sin pasos/logs recuperables; no se intentó rerun.
+- Softly, Katarina, Auditoria, Audeline, Zoe y Laboratorio no tienen workflows Actions en main. El resultado 6/6 de Runtime Mini sigue siendo reporte de Katarina, no validación independiente.
+- Audeline recibió addendum de CI en Auditoria/Softlysay/res, commit bd41ce0532f0143bf3cf057ed3c574c4152d670e. Sin acuse.
+- Informe ampliado vigente: logs/reset/2026-11-16-reconocimiento-ampliado.md, blob SHA 0ce097249fa80629a79be8a0a64de60eb4414904.
