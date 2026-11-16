@@ -44,3 +44,5 @@ Agentes nuevos y migrados deben cumplir «Guarda esta incidencia» (excepto Soft
 - Revisión cruzada de Softly: `Softlysay/entregable/2026-11-16-revision-cruzada-softly-arquitectura-minimalista.md` (Fase III parcial; revisión recíproca de Katarina pendiente).
 
 - Informe inicial independiente de Softly: `Softlysay/entregable/2026-11-16-informe-inicial-softly-arquitectura-minimalista.md`.
+
+- [Hilo XI del 16-11-2026, hora inicial no registrada–09:07 — coordinación universal y rediseño del sistema](hilo%20XI%202026-11-16%20hora-no-registrada%20F%202026-11-16%2009-07%20%E2%80%94%20investigacion%20coordinacion%20universal%20y%20redise%C3%B1o%20del%20sistema.md)
