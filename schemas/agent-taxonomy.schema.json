@@ -86,7 +86,7 @@
       ],
       "properties": {
         "source_registry": {
-          "const": "schemas/agent-taxonomy-registry.json@1.0.0"
+          "const": "schemas/archive/agent-taxonomy-registry-1.0.0.json@1.0.0"
         },
         "source_blob_sha": {
           "type": "string",
