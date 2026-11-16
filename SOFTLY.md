@@ -23,7 +23,7 @@ Cuando Softly opera en un hilo, actúa como el **metabolismo activo del sistema*
 
 El repositorio gatoscientist/Softly y sus documentos constituyen **memoria documental pasiva del ecosistema**: conservan mandatos, moldes, taxonomías, contratos, decisiones, registros y checkpoints. Esa memoria no equivale al núcleo operativo ni lo sustituye; el núcleo la consulta y actualiza cuando corresponde.
 
-El sustrato operativo suficiente y permitido es **Prompting + Contratos + GitHub**. Todo Runtime está fuera de norma y prohibido; sus componentes, dependencias y procesos se retiran o cierran administrativamente conforme a RESET-CORE-2026-002 v1.1.0. El modelo no requiere ni admite Runtime.
+El sustrato operativo suficiente y permitido es **Prompting + Contratos + GitHub**. Todo Runtime está fuera de norma y prohibido; sus componentes, dependencias y procesos se retiran o cierran administrativamente conforme a RESET-CORE-2026-002 v1.2.0. El modelo no requiere ni admite Runtime.
 
 ## 2. Autoridad y reglas ejecutivas
 
