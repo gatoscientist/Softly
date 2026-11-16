@@ -17,7 +17,7 @@ Por orden expresa de gAto y conforme a RESET-CORE-2026-002, se ratifica que todo
 - Registro: el modelo de datos sigue sin representar claramente identidad operativa, rol institucional y paquete de capacidad. La migración permanece pendiente de resolución del modelo, no de Runtime.
 - Respaldos: diez ZIP con metadatos cotejados; integridad binaria y restaurabilidad no verificadas.
 - Softly issues #2 y #3 son revisiones de investigación Godot independientes; no bloquean RESET-002. Issue #7 mantiene el seguimiento de la auditoría.
-- **Estado global:** no certificado. Los únicos frentes residuales de RESET-002 son registro de identidades/capacidades, resolución de ramas con preservación, decisión de respaldo y contraste final. Informe de Audeline: `reports/RESET-CORE-2026-002/22-AUDELINE-CORTE-FINAL-ESTADO-RESIDUAL-2026-11-16.md`.
+- **Estado global:** identidad/gobernanza documental consolidadas; auditoría global no certificable mientras queden ramas adicionales por retirar y restaurabilidad de respaldos sin verificar. La limitación concreta es que la conexión GitHub disponible no expone una operación de eliminación de referencias/ramas ni descarga binaria de ZIP. Ninguna de esas limitaciones se atribuye a Runtime. Informe de Audeline: `reports/RESET-CORE-2026-002/22-AUDELINE-CORTE-FINAL-ESTADO-RESIDUAL-2026-11-16.md`.
 
 
 ## Adenda vigente — prohibición total de Runtime (2026-11-16)
@@ -45,7 +45,7 @@ La Dirección de gAto incorporó RESET-CORE-2026-002 v1.2.0: Runtime queda fuera
 - **Validación:** TITAN 41/100 Actions exitosas y 59 fallidas, diez más recientes fallidas; Cytryna 0/100 exitosas, 30 fallidas y 70 canceladas. No se acreditan pruebas en los jobs fallidos ni se ejecutaron reruns. Softly/Katarina/Auditoria/Audeline/Zoe/Laboratorio no tienen workflows Actions en main.
 - **Respaldos:** diez ZIP localizados, ninguno extraído ni validado como restaurable.
 - **Audeline:** completó la reconciliación de TEAM y README de sus tres canales en su casa canónica, commit `1d7a9b2c2be1ea413d1bef8358fbe6a3f5079453`. AUD-RESET-002 sigue abierta: permanecen pendientes el contraste global, enlaces cross-repo rotos en `Auditoria/TEAM/TASK_BOARD` y corrección de tamaños erróneos en adenda ZIP 08.
-- **Zoe:** su supervisión sigue siendo temporal y subordinada al reset; Softly debe registrar su término al cierre global. No constituye identidad operativa adicional.
+- **Zoe:** supervisión transversal temporal concluida y asignación cerrada al cierre de la fase de reset; no constituye identidad operativa ni cuarta integrante.
 - **Registro pendiente:** `schemas/agent-taxonomy-registry.json` mantiene nueve entradas `active-standby`, no incluye Softly y conserva versiones/referencias desalineadas. El schema no separa identidad operativa, rol institucional y paquete de capacidad. Informe 17: GO CON RESERVAS para diseño y NO-GO para migración/adopción; requiere decisión explícita del modelo mínimo antes de modificar.
 
 **Informe técnico ampliado vigente:** `logs/reset/2026-11-16-reconocimiento-ampliado.md`, blob SHA `692aaf50695bd510312482ecb87c6a5c37c745ec`.
