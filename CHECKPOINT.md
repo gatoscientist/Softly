@@ -361,3 +361,13 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 GitHub devuelve `protected:false` para main en Softly, Katarina, Auditoria, Audeline, Zoe, TITAN, Cytryna, Laboratorio-de-agentes y gAtoSD. No se cambiaron reglas de protección. La decisión debe coordinarse con permisos y CI; el riesgo de pushes directos queda abierto.
 
 Informe ampliado vigente: logs/reset/2026-11-16-reconocimiento-ampliado.md, blob SHA 3a80535fda8d16ae77ff74a279655f03ea799b5c.
+
+## Adenda de reconciliación del registro v2 — 2026-11-16
+
+- Se publicó el esquema declarativo `schemas/identity-capability-registry-v2.schema.json` y el registro `schemas/identity-capability-registry-v2.json`; el índice `schemas/README.md` ya los enlaza.
+- El registro v2 reconoce exactamente tres identidades operativas: Softly, Katarina y Audeline. La versión de Katarina queda alineada en 3.1.0.
+- La asignación temporal de Zoe permanece `active-temporary`: su condición de expiración es el cierre global de RESET-CORE-2026-002 y el reset no está certificado globalmente.
+- Se reforzó el schema para exigir una ocurrencia de cada par identity_id/role autorizado (Softly/core-coordination, Katarina/engineering-development, Audeline/independent-audit). Esto corrige el límite de `uniqueItems`, que solo evita objetos idénticos.
+- Commits: schema `1132f70eb3c4f9809e5546cec9187f5dc022db2a`; registro `8f16e32957db8d5fd34f8f755804b9b29c81855e`; índice `4b6e5ea3d46855db4e737ed25695f4e21cd25ba9`.
+- Verificación: los tres artefactos fueron releídos desde GitHub después de escribirlos. No se declara validación automatizada del JSON Schema ni migración del registro histórico 1.0.0.
+- Estado residual no cambia: siete ramas adicionales a main siguen clasificadas y preservadas; diez ZIP continúan sin verificación binaria/restauración. RESET-CORE-2026-002 permanece sin certificación global.
