@@ -12,7 +12,7 @@ Por orden expresa de gAto y conforme a RESET-CORE-2026-002, se ratifica que todo
 
 ## Adenda vigente — prohibición total de Runtime (2026-11-16)
 
-La Dirección de gAto incorporó RESET-CORE-2026-002 v1.1.0: Runtime queda fuera de norma. No se diseña, implementa, instala, invoca, ejecuta, prueba, despliega, restaura ni exige. Todo proceso cuya continuidad dependa de Runtime se cierra administrativamente como fuera de norma / no planificado. Las funciones independientes pueden continuar solo si se separan íntegramente.
+La Dirección de gAto incorporó RESET-CORE-2026-002 v1.2.0: Runtime queda fuera de norma. No se diseña, implementa, instala, invoca, ejecuta, prueba, despliega, restaura ni exige. Todo proceso cuya continuidad dependa de Runtime se cierra administrativamente como fuera de norma / no planificado. Las funciones independientes pueden continuar solo si se separan íntegramente.
 
 - **Softly/main:** retirados 11 artefactos dedicados a Runtime: dos ADR, dos protocolos, dos informes de resultados y los cinco componentes de softly-runtime/ (events.head, events.jsonl, manifest.json, runtime.py y test_runtime.py). Cada retiro tiene commit propio; la historia Git conserva la evidencia.
 - **KAT-006:** cerrado administrativamente como not_planned en Softly issue #5. Katarina PR #1 fue cerrado sin merge; su rama y commits quedan preservados como evidencia no operativa. No se declara aceptación técnica.
