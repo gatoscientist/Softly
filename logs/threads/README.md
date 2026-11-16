@@ -33,6 +33,8 @@ Consultar bajo demanda cuando un antecedente sea necesario. El checkpoint vigent
 - [Hilo del 16-11-2026 — responsabilidad de mejora continua y cierre](hilo%20V%202026-11-16%20hora-no-registrada%20F%20hora-no-registrada%20%E2%80%94%20responsabilidad%20de%20mejora%20continua%20y%20cierre.md)
 - [Hilo VI del 16-11-2026 — continuidad y activación de TITAN y CYTRYNA](hilo%20VI%202026-11-16%20hora-no-registrada%20F%20hora-no-registrada%20%E2%80%94%20continuidad%20activaci%C3%B3n%20TITAN%20y%20CYTRYNA.md)
 
+- [Hilo VII del 16-11-2026, hora inicial no registrada–06:06 — investigación SOFTLY-MIN y cierre documental de Katarina](hilo%20VII%202026-11-16%20hora-no-registrada%20F%202026-11-16%2006-06%20%E2%80%94%20investigaci%C3%B3n%20SOFTLY-MIN%20y%20cierre%20Katarina.md)
+
 ## Capacidades universales y criterio de cierre
 
 Agentes nuevos y migrados deben cumplir «Guarda esta incidencia» (excepto Softly misma) y «Cierra el Hilo» (incluida Softly). Un agente solo figura como migrado cuando su paquete persistente, contrato/instrucciones, bitácora, logs e índices se actualizan y comprueban. La persistencia requiere commit y relectura. El cierre exige dos revisiones; no se marca cerrado con pendientes.
