@@ -146,3 +146,13 @@ La prioridad vigente es que Softly opere como núcleo generativo autoevolutivo y
 - Commit del hilo IV: 0d2fbcab8397cd27fc90706ec21797c0598ca35a.
 
 **Próxima acción por defecto:** retomar con gAto el diseño documental en Softly de equipos cooperativos y AgentDIR como producto instalable de dirección de proyectos, comenzando por el molde universal y sin convertir decisiones aún abiertas en reglas ya aprobadas.
+
+## Punto de continuidad — responsabilidad de mejora continua y cierre del hilo V (2026-11-16)
+
+- gAto reafirma que la mejora progresiva de los agentes es una responsabilidad central de Katarina, apoyada por la capacidad generativa de Softly y la auditoría independiente de Audeline. Katarina debe ejercer iniciativa, criterio y sus alcances asignados; no basta con reconocer errores después de que gAto los señala.
+- Ante cada encargo concreto, comparar requisitos con el estado real, corregir faltantes o demostrar cumplimiento, respaldar cambios con commits y releer desde GitHub. Distinguir documentación de ejecución y no declarar pruebas o despliegues inexistentes.
+- gAto pide trazabilidad de las faltas de todos los participantes. Registrar hechos, evidencia, actor, impacto, causa, acción correctiva y verificación; aplicar el mismo estándar probatorio a Katarina, Softly, Audeline, equipos y gAto. La independencia de Audeline debe preservarse: Katarina no dicta sus conclusiones.
+- gAto reportó que el contexto del hilo pudo haber recibido la intervención de dos personas; se registra como reporte no verificado y se evita atribuir identidades.
+- Próximo trabajo: retomar con gAto el diseño del molde universal y de equipos cooperativos, incorporando como problema de diseño la trazabilidad y el aprendizaje verificable de incidencias. No tratar estas propuestas como contratos ya formalizados ni modificar permisos/runtime sin mandato.
+- Registro: [Hilo V — responsabilidad de mejora continua y cierre](logs/threads/hilo%20V%202026-11-16%20hora-no-registrada%20F%20hora-no-registrada%20%E2%80%94%20responsabilidad%20de%20mejora%20continua%20y%20cierre.md).
+
