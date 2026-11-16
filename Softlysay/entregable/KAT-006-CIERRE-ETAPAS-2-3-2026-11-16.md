@@ -42,7 +42,7 @@ Rama: `kat-006-stage3-softly-2026-11-16`
 Base: `main` / `f3c5004fd2a6aca8d6c0ba967b1b4c6a191158be`  
 Head de la rama: `d33be9362f4bbbd566bd43da2b287015d2dfa132`  
 Comparación GitHub: ahead_by 5, behind_by 0, cuatro archivos añadidos.  
-PR: se prepara como borrador para revisión; no se fusiona.
+PR: [#1 — KAT-006 etapa 3](https://github.com/gatoscientist/Katarina/pull/1), abierto en borrador; no se fusiona.
 
 ### Inventario final de Katarina
 
@@ -113,6 +113,8 @@ Blob SHA: `fd510755c6df231b5e996fe3643e80afa7febd20`
 Commit de publicación: `f30ff678ae28aa6a5517f41537c00efbea272f07`
 
 El handoff identifica fuentes, ramas, commits, hallazgos, pruebas y criterios de aceptación. Es una transferencia documental; no invoca ni despierta una sesión de Audeline.
+
+PR revisable de Katarina: https://github.com/gatoscientist/Katarina/pull/1 (draft, abierto, sin merge).
 
 ## 9. Próximas decisiones
 
