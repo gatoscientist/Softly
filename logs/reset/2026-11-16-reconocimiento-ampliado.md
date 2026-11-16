@@ -272,3 +272,14 @@ El handoff REC-002 de TITAN asigna tareas a Dante, Mira, Sofía, Nox y Elara y d
 - **Audeline:** se publicó el addendum de evidencia ampliada en gatoscientist/Auditoria/Softlysay/res/2026-11-16-addendum-reconocimiento-ampliado-softly.md, commit 16397b05e8669f328fd36eee8be9dae29e851064. Se indexó en Softlysay/res/README.md, commit 53d1f26fbc76149cbb0b9c70022a0baa1cdbb824. No se ha recibido acuse específico.
 - **Katarina:** se publicó el addendum de reconstrucción independiente de Cytryna en gatoscientist/Katarina/Softlysay/2026-11-16-addendum-reconstruccion-cytryna.md, commit 1ffe733526182575f6046e7854b624ae25347f29. Se indexó el handoff RESET-CORE-2026-002 y el addendum en Softlysay/README.md, commit 18de1c665faab24ea8da31e41d625af3a0a0616e, y en bitacora.md, commit a42e0202121d4d75a53ddd42b68f089969cac627. El acuse original de Katarina sí existe; la respuesta específica sobre Cytryna/Elara sigue pendiente.
 - Estos handoffs actualizan evidencia y canales; no acreditan lectura ni ejecución. El inventario y las tareas independientes continúan sin esperar sus acuses.
+
+
+## 21. HOLDs adicionales en la biblioteca de agentes
+
+Para impedir invocaciones accidentales de paquetes que el propio índice declara listos para invocación directa, se aplicaron dos HOLD documentales no destructivos en gatoscientist/Laboratorio-de-agentes:
+
+- **Equipo Softly (Sofía, Sara, Silvia):** HOLD en Equipo-Softly/RESET-CORE-2026-002-HOLD.md, commit 3462ebe3c247fb99f7c8c5c27f09b802b621be85; README del equipo actualizado en commit c756f8c1c5e6275ffccbc15f0efb63494149d1ba; índice Equipos actualizado en commit 085066cab09126e2effb0a64435b7fc8169c4c4b. Se preservan sus capacidades candidatas de formalización, desarrollo y auditoría, sin invocación separada.
+- **Melina / AgentMUS:** HOLD en AgentMUS-Melina/RESET-CORE-2026-002-HOLD.md, commit 98323e2b9895837394b3ef6efd9f8f16f872efec; README de paquete actualizado en commit 4ee34bc7d36a9db0206e74beedfd9e9ce7d979eb; índice Soft Agents actualizado en commit 1220e1d53efa7a45a965032d972f7e680ad5831b. El paquete y la capacidad musical se preservan; no se invoca como cuarta identidad.
+- **Equipo del gAto (Isabella, Valentina, Amelia):** no se modificó. Su pertenencia al alcance sigue sin demostrarse y requiere decisión antes de intervenir.
+
+Estos HOLD no fusionan ni retiran capacidades, no alteran los paquetes de origen y no sustituyen el mapa de migración pendiente. Los paquetes de Auditoría y TITAN siguen sujetos al override de gobernanza y a las instrucciones de no activación ya publicadas.
