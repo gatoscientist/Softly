@@ -89,3 +89,14 @@ Cuando gAto cierre explícitamente un hilo, conservar la historia en logs/thread
 - Los dos encargos deben ejecutarse independientemente, sin compartir conclusiones antes de terminar. Katarina revisará el sistema externamente; Softly auditará además su propio sistema y comportamiento.
 - **Estado real al cierre:** se redactaron y persistieron los dos prompts. Las investigaciones no se iniciaron ni se completaron en este hilo; no se hicieron búsquedas web ni auditoría nueva de los seis repositorios. No se entregaron aún los prompts a Katarina. No se modificó SOFTLY.md, schemas, moldes, taxonomías, contratos ni directorios productivos.
 - **Próxima acción:** en un hilo nuevo, gAto puede instruir la entrega del prompt a Katarina e iniciar la investigación independiente de Softly. Mantener los límites y no implementar cambios antes de la comparación y decisión de gAto.
+
+
+## Hilo XII — decisión de dirección y continuidad de investigación de coordinación (2026-11-16)
+
+- **Registro del hilo:** `logs/threads/hilo XII 2026-11-16 hora-no-registrada F hora-no-registrada — decision y continuidad investigacion coordinacion.md`.
+- **Decisión de gAto:** avanzar tomando la Alternativa B, coordinación centrada en tareas y dependencias, como base para continuar investigación y diseño conceptual.
+- **Preferencia conceptual:** tres dimensiones: coordinación propia, coordinación entre pares y orquestación.
+- **Pregunta abierta preservada de Katarina:** determinar si la orquestación cubre la coordinación sistémica, si esta es una especialización/responsabilidad transversal de la orquestación o si requiere descripción diferenciada. No resolver por inferencia ni convertir automáticamente en una cuarta dimensión.
+- **Registro de decisión:** `research/coordination/2026-11-16-decision-direccion-task-centric-tres-dimensiones.md`.
+- **Límites:** la dirección de investigación queda adoptada; no se autorizó piloto específico, migración, cambio normativo, actualización de schemas/contratos/moldes ni runtime. No se ejecutaron experimentos.
+- **Próxima etapa:** profundizar las tres dimensiones y responder la pregunta sistémica con análisis explícito; definir el modelo conceptual mínimo y devolver opciones para decisión de gAto antes de cualquier piloto.
