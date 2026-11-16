@@ -193,3 +193,11 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 - **Registro de identidades:** schemas/agent-taxonomy-registry.json contiene nueve entradas con availability active-standby: Tiffany, Tara, Thea, Tábata, Katarina 1.1.0, Melina, Audeline, Aurora y Autumn. No demuestra sesiones vivas, pero debe reconciliarse con el estado final de tres identidades. El schema no contempla Agent Softly, aunque Katarina 2.0.1 la declara.
 - **Taxonomías:** SOF-001 sigue abierto hasta decisión y reconciliación de identidad/taxonomía; SOF-004 es duplicación editorial en agents/README.md. No se modificaron estos contratos ni el registro durante el reconocimiento.
 - **Informe ampliado actualizado:** commit 11e235e7a8dab2d0f241b3a6625be0f9e5878742; blob 7b13cb0b70e028026f31b4b39ada2a2b7fcc1193.
+
+
+### Corrección del inventario de Runtime Mini y ampliación TITAN/Cytryna
+
+- **Corrección de runtime:** Softly Runtime Mini 0.2 sí está en main, no solo en fix/f03-recover-ledger. El manifiesto declara una tarea de prueba y una operación create_text_file. events.jsonl está vacío y events.head permanece en GENESIS. Katarina reportó 6/6 pruebas en Python 3.13.5; no existe repetición independiente de Autumn ni validación productiva. La rama fix contiene cambios de recuperación F-03 y conserva seis bloqueos/pendientes; no equivale a runtime task-centric.
+- **TITAN:** árbol main consultado con 231 archivos. El índice actual de equipos está en eL equipo del gAto/README.md; README.txt raíz aún referencia DEVAGENTS/ y audit/ ausentes. Se observan doce paquetes de especialistas diseñados en tres equipos, más una instancia documental Katarina. Los canales están documentados, no conectados; los paquetes no demuestran activación. Requieren clasificación/migración de capacidades, no eliminación automática.
+- **Cytryna:** proyecto con identidad independiente y estado experimental; mantiene Camila y tres integrantes diseñados, además de raíces AGENTDEV/AGENTGUI. Se clasifica como pendiente de alcance por sus referencias cruzadas con TITAN/Softly; no intervenir hasta resolver pertenencia.
+- **Informe ampliado actualizado:** commit 44bc7df8eb77840ad1c8eec5a9fe5c374ed39a08; blob 514932c7949526e28f6d4f4b70ede2145f8ab800.
