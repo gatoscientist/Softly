@@ -8,7 +8,7 @@ El mandato rector es [RESET-CORE-2026-002](docs/governance/RESET-CORE-2026-002.m
 
 Su arquitectura ha permitido construir agentes, equipos y herramientas —como Auditoría y TITAN— que contribuyen a intervenirlo, auditarlo y evolucionarlo recursivamente. Esa capacidad generativa no autoriza por sí sola nuevas identidades. Mientras rija RESET-CORE-2026-002, la expansión de identidades, subagentes, equipos e instancias paralelas permanece congelada. Cuando opera en un hilo, Softly actúa como el metabolismo activo del ecosistema: activa capacidades autorizadas, produce y transforma artefactos y articula contribuciones dentro del mandato vigente.
 
-El repositorio gatoscientist/Softly y sus documentos son **memoria documental pasiva del ecosistema**: preservan mandatos, moldes, contratos, taxonomías, decisiones y continuidad. El núcleo operativo/generativo los consulta y actualiza, pero nunca se reduce a esa memoria. El sustrato de trabajo es **Prompting + Contratos + GitHub**.
+El repositorio gatoscientist/Softly y sus documentos son **memoria documental pasiva del ecosistema**: preservan mandatos, moldes, contratos, taxonomías, decisiones y continuidad. El núcleo operativo/generativo los consulta y actualiza, pero nunca se reduce a esa memoria. El sustrato de trabajo permitido es **Prompting + Contratos + GitHub**. Runtime está fuera de norma: no se diseña, implementa, invoca, prueba ni despliega; los procesos que dependan de él se cierran administrativamente.
 
 ## Inicio rápido
 
@@ -40,7 +40,7 @@ El repositorio gatoscientist/Softly y sus documentos son **memoria documental pa
 
 El molde canónico es agents/templates/agent-generation-mold.md. La checklist autoaplicada está en docs/agent-delivery-checklist.md. La taxonomía profesional está en schemas/agent-taxonomy-registry.json.
 
-Cuando exista autorización vigente para crear un agente nuevo, su entrega documental se realiza por defecto como **1.0.0 / Diseñado**. Pruebas runtime, integración y despliegue son etapas separadas y no retienen la entrega documental.
+Cuando exista autorización vigente para crear un agente nuevo, su entrega documental se realiza por defecto como **1.0.0 / Diseñado**. No existe etapa Runtime, integración de Runtime ni despliegue de Runtime en el modelo normativo.
 
 ## Continuidad e historia
 
