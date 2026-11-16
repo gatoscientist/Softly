@@ -134,4 +134,5 @@ Cuando gAto cierre explícitamente un hilo, conservar la historia en logs/thread
 - **Archivo del hilo:** `logs/threads/hilo XIII 2026-11-16 13-50 F 2026-11-16 14-12 — creación documental de Zoe y cierre.md`.
 - **Commit de archivo:** `bfc3a36af56d5fe5911baa22c9fc277aaa7af9d8`.
 - **Commit del índice:** `1d32e82167597f672bf9bffea692cd2aad260d06`.
+- **Commit final de actividad verificada:** `e7e7db64811d4858cd1fc491fe77c61884666a56`.
 - **Próxima acción:** ninguna pendiente dentro de este hilo. Activación o validación de Zoe requiere instrucción independiente de gAto.
