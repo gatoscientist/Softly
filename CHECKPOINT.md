@@ -219,4 +219,12 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 - REC-002 asigna tareas a cinco paquetes diseñados/no desplegados. No invocarlos bajo RESET-CORE-2026-002; preservar los documentos y mantener la activación congelada.
 
 
-- **Informe ampliado vigente:** logs/reset/2026-11-16-reconocimiento-ampliado.md; blob SHA verificado 304edab03bc94dddc4f2788887fe71057f59050d.
+- **Informe ampliado vigente:** logs/reset/2026-11-16-reconocimiento-ampliado.md; blob SHA verificado b09dc0d78049e9107b4d96948edf7bc5b11bbf8a.
+
+
+### Contención documental aplicada
+
+- SOFTLY.md y README.md ahora incluyen el override explícito de RESET-CORE-2026-002; solo Softly, Katarina y Audeline quedan como identidades operativas. La creación/activación de equipos, subagentes e instancias adicionales está congelada; Zoe conserva solo supervisión temporal.
+- TITAN recibió HOLD operacional para REC-002 y su equipo de cinco paquetes diseñados, commit 9f688906d725ee4851ae60908148ac542b68bf40. Los paquetes se preservan; no se invocan ni activan.
+- No se fusionaron PR, no se cerraron issues, no se borraron ramas ni paquetes, y no se ejecutaron pruebas o despliegues.
+- Audeline aún no tiene acuse específico de RESET-CORE-2026-002; el trabajo independiente continúa sin esperar esa recepción.
