@@ -31,7 +31,7 @@ Consultar bajo demanda cuando un antecedente sea necesario. El checkpoint vigent
 - [Hilo del 16-11-2026 — experimento de creación del equipo Dra. Katarina](hilo%20III%202026-11-16%20hora-no-registrada%20F%20hora-no-registrada%20%E2%80%94%20experimento%20equipo%20Dra%20Katarina.md)
 - [Hilo del 16-11-2026 — arquitectura colaborativa y continuidad hacia Softly](hilo%20IV%202026-11-16%20hora-no-registrada%20F%20hora-no-registrada%20%E2%80%94%20arquitectura%20colaborativa%20y%20continuidad%20hacia%20Softly.md)
 - [Hilo del 16-11-2026 — responsabilidad de mejora continua y cierre](hilo%20V%202026-11-16%20hora-no-registrada%20F%20hora-no-registrada%20%E2%80%94%20responsabilidad%20de%20mejora%20continua%20y%20cierre.md)
-
+- [Hilo VI del 16-11-2026 — continuidad y activación de TITAN y CYTRYNA](hilo%20VI%202026-11-16%20hora-no-registrada%20F%20hora-no-registrada%20%E2%80%94%20continuidad%20activaci%C3%B3n%20TITAN%20y%20CYTRYNA.md)
 
 ## Capacidades universales y criterio de cierre
 
