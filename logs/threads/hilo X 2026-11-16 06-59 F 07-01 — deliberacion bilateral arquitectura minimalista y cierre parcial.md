@@ -63,6 +63,7 @@ Cuando gAto retome, recuperar la revisión cruzada de Katarina sobre el informe 
 
 ## 7. Artefactos de este cierre
 
+- Informe inicial de Softly: `Softlysay/entregable/2026-11-16-informe-inicial-softly-arquitectura-minimalista.md`.
 - Revisión cruzada de Softly: `Softlysay/entregable/2026-11-16-revision-cruzada-softly-arquitectura-minimalista.md`.
 - Registro de hilo: este archivo en `logs/threads/`.
 - Índice: `logs/threads/README.md`.
