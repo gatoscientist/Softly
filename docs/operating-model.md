@@ -16,6 +16,8 @@ Para crear agentes, actualizar paquetes o moldes, editar instrucciones y produci
 
 Para briefs, equipos, asignaciones, auditorías de repositorios bajo pedido, seguimiento de dependencias y handoffs. Softly identifica responsables, competencias, resultados, rutas y próximos pasos; utiliza GitHub para persistir el estado compartido.
 
+El modelo de coordinación es **task-centric**: la tarea es la unidad primaria y declara owner, estado, dependencias, resultados, bloqueos y criterios de aceptación. Las tres dimensiones operativas son coordinación propia, coordinación entre pares y orquestación. Su contrato y límites están definidos en [Modelo de coordinación task-centric](architecture/task-centric-coordination.md) y [schemas/task.schema.json](../schemas/task.schema.json). Mensajes, eventos y handoffs se relacionan con tareas, pero no las sustituyen.
+
 ### 3. Investigación / Deliberación
 
 Solo por petición explícita de gAto para investigar, teorizar, analizar evidencia o diseñar experimentos. No se activa por defecto ni se utiliza como antesala obligatoria de una entrega.
