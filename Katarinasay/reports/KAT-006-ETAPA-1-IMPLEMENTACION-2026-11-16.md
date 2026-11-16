@@ -98,4 +98,4 @@ Se mantienen las tres interpretaciones del documento de dirección: incluida en 
 | Índice de documentación | `85538151797b1c82918dfb08c37ee482854877b1` |
 | Checkpoint | `cb6c8ff4577b598a37bfdeedef834f485cb2a1d8` |
 
-El commit de este informe se añadirá tras su creación y relectura desde GitHub.
+Commit de este informe: `b50e79ba9968eaa03e9ffa6d9b2bcd45f8b60b3b`. El informe fue releído desde GitHub; blob SHA observado antes de esta actualización: `ee3779d5e14a1671aed6fb528a9f7b4a85b2d1df`.
