@@ -219,7 +219,7 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 - REC-002 asigna tareas a cinco paquetes diseñados/no desplegados. No invocarlos bajo RESET-CORE-2026-002; preservar los documentos y mantener la activación congelada.
 
 
-- **Informe ampliado vigente:** logs/reset/2026-11-16-reconocimiento-ampliado.md; blob SHA verificado 6fc45a1a39d0e04acf177592a55fc56e66b1a248.
+- **Informe ampliado vigente:** logs/reset/2026-11-16-reconocimiento-ampliado.md; blob SHA verificado 991ace9de5451e09596f43eb890f001af1c75cbd.
 
 
 ### Contención documental aplicada
@@ -243,3 +243,9 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 - Melina / AgentMUS: HOLD operacional; paquete musical preservado, invocación independiente suspendida. Commit HOLD 98323e2b9895837394b3ef6efd9f8f16f872efec; README/índice actualizados.
 - Equipo del gAto (Isabella, Valentina, Amelia): no intervenido; pertenencia al alcance pendiente.
 - Informe ampliado vigente: logs/reset/2026-11-16-reconocimiento-ampliado.md, blob SHA 6fc45a1a39d0e04acf177592a55fc56e66b1a248.
+
+
+### Delimitación de gAtoSD
+
+- gAtoSD es un proyecto independiente con Lucyna (SOFAGENT 1.0.0 / NAMED_LOCKED) y Andy (SOFAGENTGUI 1.1.0 / NAMED_LOCKED), confirmadas por el usuario responsable. No se encontró dependencia operativa con Softly; queda provisionalmente fuera del alcance y no se interviene. No se inspeccionó código del producto, respetando las restricciones de Lucyna.
+- Informe ampliado vigente: logs/reset/2026-11-16-reconocimiento-ampliado.md, blob SHA 991ace9de5451e09596f43eb890f001af1c75cbd.
