@@ -67,7 +67,18 @@ Rama `kat-006-stage3-softly-2026-11-16`:
 - Schema: `716a1534365a4335c3dd5e00a00a882b9c718d8b`
 - Documento de coordinación: `4a0bdd1b9e33c378ff6913f2b45de0b7046da288`
 - Índice: `f6cc68cda31b0f29dfe849eb166c3e17036ea9b0`
-- Informe etapa 3: `0a78fdb2ba38550c71b9f1818c96d76a4a85b357`
+- Informe etapa 3 inicial: `0a78fdb2ba38550c71b9f1818c96d76a4a85b357`
+- Actualización de relectura y validaciones: `d33be9362f4bbbd566bd43da2b287015d2dfa132`
+- Corrección de estado de validaciones y actualización final: `698bafa3dfd49350654547b298d92426808c3624`
+- Head actual de rama: `698bafa3dfd49350654547b298d92426808c3624` (seis commits adelante de main; cuatro archivos añadidos).
+- PR de revisión: https://github.com/gatoscientist/Katarina/pull/1 (borrador, sin fusionar).
+
+### Blob SHAs releídos de la adaptación
+
+- `coordination/task.schema.json`: `30fa549b3946d1e836d9a231be93b2ea633377eb`
+- `coordination/task-coordination.md`: `6ba7a90c430d1f7262f6aae9fbd5c5bceb5cb0ff`
+- `coordination/README.md`: `c6d3a28e72dd8395de88ee578ec0e1e894e41b95`
+- Informe etapa 3: `232a5c148ce636bc9e6dcad360b6a861aafd0b6a`
 
 ## 5. Trabajo de auditoría solicitado
 
