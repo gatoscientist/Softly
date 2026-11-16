@@ -27,3 +27,5 @@ Este directorio conserva la historia documental de hilos cerrados. Los archivos 
 Consultar bajo demanda cuando un antecedente sea necesario. El checkpoint vigente resume dónde continuar; estos archivos preservan la historia. No es necesario cargar todo el archivo histórico al iniciar una sesión nueva.
 
 - [Hilo del 16-11-2026, desde las 01:08 — continuidad de Katarina y cierre](hilo%20II%202026-11-16%2001-08%20F%20hora-no-registrada%20%E2%80%94%20continuidad%20Katarina%20y%20cierre.md)
+
+- [Hilo del 16-11-2026 — experimento de creación del equipo Dra. Katarina](hilo%20III%202026-11-16%20hora-no-registrada%20F%20hora-no-registrada%20%E2%80%94%20experimento%20equipo%20Dra%20Katarina.md)
