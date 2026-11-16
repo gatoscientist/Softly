@@ -219,7 +219,7 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 - REC-002 asigna tareas a cinco paquetes diseñados/no desplegados. No invocarlos bajo RESET-CORE-2026-002; preservar los documentos y mantener la activación congelada.
 
 
-- **Informe ampliado vigente:** logs/reset/2026-11-16-reconocimiento-ampliado.md; blob SHA verificado cce7826be33475dd5602bc970e6cdbb218ba1a08.
+- **Informe ampliado vigente:** logs/reset/2026-11-16-reconocimiento-ampliado.md; blob SHA verificado 6fc45a1a39d0e04acf177592a55fc56e66b1a248.
 
 
 ### Contención documental aplicada
@@ -235,3 +235,11 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 - Se amplió el handoff de Audeline en Auditoria/Softlysay/res, con evidencia de trece repositorios, KAT-006, Runtime Mini, registro de identidades, TITAN, Cytryna y límites de auditoría. Addendum commit 16397b05e8669f328fd36eee8be9dae29e851064; indexado en commit 53d1f26fbc76149cbb0b9c70022a0baa1cdbb824. Sin acuse.
 - Se envió a Katarina un addendum con la secuencia Git de su instancia documental en Cytryna, la errata de SHA y solicitud de contraste. Commit 1ffe733526182575f6046e7854b624ae25347f29; indexado en Softlysay/README y bitácora, commits 18de1c665faab24ea8da31e41d625af3a0a0616e y a42e0202121d4d75a53ddd42b68f089969cac627. El acuse RESET original está confirmado; la explicación de Cytryna sigue pendiente.
 - Informe ampliado vigente: logs/reset/2026-11-16-reconocimiento-ampliado.md, blob SHA cce7826be33475dd5602bc970e6cdbb218ba1a08.
+
+
+### HOLDs adicionales en Laboratorio
+
+- Equipo Softly (Sofía, Sara, Silvia): HOLD operacional para impedir invocación separada; paquetes preservados. Commit HOLD 3462ebe3c247fb99f7c8c5c27f09b802b621be85; README/índices actualizados.
+- Melina / AgentMUS: HOLD operacional; paquete musical preservado, invocación independiente suspendida. Commit HOLD 98323e2b9895837394b3ef6efd9f8f16f872efec; README/índice actualizados.
+- Equipo del gAto (Isabella, Valentina, Amelia): no intervenido; pertenencia al alcance pendiente.
+- Informe ampliado vigente: logs/reset/2026-11-16-reconocimiento-ampliado.md, blob SHA 6fc45a1a39d0e04acf177592a55fc56e66b1a248.
