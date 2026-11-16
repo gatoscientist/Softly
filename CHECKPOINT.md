@@ -56,7 +56,7 @@ Cuando gAto cierre explícitamente un hilo, conservar la historia en logs/thread
 
 ## Registro de cierre — Hilo VIII
 
-- **Estado:** registro persistido; primera lectura de vuelta completada. Segunda revisión independiente en curso.
+- **Estado:** archivado documentalmente; commits confirmados y segunda revisión independiente completada mediante relectura desde GitHub.
 - **Archivo:** `logs/threads/hilo VIII 2026-11-16 hora-no-registrada F 2026-11-16 06-44 — relectura de mandatos y realineación Katarina 2.0.0.md`.
 - **Commits de soporte:** hilo inicial `42f07006ac065e3a2302bc787115b9cd87d1617e`; actualización del hilo con trazabilidad `18c22e24bf2c282fcec6f00161d4ce16b4cfee24`; índice `b2956f55ff88d1a0bc5333f8310c0651e239a4dc`; checkpoint inicial `199e33504edcf465b2d4a549d000dd93bf48fbc1`; actividad inicial `ed347d18f28c9910cb385d9149fcceab18aaabfa`; actividad marcada verificada `a78981e57bc41136921fbbfd39720931317cf6c7`; bitácora Katarina `c44884782223ab9452a9854cc8f01b87e65b619e`.
 - El índice, archivo del hilo, actividad y bitácora se releen fijando cada consulta al commit de escritura correspondiente. El checkpoint vigente incluye además la continuidad posterior del Hilo IX y se preserva sin sobrescribirla.
