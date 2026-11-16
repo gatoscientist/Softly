@@ -114,3 +114,13 @@ La prioridad vigente es que Softly opere como núcleo generativo autoevolutivo y
 - Katarina 2.0.0 confirmó su responsabilidad sobre la evolución documental/declarativa de Softly dentro de asignaciones y rutas autorizadas, y la delegación de programación ejecutable a especialistas.
 - gAto había indicado no modificar el core de Softly. El mandato posterior autoriza guardar continuidad, checkpoint e hilo; no autoriza cambios de diseño o implementación en el core. Por tanto, no se modificaron SOFTLY.md, contratos, permisos, arquitectura ni runtime.
 - Próximo paso: abrir el nuevo hilo y retomar desde este checkpoint. No hay otro encargo de modificación pendiente en este cierre.
+
+
+## Punto de continuidad — experimento de creación del equipo Dra. Katarina (2026-11-16)
+
+- Katarina estudió la documentación normativa, operativa, arquitectónica, de gobernanza, seguridad y moldes de Softly, manteniendo explícitamente separadas su identidad y la identidad de Softly.
+- Se preparó y entregó a gAto una asignación directa para que Softly cree cuatro agentes documentales en `gatoscientist/Laboratorio-de-agentes/lA cAjita del gAto/Dra Katarina/`: Ariadna (formalista, AgentSCI), Vega (arquitectura técnica, AgentDEV), Liora (investigación científica, AgentSCI) y Talia (especialista experimental, AgentSCI).
+- La asignación exige inspeccionar y preservar el contenido existente del destino, usar el molde universal y la checklist, entregar cada paquete como 1.0.0 / Diseñado, y no modificar otros paquetes, el core de Softly ni permisos/runtime.
+- El prompt fue entregado a gAto; no hay evidencia todavía de que se haya enviado a Softly ni de que los cuatro agentes estén creados. No se modificó el directorio destino en este hilo.
+- Registro del hilo: [experimento de creación del equipo Dra. Katarina, 16-11-2026](logs/threads/hilo%20III%202026-11-16%20hora-no-registrada%20F%20hora-no-registrada%20%E2%80%94%20experimento%20equipo%20Dra%20Katarina.md).
+- **Próximo paso exacto:** gAto entrega a Softly el prompt archivado; luego comparte sus resultados con Katarina para evaluar los cuatro paquetes y planificar su evolución.
