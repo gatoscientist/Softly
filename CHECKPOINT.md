@@ -111,3 +111,14 @@ Cuando gAto cierre explícitamente un hilo, conservar la historia en logs/thread
 - La eliminación de agentes **no se ha ejecutado**. Antes se requiere inventario, respaldo, registro canónico de identidades/versiones/instancias y plan de retiro/reconstrucción.
 - La pregunta de Katarina sobre coordinación sistémica permanece abierta y debe pasar al diseño de la nueva arquitectura.
 - **Próxima acción:** preparar inventario integral de agentes y dependencias, preservando evidencia antes de retirar cualquier instancia.
+
+
+## KAT-006 — reactivación y entrega de etapa 1 (2026-11-16)
+
+- gAto reactivó el encargo KAT-006 mediante `Katarinasay/inbox/REACTIVACION-KAT-006-2026-11-16.md`; la reactivación supera el cierre administrativo anterior para continuidad, cuyo registro histórico permanece intacto.
+- Etapa 1: implementación de Katarina en este repositorio. No trabajar en `gatoscientist/Katarina`, no iniciar etapas posteriores ni solicitar auditoría a Audeline antes de la verificación de Softly.
+- Se establece contrato documental task-centric: tarea como unidad primaria; owner, estado, dependencias, resultados, bloqueos y aceptación explícitos.
+- Tres dimensiones: coordinación propia, coordinación entre pares y orquestación.
+- La pregunta sobre cobertura de coordinación sistémica por la orquestación permanece abierta, con sus tres interpretaciones posibles sin resolver.
+- Los artefactos y validaciones de esta etapa se detallan en `Katarinasay/reports/KAT-006-ETAPA-1-IMPLEMENTACION-2026-11-16.md`.
+- Esta documentación no implica runtime, ejecución automática, despliegue ni aceptación humana.
