@@ -22,7 +22,7 @@
 - La arquitectura de agentes, los modos de Softly, el demonio de síntesis, Katarina 2.0.0, el equipo de la Dra. Katarina, AgentDIR y la mejora continua están registrados en los hilos anteriores de logs/threads/.
 - Hilo V (2026-11-16): responsabilidad de mejora continua, trazabilidad de incidencias y auditoría equilibrada.
 - Hilo VI (2026-11-16): continuidad y activación de TITAN y CYTRYNA; registro parcial debido a que solo se dispone del fragmento conversacional visible.
-- **Hilo VII (2026-11-16):** Katarina produjo y persistió la investigación SOFTLY-MIN sobre el núcleo funcional mínimo y la independencia del contexto personal. El hilo y el checkpoint se actualizaron con commits y relectura verificada.
+- **Hilo VII (2026-11-16):** Katarina produjo y persistió la investigación SOFTLY-MIN sobre el núcleo funcional mínimo y la independencia del contexto personal. Registro: `logs/threads/hilo VII 2026-11-16 hora-no-registrada F 2026-11-16 06-06 — investigación SOFTLY-MIN y cierre Katarina.md`. Commit inicial del hilo: `34bdc6b562a150981c30f3d434f554be71ccd062`; commit final de verificación del hilo: `e6e2c30123903c91160c5cb3dd03f09004cce834`. El índice, checkpoint, actividad y bitácora de Katarina fueron releídos desde GitHub.
 
 ## Punto actual — investigación SOFTLY-MIN (2026-11-16)
 
