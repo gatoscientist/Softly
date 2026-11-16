@@ -29,3 +29,4 @@ Consultar bajo demanda cuando un antecedente sea necesario. El checkpoint vigent
 - [Hilo del 16-11-2026, desde las 01:08 — continuidad de Katarina y cierre](hilo%20II%202026-11-16%2001-08%20F%20hora-no-registrada%20%E2%80%94%20continuidad%20Katarina%20y%20cierre.md)
 
 - [Hilo del 16-11-2026 — experimento de creación del equipo Dra. Katarina](hilo%20III%202026-11-16%20hora-no-registrada%20F%20hora-no-registrada%20%E2%80%94%20experimento%20equipo%20Dra%20Katarina.md)
+- [Hilo del 16-11-2026 — arquitectura colaborativa y continuidad hacia Softly](hilo%20IV%202026-11-16%20hora-no-registrada%20F%20hora-no-registrada%20%E2%80%94%20arquitectura%20colaborativa%20y%20continuidad%20hacia%20Softly.md)
