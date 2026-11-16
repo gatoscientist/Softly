@@ -899,7 +899,7 @@ La recomendación es avanzar hacia la Alternativa B mediante un piloto medido, n
 2. Hayes-Roth, B. (1985). *A Blackboard Architecture for Control*. Artificial Intelligence, 26(3), 251–321. https://doi.org/10.1016/0004-3702(85)90063-3
 3. Salas, E., Sims, D. E. y Burke, C. S. (2005). *Is there a “Big Five” in Teamwork?* Small Group Research, 36(5), 555–599. https://doi.org/10.1177/1046496405277134
 4. *The Impact of Cross-Training on Team Effectiveness* (2002). Registro PubMed: https://pubmed.ncbi.nlm.nih.gov/11916213/
-5. *Transactive Memory Systems in Context* (2018). Registro PubMed: https://pubmed.ncbi.nlm.nih.gov/30024196/
+5. Bachrach et al. (2019). *Transactive memory systems in context: A meta-analytic examination of contextual factors in transactive memory systems development and team performance*. Journal of Applied Psychology, 104(3), 464–493. https://doi.org/10.1037/apl0000329
 6. *Measurement Matters: A Meta-Analytic Examination of Transactive Memory Systems and Team Outcomes* (2026). https://doi.org/10.1177/10464964261434540
 7. Zhu et al. (2025). *MultiAgentBench: Evaluating the Collaboration and Competition of LLM Agents*. ACL 2025. https://aclanthology.org/2025.acl-long.421/
 8. Kim et al. (2026). *TeamBench: Evaluating Agent Coordination under Enforced Role Separation*. arXiv:2605.07073. https://arxiv.org/abs/2605.07073
@@ -912,10 +912,10 @@ La recomendación es avanzar hacia la Alternativa B mediante un piloto medido, n
 ### Protocolos y documentación técnica
 
 14. Agent2Agent Protocol. *Specification*. https://a2a-protocol.org/latest/specification/
-15. Model Context Protocol. *Architecture*. https://modelcontextprotocol.io/specification/
+15. Model Context Protocol. *Architecture*, specification version 2026-07-28. https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/docs/specification/2026-07-28/architecture/index.mdx
 16. JADE/FIPA. *JADE Tutorial: FIPA ACL Message Structure*. https://jade.tilab.com/papers/JADETutorialIEEE/JADETutorial_FIPA.pdf
-17. Microsoft. *AI Agent Orchestration Patterns*. https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns
-18. Microsoft AutoGen. *Group Chat* y *Termination*. https://microsoft.github.io/autogen/stable/user-guide/core-user-guide/design-patterns/group-chat.html
+17. Microsoft. *AI Agent Orchestration Patterns*. https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns/
+18. Microsoft AutoGen. *Termination conditions for AgentChat teams*. https://microsoft.github.io/autogen/dev/user-guide/agentchat-user-guide/tutorial/termination.html
 19. Akka. *Multi-agent coordination*. https://doc.akka.io/concepts/ai-orchestration-patterns.html
 20. Temporal. *Workflows*. https://docs.temporal.io/workflows
 21. LangGraph. *Persistence*. https://docs.langchain.com/oss/python/langgraph/persistence
@@ -923,6 +923,7 @@ La recomendación es avanzar hacia la Alternativa B mediante un piloto medido, n
 
 ### Evidencia interna principal
 
+- Softlysay/entregable/2026-11-16-informe-inicial-softly-arquitectura-minimalista.md (evaluación previa de la separación say/shared, no medición).
 - SOFTLY.md, CHECKPOINT.md.
 - docs/architecture/coordination-patterns.md.
 - docs/architecture/operational-modes-and-autocoordination.md.
