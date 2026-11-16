@@ -371,3 +371,18 @@ Informe ampliado vigente: logs/reset/2026-11-16-reconocimiento-ampliado.md, blob
 - Commits: schema `1132f70eb3c4f9809e5546cec9187f5dc022db2a`; registro `8f16e32957db8d5fd34f8f755804b9b29c81855e`; índice `4b6e5ea3d46855db4e737ed25695f4e21cd25ba9`.
 - Verificación: los tres artefactos fueron releídos desde GitHub después de escribirlos. No se declara validación automatizada del JSON Schema ni migración del registro histórico 1.0.0.
 - Estado residual no cambia: siete ramas adicionales a main siguen clasificadas y preservadas; diez ZIP continúan sin verificación binaria/restauración. RESET-CORE-2026-002 permanece sin certificación global.
+
+
+## Corte más reciente — revisión crítica de investigación Godot (2026-11-16)
+
+La revisión crítica solicitada en Softly issue #3 fue completada y persistida en `research/reviews/2026-11-16-revision-critica-softly-godot-parte-ii.md`.
+
+- Dictamen: la síntesis conjunta Parte II se conserva como antecedente documental útil, con reservas materiales; no constituye arquitectura aprobada ni hoja de ruta ejecutable.
+- Hallazgos: separación insuficiente entre dominios de agentes; riesgo de convertir roles en identidades adicionales; evidencia ilustrativa insuficiente para probar eficacia del bucle cerrado; inventario de herramientas no reproducible; cifras de Flow Fields dependientes del benchmark y de su notación; modelo de amenazas MCP incompleto.
+- Restricción vigente: no crear identidades/subagentes adicionales. Los roles se tratan como capacidades y contratos dentro de las identidades autorizadas.
+- Runtime permanece fuera de norma según RESET-CORE-2026-002 v1.2.0. La revisión no lo reabre ni propone sustitutos.
+- No se seleccionaron herramientas, no se ejecutaron pruebas ni se alteraron productos.
+- Commit del informe: `8a25b8d85ccf3c3041655c8a3ba017d6b140efa2`; blob SHA releído: `4f9489ad2a0c4f6d302349e3b3fcc2c1fde2fe5a`.
+- Softly issue #3 recibió el enlace, dictamen y límites de la revisión (comentario 6927443895).
+
+**Residual global RESET-002:** el informe 22 de Audeline mantiene NO-GO para certificación integral mientras no se resuelva el modelo del registro canónico, la disposición verificable de las siete ramas adicionales y la decisión de preservación de respaldos. Esos frentes no dependen de Runtime. La revisión Godot no los bloquea.
