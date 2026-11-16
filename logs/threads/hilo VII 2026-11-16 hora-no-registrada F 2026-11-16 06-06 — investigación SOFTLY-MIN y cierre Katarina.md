@@ -101,4 +101,16 @@ No se modifica `Katarina/core/`, `SOFTLY.md`, los contratos ni los permisos.
 
 ---
 
-**Estado del cierre:** el registro de hilo y los archivos de continuidad se deben considerar cerrados únicamente después de confirmar todos los commits y releer cada archivo modificado desde GitHub. Este registro no declara ejecución, despliegue ni validación de runtime.
+## 9. Commits y verificación final
+
+Commits confirmados por GitHub:
+- Archivo de este hilo: `34bdc6b562a150981c30f3d434f554be71ccd062`.
+- Índice `logs/threads/README.md`: `915525378cf4469f07a635d3f3c2143ac8d5f7cd`.
+- `CHECKPOINT.md`: `d39c9ef9166933a08c0d59f6a902ba1a5c5dd1a9`.
+- `logs/activity.jsonl`: `4ff975b0825952c72d518a7a85c572ce816654da`.
+- Bitácora de Katarina en Laboratorio-de-agentes: `a138a88634ad3440ba6405f3dceacc5d0568785f`.
+- Research SOFTLY-MIN: `47bff985de6915b777064f9b033d515b713888f2`.
+
+Se consultaron los cinco commits de cierre mediante GitHub y se releyeron desde la rama principal los cinco archivos modificados. Las rutas, contenido y SHA de blobs fueron confirmados. La investigación SOFTLY-MIN también había sido releída antes del cierre.
+
+**Estado del cierre:** persistencia y lectura posterior verificadas. Hilo archivado documentalmente. Esto no declara ejecución, despliegue ni validación de runtime.
