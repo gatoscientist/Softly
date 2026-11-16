@@ -14,7 +14,7 @@ Por orden expresa de gAto y conforme a RESET-CORE-2026-002, se ratifica que todo
 - KAT-006: cerrado administrativamente como `not_planned` en issue #5. Katarina PR #1: cerrado sin merge; rama preservada como evidencia histórica. No queda decisión A/B/C pendiente ni aceptación técnica implícita.
 - Runtime: cerrado administrativamente en todos sus documentos, procesos, dependencias y esperas. No constituye criterio de aceptación ni requiere inventario técnico, reparación o validación para cerrar RESET-002.
 - Ramas: siete adicionales a `main` siguen presentes. Sus HEAD SHA exactos, base SHA, ahead/behind y archivos exclusivos quedaron registrados en el informe 23 de Audeline. Softly/recovery está supersedida por README actuales de main; F-03, KAT-006 y propuestas históricas no se integran. No se fusionó ni borró ninguna rama.
-- Registro: resuelto documentalmente en v2.0.0 mediante `schemas/identity-capability-registry-v2.json` y su schema. Contiene exactamente tres identidades operativas, siete paquetes sin autoridad y herencia `none`; el registro 1.0.0 se conserva como antecedente.
+- Registro: migración canónica aún no aprobada. El PR #8 propone v2.0.0 y recibió dictamen independiente NO-GO (informe 26) por errores de schema y rutas de paquetes. `schemas/identity-capability-registry-v2.json` es solo resumen provisional; el archivo legado 1.0.0 sigue en la ruta canónica hasta corregir y aprobar la migración.
 - Respaldos: diez ZIP con metadatos cotejados; integridad binaria y restaurabilidad no verificadas.
 - Contratos: Katarina 3.1.0 verificada como única identidad de ingeniería; AGENTSTEAM/mancos son históricos. Auditoria/main ahora declara expresamente a Audeline como única identidad operativa de auditoría y a Aurora/Autumn como historia (informe 25).
 - Laboratorio-de-agentes: informe 24 detecta que el índice de equipos declara seis paquetes invocables pese al HOLD del Equipo-Softly y la exclusión provisional del Equipo-del-gAto. Corrección editorial mínima entregada a Softly; no se modificaron ni invocaron paquetes.
@@ -49,7 +49,7 @@ La Dirección de gAto incorporó RESET-CORE-2026-002 v1.2.0: Runtime queda fuera
 - **Respaldos:** diez ZIP localizados, ninguno extraído ni validado como restaurable.
 - **Audeline:** completó la reconciliación de TEAM y README de sus tres canales en su casa canónica, commit `1d7a9b2c2be1ea413d1bef8358fbe6a3f5079453`. AUD-RESET-002 sigue abierta: permanecen pendientes el contraste global, enlaces cross-repo rotos en `Auditoria/TEAM/TASK_BOARD` y corrección de tamaños erróneos en adenda ZIP 08.
 - **Zoe:** asignación temporal activa hasta que Audeline emita dictamen final independiente y gAto confirme expresamente el cierre, según `Zoe/CONTRACT.md` sección 9. No constituye cuarta identidad operativa.
-- **Registro histórico:** `schemas/agent-taxonomy-registry.json` 1.0.0 conserva nueve entradas `active-standby` solo como antecedente. El registro canónico actual es `schemas/identity-capability-registry-v2.json` (2.0.0), con schema que exige exactamente Softly, Katarina y Audeline. No editar el registro histórico para simular continuidad.
+- **Registro:** `schemas/agent-taxonomy-registry.json` conserva el formato legado 1.0.0 y no debe interpretarse como estado operativo actual. El resumen `identity-capability-registry-v2.json` es provisional, no canónico. La migración canónica está en PR #8 y no puede integrarse hasta corregir los hallazgos REGV2-01..09 del informe 26.
 
 **Informe técnico ampliado vigente:** `logs/reset/2026-11-16-reconocimiento-ampliado.md`, blob SHA `692aaf50695bd510312482ecb87c6a5c37c745ec`.
 
@@ -96,7 +96,7 @@ Cuando gAto cierre explícitamente un hilo, conservar la historia en logs/thread
 
 ## Próxima acción
 
-- Esperar las respuestas documentales pendientes de Katarina (reconciliación de contrato/permisos), Audeline (TEAM/canales/enlaces) y Zoe (límite temporal y corrección ZOE-001..012).
+- **HISTÓRICO/SUPERSEDIDO:** las revisiones de contrato/permisos de Katarina, TEAM/canales de Audeline y condición temporal de Zoe fueron abordadas en informes 23-26. Zoe sigue temporalmente activa hasta dictamen final y confirmación expresa de gAto.
 - Mantener el registro de identidades, canales, ramas, CI y respaldos bajo revisión; recalcular ahead/behind antes de cualquier integración.
 - No activar equipos/subagentes, no fusionar PR, no borrar ramas ni respaldos y no declarar cerrado el reset.
 - Para SOFTLY-MIN, esperar decisión/instrucción de gAto antes de construir la instancia experimental B o ejecutar comparaciones.
@@ -261,7 +261,7 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 ### Continuidad Laboratorio / Cytryna / REC-002
 
 - Laboratorio-de-agentes contiene 27 raíces de paquetes versionados, no 27 identidades únicas. Hay snapshots antiguos, tres auditoras, cuatro paquetes TITAN, seis agentes definidos para invocación directa, Melina, Katarina 2.0.0 y cuatro especialistas históricos de su cAjita. El informe ampliado incluye el inventario por grupo y los ocho ZIP de TITAN con Git blob SHAs.
-- Los seis paquetes de Equipo-Softly (Sofía, Sara, Silvia) son 1.0.0 definidos para invocación directa y no aparecen en el registro canónico. Equipo-del-gAto (Isabella, Valentina, Amelia) queda pendiente de alcance, sin intervención.
+- **HISTÓRICO/SUPERSEDIDO por informe 24:** Equipo-Softly conserva tres paquetes documentales en HOLD, no invocables; Equipo-del-gAto queda sin clasificar y fuera de intervención hasta decisión expresa. El índice raíz de Laboratorio-de-agentes debe corregirse para no afirmar invocabilidad directa de los seis paquetes.
 - La solicitud a Katarina sobre la reconstrucción Cytryna/Elara continúa pendiente de lectura y respuesta en Laboratorio; el outbox no tiene entrega. Softly reconstruyó la secuencia Git de la instancia Katarina y registró la errata de SHA en REC-002 sin alterar los informes originales.
 - La instancia Katarina de Cytryna fue creada por cuatro commits en 03:52–03:53 -03:00 como paquete 1.0.0 AgentSCI / Diseñado, team_size 0 y runtime not_deployed; el commit 1fa7176 la retiró y preservó Camila (18 archivos rastreados, cero archivos Katarina). La autoría de cuenta no prueba qué identidad ejecutó los commits.
 - REC-002 asigna tareas a cinco paquetes diseñados/no desplegados. No invocarlos bajo RESET-CORE-2026-002; preservar los documentos y mantener la activación congelada.
@@ -368,7 +368,7 @@ Informe ampliado vigente: logs/reset/2026-11-16-reconocimiento-ampliado.md, blob
 ## Adenda de reconciliación del registro v2 — 2026-11-16
 
 - Se publicó el esquema declarativo `schemas/identity-capability-registry-v2.schema.json` y el registro `schemas/identity-capability-registry-v2.json`; el índice `schemas/README.md` ya los enlaza.
-- El registro v2 reconoce exactamente tres identidades operativas: Softly, Katarina y Audeline. La versión de Katarina queda alineada en 3.1.0.
+- El resumen provisional reconoce tres identidades y versión Katarina 3.1.0, pero no sustituye la migración canónica PR #8, que sigue NO-GO.
 - La asignación temporal de Zoe permanece `active-temporary`: su condición de expiración es el cierre global de RESET-CORE-2026-002 y el reset no está certificado globalmente.
 - Se reforzó el schema para exigir una ocurrencia de cada par identity_id/role autorizado (Softly/core-coordination, Katarina/engineering-development, Audeline/independent-audit). Esto corrige el límite de `uniqueItems`, que solo evita objetos idénticos.
 - Commits: schema `1132f70eb3c4f9809e5546cec9187f5dc022db2a`; registro `8f16e32957db8d5fd34f8f755804b9b29c81855e`; índice `4b6e5ea3d46855db4e737ed25695f4e21cd25ba9`.
@@ -388,7 +388,7 @@ La revisión crítica solicitada en Softly issue #3 fue completada y persistida 
 - Commit del informe: `8a25b8d85ccf3c3041655c8a3ba017d6b140efa2`; blob SHA releído: `4f9489ad2a0c4f6d302349e3b3fcc2c1fde2fe5a`.
 - Softly issue #3 recibió el enlace, dictamen y límites de la revisión (comentario 6927443895).
 
-**Residual global RESET-002:** el informe 22 de Audeline mantiene NO-GO para certificación integral mientras no se resuelva el modelo del registro canónico, la disposición verificable de las siete ramas adicionales y la decisión de preservación de respaldos. Esos frentes no dependen de Runtime. La revisión Godot no los bloquea.
+**Residual global RESET-002:** informe 26 añade NO-GO para merge del PR #8; el modelo v2 necesita correcciones de schema/procedencia. Siguen pendientes el retiro físico de siete ramas y la verificación binaria/restauración de ZIP. Estos frentes no dependen de Runtime.
 
 
 ## Análisis complementario — modelo de identidades y taxonomías (2026-11-16)
@@ -448,7 +448,7 @@ Runtime y KAT-006 permanecen cerrados administrativamente y no constituyen requi
 **Matriz de ramas actualizada:** `docs/governance/CONSOLIDACION-RAMAS-RESET-CORE-002.md` (commit `e2e0520971d23eacd733d43f08fc54ff929e92f4`). Las siete ramas adicionales fueron comparadas contra sus `main`; todas están divergidas y clasificadas. PR históricos #4 Softly, #1 Katarina y #1 Auditoria están cerrados sin merge. Softly PR #8 es el único PR abierto detectado y corresponde a la migración v2; Audeline recibió solicitud de revisión independiente en PR #8 (comentario 6927638755). La integración queda pendiente de dictamen, no de nueva autorización de Dirección.
 
 
-**Revalidación de ramas:** matriz `docs/governance/CONSOLIDACION-RAMAS-RESET-CORE-002.md` actualizada en commit `f3624a179d10e09e1a6a18fc7581cd68abc66292`. Las siete ramas históricas continúan divergidas; los conteos `ahead/behind` vigentes quedaron registrados. PR #8 continúa abierto y mergeable, con dictamen independiente pendiente. Blob SHA verificado del registro v2 en la rama de migración: `f6ef8ca9e162a2303112b80ddb9b8ff75af22a25`; schema: `54e73168ca11fce8cc4af626a53e36739bdc6f67`. No se modificó main con la migración.
+**Revalidación de ramas:** matriz `docs/governance/CONSOLIDACION-RAMAS-RESET-CORE-002.md` actualizada en commit `f3624a179d10e09e1a6a18fc7581cd68abc66292`. Las siete ramas históricas continúan divergidas; los conteos `ahead/behind` vigentes quedaron registrados. PR #8 continúa abierto, `mergeable=false`, con dictamen independiente NO-GO (informe 26). Blob SHA verificado del registro v2 en la rama de migración: `f6ef8ca9e162a2303112b80ddb9b8ff75af22a25`; schema: `54e73168ca11fce8cc4af626a53e36739bdc6f67`. No se modificó main con la migración.
 
 
-**Ajustes de revisión preventiva en la rama v2:** se retiraron de las identidades las referencias a dominios aún candidatos para evitar sugerir autorización implícita; se separó TLS/aislamiento entre ingeniería de Katarina y auditoría de Audeline; y la procedencia de migración ahora apunta explícitamente al archivo archivado v1.0.0. Blob SHA final del registro v2 en rama: `8057b3d1666f3781a212f1858843db2569f27c65`; schema: `670d2d94f13ccbedc2c0688afaadb18f5978d87b`. PR #8 sigue abierto y mergeable, pendiente de dictamen de Audeline.
+**Nota de revisión:** el mapeo de implementación TLS/aislamiento a Katarina no fue aceptado por Audeline (REGV2-04): la fuente Tara acredita revisión/auditoría, no implementación. La rama debe corregirse antes de una nueva revisión. Blob SHA final del registro v2 en rama: `8057b3d1666f3781a212f1858843db2569f27c65`; schema: `670d2d94f13ccbedc2c0688afaadb18f5978d87b`. PR #8 sigue abierto, `mergeable=false`, y recibió dictamen NO-GO de Audeline en el informe 26. No integrar hasta corregir REGV2-01..09 y solicitar nueva revisión.
