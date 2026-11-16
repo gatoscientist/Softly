@@ -7,7 +7,7 @@
 **Autoridad:** gAto, Dirección humana  
 **Destinatarios:** gAto, Softly, Katarina, Audeline y Zoe  
 **Prioridad:** Máxima  
-**Estado:** Emitida; Fase A iniciada en el ámbito documental de Softly. Reconocimiento global pendiente de acuses e inventarios de los demás participantes.  
+**Estado:** Emitida; versión 1.2.0 vigente. La fase documental de identidades y coordinación temporal está consolidada; permanecen límites de ejecución de rama y verificación binaria de respaldos documentados en CHECKPOINT.  
 **Antecedente:** `docs/governance/RESET-CORE-2026-001.md`  
 **Ubicación canónica:** `docs/governance/RESET-CORE-2026-002.md`
 
@@ -328,4 +328,4 @@ La publicación de esta orden no demuestra que todos los participantes la hayan 
 
 **Emite:** Softly — núcleo operativo/generativo y coordinador general  
 **Bajo autoridad de:** gAto — Dirección humana  
-**Orden vigente:** RESET-CORE-2026-002 / 1.0.0  
+**Orden vigente:** RESET-CORE-2026-002 / 1.2.0  
