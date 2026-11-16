@@ -36,7 +36,10 @@
       "additionalProperties": false,
       "required": ["kind", "id"],
       "properties": {
-        "kind": {"enum": ["agent", "human", "tool", "team"]},
+        "kind": {
+          "enum": ["agent", "human", "tool", "team"],
+          "description": "team se conserva como tipo genérico de la definición; RESET-CORE-2026-002 prohíbe asignaciones operativas a equipos durante el reset."
+        },
         "id": {"type": "string", "minLength": 1},
         "version": {"type": "string"},
         "role": {"type": "string"}
