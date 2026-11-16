@@ -1,7 +1,7 @@
 # ORDEN COORDINADA DE SOFTLY — RESET INTEGRAL DEL ECOSISTEMA
 
 **ID:** RESET-CORE-2026-002  
-**Versión:** 1.0.0  
+**Versión:** 1.1.0  
 **Fecha de emisión:** 2026-11-16  
 **Emisor:** Softly, núcleo operativo/generativo y coordinador general del ecosistema  
 **Autoridad:** gAto, Dirección humana  
@@ -100,7 +100,7 @@ Al cierre, se preservan sus informes como evidencia del proceso y se retira su f
 
 ## 4. Alcance y clasificación de activos
 
-El alcance comprende los repositorios, proyectos, espacios, ramas, PR, paquetes de agentes, contratos, permisos, instalaciones, herramientas, canales, registros, handoffs, asignaciones y pendientes que pertenezcan al ecosistema Softly o que hayan sido incorporados a él como dependencias operativas.
+El alcance comprende los repositorios, proyectos, espacios, ramas, PR, paquetes de agentes, contratos, permisos, herramientas, canales, registros, handoffs, asignaciones y pendientes que pertenezcan al ecosistema Softly o que hayan sido incorporados a él como dependencias operativas. Las instalaciones, procesos y artefactos de Runtime quedan expresamente excluidos por la Adenda normativa de no-Runtime incorporada en la sección 12.1.
 
 El inventario comienza por los repositorios conocidos y las referencias documentales disponibles. Se amplía mediante referencias entrantes y salientes verificables. No se presumirá que un índice actual es exhaustivo.
 
@@ -273,9 +273,29 @@ Ante una contradicción material:
 4. Continuar tareas independientes y no controvertidas.
 5. Reanudar la acción suspendida cuando la contradicción esté resuelta por autoridad competente.
 
-Las limitaciones de runtime, herramientas o invocación no bloquean trabajo documental que sí puede ejecutarse. Se declara con precisión qué acción no pudo realizarse, por qué y qué alternativa dentro del alcance queda disponible.
+Las limitaciones de herramientas o invocación no bloquean trabajo documental que sí puede ejecutarse. Se declara con precisión qué acción no pudo realizarse, por qué y qué alternativa documental dentro del alcance queda disponible. No se permite invocar, implementar, probar, restaurar ni proponer Runtime como alternativa.
 
 Ningún agente puede reinterpretar esta orden para conservar una identidad, equipo o responsabilidad retirada. Ningún documento histórico reactiva autoridad por sí solo.
+
+
+### 12.1. Adenda normativa de Dirección — exclusión total de Runtime
+
+**Emisión:** 2026-11-16  
+**Autoridad:** gAto, Dirección humana  
+**Precedencia:** esta adenda modifica y prevalece sobre toda disposición incompatible de RESET-CORE-2026-002 y sus documentos subordinados.
+
+Por instrucción expresa de gAto, todo lo relacionado con Runtime queda fuera de norma y debe retirarse del estado vigente del ecosistema Softly.
+
+1. **Prohibición normativa.** No se diseña, construye, mantiene, instala, invoca, ejecuta, prueba, despliega, restaura ni exige Runtime. La prohibición comprende Runtime Mini, runtime task-centric, motores, servicios, procesos, schedulers, leases, dispatchers, workers, enforcement, mecanismos de activación y equivalentes que dependan de un Runtime.
+2. **Sin dependencia ni criterio de aceptación.** Ninguna identidad, contrato, capacidad, handoff, flujo documental, proyecto o proceso vigente puede depender de Runtime. Su existencia, disponibilidad, ausencia, fallo o falta de pruebas no constituye bloqueo ni criterio de aceptación.
+3. **Cierre administrativo.** Todo proceso, iniciativa, issue, PR, experimento, validación, migración o pendiente cuyo objetivo, condición de aceptación o continuidad requiera Runtime se cierra administrativamente como fuera de norma / no planificado. No se espera implementación, prueba, reparación ni aprobación adicional para ese cierre. Los procesos con alcance independiente continúan solo si pueden separarse íntegramente de Runtime.
+4. **Retiro de artefactos vigentes.** Los archivos, módulos, workflows, instrucciones, skills, schemas, contratos, permisos, configuraciones y referencias dedicados a Runtime se retiran de las ramas normativas activas. Si un artefacto mezcla contenido Runtime y no-Runtime, se elimina o separa únicamente el componente Runtime; no se destruye contenido independiente válido.
+5. **Productos y proyectos.** Esta adenda no cierra automáticamente un repositorio o producto completo. En TITAN, Cytryna u otro proyecto se cierran administrativamente los procesos y componentes que dependan de Runtime; las funciones independientes se clasifican por separado. Ningún producto conserva Runtime como requisito o mecanismo de ejecución dentro del ecosistema Softly.
+6. **Preservación de evidencia.** No se reescribe el historial Git ni se destruyen informes, commits o evidencia necesaria para auditoría. Los artefactos retirados pueden conservarse en historia o archivo explícitamente no operativo, sin enlaces de activación ni autoridad normativa.
+7. **Registro y verificación.** Softly mantiene un inventario de procesos cerrados, artefactos retirados, repositorios afectados, commits y límites de inspección. Katarina ejecuta los retiros técnicos dentro de su casa y competencias. Audeline verifica independientemente que Runtime no permanezca como dependencia, criterio de aceptación ni proceso activo.
+8. **Criterio de cumplimiento.** El reset no puede declarar Runtime pendiente, bloqueado o futuro. El estado correcto es: fuera de norma, retirado de vigencia y procesos dependientes cerrados administrativamente. La ausencia de evidencia sobre un repositorio se declara como no inspeccionado, nunca como eliminado.
+
+Esta adenda no autoriza borrar repositorios completos, ramas compartidas ni productos ajenos al alcance. La eliminación se realiza sobre componentes identificados, con commits verificables y preservación de trazabilidad.
 
 ## 13. Registro documental y trazabilidad
 
