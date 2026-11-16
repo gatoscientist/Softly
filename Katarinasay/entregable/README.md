@@ -19,3 +19,6 @@ gAto
 
 
 - [Revisión técnica de capacidades y migración del registro v2 (2026-11-16)](2026-11-16-KAT-RESET-002-revision-capacidades-registro-v2.md): dictamen GO CON RESERVAS, distribución candidata de capacidades, defectos de schema y correcciones requeridas antes de integrar PR #8.
+
+
+- [Inventario actualizado de ramas y PR RESET-CORE-2026-002 (2026-11-16)](2026-11-16-KAT-RESET-002-inventario-ramas-corte.md): ocho ramas adicionales, PR revisados, divergencias y limitaciones técnicas localizadas.
