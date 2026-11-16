@@ -436,3 +436,8 @@ Discrepancias verificadas:
 - `agents/profiles/audelin.md` es un perfil experimental 0.1.0 / Propuesto, distinto del paquete canónico Audeline 1.0.0; debe clasificarse como perfil histórico o actualizarse sin confundirlo con identidad activa.
 
 La nota del propio registro aclara que `active-standby` no implica proceso vivo, endpoint ni herramientas conectadas. El problema es de coherencia de catálogo y disponibilidad declarada, no evidencia de nueve procesos ejecutándose. Antes de cambiar el schema debe decidirse si el catálogo distingue **identidades operativas** de **capacidades/perfiles profesionales**. No se modificó el registro ni sus schemas; la reconciliación queda pendiente de auditoría independiente y decisión de gAto.
+
+
+## 33. Último corte verificado de ramas antes del commit de checkpoint
+
+Comparación de ramas ejecutada después de las últimas entregas documentales (corte 2026-11-16, 19:10 UTC): Softly `fix/f03-recover-ledger` 5/345; Softly `recovery/AUD-20261116-001` 3/93; Katarina `kat-006-stage3-softly-2026-11-16` 8/31; Auditoria `recovery/AUD-20261116-001` 19/18; propuestas Auditoria 2/24 cada una; Laboratorio proposal 1/176. Los metadatos siguen indicando `protected:false` para main de Softly, Katarina y Auditoria. Este corte precede al commit único que actualiza este informe y CHECKPOINT, por lo que las dos ramas Softly quedarán una revisión adicional detrás al publicarse. Recalcular inmediatamente antes de cualquier integración. No se fusionó ni borró ninguna rama.
