@@ -17,7 +17,7 @@ Por orden expresa de gAto y conforme a RESET-CORE-2026-002, se ratifica que todo
 - Runtime: cerrado administrativamente en todos sus documentos, procesos, dependencias y esperas. No constituye criterio de aceptación ni requiere inventario técnico, reparación o validación para cerrar RESET-002.
 - Ramas: siete adicionales a `main` siguen presentes. Sus HEAD SHA exactos, base SHA, ahead/behind y archivos exclusivos quedaron registrados en el informe 23 de Audeline. Softly/recovery está supersedida por README actuales de main; F-03, KAT-006 y propuestas históricas no se integran. No se fusionó ni borró ninguna rama.
 - Registro: migración canónica aún no aprobada. El PR #8 propone v2.0.0 y recibió dictamen independiente NO-GO (informe 26) por errores de schema y rutas de paquetes. `schemas/identity-capability-registry-v2.json` es solo resumen provisional; el archivo legado 1.0.0 sigue en la ruta canónica hasta corregir y aprobar la migración.
-- Respaldos: diez ZIP con metadatos cotejados; integridad binaria y restaurabilidad no verificadas.
+- Respaldos: diez ZIP con metadatos cotejados. Cuatro ZIP pequeños verificados binariamente (SHA-256 y CRC32/tamaño por entrada correctos); seis ZIP de 1,4–1,9 MB no pudieron recuperarse por límite de contenido del conector. No se afirma restauración completa.
 - Contratos: Katarina 3.1.0 verificada como única identidad de ingeniería; AGENTSTEAM/mancos son históricos. Auditoria/main ahora declara expresamente a Audeline como única identidad operativa de auditoría y a Aurora/Autumn como historia (informe 25).
 - Laboratorio-de-agentes: informe 24 detecta que el índice de equipos declara seis paquetes invocables pese al HOLD del Equipo-Softly y la exclusión provisional del Equipo-del-gAto. Corrección editorial mínima entregada a Softly; no se modificaron ni invocaron paquetes.
 - Zoe: asignación `active-temporary` hasta dictamen final independiente de Audeline y confirmación expresa de gAto; no es cuarta identidad.
@@ -390,7 +390,7 @@ La revisión crítica solicitada en Softly issue #3 fue completada y persistida 
 - Commit del informe: `8a25b8d85ccf3c3041655c8a3ba017d6b140efa2`; blob SHA releído: `4f9489ad2a0c4f6d302349e3b3fcc2c1fde2fe5a`.
 - Softly issue #3 recibió el enlace, dictamen y límites de la revisión (comentario 6927443895).
 
-**Residual global RESET-002:** informe 26 añade NO-GO para merge del PR #8; el modelo v2 necesita correcciones de schema/procedencia. Siguen pendientes el retiro físico de siete ramas y la verificación binaria/restauración de ZIP. Estos frentes no dependen de Runtime.
+**Residual global RESET-002:** informe 26 añade NO-GO para merge del PR #8; el modelo v2 necesita correcciones de schema/procedencia. Siguen pendientes el retiro físico de siete ramas y la verificación binaria/restauración de seis ZIP grandes. Estos frentes no dependen de Runtime.
 
 
 ## Análisis complementario — modelo de identidades y taxonomías (2026-11-16)
