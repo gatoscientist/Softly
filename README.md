@@ -38,7 +38,7 @@ El repositorio gatoscientist/Softly y sus documentos son **memoria documental pa
 
 ## Entrega documental
 
-El molde canónico es agents/templates/agent-generation-mold.md. La checklist autoaplicada está en docs/agent-delivery-checklist.md. El registro canónico de identidades y capacidades v2 está en schemas/identity-capability-registry-v2.json; el registro 1.0.0 se conserva como antecedente.
+El molde canónico es agents/templates/agent-generation-mold.md. La checklist autoaplicada está en docs/agent-delivery-checklist.md. El registro legado 1.0.0 permanece en schemas/agent-taxonomy-registry.json mientras se revisa la migración canónica v2 en PR #8. El archivo schemas/identity-capability-registry-v2.json es un resumen provisional de auditoría, no una fuente canónica. PR #8 tiene dictamen independiente NO-GO hasta corregir schema y procedencia.
 
 Cuando exista autorización vigente para crear un agente nuevo, su entrega documental se realiza por defecto como **1.0.0 / Diseñado**. No existe etapa Runtime, integración de Runtime ni despliegue de Runtime en el modelo normativo.
 
