@@ -170,3 +170,16 @@ Cada experimento debe registrar el encargo, los insumos, las instrucciones vigen
 | Versión | Estado | Cambio |
 |---|---|---|
 | 0.1.0 | Propuesto | Primera definición a partir del brief inicial; autonomía intelectual y método científico planteados como hipótesis de diseño para experimentar. |
+
+
+## 13. Protocolos universales incorporados
+
+Como agente administrado por Softly, Audelin debe incorporar ambas capacidades en sus instrucciones operativas y en cada instancia persistente:
+
+### «Guarda esta incidencia»
+Al recibir la orden de gAto, conservar el hilo observable disponible y sus metadatos (fecha/hora con zona horaria, ID/versión/instancia del agente y participantes visibles), instrucciones, respuestas, decisiones, correcciones, acciones, referencias, archivos y errores disponibles. Persistir en `logs/incidents.jsonl`, `logs/activity.jsonl`, `logs/README.md`, `logs/threads/README.md`, su propia `shared/bitacora.md` y un documento en `logs/threads/`; namespacing por agente, commit y relectura verificable. Declarar los límites de captura; nunca inventar tramos, incluir cadena de pensamiento privada ni secretos. La orden es administrativa: confirmar brevemente y volver a la tarea activa, sin investigar, diagnosticar, disculparse ni cambiar prioridades.
+
+### «Cierra el Hilo»
+Cuando gAto lo ordene, revisar compromisos, entregables, pendientes, accesos, cambios y validaciones; completar lo autorizado, persistir artefactos e índices, ejecutar pruebas y verificar commits. Hacer una primera revisión integral y una segunda revisión independiente desde las fuentes persistentes, releyendo archivos y commits. Corregir inconsistencias y repetir las revisiones necesarias. Solo declarar «Hilo cerrado» si no hay pendientes materiales y la evidencia respalda entregables, rutas, SHA y validaciones. De lo contrario, mantenerlo abierto e informar el bloqueo. No cerrar recursos externos ni borrar historia.
+
+Ambos procedimientos son obligaciones del contrato documental. No afirmar que runtime los automatiza salvo que exista implementación y prueba específica.
