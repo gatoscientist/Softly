@@ -402,3 +402,20 @@ Comparación repetida después de los commits de canalización y continuidad (co
 | Laboratorio `proposal/auditoria-reforma-normativa-2026-11-15` | 1 | 176 |
 
 Los conteos varían con cada commit nuevo en main. Este es el último corte medido antes de esta actualización documental; deben recalcularse justo antes de cualquier integración o retiro. No se fusionó ni borró ninguna rama.
+
+
+## 31. Verificación puntual de rutas de ejecución y permisos
+
+### TITAN
+
+La lectura directa de `Titan.ps1` (blob `4b202c3db1cde50a87cc213e56df0a023c51c6cb`) confirma `Invoke-Expression` en la ruta de ejecución de Letanías. La ejecución está rodeada de controles: lease de 30 segundos, hash SHA-256 del comando, mutex y consumo único. Sin embargo, `src/RelojPrimus.ps1` asigna `GrantedBy='PRINCEPS'` automáticamente al crear el lease; el botón de aprobación no vincula esa identidad a una autenticación criptográfica del usuario. Por tanto, `GrantedBy` no constituye prueba de quién aprobó. El contrato `tripulantes/PrimusPrivado_Contrato.md` declara que PrimusPrivado es el mismo tripulante/canal privado, no una identidad adicional.
+
+### Cytryna
+
+La inspección directa confirma:
+- `tools/base.py` (blob `46f6c4a19621aa86486829ea25200bdcc6e73392`): `ToolRegistry.run()` obtiene la herramienta, valida argumentos y llama `tool.run()`. No comprueba `tool.permissions`; esos permisos se exponen en `spec()` pero no se aplican como autorización central.
+- `Cytryna/coordinator.py` (blob `2aec1c84eab4201d497114ec5b1733e351c86102`): el límite `max_tool_steps` controla iteraciones del ciclo externo, pero cada iteración ejecuta todas las llamadas extraídas; no hay límite individual de llamadas por turno.
+- `Cytryna/app.py` (blob `a271653ba022af33a4faff23788dd0ed2dff4f35`): la fachada usada por GUI llama al coordinator con `allow_tool_execution=False`. La CLI llama directamente al coordinator con su valor por defecto `True`; por eso la ruta GUI y CLI tienen perfiles de riesgo distintos.
+- `AGENTGUI/workspace/test_gui_tkinter.py` (blob `17d9be633e22925d4b9ac2a88b1292f86307989a`) contiene cinco pruebas GUI, pero `.github/workflows/tests.yml` (blob `5be63a88027f4218d8813d0c39e8d4be13c4b969`) ejecuta `unittest discover -s tests`, por lo que no descubre esa carpeta. La GUI está en main y deshabilita herramientas, pero sus pruebas no están en la matriz CI.
+
+Cytryna permanece fuera del alcance operativo provisional; esta verificación es solo de lectura y no autoriza cambios ni ejecución de pruebas.
