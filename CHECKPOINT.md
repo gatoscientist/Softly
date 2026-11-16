@@ -402,3 +402,41 @@ Se contrastaron los diagramas de referencia de tipos/taxonomías con `schemas/ag
 
 
 **Actualización de estado:** Softly issue #3 fue cerrado como `completed` después de persistir la revisión crítica y registrar el entregable en el cuerpo del issue. La fase experimental no queda aprobada ni iniciada; requerirá mandato separado de Dirección.
+
+
+## Dictamen de Dirección — destrabe RESET-CORE-2026-002 (2026-11-16)
+
+Se recibió y ejecuta el dictamen de Dirección. Las tareas delegadas continúan sin esperar nuevas deliberaciones sobre asuntos resueltos.
+
+### Migración del registro v2
+
+- Rama de trabajo: `migration/registry-v2-reset-core-002`.
+- PR #8 abierto: https://github.com/gatoscientist/Softly/pull/8.
+- El registro canónico en la rama de migración es v2.0.0 y limita identidades operativas a Softly, Katarina y Audeline.
+- Versiones canónicas contrastadas: Softly 1.0.0; Katarina 3.1.0 (core/CONTRACT.md); Audeline 1.0.0 (README.md y Audeline/AGENT.md).
+- El JSON y schema 1.0.0 se copiaron sin alteración a `schemas/archive/`; blob SHA fuente del JSON: `ceca667cfb912a0f7c43b32ee0eead86030b4b5f`.
+- El modelo v2 separa identidades, dominios, capacidades, paquetes y asignaciones temporales. Paquetes candidate-unassigned y fuentes históricas no tienen autoridad; las capacidades propuestas no confieren permisos ni herencia.
+- Capacidades de Tiffany, Tara y Tabata tienen destinos candidatos para revisión; Thea/Melina quedan candidate-unassigned; Aurora/Autumn solo fuentes históricas.
+- Coordinación sistémica queda como capacidad/dominio candidato dentro de Softly, sin cuarta identidad ni decisión de cobertura presupuesta.
+- Zoe se registra solo como asignación temporal con término condicionado al dictamen final de Audeline y confirmación expresa de gAto.
+- Handoffs emitidos: `Audelinesay/inbox/ENCARGO-AUDITORIA-REGISTRO-V2-RESET-CORE-002.md` (commit `8292cb9b3cce270f201f7371415d0a5a4bbb081d`) y `Katarinasay/inbox/HANDOFF-REVISION-CAPACIDADES-REGISTRO-V2-RESET-CORE-002.md` (commit `3e4d679c1464b4c4e722682d66078590fb5c84ad`).
+- Estado: migración preparada en PR; **no fusionada**, pendiente de dictamen independiente de Audeline y contraste técnico de Katarina.
+
+### Consolidación de ramas, PR y protección
+
+- PR #4 Softly (recovery Audelinesay): cerrado sin merge; rama preservada.
+- PR #1 Katarina (KAT-006): cerrado sin merge; rama preservada. KAT-006 permanece cerrado administrativamente.
+- PR #1 Auditoria (recovery equipo auditor): cerrado sin merge; rama preservada.
+- PR #8 es el único PR abierto detectado en Softly; su revisión es el control de migración, no un PR histórico que deba fusionarse por defecto.
+- Persisten ramas adicionales clasificadas en Softly, Katarina, Auditoria y Laboratorio-de-agentes. La eliminación de refs no está disponible en la conexión actual. No se borran ni se ocultan ramas; se preservan hasta consolidación y salvaguarda de commits exclusivos.
+- La operación disponible no expone lectura/escritura de branch protection/rulesets. Estado de protección de main debe registrarse como no verificable/no modificable desde esta conexión; no afirmar que se activó protección.
+- La limitación de ramas no detiene revisión del registro ni otras tareas independientes.
+
+### Respaldos
+
+- La limitación de esta conexión para descargar e inspeccionar ZIP binarios permanece localizada. Los metadatos Git no se presentan como SHA-256 binario ni como prueba de restaurabilidad.
+- No se afirma verificación binaria ni restauración. Las tareas de inventario y cotejo documental continúan.
+
+### Estado general
+
+Runtime y KAT-006 permanecen cerrados administrativamente y no constituyen requisitos. RESET-CORE-2026-002 no está certificado globalmente hasta dictamen final de Audeline y resolución verificable de los criterios de rama y respaldo. Las limitaciones técnicas se mantienen localizadas y no suspenden tareas independientes.
