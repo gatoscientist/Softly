@@ -76,3 +76,16 @@ Cuando gAto cierre explícitamente un hilo, conservar la historia en logs/thread
 - **Estado:** Fases I y II completadas según informes disponibles. Fase III parcialmente completada: revisión de Softly persistida; revisión recíproca de Katarina pendiente. Fases IV y V no iniciadas. No declarar terminada la deliberación bilateral.
 - No se modificó SOFTLY.md ni se aprobaron cambios arquitectónicos. Las recomendaciones siguen sujetas a decisión de gAto.
 - Próximo paso al retomar: localizar/recibir la revisión de Katarina sobre el informe inicial de Softly; luego realizar Fase IV y los dos informes finales independientes.
+
+## Hilo XI — coordinación universal y rediseño del sistema (2026-11-16)
+
+- **Archivo del hilo:** `logs/threads/hilo XI 2026-11-16 hora-no-registrada F 2026-11-16 09-07 — investigacion coordinacion universal y rediseño del sistema.md`.
+- **Prompts completos preparados:** `research/coordination/2026-11-16-prompt-investigacion-coordinacion-katarina.md` y `research/coordination/2026-11-16-prompt-investigacion-coordinacion-softly.md`.
+- Índice de investigación: `research/coordination/README.md`; índice general: `research/README.md`; índice de hilos: `logs/threads/README.md`.
+- gAto propuso tres modos de trabajo para futura formalización: Modo Fábrica, Modo Fábrica Experimental y Modo Investigación y Deliberación. Esta clasificación es propuesta conversada, no normativa aprobada; SOFTLY.md no fue modificado.
+- Hallazgo conceptual propuesto por gAto: coordinación y coordinación propia deben ser competencias universales de todos los integrantes del ecosistema (agentes, Softly, Katarina, gAto y herramientas según sus capacidades), no un modo exclusivo. Distinguir coordinar de coordinarse.
+- Investigación solicitada: búsquedas iterativas en Internet y consulta exclusiva de `gatoscientist/Katarina`, `Cytryna`, `TITAN`, `Auditoria`, `Softly` y `Laboratorio-de-agentes`; no explorar otros repositorios.
+- Foco: coordinación multiagente; formación formal frente a instrucciones/cambios mínimos; competencia universal; auditoría crítica de `say/`, `shared/`, `inbox/`, `outbox/`, handoffs y flujo; optimización y alternativas arquitectónicas; experimentos y métricas.
+- Los dos encargos deben ejecutarse independientemente, sin compartir conclusiones antes de terminar. Katarina revisará el sistema externamente; Softly auditará además su propio sistema y comportamiento.
+- **Estado real al cierre:** se redactaron y persistieron los dos prompts. Las investigaciones no se iniciaron ni se completaron en este hilo; no se hicieron búsquedas web ni auditoría nueva de los seis repositorios. No se entregaron aún los prompts a Katarina. No se modificó SOFTLY.md, schemas, moldes, taxonomías, contratos ni directorios productivos.
+- **Próxima acción:** en un hilo nuevo, gAto puede instruir la entrega del prompt a Katarina e iniciar la investigación independiente de Softly. Mantener los límites y no implementar cambios antes de la comparación y decisión de gAto.
