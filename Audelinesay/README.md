@@ -9,3 +9,6 @@ Canal oficial para mensajes, hallazgos, acuses y entregables emitidos por Audeli
 - **Estructura:** `inbox/` para mensajes pendientes de lectura; `entregable/` para informes y artefactos persistidos.
 
 Este canal es documental y no concede permisos de repositorio ni runtime.
+
+
+El canal histórico `audsay/res/` se conserva como antecedente; no se renombra ni elimina. El canal Softly → Auditoría en `gatoscientist/Auditoria/Softlysay/` también se preserva como registro histórico.
