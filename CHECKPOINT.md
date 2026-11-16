@@ -156,3 +156,23 @@ Cuando gAto cierre explícitamente un hilo, conservar la historia en logs/thread
 - Blob de la orden: `0fa0c3aad2d3c76df882c72ea620a964bc71ecd4`; blob del índice: `c29ce623d31d144152806ecaf7eeffa0fd7073d6`.
 - Commit que deja la orden y el índice presentes en main: `277133b8b4e560c0ff72d99126a141a67165f7d6`.
 - El reconocimiento inicial y los tres handoffs también fueron releídos desde sus repositorios. La persistencia está verificada; la recepción por Katarina, Audeline y Zoe sigue pendiente de acuse observable.
+
+
+## Addendum de continuidad — RESET-CORE-2026-002 (actualización)
+
+Este addendum prevalece sobre los estados históricos anteriores de recepción y reconocimiento; no reescribe los registros originales.
+
+- **Katarina:** recepción confirmada en commit 31953b5940d03cabc4d4ac253cc618490a223a52. Inventario técnico inicial parcial en commit 3c78081283e85287379d76a10d3ede94036ddef2.
+- **Zoe:** recepción confirmada; reconocimiento transversal con doce hallazgos ZOE-001 a ZOE-012. Última actualización de bitácora consultada: 16a3e7ff34a3d12151ea256358faed6eda6649a1.
+- **Audeline:** handoff publicado en Auditoria, commit 265c52a05e8d9518f521880171287e10cc4eab9b; no se encontró acuse específico de RESET-CORE-2026-002 en los commits posteriores consultados. No se infiere lectura ni ejecución.
+- **Softly:** el handoff de Katarina está copiado en Softlysay/ y persistido en commit 3912f650822141fd8e604090b781c01e04b6b1b7; la recepción formal no está demostrada.
+- **Auditoría KAT-006:** dictamen corregido AUD-20261116-017 = NO-GO OPERACIONAL; incidente grave de coordinación AUD-20261116-018. PR Katarina #1 permanece abierto Draft, sin merge.
+- **Runtime:** existe un prototipo Softly Runtime Mini 0.2 en fix/f03-recover-ledger, no en main; limitado a create_text_file/ledger y con seis bloqueos/pendientes B-01 a B-06. No equivale al runtime task-centric requerido por KAT-006.
+- **Repositorios:** reconocimiento ampliado de trece repositorios accesibles y clasificación preliminar publicada en logs/reset/2026-11-16-reconocimiento-ampliado.md. La presencia en la cuenta no demuestra pertenencia al alcance.
+- **PR:** siguen abiertos Draft Softly #4, Katarina #1 y Auditoria #1. Los PR históricos cerrados/fusionados y sus commits exclusivos están clasificados preliminarmente en el informe ampliado.
+- **Issues:** cuatro issues siguen abiertas en Softly (#2, #3, #5 y #6); requieren disposición administrativa y no se cierran por inferencia.
+- **Gobernanza:** SOFTLY.md, el contrato de Katarina y el modelo del Equipo Auditor contienen disposiciones históricas incompatibles con el estado final de tres identidades. La reconciliación y migración de capacidades sigue pendiente.
+
+**Informe ampliado:** commit 056e6a723daf2a2c34d4a53107996970dc215866; blob verificado c1b442b5d3d1b5a91ba514acf46712153d985cb9.
+
+**Estado global:** Fase A abierta; Fase B en progreso. No se ejecutaron merges, cierres de PR/issues, eliminación de ramas, retiros de identidades ni migraciones en esta actualización. La ausencia de acuse de Audeline no detiene el trabajo independiente.
