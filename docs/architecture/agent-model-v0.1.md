@@ -169,3 +169,12 @@ Probar el modelo con tres briefs contrastantes:
 3. Un brief deliberadamente incompleto o conflictivo para comprobar validación, preguntas y límites.
 
 La prueba debe revelar si el modelo permite reutilizar definiciones sin mezclar identidades, memoria o permisos. Esta versión es una hipótesis revisable; no es una implementación.
+
+
+## 13. Protocolos transversales de sesión y persistencia
+
+Toda definición portable debe incorporar «Cierra el Hilo» en sus instrucciones, contratos y checklist de entrega: recuperar compromisos; completar/persistir; verificar commits y pruebas; realizar una primera revisión integral; efectuar una segunda revisión independiente desde las fuentes persistentes; corregir y repetir revisiones ante discrepancias; cerrar solo con evidencia y sin pendientes materiales. La capacidad aplica a Softly y a todos los agentes.
+
+Toda definición de agente creada o administrada por Softly, excepto Softly misma, incorpora además «Guarda esta incidencia»: captura fiel del hilo observable y metadatos disponibles; logs JSONL, hilo, bitácora e índices namespaced; commit y relectura; confirmación breve y retorno a la tarea anterior. El registro no diagnostica ni resuelve la incidencia. No se inventa contexto ausente ni se conservan secretos/cadena de pensamiento privada.
+
+Estas capacidades son contratos y procedimientos documentales. No equivalen a enforcement o automatización de runtime; el perfil debe declarar herramientas y permisos efectivos por separado.
