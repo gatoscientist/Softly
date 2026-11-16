@@ -257,3 +257,11 @@ La reparación dejó instances/katarina/ con cero archivos y preservó Camila: e
 **Errata verificada:** REC-002-revision-independiente.md y el informe 06 de TITAN citan bf4b1c923e242f666b9c2c6de4e6b67a2ddf9bc4 como SHA de un commit de la secuencia. GitHub devuelve “No commit found for SHA” para ese valor. El SHA correcto del contrato AGENT.md es bf4b1c923e20cc7e9f7806be715b87da2f1b554e. No se alteraron los informes originales; la corrección queda registrada aquí para que sus responsables la incorporen mediante errata.
 
 El handoff REC-002 de TITAN asigna tareas a Dante, Mira, Sofía, Nox y Elara y declara que todos están Diseñados, con runtime not_deployed y canales documentados no conectados. El propio informe 06 confirma que ninguno fue invocado y que los análisis previos los redactó Softly. Esa activación de cinco identidades no debe ejecutarse bajo RESET-CORE-2026-002. Se conserva la reparación documental y la solicitud de relato a Katarina; la revisión técnica adicional debe ser realizada por las identidades autorizadas, sin reactivar el equipo subordinado.
+
+
+## 19. Medidas de contención documental ejecutadas
+
+- Se añadió un override de gobernanza al inicio de SOFTLY.md (commit b2e7656bd269c7bf3edad85f92e142324e8ae60f) y una nota equivalente al README.md (commit 04bd830d6e28ef88f54c3f5ac763f4c29da13528). Ambos declaran a Softly, Katarina y Audeline como únicas identidades operativas y congelan la activación de identidades, subagentes, equipos e instancias adicionales; Zoe queda como supervisora temporal.
+- Se publicó en TITAN un HOLD operacional para REC-002 y la Dirección de Recuperación de Cytryna, commit 9f688906d725ee4851ae60908148ac542b68bf40. Conserva los cinco paquetes y la evidencia, pero prohíbe su invocación/activación mientras rija RESET-CORE-2026-002.
+- Se actualizó el checkpoint para registrar los hallazgos y corregir estados históricos. El checkpoint mantiene el informe ampliado como referencia y no declara finalizadas las Fases A/B.
+- No se fusionó ni cerró ningún PR; no se cerraron issues; no se borraron ramas, paquetes, instancias ni archivos ZIP; no se ejecutaron pruebas ni despliegues.
