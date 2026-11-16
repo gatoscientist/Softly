@@ -32,8 +32,8 @@ Consultar bajo demanda cuando un antecedente sea necesario. El checkpoint vigent
 - [Hilo del 16-11-2026 — arquitectura colaborativa y continuidad hacia Softly](hilo%20IV%202026-11-16%20hora-no-registrada%20F%20hora-no-registrada%20%E2%80%94%20arquitectura%20colaborativa%20y%20continuidad%20hacia%20Softly.md)
 - [Hilo del 16-11-2026 — responsabilidad de mejora continua y cierre](hilo%20V%202026-11-16%20hora-no-registrada%20F%20hora-no-registrada%20%E2%80%94%20responsabilidad%20de%20mejora%20continua%20y%20cierre.md)
 - [Hilo VI del 16-11-2026 — continuidad y activación de TITAN y CYTRYNA](hilo%20VI%202026-11-16%20hora-no-registrada%20F%20hora-no-registrada%20%E2%80%94%20continuidad%20activaci%C3%B3n%20TITAN%20y%20CYTRYNA.md)
-
 - [Hilo VII del 16-11-2026, hora inicial no registrada–06:06 — investigación SOFTLY-MIN y cierre documental de Katarina](hilo%20VII%202026-11-16%20hora-no-registrada%20F%202026-11-16%2006-06%20%E2%80%94%20investigaci%C3%B3n%20SOFTLY-MIN%20y%20cierre%20Katarina.md)
+- [Hilo VIII del 16-11-2026, hora inicial no registrada–06:44 — relectura de mandatos y realineación de Katarina 2.0.0](hilo%20VIII%202026-11-16%20hora-no-registrada%20F%202026-11-16%2006-44%20%E2%80%94%20relectura%20de%20mandatos%20y%20realineaci%C3%B3n%20Katarina%202.0.0.md)
 
 ## Capacidades universales y criterio de cierre
 
