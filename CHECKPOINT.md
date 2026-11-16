@@ -219,7 +219,7 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 - REC-002 asigna tareas a cinco paquetes diseñados/no desplegados. No invocarlos bajo RESET-CORE-2026-002; preservar los documentos y mantener la activación congelada.
 
 
-- **Informe ampliado vigente:** logs/reset/2026-11-16-reconocimiento-ampliado.md; blob SHA verificado b09dc0d78049e9107b4d96948edf7bc5b11bbf8a.
+- **Informe ampliado vigente:** logs/reset/2026-11-16-reconocimiento-ampliado.md; blob SHA verificado cce7826be33475dd5602bc970e6cdbb218ba1a08.
 
 
 ### Contención documental aplicada
@@ -228,3 +228,10 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 - TITAN recibió HOLD operacional para REC-002 y su equipo de cinco paquetes diseñados, commit 9f688906d725ee4851ae60908148ac542b68bf40. Los paquetes se preservan; no se invocan ni activan.
 - No se fusionaron PR, no se cerraron issues, no se borraron ramas ni paquetes, y no se ejecutaron pruebas o despliegues.
 - Audeline aún no tiene acuse específico de RESET-CORE-2026-002; el trabajo independiente continúa sin esperar esa recepción.
+
+
+### Handoffs ampliados y continuidad
+
+- Se amplió el handoff de Audeline en Auditoria/Softlysay/res, con evidencia de trece repositorios, KAT-006, Runtime Mini, registro de identidades, TITAN, Cytryna y límites de auditoría. Addendum commit 16397b05e8669f328fd36eee8be9dae29e851064; indexado en commit 53d1f26fbc76149cbb0b9c70022a0baa1cdbb824. Sin acuse.
+- Se envió a Katarina un addendum con la secuencia Git de su instancia documental en Cytryna, la errata de SHA y solicitud de contraste. Commit 1ffe733526182575f6046e7854b624ae25347f29; indexado en Softlysay/README y bitácora, commits 18de1c665faab24ea8da31e41d625af3a0a0616e y a42e0202121d4d75a53ddd42b68f089969cac627. El acuse RESET original está confirmado; la explicación de Cytryna sigue pendiente.
+- Informe ampliado vigente: logs/reset/2026-11-16-reconocimiento-ampliado.md, blob SHA cce7826be33475dd5602bc970e6cdbb218ba1a08.
