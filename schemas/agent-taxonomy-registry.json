@@ -53,13 +53,6 @@
       "description": "Gobierno documental, priorización, coordinación y continuidad transversal."
     },
     {
-      "domain_id": "systems-coordination",
-      "name": "Coordinación sistémica",
-      "parent_domain": "core-governance",
-      "status": "candidate",
-      "description": "Observación de coherencia transversal, dependencias, efectos entre repositorios y continuidad; cobertura exacta pendiente de reconciliar con contrato de orquestación."
-    },
-    {
       "domain_id": "software-engineering",
       "name": "Desarrollo e ingeniería de software",
       "parent_domain": null,
@@ -155,10 +148,8 @@
       "source_evidence": [
         "Registro histórico 1.0.0: AgentDEV Tiffany; competencias declaradas WPF, GUI, integración y PowerShell."
       ],
-      "status": "proposed-for-review",
-      "proposed_identity_ids": [
-        "katarina"
-      ],
+      "status": "candidate-unassigned",
+      "proposed_identity_ids": [],
       "authorization": "none-until-explicit-contract-mapping-and-independent-review",
       "inheritance": "none"
     },
@@ -172,10 +163,8 @@
       "source_evidence": [
         "Registro histórico 1.0.0: competencia PowerShell avanzado declarada para Tiffany."
       ],
-      "status": "proposed-for-review",
-      "proposed_identity_ids": [
-        "katarina"
-      ],
+      "status": "candidate-unassigned",
+      "proposed_identity_ids": [],
       "authorization": "none-until-explicit-contract-mapping-and-independent-review",
       "inheritance": "none"
     },
@@ -189,27 +178,8 @@
       "source_evidence": [
         "Registro histórico 1.0.0: competencia auditoría PowerShell/AST declarada para Tara."
       ],
-      "status": "proposed-for-review",
-      "proposed_identity_ids": [
-        "audeline"
-      ],
-      "authorization": "none-until-explicit-contract-mapping-and-independent-review",
-      "inheritance": "none"
-    },
-    {
-      "capability_id": "cap-security-tls-isolation-engineering",
-      "name": "Implementación y revisión técnica de TLS y aislamiento",
-      "domain_id": "security-engineering",
-      "source_package_ids": [
-        "pkg-tara"
-      ],
-      "source_evidence": [
-        "Registro histórico 1.0.0: competencias TLS y aislamiento declaradas para Tara; se propone su revisión técnica bajo ingeniería."
-      ],
-      "status": "proposed-for-review",
-      "proposed_identity_ids": [
-        "katarina"
-      ],
+      "status": "candidate-unassigned",
+      "proposed_identity_ids": [],
       "authorization": "none-until-explicit-contract-mapping-and-independent-review",
       "inheritance": "none"
     },
@@ -223,10 +193,8 @@
       "source_evidence": [
         "Registro histórico 1.0.0: competencias TLS y aislamiento declaradas para Tara; se propone su revisión independiente bajo auditoría."
       ],
-      "status": "proposed-for-review",
-      "proposed_identity_ids": [
-        "audeline"
-      ],
+      "status": "candidate-unassigned",
+      "proposed_identity_ids": [],
       "authorization": "none-until-explicit-contract-mapping-and-independent-review",
       "inheritance": "none"
     },
@@ -240,10 +208,8 @@
       "source_evidence": [
         "Registro histórico 1.0.0: competencia integridad de leases declarada para Tara."
       ],
-      "status": "proposed-for-review",
-      "proposed_identity_ids": [
-        "audeline"
-      ],
+      "status": "candidate-unassigned",
+      "proposed_identity_ids": [],
       "authorization": "none-until-explicit-contract-mapping-and-independent-review",
       "inheritance": "none"
     },
@@ -257,29 +223,23 @@
       "source_evidence": [
         "Registro histórico 1.0.0: especialidades grafos, flujos de información, relojes y turnos declaradas para Tabata."
       ],
-      "status": "proposed-for-review",
-      "proposed_identity_ids": [
-        "softly",
-        "audeline"
-      ],
+      "status": "candidate-unassigned",
+      "proposed_identity_ids": [],
       "authorization": "none-until-explicit-contract-mapping-and-independent-review",
       "inheritance": "none"
     },
     {
       "capability_id": "cap-clock-turn-systems",
       "name": "Modelado de relojes, turnos y secuenciación",
-      "domain_id": "systems-coordination",
+      "domain_id": "core-governance",
       "source_package_ids": [
         "pkg-tabata"
       ],
       "source_evidence": [
         "Registro histórico 1.0.0: especialidades relojes y turnos; PowerShell transversal."
       ],
-      "status": "proposed-for-review",
-      "proposed_identity_ids": [
-        "softly",
-        "katarina"
-      ],
+      "status": "candidate-unassigned",
+      "proposed_identity_ids": [],
       "authorization": "none-until-explicit-contract-mapping-and-independent-review",
       "inheritance": "none"
     },
@@ -296,41 +256,6 @@
       ],
       "status": "candidate-unassigned",
       "proposed_identity_ids": [],
-      "authorization": "none-until-explicit-contract-mapping-and-independent-review",
-      "inheritance": "none"
-    },
-    {
-      "capability_id": "cap-audit-scope-integration",
-      "name": "Integración de evidencia y control de alcance auditor",
-      "domain_id": "independent-audit",
-      "source_package_ids": [
-        "pkg-aurora",
-        "pkg-autumn"
-      ],
-      "source_evidence": [
-        "Paquetes históricos Aurora/Autumn; funciones históricas de coordinación e integración. No se presume competencia validada ni autoridad vigente."
-      ],
-      "status": "proposed-for-review",
-      "proposed_identity_ids": [
-        "audeline"
-      ],
-      "authorization": "none-until-explicit-contract-mapping-and-independent-review",
-      "inheritance": "none"
-    },
-    {
-      "capability_id": "cap-systems-coordination",
-      "name": "Coordinación sistémica transversal",
-      "domain_id": "systems-coordination",
-      "source_package_ids": [
-        "pkg-tabata"
-      ],
-      "source_evidence": [
-        "Pregunta abierta de Katarina sobre cobertura sistémica de la orquestación; fuente histórica de capacidades de sistemas de Tabata."
-      ],
-      "status": "proposed-for-review",
-      "proposed_identity_ids": [
-        "softly"
-      ],
       "authorization": "none-until-explicit-contract-mapping-and-independent-review",
       "inheritance": "none"
     }
