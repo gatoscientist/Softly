@@ -1,0 +1,217 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/gatoscientist/Softly/blob/main/schemas/identity-capability-registry-v2.schema.json",
+  "title": "Softly Identity and Capability Registry v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "registry_version",
+    "governing_order",
+    "operational_identity_count",
+    "operational_identities",
+    "temporary_assignments",
+    "capability_packages",
+    "inheritance_default",
+    "notes"
+  ],
+  "properties": {
+    "registry_version": {
+      "const": "2.0.0"
+    },
+    "governing_order": {
+      "const": "RESET-CORE-2026-002"
+    },
+    "operational_identity_count": {
+      "const": 3
+    },
+    "inheritance_default": {
+      "const": "none"
+    },
+    "operational_identities": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/identity"
+      }
+    },
+    "temporary_assignments": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/temporaryAssignment"
+      }
+    },
+    "capability_packages": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/package"
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "$defs": {
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "identity_id",
+        "role",
+        "version",
+        "status",
+        "authority_source",
+        "professional_domain",
+        "competencies",
+        "inheritance",
+        "evidence"
+      ],
+      "properties": {
+        "identity_id": {
+          "enum": [
+            "softly",
+            "katarina",
+            "audeline"
+          ]
+        },
+        "role": {
+          "enum": [
+            "core-coordination",
+            "engineering-development",
+            "independent-audit"
+          ]
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "status": {
+          "const": "operational"
+        },
+        "authority_source": {
+          "const": "RESET-CORE-2026-002"
+        },
+        "professional_domain": {
+          "type": "string",
+          "minLength": 1
+        },
+        "competencies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "inheritance": {
+          "const": "none"
+        },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "temporaryAssignment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "assignment_id",
+        "holder",
+        "role",
+        "status",
+        "counts_as_operational_identity",
+        "expiry_condition",
+        "authority_source",
+        "evidence"
+      ],
+      "properties": {
+        "assignment_id": {
+          "const": "zoe-reset-supervision"
+        },
+        "holder": {
+          "const": "Zoe"
+        },
+        "role": {
+          "const": "temporary-cross-functional-supervision"
+        },
+        "status": {
+          "enum": [
+            "active-temporary",
+            "closed"
+          ]
+        },
+        "counts_as_operational_identity": {
+          "const": false
+        },
+        "expiry_condition": {
+          "const": "Cierre global de RESET-CORE-2026-002"
+        },
+        "authority_source": {
+          "const": "RESET-CORE-2026-002"
+        },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "package": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "package_id",
+        "source_identity",
+        "disposition",
+        "operational_authority",
+        "inheritance",
+        "competencies",
+        "evidence"
+      ],
+      "properties": {
+        "package_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_identity": {
+          "type": "string",
+          "minLength": 1
+        },
+        "disposition": {
+          "enum": [
+            "historical",
+            "candidate-unassigned",
+            "archived"
+          ]
+        },
+        "operational_authority": {
+          "const": false
+        },
+        "inheritance": {
+          "const": "none"
+        },
+        "competencies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
