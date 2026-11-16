@@ -23,3 +23,7 @@ No almacenar conversaciones privadas completas ni secretos. Redactar identificad
 ## Plantilla
 
 - [Plantilla de observación](template-observation.md): campos mínimos para registrar comportamiento observable.
+
+## Observación registrada
+
+- [OBS-20261116-004 — Confusión de repositorio y proliferación de rutas durante la creación de Katarina para TITAN](OBS-20261116-004-confusion-repositorio-rutas-creacion-katarina-titan.md): secuencia observable, evidencia de reparación, hipótesis no confirmadas y propuesta preliminar de simplificación.
