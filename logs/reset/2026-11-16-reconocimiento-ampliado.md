@@ -124,3 +124,26 @@ Se verificaron cuatro issues abiertos, sin comentarios:
 6. Preparar, sin ejecutar aún, el mapa de migración de capacidades a Softly, Katarina y Audeline.
 
 **Conclusión:** Fase A continúa abierta y Fase B está en progreso. Hay tres PR abiertos Draft, varias ramas con cambios exclusivos, identidades/equipos documentales adicionales, issues anteriores sin disposición y repositorios cuya pertenencia aún no está demostrada. No existe base para declarar el reset completo ni para retirar activos sin completar las salvaguardas correspondientes.
+
+
+## 9. Contraste con AUD-SOFTLY-INTEGRITY-2026-001
+
+Se recuperaron los seis entregables de la misión en gatoscientist/Audeline: informes individuales de Softly, Katarina y Audeline; consolidado; matriz comparativa; registro de hallazgos. El alcance declarado cubre solo Softly, Katarina y Audeline, por lo que no constituye auditoría global de RESET-CORE-2026-002.
+
+La cobertura fue documental: árboles recursivos completos en los cortes consultados (Softly 209 archivos, Katarina main 37, rama KAT-006 41, Audeline 40). No se ejecutaron pruebas de runtime, no se invocó a Autumn ni Aurora y no se verificó enforcement operacional.
+
+La misión registra doce hallazgos: ALTO SOF-001 (taxonomía Agent Softly ausente de registry y schemas); MEDIO SOF-002 (checkpoint atrasado), SOF-003 (integridad referencial tarea/evento/handoff incompleta), SOF-005 (fallback msvcrt inalcanzable bajo guard POSIX), KAT-001 (equipo no instalado en casa canónica), KAT-002 (criterio verified sin evidencia/verificador), AUD-001 (ambigüedad entre autorización humana, herramientas host y enforcement Runtime), AUD-002 (procedimiento dependiente de invocación de especialistas no disponible); BAJO SOF-004 (sección duplicada de taxonomías) y KAT-003 (catálogo rotulado 2.0.0 en paquete 2.0.1); INFORMATIVO KAT-004 (identidad de despacho 1.1.0 distinta de identidad normativa 2.0.1, explicada por reactivación) y KAT-005 (schema $id apunta a main mientras artefacto está solo en rama).
+
+El dictamen general fue integridad documental aceptable con reservas materiales. No es GO/NO-GO de liberación ni autorización de implementación. La auditoría reconoce Runtime Mini 0.2 como prototipo opcional y que Runtime no es requisito universal para leer, diseñar, redactar o persistir documentos; invocación de otros agentes y enforcement efectivo sí requieren mecanismos específicos.
+
+### Reconciliación de dictámenes KAT-006
+
+AUD-SOFTLY-INTEGRITY-2026-001 y AUD-20261116-017/018 evalúan planos distintos y sus conclusiones son compatibles. La primera acepta con reservas la integridad documental de tres activos. AUD-20261116-017 corregido declara NO-GO OPERACIONAL para KAT-006 porque falta la capacidad task-centric que motivaba el trabajo: F-01 queda cerrado solo como entrega documental; F-02 es bloqueante operacional; F-03/F-04 siguen pendientes; F-08 permanece abierto por decisión de gAto. AUD-20261116-018 registra como GRAVE el error de recomendar aceptación funcional desde la completitud documental, sin mantener la ausencia conocida de runtime task-centric como bloqueo.
+
+No debe generalizarse el NO-GO de KAT-006 a toda la arquitectura documental de Softly, ni usar el dictamen documental favorable para declarar KAT-006 operacionalmente aceptado.
+
+### Hallazgos propios de Audeline que afectan RESET-CORE-2026-002
+
+- AUD-001: sus permisos no delimitan suficientemente la escritura mediante herramientas host autorizadas frente al enforcement de permisos mediante Runtime. La ambigüedad puede bloquear entregas documentales o inducir exceso de permisos.
+- AUD-002: su procedimiento exige una emisión de Autumn y otra de Aurora, pero la misión no tuvo mecanismo de invocación. La revisión individual de Audeline puede avanzar y debe declarar esa limitación; la falta de invocación no debe convertirse en espera obligatoria.
+- La nueva orden exige una sola identidad operativa de auditoría. Los contratos y procedimientos que asignan responsabilidades a Autumn/Aurora deben reconciliarse: migrar capacidades útiles a Audeline, preservar paquetes como historia y retirar identidades/asignaciones operativas al completar las salvaguardas.
