@@ -68,7 +68,7 @@ Cuando gAto cierre explícitamente un hilo, conservar la historia en logs/thread
 
 - Fuente: `La arquitectura minimalista de Softly.pdf` (9 páginas), aportada por gAto.
 - Informe inicial de Katarina: `Katarinasay/entregable/2026-11-16-informe-inicial-katarina-arquitectura-minimalista.md`; blob SHA `4d5c4363f2f078728196085705a3c374dc175080`.
-- Informe inicial de Softly: conservado en el registro conversacional del Hilo X; aún no se había persistido como artefacto independiente.
+- Informe inicial de Softly: `Softlysay/entregable/2026-11-16-informe-inicial-softly-arquitectura-minimalista.md`.
 - Revisión cruzada de Softly: `Softlysay/entregable/2026-11-16-revision-cruzada-softly-arquitectura-minimalista.md`.
 - Archivo del hilo: `logs/threads/hilo X 2026-11-16 06-59 F 07-01 — deliberacion bilateral arquitectura minimalista y cierre parcial.md`.
 - Coincidencias: definición documental no equivale a activación; GitHub es memoria/plano de coordinación pero no despierta sesiones ni resuelve contradicciones semánticas; convienen eventos individuales y criterios de aceptación; el demonio debe preservar fuentes y trazabilidad.
