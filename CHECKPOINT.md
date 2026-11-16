@@ -3,6 +3,27 @@
 **Actualizado:** 2026-11-16  
 **Fuente de autoridad:** SOFTLY.md e instrucciones vigentes de gAto.
 
+
+## Estado vigente — RESET-CORE-2026-002 (2026-11-16)
+
+**El reset NO está terminado ni certificado.** Esta sección prevalece sobre los puntos de continuidad anteriores que propongan activar equipos TITAN/CYTRYNA o mantener identidades adicionales.
+
+- **Identidades operativas finales:** Softly (núcleo/coordinación), Katarina (única ingeniería/desarrollo) y Audeline (única auditoría independiente). **Zoe** es supervisora transversal temporal, no cuarta identidad; su contrato aún debe incorporar condición de término verificable.
+- **Recepciones:** Katarina acusó recibo y entregó inventario inicial y ampliado; además respondió las alertas de Zoe. Audeline emitió acuse formal (informe 06), pruebas independientes de KAT-006 (13) y reconciliación documental (14–16); AUD-RESET-002 está en ejecución. Zoe recibió el addendum actualizado y el encargo de límite temporal, pero todavía no responde ni actualiza su contrato.
+- **KAT-006:** NO-GO OPERACIONAL según AUD-017 corregido; AUD-018 existe y registra el incidente grave. No hay runtime task-centric ni enforcement probado. PR #1 sigue Draft, sin merge; decisión humana de gAto pendiente.
+- **Contratos:** Katarina 2.0.1 todavía prohíbe código/scripts/pruebas/runtime, contradiciendo su mandato de única ingeniería. Se le entregó un encargo de reconciliación; hasta que publique nueva versión coherente, no debe iniciar cambios de código/runtime.
+- **HOLDs:** REC-002 en TITAN, Equipo Softly y Melina preservados sin invocación. El Equipo del gAto queda sin intervenir hasta clasificar alcance. gAtoSD es proyecto independiente con Lucyna y Andy NAMED_LOCKED; no intervenir.
+- **Canales:** Softly, Katarina y Zoe ya tienen Softlysay/Katarinasay/Audelinesay. Softly PR #4 se cerró como supersedido, sin merge ni borrado de rama. Audeline tiene los tres canales, pero sus TEAM y README todavía describen Aurora/Autumn. Auditoria conserva su canal histórico Softlysay.
+- **Issues Softly:** #6 cerrado como supersedido por RESET-CORE-2026-002; #5 abierto para decisión humana KAT-006; #7 alerta de continuidad abierta.
+- **Ramas y protección:** main informa `protected:false` en Softly, Katarina y Auditoria. Último corte medido antes de la actualización documental: Softly F03 5/338, Softly recovery 3/86, Katarina KAT-006 8/28, Auditoria recovery 19/18, propuestas Auditoria 2/24 y Laboratorio 1/176. Recalcular antes de cualquier integración/retiro. No se fusionaron ni borraron ramas.
+- **Validación:** TITAN 41/100 Actions exitosas y 59 fallidas, diez más recientes fallidas; Cytryna 0/100 exitosas, 30 fallidas y 70 canceladas. No se acreditan pruebas en los jobs fallidos ni se ejecutaron reruns. Softly/Katarina/Auditoria/Audeline/Zoe/Laboratorio no tienen workflows Actions en main.
+- **Respaldos:** diez ZIP localizados, ninguno extraído ni validado como restaurable.
+- **Audeline pendientes:** reconciliar TEAM/TEAM, TEAM/COORDINATION, TEAM/TASK_BOARD y README de sus tres canales; corregir enlaces cross-repo rotos en Auditoria/TEAM/TASK_BOARD; corregir tamaños erróneos en adenda ZIP 08.
+- **Zoe pendiente:** responder y formalizar fin de supervisión al dictamen final de Audeline y confirmación de gAto.
+- **Registro pendiente:** reconciliar el registro canónico de agentes con las tres identidades y archivar capacidades históricas sin borrarlas.
+
+**Informe técnico ampliado vigente:** `logs/reset/2026-11-16-reconocimiento-ampliado.md`, blob SHA `81ea6603a7f4c5cf6c7acd2ced285db2b57f027e`.
+
 ## Identidad y modelo
 
 - Softly es una matriz generativa y un sistema autoevolutivo; no es un agente individual ni se reduce a su repositorio.
@@ -36,12 +57,9 @@
 - **Estado:** investigación documental persistida; el experimento no se ha ejecutado y la equivalencia funcional no está demostrada. No modificar SOFTLY.md ni sustituir el núcleo oficial por inferencia.
 - La construcción de B y la ejecución del experimento quedan como propuesta pendiente de instrucción/decisión de gAto.
 
-## Punto pendiente — activación de TITAN y CYTRYNA
+## Estado histórico supersedido — activación de TITAN y CYTRYNA
 
-- gAto indicó que él se encargará de activar ambos equipos. Softly debe esperar la confirmación/resultado y luego verificar el estado real en los repositorios antes de continuar.
-- TITAN está constituido documentalmente con Elara (AgentDIR), Dante (AgentDEV), Mira (AgentMUS), Sofía (AgentSCI) y Nox (AgentSEC). No reconstruir los paquetes ni confundir estado Diseñado con activación.
-- En CYTRYNA se preservan la estructura y los antecedentes existentes. Katarina forma parte del equipo y tiene una investigación que desarrollar.
-- No repetir la reparación preliminar de CYTRYNA ni modificar el core de Softly.
+Este apartado corresponde al Hilo VI y es anterior a RESET-CORE-2026-002. La instrucción histórica de esperar activación por gAto queda supersedida por el HOLD vigente: no activar equipos, agentes o subagentes adicionales de TITAN/CYTRYNA como parte del ecosistema Softly. Los paquetes y la evidencia se preservan sin borrado ni invocación. gAto puede emitir una nueva orden explícita para proyectos independientes.
 
 ## Regla de cierre
 
@@ -49,9 +67,10 @@ Cuando gAto cierre explícitamente un hilo, conservar la historia en logs/thread
 
 ## Próxima acción
 
-- Esperar la confirmación de gAto sobre la activación de TITAN y CYTRYNA; después verificar su estado real.
+- Esperar las respuestas documentales pendientes de Katarina (reconciliación de contrato/permisos), Audeline (TEAM/canales/enlaces) y Zoe (límite temporal y corrección ZOE-001..012).
+- Mantener el registro de identidades, canales, ramas, CI y respaldos bajo revisión; recalcular ahead/behind antes de cualquier integración.
+- No activar equipos/subagentes, no fusionar PR, no borrar ramas ni respaldos y no declarar cerrado el reset.
 - Para SOFTLY-MIN, esperar decisión/instrucción de gAto antes de construir la instancia experimental B o ejecutar comparaciones.
-- No reabrir ni modificar el núcleo normativo por iniciativa propia.
 
 
 ## Registro de cierre — Hilo VIII
