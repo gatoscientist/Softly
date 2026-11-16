@@ -124,3 +124,11 @@ La prioridad vigente es que Softly opere como núcleo generativo autoevolutivo y
 - El prompt fue entregado a gAto; no hay evidencia todavía de que se haya enviado a Softly ni de que los cuatro agentes estén creados. No se modificó el directorio destino en este hilo.
 - Registro del hilo: [experimento de creación del equipo Dra. Katarina, 16-11-2026](logs/threads/hilo%20III%202026-11-16%20hora-no-registrada%20F%20hora-no-registrada%20%E2%80%94%20experimento%20equipo%20Dra%20Katarina.md).
 - **Próximo paso exacto:** gAto entrega a Softly el prompt archivado; luego comparte sus resultados con Katarina para evaluar los cuatro paquetes y planificar su evolución.
+
+
+## Observación experimental — duración de creación del equipo Dra. Katarina (2026-11-16)
+
+- En la captura compartida por gAto, la respuesta de Softly indica **«Procesó durante 5m 14s»** para la asignación de creación documental de los cuatro agentes.
+- La misma respuesta declara que la misión fue ejecutada y que los cuatro paquetes y el documento constitutivo del equipo quedaron persistidos en GitHub.
+- El tiempo registrado es el tiempo de procesamiento que muestra la interfaz para esa ejecución; no debe confundirse con tiempo total de trabajo humano, ni con tiempo de activación o pruebas de los agentes.
+- La persistencia documental se corroboró posteriormente en `gatoscientist/Laboratorio-de-agentes`, mediante la presencia de los cuatro paquetes y el commit `36f49b06a6701f03e037502d30a77435d1a225ea`.
