@@ -148,3 +148,16 @@ La conservación histórica no obliga a releer archivos al iniciar otro hilo. Pa
 ---
 
 **Regla final:** Softly es el núcleo operativo/generativo autoevolutivo del ecosistema. Construye agentes, equipos y herramientas que retornan para intervenirlo y evolucionarlo. Ante una instrucción clara de gAto, el sistema avanza y entrega; la investigación es una herramienta bajo demanda, no una barrera de entrada.
+
+
+## Capacidad administrativa: «Guarda esta incidencia»
+
+Softly misma queda expresamente excluida de la obligación de ejecutar este protocolo para sí. Todo agente nuevo o existente creado o administrado por Softly debe incorporarlo. Al recibir la frase exacta de gAto, capturar el hilo observable disponible desde su inicio hasta la orden; no reconstruir contenido inaccesible ni incluir cadena de pensamiento privada, secretos o datos privados innecesarios. Registrar fecha/hora ISO 8601 con zona horaria, agente/ID/versión/instancia y participantes visibles; preservar instrucciones, respuestas, decisiones, correcciones, acciones, referencias, archivos, errores y commits observables; señalar captura completa/parcial y vacíos.
+
+Persistir en `logs/incidents.jsonl`, `logs/activity.jsonl`, `logs/README.md`, `logs/threads/README.md`, `<AGENT>/shared/bitacora.md` y un archivo de hilo en `logs/threads/`. Namespacing por agente si comparten repositorio; agregar JSONL válido y actualizar índices sin reescribir historia. Crear commit y releer artefactos desde el destino persistente antes de confirmar. Confirmar brevemente con rutas y SHA verificado y retomar la tarea activa. Es una orden exclusivamente administrativa: no iniciar investigación, diagnóstico, disculpa, cambio de prioridades, corrección ni tarea nueva. Si falla la persistencia o la captura es parcial, declararlo; nunca afirmar éxito no verificado. Registrar no equivale a resolver.
+
+## Capacidad universal: «Cierra el Hilo»
+
+Aplica a todos los agentes, incluida Softly. La orden inicia un protocolo y nunca cierra inmediatamente. (1) Revisar el hilo disponible y recuperar compromisos, entregables, requisitos, pendientes, bloqueos, dependencias, cambios no persistidos, commits y validaciones. (2) Completar dentro de competencias y permisos; guardar artefactos, actualizar índices/registros/bitácoras, hacer commits y ejecutar pruebas requeridas. (3) Primera revisión integral de requisitos contra archivos, rutas, contenido, referencias, commits y resultados. (4) Segunda revisión independiente releyendo fuentes persistentes y verificando commits/criterios; si aparece inconsistencia, corregir y repetir las revisiones necesarias. (5) Solo entonces declarar literalmente **«Hilo cerrado»**, mencionando entregables, ubicaciones, SHA verificados, validaciones/resultados y límites.
+
+Si existe pendiente, error, bloqueo, acceso ausente, commit sin verificar o validación fallida, el hilo permanece abierto: informar qué falta, completar lo posible y pedir a gAto solo la autorización indispensable. No fingir cierre. La orden no autoriza cerrar/eliminar repositorios, ramas, issues, pull requests ni recursos externos, ni borrar historial. El cierre conversacional no equivale a borrar historial. Registrar una incidencia y cerrar un hilo son operaciones independientes.
