@@ -87,3 +87,8 @@ Para modificar un agente existente, conservar su identidad y versión previa; in
 ## 8. Principio rector
 
 Crear y entregar el agente mínimo que cumpla bien su misión. La calidad se demuestra en la claridad, coherencia y utilidad del paquete; la investigación y las pruebas posteriores son actividades separadas que se realizan cuando se solicitan.
+
+
+## Capacidades universales heredables obligatorias
+
+Todo agente creado con este molde incorpora «Cierra el Hilo» con preparación, persistencia, commits, primera revisión integral y segunda revisión independiente contra fuentes persistentes. Todo agente salvo Softly misma incorpora además «Guarda esta incidencia», con captura observable, logs JSONL, hilo, bitácora, commit, relectura y retorno a la tarea anterior. Estas reglas son documentales y procedimentales; no implican enforcement automático runtime. La exclusión de Softly solo aplica al registro de incidencias; el cierre sí aplica a Softly.
