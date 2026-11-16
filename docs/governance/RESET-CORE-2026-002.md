@@ -1,7 +1,7 @@
 # ORDEN COORDINADA DE SOFTLY — RESET INTEGRAL DEL ECOSISTEMA
 
 **ID:** RESET-CORE-2026-002  
-**Versión:** 1.1.0  
+**Versión:** 1.2.0  
 **Fecha de emisión:** 2026-11-16  
 **Emisor:** Softly, núcleo operativo/generativo y coordinador general del ecosistema  
 **Autoridad:** gAto, Dirección humana  
@@ -296,6 +296,25 @@ Por instrucción expresa de gAto, todo lo relacionado con Runtime queda fuera de
 8. **Criterio de cumplimiento.** El reset no puede declarar Runtime pendiente, bloqueado o futuro. El estado correcto es: fuera de norma, retirado de vigencia y procesos dependientes cerrados administrativamente. La ausencia de evidencia sobre un repositorio se declara como no inspeccionado, nunca como eliminado.
 
 Esta adenda no autoriza borrar repositorios completos, ramas compartidas ni productos ajenos al alcance. La eliminación se realiza sobre componentes identificados, con commits verificables y preservación de trazabilidad.
+
+### 12.2. Ratificación de Dirección — cierre administrativo integral de todo elemento Runtime
+
+**Emisión:** 2026-11-16  
+**Autoridad:** gAto, Dirección humana  
+**Naturaleza:** dictamen vinculante y aclaratorio de la sección 12.1.  
+**Precedencia:** complementa la sección 12.1 y prevalece sobre cualquier documento, contrato, tablero, issue, handoff, procedimiento o estado subordinado incompatible.
+
+Por orden expresa de gAto, se dicta:
+
+1. **Ámbito comprendido.** Todo documento, artefacto, proceso, flujo, iniciativa, tarea, validación, experimento, solicitud, espera, dependencia o estado de trabajo que esté contenido en Runtime, opere dentro de Runtime, requiera Runtime o esté condicionado a su existencia o intervención queda fuera de norma y fuera del ámbito operativo de Softly.
+2. **Cierre administrativo inmediato.** Cada elemento comprendido se considera cerrado administrativamente por decisión de Dirección. No se requiere ejecución, reparación, migración, prueba, despliegue, restauración, aprobación adicional ni respuesta de un agente para materializar el cierre.
+3. **Sin estados de espera.** Quedan terminadas las esperas, bloqueos, handoffs y dependencias que aguarden Runtime, una respuesta de Runtime, disponibilidad de Runtime, una validación Runtime o la creación de infraestructura Runtime. Ningún agente puede mantenerlas como pendientes, bloqueadas, futuras o prerequisitos de otra tarea.
+4. **Retiro de autoridad.** Los documentos y procedimientos comprendidos dejan de ser normativa vigente de Softly. Se conservan únicamente como evidencia histórica, marcados como fuera de norma, no operativos y cerrados administrativamente. No pueden invocarse para exigir trabajo ni reactivar una dependencia.
+5. **Separación de trabajo independiente.** Una actividad que tenga utilidad autónoma solo puede continuar si se separa íntegramente de Runtime y no hereda sus requisitos, criterios de aceptación, esperas ni dependencias. Si no puede separarse, también queda cerrada.
+6. **Registro sin reabrir el asunto.** Softly registra el cierre en el checkpoint y en el registro maestro; Katarina retira de las ramas normativas activas los componentes identificados, dentro de su mandato técnico; Audeline contrasta la persistencia documental. Estas tareas de registro no reabren Runtime ni condicionan la eficacia del cierre.
+7. **Preservación histórica.** El cierre es administrativo y normativo. No afirma que Runtime haya sido reparado, probado, desplegado, eliminado físicamente o que sus respaldos sean restaurables. No se destruye historia ni evidencia; se retira su autoridad operativa.
+
+**Dictamen final:** Runtime y todo elemento comprendido en él quedan fuera de norma, fuera de Softly y cerrados administrativamente por orden de gAto. No existe trabajo, espera ni aprobación pendiente dentro de Softly cuyo cumplimiento requiera Runtime.
 
 ## 13. Registro documental y trazabilidad
 
