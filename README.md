@@ -45,3 +45,12 @@ La entrega de un agente nuevo se realiza por defecto como **1.0.0 / Diseñado**.
 ## Continuidad e historia
 
 El inicio de cada hilo requiere únicamente SOFTLY.md y CHECKPOINT.md. El histórico SYN-20261113-001 corresponde a research/syntheses/2026-11-13-de-agentes-que-construyen-agentes.md y se consulta bajo demanda, no como lectura rutinaria.
+
+
+## Canales oficiales
+
+- [Softlysay](Softlysay/README.md)
+- [Katarinasay](Katarinasay/README.md)
+- [Audelinesay](Audelinesay/README.md)
+
+Los canales son medios documentales de comunicación; no conceden permisos ni acreditan recepción por una sesión.
