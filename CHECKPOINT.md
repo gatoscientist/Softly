@@ -1,6 +1,6 @@
 # CHECKPOINT — Estado vigente del núcleo operativo/generativo Softly
 
-**Actualizado:** 2026-11-15  
+**Actualizado:** 2026-11-16  
 **Fuente de autoridad:** SOFTLY.md e instrucciones vigentes de gAto.  
 **Propósito:** recuperar en menos de un minuto las decisiones actuales; no sustituye la historia documental.
 
