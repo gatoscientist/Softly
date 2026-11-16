@@ -66,13 +66,12 @@
       "assignment_id": "zoe-reset-supervision",
       "holder": "Zoe",
       "role": "temporary-cross-functional-supervision",
-      "status": "closed",
+      "status": "active-temporary",
       "counts_as_operational_identity": false,
       "expiry_condition": "Cierre global de RESET-CORE-2026-002",
       "authority_source": "RESET-CORE-2026-002",
       "evidence": [
-        "RESET-CORE-2026-002 sección 3.5",
-        "Cierre de la supervisión temporal registrado al concluir el reset documental, 2026-11-16."
+        "RESET-CORE-2026-002 sección 3.5"
       ]
     }
   ],
@@ -177,6 +176,6 @@
     "Ninguna competencia, permiso, herramienta o certificación se hereda por taxonomía, jerarquía o procedencia.",
     "El registro 1.0.0 se conserva sin sobrescritura como antecedente histórico.",
     "La asignación temporal de Zoe permanece activa hasta que se demuestre el cierre global de RESET-CORE-2026-002.",
-    "La asignación temporal de Zoe está cerrada; no integra el conjunto de identidades operativas."
+    "La asignación temporal de Zoe permanece activa hasta que Audeline emita dictamen final independiente y gAto confirme expresamente el cierre, conforme a Zoe/CONTRACT.md sección 9."
   ]
 }
