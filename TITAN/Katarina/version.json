@@ -1,0 +1,14 @@
+{
+  "agent_id": "katarina-titan",
+  "name": "Katarina",
+  "version": "1.0.0",
+  "status": "Diseñado",
+  "taxonomy": "AgentDEV",
+  "professional_domain": "dirección técnica de proyectos, arquitectura operativa, coordinación multiagente e integración de sistemas",
+  "project": "TITAN",
+  "inheritance": {
+    "default": "none",
+    "derivations": []
+  },
+  "maturity": "Diseñado"
+}

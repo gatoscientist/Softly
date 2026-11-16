@@ -1,0 +1,14 @@
+{
+  "agent_id": "agentaud-code-vera",
+  "name": "Vera — AUD Code",
+  "version": "1.0.0",
+  "status": "Diseñado",
+  "taxonomy": "Auditoría",
+  "professional_domain": "auditoría técnica de código fuente, revisión estática y evaluación de calidad de software",
+  "project": "TITAN",
+  "inheritance": {
+    "default": "none",
+    "derivations": []
+  },
+  "maturity": "Diseñado"
+}

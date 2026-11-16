@@ -1,0 +1,14 @@
+{
+  "agent_id": "agentmus-naira",
+  "name": "Naira — AgentMUS",
+  "version": "1.0.0",
+  "status": "Diseñado",
+  "taxonomy": "AgentMUS",
+  "professional_domain": "música, escucha, cultura sonora y conversación creativa",
+  "project": "TITAN",
+  "inheritance": {
+    "default": "none",
+    "derivations": []
+  },
+  "maturity": "Diseñado"
+}
