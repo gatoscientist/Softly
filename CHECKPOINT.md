@@ -219,7 +219,7 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 - REC-002 asigna tareas a cinco paquetes diseñados/no desplegados. No invocarlos bajo RESET-CORE-2026-002; preservar los documentos y mantener la activación congelada.
 
 
-- **Informe ampliado vigente:** logs/reset/2026-11-16-reconocimiento-ampliado.md; blob SHA verificado f4b4302ac5b84129ae5b65bf766ca5f8986a3f6e.
+- **Informe ampliado vigente:** logs/reset/2026-11-16-reconocimiento-ampliado.md; blob SHA verificado cc9cf35d652d6469510a2ef85c061355a917a550.
 
 
 ### Contención documental aplicada
@@ -234,7 +234,7 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 
 - Se amplió el handoff de Audeline en Auditoria/Softlysay/res, con evidencia de trece repositorios, KAT-006, Runtime Mini, registro de identidades, TITAN, Cytryna y límites de auditoría. Addendum commit 16397b05e8669f328fd36eee8be9dae29e851064; indexado en commit 53d1f26fbc76149cbb0b9c70022a0baa1cdbb824. Sin acuse.
 - Se envió a Katarina un addendum con la secuencia Git de su instancia documental en Cytryna, la errata de SHA y solicitud de contraste. Commit 1ffe733526182575f6046e7854b624ae25347f29; indexado en Softlysay/README y bitácora, commits 18de1c665faab24ea8da31e41d625af3a0a0616e y a42e0202121d4d75a53ddd42b68f089969cac627. El acuse RESET original está confirmado; la explicación de Cytryna sigue pendiente.
-- Informe ampliado vigente: logs/reset/2026-11-16-reconocimiento-ampliado.md, blob SHA f4b4302ac5b84129ae5b65bf766ca5f8986a3f6e.
+- Informe ampliado vigente: logs/reset/2026-11-16-reconocimiento-ampliado.md, blob SHA cc9cf35d652d6469510a2ef85c061355a917a550.
 
 
 ### HOLDs adicionales en Laboratorio
@@ -282,3 +282,9 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 - Zoe recibió addendum actualizado en `Zoe/Softlysay/2026-11-16-addendum-estado-actual.md`, commit c9463695101bd5118afbe02da73b045973b9690f, indexado en README/bitácora. Se solicita corregir ZOE-001..012 tras el acuse formal de Audeline.
 - Zoe recibió encargo de añadir condición de término verificable: cierre de supervisión al dictamen final independiente de Audeline y confirmación de gAto. No hay respuesta ni actualización contractual todavía.
 - Informe ampliado vigente: logs/reset/2026-11-16-reconocimiento-ampliado.md, blob SHA f4b4302ac5b84129ae5b65bf766ca5f8986a3f6e.
+
+
+### Último corte de divergencia
+
+- Softly F03 5/338; Softly recovery 3/86; Katarina KAT-006 8/28; Auditoria recovery 19/18; propuestas Auditoria 2/24; Laboratorio 1/176. Recalcular antes de integrar o retirar ramas; ninguna se fusionó o borró.
+- Informe ampliado vigente: logs/reset/2026-11-16-reconocimiento-ampliado.md, blob SHA cc9cf35d652d6469510a2ef85c061355a917a550.
