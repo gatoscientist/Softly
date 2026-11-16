@@ -23,7 +23,7 @@ El contrato estructural está en [schemas/task.schema.json](../../schemas/task.s
 - `depends_on`: IDs de tareas predecesoras.
 - `acceptance`: criterios verificables de terminación.
 
-Los campos opcionales permiten describir propósito, creador, fecha objetivo, tarea padre, resultados/artefactos, bloqueos, handoffs relacionados y referencias contextuales.
+Los campos opcionales permiten describir propósito, creador, fecha objetivo, tarea padre, resultados/artefactos, bloqueos, handoffs relacionados y referencias contextuales. El tipo genérico `team` permanece en el schema por portabilidad del modelo; no autoriza equipos activos. Durante RESET-CORE-2026-002 no se asignan tareas operativas a equipos.
 
 ### Reglas de estado y dependencia
 
@@ -52,7 +52,7 @@ La dimensión registrada es la predominante para describir el acto de coordinaci
 
 ## 4. Relación con mecanismos existentes
 
-- **Handoff:** se mantiene el contrato existente `schemas/handoff.schema.json` y la plantilla `agents/templates/handoff.md`. El handoff referencia la asignación y transfiere resultado, evidencia, siguiente acción y aceptación. No se duplica como otro modelo de tarea.
+- **Handoff:** se mantiene el contrato existente `schemas/handoff.schema.json` y la plantilla `agents/templates/handoff.md`. Cuando el handoff está vinculado a una tarea registrada, usa el campo opcional `task_id`; `task` sigue siendo el resumen legible y no sustituye el ID estable. No se duplica el handoff como otro modelo de tarea.
 - **Eventos y mensajes:** comunican cambios o solicitudes; deben referenciar el `task_id` cuando estén vinculados a una tarea. Un evento no equivale a una tarea.
 - **Artefactos/resultados:** se registran como rutas o referencias en `outputs`; la existencia de una ruta no certifica por sí sola la calidad del resultado.
 - **Bloqueos:** se registran en la tarea afectada y se escalan al responsable con autoridad para resolverlos.
@@ -76,7 +76,7 @@ Esta implementación no responde la pregunta por inferencia. Se requiere anális
 
 ## 7. Límites de implementación
 
-Este documento y el schema son contratos declarativos. No hay aquí motor de workflow, scheduler, ejecución automática, detección automática de ciclos, persistencia transaccional, enforcement de permisos ni validador runtime. La validación estructural del JSON Schema y las reglas de conjunto deben ejecutarse por herramientas externas cuando se habilite esa etapa.
+Este documento y los schemas son contratos declarativos. No hay aquí motor de workflow, scheduler, ejecución automática, detección automática de ciclos, persistencia transaccional, enforcement de permisos ni validador runtime. La validación estructural de los JSON Schema y las reglas de conjunto deben ejecutarse por herramientas externas cuando se habilite esa etapa.
 
 ## 8. Referencias
 
