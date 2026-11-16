@@ -80,3 +80,15 @@ La prioridad vigente es que Softly opere como núcleo generativo autoevolutivo y
 - Se identificó la necesidad de formalizar los modos de funcionamiento de Softly, distinguiéndolos tanto de la arquitectura interna de cada agente como de los estados operativos.
 - Próxima actividad: inventariar los modos efectivamente documentados y los utilizados en la práctica; separar esos casos de nombres hipotéticos antes de formalizar cada modo.
 - No se aprobó un mandato, no se cambió SOFTLY.md ni se implementó modificación alguna en runtime o modos. Los puntos registrados son orientación de deliberación, no especificaciones normativas.
+
+
+## Punto de continuidad — Proyecto Katarina 01 / Katarina 2.0.0 (2026-11-15)
+
+- Registro del hilo: [Proyecto Katarina 01 y diseño de Katarina 2.0.0](logs/threads/hilo%20I%202026-11-15%20hora-no-registrada%20F%202026-11-15%20hora-no-registrada%20%E2%80%94%20proyecto%20Katarina%2001%20y%20dise%C3%B1o%202.0.0.md).
+- La versión actual es Katarina 1.1.0; la versión en construcción es 2.0.0. Preservar la historia de Katarina 01, 1.0.0 y 1.1.0, incluido el ChangeLog. La 1.0.0 aún no coordinaba; la 1.1.0 incorporó coordinación.
+- El diseño 2.0.0 contempla cambio taxonómico de AgentDEV a Agent Softly; formación en Neurociencia Computacional o Ciencias Cognitivas y postdoctorado en Lingüística Computacional o PLN; Expertise en Softly; funciones de dirección, ejecución, implementación y coordinación; y un equipo propio, ampliable según necesidades.
+- Katarina comprende código y puede concebir, diseñar y dirigir el desarrollo de soluciones, pero no asume la programación como responsabilidad propia: el especialista correspondiente de su equipo programa. No arrastrar competencias de runtime engineering que no corresponden a su perfil.
+- Su expertise se orienta a Softly, la edición de README/Markdown, documentación, mandatos y formalización de canales.
+- Estructura confirmada en el repositorio de Katarina: `Katarina/shared/` es el espacio propio de Katarina donde el equipo deposita materiales/resultados destinados a ella; `Katarina/mancos/shared/` es el espacio común de trabajo del equipo, con inbox, entregables, borradores y bitácora. El equipo colabora autónomamente y entrega resultados terminados; no debe reportar cada paso.
+- `Katarina/Softlysay/` es el canal de Softly hacia Katarina; `Katarinasay/` en Softly es el canal de Katarina hacia Softly. No confundir estos canales con los espacios compartidos de trabajo.
+- Este hilo no implementó cambios en el paquete de Katarina 2.0.0. Próximo paso: continuar desde el registro y ejecutar únicamente cuando gAto encargue la actualización.
