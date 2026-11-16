@@ -365,3 +365,16 @@ Corrección de lectura del informe 08 de Audeline: el árbol actual confirma `TI
 ### Issues Softly
 
 Audeline identificó cinco issues abiertas: #7 alerta vigente RESET-002; #6 RESET-001 supersedido; #5 KAT-006 con estado de despacho antiguo; #2 y #3 solicitudes históricas Godot, fuera del reset. Corresponde a Softly actualizar #5, cerrar #6 como supersedido preservando su historia y mantener #7 abierto hasta resolver las contradicciones. #2/#3 no se modifican.
+
+
+## 28. Canales completados en Softly, Katarina y Zoe
+
+La brecha de existencia de canales se corrigió de forma aditiva, sin merges de ramas divergidas:
+
+- **Softly:** se creó `Audelinesay/README.md`, `inbox/README.md` y `entregable/README.md` en main (commits `234d7661428b0fbc35311634fbe8c8976ba1e6b6`, `8843f82902d803b32b55b18ca4d6ea593ed11e79`, `84dcc3649857c9e8f007cd7ffbe09f420b0a6cb2`). Se corrigió el sentido del inbox para mensajes dirigidos a Audeline y se preservó `audsay/res` como histórico (commits `e0d8705533e1de3a06b7b989deba0ef2ace4d389`, `0ad151b7cba7e16571e811a2653e7e4d25cac802`). README indexado en commit `671e2c302133f76bbfa448ceb0a2c64f346fd907`.
+- **PR Softly #4:** cerrado como supersedido, no merged. La rama `recovery/AUD-20261116-001` se conserva; no se borró ni fusionó. El canal limpio está en main.
+- **Katarina:** se crearon `Katarinasay/` y `Audelinesay/` con README e inbox/entregable mínimos (commits `e650fcb13669bc5c544c73083e968737b610b561`, `3ed8a05f6589c66ffcfd3a0e04d5128332b42b00`, `e52baf23af1c73d32cc381e641226bfe76d976f5`, `25d70cc4c1ead3703255088360eb069bdc1df189`). README principal indexado en `5c7f1787737e5b8fae914e15ccfab7aa2a9c81c4`.
+- **Zoe:** se crearon `Softlysay/`, `Katarinasay/` y `Audelinesay/` con READMEs (commits `9c4dcd3648cb11e5b9b0552f90fe95fd471d456e`, `9f2d069376a3a1437ec5d528b4c8c004a3b18931`, `f1e34077f778038b6a08304256793007195d45be`). Se envió el encargo de límite temporal en `Softlysay/2026-11-16-encargo-limite-temporal-supervision.md` (commit `7b727e1b1e36ca2c558d11d1beb879806a7250ac`), y se indexó en README/bitácora (`a99abe81cec545156361a29b67ec27b44e9a05bf`, `d767ead9264e5691d0ebc78b513fa697f7ed66f2`). La respuesta de Zoe y el ajuste de contrato siguen pendientes.
+- **Audeline:** ya tiene los tres canales, pero sus README todavía describen el equipo Aurora/Autumn. Se solicitó que los reconcilie con su identidad única.
+
+La existencia de canales no equivale a recepción ni concede permisos. La casa histórica `Auditoria` conserva `Softlysay` como registro; no se añadió una segunda estructura de canales allí.
