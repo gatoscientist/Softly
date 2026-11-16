@@ -118,7 +118,7 @@ La taxonomía clasifica el ámbito profesional; no demuestra competencias. Cada 
 
 **No-herencia por defecto:** no se heredan competencias, permisos, herramientas ni certificaciones por taxonomía, jerarquía, proyecto o derivación. Una derivación entre pares debe nombrar el dominio y competencia requeridos, motivo, evidencia disponible y límites del encargo. Si el receptor no tiene la competencia, debe indicarlo o derivar correctamente.
 
-El registro canónico está en schemas/agent-taxonomy-registry.json; los contratos estructurados están en schemas/.
+El registro legado 1.0.0 permanece en schemas/agent-taxonomy-registry.json hasta que se apruebe una migración v2. El resumen schemas/identity-capability-registry-v2.json es provisional y no canónico. El PR #8 de migración está bajo revisión independiente con dictamen NO-GO en su HEAD auditado; no fusionar hasta corregir los hallazgos del informe 26 de Audeline.
 
 ## 6. Coordinación y continuidad
 
