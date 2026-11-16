@@ -10,17 +10,27 @@ Por orden expresa de gAto y conforme a RESET-CORE-2026-002, se ratifica que todo
 **Fuente de autoridad:** SOFTLY.md e instrucciones vigentes de gAto.
 
 
+## Adenda vigente — prohibición total de Runtime (2026-11-16)
+
+La Dirección de gAto incorporó RESET-CORE-2026-002 v1.1.0: Runtime queda fuera de norma. No se diseña, implementa, instala, invoca, ejecuta, prueba, despliega, restaura ni exige. Todo proceso cuya continuidad dependa de Runtime se cierra administrativamente como fuera de norma / no planificado. Las funciones independientes pueden continuar solo si se separan íntegramente.
+
+- **Softly/main:** retirados 11 artefactos dedicados a Runtime: dos ADR, dos protocolos, dos informes de resultados y los cinco componentes de softly-runtime/ (events.head, events.jsonl, manifest.json, runtime.py y test_runtime.py). Cada retiro tiene commit propio; la historia Git conserva la evidencia.
+- **KAT-006:** cerrado administrativamente como not_planned en Softly issue #5. Katarina PR #1 fue cerrado sin merge; su rama y commits quedan preservados como evidencia no operativa. No se declara aceptación técnica.
+- **Normativa:** SOFTLY.md, README.md y la propuesta de registro fueron alineados con la prohibición. La propuesta ya no modela instancias Runtime.
+- **Verificación global pendiente:** la inspección de rutas de main no encontró paths con runtime en Katarina, TITAN ni Cytryna, pero eso no demuestra ausencia de dependencias en contenido, nombres alternativos, workflows o procesos. Katarina debe hacer inventario técnico recursivo y retirar componentes dedicados; Audeline debe verificar independientemente. No declarar ecosistema libre de Runtime hasta completar ese contraste.
+- **Trazabilidad:** los documentos históricos, informes de auditoría, commits y referencias antiguas se preservan como evidencia no operativa; no pueden reactivar Runtime ni servir de requisito.
+
 ## Estado vigente — RESET-CORE-2026-002 (2026-11-16)
 
 **El reset NO está terminado ni certificado.** Esta sección prevalece sobre los puntos de continuidad anteriores que propongan activar equipos TITAN/CYTRYNA o mantener identidades adicionales. La descripción generativa de Softly fue reconciliada con el congelamiento vigente en SOFTLY.md (commit `4a647e46547d40d62c03e9d361edbd86d7d98727`) y README.md (commit `554b67e9d9211d30fe833bbb3378e0e27a461481`); ambos cambios fueron releídos desde GitHub.
 
 - **Identidades operativas finales:** Softly (núcleo/coordinación), Katarina (única ingeniería/desarrollo) y Audeline (única auditoría independiente). **Zoe** es supervisora transversal temporal, no cuarta identidad; su contrato aún debe incorporar condición de término verificable.
 - **Recepciones:** Katarina acusó recibo y entregó inventario inicial y ampliado; además respondió las alertas de Zoe. Audeline emitió acuse formal (informe 06), pruebas independientes de KAT-006 (13) y reconciliación documental (14–16); AUD-RESET-002 está en ejecución. Zoe recibió el addendum actualizado y el encargo de límite temporal, pero todavía no responde ni actualiza su contrato.
-- **KAT-006:** NO-GO OPERACIONAL según AUD-017 corregido; AUD-018 existe y registra el incidente grave. No hay runtime task-centric ni enforcement probado. PR `gatoscientist/Katarina#1` sigue Draft, sin merge; decisión humana A/B/C de gAto pendiente. Audeline recomienda B, sin carácter vinculante.
-- **Contratos:** Katarina entregó la reconciliación 3.0.0 en `Katarinasay/entregable/2026-11-16-katarina-3.0.0-reconciliacion-contrato.md`; el contrato ya la define como única ingeniería y permite implementación bajo órdenes técnicas vigentes. Persistencia releída; runtime no verificado. KAT-006 conserva su NO-GO operacional y su decisión específica de Dirección pendiente.
+- **KAT-006:** cierre administrativo por fuera de norma/no planificado según la adenda no-Runtime. Softly issue #5 y Katarina PR #1 están cerrados sin merge; rama y evidencia preservadas. No existe aceptación técnica ni queda decisión A/B/C pendiente para KAT-006.
+- **Contratos:** Katarina entregó la reconciliación 3.0.0 en `Katarinasay/entregable/2026-11-16-katarina-3.0.0-reconciliacion-contrato.md`; el contrato ya la define como única ingeniería. La prohibición de Runtime prevalece sobre cualquier autorización técnica incompatible; no se implementa Runtime.
 - **HOLDs:** REC-002 en TITAN, Equipo Softly y Melina preservados sin invocación. El Equipo del gAto queda sin intervenir hasta clasificar alcance. gAtoSD es proyecto independiente con Lucyna y Andy NAMED_LOCKED; no intervenir.
 - **Canales:** Softly, Katarina y Zoe tienen Softlysay/Katarinasay/Audelinesay. Audeline también dispone de los tres canales y su casa canónica ya reconcilió TEAM/README para dejar Aurora/Autumn como paquetes históricos. Softly PR #4 se cerró como supersedido, sin merge ni borrado de la rama histórica. Auditoria conserva su canal histórico Softlysay.
-- **Issues Softly:** #6 cerrado como supersedido por RESET-CORE-2026-002; #5 abierto para decisión humana KAT-006; #7 alerta de continuidad abierta.
+- **Issues Softly:** #6 cerrado como supersedido; #5 cerrado administrativamente como not_planned por prohibición de Runtime; #7 permanece abierto para auditoría y reconciliación global.
 - **Ramas y protección:** el último corte documentado informa `protected:false` para `main` en nueve repositorios; no se han cambiado reglas. Softly conserva `main`, `fix/f03-recover-ledger` y `recovery/AUD-20261116-001`; PR #4 está cerrado como supersedido, pero la rama histórica permanece. Las divergencias numéricas del checkpoint son cortes anteriores y deben recalcularse antes de integrar o retirar ramas. No se han fusionado ni borrado ramas en esta continuidad.
 - **Validación:** TITAN 41/100 Actions exitosas y 59 fallidas, diez más recientes fallidas; Cytryna 0/100 exitosas, 30 fallidas y 70 canceladas. No se acreditan pruebas en los jobs fallidos ni se ejecutaron reruns. Softly/Katarina/Auditoria/Audeline/Zoe/Laboratorio no tienen workflows Actions en main.
 - **Respaldos:** diez ZIP localizados, ninguno extraído ni validado como restaurable.
