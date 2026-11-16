@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/gatoscientist/Softly/blob/main/schemas/task.schema.json",
+  "title": "Softly Task",
+  "description": "Contrato declarativo de tarea y dependencias para coordinación task-centric. No ejecuta tareas ni concede autoridad.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["task_id", "title", "status", "dimension", "owner", "created_at", "updated_at", "depends_on", "acceptance"],
+  "properties": {
+    "task_id": {"type": "string", "minLength": 1},
+    "title": {"type": "string", "minLength": 1},
+    "description": {"type": "string"},
+    "status": {"enum": ["proposed", "ready", "in_progress", "blocked", "done", "cancelled"]},
+    "dimension": {"enum": ["self_coordination", "peer_coordination", "orchestration"]},
+    "owner": {"$ref": "#/$defs/owner"},
+    "created_by": {"$ref": "#/$defs/owner"},
+    "created_at": {"type": "string", "format": "date-time"},
+    "updated_at": {"type": "string", "format": "date-time"},
+    "due_at": {"type": ["string", "null"], "format": "date-time"},
+    "depends_on": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1},
+      "description": "IDs de tareas predecesoras. Una tarea no está lista si alguna dependencia obligatoria no está done."
+    },
+    "parent_task_id": {"type": ["string", "null"]},
+    "outputs": {"type": "array", "items": {"type": "string"}},
+    "acceptance": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "blockers": {"type": "array", "items": {"type": "string"}},
+    "related_handoffs": {"type": "array", "items": {"type": "string"}},
+    "context_refs": {"type": "array", "items": {"type": "string"}}
+  },
+  "$defs": {
+    "owner": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "id"],
+      "properties": {
+        "kind": {"enum": ["agent", "human", "tool", "team"]},
+        "id": {"type": "string", "minLength": 1},
+        "version": {"type": "string"},
+        "role": {"type": "string"}
+      }
+    }
+  }
+}
