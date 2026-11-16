@@ -1,6 +1,12 @@
 # CHECKPOINT — Estado vigente del núcleo operativo/generativo Softly
 
-**Actualizado:** 2026-11-16  
+**Actualizado:** 2026-11-16
+
+## Dictamen de Dirección — cierre administrativo integral de Runtime
+
+Por orden expresa de gAto y conforme a RESET-CORE-2026-002, se ratifica que todo documento, artefacto, proceso, tarea, dependencia, handoff, validación o espera contenido en Runtime, operado por Runtime o condicionado a Runtime queda **fuera de norma, fuera de Softly y cerrado administrativamente**. No se exige implementación, reparación, prueba, despliegue, restauración ni aprobación adicional. Ningún estado de espera o bloqueo Runtime puede permanecer abierto ni usarse como prerequisito. Los registros históricos se preservan solo como evidencia no operativa, sin autoridad para reactivar el asunto. Este cierre no certifica reparación ni eliminación técnica de Runtime.
+
+**Referencia normativa:** RESET-CORE-2026-002, sección 12.2 (versión 1.2.0).  
 **Fuente de autoridad:** SOFTLY.md e instrucciones vigentes de gAto.
 
 
