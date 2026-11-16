@@ -53,3 +53,10 @@ El archivo del hilo es historia documental; el checkpoint es una síntesis opera
 - Corregir mediante evento nuevo; no reescribir historia sin dejar rastro.
 
 La bitácora es trazabilidad documental. No es un sistema inmutable ni una garantía criptográfica.
+
+
+## «Guarda esta incidencia» y «Cierra el Hilo»
+
+Para cada agente persistente, salvo Softly misma para el registro de incidencias, la captura debe conservar hilo observable, JSONL, hilo, bitácora, índices, commit verificado y relectura. Softly está excluida de este comando para su propio registro; los demás agentes deben disponer de logs y bitácora propios. «Cierra el Hilo» aplica también a Softly: recuperar compromisos, completar y persistir, verificar commits/pruebas y realizar dos revisiones finales independientes antes de declarar el cierre. La orden de incidencia no crea una tarea correctiva ni reemplaza el cierre; cerrar un hilo no borra registros.
+
+La documentación no significa que el runtime implemente estas operaciones. Registrar evidencia observable sin secretos, cadena de pensamiento privada ni datos personales innecesarios. Si persistencia o verificación no pueden demostrarse, informar el bloqueo.
