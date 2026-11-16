@@ -140,6 +140,13 @@
       "parent_domain": null,
       "status": "established",
       "description": "Dominio DEV del registro histórico."
+    },
+    {
+      "domain_id": "systems-engineering",
+      "name": "Ingeniería de sistemas",
+      "parent_domain": "software-engineering",
+      "status": "candidate",
+      "description": "Diseño técnico de sistemas, integración y modelado de flujos; requiere asignación contractual específica."
     }
   ],
   "capability_profiles": [
@@ -195,18 +202,34 @@
       "inheritance": "none"
     },
     {
-      "capability_id": "cap-security-tls-isolation",
-      "name": "Revisión técnica de TLS y aislamiento",
+      "capability_id": "cap-security-tls-isolation-engineering",
+      "name": "Implementación y revisión técnica de TLS y aislamiento",
       "domain_id": "security-engineering",
       "source_package_ids": [
         "pkg-tara"
       ],
       "source_evidence": [
-        "Registro histórico 1.0.0: competencias TLS y aislamiento declaradas para Tara."
+        "Registro histórico 1.0.0: competencias TLS y aislamiento declaradas para Tara; se propone su revisión técnica bajo ingeniería."
       ],
       "status": "proposed-for-review",
       "proposed_identity_ids": [
-        "katarina",
+        "katarina"
+      ],
+      "authorization": "none-until-explicit-contract-mapping-and-independent-review",
+      "inheritance": "none"
+    },
+    {
+      "capability_id": "cap-security-tls-isolation-audit",
+      "name": "Auditoría de controles TLS y aislamiento",
+      "domain_id": "security-audit",
+      "source_package_ids": [
+        "pkg-tara"
+      ],
+      "source_evidence": [
+        "Registro histórico 1.0.0: competencias TLS y aislamiento declaradas para Tara; se propone su revisión independiente bajo auditoría."
+      ],
+      "status": "proposed-for-review",
+      "proposed_identity_ids": [
         "audeline"
       ],
       "authorization": "none-until-explicit-contract-mapping-and-independent-review",
