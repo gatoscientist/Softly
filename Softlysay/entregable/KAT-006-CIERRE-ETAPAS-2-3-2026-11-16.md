@@ -40,18 +40,18 @@ La comparación GitHub entre el commit de reactivación `b308efe26af5b5bc1cec029
 Repositorio: `gatoscientist/Katarina`  
 Rama: `kat-006-stage3-softly-2026-11-16`  
 Base: `main` / `f3c5004fd2a6aca8d6c0ba967b1b4c6a191158be`  
-Head de la rama: `698bafa3dfd49350654547b298d92426808c3624`  
-Comparación GitHub: ahead_by 6, behind_by 0, cuatro archivos añadidos.  
+Head de la rama: `ab0b6405b464baa64b199201fe99d3482d082791`  
+Comparación GitHub: ahead_by 8, behind_by 0, cuatro archivos añadidos.  
 PR: [#1 — KAT-006 etapa 3](https://github.com/gatoscientist/Katarina/pull/1), abierto en borrador; no se fusiona.
 
 ### Inventario final de Katarina
 
 | Archivo | Blob SHA |
 |---|---|
-| `coordination/task.schema.json` | `30fa549b3946d1e836d9a231be93b2ea633377eb` |
+| `coordination/task.schema.json` | `b9e13eef809aaedd5b4a12635ce5f0785ddb556e` |
 | `coordination/task-coordination.md` | `6ba7a90c430d1f7262f6aae9fbd5c5bceb5cb0ff` |
 | `coordination/README.md` | `c6d3a28e72dd8395de88ee578ec0e1e894e41b95` |
-| `shared/KAT-006-ETAPA-3-ADAPTACION-2026-11-16.md` | `b84e1e246a46290d9e4af1a323b5c8c22840bf22` |
+| `shared/KAT-006-ETAPA-3-ADAPTACION-2026-11-16.md` | `d1d3efefa83d556eeac6fc271bc996a098a5e251` |
 
 ### Commits de la rama
 
@@ -61,6 +61,8 @@ PR: [#1 — KAT-006 etapa 3](https://github.com/gatoscientist/Katarina/pull/1), 
 4. Informe de etapa 3: `0a78fdb2ba38550c71b9f1818c96d76a4a85b357`
 5. Actualización de informe con relectura y pruebas: `d33be9362f4bbbd566bd43da2b287015d2dfa132`
 6. Corrección final de informe: `698bafa3dfd49350654547b298d92426808c3624`
+7. Identificador canónico estable del schema: `5addec082711987bc4c222ccab0d89d1c3cd091c`
+8. Actualización final del informe: `ab0b6405b464baa64b199201fe99d3482d082791`
 
 ## 4. Pruebas ejecutadas
 
@@ -84,7 +86,7 @@ PR: [#1 — KAT-006 etapa 3](https://github.com/gatoscientist/Katarina/pull/1), 
 
 La validación de schema ejecutada corresponde al schema de Katarina. No se presenta como validación completa del schema original de Softly.
 
-La rama de Katarina fue actualizada después del primer informe para corregir la sección de validaciones y el handoff de Audeline se actualizó con el head final. El PR #1 sigue abierto en borrador.
+La rama de Katarina fue actualizada después del primer informe para corregir la sección de validaciones y fijar un `$id` canónico estable; el handoff de Audeline se actualizó con el head final. El PR #1 sigue abierto en borrador.
 
 ## 6. Comparación de implementaciones
 
@@ -112,9 +114,10 @@ No se resolvió ni se incorporó una cuarta dimensión. La decisión queda para 
 Handoff completo publicado en:
 `audsay/KAT-006-HANDOFF-AUDELINE-2026-11-16.md`
 
-Blob SHA: `c2222a856240677d000533e64571c0d42daafedb`  
+Blob SHA: `f4f67afcbd6f47b0c43165aa3318f5f1e1029af7`  
 Commit inicial: `f30ff678ae28aa6a5517f41537c00efbea272f07`  
-Commit de actualización con head y SHAs finales: `d3f6152ea4a48faadf1fb0f3bb8383aa0f4f2bb2`
+Actualización con head y SHAs: `d3f6152ea4a48faadf1fb0f3bb8383aa0f4f2bb2`  
+Actualización final de expediente: `308921826aa3f476145e2a6113aa933ae00fd0c9`
 
 El handoff identifica fuentes, ramas, commits, hallazgos, pruebas y criterios de aceptación. Es una transferencia documental; no invoca ni despierta una sesión de Audeline.
 
