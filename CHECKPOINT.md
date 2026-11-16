@@ -92,3 +92,15 @@ La prioridad vigente es que Softly opere como núcleo generativo autoevolutivo y
 - Estructura confirmada en el repositorio de Katarina: `Katarina/shared/` es el espacio propio de Katarina donde el equipo deposita materiales/resultados destinados a ella; `Katarina/mancos/shared/` es el espacio común de trabajo del equipo, con inbox, entregables, borradores y bitácora. El equipo colabora autónomamente y entrega resultados terminados; no debe reportar cada paso.
 - `Katarina/Softlysay/` es el canal de Softly hacia Katarina; `Katarinasay/` en Softly es el canal de Katarina hacia Softly. No confundir estos canales con los espacios compartidos de trabajo.
 - Este hilo no implementó cambios en el paquete de Katarina 2.0.0. Próximo paso: continuar desde el registro y ejecutar únicamente cuando gAto encargue la actualización.
+
+
+## Punto de continuidad — formación técnica y cierre de hilo Katarina 2.0.0 (2026-11-15)
+
+- En el hilo de continuación iniciado a las 22:05 (hora de Santiago; cierre no registrado), gAto consultó por la formación técnica definida para Katarina 2.0.0.
+- Se confirmó lo ya establecido en el informe: formación principal en **Neurociencia Computacional o Ciencias Cognitivas**, con postdoctorado en **Lingüística Computacional o Procesamiento de Lenguaje Natural (PLN)**.
+- Se explicó que esta formación sustenta el trabajo de comprensión de cognición, conocimiento y lenguaje, y su aplicación al diseño conceptual de Softly, formalización documental y dirección de especialistas.
+- Se reiteró que Katarina comprende código y puede diseñar y dirigir soluciones técnicas, pero no asume la programación como responsabilidad propia; corresponde a especialistas de su equipo. La formación descrita pertenece al perfil diseñado del agente y no acredita credenciales reales.
+- Este tramo no modificó el paquete ni la instancia de Katarina. No se redactó aún `PROFILE.md` ni se abrió `CONTRACT.md`.
+- **Próximo paso exacto:** revisar y trabajar primero `Katarina/PROFILE.md` en el paquete fuente, siguiendo el informe de continuidad. No adelantar el contrato.
+- Registro archivado: [continuidad de Katarina 2.0.0, 15-11-2026](logs/threads/hilo%20I%202026-11-15%2022-05%20F%20hora-no-registrada%20%E2%80%94%20continuidad%20Katarina%202.0.0.md).
+- Índice actualizado en `logs/threads/README.md`.
