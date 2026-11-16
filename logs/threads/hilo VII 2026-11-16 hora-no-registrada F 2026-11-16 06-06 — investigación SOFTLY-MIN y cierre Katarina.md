@@ -104,7 +104,8 @@ No se modifica `Katarina/core/`, `SOFTLY.md`, los contratos ni los permisos.
 ## 9. Commits y verificación final
 
 Commits confirmados por GitHub:
-- Archivo de este hilo: `34bdc6b562a150981c30f3d434f554be71ccd062`.
+- Commit inicial de creación del archivo de este hilo: `34bdc6b562a150981c30f3d434f554be71ccd062`.
+- Commit final que añadió el resultado de la verificación y el cierre: `e6e2c30123903c91160c5cb3dd03f09004cce834`.
 - Índice `logs/threads/README.md`: `915525378cf4469f07a635d3f3c2143ac8d5f7cd`.
 - `CHECKPOINT.md`: `d39c9ef9166933a08c0d59f6a902ba1a5c5dd1a9`.
 - `logs/activity.jsonl`: `4ff975b0825952c72d518a7a85c572ce816654da`.
