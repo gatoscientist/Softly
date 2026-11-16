@@ -34,7 +34,54 @@
       "uniqueItems": true,
       "items": {
         "$ref": "#/$defs/identity"
-      }
+      },
+      "allOf": [
+        {
+          "contains": {
+            "type": "object",
+            "properties": {
+              "identity_id": {
+                "const": "softly"
+              }
+            },
+            "required": [
+              "identity_id"
+            ]
+          },
+          "minContains": 1,
+          "maxContains": 1
+        },
+        {
+          "contains": {
+            "type": "object",
+            "properties": {
+              "identity_id": {
+                "const": "katarina"
+              }
+            },
+            "required": [
+              "identity_id"
+            ]
+          },
+          "minContains": 1,
+          "maxContains": 1
+        },
+        {
+          "contains": {
+            "type": "object",
+            "properties": {
+              "identity_id": {
+                "const": "audeline"
+              }
+            },
+            "required": [
+              "identity_id"
+            ]
+          },
+          "minContains": 1,
+          "maxContains": 1
+        }
+      ]
     },
     "temporary_assignments": {
       "type": "array",
