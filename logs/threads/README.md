@@ -12,7 +12,7 @@ Este directorio conserva la historia documental de hilos cerrados. Los archivos 
 - [Hilo del 15-11-2026, 04:01–05:01 — deliberación sobre la identidad, origen y emergencia de Softly](hilo%20I%202026-11-15%2004-01%20F%202026-11-15%2005-01.md)
 - [Hilo del 14-11-2026, hora inicial no registrada–17:17 — sincronización final DEVAGENTS TITAN y cierre documental](hilo%20I%202026-11-14%20hora-no-registrada%20F%202026-11-14%2017-17.md)
 - [Hilo del 14-11-2026, hora inicial no registrada–13:06 — cierre de auditoría y continuidad de Softly](hilo%20I%202026-11-14%20hora-no-registrada%20F%202026-11-14%2013-06.md)
-- [Hilo del 14-11-2026, horas no registradas — mantenimiento y continuidad de Softly](hilo%20I%202026-11-14%20hora-no-registrada%20F%202026-11-14%20hora-no-registrada.md)
+- [Hilo del 14-11-2026, horas no registradas — mantenimiento y continuidad de Softly](hilo%20I%202026-11-14%20hora-no-registrada%20F%20hora-no-registrada.md)
 - [Hilo del 13-11-2026, 17:49–19:31](hilo%20I%202026-11-13%2017-49%20F%202026-11-13%2019-31.md)
 - [Hilo del 13-11-2026, hora inicial no registrada–23:23](hilo%20I%202026-11-13%20hora-no-registrada%20F%202026-11-13%2023-23.md)
 - [Hilo del 14-11-2026, 02:36–04:38](hilo%20I%202026-11-14%2002-36%20F%202026-11-14%2004-38.md)
@@ -42,8 +42,7 @@ Agentes nuevos y migrados deben cumplir «Guarda esta incidencia» (excepto Soft
 
 - [Hilo X del 16-11-2026, aproximadamente 06:59–07:01 — deliberación bilateral sobre arquitectura minimalista y cierre parcial](hilo%20X%202026-11-16%2006-59%20F%2007-01%20%E2%80%94%20deliberacion%20bilateral%20arquitectura%20minimalista%20y%20cierre%20parcial.md)
 - Revisión cruzada de Softly: `Softlysay/entregable/2026-11-16-revision-cruzada-softly-arquitectura-minimalista.md` (Fase III parcial; revisión recíproca de Katarina pendiente).
-
 - Informe inicial independiente de Softly: `Softlysay/entregable/2026-11-16-informe-inicial-softly-arquitectura-minimalista.md`.
-
 - [Hilo XI del 16-11-2026, hora inicial no registrada–09:07 — coordinación universal y rediseño del sistema](hilo%20XI%202026-11-16%20hora-no-registrada%20F%202026-11-16%2009-07%20%E2%80%94%20investigacion%20coordinacion%20universal%20y%20redise%C3%B1o%20del%20sistema.md)
 - [Hilo XII del 16-11-2026, hora no registrada — decisión de dirección y continuidad de la investigación de coordinación](hilo%20XII%202026-11-16%20hora-no-registrada%20F%20hora-no-registrada%20%E2%80%94%20decision%20y%20continuidad%20investigacion%20coordinacion.md)
+- [Hilo XIII del 16-11-2026, 13:50–14:12 — creación documental de Zoe y cierre](hilo%20XIII%202026-11-16%2013-50%20F%202026-11-16%2014-12%20%E2%80%94%20creaci%C3%B3n%20documental%20de%20Zoe%20y%20cierre.md)
