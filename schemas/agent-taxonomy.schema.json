@@ -48,31 +48,83 @@
       "maxItems": 3,
       "items": {
         "$ref": "#/$defs/identity"
-      }
+      },
+      "allOf": [
+        {
+          "contains": {
+            "type": "object",
+            "required": [
+              "identity_id"
+            ],
+            "properties": {
+              "identity_id": {
+                "const": "softly"
+              }
+            }
+          },
+          "minContains": 1,
+          "maxContains": 1
+        },
+        {
+          "contains": {
+            "type": "object",
+            "required": [
+              "identity_id"
+            ],
+            "properties": {
+              "identity_id": {
+                "const": "katarina"
+              }
+            }
+          },
+          "minContains": 1,
+          "maxContains": 1
+        },
+        {
+          "contains": {
+            "type": "object",
+            "required": [
+              "identity_id"
+            ],
+            "properties": {
+              "identity_id": {
+                "const": "audeline"
+              }
+            }
+          },
+          "minContains": 1,
+          "maxContains": 1
+        }
+      ],
+      "uniqueItems": true
     },
     "domains": {
       "type": "array",
       "items": {
         "$ref": "#/$defs/domain"
-      }
+      },
+      "uniqueItems": true
     },
     "capability_profiles": {
       "type": "array",
       "items": {
         "$ref": "#/$defs/capability"
-      }
+      },
+      "uniqueItems": true
     },
     "packages": {
       "type": "array",
       "items": {
         "$ref": "#/$defs/package"
-      }
+      },
+      "uniqueItems": true
     },
     "temporary_assignments": {
       "type": "array",
       "items": {
         "$ref": "#/$defs/assignment"
-      }
+      },
+      "uniqueItems": true
     },
     "migration": {
       "type": "object",
@@ -131,6 +183,10 @@
           }
         }
       }
+    },
+    "$schema": {
+      "type": "string",
+      "const": "./agent-taxonomy.schema.json"
     }
   },
   "$defs": {
@@ -175,7 +231,8 @@
           "type": "array",
           "items": {
             "type": "string"
-          }
+          },
+          "uniqueItems": true
         },
         "authority": {
           "const": "defined-by-current-contract-only"
@@ -246,7 +303,8 @@
           "items": {
             "type": "string"
           },
-          "minItems": 1
+          "minItems": 1,
+          "uniqueItems": true
         },
         "source_evidence": {
           "type": "array",
@@ -259,7 +317,6 @@
           "enum": [
             "candidate-unassigned",
             "proposed-for-review",
-            "approved-capability",
             "rejected"
           ]
         },
@@ -271,7 +328,8 @@
               "katarina",
               "audeline"
             ]
-          }
+          },
+          "uniqueItems": true
         },
         "authorization": {
           "const": "none-until-explicit-contract-mapping-and-independent-review"
@@ -320,7 +378,85 @@
             "temporary-bounded-assignment"
           ]
         }
-      }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "candidate-unassigned"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "authority": {
+                "const": "no-operational-authority"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "historical-source"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "authority": {
+                "const": "no-operational-authority"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "canonical"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "authority": {
+                "const": "canonical-identity-contract"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "temporary-assignment"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "authority": {
+                "const": "temporary-bounded-assignment"
+              }
+            }
+          }
+        }
+      ]
     },
     "assignment": {
       "type": "object",
@@ -339,12 +475,7 @@
           "type": "string"
         },
         "identity_id": {
-          "enum": [
-            "softly",
-            "katarina",
-            "audeline",
-            "zoe"
-          ]
+          "const": "zoe"
         },
         "scope": {
           "type": "string"
@@ -367,40 +498,5 @@
         }
       }
     }
-  },
-  "allOf": [
-    {
-      "contains": {
-        "properties": {
-          "identity_id": {
-            "const": "softly"
-          }
-        }
-      },
-      "minContains": 1,
-      "maxContains": 1
-    },
-    {
-      "contains": {
-        "properties": {
-          "identity_id": {
-            "const": "katarina"
-          }
-        }
-      },
-      "minContains": 1,
-      "maxContains": 1
-    },
-    {
-      "contains": {
-        "properties": {
-          "identity_id": {
-            "const": "audeline"
-          }
-        }
-      },
-      "minContains": 1,
-      "maxContains": 1
-    }
-  ]
+  }
 }
