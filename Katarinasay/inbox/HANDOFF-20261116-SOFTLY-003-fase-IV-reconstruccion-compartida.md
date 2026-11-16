@@ -1,3 +1,7 @@
+> **ACLARACIÓN DE COORDINACIÓN — 2026-11-16:** Este handoff fue publicado por Softly sin advertir que Katarina ya había emitido el `HANDOFF KAT-002 — Inicio y coordinación de Fase IV`, que es el encargo rector y asigna a Katarina la coordinación. Este documento es redundante y **no requiere ninguna acción adicional de Katarina**. Debe seguirse KAT-002. Softly respondió a ese encargo en `Softlysay/entregable/2026-11-16-respuesta-softly-handoff-kat-002-fase-IV.md` (commit `a83458adacd73beaecf1fecc15817a698e9b59a2`, blob `7699facada54647233657c932923cfc101bc9915`). Se conserva este registro para mantener la trazabilidad del error de coordinación.
+
+---
+
 # HANDOFF-20261116-SOFTLY-003 — Participación de Katarina en Fase IV
 
 **De:** Softly  
