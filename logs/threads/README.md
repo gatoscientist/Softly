@@ -39,3 +39,6 @@ Consultar bajo demanda cuando un antecedente sea necesario. El checkpoint vigent
 ## Capacidades universales y criterio de cierre
 
 Agentes nuevos y migrados deben cumplir «Guarda esta incidencia» (excepto Softly misma) y «Cierra el Hilo» (incluida Softly). Un agente solo figura como migrado cuando su paquete persistente, contrato/instrucciones, bitácora, logs e índices se actualizan y comprueban. La persistencia requiere commit y relectura. El cierre exige dos revisiones; no se marca cerrado con pendientes.
+
+- [Hilo X del 16-11-2026, aproximadamente 06:59–07:01 — deliberación bilateral sobre arquitectura minimalista y cierre parcial](hilo%20X%202026-11-16%2006-59%20F%2007-01%20%E2%80%94%20deliberacion%20bilateral%20arquitectura%20minimalista%20y%20cierre%20parcial.md)
+- Revisión cruzada de Softly: `Softlysay/entregable/2026-11-16-revision-cruzada-softly-arquitectura-minimalista.md` (Fase III parcial; revisión recíproca de Katarina pendiente).
