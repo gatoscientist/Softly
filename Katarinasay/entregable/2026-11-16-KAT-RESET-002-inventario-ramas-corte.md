@@ -28,3 +28,8 @@ Commit de publicación en Katarina: `dda02d149672584f2b533471f7079d9f656864a2`.
 - Dirección/administración: habilitar operación de respaldo/eliminación de refs y lectura de protección de ramas.
 
 Las limitaciones técnicas son localizadas y no deben detener el trabajo independiente.
+
+
+## Relectura posterior
+
+En la última verificación, PR #8 seguía abierto y no fusionado; GitHub informó nuevamente `mergeable: false` (HEAD `9ed9fabcd44aa33d3e5f25b54c88751ef42c3ed2`). Una consulta intermedia había informado `true`, señal variable. Se toma el resultado más reciente: no fusionable. No se realizó merge; siguen pendientes las correcciones técnicas y el dictamen independiente de Audeline.
