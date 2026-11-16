@@ -45,7 +45,7 @@ La búsqueda de repositorios accesibles encontró trece repositorios. Los siete 
 | gatoscientist/Cytryna | README y core/IDENTITY.md la definen como agente colaboradora autónoma independiente | Pendiente de clasificación de alcance. No retirar ni alterar identidad hasta resolver pertenencia/función. |
 | gatoscientist/Laboratorio-de-agentes | Biblioteca de paquetes portables, investigación y snapshots históricos; README niega que sea runtime | Histórico/dependencia documental; clasificar rutas y referencias antes de cualquier retiro. |
 | gatoscientist/gAtoSD | Suite forense/optimizador independiente con dos agentes propios, Lucyna y Andy, ambos NAMED_LOCKED por el usuario responsable; Lucyna prohíbe leer/modificar código sin autorización explícita y Andy limita su alcance a GUI | Proyecto independiente, provisionalmente fuera del alcance RESET-CORE-2026-002: no se encontró dependencia operativa con Softly. No inspeccionar ni modificar su código; el material Soft Agents/GatoSD en Laboratorio es solo borrador de referencia. |
-| gatoscientist/stroli | Repositorio público con actividad de enero de 2026; no se encontró referencia operativa desde los repositorios Softly inspeccionados | Externo/ajeno provisional; no intervenir. |
+| gatoscientist/stroli | Sitio estático público StroLi con formulario de acceso y endpoint protegido; no se encontró referencia desde Softly/Laboratorio | Proyecto externo/ajeno provisional; no sondear ni intentar acceder al contenido protegido. |
 | gatoscientist/Dabra | Repositorio vacío según metadatos consultados | Sin activos inspeccionables; pertenencia al alcance no demostrada. |
 | gatoscientist/Laboratorio-Musical | Repositorio vacío según metadatos consultados | Sin activos inspeccionables; pertenencia al alcance no demostrada. |
 | gatoscientist/asdasd | Repositorio público vacío según metadatos consultados | Externo/ajeno provisional; no intervenir. |
@@ -290,3 +290,10 @@ Estos HOLD no fusionan ni retiran capacidades, no alteran los paquetes de origen
 La inspección de metadatos y contratos de gatoscientist/gAtoSD confirma una suite separada (0.1.1-alpha) con dos agentes propios: Lucyna (SOFAGENT 1.0.0 / NAMED_LOCKED) y Andy (SOFAGENTGUI 1.1.0 / NAMED_LOCKED). Ambas identidades fueron confirmadas por el usuario responsable el 2026-11-12. Lucyna tiene una regla explícita de no leer, buscar, ejecutar ni modificar código de gAtoSD sin autorización directa; su estado documenta falta de runner Windows y pruebas no ejecutadas. Andy tiene alcance limitado a GUI y tampoco dispone de runtime Windows en esta sesión.
 
 No se encontró una dependencia operativa de gAtoSD con Softly, Katarina, Auditoria o TITAN. El único vínculo encontrado en Laboratorio-de-agentes/Soft Agents/GatoSD es un borrador de referencia, no un paquete. Por tanto, gAtoSD queda provisionalmente fuera del alcance de RESET-CORE-2026-002 y no se interviene. La regla de tres identidades no se extiende automáticamente a proyectos independientes del gAto.
+
+
+## 23. Delimitación de StroLi y repositorios vacíos
+
+La inspección superficial del árbol público gatoscientist/stroli encontró una página estática titulada StroLi con formulario de acceso y endpoint /api/check. No se intentó adivinar credenciales, consultar el endpoint ni acceder al archivo protegido. Las búsquedas de referencias a “stroli” en Softly y Laboratorio no devolvieron resultados. Se clasifica como externo/ajeno provisional y no se interviene.
+
+Dabra y Laboratorio-Musical tienen repositorios vacíos según metadatos/árboles consultados; asdasd también está vacío y público. No hay evidencia de dependencia con Softly. Se mantienen fuera de intervención hasta que aparezca una referencia verificable o una instrucción de gAto.
