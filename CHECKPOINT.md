@@ -136,3 +136,15 @@ Cuando gAto cierre explícitamente un hilo, conservar la historia en logs/thread
 - **Commit del índice:** `1d32e82167597f672bf9bffea692cd2aad260d06`.
 - **Commit final de actividad verificada:** `e7e7db64811d4858cd1fc491fe77c61884666a56`.
 - **Próxima acción:** ninguna pendiente dentro de este hilo. Activación o validación de Zoe requiere instrucción independiente de gAto.
+
+
+## Reset integral coordinado — RESET-CORE-2026-002 (2026-11-16)
+
+- Softly emitió la nueva orden coordinada `docs/governance/RESET-CORE-2026-002.md`, versión 1.0.0, bajo autoridad de gAto. La orden actualiza las disposiciones operativas incompatibles de RESET-CORE-2026-001, que se preserva como antecedente.
+- Commit de emisión de orden e índice de gobernanza: `3f0bd215bbfae99fc0e1b377d5dcb5c8ffb4ddd9`.
+- La orden define exactamente tres identidades operativas finales: Softly, Katarina y Audeline. Zoe tiene una función supervisora temporal y no integra el estado final.
+- La orden delega acciones irreversibles dentro de alcance bajo salvaguardas verificables; no sustituye la comprobación de respaldos concretos ni autoriza intervenir activos externos o ajenos.
+- Se inició Fase A con reconocimiento documental de siete repositorios conocidos. Informe: `logs/reset/2026-11-16-reconocimiento-inicial.md`.
+- Handoffs publicados: Katarina commit `5136673dce4a1644e63358757279e026c5f95927`; Auditoria commit `265c52a05e8d9518f521880171287e10cc4eab9b`; Zoe commit `674d06b882eca791d20570c3389af267757059bc`.
+- Primer reconocimiento: Softly 3 ramas/1 PR abierto; Katarina 2 ramas/1 PR abierto; Auditoria 4 ramas/1 PR abierto; Zoe, TITAN y Cytryna 1 rama/0 PR cada uno; Laboratorio-de-agentes 2 ramas/0 PR. Los repositorios con ramas adicionales y PR abiertos no están consolidados.
+- **Estado:** Fase A iniciada, no terminada. No hay acuses verificables de Katarina, Audeline o Zoe en las fuentes consultadas. No se han ejecutado retiros, eliminaciones de ramas, cierres de PR ni migraciones. La cobertura es preliminar y debe ampliarse.
