@@ -443,3 +443,6 @@ Runtime y KAT-006 permanecen cerrados administrativamente y no constituyen requi
 
 
 **Matriz de ramas actualizada:** `docs/governance/CONSOLIDACION-RAMAS-RESET-CORE-002.md` (commit `e2e0520971d23eacd733d43f08fc54ff929e92f4`). Las siete ramas adicionales fueron comparadas contra sus `main`; todas están divergidas y clasificadas. PR históricos #4 Softly, #1 Katarina y #1 Auditoria están cerrados sin merge. Softly PR #8 es el único PR abierto detectado y corresponde a la migración v2; Audeline recibió solicitud de revisión independiente en PR #8 (comentario 6927638755). La integración queda pendiente de dictamen, no de nueva autorización de Dirección.
+
+
+**Revalidación de ramas:** matriz `docs/governance/CONSOLIDACION-RAMAS-RESET-CORE-002.md` actualizada en commit `f3624a179d10e09e1a6a18fc7581cd68abc66292`. Las siete ramas históricas continúan divergidas; los conteos `ahead/behind` vigentes quedaron registrados. PR #8 continúa abierto y mergeable, con dictamen independiente pendiente. Blob SHA verificado del registro v2 en la rama de migración: `f6ef8ca9e162a2303112b80ddb9b8ff75af22a25`; schema: `54e73168ca11fce8cc4af626a53e36739bdc6f67`. No se modificó main con la migración.
