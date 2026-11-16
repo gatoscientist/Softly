@@ -1,0 +1,179 @@
+{
+  "registry_version": "2.0.0",
+  "governing_order": "RESET-CORE-2026-002",
+  "operational_identity_count": 3,
+  "inheritance_default": "none",
+  "operational_identities": [
+    {
+      "identity_id": "softly",
+      "role": "core-coordination",
+      "version": "1.0.0",
+      "status": "operational",
+      "authority_source": "RESET-CORE-2026-002",
+      "professional_domain": "núcleo operativo, generativo y coordinación general",
+      "competencies": [
+        "coordinación general",
+        "generación y evolución documental",
+        "gobernanza del ecosistema"
+      ],
+      "inheritance": "none",
+      "evidence": [
+        "gatoscientist/Softly/README.md",
+        "gatoscientist/Softly/SOFTLY.md",
+        "RESET-CORE-2026-002 sección 1"
+      ]
+    },
+    {
+      "identity_id": "katarina",
+      "role": "engineering-development",
+      "version": "3.0.0",
+      "status": "operational",
+      "authority_source": "RESET-CORE-2026-002",
+      "professional_domain": "ingeniería y desarrollo de software",
+      "competencies": [
+        "ingeniería de software",
+        "arquitectura y desarrollo"
+      ],
+      "inheritance": "none",
+      "evidence": [
+        "gatoscientist/Katarina/Katarinasay/README.md",
+        "entregable de reconciliación contractual 3.0.0 referido en CHECKPOINT.md",
+        "RESET-CORE-2026-002 sección 1"
+      ]
+    },
+    {
+      "identity_id": "audeline",
+      "role": "independent-audit",
+      "version": "1.0.0",
+      "status": "operational",
+      "authority_source": "RESET-CORE-2026-002",
+      "professional_domain": "auditoría independiente, gobernanza e integridad documental",
+      "competencies": [
+        "auditoría documental",
+        "contraste de evidencia",
+        "gobernanza y trazabilidad"
+      ],
+      "inheritance": "none",
+      "evidence": [
+        "gatoscientist/Audeline/Audelinesay/README.md",
+        "gatoscientist/Audeline/TEAM/TEAM.md",
+        "RESET-CORE-2026-002 sección 1"
+      ]
+    }
+  ],
+  "temporary_assignments": [
+    {
+      "assignment_id": "zoe-reset-supervision",
+      "holder": "Zoe",
+      "role": "temporary-cross-functional-supervision",
+      "status": "active-temporary",
+      "counts_as_operational_identity": false,
+      "expiry_condition": "Cierre global de RESET-CORE-2026-002",
+      "authority_source": "RESET-CORE-2026-002",
+      "evidence": [
+        "RESET-CORE-2026-002 sección 3.5"
+      ]
+    }
+  ],
+  "capability_packages": [
+    {
+      "package_id": "agentdev-tiffany",
+      "source_identity": "Tiffany",
+      "disposition": "candidate-unassigned",
+      "operational_authority": false,
+      "inheritance": "none",
+      "competencies": [
+        "PowerShell avanzado"
+      ],
+      "evidence": [
+        "registro 1.0.0 histórico; paquete referido en Laboratorio-de-agentes"
+      ]
+    },
+    {
+      "package_id": "agentsec-tara",
+      "source_identity": "Tara",
+      "disposition": "candidate-unassigned",
+      "operational_authority": false,
+      "inheritance": "none",
+      "competencies": [
+        "auditoría PowerShell/AST",
+        "integridad de leases",
+        "TLS",
+        "aislamiento"
+      ],
+      "evidence": [
+        "registro 1.0.0 histórico; paquete referido en Laboratorio-de-agentes"
+      ]
+    },
+    {
+      "package_id": "agentmus-thea",
+      "source_identity": "Thea",
+      "disposition": "candidate-unassigned",
+      "operational_authority": false,
+      "inheritance": "none",
+      "competencies": [],
+      "evidence": [
+        "registro 1.0.0 histórico"
+      ]
+    },
+    {
+      "package_id": "agentsci-tabata",
+      "source_identity": "Tabata",
+      "disposition": "candidate-unassigned",
+      "operational_authority": false,
+      "inheritance": "none",
+      "competencies": [
+        "grafos",
+        "flujos de información",
+        "relojes y turnos"
+      ],
+      "evidence": [
+        "registro 1.0.0 histórico"
+      ]
+    },
+    {
+      "package_id": "agentmus-melina",
+      "source_identity": "Melina",
+      "disposition": "candidate-unassigned",
+      "operational_authority": false,
+      "inheritance": "none",
+      "competencies": [
+        "creación, desarrollo, análisis y evaluación musical"
+      ],
+      "evidence": [
+        "registro 1.0.0 histórico; Laboratorio-de-agentes"
+      ]
+    },
+    {
+      "package_id": "aurora",
+      "source_identity": "Aurora",
+      "disposition": "historical",
+      "operational_authority": false,
+      "inheritance": "none",
+      "competencies": [],
+      "evidence": [
+        "gatoscientist/Auditoria/recovery/AUD-20261116-001; paquete histórico"
+      ]
+    },
+    {
+      "package_id": "autumn",
+      "source_identity": "Autumn",
+      "disposition": "historical",
+      "operational_authority": false,
+      "inheritance": "none",
+      "competencies": [],
+      "evidence": [
+        "gatoscientist/Auditoria/recovery/AUD-20261116-001; paquete histórico"
+      ]
+    }
+  ],
+  "notes": [
+    "Este registro separa identidades operativas, asignaciones temporales y paquetes de capacidades.",
+    "Solo Softly, Katarina y Audeline tienen autoridad operativa vigente.",
+    "Zoe es una asignación temporal de supervisión, no una identidad operativa adicional.",
+    "Los paquetes candidate-unassigned no están activados, asignados ni autorizados para dispatch; requieren decisión y evidencia de competencia antes de cualquier uso.",
+    "Aurora y Autumn se conservan como evidencia histórica y no son identidades operativas.",
+    "Ninguna competencia, permiso, herramienta o certificación se hereda por taxonomía, jerarquía o procedencia.",
+    "El registro 1.0.0 se conserva sin sobrescritura como antecedente histórico."
+  ]
+}
