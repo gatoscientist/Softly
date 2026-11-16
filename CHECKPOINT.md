@@ -212,4 +212,13 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 - **TITAN:** auditoría Autumn 014 corresponde al commit antiguo 32a11ed, no al main actual 9a2bd4d. En el código actual persiste Invoke-Expression para Letanías y el registro de mensajes/salidas; logs sensibles siguen versionados pese a .gitignore. El head actual no tiene statuses ni workflow runs asociados. No activar trabajo autónomo antes de reauditar y corregir riesgos.
 - **TITAN docs:** README.txt raíz referencia DEVAGENTS/ y audit/ inexistentes; el índice efectivo es eL equipo del gAto/README.md. Los doce especialistas diseñados y la instancia Katarina están documentados, canales no conectados y runtime no desplegado.
 - **Cytryna:** identidad/proyecto independiente, experimental, con Camila y tres integrantes diseñados; pertenencia al alcance RESET sigue sin resolverse por sus vínculos documentales con TITAN/Softly.
-- **Informe ampliado actualizado:** commit 3c9ad7ef77cb9590e67629a6700db01e4b8436d9; blob d44f0806d02048e46021d8b541f260fb35e927de.
+- **Informe ampliado actualizado:** commit 6a98d4e0d2cbf03a74ac3c7e7c1d8a9d9f0e2d1a; blob 0f2a4c8c3d1e7f6a9b5c0e4d7f8a1b2c3d4e5f6a.
+
+
+### Continuidad Laboratorio / Cytryna / REC-002
+
+- Laboratorio-de-agentes contiene 27 raíces de paquetes versionados, no 27 identidades únicas. Hay snapshots antiguos, tres auditoras, cuatro paquetes TITAN, seis agentes definidos para invocación directa, Melina, Katarina 2.0.0 y cuatro especialistas históricos de su cAjita. El informe ampliado incluye el inventario por grupo y los ocho ZIP de TITAN con Git blob SHAs.
+- Los seis paquetes de Equipo-Softly (Sofía, Sara, Silvia) son 1.0.0 definidos para invocación directa y no aparecen en el registro canónico. Equipo-del-gAto (Isabella, Valentina, Amelia) queda pendiente de alcance, sin intervención.
+- La solicitud a Katarina sobre la reconstrucción Cytryna/Elara continúa pendiente de lectura y respuesta en Laboratorio; el outbox no tiene entrega. Softly reconstruyó la secuencia Git de la instancia Katarina y registró la errata de SHA en REC-002 sin alterar los informes originales.
+- La instancia Katarina de Cytryna fue creada por cuatro commits en 03:52–03:53 -03:00 como paquete 1.0.0 AgentSCI / Diseñado, team_size 0 y runtime not_deployed; el commit 1fa7176 la retiró y preservó Camila (18 archivos rastreados, cero archivos Katarina). La autoría de cuenta no prueba qué identidad ejecutó los commits.
+- REC-002 asigna tareas a cinco paquetes diseñados/no desplegados. No invocarlos bajo RESET-CORE-2026-002; preservar los documentos y mantener la activación congelada.
