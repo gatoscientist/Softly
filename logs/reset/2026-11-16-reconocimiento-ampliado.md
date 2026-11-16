@@ -385,3 +385,20 @@ La existencia de canales no equivale a recepción ni concede permisos. La casa h
 Softly actualizó a Zoe mediante `Zoe/Softlysay/2026-11-16-addendum-estado-actual.md` (commit `c9463695101bd5118afbe02da73b045973b9690f`) y lo indexó en README (`813b94fe41aa3f7683abfc65b45a728a0fc920d8`) y bitácora (`b0892d5b647523b6792fd5f38281ff70024ac272`). El addendum corrige el hallazgo histórico de “Audeline sin acuse”, localiza AUD-018, actualiza issues, ramas, canales y HOLDs, y solicita a Zoe revisar ZOE-001..012 sin borrar historia.
 
 Zoe también recibió el encargo explícito de incorporar un límite temporal verificable a su contrato, procedimiento y README: su supervisión termina cuando Audeline emite dictamen final independiente y gAto confirma el cierre del reset; no se prorroga automáticamente. El encargo está persistido en `Zoe/Softlysay/2026-11-16-encargo-limite-temporal-supervision.md`. Aún no existe respuesta ni actualización contractual de Zoe. Por tanto, su supervisión sigue activa bajo el límite que impone directamente RESET-CORE-2026-002, pero la formalización interna permanece pendiente.
+
+
+## 30. Último corte de divergencia de ramas
+
+Comparación repetida después de los commits de canalización y continuidad (corte 2026-11-16, alrededor de 19:01 UTC):
+
+| Repositorio / rama | Ahead | Behind |
+|---|---:|---:|
+| Softly `fix/f03-recover-ledger` | 5 | 338 |
+| Softly `recovery/AUD-20261116-001` | 3 | 86 |
+| Katarina `kat-006-stage3-softly-2026-11-16` | 8 | 28 |
+| Auditoria `recovery/AUD-20261116-001` | 19 | 18 |
+| Auditoria `amelia/propuesta-mejora-auditoria-2026-11-15` | 2 | 24 |
+| Auditoria `proposal/AUD-20261115-001-refactor-equipo-auditoria` | 2 | 24 |
+| Laboratorio `proposal/auditoria-reforma-normativa-2026-11-15` | 1 | 176 |
+
+Los conteos varían con cada commit nuevo en main. Este es el último corte medido antes de esta actualización documental; deben recalcularse justo antes de cualquier integración o retiro. No se fusionó ni borró ninguna rama.
