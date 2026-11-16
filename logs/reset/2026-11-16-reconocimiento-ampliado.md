@@ -213,7 +213,7 @@ El runtime Mini 0.2 está presente en main. RES-20261114-002 registra seis prueb
 
 ## 14. Revisión de actualidad del riesgo técnico TITAN
 
-La auditoría Autumn AUT-20261114-014 examinó el commit histórico 32a11ed76816d55490677cdfc55787041ad2bf22, no el main actual. El main actual consultado es 9a2bd4df5340a15c31f334241824d59f89516f1c y Titan.ps1 tiene blob 4b202c3db1cde50a87cc213e56df0a023c51c6cb. Una lectura puntual del código actual confirma:
+La auditoría Autumn AUT-20261114-014 examinó el commit 32a11ed76816d55490677cdfc55787041ad2bf22. El main actual consultado es 9a2bd4df5340a15c31f334241824d59f89516f1c y Titan.ps1 tiene blob 4b202c3db1cde50a87cc213e56df0a023c51c6cb, idéntico al blob de Titan.ps1 en el commit auditado. Por tanto, los hallazgos estáticos de ese archivo siguen vigentes; el informe anterior no cubre los nuevos paquetes/equipos ni sus documentos. Una lectura puntual del código actual confirma:
 - F-01 sigue presente: el flujo de Letanías ejecuta Invoke-Expression sobre lease.Command en el proceso principal.
 - F-02 sigue presente: Write-TitanDebug registra evento, agente y datos de mensaje/salida; el árbol actual mantiene logs/TITAN-debug.jsonl y logs/Secundus_Memoria.json versionados pese a reglas .gitignore que intentan excluirlos. No se inspeccionó ni reprodujo su contenido.
 - F-05 no tiene evidencia de CI para el head actual: get_commit_combined_status devuelve statuses vacíos y fetch_commit_workflow_runs devuelve workflow_runs vacío. Existe un workflow Windows de smoke tests, pero no hay ejecución asociada al commit consultado. La protección de rama no se verificó.
@@ -297,3 +297,14 @@ No se encontró una dependencia operativa de gAtoSD con Softly, Katarina, Audito
 La inspección superficial del árbol público gatoscientist/stroli encontró una página estática titulada StroLi con formulario de acceso y endpoint /api/check. No se intentó adivinar credenciales, consultar el endpoint ni acceder al archivo protegido. Las búsquedas de referencias a “stroli” en Softly y Laboratorio no devolvieron resultados. Se clasifica como externo/ajeno provisional y no se interviene.
 
 Dabra y Laboratorio-Musical tienen repositorios vacíos según metadatos/árboles consultados; asdasd también está vacío y público. No hay evidencia de dependencia con Softly. Se mantienen fuera de intervención hasta que aparezca una referencia verificable o una instrucción de gAto.
+
+
+## 24. Evidencia de CI y validación de código
+
+Se consultó el historial de Actions (hasta 100 ejecuciones por repositorio) sin reejecutar workflows:
+
+- **TITAN:** 100 ejecuciones consultadas: 41 success, 59 failure, 0 cancelled. La última exitosa fue en el commit d77291e130961d44ff5f6828f68dfa6f05b554c6, 2026-11-12 13:06 UTC. Las diez más recientes son fallidas; la racha de fallos comienza en los commits de código del 12/13 de noviembre. El commit 67edfe47168f1ad82c07fd23f0acd32e9c660b44 es el último que modificó Titan.ps1 y su ejecución falló. El head actual 9a2bd4d es posterior y documental, sin workflow run asociado. El job de la última ejecución fallida consultada no expone pasos ni logs recuperables; el informe Autumn ya había registrado runner_id=0/runner_name vacío. No se puede afirmar que los tests se ejecutaron.
+- **Cytryna:** 100 ejecuciones consultadas: 0 success, 30 failure, 70 cancelled. El workflow configura una matriz de 3 sistemas operativos por 3 versiones de Python y cancel-in-progress; las cuatro commits de creación de Katarina en secuencia rápida cancelaron ejecuciones anteriores. La reparación 1fa7176 dispara nueve jobs, todos fallidos en segundos. Los jobs no exponen pasos y los logs devuelven BlobNotFound; la causa exacta no está disponible. No se ejecutaron tests manualmente.
+- **Softly, Katarina, Auditoria, Audeline, Zoe y Laboratorio-de-agentes:** no se encontró ningún archivo .github/workflows en sus árboles main actuales. Softly tiene test_runtime.py, pero sin workflow CI; su 6/6 es reporte de Katarina, no validación independiente.
+
+**Conclusión de validación:** TITAN y Cytryna tienen workflows declarados, pero el estado reciente no acredita una ejecución de pruebas confiable. TITAN conserva hallazgos estáticos actuales y necesita recuperar el runner/CI; Cytryna permanece fuera del alcance operativo y no se interviene. Los repositorios núcleo carecen de CI automatizado en main. No se lanzó ningún rerun ni se modificó la configuración de Actions.
