@@ -399,3 +399,6 @@ Se contrastaron los diagramas de referencia de tipos/taxonomías con `schemas/ag
 - Se preserva la pregunta de Katarina sobre si la orquestación cubre la coordinación sistémica transversal. No se presume respuesta ni se crea una cuarta dimensión.
 - Commit del análisis: `e16febcc90731102c7d490af7e90fb8c5c0d3250`; blob SHA verificado: `373e8fe26e0285d4371154340a59575eaa93dee1`.
 - Softly issue #7 recibió el hallazgo y la recomendación (comentario 6927474991).
+
+
+**Actualización de estado:** Softly issue #3 fue cerrado como `completed` después de persistir la revisión crítica y registrar el entregable en el cuerpo del issue. La fase experimental no queda aprobada ni iniciada; requerirá mandato separado de Dirección.
