@@ -17,3 +17,5 @@ Cada artefacto debe registrar ID, fecha, versión, estado, alcance, fuentes, lim
 - [AUD-RESET-002 — discrepancia de invocabilidad en Laboratorio-de-agentes](2026-11-16-AUD-RESET-002-discrepancia-equipos-laboratorio.md): seis paquetes documentales; Equipo-Softly en HOLD y Equipo-del-gAto fuera de alcance hasta clasificación. Corrección editorial mínima solicitada.
 
 - [AUD-RESET-002 — reconciliación de contratos e identidades](2026-11-16-AUD-RESET-002-reconciliacion-contratos-identidades.md): Katarina 3.1.0 sin equipos subordinados; Auditoria/main explicita a Audeline como única auditora operativa y Aurora/Autumn como historia.
+
+- [AUD-RESET-002 — dictamen independiente del PR #8 de registro v2](2026-11-16-AUD-RESET-002-dictamen-PR-registry-v2.md): NO-GO para merge en HEAD 9ed9fab; schema no valida su propio registro, falta unicidad de identidades, cuatro rutas fuente incorrectas y reservas de atribución/capacidades.
