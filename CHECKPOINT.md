@@ -440,3 +440,6 @@ Se recibió y ejecuta el dictamen de Dirección. Las tareas delegadas continúan
 ### Estado general
 
 Runtime y KAT-006 permanecen cerrados administrativamente y no constituyen requisitos. RESET-CORE-2026-002 no está certificado globalmente hasta dictamen final de Audeline y resolución verificable de los criterios de rama y respaldo. Las limitaciones técnicas se mantienen localizadas y no suspenden tareas independientes.
+
+
+**Matriz de ramas actualizada:** `docs/governance/CONSOLIDACION-RAMAS-RESET-CORE-002.md` (commit `e2e0520971d23eacd733d43f08fc54ff929e92f4`). Las siete ramas adicionales fueron comparadas contra sus `main`; todas están divergidas y clasificadas. PR históricos #4 Softly, #1 Katarina y #1 Auditoria están cerrados sin merge. Softly PR #8 es el único PR abierto detectado y corresponde a la migración v2; Audeline recibió solicitud de revisión independiente en PR #8 (comentario 6927638755). La integración queda pendiente de dictamen, no de nueva autorización de Dirección.
