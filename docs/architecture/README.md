@@ -8,6 +8,7 @@ Documentos conceptuales y propuestas del modelo general de agentes y del sistema
 - [Modelo de agentes reutilizables v0.1](agent-model-v0.1.md): Agent Definition, Project Brief, Project Assignment y Work Session.
 - [Principios transversales del modelo general v0.1](general-agent-model-principles-v0.1.md): visibilidad asimétrica, separación de capas y principios aplicables a distintas familias de agentes.
 - [Patrones de coordinación](coordination-patterns.md): patrones a estudiar y criterios comparativos.
+- [Modelo de coordinación task-centric](task-centric-coordination.md): unidad tarea, dependencias, responsables, tres dimensiones y pregunta sistémica abierta.
 - [Traspaso del molde genérico](agent-model-handoff-2026-11-13.md): contexto y orden de continuidad para la validación del molde.
 
 ## Arquitectura de conocimiento
