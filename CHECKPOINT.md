@@ -22,7 +22,7 @@ Por orden expresa de gAto y conforme a RESET-CORE-2026-002, se ratifica que todo
 - Laboratorio-de-agentes: informe 24 detecta que el índice de equipos declara seis paquetes invocables pese al HOLD del Equipo-Softly y la exclusión provisional del Equipo-del-gAto. Corrección editorial mínima entregada a Softly; no se modificaron ni invocaron paquetes.
 - Zoe: asignación `active-temporary` hasta dictamen final independiente de Audeline y confirmación expresa de gAto; no es cuarta identidad.
 - Softly issue #2 (revisión crítica Godot) fue completada y cerrada; issue #3 (alerta material) fue cerrada tras la actualización de hallazgos. Issue #7 mantiene el seguimiento de AUD-RESET-002.
-- **Estado global:** NO-GO de certificación integral mientras PR #8 mantenga hallazgos REGV2-01..09, sigan presentes las ocho ramas adicionales y no se verifique la restaurabilidad de ZIP. PR #8 sigue abierto y sin merge; el campo técnico `mergeable` varió entre consultas (true/false). Audeline emitió NO-GO; esa bandera no equivale a aceptación. La conexión disponible no expone delete-ref ni descarga binaria. Ninguna limitación se atribuye a Runtime. Informes de Audeline: `reports/RESET-CORE-2026-002/22-AUDELINE-CORTE-FINAL-ESTADO-RESIDUAL-2026-11-16.md` y `23-AUDELINE-MANIFIESTO-PRESERVACION-RAMAS-2026-11-16.md`, `24-AUDELINE-REVISION-PAQUETES-EQUIPOS-LABORATORIO-2026-11-16.md` y `25-AUDELINE-RECONCILIACION-CONTRATOS-IDENTIDADES-2026-11-16.md`.
+- **Estado global:** NO-GO de certificación integral mientras PR #8 mantenga hallazgos REGV2-01..09, sigan presentes las ocho ramas adicionales y no se verifique la restaurabilidad de ZIP. PR #8 sigue abierto y sin merge; el campo técnico `mergeable` varió entre consultas (true/false). Audeline emitió NO-GO; esa bandera no equivale a aceptación. La conexión disponible no expone delete-ref ni descarga binaria. Ninguna limitación se atribuye a Runtime. Informes de Audeline: `reports/RESET-CORE-2026-002/22-AUDELINE-CORTE-FINAL-ESTADO-RESIDUAL-2026-11-16.md` y los informes 23–27 del expediente `reports/RESET-CORE-2026-002/`.
 
 
 ## Adenda vigente — prohibición total de Runtime (2026-11-16)
@@ -375,7 +375,7 @@ Informe ampliado vigente: logs/reset/2026-11-16-reconocimiento-ampliado.md, blob
 - Se reforzó el schema para exigir una ocurrencia de cada par identity_id/role autorizado (Softly/core-coordination, Katarina/engineering-development, Audeline/independent-audit). Esto corrige el límite de `uniqueItems`, que solo evita objetos idénticos.
 - Commits: schema `1132f70eb3c4f9809e5546cec9187f5dc022db2a`; registro `8f16e32957db8d5fd34f8f755804b9b29c81855e`; índice `4b6e5ea3d46855db4e737ed25695f4e21cd25ba9`.
 - Verificación: los tres artefactos fueron releídos desde GitHub después de escribirlos. No se declara validación automatizada del JSON Schema ni migración del registro histórico 1.0.0.
-- Estado residual no cambia: siete ramas adicionales a main siguen clasificadas y preservadas; diez ZIP continúan sin verificación binaria/restauración. RESET-CORE-2026-002 permanece sin certificación global.
+- Corte histórico anterior a PR #8 e informe 27: siete ramas adicionales y diez ZIP sin verificación binaria. Está supersedido por el informe 23 (ocho ramas) y el informe 27 (cuatro ZIP verificados, seis sin payload binario).
 
 
 ## Corte más reciente — revisión crítica de investigación Godot (2026-11-16)
@@ -390,7 +390,7 @@ La revisión crítica solicitada en Softly issue #3 fue completada y persistida 
 - Commit del informe: `8a25b8d85ccf3c3041655c8a3ba017d6b140efa2`; blob SHA releído: `4f9489ad2a0c4f6d302349e3b3fcc2c1fde2fe5a`.
 - Softly issue #3 recibió el enlace, dictamen y límites de la revisión (comentario 6927443895).
 
-**Residual global RESET-002:** informe 26 añade NO-GO para merge del PR #8; el modelo v2 necesita correcciones de schema/procedencia. Siguen pendientes el retiro físico de ocho ramas y la verificación binaria/restauración de seis ZIP grandes. Estos frentes no dependen de Runtime.
+**Residual global RESET-002:** informe 26 añade NO-GO para merge del PR #8; el modelo v2 necesita correcciones de schema/procedencia. Siguen pendientes el retiro físico de ocho ramas y la verificación binaria/restauración de seis ZIP grandes; cuatro ya pasaron CRC32/tamaño por entrada. Estos frentes no dependen de Runtime.
 
 
 ## Análisis complementario — modelo de identidades y taxonomías (2026-11-16)
@@ -447,10 +447,10 @@ Se recibió y ejecuta el dictamen de Dirección. Las tareas delegadas continúan
 Runtime y KAT-006 permanecen cerrados administrativamente y no constituyen requisitos. RESET-CORE-2026-002 no está certificado globalmente hasta dictamen final de Audeline y resolución verificable de los criterios de rama y respaldo. Las limitaciones técnicas se mantienen localizadas y no suspenden tareas independientes.
 
 
-**Matriz de ramas actualizada:** `docs/governance/CONSOLIDACION-RAMAS-RESET-CORE-002.md` (commit `e2e0520971d23eacd733d43f08fc54ff929e92f4`). Las siete ramas adicionales fueron comparadas contra sus `main`; todas están divergidas y clasificadas. PR históricos #4 Softly, #1 Katarina y #1 Auditoria están cerrados sin merge. Softly PR #8 es el único PR abierto detectado y corresponde a la migración v2; Audeline recibió solicitud de revisión independiente en PR #8 (comentario 6927638755). La integración queda pendiente de dictamen, no de nueva autorización de Dirección.
+**Matriz de ramas actualizada:** `docs/governance/CONSOLIDACION-RAMAS-RESET-CORE-002.md` (commit `e2e0520971d23eacd733d43f08fc54ff929e92f4`). Las siete ramas del corte inicial fueron comparadas contra sus `main`; el informe 23 añade la octava rama de PR #8. Las ocho están divergidas y clasificadas. PR históricos #4 Softly, #1 Katarina y #1 Auditoria están cerrados sin merge. Softly PR #8 es el único PR abierto detectado y corresponde a la migración v2; Audeline recibió solicitud de revisión independiente en PR #8 (comentario 6927638755). La integración queda pendiente de dictamen, no de nueva autorización de Dirección.
 
 
-**Revalidación de ramas:** matriz `docs/governance/CONSOLIDACION-RAMAS-RESET-CORE-002.md` actualizada en commit `f3624a179d10e09e1a6a18fc7581cd68abc66292`. Las siete ramas históricas continúan divergidas; los conteos `ahead/behind` vigentes quedaron registrados. PR #8 continúa abierto, sin merge, con dictamen independiente NO-GO (informe 26). La bandera técnica `mergeable` ha variado entre consultas; no cambia el dictamen. No integrar. Blob SHA verificado del registro v2 en la rama de migración: `f6ef8ca9e162a2303112b80ddb9b8ff75af22a25`; schema: `54e73168ca11fce8cc4af626a53e36739bdc6f67`. No se modificó main con la migración.
+**Revalidación de ramas:** matriz `docs/governance/CONSOLIDACION-RAMAS-RESET-CORE-002.md` actualizada en commit `f3624a179d10e09e1a6a18fc7581cd68abc66292`. Las ocho ramas adicionales continúan divergidas; los conteos `ahead/behind` vigentes quedaron registrados en el informe 23. PR #8 continúa abierto, sin merge, con dictamen independiente NO-GO (informe 26). La bandera técnica `mergeable` ha variado entre consultas; no cambia el dictamen. No integrar. Blob SHA verificado del registro v2 en la rama de migración: `f6ef8ca9e162a2303112b80ddb9b8ff75af22a25`; schema: `54e73168ca11fce8cc4af626a53e36739bdc6f67`. No se modificó main con la migración.
 
 
 **Nota de revisión:** el mapeo de implementación TLS/aislamiento a Katarina no fue aceptado por Audeline (REGV2-04): la fuente Tara acredita revisión/auditoría, no implementación. La rama debe corregirse antes de una nueva revisión. Blob SHA final del registro v2 en rama: `8057b3d1666f3781a212f1858843db2569f27c65`; schema: `670d2d94f13ccbedc2c0688afaadb18f5978d87b`. PR #8 sigue abierto, sin merge, y recibió dictamen NO-GO de Audeline en el informe 26. La bandera técnica `mergeable` ha variado entre consultas; no integrar. No integrar hasta corregir REGV2-01..09 y solicitar nueva revisión.
