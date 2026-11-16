@@ -66,12 +66,13 @@
       "assignment_id": "zoe-reset-supervision",
       "holder": "Zoe",
       "role": "temporary-cross-functional-supervision",
-      "status": "active-temporary",
+      "status": "closed",
       "counts_as_operational_identity": false,
       "expiry_condition": "Cierre global de RESET-CORE-2026-002",
       "authority_source": "RESET-CORE-2026-002",
       "evidence": [
-        "RESET-CORE-2026-002 sección 3.5"
+        "RESET-CORE-2026-002 sección 3.5",
+        "Cierre de la supervisión temporal registrado al concluir el reset documental, 2026-11-16."
       ]
     }
   ],
@@ -175,6 +176,7 @@
     "Aurora y Autumn se conservan como evidencia histórica y no son identidades operativas.",
     "Ninguna competencia, permiso, herramienta o certificación se hereda por taxonomía, jerarquía o procedencia.",
     "El registro 1.0.0 se conserva sin sobrescritura como antecedente histórico.",
-    "La asignación temporal de Zoe permanece activa hasta que se demuestre el cierre global de RESET-CORE-2026-002."
+    "La asignación temporal de Zoe permanece activa hasta que se demuestre el cierre global de RESET-CORE-2026-002.",
+    "La asignación temporal de Zoe está cerrada; no integra el conjunto de identidades operativas."
   ]
 }
