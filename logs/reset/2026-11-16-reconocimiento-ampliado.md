@@ -378,3 +378,10 @@ La brecha de existencia de canales se corrigió de forma aditiva, sin merges de 
 - **Audeline:** ya tiene los tres canales, pero sus README todavía describen el equipo Aurora/Autumn. Se solicitó que los reconcilie con su identidad única.
 
 La existencia de canales no equivale a recepción ni concede permisos. La casa histórica `Auditoria` conserva `Softlysay` como registro; no se añadió una segunda estructura de canales allí.
+
+
+## 29. Continuidad Zoe y condición de cierre temporal
+
+Softly actualizó a Zoe mediante `Zoe/Softlysay/2026-11-16-addendum-estado-actual.md` (commit `c9463695101bd5118afbe02da73b045973b9690f`) y lo indexó en README (`813b94fe41aa3f7683abfc65b45a728a0fc920d8`) y bitácora (`b0892d5b647523b6792fd5f38281ff70024ac272`). El addendum corrige el hallazgo histórico de “Audeline sin acuse”, localiza AUD-018, actualiza issues, ramas, canales y HOLDs, y solicita a Zoe revisar ZOE-001..012 sin borrar historia.
+
+Zoe también recibió el encargo explícito de incorporar un límite temporal verificable a su contrato, procedimiento y README: su supervisión termina cuando Audeline emite dictamen final independiente y gAto confirma el cierre del reset; no se prorroga automáticamente. El encargo está persistido en `Zoe/Softlysay/2026-11-16-encargo-limite-temporal-supervision.md`. Aún no existe respuesta ni actualización contractual de Zoe. Por tanto, su supervisión sigue activa bajo el límite que impone directamente RESET-CORE-2026-002, pero la formalización interna permanece pendiente.
