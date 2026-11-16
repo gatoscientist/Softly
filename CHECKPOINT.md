@@ -148,3 +148,11 @@ Cuando gAto cierre explícitamente un hilo, conservar la historia en logs/thread
 - Handoffs publicados: Katarina commit `5136673dce4a1644e63358757279e026c5f95927`; Auditoria commit `265c52a05e8d9518f521880171287e10cc4eab9b`; Zoe commit `674d06b882eca791d20570c3389af267757059bc`.
 - Primer reconocimiento: Softly 3 ramas/1 PR abierto; Katarina 2 ramas/1 PR abierto; Auditoria 4 ramas/1 PR abierto; Zoe, TITAN y Cytryna 1 rama/0 PR cada uno; Laboratorio-de-agentes 2 ramas/0 PR. Los repositorios con ramas adicionales y PR abiertos no están consolidados.
 - **Estado:** Fase A iniciada, no terminada. No hay acuses verificables de Katarina, Audeline o Zoe en las fuentes consultadas. No se han ejecutado retiros, eliminaciones de ramas, cierres de PR ni migraciones. La cobertura es preliminar y debe ampliarse.
+
+
+### Verificación de persistencia de RESET-CORE-2026-002
+
+- La orden y el índice de gobernanza fueron releídos desde la rama main después de la restauración final.
+- Blob de la orden: `0fa0c3aad2d3c76df882c72ea620a964bc71ecd4`; blob del índice: `c29ce623d31d144152806ecaf7eeffa0fd7073d6`.
+- Commit que deja la orden y el índice presentes en main: `277133b8b4e560c0ff72d99126a141a67165f7d6`.
+- El reconocimiento inicial y los tres handoffs también fueron releídos desde sus repositorios. La persistencia está verificada; la recepción por Katarina, Audeline y Zoe sigue pendiente de acuse observable.
