@@ -23,6 +23,7 @@
 - Hilo V (2026-11-16): responsabilidad de mejora continua, trazabilidad de incidencias y auditoría equilibrada.
 - Hilo VI (2026-11-16): continuidad y activación de TITAN y CYTRYNA; registro parcial debido a que solo se dispone del fragmento conversacional visible.
 - **Hilo VII (2026-11-16):** Katarina produjo y persistió la investigación SOFTLY-MIN sobre el núcleo funcional mínimo y la independencia del contexto personal. Registro: `logs/threads/hilo VII 2026-11-16 hora-no-registrada F 2026-11-16 06-06 — investigación SOFTLY-MIN y cierre Katarina.md`. Commit inicial del hilo: `34bdc6b562a150981c30f3d434f554be71ccd062`; commit final de verificación del hilo: `e6e2c30123903c91160c5cb3dd03f09004cce834`. El índice, checkpoint, actividad y bitácora de Katarina fueron releídos desde GitHub.
+- **Hilo VIII (2026-11-16):** se releyeron desde GitHub los mandatos de Katarina 2.0.0 y sus documentos complementarios; se confirmó que Runtime Engineering y la skill implement-runtime fueron retirados en esta versión. Se archivó la síntesis del hilo y se actualizaron índice, checkpoint, actividad y bitácora propia de Katarina. La lectura documental no acredita reparación técnica, despliegue ni validación del runtime. Registro: `logs/threads/hilo VIII 2026-11-16 hora-no-registrada F 2026-11-16 06-44 — relectura de mandatos y realineación Katarina 2.0.0.md`.
 
 ## Punto actual — investigación SOFTLY-MIN (2026-11-16)
 
