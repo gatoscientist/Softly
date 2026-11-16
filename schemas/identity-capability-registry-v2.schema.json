@@ -213,5 +213,64 @@
         }
       }
     }
-  }
+  },
+  "allOf": [
+    {
+      "contains": {
+        "type": "object",
+        "properties": {
+          "identity_id": {
+            "const": "softly"
+          },
+          "role": {
+            "const": "core-coordination"
+          }
+        },
+        "required": [
+          "identity_id",
+          "role"
+        ]
+      },
+      "minContains": 1,
+      "maxContains": 1
+    },
+    {
+      "contains": {
+        "type": "object",
+        "properties": {
+          "identity_id": {
+            "const": "katarina"
+          },
+          "role": {
+            "const": "engineering-development"
+          }
+        },
+        "required": [
+          "identity_id",
+          "role"
+        ]
+      },
+      "minContains": 1,
+      "maxContains": 1
+    },
+    {
+      "contains": {
+        "type": "object",
+        "properties": {
+          "identity_id": {
+            "const": "audeline"
+          },
+          "role": {
+            "const": "independent-audit"
+          }
+        },
+        "required": [
+          "identity_id",
+          "role"
+        ]
+      },
+      "minContains": 1,
+      "maxContains": 1
+    }
+  ]
 }
