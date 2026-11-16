@@ -308,3 +308,60 @@ Se consultó el historial de Actions (hasta 100 ejecuciones por repositorio) sin
 - **Softly, Katarina, Auditoria, Audeline, Zoe y Laboratorio-de-agentes:** no se encontró ningún archivo .github/workflows en sus árboles main actuales. Softly tiene test_runtime.py, pero sin workflow CI; su 6/6 es reporte de Katarina, no validación independiente.
 
 **Conclusión de validación:** TITAN y Cytryna tienen workflows declarados, pero el estado reciente no acredita una ejecución de pruebas confiable. TITAN conserva hallazgos estáticos actuales y necesita recuperar el runner/CI; Cytryna permanece fuera del alcance operativo y no se interviene. Los repositorios núcleo carecen de CI automatizado en main. No se lanzó ningún rerun ni se modificó la configuración de Actions.
+
+
+## 25. Recepción formal de Audeline y reconciliación documental
+
+Audeline publicó acuse formal en `gatoscientist/Audeline/reports/RESET-CORE-2026-002/06-AUDELINE-ACUSE-FORMAL-RESET-CORE-2026-002-2026-11-16.md` (blob `d8ded95278fd79768f3444209ee8a21d2e40ff35`), fechado 2026-11-16T15:35:57-03:00. Confirma recepción directa de gAto, continuidad paralela, KAT-006 separado y no bloqueante para RESET-002, y preservación de evidencia.
+
+Audeline ejecutó la reconciliación documental local descrita en la adenda 16: actualizó seis rutas en `Auditoria` (AGENT, CONTRACT, PROCEDURE, TEAM/TEAM, TEAM/COORDINATION, TEAM/TASK_BOARD) y cuatro en `Audeline` (README raíz, AGENT, CONTRACT, PROCEDURE). Los contratos/procedimientos ya no exigen informes ni invocaciones de Aurora/Autumn. Sus paquetes se preservan como historia/capacidades fuente.
+
+**Límite restante:** en la casa `Audeline` siguen sin reconciliarse `TEAM/TEAM.md`, `TEAM/COORDINATION.md`, `TEAM/TASK_BOARD.md` y los README de `Audelinesay`, `Katarinasay`, `Softlysay`, que aún describen el equipo de tres y la regla 1-1-1. La `Auditoria/TEAM/TASK_BOARD.md` sí tiene `AUD-RESET-002` en ejecución, pero sus links relativos `../Audeline/reports/...` no resuelven dentro del repositorio Auditoria: los informes 14–16 están en el repositorio separado `gatoscientist/Audeline/reports/...`. Corregir enlaces y sincronizar el tablero local de Audeline sigue pendiente.
+
+### AUD-018 localizado
+
+La búsqueda textual de Katarina no localizó `AUD-20261116-018`, pero el árbol recursivo de `gatoscientist/Auditoria/main` contiene `Audeline/reports/AUD-20261116-018-incidente-grave-coordinacion-KAT-006.md` (blob `0346f0a...`). El informe existe y registra el incidente grave de coordinación KAT-006. `AUD-20261116-017-reevaluacion-KAT-006.md` también existe (blob `393610a...`) y contiene el dictamen corregido NO-GO OPERACIONAL. La ausencia reportada por Katarina fue un límite de su búsqueda/ruta, no ausencia del artefacto.
+
+## 26. Cortes actuales de ramas y protección de main
+
+Se repitieron comparaciones contra los heads actuales, después de las actualizaciones de Softly, Katarina y Audeline:
+
+| Repositorio / rama | Ahead | Behind | Archivos exclusivos observados |
+|---|---:|---:|---:|
+| Softly `fix/f03-recover-ledger` vs main | 5 | 327 | 7 |
+| Softly `recovery/AUD-20261116-001` vs main | 3 | 75 | 3 |
+| Katarina `kat-006-stage3-softly-2026-11-16` vs main | 8 | 20 | 4 |
+| Auditoria `recovery/AUD-20261116-001` vs main | 19 | 14 | 13 |
+| Auditoria `amelia/propuesta-mejora-auditoria-2026-11-15` vs main | 2 | 20 | 2 |
+| Auditoria `proposal/AUD-20261115-001-refactor-equipo-auditoria` vs main | 2 | 20 | 2 |
+| Laboratorio `proposal/auditoria-reforma-normativa-2026-11-15` vs main | 1 | 176 | 1 |
+
+Las ramas siguen divergidas; no se fusionaron ni eliminaron. Los conteos de Katarina (5/303, 3/42, 8/10, 19/5, 2/11, 1/170) eran correctos para su corte anterior, pero ya están desactualizados por commits posteriores en main.
+
+La API de ramas devuelve `protected: false` para `main` en Softly, Katarina y Auditoria. El endpoint de reglas detalladas devolvió 403, pero el metadato de rama confirma que actualmente no hay protección activa. La política de main única aún no está aplicada y tampoco está protegida contra nuevos pushes.
+
+## 27. Hallazgos adicionales de Audeline y correcciones de inventario
+
+### KAT-006 — validación independiente de schemas
+
+La adenda 13 de Audeline valida ambos schemas con Draft 2020-12 (`check_schema` pasa), pero detecta fallas semánticas: `accepted` con criterio `pending`, `verified` sin evidencia/verificador, `blocked` sin blockers, `ready` con dependencia inexistente, responsable `team`, criterio vacío en `done` para Softly y `format: date-time` no aplicado sin `FormatChecker`. El dictamen es GO DOCUMENTAL CON RESERVAS y NO-GO para afirmar enforcement/integridad operacional. La alternativa B sigue siendo recomendación no vinculante; la decisión A/B/C permanece en gAto.
+
+### TITAN — runtime del producto separado de los paquetes Soft
+
+La adenda 10 de Audeline confirma que el runtime local del producto usa roles Primus, Secundus y Sensori; PrimusPrivado es un canal privado de Primus, no una quinta identidad. El runtime local no referencia los 12 paquetes de especialistas diseñados (4 equipo principal + 5 Dirección de Recuperación Cytryna + 3 Dirección técnica TITAN), ni acredita que estén conectados o activos. La instancia documental Katarina es un paquete separado y no debe contarse como identidad nueva. Los riesgos F-01/F-02 en `Titan.ps1` siguen vigentes; `GrantedBy=PRINCEPS` se fija automáticamente en el lease y no autentica criptográficamente al aprobador.
+
+### Cytryna — GUI y autorización
+
+La adenda 09 confirma que `main.py --gui` integra una GUI Tkinter en main; usa `app.chat_turn(..., allow_tool_execution=False)`, por lo que la ruta GUI bloquea herramientas. Hay cinco pruebas GUI bajo `AGENTGUI/workspace`, pero el workflow actual no las descubre ni ejecuta. `DELIVERY_REPORT.md` deja la repetición de pruebas integrada pendiente. La adenda 15 de Katarina añade que el `ToolRegistry.run()` del CLI no aplica centralmente `Tool.permissions` y que `max_tool_steps` limita iteraciones, no llamadas individuales por turno. Cytryna queda fuera del alcance operativo provisional y no se interviene.
+
+### Respaldos ZIP — corrección de tamaños y cobertura
+
+El inventario recursivo actual confirma diez ZIP entre Laboratorio y Auditoria. Se agregan a los ocho ZIP de TITAN ya listados:
+- `Laboratorio-de-agentes/eL arenero del gAto/Audelin.zip`: 22.243 bytes; Git blob `2c974a256c03385e97b3fe455c20ece6f57765f2`.
+- `Auditoria/lA cAjita del gAto/IA cAjita del gAto Autumm.zip`: 1.920 bytes; Git blob `fb245efac58223921e7436e9cd47340b33d67da6`.
+
+Corrección de lectura del informe 08 de Audeline: el árbol actual confirma `TITAN debug-inferencia-deliberacion.zip` = 1.400.645 bytes y `TITAN main.zip` = 1.530.504 bytes, no 1.406.645/1.535.040. Los Git blob SHAs citados por Audeline son correctos. Ninguno de los diez ZIP fue inspeccionado internamente ni validado como restaurable.
+
+### Issues Softly
+
+Audeline identificó cinco issues abiertas: #7 alerta vigente RESET-002; #6 RESET-001 supersedido; #5 KAT-006 con estado de despacho antiguo; #2 y #3 solicitudes históricas Godot, fuera del reset. Corresponde a Softly actualizar #5, cerrar #6 como supersedido preservando su historia y mantener #7 abierto hasta resolver las contradicciones. #2/#3 no se modifican.
