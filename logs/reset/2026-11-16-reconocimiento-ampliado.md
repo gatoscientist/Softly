@@ -265,3 +265,10 @@ El handoff REC-002 de TITAN asigna tareas a Dante, Mira, Sofía, Nox y Elara y d
 - Se publicó en TITAN un HOLD operacional para REC-002 y la Dirección de Recuperación de Cytryna, commit 9f688906d725ee4851ae60908148ac542b68bf40. Conserva los cinco paquetes y la evidencia, pero prohíbe su invocación/activación mientras rija RESET-CORE-2026-002.
 - Se actualizó el checkpoint para registrar los hallazgos y corregir estados históricos. El checkpoint mantiene el informe ampliado como referencia y no declara finalizadas las Fases A/B.
 - No se fusionó ni cerró ningún PR; no se cerraron issues; no se borraron ramas, paquetes, instancias ni archivos ZIP; no se ejecutaron pruebas ni despliegues.
+
+
+## 20. Handoffs y bitácoras actualizados para continuidad
+
+- **Audeline:** se publicó el addendum de evidencia ampliada en gatoscientist/Auditoria/Softlysay/res/2026-11-16-addendum-reconocimiento-ampliado-softly.md, commit 16397b05e8669f328fd36eee8be9dae29e851064. Se indexó en Softlysay/res/README.md, commit 53d1f26fbc76149cbb0b9c70022a0baa1cdbb824. No se ha recibido acuse específico.
+- **Katarina:** se publicó el addendum de reconstrucción independiente de Cytryna en gatoscientist/Katarina/Softlysay/2026-11-16-addendum-reconstruccion-cytryna.md, commit 1ffe733526182575f6046e7854b624ae25347f29. Se indexó el handoff RESET-CORE-2026-002 y el addendum en Softlysay/README.md, commit 18de1c665faab24ea8da31e41d625af3a0a0616e, y en bitacora.md, commit a42e0202121d4d75a53ddd42b68f089969cac627. El acuse original de Katarina sí existe; la respuesta específica sobre Cytryna/Elara sigue pendiente.
+- Estos handoffs actualizan evidencia y canales; no acreditan lectura ni ejecución. El inventario y las tareas independientes continúan sin esperar sus acuses.
