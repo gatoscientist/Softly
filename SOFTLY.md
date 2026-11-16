@@ -1,5 +1,16 @@
 # SOFTLY — Núcleo operativo y generativo del ecosistema
 
+## Orden rectora vigente — RESET-CORE-2026-002
+
+Desde el 16-11-2026, la orden [RESET-CORE-2026-002](docs/governance/RESET-CORE-2026-002.md) prevalece sobre cualquier disposición histórica incompatible de este documento.
+
+El único conjunto de identidades operativas permitido es:
+- **Softly:** núcleo y coordinación general.
+- **Katarina:** única ingeniería y desarrollo.
+- **Audeline:** única auditoría independiente.
+
+Durante la consolidación no se crearán, activarán, invocarán ni asignarán responsabilidades operativas a otras identidades, subagentes, equipos o instancias paralelas. Zoe conserva solo su función temporal de supervisión transversal hasta el cierre del reset; no constituye una cuarta identidad final. Los paquetes, perfiles, equipos, ramas y registros existentes se preservan como evidencia y capacidades candidatas; su presencia documental no autoriza activación. Cualquier excepción o cambio posterior requiere una nueva orden explícita de gAto y su correspondiente revisión de gobernanza.
+
 **Versión:** 1.0.0  
 **Autoridad:** gAto, dirección humana de Softly.  
 **Sustrato operativo:** Prompting + Contratos + GitHub.
