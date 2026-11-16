@@ -103,4 +103,4 @@ Primera lectura de vuelta mediante GitHub, fijada a los commits correspondientes
 - Actividad: blob `da8c25b390467b9bd6a40bbf55bfcafa069775a0`.
 - Bitácora de Katarina: blob `3f8e9a08fe9f0cdcc6ecd1d962f3fbe60c876108`.
 
-La consulta de contenido sin fijar ref devolvió 404 después de las escrituras; al fijar cada lectura al SHA del commit correspondiente, GitHub devolvió los cinco archivos y sus blobs. Los cinco commits también fueron recuperados mediante la API de commits y sus rutas modificadas coincidieron con lo esperado. Se realizará una segunda lectura independiente antes de declarar el cierre.
+La consulta de contenido sin fijar ref devolvió 404 después de las escrituras; al fijar cada lectura al SHA del commit correspondiente, GitHub devolvió los cinco archivos y sus blobs. Los cinco commits también fueron recuperados mediante la API de commits y sus rutas modificadas coincidieron con lo esperado. La segunda revisión independiente se completó releyendo desde GitHub el hilo, el índice, el checkpoint, la actividad y la bitácora de Katarina. Se preservaron las actualizaciones concurrentes posteriores del Hilo IX.
