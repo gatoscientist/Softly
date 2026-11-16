@@ -449,3 +449,6 @@ Runtime y KAT-006 permanecen cerrados administrativamente y no constituyen requi
 
 
 **Revalidación de ramas:** matriz `docs/governance/CONSOLIDACION-RAMAS-RESET-CORE-002.md` actualizada en commit `f3624a179d10e09e1a6a18fc7581cd68abc66292`. Las siete ramas históricas continúan divergidas; los conteos `ahead/behind` vigentes quedaron registrados. PR #8 continúa abierto y mergeable, con dictamen independiente pendiente. Blob SHA verificado del registro v2 en la rama de migración: `f6ef8ca9e162a2303112b80ddb9b8ff75af22a25`; schema: `54e73168ca11fce8cc4af626a53e36739bdc6f67`. No se modificó main con la migración.
+
+
+**Ajustes de revisión preventiva en la rama v2:** se retiraron de las identidades las referencias a dominios aún candidatos para evitar sugerir autorización implícita; se separó TLS/aislamiento entre ingeniería de Katarina y auditoría de Audeline; y la procedencia de migración ahora apunta explícitamente al archivo archivado v1.0.0. Blob SHA final del registro v2 en rama: `8057b3d1666f3781a212f1858843db2569f27c65`; schema: `670d2d94f13ccbedc2c0688afaadb18f5978d87b`. PR #8 sigue abierto y mergeable, pendiente de dictamen de Audeline.
