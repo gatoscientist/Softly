@@ -173,7 +173,6 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 - **Issues:** cuatro issues siguen abiertas en Softly (#2, #3, #5 y #6); requieren disposición administrativa y no se cierran por inferencia.
 - **Gobernanza:** SOFTLY.md, el contrato de Katarina y el modelo del Equipo Auditor contienen disposiciones históricas incompatibles con el estado final de tres identidades. La reconciliación y migración de capacidades sigue pendiente.
 
-**Informe ampliado:** commit 056e6a723daf2a2c34d4a53107996970dc215866; blob verificado c1b442b5d3d1b5a91ba514acf46712153d985cb9.
 
 **Estado global:** Fase A abierta; Fase B en progreso. No se ejecutaron merges, cierres de PR/issues, eliminación de ramas, retiros de identidades ni migraciones en esta actualización. La ausencia de acuse de Audeline no detiene el trabajo independiente.
 
@@ -184,7 +183,6 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 - La misión registra doce hallazgos: SOF-001 ALTO; siete MEDIO; dos BAJO; dos INFORMATIVO. Prioridades: taxonomía Agent Softly ausente, checkpoint atrasado, integridad referencial tarea/evento/handoff, evidencia/verificador en criterios de aceptación y permisos host frente a enforcement Runtime.
 - AUD-20261116-017 corregido es NO-GO OPERACIONAL específicamente para KAT-006. AUD-20261116-018 registra un incidente grave de criterio y coordinación. Ambos son compatibles con el dictamen documental general.
 - Audeline no invocó a Autumn ni Aurora en la misión general. El procedimiento que depende de ellas debe reconciliarse con la identidad única Audeline exigida por RESET-CORE-2026-002.
-- Informe ampliado actualizado: commit c3303890cd57f5ad6aa0d373eb10f6cad74d5f34; blob c1b442b5d3d1b5a91ba514acf46712153d985cb9 (versión anterior) y nuevo blob por verificar.
 
 
 ### Corrección de estado KAT-006 y registro de identidades
@@ -192,7 +190,6 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 - **KAT-006 por etapas:** etapa 1 documental completada en Softly/main; etapa 2 GO CON RESERVAS; etapa 3 adaptación documental persistida en rama Draft de Katarina, PR #1 abierto sin merge; etapa 4 auditoría independiente completada por Audeline con dictamen corregido NO-GO OPERACIONAL (AUD-20261116-017) e incidente grave registrado (AUD-20261116-018); etapa 5 aceptación humana no declarada y reservada a gAto. El expediente anterior que marcaba etapa 4 pendiente por activación quedó superado por los informes posteriores.
 - **Registro de identidades:** schemas/agent-taxonomy-registry.json contiene nueve entradas con availability active-standby: Tiffany, Tara, Thea, Tábata, Katarina 1.1.0, Melina, Audeline, Aurora y Autumn. No demuestra sesiones vivas, pero debe reconciliarse con el estado final de tres identidades. El schema no contempla Agent Softly, aunque Katarina 2.0.1 la declara.
 - **Taxonomías:** SOF-001 sigue abierto hasta decisión y reconciliación de identidad/taxonomía; SOF-004 es duplicación editorial en agents/README.md. No se modificaron estos contratos ni el registro durante el reconocimiento.
-- **Informe ampliado actualizado:** commit 11e235e7a8dab2d0f241b3a6625be0f9e5878742; blob 7b13cb0b70e028026f31b4b39ada2a2b7fcc1193.
 
 
 ### Corrección del inventario de Runtime Mini y ampliación TITAN/Cytryna
@@ -200,7 +197,6 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 - **Corrección de runtime:** Softly Runtime Mini 0.2 sí está en main, no solo en fix/f03-recover-ledger. El manifiesto declara una tarea de prueba y una operación create_text_file. events.jsonl está vacío y events.head permanece en GENESIS. Katarina reportó 6/6 pruebas en Python 3.13.5; no existe repetición independiente de Autumn ni validación productiva. La rama fix contiene cambios de recuperación F-03 y conserva seis bloqueos/pendientes; no equivale a runtime task-centric.
 - **TITAN:** árbol main consultado con 231 archivos. El índice actual de equipos está en eL equipo del gAto/README.md; README.txt raíz aún referencia DEVAGENTS/ y audit/ ausentes. Se observan doce paquetes de especialistas diseñados en tres equipos, más una instancia documental Katarina. Los canales están documentados, no conectados; los paquetes no demuestran activación. Requieren clasificación/migración de capacidades, no eliminación automática.
 - **Cytryna:** proyecto con identidad independiente y estado experimental; mantiene Camila y tres integrantes diseñados, además de raíces AGENTDEV/AGENTGUI. Se clasifica como pendiente de alcance por sus referencias cruzadas con TITAN/Softly; no intervenir hasta resolver pertenencia.
-- **Informe ampliado actualizado:** commit 44bc7df8eb77840ad1c8eec5a9fe5c374ed39a08; blob 514932c7949526e28f6d4f4b70ede2145f8ab800.
 
 
 ### Inventario operativo Softly, Auditoría y TITAN
@@ -212,7 +208,6 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 - **TITAN:** auditoría Autumn 014 corresponde al commit antiguo 32a11ed, no al main actual 9a2bd4d. En el código actual persiste Invoke-Expression para Letanías y el registro de mensajes/salidas; logs sensibles siguen versionados pese a .gitignore. El head actual no tiene statuses ni workflow runs asociados. No activar trabajo autónomo antes de reauditar y corregir riesgos.
 - **TITAN docs:** README.txt raíz referencia DEVAGENTS/ y audit/ inexistentes; el índice efectivo es eL equipo del gAto/README.md. Los doce especialistas diseñados y la instancia Katarina están documentados, canales no conectados y runtime no desplegado.
 - **Cytryna:** identidad/proyecto independiente, experimental, con Camila y tres integrantes diseñados; pertenencia al alcance RESET sigue sin resolverse por sus vínculos documentales con TITAN/Softly.
-- **Informe ampliado actualizado:** commit 6a98d4e0d2cbf03a74ac3c7e7c1d8a9d9f0e2d1a; blob 0f2a4c8c3d1e7f6a9b5c0e4d7f8a1b2c3d4e5f6a.
 
 
 ### Continuidad Laboratorio / Cytryna / REC-002
@@ -222,3 +217,6 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 - La solicitud a Katarina sobre la reconstrucción Cytryna/Elara continúa pendiente de lectura y respuesta en Laboratorio; el outbox no tiene entrega. Softly reconstruyó la secuencia Git de la instancia Katarina y registró la errata de SHA en REC-002 sin alterar los informes originales.
 - La instancia Katarina de Cytryna fue creada por cuatro commits en 03:52–03:53 -03:00 como paquete 1.0.0 AgentSCI / Diseñado, team_size 0 y runtime not_deployed; el commit 1fa7176 la retiró y preservó Camila (18 archivos rastreados, cero archivos Katarina). La autoría de cuenta no prueba qué identidad ejecutó los commits.
 - REC-002 asigna tareas a cinco paquetes diseñados/no desplegados. No invocarlos bajo RESET-CORE-2026-002; preservar los documentos y mantener la activación congelada.
+
+
+- **Informe ampliado vigente:** logs/reset/2026-11-16-reconocimiento-ampliado.md; blob SHA verificado 304edab03bc94dddc4f2788887fe71057f59050d.
