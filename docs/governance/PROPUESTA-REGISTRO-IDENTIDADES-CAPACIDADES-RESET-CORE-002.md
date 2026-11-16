@@ -3,7 +3,7 @@
 
 **Fecha:** 2026-11-16  
 **Emite:** Softly  
-**Estado:** PROPUESTA PARA DELIBERACIÓN; no modifica el registro vigente.  
+**Estado:** PROPUESTA HISTÓRICA PARCIALMENTE SUPERSEDIDA; no modifica el registro vigente. Las referencias a Runtime y a instancias de ejecución quedan fuera de norma por RESET-CORE-2026-002 v1.1.0.  
 **Autoridad de aprobación:** gAto.
 
 ## 1. Problema observado
@@ -39,9 +39,7 @@ Separar cuatro conceptos que hoy están mezclados:
 1. **Identidad operativa:** sujeto único que posee autoridad y responsabilidad dentro del ecosistema.
 2. **Perfil de capacidad:** conjunto de competencias profesionales o técnicas que una identidad puede ejercer, sin constituir otra identidad invocable.
 3. **Paquete documental:** repositorio/versionado que contiene contrato, permisos, capacidades y artefactos de una identidad o perfil.
-4. **Instancia de runtime:** proceso concreto, con estado de ejecución, endpoint, lease y evidencia propia. Un paquete diseñado o una disponibilidad declarada no equivalen a una instancia viva.
-
-Esta separación evita que una especialidad, paquete, canal privado o instancia se convierta accidentalmente en una cuarta identidad.
+Esta separación evita que una especialidad, paquete o canal privado se convierta accidentalmente en una cuarta identidad. La antigua categoría de instancia Runtime se elimina del modelo objetivo y no debe implementarse ni mantenerse.
 
 ## 3. Modelo objetivo sujeto a aprobación
 
@@ -75,10 +73,9 @@ Sin imponer nombres definitivos, una versión 2 podría separar:
 - `identities[]`: `identity_id`, `name`, `canonical_repo`, `canonical_version`, `operational_state`, `owner`, `role`.
 - `capability_profiles[]`: `profile_id`, `domain`, `capabilities[]`, `source_package`, `status`, `allowed_identity_ids[]`.
 - `packages[]`: `package_id`, `repo`, `version`, `maturity`, `blob_or_commit`, `identity_id` o `profile_id`.
-- `runtime_instances[]`: `instance_id`, `identity_id`, `runtime_state`, `process_id`, `endpoint`, `started_at`, `lease`, `evidence_refs[]`.
 - `temporary_assignments[]`: `assignment_id`, `identity_id`, `scope`, `start_condition`, `end_condition`, `approver`, `status`.
 
-La disponibilidad declarada debe separarse del estado de runtime. Un paquete puede existir y estar preservado sin estar disponible ni ejecutándose.
+El registro distingue identidad, capacidad y paquete documental. No incorpora estados, procesos ni referencias de Runtime.
 
 ## 6. Decisión de taxonomía todavía abierta
 
@@ -105,10 +102,10 @@ Tampoco se resuelve si la coordinación sistémica es una capacidad transversal 
 - Las capacidades históricas se preservan y su procedencia es trazable.
 - Zoe aparece solo como asignación temporal con término verificable.
 - Paquetes de producto y proyectos independientes no se mezclan con el catálogo Softly.
-- Estado de runtime no se infiere de madurez, disponibilidad ni existencia de archivos.
+- No existe entidad Runtime en el modelo objetivo ni dependencia operativa de ejecución.
 - El schema impide identidades/equipos subordinados no autorizados y valida referencias/evidencia.
 - No se eliminan paquetes, ramas, respaldos ni historial como parte de la migración.
 
 ## 9. Límites de esta propuesta
 
-Este documento no modifica `agent-taxonomy-registry.json`, sus schemas, contratos ni permisos. No autoriza crear identidades, invocar perfiles, activar agentes, ejecutar runtime, fusionar ramas o borrar paquetes. Toda decisión normativa queda reservada a gAto después de auditoría independiente.
+Este documento no modifica `agent-taxonomy-registry.json`, sus schemas, contratos ni permisos. Las menciones históricas a Runtime quedan expresamente invalidadas por RESET-CORE-2026-002 v1.1.0. No autoriza crear identidades, invocar perfiles, activar agentes, fusionar ramas o borrar paquetes. Toda decisión normativa restante queda reservada a gAto después de auditoría independiente.
