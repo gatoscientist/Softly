@@ -183,3 +183,57 @@ Son doce paquetes de especialistas más una instancia documental de Katarina. Su
 Cytryna es un caso separado: su README la declara agente colaboradora independiente, v0.1.0 experimental/primera versión funcional, con aplicación Python, consola/GUI, herramientas y proveedores. AGENTS.md declara que su identidad permanece independiente de los proyectos. Su instancia Camila 1.0.0 / Diseñado conserva exactamente tres integrantes documentales (Celene, Noa y Cinthia); además hay raíces AGENTDEV y AGENTGUI. devteam/README.md mantiene un mandato propio de entrega experimental con rama main y autoridad técnica de Fran/Francisca. Esto apunta a un proyecto independiente, pero la referencia cruzada con TITAN y los handoffs de Softly impiden excluirlo sin clasificación formal. Estado: pendiente de decisión de alcance; no intervenir ni retirar identidades mientras se clasifica.
 
 La Dirección de Recuperación de Cytryna en TITAN documenta una reparación acotada: retiró la instancia Katarina de Cytryna, conservó Camila y sus 22 rutas, y no reescribió historia. El informe 06 mantiene pendientes la invocación de Elara y especialistas, el relato de Katarina y una revisión independiente; no se declara recuperación integral de Cytryna.
+
+
+## 13. Estado interno de Softly: canales, herramientas y permisos
+
+El árbol recursivo de gatoscientist/Softly/main al corte consultado contiene 220 archivos y 22 entradas de primer nivel. El repositorio es privado, no archivado y usa main como rama predeterminada. La conexión GitHub de esta sesión informa permisos admin/maintain/push/pull/triage sobre Softly y los otros repositorios núcleo consultados; esto es permiso de la integración/cuenta, no permiso técnico de cada agente.
+
+La consulta de branch protection de main devolvió 403 Resource not accessible by integration. Por tanto, no se pudo verificar protección de rama ni reglas de merge. La única instalación externa visible en esta sesión es la integración GitHub para la cuenta gatoscientist; no se encontró un directorio tools/ ni un PERMISSIONS.md raíz que inventaríe otras conexiones. Los catálogos de herramientas de agentes son declarativos y no acreditan conexiones ni enforcement.
+
+Canales en main:
+- Softlysay/ existe como directorio de salida, pero no tiene README.md ni índice equivalente en la raíz.
+- Katarinasay/ tiene README y bitácora. Su README declara que Katarina puede existir en múltiples versiones, instancias y puntos de existencia, en contradicción con la regla de identidad única del RESET.
+- audsay/ sigue siendo el canal hacia “Auditoría (Audeline y colaboradoras)”; su README y res/ conservan el modelo de equipo. Audelinesay/ no existe en main. El PR Softly #4 que lo propone continúa abierto y Draft.
+
+Discrepancias internas adicionales:
+1. README.md y SOFTLY.md aún definen el crecimiento mediante creación de agentes y equipos, incompatible con la congelación y el estado final de tres identidades si se mantiene como instrucción vigente.
+2. agents/profiles/audelin.md conserva una definición histórica Audelin 0.1.0 / Propuesto, mientras las casas actuales documentan Audeline 1.0.0 / Diseñado. Debe marcarse como histórico o reconciliarse para no duplicar autoridad.
+3. agents/README.md repite dos veces la sección “Taxonomías y coordinación” (SOF-004).
+4. experiments/README.md dice que protocolos/resultados/casos solo contienen README de preparación y que no hay artefactos experimentales, pero existen protocolos y resultados Runtime Mini 0.1/0.2. Índice desactualizado.
+5. Katarinasay/structure.md conserva una estructura genérica de cuatro agentes; no corresponde a la casa actual de Katarina.
+6. audsay/README.md y los índices de canal no han migrado a una única identidad Audeline.
+7. logs/README.md mantiene instrucciones universales para todos los agentes y excluye a Softly de la captura de incidencias; debe contrastarse con el mandato final y el inventario de identidades.
+
+El archivo docs/governance/README.md sí referencia RESET-CORE-2026-002 como orden rectora y aclara que las órdenes no prueban recepción, ejecución, permisos ni activación.
+
+### Runtime Mini en main — evidencia de ejecución
+
+El runtime Mini 0.2 está presente en main. RES-20261114-002 registra seis pruebas superadas según reporte de Katarina en Python 3.13.5, con seis métodos de test. La concurrencia reportada usa dos instancias y seis threads en un mismo proceso; no es prueba multiproceso. El CODE AUD independiente de Autumn quedó pendiente. En el repositorio actual, events.jsonl está vacío y events.head conserva GENESIS, por lo que no hay eventos de ejecución persistidos en ese ledger. El prototipo permanece Prototipado / Probado preliminarmente, no Validado ni Operativo para producción.
+
+## 14. Revisión de actualidad del riesgo técnico TITAN
+
+La auditoría Autumn AUT-20261114-014 examinó el commit histórico 32a11ed76816d55490677cdfc55787041ad2bf22, no el main actual. El main actual consultado es 9a2bd4df5340a15c31f334241824d59f89516f1c y Titan.ps1 tiene blob 4b202c3db1cde50a87cc213e56df0a023c51c6cb. Una lectura puntual del código actual confirma:
+- F-01 sigue presente: el flujo de Letanías ejecuta Invoke-Expression sobre lease.Command en el proceso principal.
+- F-02 sigue presente: Write-TitanDebug registra evento, agente y datos de mensaje/salida; el árbol actual mantiene logs/TITAN-debug.jsonl y logs/Secundus_Memoria.json versionados pese a reglas .gitignore que intentan excluirlos. No se inspeccionó ni reprodujo su contenido.
+- F-05 no tiene evidencia de CI para el head actual: get_commit_combined_status devuelve statuses vacíos y fetch_commit_workflow_runs devuelve workflow_runs vacío. Existe un workflow Windows de smoke tests, pero no hay ejecución asociada al commit consultado. La protección de rama no se verificó.
+- F-07 persiste: README.txt referencia DEVAGENTS/ y audit/ que no están en el árbol actual; el índice real de paquetes está en eL equipo del gAto/README.md.
+
+No se ejecutó TITAN, PowerShell, tests ni workflows. La auditoría estática previa no cubre los cambios posteriores ni los nuevos equipos. El main actual requiere nueva revisión independiente antes de habilitar trabajo autónomo; no se afirma que F-03 u otros hallazgos estén corregidos sin comparar y verificar su diff.
+
+## 15. Tableros y tareas pendientes de Auditoría
+
+El tablero gatoscientist/Auditoria/TEAM/TASK_BOARD.md conserva misiones anteriores abiertas/en revisión: AUR-20261114-001; AUT-20261114-004; AUR-20261114-004 y AUR-20261114-005. Para TITAN conserva AUR-20261114-014 y AUD-20261114-014 como desbloqueadas, y AUT-20261114-014 como informe técnico completo con limitaciones. No se encontró una integración final que cierre el ciclo TITAN ni un informe conductual final de Aurora.
+
+El tablero de la casa gatoscientist/Audeline/TEAM/TASK_BOARD.md declara que las auditorías de activos están “Por asignar / No iniciada”, aunque existen informes AUD-SOFTLY-INTEGRITY-2026-001 y AUD-20261116-017/018. Es un estado desactualizado y debe reconciliarse por Audeline.
+
+Los contratos de TEAM/TEAM.md y TEAM/COORDINATION.md en Auditoria mantienen tres auditoras independientes y la regla 1-1-1 que requiere informes directos de Aurora y Autumn. El procedimiento de Audeline ordena delegar una revisión a cada una. Esto debe migrarse a un único flujo ejecutado por Audeline, preservando los informes históricos y sus hallazgos, sin conservar identidades/asignaciones operativas adicionales.
+
+## 16. Implicancias para las tres identidades finales
+
+- **Softly:** debe congelar la creación de nuevas identidades y reconciliar README/SOFTLY.md, catálogo, canales y bitácoras. Su autoridad coordinadora no debe transformarse en permisos técnicos no declarados.
+- **Katarina:** contrato 2.0.1 y PERMISSIONS.md le prohíben escribir código, scripts, pruebas y runtime y delegan esa función al equipo. También le permiten ampliar el equipo. Ambas disposiciones chocan con la misión de ser la única responsable de ingeniería/desarrollo y deben revisarse/versionarse antes de exigirle implementación directa.
+- **Audeline:** permisos declarativos sin enforcement; capacidades no conectadas; procedimiento dependiente de Autumn/Aurora. Debe absorber sus competencias útiles y asumir el flujo de auditoría individual sin delegaciones de identidad.
+- **Zoe:** permisos solo lectura, herramientas declaradas como no conectadas, paquete 1.0.0 / Diseñado. Sus doce hallazgos son entregables válidos de su participación temporal; no se convierte en cuarta identidad final.
+
+La reconciliación de contratos y permisos debe distinguir capacidades documentales, herramientas realmente disponibles, permisos de la integración GitHub y enforcement del runtime. Ninguna de esas capas se sustituye por un texto declarativo.
