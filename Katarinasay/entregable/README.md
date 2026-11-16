@@ -22,3 +22,5 @@ gAto
 
 
 - [Inventario actualizado de ramas y PR RESET-CORE-2026-002 (2026-11-16)](2026-11-16-KAT-RESET-002-inventario-ramas-corte.md): ocho ramas adicionales, PR revisados, divergencias y limitaciones técnicas localizadas.
+
+- [Solicitud de contraste final — limpieza estigmérgica rectificada de Katarina](2026-11-16-solicitud-contraste-final-limpieza-katarina.md): solicita a Softly verificación de diff, archivos protegidos y continuidad de activos RESET; no autoriza merge ni cierre.
