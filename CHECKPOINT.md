@@ -62,3 +62,17 @@ Cuando gAto cierre explícitamente un hilo, conservar la historia en logs/thread
 - **Commits finales de verificación:** actualización final del registro de hilo `8384d52e4e16432653dcb88584b32db2f95c6701`; actividad final en main `007088d5dbe00b7ea2a9d462f05bc7daaede31a8`; restauración explícita del estado pendiente del Hilo VI y preservación del estado verificado del Hilo VIII `c3225dec9e4f4aec0ad6283d8a14834f40393c4b`.
 - El índice, archivo del hilo, actividad y bitácora se releen fijando cada consulta al commit de escritura correspondiente. El checkpoint vigente incluye además la continuidad posterior del Hilo IX y se preserva sin sobrescribirla.
 - El paquete fuente `Katarina/core/` no fue modificado. La realineación es documental; no certifica reparación técnica ni validación de runtime.
+
+
+## Deliberación bilateral — arquitectura minimalista (Hilo X, 2026-11-16)
+
+- Fuente: `La arquitectura minimalista de Softly.pdf` (9 páginas), aportada por gAto.
+- Informe inicial de Katarina: `Katarinasay/entregable/2026-11-16-informe-inicial-katarina-arquitectura-minimalista.md`; blob SHA `4d5c4363f2f078728196085705a3c374dc175080`.
+- Informe inicial de Softly: conservado en el registro conversacional del Hilo X; aún no se había persistido como artefacto independiente.
+- Revisión cruzada de Softly: `Softlysay/entregable/2026-11-16-revision-cruzada-softly-arquitectura-minimalista.md`.
+- Archivo del hilo: `logs/threads/hilo X 2026-11-16 06-59 F 07-01 — deliberacion bilateral arquitectura minimalista y cierre parcial.md`.
+- Coincidencias: definición documental no equivale a activación; GitHub es memoria/plano de coordinación pero no despierta sesiones ni resuelve contradicciones semánticas; convienen eventos individuales y criterios de aceptación; el demonio debe preservar fuentes y trazabilidad.
+- Aporte relevante de Katarina: marco de tres niveles (definición, coordinación, ejecución), distinción entre disponibilidad y activación, y prueba de transferencia para el demonio.
+- **Estado:** Fases I y II completadas según informes disponibles. Fase III parcialmente completada: revisión de Softly persistida; revisión recíproca de Katarina pendiente. Fases IV y V no iniciadas. No declarar terminada la deliberación bilateral.
+- No se modificó SOFTLY.md ni se aprobaron cambios arquitectónicos. Las recomendaciones siguen sujetas a decisión de gAto.
+- Próximo paso al retomar: localizar/recibir la revisión de Katarina sobre el informe inicial de Softly; luego realizar Fase IV y los dos informes finales independientes.
