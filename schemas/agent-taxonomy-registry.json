@@ -15,8 +15,7 @@
       "operational_state": "authorized-operational-identity",
       "institutional_role": "Núcleo, gobierno y coordinación general",
       "domains": [
-        "core-governance",
-        "systems-coordination"
+        "core-governance"
       ],
       "authority": "defined-by-current-contract-only"
     },
@@ -28,9 +27,7 @@
       "operational_state": "authorized-operational-identity",
       "institutional_role": "Única ingeniería y desarrollo dentro del alcance permitido",
       "domains": [
-        "software-engineering",
-        "security-engineering",
-        "systems-engineering"
+        "software-engineering"
       ],
       "authority": "defined-by-current-contract-only"
     },
@@ -42,9 +39,7 @@
       "operational_state": "authorized-operational-identity",
       "institutional_role": "Única auditoría independiente",
       "domains": [
-        "independent-audit",
-        "security-audit",
-        "systems-audit"
+        "independent-audit"
       ],
       "authority": "defined-by-current-contract-only"
     }
@@ -442,7 +437,7 @@
     }
   ],
   "migration": {
-    "source_registry": "schemas/agent-taxonomy-registry.json@1.0.0",
+    "source_registry": "schemas/archive/agent-taxonomy-registry-1.0.0.json@1.0.0",
     "source_blob_sha": "ceca667cfb912a0f7c43b32ee0eead86030b4b5f",
     "historical_preservation": "preserved-unchanged-in-git-history",
     "migration_status": "draft-for-independent-review",
