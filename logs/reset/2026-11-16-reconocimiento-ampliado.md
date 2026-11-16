@@ -147,3 +147,23 @@ No debe generalizarse el NO-GO de KAT-006 a toda la arquitectura documental de S
 - AUD-001: sus permisos no delimitan suficientemente la escritura mediante herramientas host autorizadas frente al enforcement de permisos mediante Runtime. La ambigüedad puede bloquear entregas documentales o inducir exceso de permisos.
 - AUD-002: su procedimiento exige una emisión de Autumn y otra de Aurora, pero la misión no tuvo mecanismo de invocación. La revisión individual de Audeline puede avanzar y debe declarar esa limitación; la falta de invocación no debe convertirse en espera obligatoria.
 - La nueva orden exige una sola identidad operativa de auditoría. Los contratos y procedimientos que asignan responsabilidades a Autumn/Aurora deben reconciliarse: migrar capacidades útiles a Audeline, preservar paquetes como historia y retirar identidades/asignaciones operativas al completar las salvaguardas.
+
+
+## 10. Registro canónico de identidades y taxonomías
+
+La lectura directa de schemas/agent-taxonomy-registry.json y schemas/agent-taxonomy.schema.json confirma que el registro contiene nueve entradas con disponibilidad declarada active-standby: Tiffany, Tara, Thea, Tábata, agentdev-katarina 1.1.0, Melina, Audeline, Aurora y Autumn. El schema enumera únicamente AgentDEV, AgentSEC, AgentMUS, AgentSCI y Auditoría. No incluye Agent Softly, aunque la identidad canónica de Katarina 2.0.1 lo declara como taxonomía.
+
+Esto amplía SOF-001: además de la taxonomía faltante, el registro aún presenta como disponibles para asignación ocho identidades/agentes adicionales a las tres identidades finales, incluyendo Aurora y Autumn. Active-standby es disponibilidad declarada y no prueba sesiones vivas, pero sí es un estado de catálogo incompatible con la congelación y el estado final si se conserva sin reclasificación. El registro no incluye a Zoe, lo que es coherente con su participación temporal, pero debe documentarse en la memoria de proceso.
+
+El archivo agents/README.md contiene dos secciones idénticas “Taxonomías y coordinación”, hallazgo editorial SOF-004. No se modificaron el registro, el schema ni el catálogo porque la clasificación final de paquetes y capacidades requiere completar el inventario y no se debe crear una taxonomía nueva por inferencia.
+
+## 11. Estado documental de KAT-006 por etapa
+
+La relectura directa de los cuatro informes en gatoscientist/Softly confirma la secuencia documental:
+- Etapa 1: implementación documental en Softly/main, informe KAT-006-ETAPA-1-IMPLEMENTACION-2026-11-16.md, blob 19dbe047f9320d9446822aab68bce6467d3d1911. No incluyó runtime ni scheduler.
+- Etapa 2: verificación de Softly con resultado GO CON RESERVAS, informe KAT-006-ETAPA-2-VERIFICACION-2026-11-16.md, blob 2c3766c5c8e6a833645cf7d0c6f07e3e44ca54fd.
+- Etapa 3: adaptación documental de Katarina persistida en su rama y PR #1, no en main.
+- Etapa 4: auditoría independiente realizada por Audeline; dictamen corregido AUD-20261116-017 = NO-GO OPERACIONAL, con incidente grave AUD-20261116-018.
+- Etapa 5: aceptación humana no declarada; corresponde a gAto. El estado operacional sigue bloqueado.
+
+El expediente consolidado anterior que decía que la etapa 4 estaba pendiente/bloqueada por activación quedó superado por los informes posteriores AUD-017 y AUD-018. No debe seguir mostrándose como estado vigente.
