@@ -13,3 +13,5 @@ Cada artefacto debe registrar ID, fecha, versión, estado, alcance, fuentes, lim
 - [AUD-RESET-002 — reverificación del CHECKPOINT](2026-11-16-AUD-RESET-002-reverificacion-checkpoint.md): 53/53 enlaces locales existen y 10/10 metadatos ZIP coinciden; los enlaces externos y la restauración binaria siguen pendientes de verificación.
 
 - [AUD-RESET-002 — manifiesto de preservación de ramas](2026-11-16-AUD-RESET-002-manifiesto-preservacion-ramas.md): siete HEAD SHA exactos, divergencia contra main, archivos exclusivos y clasificación; ninguna rama fusionada ni eliminada.
+
+- [AUD-RESET-002 — discrepancia de invocabilidad en Laboratorio-de-agentes](2026-11-16-AUD-RESET-002-discrepancia-equipos-laboratorio.md): seis paquetes documentales; Equipo-Softly en HOLD y Equipo-del-gAto fuera de alcance hasta clasificación. Corrección editorial mínima solicitada.
