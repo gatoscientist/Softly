@@ -5,6 +5,7 @@ La bitácora conserva eventos de trabajo, no conclusiones implícitas.
 ## Archivos
 
 - `activity.jsonl`: acciones y eventos relevantes.
+- [Cierre administrativo de KAT-006 por reinicio integral (2026-11-16)](2026-11-16-cierre-administrativo-kat-006-reinicio-integral.md): cierre por sustitución del proceso; no equivale a aceptación técnica ni autoriza eliminación de agentes.
 - `decisions.jsonl`: referencias a decisiones formales.
 - [Registro de directiva de identidad y cierre de sesión (2026-11-13)](2026-11-13-identity-directive-and-thread-closure.md): antecedente de gobernanza; consultar junto con los documentos normativos vigentes.
 - `incidents.jsonl`: registro de incidencias, evidencias, causas y acciones correctivas. Distingue hechos verificados de reportes aún no auditados.
