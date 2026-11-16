@@ -85,3 +85,22 @@ No se modifica `Katarina/core/`, `SOFTLY.md`, contratos, permisos ni código eje
 Los commits de este cierre y las lecturas de vuelta se consignan en el checkpoint de cierre de la conversación y en el mensaje de entrega a gAto. El hilo solo se considera archivado cuando el archivo, el índice, el checkpoint, el registro de actividad y la bitácora hayan sido releídos desde GitHub y sus commits estén confirmados.
 
 **Estado epistemológico:** registro documental; no acredita despliegue, ejecución ni validación de runtime.
+
+
+## 9. Commits de persistencia y primera lectura de vuelta
+
+Commits confirmados:
+- Archivo inicial de este Hilo VIII: `42f07006ac065e3a2302bc787115b9cd87d1617e`.
+- Índice de hilos: `b2956f55ff88d1a0bc5333f8310c0651e239a4dc`.
+- Checkpoint de Softly: `199e33504edcf465b2d4a549d000dd93bf48fbc1`.
+- Registro de actividad: `ed347d18f28c9910cb385d9149fcceab18aaabfa`.
+- Bitácora propia de Katarina: `c44884782223ab9452a9854cc8f01b87e65b619e`.
+
+Primera lectura de vuelta mediante GitHub, fijada a los commits correspondientes:
+- Este hilo: blob `73861fb7234d44a16b8859510c636adcc927b593`.
+- Índice: blob `0f7d007c021ba282407051418d3132e952946787`.
+- Checkpoint: blob `df9838cc41c7b29af19b99c6af472e7cda6e3c0e`.
+- Actividad: blob `da8c25b390467b9bd6a40bbf55bfcafa069775a0`.
+- Bitácora de Katarina: blob `3f8e9a08fe9f0cdcc6ecd1d962f3fbe60c876108`.
+
+La consulta de contenido sin fijar ref devolvió 404 después de las escrituras; al fijar cada lectura al SHA del commit correspondiente, GitHub devolvió los cinco archivos y sus blobs. Los cinco commits también fueron recuperados mediante la API de commits y sus rutas modificadas coincidieron con lo esperado. Se realizará una segunda lectura independiente antes de declarar el cierre.
