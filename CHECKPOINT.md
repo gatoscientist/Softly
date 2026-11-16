@@ -219,7 +219,7 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 - REC-002 asigna tareas a cinco paquetes diseñados/no desplegados. No invocarlos bajo RESET-CORE-2026-002; preservar los documentos y mantener la activación congelada.
 
 
-- **Informe ampliado vigente:** logs/reset/2026-11-16-reconocimiento-ampliado.md; blob SHA verificado 0ce097249fa80629a79be8a0a64de60eb4414904.
+- **Informe ampliado vigente:** logs/reset/2026-11-16-reconocimiento-ampliado.md; blob SHA verificado b572d21cda11b941f16ab87bdafd395243b16ec4.
 
 
 ### Contención documental aplicada
@@ -234,7 +234,7 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 
 - Se amplió el handoff de Audeline en Auditoria/Softlysay/res, con evidencia de trece repositorios, KAT-006, Runtime Mini, registro de identidades, TITAN, Cytryna y límites de auditoría. Addendum commit 16397b05e8669f328fd36eee8be9dae29e851064; indexado en commit 53d1f26fbc76149cbb0b9c70022a0baa1cdbb824. Sin acuse.
 - Se envió a Katarina un addendum con la secuencia Git de su instancia documental en Cytryna, la errata de SHA y solicitud de contraste. Commit 1ffe733526182575f6046e7854b624ae25347f29; indexado en Softlysay/README y bitácora, commits 18de1c665faab24ea8da31e41d625af3a0a0616e y a42e0202121d4d75a53ddd42b68f089969cac627. El acuse RESET original está confirmado; la explicación de Cytryna sigue pendiente.
-- Informe ampliado vigente: logs/reset/2026-11-16-reconocimiento-ampliado.md, blob SHA 0ce097249fa80629a79be8a0a64de60eb4414904.
+- Informe ampliado vigente: logs/reset/2026-11-16-reconocimiento-ampliado.md, blob SHA b572d21cda11b941f16ab87bdafd395243b16ec4.
 
 
 ### HOLDs adicionales en Laboratorio
@@ -265,3 +265,13 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 - Softly, Katarina, Auditoria, Audeline, Zoe y Laboratorio no tienen workflows Actions en main. El resultado 6/6 de Runtime Mini sigue siendo reporte de Katarina, no validación independiente.
 - Audeline recibió addendum de CI en Auditoria/Softlysay/res, commit bd41ce0532f0143bf3cf057ed3c574c4152d670e. Sin acuse.
 - Informe ampliado vigente: logs/reset/2026-11-16-reconocimiento-ampliado.md, blob SHA 0ce097249fa80629a79be8a0a64de60eb4414904.
+
+
+### Recepción Audeline, issues y canales
+
+- Audeline emitió acuse formal y reconciliación documental (informes 06 y 14–16); AUD-RESET-002 está en ejecución. Los documentos 13–16 están en su repositorio canónico. La casa Audeline aún debe reconciliar TEAM/TEAM, COORDINATION, TASK_BOARD y README de canales, que conservan referencias al equipo Aurora/Autumn.
+- AUD-018 sí existe en `gatoscientist/Auditoria/Audeline/reports/`; la búsqueda textual de Katarina no lo encontró, pero el árbol Git sí. Katarina recibió corrección en Softlysay, commit 238a3108b7de7221efd6f1741d06ad57b6109c86.
+- Issue #6 de Softly se cerró como supersedido por RESET-CORE-2026-002; issue #5 se actualizó y sigue abierto para decisión humana de KAT-006; issue #7 sigue abierto y recibió dos actualizaciones de Softly.
+- Softly, Katarina y Zoe ya tienen los tres canales Softlysay/Katarinasay/Audelinesay. Softly PR #4 se cerró como supersedido sin merge; la rama se preserva. Audeline ya tenía los tres canales, pero sus README siguen orientados al equipo.
+- Zoe recibió un encargo para añadir un límite temporal verificable a su supervisión. Su respuesta y la actualización de contrato siguen pendientes.
+- Informe ampliado vigente: logs/reset/2026-11-16-reconocimiento-ampliado.md, blob SHA b572d21cda11b941f16ab87bdafd395243b16ec4.
