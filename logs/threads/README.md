@@ -4,6 +4,7 @@ Este directorio conserva la historia documental de hilos cerrados. Los archivos 
 
 ## Registros disponibles
 
+- [Hilo del 15-11-2026, desde las 22:05 — continuidad de Katarina 2.0.0 y formación técnica](hilo%20I%202026-11-15%2022-05%20F%20hora-no-registrada%20%E2%80%94%20continuidad%20Katarina%202.0.0.md)
 - [Hilo del 15-11-2026 — Proyecto Katarina 01 y diseño de Katarina 2.0.0](hilo%20I%202026-11-15%20hora-no-registrada%20F%202026-11-15%20hora-no-registrada%20%E2%80%94%20proyecto%20Katarina%2001%20y%20dise%C3%B1o%202.0.0.md)
 - [Hilo del 15-11-2026, 18:57–19:19 — deliberación sobre el núcleo de un agente y los modos de Softly](hilo%20I%202026-11-15%2018-57%20F%202026-11-15%2019-19.md)
 - [Hilo del 15-11-2026, 05:04–hora no registrada — autonomía de Softly y corrección del cierre documental](hilo%20I%202026-11-15%2005-04%20F%20hora-no-registrada.md)
