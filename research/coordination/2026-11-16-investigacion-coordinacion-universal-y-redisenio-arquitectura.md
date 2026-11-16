@@ -897,29 +897,30 @@ La recomendación es avanzar hacia la Alternativa B mediante un piloto medido, n
 
 1. Malone, T. W. y Crowston, K. (1994). *The Interdisciplinary Study of Coordination*. ACM Computing Surveys, 26(1), 87–119. https://doi.org/10.1145/174666.174668
 2. Hayes-Roth, B. (1985). *A Blackboard Architecture for Control*. Artificial Intelligence, 26(3), 251–321. https://doi.org/10.1016/0004-3702(85)90063-3
-3. Salas, E., Sims, D. E. y Burke, C. S. (2005). *Is there a “Big Five” in Teamwork?* Small Group Research, 36(5), 555–599. https://doi.org/10.1177/1046496405277134
-4. *The Impact of Cross-Training on Team Effectiveness* (2002). Registro PubMed: https://pubmed.ncbi.nlm.nih.gov/11916213/
-5. Bachrach et al. (2019). *Transactive memory systems in context: A meta-analytic examination of contextual factors in transactive memory systems development and team performance*. Journal of Applied Psychology, 104(3), 464–493. https://doi.org/10.1037/apl0000329
-6. *Measurement Matters: A Meta-Analytic Examination of Transactive Memory Systems and Team Outcomes* (2026). https://doi.org/10.1177/10464964261434540
-7. Zhu et al. (2025). *MultiAgentBench: Evaluating the Collaboration and Competition of LLM Agents*. ACL 2025. https://aclanthology.org/2025.acl-long.421/
-8. Kim et al. (2026). *TeamBench: Evaluating Agent Coordination under Enforced Role Separation*. arXiv:2605.07073. https://arxiv.org/abs/2605.07073
-9. Park et al. (2026). *PAC-BENCH: Evaluating Multi-Agent Collaboration under Privacy Constraints*. arXiv:2604.11523. https://arxiv.org/abs/2604.11523
-10. Destefanis y Aste (2026). *When Agents Coordinate: Measuring Coordination in Multi-Agent AI Coding*. arXiv:2608.16801. https://arxiv.org/abs/2608.16801
-11. Kim, Y. (2026). *When do AI agents benefit from collaboration?* MIT Media Lab. https://www.media.mit.edu/projects/towards-a-science-of-scaling-agent-systems-when-and-why-agent-systems-work/overview/
-12. Zhu et al. (2026). *LLM-Based Multi-Agent Orchestration: A Survey of Frameworks, Communication Protocols, and Emerging Patterns*. Future Internet, 18(6), 326. https://doi.org/10.3390/fi18060326
-13. Dutta, Goldman y Jennings (2007). *Communicating Effectively in Resource-Constrained Multi-Agent Systems*. IJCAI 2007. https://ijcai.org/proceedings/2007/205
+3. *Blackboard Structures* (1988). In *Readings in Distributed Artificial Intelligence*, pp. 503–504. https://doi.org/10.1016/B978-0-934613-63-7.50051-6
+4. Salas, E., Sims, D. E. y Burke, C. S. (2005). *Is there a “Big Five” in Teamwork?* Small Group Research, 36(5), 555–599. https://doi.org/10.1177/1046496405277134
+5. *The Impact of Cross-Training on Team Effectiveness* (2002). Registro PubMed: https://pubmed.ncbi.nlm.nih.gov/11916213/
+6. Bachrach et al. (2019). *Transactive memory systems in context: A meta-analytic examination of contextual factors in transactive memory systems development and team performance*. Journal of Applied Psychology, 104(3), 464–493. https://doi.org/10.1037/apl0000329
+7. Fausett et al. (2026). *Measurement Matters: A Meta-Analytic Examination of Transactive Memory Systems and Team Outcomes*. https://doi.org/10.1177/10464964261434540
+8. Zhu et al. (2025). *MultiAgentBench: Evaluating the Collaboration and Competition of LLM Agents*. ACL 2025. https://aclanthology.org/2025.acl-long.421/
+9. Kim et al. (2026). *TeamBench: Evaluating Agent Coordination under Enforced Role Separation*. arXiv:2605.07073. https://arxiv.org/abs/2605.07073
+10. Park et al. (2026). *PAC-BENCH: Evaluating Multi-Agent Collaboration under Privacy Constraints*. arXiv:2604.11523. https://arxiv.org/abs/2604.11523
+11. Destefanis y Aste (2026). *When Agents Coordinate: Measuring Coordination in Multi-Agent AI Coding*. arXiv:2608.16801. https://arxiv.org/abs/2608.16801
+12. Kim, Y. (2026). *When do AI agents benefit from collaboration?* MIT Media Lab. https://www.media.mit.edu/projects/towards-a-science-of-scaling-agent-systems-when-and-why-agent-systems-work/overview/
+13. Zhu et al. (2026). *LLM-Based Multi-Agent Orchestration: A Survey of Frameworks, Communication Protocols, and Emerging Patterns*. Future Internet, 18(6), 326. https://doi.org/10.3390/fi18060326
+14. Dutta, Goldman y Jennings (2007). *Communicating Effectively in Resource-Constrained Multi-Agent Systems*. IJCAI 2007. https://ijcai.org/proceedings/2007/205
 
 ### Protocolos y documentación técnica
 
-14. Agent2Agent Protocol. *Specification*. https://a2a-protocol.org/latest/specification/
-15. Model Context Protocol. *Architecture*, specification version 2026-07-28. https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/docs/specification/2026-07-28/architecture/index.mdx
-16. JADE/FIPA. *JADE Tutorial: FIPA ACL Message Structure*. https://jade.tilab.com/papers/JADETutorialIEEE/JADETutorial_FIPA.pdf
-17. Microsoft. *AI Agent Orchestration Patterns*. https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns/
-18. Microsoft AutoGen. *Termination conditions for AgentChat teams*. https://microsoft.github.io/autogen/dev/user-guide/agentchat-user-guide/tutorial/termination.html
-19. Akka. *Multi-agent coordination*. https://doc.akka.io/concepts/ai-orchestration-patterns.html
-20. Temporal. *Workflows*. https://docs.temporal.io/workflows
-21. LangGraph. *Persistence*. https://docs.langchain.com/oss/python/langgraph/persistence
-22. AWS. *Event Sourcing Pattern*. https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/event-sourcing-pattern.html
+15. Agent2Agent Protocol. *Specification*. https://a2a-protocol.org/latest/specification/
+16. Model Context Protocol. *Architecture*, specification version 2026-07-28. https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/docs/specification/2026-07-28/architecture/index.mdx
+17. JADE/FIPA. *JADE Tutorial: FIPA ACL Message Structure*. https://jade.tilab.com/papers/JADETutorialIEEE/JADETutorial_FIPA.pdf
+18. Microsoft. *AI Agent Orchestration Patterns*. https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns/
+19. Microsoft AutoGen. *Termination conditions for AgentChat teams*. https://microsoft.github.io/autogen/dev/user-guide/agentchat-user-guide/tutorial/termination.html
+20. Akka. *Multi-agent coordination*. https://doc.akka.io/concepts/ai-orchestration-patterns.html
+21. Temporal. *Workflows*. https://docs.temporal.io/workflows
+22. LangGraph. *Persistence*. https://docs.langchain.com/oss/python/langgraph/persistence
+23. AWS. *Event Sourcing Pattern*. https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/event-sourcing-pattern.html
 
 ### Evidencia interna principal
 
