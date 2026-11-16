@@ -9,6 +9,16 @@ Por orden expresa de gAto y conforme a RESET-CORE-2026-002, se ratifica que todo
 **Referencia normativa:** RESET-CORE-2026-002, sección 12.2 (versión 1.2.0).  
 **Fuente de autoridad:** SOFTLY.md e instrucciones vigentes de gAto.
 
+## Corte residual consolidado — AUD-RESET-002 (2026-11-16)
+
+- KAT-006: cerrado administrativamente como `not_planned` en issue #5. Katarina PR #1: cerrado sin merge; rama preservada como evidencia histórica. No queda decisión A/B/C pendiente ni aceptación técnica implícita.
+- Runtime: cerrado administrativamente en todos sus documentos, procesos, dependencias y esperas. No constituye criterio de aceptación ni requiere inventario técnico, reparación o validación para cerrar RESET-002.
+- Ramas: siete adicionales a `main` siguen presentes en Softly (2), Katarina (1), Auditoria (3) y Laboratorio-de-agentes (1). Se clasificaron en el informe 22 de Audeline; no fusionar propuestas ni retirar referencias sin preservar commits exclusivos.
+- Registro: el modelo de datos sigue sin representar claramente identidad operativa, rol institucional y paquete de capacidad. La migración permanece pendiente de resolución del modelo, no de Runtime.
+- Respaldos: diez ZIP con metadatos cotejados; integridad binaria y restaurabilidad no verificadas.
+- Softly issues #2 y #3 son revisiones de investigación Godot independientes; no bloquean RESET-002. Issue #7 mantiene el seguimiento de la auditoría.
+- **Estado global:** no certificado. Los únicos frentes residuales de RESET-002 son registro de identidades/capacidades, resolución de ramas con preservación, decisión de respaldo y contraste final. Informe de Audeline: `reports/RESET-CORE-2026-002/22-AUDELINE-CORTE-FINAL-ESTADO-RESIDUAL-2026-11-16.md`.
+
 
 ## Adenda vigente — prohibición total de Runtime (2026-11-16)
 
