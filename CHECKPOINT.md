@@ -104,3 +104,13 @@ La prioridad vigente es que Softly opere como núcleo generativo autoevolutivo y
 - **Próximo paso exacto:** revisar y trabajar primero `Katarina/PROFILE.md` en el paquete fuente, siguiendo el informe de continuidad. No adelantar el contrato.
 - Registro archivado: [continuidad de Katarina 2.0.0, 15-11-2026](logs/threads/hilo%20I%202026-11-15%2022-05%20F%20hora-no-registrada%20%E2%80%94%20continuidad%20Katarina%202.0.0.md).
 - Índice actualizado en `logs/threads/README.md`.
+
+
+## Punto de continuidad — cierre de hilo y resguardo de Katarina (2026-11-16)
+
+- gAto solicitó guardar el checkpoint y el hilo antes de cerrar la conversación y continuar en otro lugar.
+- Se revisó el checkpoint vigente y se archivó el contexto disponible en [hilo del 16-11-2026, desde las 01:08 — continuidad de Katarina y cierre](logs/threads/hilo%20II%202026-11-16%2001-08%20F%20hora-no-registrada%20%E2%80%94%20continuidad%20Katarina%20y%20cierre.md).
+- El registro conserva literalmente el fragmento SRT proporcionado y distingue ese fragmento de la síntesis del contexto anterior. No se afirma disponer de una transcripción íntegra del hilo.
+- Katarina 2.0.0 confirmó su responsabilidad sobre la evolución documental/declarativa de Softly dentro de asignaciones y rutas autorizadas, y la delegación de programación ejecutable a especialistas.
+- gAto había indicado no modificar el core de Softly. El mandato posterior autoriza guardar continuidad, checkpoint e hilo; no autoriza cambios de diseño o implementación en el core. Por tanto, no se modificaron SOFTLY.md, contratos, permisos, arquitectura ni runtime.
+- Próximo paso: abrir el nuevo hilo y retomar desde este checkpoint. No hay otro encargo de modificación pendiente en este cierre.
