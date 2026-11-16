@@ -28,7 +28,7 @@ El PR gatoscientist/Katarina#1 continúa abierto y Draft, no fusionado. Su rama 
 
 ### Distinción adicional sobre Runtime Mini
 
-Existe un prototipo **Softly Runtime Mini 0.2** en fix/f03-recover-ledger, no en main. El código softly-runtime/runtime.py limita su operación declarada a create_text_file y un ledger de eventos; no implementa el runtime task-centric de KAT-006. La rama está cinco commits adelante y 294 detrás de main. La revisión logs/maintenance/2026-11-14-f03-recovery-review.md registra B-01 a B-06 y dictamen “NO LISTO para retest de aceptación ni para cerrar F-03”. No se ejecutaron pruebas nuevas en esta inspección. Por tanto, no afirmar que Softly carece de todo prototipo de runtime, ni confundir ese prototipo limitado con un coordinador task-centric operativo.
+Existe **Softly Runtime Mini 0.2 en main** (softly-runtime/runtime.py, blob 77eac417b7a2b5a612b33803069997b13fe8bb61; manifest.json, blob 5ccf4e2969c0c548c8b755ed31a8822987e00880). Su manifiesto declara una sola tarea de prueba y una sola operación permitida: create_text_file. No implementa el coordinador task-centric de KAT-006. El ledger del repositorio está vacío (events.jsonl, blob e69de29bb2d1d6434b8b29ae775ad8c2e48c5391) y events.head conserva GENESIS. El resultado 6/6 de pruebas en Python 3.13.5 está reportado por Katarina en RES-20261114-002, no repetido independientemente; la concurrencia reportada usa threads dentro de un proceso. La auditoría CODE AUD independiente de Autumn quedó pendiente. La rama fix/f03-recover-ledger contiene modificaciones posteriores de runtime.py y test_runtime.py para recuperación del ledger; está cinco commits adelante y 294 detrás de main. Su revisión registra B-01 a B-06 y dictamen “NO LISTO para retest de aceptación ni para cerrar F-03”; no se ejecutaron pruebas nuevas sobre ese candidato. Por tanto, existe un prototipo limitado, probado preliminarmente según su implementadora, pero no validado ni operativo para producción, y no existe el runtime task-centric requerido por KAT-006.
 
 ## 3. Repositorios descubiertos y clasificación preliminar
 
@@ -167,3 +167,19 @@ La relectura directa de los cuatro informes en gatoscientist/Softly confirma la 
 - Etapa 5: aceptación humana no declarada; corresponde a gAto. El estado operacional sigue bloqueado.
 
 El expediente consolidado anterior que decía que la etapa 4 estaba pendiente/bloqueada por activación quedó superado por los informes posteriores AUD-017 y AUD-018. No debe seguir mostrándose como estado vigente.
+
+
+## 12. Ampliación de TITAN y delimitación de Cytryna
+
+La lectura recursiva completa de gatoscientist/TITAN/main encontró 231 archivos. El índice real de los paquetes Soft está en eL equipo del gAto/README.md; el README.txt de la raíz todavía referencia DEVAGENTS/, DEVAGENTS/DEVTEAM/ y audit/ que no aparecen en el árbol actual. Debe reconciliarse por Katarina sin borrar historia.
+
+El índice actual de TITAN declara tres conjuntos de paquetes 1.0.0 / Diseñado:
+- Equipo base: Tiffany (DEV), Tara (SEC), Thea (MUS) y Tábata (SCI).
+- Dirección de Recuperación de Cytryna: Elara (DIR), Dante (DEV), Mira (MUS), Sofía (SCI) y Nox (SEC). TEAM.json declara status designed, channels_status documented_not_connected y runtime_status not_deployed. Los informes 03 y 06 confirman que las revisiones especializadas no fueron ejecutadas por esos agentes; el análisis preliminar fue escrito por Softly. Existe un handoff a Elara, pero expresamente no demuestra activación ni lectura.
+- Dirección técnica TITAN: instancia Katarina 1.0.0 / Diseñado y Los Mancos: Vera (AUD Code), Milo (DEV PowerShell/WPF) y Naira (MUS).
+
+Son doce paquetes de especialistas más una instancia documental de Katarina. Su existencia no demuestra sesiones vivas, pero sus asignaciones, canales y equipos no pueden conservar autoridad operativa fuera de las tres identidades finales. Se deben preservar paquetes e historia y clasificar capacidades; no se deben eliminar por conteo ni fusionar automáticamente.
+
+Cytryna es un caso separado: su README la declara agente colaboradora independiente, v0.1.0 experimental/primera versión funcional, con aplicación Python, consola/GUI, herramientas y proveedores. AGENTS.md declara que su identidad permanece independiente de los proyectos. Su instancia Camila 1.0.0 / Diseñado conserva exactamente tres integrantes documentales (Celene, Noa y Cinthia); además hay raíces AGENTDEV y AGENTGUI. devteam/README.md mantiene un mandato propio de entrega experimental con rama main y autoridad técnica de Fran/Francisca. Esto apunta a un proyecto independiente, pero la referencia cruzada con TITAN y los handoffs de Softly impiden excluirlo sin clasificación formal. Estado: pendiente de decisión de alcance; no intervenir ni retirar identidades mientras se clasifica.
+
+La Dirección de Recuperación de Cytryna en TITAN documenta una reparación acotada: retiró la instancia Katarina de Cytryna, conservó Camila y sus 22 rutas, y no reescribió historia. El informe 06 mantiene pendientes la invocación de Elara y especialistas, el relato de Katarina y una revisión independiente; no se declara recuperación integral de Cytryna.
