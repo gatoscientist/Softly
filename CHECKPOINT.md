@@ -13,11 +13,11 @@ Por orden expresa de gAto y conforme a RESET-CORE-2026-002, se ratifica que todo
 
 - KAT-006: cerrado administrativamente como `not_planned` en issue #5. Katarina PR #1: cerrado sin merge; rama preservada como evidencia histórica. No queda decisión A/B/C pendiente ni aceptación técnica implícita.
 - Runtime: cerrado administrativamente en todos sus documentos, procesos, dependencias y esperas. No constituye criterio de aceptación ni requiere inventario técnico, reparación o validación para cerrar RESET-002.
-- Ramas: siete adicionales a `main` siguen presentes en Softly (2), Katarina (1), Auditoria (3) y Laboratorio-de-agentes (1). Se clasificaron en el informe 22 de Audeline; no fusionar propuestas ni retirar referencias sin preservar commits exclusivos.
-- Registro: el modelo de datos sigue sin representar claramente identidad operativa, rol institucional y paquete de capacidad. La migración permanece pendiente de resolución del modelo, no de Runtime.
+- Ramas: siete adicionales a `main` siguen presentes. Sus HEAD SHA exactos, base SHA, ahead/behind y archivos exclusivos quedaron registrados en el informe 23 de Audeline. Softly/recovery está supersedida por README actuales de main; F-03, KAT-006 y propuestas históricas no se integran. No se fusionó ni borró ninguna rama.
+- Registro: resuelto documentalmente en v2.0.0 mediante `schemas/identity-capability-registry-v2.json` y su schema. Contiene exactamente tres identidades operativas, siete paquetes sin autoridad y herencia `none`; el registro 1.0.0 se conserva como antecedente.
 - Respaldos: diez ZIP con metadatos cotejados; integridad binaria y restaurabilidad no verificadas.
-- Softly issues #2 y #3 son revisiones de investigación Godot independientes; no bloquean RESET-002. Issue #7 mantiene el seguimiento de la auditoría.
-- **Estado global:** identidad/gobernanza documental consolidadas; auditoría global no certificable mientras queden ramas adicionales por retirar y restaurabilidad de respaldos sin verificar. La limitación concreta es que la conexión GitHub disponible no expone una operación de eliminación de referencias/ramas ni descarga binaria de ZIP. Ninguna de esas limitaciones se atribuye a Runtime. Informe de Audeline: `reports/RESET-CORE-2026-002/22-AUDELINE-CORTE-FINAL-ESTADO-RESIDUAL-2026-11-16.md`.
+- Softly issue #2 (revisión crítica Godot) fue completada y cerrada; issue #3 (alerta material) fue cerrada tras la actualización de hallazgos. Issue #7 mantiene el seguimiento de AUD-RESET-002.
+- **Estado global:** identidad/gobernanza documental consolidadas; auditoría global no certificable mientras queden ramas adicionales por retirar y restaurabilidad de respaldos sin verificar. La limitación concreta es que la conexión GitHub disponible no expone una operación de eliminación de referencias/ramas ni descarga binaria de ZIP. Ninguna de esas limitaciones se atribuye a Runtime. Informes de Audeline: `reports/RESET-CORE-2026-002/22-AUDELINE-CORTE-FINAL-ESTADO-RESIDUAL-2026-11-16.md` y `23-AUDELINE-MANIFIESTO-PRESERVACION-RAMAS-2026-11-16.md`.
 
 
 ## Adenda vigente — prohibición total de Runtime (2026-11-16)
