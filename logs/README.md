@@ -9,7 +9,9 @@ La bitácora conserva eventos de trabajo, no conclusiones implícitas.
 - [Registro de directiva de identidad y cierre de sesión (2026-11-13)](2026-11-13-identity-directive-and-thread-closure.md): antecedente de gobernanza; consultar junto con los documentos normativos vigentes.
 - `incidents.jsonl`: registro de incidencias, evidencias, causas y acciones correctivas. Distingue hechos verificados de reportes aún no auditados.
 - [INC-20261116-002 — uso de apelativo distinto de la identidad directiva](2026-11-16-incidencia-uso-de-apelativo-wachito.md): Softly se dirigió a gAto como «Wachito»; hecho registrado a petición explícita de gAto.
-- `observations.jsonl`: observaciones que todavía no se clasifican como incidencias; se creará cuando haya eventos que documentar.
+- `observations.jsonl`: registro estructurado de observaciones aún no clasificadas como incidencias.
+- [OBS-20261116-004](../observations/OBS-20261116-004-confusion-repositorio-rutas-creacion-katarina-titan.md): confusión de repositorio durante la creación de Katarina para TITAN.
+- [INC-20261116-003](2026-11-16-incidencia-creacion-katarina-repositorio-equivocado.md): creación inicial en repositorio equivocado; ubicación corregida y verificada, prevención pendiente.
 - `threads/`: historia documental de cada hilo de conversación cerrado ([índice de hilos](threads/README.md)).
 - `derived/`: notas intermedias o derivados de análisis que no sustituyen transcripciones ni cierres de hilo ([índice de derivados](derived/README.md)).
 - `maintenance/`: registros de mantenimiento documental, seguimiento de hallazgos y verificación de cambios. Ver el [índice de mantenimiento](maintenance/README.md), la [bitácora de orden de la casita](maintenance/housekeeping-log.md) y el [seguimiento de auditorías 2026-11-14](maintenance/2026-11-14-audit-follow-up.md).
