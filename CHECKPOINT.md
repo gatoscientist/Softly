@@ -176,3 +176,12 @@ Este addendum prevalece sobre los estados históricos anteriores de recepción y
 **Informe ampliado:** commit 056e6a723daf2a2c34d4a53107996970dc215866; blob verificado c1b442b5d3d1b5a91ba514acf46712153d985cb9.
 
 **Estado global:** Fase A abierta; Fase B en progreso. No se ejecutaron merges, cierres de PR/issues, eliminación de ramas, retiros de identidades ni migraciones en esta actualización. La ausencia de acuse de Audeline no detiene el trabajo independiente.
+
+
+### Addendum de contraste de auditorías (2026-11-16)
+
+- AUD-SOFTLY-INTEGRITY-2026-001 contiene seis entregables y cubre documentalmente solo Softly, Katarina y Audeline. Su dictamen es integridad documental aceptable con reservas materiales; no es auditoría global del reset ni GO/NO-GO de liberación.
+- La misión registra doce hallazgos: SOF-001 ALTO; siete MEDIO; dos BAJO; dos INFORMATIVO. Prioridades: taxonomía Agent Softly ausente, checkpoint atrasado, integridad referencial tarea/evento/handoff, evidencia/verificador en criterios de aceptación y permisos host frente a enforcement Runtime.
+- AUD-20261116-017 corregido es NO-GO OPERACIONAL específicamente para KAT-006. AUD-20261116-018 registra un incidente grave de criterio y coordinación. Ambos son compatibles con el dictamen documental general.
+- Audeline no invocó a Autumn ni Aurora en la misión general. El procedimiento que depende de ellas debe reconciliarse con la identidad única Audeline exigida por RESET-CORE-2026-002.
+- Informe ampliado actualizado: commit c3303890cd57f5ad6aa0d373eb10f6cad74d5f34; blob c1b442b5d3d1b5a91ba514acf46712153d985cb9 (versión anterior) y nuevo blob por verificar.
