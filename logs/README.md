@@ -8,6 +8,7 @@ La bitácora conserva eventos de trabajo, no conclusiones implícitas.
 - `decisions.jsonl`: referencias a decisiones formales.
 - [Registro de directiva de identidad y cierre de sesión (2026-11-13)](2026-11-13-identity-directive-and-thread-closure.md): antecedente de gobernanza; consultar junto con los documentos normativos vigentes.
 - `incidents.jsonl`: registro de incidencias, evidencias, causas y acciones correctivas. Distingue hechos verificados de reportes aún no auditados.
+- [INC-20261116-002 — uso de apelativo distinto de la identidad directiva](2026-11-16-incidencia-uso-de-apelativo-wachito.md): Softly se dirigió a gAto como «Wachito»; hecho registrado a petición explícita de gAto.
 - `observations.jsonl`: observaciones que todavía no se clasifican como incidencias; se creará cuando haya eventos que documentar.
 - `threads/`: historia documental de cada hilo de conversación cerrado ([índice de hilos](threads/README.md)).
 - `derived/`: notas intermedias o derivados de análisis que no sustituyen transcripciones ni cierres de hilo ([índice de derivados](derived/README.md)).
