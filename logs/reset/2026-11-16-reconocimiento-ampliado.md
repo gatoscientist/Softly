@@ -237,3 +237,23 @@ Los contratos de TEAM/TEAM.md y TEAM/COORDINATION.md en Auditoria mantienen tres
 - **Zoe:** permisos solo lectura, herramientas declaradas como no conectadas, paquete 1.0.0 / Diseñado. Sus doce hallazgos son entregables válidos de su participación temporal; no se convierte en cuarta identidad final.
 
 La reconciliación de contratos y permisos debe distinguir capacidades documentales, herramientas realmente disponibles, permisos de la integración GitHub y enforcement del runtime. Ninguna de esas capas se sustituye por un texto declarativo.
+
+
+## 17. Reconstrucción independiente de la instancia Katarina en Cytryna
+
+La solicitud a Katarina sigue pendiente: gatoscientist/Laboratorio-de-agentes/Katarina/Softlysay/bitacora.md registra 2026-11-16-solicitud-reconstruccion-cytryna-elara.md como “pendiente de lectura y respuesta”; el outbox no contiene una entrega. No se atribuye a Katarina una explicación que aún no existe.
+
+La secuencia Git verificable de gatoscientist/Cytryna es:
+1. 03:52:48 -03:00, commit bf1342903e242f666b9c2c6de4e6b67a2ddf9bc4: crea únicamente instances/katarina/README.md.
+2. 03:53:32 -03:00, commit 7f85c83476ce2ccf77684a50905318c160d43f03: crea únicamente instances/katarina/agent.json.
+3. 03:53:37 -03:00, commit c72eecf604b91d07bc595dd007d709bc45abaa33: crea únicamente instances/katarina/PROFILE.md.
+4. 03:53:43 -03:00, commit bf4b1c923e20cc7e9f7806be715b87da2f1b554e: crea únicamente instances/katarina/AGENT.md.
+5. 04:56:48 -03:00, commit 1fa7176beb69e8e1c74d8491fc428dfbbb6049d6: actualiza instances/README.md y elimina exactamente los cuatro archivos de instances/katarina/.
+
+Los cuatro commits de creación declaran una instancia documental Katarina 1.0.0 / Diseñado, taxonomía AgentSCI, team_size 0, team_members vacío, runtime_status not_deployed y team_policy self_request_only. Su misión se limita a análisis conceptual/documental. No era la casa canónica Katarina 2.0.1 / Agent Softly de gatoscientist/Katarina; era una instancia adicional con el mismo ID visible y taxonomía distinta. El contenido no demuestra quién operó la cuenta ni si una sesión de Katarina ejecutó los commits.
+
+La reparación dejó instances/katarina/ con cero archivos y preservó Camila: el árbol actual de main, cuyo SHA coincide con 1fa7176, contiene 18 archivos rastreados bajo instances/camila/ y cero bajo instances/katarina/. Camila conserva su manifiesto de tres integrantes (Celene, Cinthia y Noa), estado Diseñado y runtime_status not_deployed. No se reescribió historia.
+
+**Errata verificada:** REC-002-revision-independiente.md y el informe 06 de TITAN citan bf4b1c923e242f666b9c2c6de4e6b67a2ddf9bc4 como SHA de un commit de la secuencia. GitHub devuelve “No commit found for SHA” para ese valor. El SHA correcto del contrato AGENT.md es bf4b1c923e20cc7e9f7806be715b87da2f1b554e. No se alteraron los informes originales; la corrección queda registrada aquí para que sus responsables la incorporen mediante errata.
+
+El handoff REC-002 de TITAN asigna tareas a Dante, Mira, Sofía, Nox y Elara y declara que todos están Diseñados, con runtime not_deployed y canales documentados no conectados. El propio informe 06 confirma que ninguno fue invocado y que los análisis previos los redactó Softly. Esa activación de cinco identidades no debe ejecutarse bajo RESET-CORE-2026-002. Se conserva la reparación documental y la solicitud de relato a Katarina; la revisión técnica adicional debe ser realizada por las identidades autorizadas, sin reactivar el equipo subordinado.
