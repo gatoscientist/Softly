@@ -8,13 +8,15 @@
 
 ## Resultado
 
-Audeline recuperó el HEAD SHA exacto de las siete ramas adicionales y recalculó su divergencia contra main. Las siete referencias y sus archivos exclusivos están registrados en el informe 23.
+Audeline recuperó el HEAD SHA exacto de las siete ramas adicionales en el corte inicial y recalculó su divergencia contra main. Las siete referencias y sus archivos exclusivos están registrados en el informe 23.
 
 - Softly/F-03: rama histórica con código y pruebas Runtime; no integrar.
 - Softly/recovery: tres README de canal supersedidos por versiones actuales en main; no requiere merge.
 - Katarina/KAT-006: PR #1 cerrado sin merge; no integrar.
 - Auditoria: dos propuestas históricas y una recovery con contenido Aurora/Autumn incompatible; no integrar.
 - Laboratorio-de-agentes: propuesta normativa histórica; no adoptar automáticamente.
+
+La octava rama es `migration/registry-v2-reset-core-002` (HEAD `9ed9fabcd44aa33d3e5f25b54c88751ef42c3ed2`, ahead 13 / behind 31), activa bajo NO-GO hasta corregir el PR #8. El total vigente es ocho ramas adicionales: Softly 3, Katarina 1, Auditoria 3 y Laboratorio-de-agentes 1.
 
 No se fusionó ni eliminó ninguna rama. El manifiesto conserva HEAD SHA y base SHA para que el retiro posterior pueda hacerse con verificación de lease y sin borrar commits nuevos.
 
