@@ -40,8 +40,8 @@ La comparación GitHub entre el commit de reactivación `b308efe26af5b5bc1cec029
 Repositorio: `gatoscientist/Katarina`  
 Rama: `kat-006-stage3-softly-2026-11-16`  
 Base: `main` / `f3c5004fd2a6aca8d6c0ba967b1b4c6a191158be`  
-Head de la rama: `d33be9362f4bbbd566bd43da2b287015d2dfa132`  
-Comparación GitHub: ahead_by 5, behind_by 0, cuatro archivos añadidos.  
+Head de la rama: `698bafa3dfd49350654547b298d92426808c3624`  
+Comparación GitHub: ahead_by 6, behind_by 0, cuatro archivos añadidos.  
 PR: [#1 — KAT-006 etapa 3](https://github.com/gatoscientist/Katarina/pull/1), abierto en borrador; no se fusiona.
 
 ### Inventario final de Katarina
@@ -60,6 +60,7 @@ PR: [#1 — KAT-006 etapa 3](https://github.com/gatoscientist/Katarina/pull/1), 
 3. Índice: `f6cc68cda31b0f29dfe849eb166c3e17036ea9b0`
 4. Informe de etapa 3: `0a78fdb2ba38550c71b9f1818c96d76a4a85b357`
 5. Actualización de informe con relectura y pruebas: `d33be9362f4bbbd566bd43da2b287015d2dfa132`
+6. Corrección final de informe: `698bafa3dfd49350654547b298d92426808c3624`
 
 ## 4. Pruebas ejecutadas
 
@@ -82,6 +83,8 @@ PR: [#1 — KAT-006 etapa 3](https://github.com/gatoscientist/Katarina/pull/1), 
 - Aceptación humana de la implementación.
 
 La validación de schema ejecutada corresponde al schema de Katarina. No se presenta como validación completa del schema original de Softly.
+
+La rama de Katarina fue actualizada después del primer informe para corregir la sección de validaciones y el handoff de Audeline se actualizó con el head final. El PR #1 sigue abierto en borrador.
 
 ## 6. Comparación de implementaciones
 
@@ -109,8 +112,9 @@ No se resolvió ni se incorporó una cuarta dimensión. La decisión queda para 
 Handoff completo publicado en:
 `audsay/KAT-006-HANDOFF-AUDELINE-2026-11-16.md`
 
-Blob SHA: `fd510755c6df231b5e996fe3643e80afa7febd20`  
-Commit de publicación: `f30ff678ae28aa6a5517f41537c00efbea272f07`
+Blob SHA: `c2222a856240677d000533e64571c0d42daafedb`  
+Commit inicial: `f30ff678ae28aa6a5517f41537c00efbea272f07`  
+Commit de actualización con head y SHAs finales: `d3f6152ea4a48faadf1fb0f3bb8383aa0f4f2bb2`
 
 El handoff identifica fuentes, ramas, commits, hallazgos, pruebas y criterios de aceptación. Es una transferencia documental; no invoca ni despierta una sesión de Audeline.
 
