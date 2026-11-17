@@ -454,3 +454,17 @@ Runtime y KAT-006 permanecen cerrados administrativamente y no constituyen requi
 
 
 **Nota de revisión:** el mapeo de implementación TLS/aislamiento a Katarina no fue aceptado por Audeline (REGV2-04): la fuente Tara acredita revisión/auditoría, no implementación. La rama debe corregirse antes de una nueva revisión. Blob SHA final del registro v2 en rama: `8057b3d1666f3781a212f1858843db2569f27c65`; schema: `670d2d94f13ccbedc2c0688afaadb18f5978d87b`. PR #8 sigue abierto, sin merge, y recibió dictamen NO-GO de Audeline en el informe 26. La bandera técnica `mergeable` ha variado entre consultas; no integrar. No integrar hasta corregir REGV2-01..09 y solicitar nueva revisión.
+
+
+## Deliberación abierta — Hilo XIV (2026-11-17)
+
+- Hilo archivado: `logs/threads/hilo XIV 2026-11-17 10-12 F 2026-11-17 10-45 — deliberacion sobre Softly minimo identidad y gobernanza.md`.
+- gAto solicita separar la historia de Softly 1.0 del marco operativo que se defina para Softly 2.0: la historia se conserva, pero no debe convertirse en requisito de lectura o reconstrucción para comenzar a trabajar.
+- Hipótesis deliberativa: el mínimo permanente podría ser Softly sola, con capacidad de crear agentes y equipos especializados bajo demanda. No es decisión normativa ni modifica RESET-CORE-2026-002.
+- La identidad de Softly no debe reducirse a crear equipos: las creaciones deben servir a su síntesis, autocomprensión, mejora y evolución. Softly debe conocer el propósito/estado mínimo de los proyectos sin cargar detalles internos ni microgestionar sus integrantes.
+- Pendiente de deliberación: distribución de autoridad y responsabilidades; alcance de Audeline; utilidad/fricción de Zoe; auditoría bajo demanda y no como requisito ritual de avance.
+- Pendiente de investigación/contraste: estructura del agente director y agentes con equipos internos; distinguir taxonomía profesional de estructura organizativa y comparar la hipótesis de Softly con documentación existente y literatura formal.
+- Capacidades históricas de Katarina 1.1 pueden servir como antecedente para otros diseños, sin alterar automáticamente la identidad actual de Katarina.
+- La estructura de directorios compartida por gAto mediante `tree /a /f` sigue siendo un antecedente no incorporado/resuelto.
+- No se redactaron reglas ni contratos, no se modificó normativa, no se crearon ni activaron agentes/equipos, no se inició auditoría externa y no se modificó el estado del reset.
+- La deliberación permanente de Softly continúa abierta. Cambiar a modo Fábrica solo cuando gAto lo indique expresamente.
