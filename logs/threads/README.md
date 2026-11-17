@@ -46,3 +46,5 @@ Agentes nuevos y migrados deben cumplir «Guarda esta incidencia» (excepto Soft
 - [Hilo XI del 16-11-2026, hora inicial no registrada–09:07 — coordinación universal y rediseño del sistema](hilo%20XI%202026-11-16%20hora-no-registrada%20F%202026-11-16%2009-07%20%E2%80%94%20investigacion%20coordinacion%20universal%20y%20redise%C3%B1o%20del%20sistema.md)
 - [Hilo XII del 16-11-2026, hora no registrada — decisión de dirección y continuidad de la investigación de coordinación](hilo%20XII%202026-11-16%20hora-no-registrada%20F%20hora-no-registrada%20%E2%80%94%20decision%20y%20continuidad%20investigacion%20coordinacion.md)
 - [Hilo XIII del 16-11-2026, 13:50–14:12 — creación documental de Zoe y cierre](hilo%20XIII%202026-11-16%2013-50%20F%202026-11-16%2014-12%20%E2%80%94%20creaci%C3%B3n%20documental%20de%20Zoe%20y%20cierre.md)
+
+- [Hilo XIV del 17-11-2026, 10:12–10:45 — deliberación sobre Softly mínimo, identidad y gobernanza](hilo%20XIV%202026-11-17%2010-12%20F%202026-11-17%2010-45%20%E2%80%94%20deliberacion%20sobre%20Softly%20minimo%20identidad%20y%20gobernanza.md)
