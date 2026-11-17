@@ -52,3 +52,5 @@ Agentes nuevos y migrados deben cumplir «Guarda esta incidencia» (excepto Soft
 - [Hilo XV del 17-11-2026, 10:49–11:37 — deliberación sobre comunicación TITAN y arquitectura Softly](hilo%20XV%202026-11-17%2010-49%20F%202026-11-17%2011-37%20%E2%80%94%20deliberacion%20TITAN%20comunicaci%C3%B3n%20y%20arquitectura%20Softly.md)
 
 - [Hilo XVI del 17-11-2026, 11:39–11:59 — deliberación sobre capacidades de proyectos y reset de Softly 2.0](hilo%20XVI%202026-11-17%2011-39%20F%202026-11-17%2011-59%20%E2%80%94%20deliberacion%20capacidades%20proyectos%20y%20reset%20Softly%202.0.md)
+
+- [Hilo XVII del 17-11-2026, 12:01–12:24 — planificación de Katarina 3.0 y preparación de Softly 2.0](hilo%20XVII%202026-11-17%2012-01%20F%202026-11-17%2012-24%20%E2%80%94%20plan%20Katarina%203.0%20y%20Softly%202.0.md)
