@@ -1,6 +1,6 @@
 # CHECKPOINT — Estado vigente del núcleo operativo/generativo Softly
 
-**Actualizado:** 2026-11-16
+**Actualizado:** 2026-11-17
 
 **Precedencia de lectura:** el corte residual consolidado que sigue es el estado vigente. Las secciones cronológicas posteriores conservan notas históricas; cualquier frase antigua incompatible con ese corte o con los informes 23–26 está supersedida y no representa estado actual.
 
@@ -490,3 +490,15 @@ Runtime y KAT-006 permanecen cerrados administrativamente y no constituyen requi
 - **Dirección de arquitectura:** Softly comenzará sola; la primera instanciación posterior será Catarina/Katarina. La identidad y ortografía canónica, molde y versión deben formalizarse. El equipo actual de Audeline se considera destinado a descontinuarse/reconstruirse y Zoe también será retirada del espacio visible, conservando gAto sus respaldos. No confundir retiro del espacio operativo con destrucción de historia respaldada.
 - **Definiciones pendientes:** punto/versionado base de los agentes; molde generativo; taxonomías y tipos (incluido agente director, Softly y agentes desarrolladores); estructura y función de los equipos de Audeline y Zoe.
 - **Estado:** deliberación archivada; no se modificaron SOFTLY.md ni RESET-CORE-2026-002, no se tocaron repositorios de proyectos externos y Softly no realizó eliminaciones. Reanudar cuando gAto indique que terminó los respaldos/vaciados; verificar repositorios y ramas reales antes de cualquier paso posterior.
+
+
+## Continuidad inmediata — Hilo XVII (2026-11-17)
+
+- **Dirección:** preparar Softly 2.0 como reinicio deliberado, evitando reproducir la burocracia y el desorden acumulados.
+- **Casa canónica Softly:** `gatoscientist/Softly` permanece intacta por ahora. Su revisión y limpieza se hará más adelante, cuando gAto lo indique.
+- **Respaldos y periferia:** gAto declara que todos los repositorios ya están respaldados. Los repositorios periféricos acordados podrán quedar en blanco por decisión de gAto; Softly no ejecutó vaciados en este hilo. La restaurabilidad de respaldos no fue comprobada aquí.
+- **Katarina:** objetivo inmediato: preparar una nueva instancia/sesión de Katarina basada en la línea 3.0 y transferir experiencia/conocimiento útil, sin heredar automáticamente restricciones de gobernanza antiguas. Los documentos revisados de la 3.1.0 están en estado documental `designed` y no prueban disponibilidad ni ejecución.
+- **Investigación de transferencia:** gAto está identificando los archivos mínimos necesarios para conservar la experiencia de Katarina. Softly no debe duplicar esa investigación; debe esperar el material de gAto y luego contrastarlo.
+- **Secuencia acordada:** definir el paquete de transferencia; iniciar la nueva sesión de Katarina; realizar deliberación conjunta de continuidad antes de cualquier ingeniería sobre el núcleo; después avanzar con Softly 2.0.
+- **No ejecutado:** no se modificó la casa canónica Softly, no se vació ningún repositorio y no se instanció una nueva Katarina.
+- **Registro histórico:** `logs/threads/hilo XVII 2026-11-17 12-01 F 2026-11-17 12-24 — plan Katarina 3.0 y Softly 2.0.md`.
