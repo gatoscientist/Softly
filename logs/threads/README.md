@@ -48,3 +48,5 @@ Agentes nuevos y migrados deben cumplir «Guarda esta incidencia» (excepto Soft
 - [Hilo XIII del 16-11-2026, 13:50–14:12 — creación documental de Zoe y cierre](hilo%20XIII%202026-11-16%2013-50%20F%202026-11-16%2014-12%20%E2%80%94%20creaci%C3%B3n%20documental%20de%20Zoe%20y%20cierre.md)
 
 - [Hilo XIV del 17-11-2026, 10:12–10:45 — deliberación sobre Softly mínimo, identidad y gobernanza](hilo%20XIV%202026-11-17%2010-12%20F%202026-11-17%2010-45%20%E2%80%94%20deliberacion%20sobre%20Softly%20minimo%20identidad%20y%20gobernanza.md)
+
+- [Hilo XV del 17-11-2026, 10:49–11:37 — deliberación sobre comunicación TITAN y arquitectura Softly](hilo%20XV%202026-11-17%2010-49%20F%202026-11-17%2011-37%20%E2%80%94%20deliberacion%20TITAN%20comunicaci%C3%B3n%20y%20arquitectura%20Softly.md)
