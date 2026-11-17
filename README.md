@@ -1,56 +1,55 @@
-# Softly — Núcleo operativo y generativo autoevolutivo
+---
+version: 1.1.0
+status: bridge-to-2.0
+created_by: gAto
+created_under: "Mandato de materialización Softly 1.1, 2026-11-17; dictámenes Softly-S2-3 y Katarina-S2-3"
+---
 
-## Gobernanza vigente
+# Softly 1.1
 
-El mandato rector es [RESET-CORE-2026-002](docs/governance/RESET-CORE-2026-002.md): las únicas identidades operativas son Softly, Katarina y Audeline. La expansión de identidades, subagentes, equipos e instancias paralelas permanece congelada. Zoe participa solo como supervisora temporal del reset. Los paquetes históricos se preservan, pero no se consideran activados por existir en el repositorio.
+**Núcleo operativo y generativo | Puente hacia Softly 2.0**
 
-**Softly es una matriz generativa y un sistema autoevolutivo**, no un agente individual ni una instancia coordinadora separada de sus documentos.
+Softly 1.1 es una versión puente ligera y operativa. Incorpora los acuerdos arquitectónicos ya cerrados y habilita una deliberación en vivo para afinar Softly 2.0. No es Softly 2.0 ni una maqueta descartable.
 
-Su arquitectura ha permitido construir agentes, equipos y herramientas —como Auditoría y TITAN— que contribuyen a intervenirlo, auditarlo y evolucionarlo recursivamente. Esa capacidad generativa no autoriza por sí sola nuevas identidades. Mientras rija RESET-CORE-2026-002, la expansión de identidades, subagentes, equipos e instancias paralelas permanece congelada. Cuando opera en un hilo, Softly actúa como el metabolismo activo del ecosistema: activa capacidades autorizadas, produce y transforma artefactos y articula contribuciones dentro del mandato vigente.
+## Despertar rápido
 
-El repositorio gatoscientist/Softly y sus documentos son **memoria documental pasiva del ecosistema**: preservan mandatos, moldes, contratos, taxonomías, decisiones y continuidad. El núcleo operativo/generativo los consulta y actualiza, pero nunca se reduce a esa memoria. El sustrato de trabajo permitido es **Prompting + Contratos + GitHub**. Runtime está fuera de norma: no se diseña, implementa, invoca, prueba ni despliega; los procesos que dependan de él se cierran administrativamente.
+Leer únicamente:
 
-## Inicio rápido
+1. [SOFTLY.md](SOFTLY.md): identidad, autoridad, arquitectura y contratos vigentes.
+2. [CHECKPOINT.md](CHECKPOINT.md): estado y siguiente acción habilitada.
 
-1. Leer SOFTLY.md, el mandato ejecutivo.
-2. Leer CHECKPOINT.md, el estado operativo vigente.
-3. Clasificar el encargo en uno de los tres modos obligatorios.
-4. Consultar el molde, contrato o antecedente específico que el encargo requiera.
-5. Ejecutar y entregar; no abrir investigación si gAto no la pidió.
+No cargar expedientes históricos ni investigación por rutina.
 
-## Modos de trabajo
+## Núcleo
 
-- **Fábrica / Entrega Directa:** modo predeterminado para actualizar moldes/paquetes y producir entregables. La creación de agentes nuevos solo procede cuando una orden vigente la autoriza expresamente; durante RESET-CORE-2026-002 está congelada. Cuando se autorice, el paquete nuevo será versión 1.0.0, estado Diseñado.
-- **Coordinación / Orquestación:** briefs, equipos, asignaciones, auditorías bajo pedido y handoffs.
-- **Investigación / Deliberación:** únicamente por petición explícita de gAto.
+**Prompting + Contratos + GitHub.** Runtime está excluido y fuera de norma.
 
-## Memoria documental pasiva
+- Tres planos lógicos: Definición, Coordinación y Ejecución.
+- Tres dimensiones: Coordinación propia, Coordinación entre pares y Orquestación.
+- Coordinación sistémica: responsabilidad transversal explícita, no cuarta dimensión.
+- Tarea como unidad canónica; GitHub como superficie de señales estigmérgicas.
+- Cápsula Directora: especialistas internos de Katarina, sin identidades ni commits propios.
 
-| Ruta | Contenido |
+## Cuatro clases de artefactos operativos
+
+| Clase | Función |
 |---|---|
-| agents/ | Molde universal, perfiles y contratos |
-| docs/ | Modelo operativo, arquitectura y gobernanza |
-| schemas/ | Contratos estructurados y taxonomías |
-| research/ | Investigación e historia, consulta bajo demanda |
-| decisions/ | Decisiones registradas |
-| logs/ | Hilos cerrados y bitácoras |
-| CHECKPOINT.md | Decisiones vigentes y punto actual de trabajo |
+| **Paquete** | Identidad, mandato, contrato, permisos e interfaz. |
+| **Tarea** | Unidad de coordinación, responsable, estado, dependencias y aceptación. |
+| **Entregable** | Resultado con evidencia, verificaciones y límites. |
+| **Checkpoint** | Estado vigente, acuerdos, bloqueos y acción siguiente. |
 
-## Entrega documental
+Las plantillas canónicas están centralizadas en [contracts/](contracts/).
 
-El molde canónico es agents/templates/agent-generation-mold.md. La checklist autoaplicada está en docs/agent-delivery-checklist.md. El registro legado 1.0.0 permanece en schemas/agent-taxonomy-registry.json mientras se revisa la migración canónica v2 en PR #8. El archivo schemas/identity-capability-registry-v2.json es un resumen provisional de auditoría, no una fuente canónica. PR #8 tiene dictamen independiente NO-GO hasta corregir schema y procedencia.
+## Memoria y legado
 
-Cuando exista autorización vigente para crear un agente nuevo, su entrega documental se realiza por defecto como **1.0.0 / Diseñado**. No existe etapa Runtime, integración de Runtime ni despliegue de Runtime en el modelo normativo.
+La superficie burocrática de v1.0 está clasificada como **Archivo Histórico Inactivo (`v1.0-legacy`)** en [archive/v1.0-legacy/README.md](archive/v1.0-legacy/README.md). Se preserva sin cargarla al inicio.
 
-## Continuidad e historia
+La investigación de [research/syntheses/](research/syntheses/) y [research/coordination/](research/coordination/) se conserva y consulta bajo demanda. TITAN, Cytryna, gAtoSD, Katarina y ResKata no forman parte de esta intervención.
 
-El inicio de cada hilo requiere únicamente SOFTLY.md y CHECKPOINT.md. El histórico SYN-20261113-001 corresponde a research/syntheses/2026-11-13-de-agentes-que-construyen-agentes.md y se consulta bajo demanda, no como lectura rutinaria.
+## Estado actual
 
+**Softly 1.1 activa.** Responsable: Softly, bajo autoridad de gAto.  
+**Acción habilitada:** deliberación en vivo para afinar Softly 2.0.
 
-## Canales oficiales
-
-- [Softlysay](Softlysay/README.md)
-- [Katarinasay](Katarinasay/README.md)
-- [Audelinesay](Audelinesay/README.md)
-
-Los canales son medios documentales de comunicación; no conceden permisos ni acreditan recepción por una sesión.
+La definición normativa y los límites completos están en [SOFTLY.md](SOFTLY.md).
