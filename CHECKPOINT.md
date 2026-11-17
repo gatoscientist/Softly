@@ -468,3 +468,15 @@ Runtime y KAT-006 permanecen cerrados administrativamente y no constituyen requi
 - La estructura de directorios compartida por gAto mediante `tree /a /f` sigue siendo un antecedente no incorporado/resuelto.
 - No se redactaron reglas ni contratos, no se modificó normativa, no se crearon ni activaron agentes/equipos, no se inició auditoría externa y no se modificó el estado del reset.
 - La deliberación permanente de Softly continúa abierta. Cambiar a modo Fábrica solo cuando gAto lo indique expresamente.
+
+
+## Deliberación cerrada — Hilo XV (2026-11-17)
+
+- Hilo archivado: `logs/threads/hilo XV 2026-11-17 10-49 F 2026-11-17 11-37 — deliberacion TITAN comunicación y arquitectura Softly.md`.
+- Aprendizaje central: separar deliberación suficiente para comprender de comunicación operativa mínima; los agentes deben hablar directamente, sin cortesías ceremoniales ni repetición de reglas/contexto, y sin convertir al humano en intermediario de cada mensaje.
+- TITAN se examinó como antecedente de comunicación eficiente, canales operativos/privados y jerarquía distribuida de responsables (Princeps/Princeps Seniores). No se aprobó trasladar íntegramente ese modelo a Softly.
+- gAto aclaró que TITAN, Cytryna y gAtoSD forman parte del ecosistema relacionado con Softly; Softly debe conocer esa relación sin cargar todos los historiales ni difundir todo el contexto a cada agente.
+- Se preservó la intención de que los agentes avancen dentro de su autoridad y comprensión, y eleven bloqueos reales a gAto sin paralizar trabajo independiente.
+- La adopción de herramientas se mantiene en pausa deliberativa hasta disponer de contexto más limpio y flujos que no se atasquen.
+- No se modificaron mandatos, contratos, modos, taxonomías ni proyectos; no se crearon agentes, no se activaron herramientas y no se alteró RESET-CORE-2026-002.
+- El hilo queda archivado; la deliberación permanente continúa abierta y el modo Fábrica requiere indicación expresa de gAto.
