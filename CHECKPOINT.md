@@ -53,6 +53,18 @@ La deliberación registrada el 2026-11-17 sobre latencia humana, tipos de intera
 
 Sus hipótesis y preguntas se conservan únicamente como antecedentes históricos. No constituyen pendientes, tareas, bloqueos, compromisos ni instrucciones de reanudación. No deben retomarse ni convertirse en trabajo salvo que gAto lo ordene expresamente en el futuro.
 
+## Cierre del hilo — 2026-11-18
+
+Se revisó la aparición de la identidad visual Softly en la interfaz de escritorio del repositorio Cytryna.
+
+- El rebranding fue realizado en el repositorio independiente `gatoscientist/Cytryna`; el commit `80f8e0667b8344e528dea58def91367700a5873f` actualiza `Cytryna/gui.py` y está confirmado en GitHub.
+- La revisión distinguió identidad visible de Softly, motor Cytryna y posible relación transversal entre ambos. La conversación no constituye una aprobación de cambios normativos ni una autorización para modificar otros productos.
+- No se realizaron cambios de código ni contratos en `gatoscientist/Softly`.
+- No se identificaron cambios del motor Softly que requirieran commits en este hilo.
+- No se verificó ejecución de pruebas ni funcionamiento autónomo de creación de programas en la interfaz de Cytryna.
+
+Este registro conserva el resultado de la revisión. No abre tareas ni compromisos para el siguiente hilo.
+
 ## Límites y alcance del cierre
 
 - Softly 1.1 continúa siendo la versión puente hacia Softly 2.0; este cierre no declara construida ni validada la versión 2.0.
