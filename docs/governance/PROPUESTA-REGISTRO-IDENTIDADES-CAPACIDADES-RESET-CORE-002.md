@@ -3,7 +3,7 @@
 
 **Fecha:** 2026-11-16  
 **Emite:** Softly  
-**Estado:** PROPUESTA HISTÓRICA PARCIALMENTE SUPERSEDIDA; no modifica el registro vigente. Las referencias a Runtime y a instancias de ejecución quedan fuera de norma por RESET-CORE-2026-002 v1.1.0.  
+**Estado:** PROPUESTA HISTÓRICA SUPERSEDIDA POR EL MODELO V2. Se conserva como antecedente; no modifica el registro canónico. Runtime permanece fuera de norma por RESET-CORE-2026-002 v1.2.0. La migración autorizada se documenta en `docs/governance/MIGRACION-REGISTRO-IDENTIDADES-V2-RESET-CORE-002.md`.  
 **Autoridad de aprobación:** gAto.
 
 ## 1. Problema observado

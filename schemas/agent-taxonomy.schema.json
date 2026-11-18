@@ -1,121 +1,406 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/gatoscientist/Softly/blob/main/schemas/agent-taxonomy.schema.json",
-  "title": "Softly Agent Taxonomy Record",
+  "title": "Softly Identity and Capability Registry v2",
   "type": "object",
   "additionalProperties": false,
   "required": [
-    "agent_id",
-    "version",
-    "taxonomy",
-    "professional_domain",
-    "specialties",
-    "competencies",
-    "inheritance",
-    "availability",
-    "evidence"
+    "registry_version",
+    "model",
+    "identities",
+    "domains",
+    "capability_profiles",
+    "packages",
+    "temporary_assignments",
+    "migration"
   ],
   "properties": {
-    "agent_id": {
-      "type": "string",
-      "minLength": 1
+    "registry_version": {
+      "const": "2.0.0"
     },
-    "version": {
-      "type": "string",
-      "pattern": "^\\d+\\.\\d+\\.\\d+(?:[-+][0-9A-Za-z.-]+)?$"
-    },
-    "taxonomy": {
-      "enum": [
-        "AgentDEV",
-        "AgentSEC",
-        "AgentMUS",
-        "AgentSCI",
-        "Auditoría"
-      ]
-    },
-    "professional_domain": {
-      "type": "string",
-      "minLength": 1
-    },
-    "specialties": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "minItems": 1
-    },
-    "competencies": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "inheritance": {
+    "model": {
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "default",
-        "derivations"
+        "identity_count",
+        "inheritance_default",
+        "authority_rule",
+        "runtime_policy"
       ],
       "properties": {
-        "default": {
+        "identity_count": {
+          "const": 3
+        },
+        "inheritance_default": {
           "const": "none"
         },
-        "derivations": {
-          "type": "array",
-          "items": {
-            "$ref": "#/$defs/derivation"
-          }
+        "authority_rule": {
+          "const": "Only identities listed in identities[] possess operational authority. Capability profiles do not create identities or authority."
+        },
+        "runtime_policy": {
+          "const": "excluded-and-administratively-closed"
         }
       }
     },
-    "availability": {
-      "enum": [
-        "active-standby",
-        "assigned",
-        "paused",
-        "retired",
-        "unknown"
-      ]
+    "identities": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "$ref": "#/$defs/identity"
+      }
     },
-    "evidence": {
+    "domains": {
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref": "#/$defs/domain"
+      }
+    },
+    "capability_profiles": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/capability"
+      }
+    },
+    "packages": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/package"
+      }
+    },
+    "temporary_assignments": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/assignment"
+      }
+    },
+    "migration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_registry",
+        "source_blob_sha",
+        "historical_preservation",
+        "migration_status",
+        "independent_verification"
+      ],
+      "properties": {
+        "source_registry": {
+          "const": "schemas/archive/agent-taxonomy-registry-1.0.0.json@1.0.0"
+        },
+        "source_blob_sha": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "historical_preservation": {
+          "const": "preserved-unchanged-in-git-history"
+        },
+        "migration_status": {
+          "enum": [
+            "draft-for-independent-review",
+            "verified",
+            "rejected"
+          ]
+        },
+        "independent_verification": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "auditor",
+            "status",
+            "report"
+          ],
+          "properties": {
+            "auditor": {
+              "const": "Audeline"
+            },
+            "status": {
+              "enum": [
+                "pending",
+                "passed",
+                "passed-with-reservations",
+                "failed"
+              ]
+            },
+            "report": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        }
       }
     }
   },
   "$defs": {
-    "derivation": {
+    "identity": {
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "from_agent_id",
-        "domain",
-        "competency",
-        "reason",
-        "evidence"
+        "identity_id",
+        "name",
+        "canonical_repo",
+        "canonical_version",
+        "operational_state",
+        "institutional_role",
+        "domains",
+        "authority"
       ],
       "properties": {
-        "from_agent_id": {
+        "identity_id": {
+          "enum": [
+            "softly",
+            "katarina",
+            "audeline"
+          ]
+        },
+        "name": {
           "type": "string"
         },
-        "domain": {
+        "canonical_repo": {
           "type": "string"
         },
-        "competency": {
+        "canonical_version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "operational_state": {
+          "const": "authorized-operational-identity"
+        },
+        "institutional_role": {
           "type": "string"
         },
-        "reason": {
-          "type": "string"
-        },
-        "evidence": {
+        "domains": {
           "type": "array",
           "items": {
             "type": "string"
           }
+        },
+        "authority": {
+          "const": "defined-by-current-contract-only"
+        }
+      }
+    },
+    "domain": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "domain_id",
+        "name",
+        "parent_domain",
+        "status",
+        "description"
+      ],
+      "properties": {
+        "domain_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "parent_domain": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "status": {
+          "enum": [
+            "established",
+            "candidate",
+            "historical"
+          ]
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    },
+    "capability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "capability_id",
+        "name",
+        "domain_id",
+        "source_package_ids",
+        "source_evidence",
+        "status",
+        "proposed_identity_ids",
+        "authorization",
+        "inheritance"
+      ],
+      "properties": {
+        "capability_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "domain_id": {
+          "type": "string"
+        },
+        "source_package_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "source_evidence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "status": {
+          "enum": [
+            "candidate-unassigned",
+            "proposed-for-review",
+            "approved-capability",
+            "rejected"
+          ]
+        },
+        "proposed_identity_ids": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "softly",
+              "katarina",
+              "audeline"
+            ]
+          }
+        },
+        "authorization": {
+          "const": "none-until-explicit-contract-mapping-and-independent-review"
+        },
+        "inheritance": {
+          "const": "none"
+        }
+      }
+    },
+    "package": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "package_id",
+        "repository",
+        "path",
+        "version",
+        "status",
+        "authority"
+      ],
+      "properties": {
+        "package_id": {
+          "type": "string"
+        },
+        "repository": {
+          "type": "string"
+        },
+        "path": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "canonical",
+            "historical-source",
+            "candidate-unassigned",
+            "temporary-assignment"
+          ]
+        },
+        "authority": {
+          "enum": [
+            "canonical-identity-contract",
+            "no-operational-authority",
+            "temporary-bounded-assignment"
+          ]
+        }
+      }
+    },
+    "assignment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "assignment_id",
+        "identity_id",
+        "scope",
+        "start_condition",
+        "end_condition",
+        "approver",
+        "status"
+      ],
+      "properties": {
+        "assignment_id": {
+          "type": "string"
+        },
+        "identity_id": {
+          "enum": [
+            "softly",
+            "katarina",
+            "audeline",
+            "zoe"
+          ]
+        },
+        "scope": {
+          "type": "string"
+        },
+        "start_condition": {
+          "type": "string"
+        },
+        "end_condition": {
+          "type": "string"
+        },
+        "approver": {
+          "const": "gAto"
+        },
+        "status": {
+          "enum": [
+            "active-temporary",
+            "completed",
+            "revoked"
+          ]
         }
       }
     }
-  }
+  },
+  "allOf": [
+    {
+      "contains": {
+        "properties": {
+          "identity_id": {
+            "const": "softly"
+          }
+        }
+      },
+      "minContains": 1,
+      "maxContains": 1
+    },
+    {
+      "contains": {
+        "properties": {
+          "identity_id": {
+            "const": "katarina"
+          }
+        }
+      },
+      "minContains": 1,
+      "maxContains": 1
+    },
+    {
+      "contains": {
+        "properties": {
+          "identity_id": {
+            "const": "audeline"
+          }
+        }
+      },
+      "minContains": 1,
+      "maxContains": 1
+    }
+  ]
 }
