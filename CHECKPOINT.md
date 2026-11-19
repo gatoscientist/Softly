@@ -78,3 +78,53 @@ Este registro conserva el resultado de la revisión. No abre tareas ni compromis
 **Sin pendientes. Sin tareas heredadas. Sin reanudación automática.**
 
 El siguiente hilo parte limpio. Softly espera una nueva instrucción de gAto antes de iniciar cualquier trabajo.
+
+
+## Cierre de hilo — 2026-11-18 (continuidad Dabra)
+
+Este hilo trabajó sobre la coordinación de producción de **La Vigilia de Ceniza** en el repositorio independiente `gatoscientist/Dabra`. No modifica por sí mismo la gobernanza normativa de Softly 1.1.
+
+### Observaciones de interacción con gAto
+
+Se identifica como línea de trabajo para una futura evolución de la coordinación:
+
+- Registrar interacciones con gAto y distinguir trabajo, exploración/broma o pruebas del gAto, e interrupciones o demandas que consumen su atención.
+- Una interacción puede tener más de una categoría; registrar también su resultado y costo de atención.
+- Distinguir las tareas que requieren intervención humana de las pruebas rutinarias y operaciones reversibles que los agentes pueden ejecutar autónomamente dentro de su mandato.
+- El objetivo de coordinación es reducir la supervisión manual del gAto, no crear más burocracia ni convertir cada conversación en una tarea.
+- Las pruebas de tensión permiten observar límites de autoridad, criterio, autonomía, seguridad, honestidad y continuidad. La reacción observada es evidencia; cualquier cambio de gobernanza requiere autorización correspondiente.
+
+Estas observaciones son propuestas de diseño y no se registran como cambios aprobados a la arquitectura normativa de Softly 1.1.
+
+### Continuidad de agentes directores
+
+Se formuló para Lina un mandato de continuidad operativa en La Vigilia de Ceniza:
+
+- Decisiones técnicas y artísticas reversibles dentro del mandato aprobado pueden tomarse sin aprobación paso a paso.
+- El director gestiona su propia cola de trabajo, identifica la siguiente tarea útil y continúa con actividades independientes ante bloqueos.
+- Escala al gAto únicamente decisiones reservadas, riesgos relevantes o autorizaciones indispensables.
+- Cada entrega debe distinguir planificación, ejecución, implementación, prueba técnica y validación humana, con evidencia verificable.
+- No se debe simular actividad entre mensajes ni afirmar autonomía cuando la sesión está detenida.
+- Los documentos y commits prueban cambios documentales; no prueban por sí solos funcionalidad del juego.
+
+### Estado de La Vigilia de Ceniza informado en el hilo
+
+Según el informe de Lina compartido por gAto:
+
+- Proyecto Godot separado y combate básico existente; prueba interactiva pendiente en el último informe.
+- Rotten Cathedral Lite: compatibilidad y condiciones de licencia declaradas revisadas; inspección del ZIP pendiente.
+- Protagonista felino: licencia comercial pendiente de resolver.
+- Súcubo: candidatas investigadas, ninguna aprobada por falta de evidencia suficiente sobre edad/representación y/o compatibilidad.
+- Cooperativo: aún no implementado en ese informe.
+- Se indicó como último commit de documentación `f5fad51a`, en la rama de producción; este dato fue comunicado por Lina y no se verificó independientemente durante este cierre.
+- El ZIP pendiente bloquea la inspección e integración de ese paquete concreto, no las tareas independientes de arquitectura, pruebas, investigación de alternativas o preparación técnica.
+- El objetivo de producto expresado por gAto es una primera experiencia jugable cooperativa por Internet para dos jugadores, con identidad gótica, assets existentes y elenco inequívocamente adulto.
+
+### Estado de este cierre
+
+- No se realizaron cambios de código ni commits en Dabra durante este hilo por parte de Softly.
+- Se entregaron mandatos y recomendaciones de coordinación a gAto para que los transmita a Lina.
+- No se declara terminada ni validada la vertical slice.
+- Las observaciones de coordinación quedan preservadas como antecedentes para el próximo hilo, sin activar trabajo automáticamente ni alterar el cierre administrativo previo de Softly 1.1.
+
+El siguiente hilo comienza con este contexto disponible y espera una nueva instrucción expresa de gAto.
