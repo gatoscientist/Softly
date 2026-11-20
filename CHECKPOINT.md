@@ -322,3 +322,38 @@ La primera interpretación del gráfico como comparación general de trayectoria
 - Se aclaró que ese conocimiento queda preservado en los perfiles históricos, sin herencia automática. La integración dentro de un componente de IA puede ser parte de DEV; la integración transversal sigue en DEV-INT. La especialidad PLN/NLP no se absorbe artificialmente en SEC o AUD.
 - Se registró la ambigüedad entre el aviso de limpieza de Cytryna (2026-11-20), que declara obsoletos puentes y adaptadores, y la presencia de `softly_bridge.py` en el árbol actual. No se modifica ni se usa ese mecanismo para Camila.
 - Camila pasa a versión documental 1.1.1; el registro de taxonomías pasa a 1.1.0. No cambia la cápsula de cinco roles ni su estado Diseñado.
+
+
+### Registro de commits y verificación — reconstrucción de Camila
+
+**Softly / main**
+- Reconstrucción inicial del paquete: `3e7b9276b0caf203f446fc6263ffc8dcb62e93b8`.
+- Aclaración de continuidad, perfiles históricos y conflicto IPC: `5b5bf307c421c0a625aa7d90869fdf957024bc0e`.
+- Corrección de procedencia/versionado: `d3911c4cad89e52fd4c91a0d997c53f2aef0532a`.
+- SHA de `main` verificado al cierre: `d3911c4cad89e52fd4c91a0d997c53f2aef0532a`.
+
+Rutas modificadas o creadas:
+- `agents/profiles/camila.md`
+- `agents/profiles/camila.json`
+- `agents/profiles/README.md`
+- `schemas/agent-taxonomy-registry.json`
+- `CHECKPOINT.md`
+
+**Cytryna / main**
+- Índices históricos y enlace al perfil canónico: `869e61898bdb8ca085c2af08b3cf78154dad5509`.
+- Punteros de versión: `d4f6a6fe4b1aaf2c3c0834dedf0789051388f3b6`.
+- Corrección del índice de perfiles: `6e00cf966eda449b0f362dc2ddaaae76525a1a9f`.
+- SHA de `main` verificado al cierre: `6e00cf966eda449b0f362dc2ddaaae76525a1a9f`.
+
+Rutas modificadas:
+- `Camila/README.md`
+- `instances/camila/README.md`
+- `instances/README.md`
+
+**Verificación realizada**
+- Se releyeron desde GitHub los archivos modificados y los dos perfiles históricos de Camila.
+- La definición JSON de Camila contiene todos los campos requeridos por `agent-definition.schema.json`, no introduce propiedades adicionales y usa una taxonomía y madurez admitidas. Se comprobaron también versión, competencias, herencia y campos del registro taxonómico.
+- El registro conserva el conjunto oficial de taxonomías; no se añadió `AgentDIR`.
+- La comparación de commits confirma que los cambios se limitaron a los archivos documentales enumerados.
+- No se borraron archivos ni se reescribió historial.
+- No se modificó código de runtime ni se ejecutaron pruebas funcionales/runtime. La verificación fue documental y estructural.
