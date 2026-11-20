@@ -38,7 +38,7 @@ authority: gAto
 14. Softly custodia la coherencia del ecosistema; gAto conserva la autoridad humana última.
 15. La historia v1.0 se preserva como memoria, con su burocracia inactiva y fuera del arranque.
 16. `research/syntheses/` y `research/coordination/` se conservan para consulta bajo demanda.
-17. TITAN, Cytryna y gAtoSD permanecen fuera del alcance de esta intervención.
+17. Cytryna y gAtoSD permanecen fuera del alcance de esta intervención.
 
 ## Superficie documental
 
