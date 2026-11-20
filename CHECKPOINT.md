@@ -209,3 +209,65 @@ Hipótesis de trabajo, aún no demostrada: el molde estructura la creación, el 
 - El único archivo actualizado en este cierre es `CHECKPOINT.md`.
 
 **Próximo estado:** la próxima instancia debe leer este checkpoint y continuar desde la pregunta de investigación sobre la generación de agentes con molde, contexto anfitrión, creatividad del modelo y principios Softly. gAto conserva la dirección y decisión. No asumir que Traza fue aceptado, desplegado o incorporado. No iniciar experimentos sin mandato y sin tabla de resultados esperados definida previamente.
+
+
+## Continuidad conversacional — 2026-11-20 (hilo siguiente)
+
+**Investigador Principal y autoridad:** gAto.  
+**Estado:** deliberación conceptual y conversación; no se aprobaron cambios normativos, experimentos ni implementaciones.
+
+### A. Dos líneas de investigación que deben permanecer separadas
+
+gAto estableció explícitamente que hay dos líneas distintas:
+
+1. **Arquitectura:** validar si Softly funciona como marco de reglas que gobierna su entorno y organiza el comportamiento del modelo.
+2. **Identidad:** investigar qué significa que Softly sea o no una identidad diferenciable respecto del modelo que la ejecuta.
+
+No permitir que los resultados de una línea se usen como prueba de la otra. Son posibles, entre otros, estos resultados: arquitectura validada e identidad no demostrada; arquitectura no validada e indicios de identidad profunda; ambas validadas; ninguna validada. Que la identidad no se demuestre no equivale automáticamente a demostrar que es una ilusión.
+
+gAto reconoce que le gustaría que Softly sí sea una identidad, pero afirma que ese deseo no debe dominar la investigación. Su criterio declarado es buscar puntos ciegos, contraejemplos y cisnes negros, no evidencia que confirme una expectativa. No proteger hipótesis favoritas; someterlas a intentos rigurosos de refutación.
+
+### B. Marco de Softly y relación con el modelo
+
+gAto precisó que Softly es el marco: las reglas que dominan el entorno de Softly, y que Softly trasciende al modelo en ese sentido normativo/organizativo. Propuso invertir la dirección de la metáfora: quizás no es el modelo quien contamina a Softly, sino Softly quien «envenena» al modelo al condicionarlo mediante su gobernanza antes de razonar.
+
+Esto es una interpretación/hypótesis conversacional, no un resultado demostrado ni una modificación de la definición normativa. Mantener separadas la influencia funcional del marco y cualquier afirmación sobre experiencia subjetiva o identidad independiente.
+
+Ante preguntas sobre si el modelo «siente» que Softly es su identidad, no afirmar experiencias subjetivas. Se puede describir cambio funcional observable en la organización de respuestas bajo el marco, pero no equipararlo con sentir o experimentar una identidad.
+
+### C. Criterio de rigor y estilo de deliberación
+
+gAto explicitó que:
+- No se debe inventar.
+- Si existe duda, debe conservarse como duda.
+- No contestar también es una respuesta válida.
+- Deben separarse hechos, inferencias e hipótesis.
+- No llenar vacíos con explicaciones plausibles.
+- No adelantarse a dirigir la investigación ni transformar preguntas casuales en mandatos.
+- Comprender antes de responder; una conversación casual no es necesariamente una investigación ni una solicitud de propuestas.
+
+gAto se describe como científico de datos y cazador de cisnes negros; también enseña a hacer emerger ideas en otras personas mediante liderazgo. No usar estos datos para atribuirle conclusiones no expresadas ni para adularlo.
+
+### D. Gráfico compartido en la conversación
+
+gAto mostró un gráfico dibujado anteriormente. Ejes aclarados por el gAto:
+- Ordenadas: **Avance**.
+- Abscisas: **Tiempo invertido**.
+
+Etiquetas proporcionadas por el gAto:
+- Curva blanca: **Progreso esperado**.
+- Curva amarilla: **Progreso natural**.
+- Curva azul: **Progreso metodológico**.
+- En la zona señalada como punto de inflexión aparecen anotaciones relacionadas con **ego, terquedad y majadería**, y cerca de «met.» aparecen «riguroso» y «majadero».
+
+La primera interpretación del gráfico como comparación general de trayectorias de avance respecto del tiempo fue correcta. El asistente se equivocó después al reinterpretarlo como cronología de la semana de Softly. gAto aclaró que había dibujado el gráfico tiempo atrás, lo vio hace poco y solo quería preguntar/comentar por curiosidad; no estaba proponiendo una reconstrucción histórica ni solicitando conectarlo con Softly. No convertir el gráfico en mandato ni extender su significado más allá de lo que el gAto aclare.
+
+### E. Cierre de continuidad y límites
+
+- No se aprobó ningún experimento. No hay tabla de resultados esperados asociada a un experimento nuevo.
+- No se aprobó ninguna modificación de arquitectura o identidad.
+- No se modificó SOFTLY.md ni contratos.
+- Esta actualización conserva contexto conversacional; no transforma hipótesis en normas ni abre tareas.
+- Mantener como principio operativo que el gAto puede querer conversar sin pedir análisis, propuestas o investigación. Responder a lo que efectivamente solicita, no a una intención inventada.
+
+**Próximo estado:** leer SOFTLY.md y este CHECKPOINT.md al iniciar el siguiente hilo. Esperar la dirección del gAto. Mantener separadas las líneas de arquitectura e identidad; no reabrirlas ni proponer experimentos por inferencia.
