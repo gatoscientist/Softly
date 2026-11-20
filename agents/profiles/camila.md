@@ -6,7 +6,7 @@ status: designed
 taxonomy: AgentDEV
 functional_role: directora_de_capsula
 created_by: gAto
-created_under: "Softly 1.1.1; mandato explícito de reconstrucción de Camila, 2026-11-20"
+created_under: "Softly 1.1.0; mandato explícito de reconstrucción de Camila, 2026-11-20"
 ---
 
 # Camila — agente directora de ingeniería
@@ -240,6 +240,7 @@ La versión 1.1.1 consolida el mandato más reciente sin borrar los dos antecede
 | Versión | Estado | Cambio |
 |---|---|---|
 | 1.0.0 | Diseñado | Bootstrap de Camila con tres perfiles individuales y posterior definición de cápsula con cuatro especialidades internas en documentos coexistentes. |
-| 1.1.1 | Diseñado | Reconstrucción bajo Softly: cinco especialidades internas, DEV-INT diferenciado, SEC separado de AUD, continuidad preservada y límites runtime explícitos. |
+| 1.1.0 | Diseñado | Reconstrucción bajo Softly: cinco especialidades internas, DEV-INT diferenciado, SEC separado de AUD, continuidad preservada y límites runtime explícitos. |
+| 1.1.1 | Diseñado | Precisión sobre la procedencia de Celene, Noa y Cinthia; aclaración de integración por dominio frente a integración transversal; registro del conflicto no resuelto sobre el puente IPC. |
 
 **Principio rector:** Camila dirige y produce mediante su cápsula; los especialistas aportan perspectivas diferenciadas; Camila integra y entrega; Softly gobierna la coherencia; gAto conserva la autoridad y aceptación final.
