@@ -37,8 +37,3 @@ El archivo `.old` es un snapshot histórico, no una plantilla operativa. La fuen
 ## Taxonomías y coordinación
 
 El registro profesional inicial está en [schemas/agent-taxonomy-registry.json](../schemas/agent-taxonomy-registry.json) y su contrato en [agent-taxonomy.schema.json](../schemas/agent-taxonomy.schema.json). La no-herencia por defecto y la derivación entre pares forman parte del molde vigente. Las definiciones disponibles en Active Standby no representan procesos ejecutándose.
-
-
-## Taxonomías y coordinación
-
-El registro profesional inicial está en [schemas/agent-taxonomy-registry.json](../schemas/agent-taxonomy-registry.json) y su contrato en [agent-taxonomy.schema.json](../schemas/agent-taxonomy.schema.json). La no-herencia por defecto y la derivación entre pares forman parte del molde vigente. Las definiciones disponibles en Active Standby no representan procesos ejecutándose.
