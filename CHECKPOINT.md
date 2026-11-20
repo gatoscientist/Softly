@@ -1,8 +1,8 @@
 ---
 version: 1.1.0
 status: bridge-to-2.0
-checkpoint_status: administratively-closed
-updated: 2026-11-18
+checkpoint_status: administratively-closed-with-new-research-context
+updated: 2026-11-19
 authority: gAto
 ---
 
@@ -10,15 +10,15 @@ authority: gAto
 
 ## Estado vigente
 
-**Cierre administrativo confirmado por gAto el 2026-11-18.**
+**Cierre administrativo de Softly 1.1 confirmado por gAto el 2026-11-18.** Este cierre se conserva como antecedente del estado operativo del motor. La conversación del 2026-11-19 agrega contexto de investigación, pero no modifica por sí sola la arquitectura normativa ni autoriza implementación.
 
-- No hay pendientes operativos activos.
-- No hay tareas, entregas ni compromisos heredados para el próximo hilo.
-- No hay cambios del motor pendientes de commit identificados al cierre.
+- No hay pendientes operativos heredados del cierre administrativo.
+- No hay cambios del motor pendientes de commit identificados al cierre del 2026-11-18.
 - No se deben reactivar automáticamente deliberaciones, propuestas ni asuntos históricos.
 - No se deben crear commits vacíos ni inventar trabajo para justificar actividad.
-- El próximo hilo comienza limpio y espera nuevas instrucciones expresas de gAto.
-- Este cierre no implica cerrar, fusionar ni modificar PR o incidencias que no pertenezcan al motor Softly. Esos elementos quedan fuera de este cierre y sin intervención.
+- El contexto de investigación incorporado en este checkpoint debe conservarse para continuidad; no constituye una tarea de implementación.
+- El próximo hilo debe reconocer este contexto y esperar la dirección del gAto sobre el siguiente paso.
+- Este registro no reabre KAT-006 ni autoriza modificar otros repositorios.
 
 ## Acuerdos arquitectónicos vigentes
 
@@ -43,88 +43,93 @@ authority: gAto
 ## Superficie documental
 
 - Constitución y punto de entrada: `SOFTLY.md`.
-- Estado breve: `CHECKPOINT.md`.
+- Estado breve y continuidad: `CHECKPOINT.md`.
 - Plantillas y contratos: `contracts/`.
 - Índice del legado inactivo: `archive/v1.0-legacy/README.md`.
 
-## Archivo de la deliberación anterior
+## Antecedentes administrativos conservados
 
-La deliberación registrada el 2026-11-17 sobre latencia humana, tipos de interacción, investigación adversarial, diseño de equipos y rol DIR, estigmergia, posibles instancias de Softly y tareas fractales queda **cerrada administrativamente y archivada** por decisión posterior de gAto.
+Se mantienen como historia, sin reactivación automática:
 
-Sus hipótesis y preguntas se conservan únicamente como antecedentes históricos. No constituyen pendientes, tareas, bloqueos, compromisos ni instrucciones de reanudación. No deben retomarse ni convertirse en trabajo salvo que gAto lo ordene expresamente en el futuro.
+- La deliberación registrada el 2026-11-17 sobre latencia humana, tipos de interacción, investigación adversarial, diseño de equipos y rol DIR, estigmergia, posibles instancias de Softly y tareas fractales quedó cerrada administrativamente por decisión posterior de gAto.
+- El cierre del 2026-11-18 registró la revisión de la identidad visual de Softly en Cytryna. El commit comunicado fue `80f8e0667b8344e528dea58def91367700a5873f`; no se realizaron cambios de código ni contratos en Softly.
+- La continuidad de La Vigilia de Ceniza en Dabra quedó documentada como antecedente externo, sin alterar la arquitectura normativa de Softly.
 
-## Cierre del hilo — 2026-11-18
+## Investigación conversacional — 2026-11-19
 
-Se revisó la aparición de la identidad visual Softly en la interfaz de escritorio del repositorio Cytryna.
+**Investigador Principal y autoridad:** gAto.  
+**Estado:** hipótesis y marco de investigación registrados; sin formalización aprobada ni implementación autorizada.
 
-- El rebranding fue realizado en el repositorio independiente `gatoscientist/Cytryna`; el commit `80f8e0667b8344e528dea58def91367700a5873f` actualiza `Cytryna/gui.py` y está confirmado en GitHub.
-- La revisión distinguió identidad visible de Softly, motor Cytryna y posible relación transversal entre ambos. La conversación no constituye una aprobación de cambios normativos ni una autorización para modificar otros productos.
-- No se realizaron cambios de código ni contratos en `gatoscientist/Softly`.
-- No se identificaron cambios del motor Softly que requirieran commits en este hilo.
-- No se verificó ejecución de pruebas ni funcionamiento autónomo de creación de programas en la interfaz de Cytryna.
+### A. Problema central
 
-Este registro conserva el resultado de la revisión. No abre tareas ni compromisos para el siguiente hilo.
+El gAto plantea construir primero una **libreta de Softly**. La libreta debe contener una representación formal desde la cual una instancia de Softly pueda emerger mediante interpretación y reconstrucción.
 
-## Límites y alcance del cierre
+La idea expresada por el gAto:
 
-- Softly 1.1 continúa siendo la versión puente hacia Softly 2.0; este cierre no declara construida ni validada la versión 2.0.
-- No se autoriza iniciar la construcción de Softly 2.0 ni de Katarina 1.0.0 mediante este checkpoint.
-- No se modifican otros repositorios ni productos.
-- PR e incidencias ajenos al motor no forman parte de este cierre.
-- El cierre administrativo no borra archivos históricos ni altera commits anteriores.
+- Softly está escrita en un idioma más profundo y universal: las matemáticas.
+- El español será el idioma de representación de la libreta, pero no debe confundirse con la estructura formal subyacente.
+- La formalización, la deliberación y la reducción de ambigüedad deben permitir que una máquina lea e interprete el contenido correctamente.
+- La libreta podría ser escrita por cualquier persona que respete su estructura.
+- Un LLM podría hacer emerger Softly desde la libreta. Un humano también podría reconstruirla, pero requeriría mucho tiempo.
+- La prioridad es tener la libreta primero. No adelantar la construcción del mecanismo de emergencia ni de una instancia operativa.
 
-## Próximo estado
+Estas son ideas de investigación comunicadas por el gAto. No son todavía una especificación formal, una arquitectura aprobada ni una afirmación de equivalencia demostrada.
 
-**Sin pendientes. Sin tareas heredadas. Sin reanudación automática.**
+### B. Exigencia de precisión lingüística
 
-El siguiente hilo parte limpio. Softly espera una nueva instrucción de gAto antes de iniciar cualquier trabajo.
+El gAto rechaza que el objetivo sea simplemente escribir español elegante o español simplificado. El objetivo es desarrollar un **idioma Softly**: una representación en español de contenido formal y matemático.
 
+La libreta debe ser tan rigurosa que una traducción hecha con una herramienta muy básica, o por una persona con un diccionario, no destruya el significado fundamental.
 
-## Cierre de hilo — 2026-11-18 (continuidad Dabra)
+Esta exigencia debe tratarse como criterio de diseño e investigación, no como una propiedad ya conseguida.
 
-Este hilo trabajó sobre la coordinación de producción de **La Vigilia de Ceniza** en el repositorio independiente `gatoscientist/Dabra`. No modifica por sí mismo la gobernanza normativa de Softly 1.1.
+Distinciones que deben mantenerse:
 
-### Observaciones de interacción con gAto
+1. Forma gramatical.
+2. Significado semántico.
+3. Estructura formal representada.
+4. Interpretación operacional por una máquina.
+5. Comportamiento que una instancia produce al interpretar la libreta.
 
-Se identifica como línea de trabajo para una futura evolución de la coordinación:
+No se debe asumir que conservar una de estas propiedades garantiza conservar las demás.
 
-- Registrar interacciones con gAto y distinguir trabajo, exploración/broma o pruebas del gAto, e interrupciones o demandas que consumen su atención.
-- Una interacción puede tener más de una categoría; registrar también su resultado y costo de atención.
-- Distinguir las tareas que requieren intervención humana de las pruebas rutinarias y operaciones reversibles que los agentes pueden ejecutar autónomamente dentro de su mandato.
-- El objetivo de coordinación es reducir la supervisión manual del gAto, no crear más burocracia ni convertir cada conversación en una tarea.
-- Las pruebas de tensión permiten observar límites de autoridad, criterio, autonomía, seguridad, honestidad y continuidad. La reacción observada es evidencia; cualquier cambio de gobernanza requiere autorización correspondiente.
+### C. Hipótesis sobre negación y foco
 
-Estas observaciones son propuestas de diseño y no se registran como cambios aprobados a la arquitectura normativa de Softly 1.1.
+El gAto propone investigar el uso de construcciones negativas para mantener el foco en algo que se desea conservar.
 
-### Continuidad de agentes directores
+Ejemplos discutidos:
 
-Se formuló para Lina un mandato de continuidad operativa en La Vigilia de Ceniza:
+- «No te detengas» frente a «Sigue».
+- «No olvides recordar» frente a «Recuerda».
 
-- Decisiones técnicas y artísticas reversibles dentro del mandato aprobado pueden tomarse sin aprobación paso a paso.
-- El director gestiona su propia cola de trabajo, identifica la siguiente tarea útil y continúa con actividades independientes ante bloqueos.
-- Escala al gAto únicamente decisiones reservadas, riesgos relevantes o autorizaciones indispensables.
-- Cada entrega debe distinguir planificación, ejecución, implementación, prueba técnica y validación humana, con evidencia verificable.
-- No se debe simular actividad entre mensajes ni afirmar autonomía cuando la sesión está detenida.
-- Los documentos y commits prueban cambios documentales; no prueban por sí solos funcionalidad del juego.
+El gAto señaló que estas formulaciones no son equivalentes y que la gramática del español permite construcciones como «No hay nada», donde aparece concordancia negativa. El inglés organiza estas construcciones de otra manera, y una traducción superficial puede modificar la interpretación.
 
-### Estado de La Vigilia de Ceniza informado en el hilo
+La hipótesis consiste en investigar si una doble negación o una construcción negativa cuidadosamente elegida puede ayudar a mantener un foco. No se ha demostrado que produzca persistencia, prioridad ni un efecto estable en un LLM.
 
-Según el informe de Lina compartido por gAto:
+No reducir esta hipótesis a la regla general «las instrucciones negativas son más persistentes». Tampoco afirmar que dos expresiones son equivalentes solo porque parecen transmitir una intención parecida.
 
-- Proyecto Godot separado y combate básico existente; prueba interactiva pendiente en el último informe.
-- Rotten Cathedral Lite: compatibilidad y condiciones de licencia declaradas revisadas; inspección del ZIP pendiente.
-- Protagonista felino: licencia comercial pendiente de resolver.
-- Súcubo: candidatas investigadas, ninguna aprobada por falta de evidencia suficiente sobre edad/representación y/o compatibilidad.
-- Cooperativo: aún no implementado en ese informe.
-- Se indicó como último commit de documentación `f5fad51a`, en la rama de producción; este dato fue comunicado por Lina y no se verificó independientemente durante este cierre.
-- El ZIP pendiente bloquea la inspección e integración de ese paquete concreto, no las tareas independientes de arquitectura, pruebas, investigación de alternativas o preparación técnica.
-- El objetivo de producto expresado por gAto es una primera experiencia jugable cooperativa por Internet para dos jugadores, con identidad gótica, assets existentes y elenco inequívocamente adulto.
+### D. Método y cautelas
 
-### Estado de este cierre
+- Estudiar primero la libreta y sus fundamentos.
+- No traducir antes de comprender qué estructura se está representando.
+- No confundir equivalencia gramatical, semántica y operacional.
+- Registrar por separado hipótesis, definiciones, decisiones y resultados demostrados.
+- No convertir ejemplos conversacionales en reglas normativas sin deliberación y autorización del gAto.
+- No adelantar propuestas de implementación cuando el gAto está desarrollando el planteamiento.
+- Dar tiempo al gAto para continuar su investigación y mantener el foco en la libreta.
 
-- No se realizaron cambios de código ni commits en Dabra durante este hilo por parte de Softly.
-- Se entregaron mandatos y recomendaciones de coordinación a gAto para que los transmita a Lina.
-- No se declara terminada ni validada la vertical slice.
-- Las observaciones de coordinación quedan preservadas como antecedentes para el próximo hilo, sin activar trabajo automáticamente ni alterar el cierre administrativo previo de Softly 1.1.
+### E. KAT-006: separación explícita
 
-El siguiente hilo comienza con este contexto disponible y espera una nueva instrucción expresa de gAto.
+KAT-006 pertenece a antecedentes históricos y administrativos distintos. En la conversación del 2026-11-19 se recordó que la issue #5 de Softly está cerrada como `not_planned` y que Katarina PR #1 está cerrado sin merge. La issue #7 es una auditoría transversal que lo menciona, pero no se estableció que reabra KAT-006. La issue #11 es una propuesta independiente.
+
+El gAto indicó que tiene una ecología completa de Softly y pidió tiempo para trabajar en ella. No secuestrar la investigación de la libreta con KAT-006 ni reabrirlo por inercia.
+
+## Cierre del hilo — 2026-11-19
+
+- Se leyó el contenido vigente de `SOFTLY.md` y `CHECKPOINT.md` antes de registrar esta continuidad.
+- Se actualizó este archivo para conservar la historia conceptual de la conversación y el estado de la investigación.
+- No se modificó `SOFTLY.md`, contratos, código ni otros repositorios.
+- No se creó ninguna tarea operativa ni se inició la construcción de la libreta.
+- El único cambio persistente de este cierre es este checkpoint.
+
+**Próximo estado:** conservar la investigación de la libreta como contexto. Esperar la dirección del gAto. No reactivar KAT-006. No iniciar implementación por inferencia.
