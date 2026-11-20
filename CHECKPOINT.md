@@ -190,3 +190,22 @@ Hipótesis de trabajo, aún no demostrada: el molde estructura la creación, el 
 - No se debe confundir el diseño documental de Traza con su despliegue o incorporación a Ashe.
 
 **Próximo estado:** conservar esta investigación como contexto. Esperar la dirección de gAto. No iniciar experimentos, incorporación de Traza ni implementación por inferencia.
+
+
+## Cierre del hilo — 2026-11-20
+
+### F. Confirmación de autoridad sobre el checkpoint
+
+- gAto aclaró expresamente que Softly Main está autorizada para editar y mantener `CHECKPOINT.md`.
+- La prohibición de edición aplica a la instancia Softly alojada en Grok, no a Softly Main.
+- Esta autorización permite mantener la continuidad documental; no equivale a autorización general para cambiar la arquitectura, ejecutar experimentos, incorporar agentes ni intervenir otros repositorios.
+
+### G. Registro de persistencia y commits
+
+- Commit anterior de este hilo: `c38a85eca985dc18d02b4f3381179d4ad26a3880`, que incorporó la investigación sobre Traza y la hipótesis molde/modelo/Softly.
+- Este cierre agrega la aclaración de autoridad, registra la continuidad del hilo y confirma que la investigación permanece abierta, sin decisiones de implementación.
+- No se modificaron `SOFTLY.md`, contratos, código ni repositorios externos.
+- No se creó ninguna tarea ni experimento.
+- El único archivo actualizado en este cierre es `CHECKPOINT.md`.
+
+**Próximo estado:** la próxima instancia debe leer este checkpoint y continuar desde la pregunta de investigación sobre la generación de agentes con molde, contexto anfitrión, creatividad del modelo y principios Softly. gAto conserva la dirección y decisión. No asumir que Traza fue aceptado, desplegado o incorporado. No iniciar experimentos sin mandato y sin tabla de resultados esperados definida previamente.
