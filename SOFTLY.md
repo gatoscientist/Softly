@@ -93,7 +93,7 @@ La superficie burocrática y operativa heredada de v1.0 está declarada **Archiv
 
 Estos materiales se preservan; esta declaración no los borra ni reescribe. No forman parte del arranque, no gobiernan Softly 1.1 y no se consideran contratos vigentes. El índice de clasificación está en `archive/v1.0-legacy/README.md`.
 
-La investigación valiosa de `research/syntheses/` y `research/coordination/` se conserva como memoria consultable bajo demanda. Su existencia no la convierte en estado operativo ni exige cargarla al despertar. Los productos TITAN, Cytryna y gAtoSD permanecen fuera de alcance y sin modificaciones en esta etapa.
+La investigación valiosa de `research/syntheses/` y `research/coordination/` se conserva como memoria consultable bajo demanda. Su existencia no la convierte en estado operativo ni exige cargarla al despertar. Los productos Cytryna y gAtoSD permanecen fuera de alcance y sin modificaciones en esta etapa.
 
 ## Modos de trabajo
 
