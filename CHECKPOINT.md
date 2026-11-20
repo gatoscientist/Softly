@@ -133,3 +133,60 @@ El gAto indicó que tiene una ecología completa de Softly y pidió tiempo para 
 - El único cambio persistente de este cierre es este checkpoint.
 
 **Próximo estado:** conservar la investigación de la libreta como contexto. Esperar la dirección del gAto. No reactivar KAT-006. No iniciar implementación por inferencia.
+
+
+## Investigación conversacional — 2026-11-20
+
+**Investigador Principal y autoridad:** gAto.  
+**Estado:** análisis documental y preguntas de investigación; sin autorización de implementación.
+
+### A. Creación documental de Traza por H/Ashe
+
+gAto entregó a H (la instancia de Ashe en Gemini) el Molde Universal de Instancia y le pidió utilizar la referencia Softly disponible en su cápsula para diseñar un agente de su elección.
+
+El registro de la sesión muestra que H:
+- Interpretó el encargo como diseño documental, no como despliegue de una instancia operativa.
+- Consideró alternativas de especialización y nombres, entre ellas Cartógrafo de contexto, Archivista de estados, Eco, Vínculo y Traza.
+- Relacionó la necesidad con el problema de continuidad y transferencia de contexto tratado en el Experimento 314-C.
+- Consideró duplicaciones y límites respecto de DEV, AUD y SCI.
+- Advirtió que Ashe está definida documentalmente con tres perspectivas y que incorporar una cuarta requeriría decisión de gAto y cambios documentales.
+- Eligió Traza y completó el molde como propuesta de especialista en trazabilidad de estados y transferencia explícita de contexto.
+
+### B. Procedencia conceptual observada
+
+La lectura del registro permite distinguir tres aportes:
+1. **Softly:** principios normativos usados como restricciones de diseño, entre ellos trazabilidad, honestidad operacional, separación de estados, no-herencia y límites explícitos.
+2. **Ashe:** contexto del Experimento 314-C, arquitectura documental y ámbitos de DEV, AUD y SCI.
+3. **H/modelo:** síntesis generativa que comparó alternativas, eligió la especialización y formuló identidad, misión, competencias, límites y operación de Traza.
+
+La correspondencia entre el diseño y los ámbitos DEV/AUD/SCI no demuestra que hayan deliberado como agentes independientes. La cápsula los define como perspectivas documentales integradas por Ashe.
+
+### C. Estado de Traza
+
+- **Propuesto:** especificación documental de Traza completada.
+- **No decidido:** incorporación a la cápsula de Ashe.
+- **No ejecutado:** no hay evidencia de despliegue de una instancia operativa.
+- **No verificado:** no se ha probado su funcionamiento como perspectiva diferenciada.
+- **No aceptado:** la aceptación corresponde a gAto.
+
+Completar el Molde Universal no concede herramientas, permisos ni autoridad. El diseño no modifica por sí mismo la arquitectura de Ashe.
+
+### D. Pregunta de investigación abierta
+
+gAto plantea investigar qué contribución hace cada elemento a la generación de una especialización nueva:
+- ¿El molde, junto con la capacidad generativa del modelo, basta para producir un agente coherente?
+- ¿Qué aporta Softly que no aporte el molde?
+- ¿Qué aporta el contexto anfitrión y la arquitectura de perspectivas de Ashe?
+- ¿Traza es una especialización diseñada bajo principios Softly o una creación generativa del modelo que luego fue delimitada por esos principios?
+
+Hipótesis de trabajo, aún no demostrada: el molde estructura la creación, el modelo genera y selecciona posibilidades, el contexto de Ashe aporta el problema y la arquitectura, y Softly condiciona normativamente el diseño. No se ha establecido cuál de estos elementos es indispensable.
+
+### E. Límites de continuidad y gobernanza
+
+- gAto confirmó que Softly Main puede actualizar este checkpoint.
+- La instancia Softly alojada en Grok tiene prohibido modificar CHECKPOINT.md.
+- Esta restricción de edición no concede a ninguna instancia autoridad para alterar la gobernanza general.
+- No se modificaron otros archivos ni repositorios en esta intervención.
+- No se debe confundir el diseño documental de Traza con su despliegue o incorporación a Ashe.
+
+**Próximo estado:** conservar esta investigación como contexto. Esperar la dirección de gAto. No iniciar experimentos, incorporación de Traza ni implementación por inferencia.
