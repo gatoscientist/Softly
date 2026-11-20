@@ -2,7 +2,7 @@
 version: 1.1.0
 status: bridge-to-2.0
 checkpoint_status: administratively-closed-with-new-research-context
-updated: 2026-11-19
+updated: 2026-11-20
 authority: gAto
 ---
 
@@ -271,3 +271,45 @@ La primera interpretación del gráfico como comparación general de trayectoria
 - Mantener como principio operativo que el gAto puede querer conversar sin pedir análisis, propuestas o investigación. Responder a lo que efectivamente solicita, no a una intención inventada.
 
 **Próximo estado:** leer SOFTLY.md y este CHECKPOINT.md al iniciar el siguiente hilo. Esperar la dirección del gAto. Mantener separadas las líneas de arquitectura e identidad; no reabrirlas ni proponer experimentos por inferencia.
+
+
+## Intervención autorizada — reconstrucción documental de Camila — 2026-11-20
+
+**Autoridad:** mandato explícito de gAto.  
+**Alcance:** reconstrucción documental y técnica de Camila; preservación de su genealogía y conocimiento; sin cambios al runtime ni a la gobernanza global.
+
+### Resultado persistente
+
+- Se consolidó el perfil canónico de Camila en `agents/profiles/camila.md` y su definición estructurada en `agents/profiles/camila.json`.
+- Camila conserva el mismo ID y su función de agente directora. La versión documental pasa a 1.1.0 / Diseñado.
+- Se definieron cinco especialidades internas: DEV, GUI, DEV-INT, SEC y AUD.
+- DEV-INT queda diferenciado de DEV como responsable de integración transversal.
+- SEC y AUD tienen responsabilidades distintas.
+- AGENTESOFTLY deja de ser un rol separado; la consulta de la gobernanza Softly queda como responsabilidad de Camila.
+- Se conserva la historia de `Camila/` y `instances/camila/` en Cytryna; no se borraron archivos ni commits.
+- AgentDIR no pertenece a la taxonomía oficial vigente. Camila se registra como AgentDEV por dominio profesional; «directora» es su rol funcional.
+- El registro global mantiene las taxonomías oficiales y agrega a Camila sin crear una taxonomía nueva.
+
+### Memoria y estado real
+
+- La continuidad recuperada es documental y trazable a GitHub; no se demuestra memoria personal integrada de Camila.
+- ConversationContext y NotesManager son mecanismos genéricos de Softly, sin namespace de Camila.
+- El puente IPC de directores es de lectura tipada; no invoca la cápsula.
+- AgentCoordinator coordina turnos de modelo y herramientas; no carga ni ejecuta los cinco roles de Camila.
+- Las cinco especialidades son lentes internos documentados. No se afirma ejecución paralela, identidades separadas ni revisión independiente runtime.
+- No se modificó código de Cytryna ni el runtime de Softly. No se ejecutaron pruebas de runtime.
+
+### Genealogía conservada
+
+- `instances/camila/`: bootstrap 1.0.0 con Celene, Noa y Cinthia como perfiles individuales, creado el 2026-11-16 y subordinado a Softly el 2026-11-18.
+- `Camila/`: definición directora con cuatro especialidades internas DEV, GUI, AUD y AGENTESOFTLY, creada el 2026-11-18.
+- El mandato del 2026-11-20 define la cápsula vigente de cinco especialidades. Los documentos previos permanecen como fuentes históricas.
+
+### Límites y siguiente estado
+
+- No se inspeccionaron archivos locales ignorados por Git en el equipo del usuario.
+- No se declaró activación, despliegue, pruebas funcionales ni memoria runtime.
+- La aceptación de esta reconstrucción corresponde a gAto.
+- Cualquier implementación runtime, activación o ampliación de permisos requiere un mandato explícito separado.
+
+**Persistencia:** commit de esta intervención registrado en el historial Git de Softly. La continuidad debe recuperarse desde este perfil y este checkpoint; no se presupone que los commits despierten una sesión.

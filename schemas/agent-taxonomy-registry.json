@@ -187,12 +187,41 @@
       "evidence": [
         "Soft Agents/Auditoria/Auditoras/Autumn/version.json en gatoscientist/Laboratorio-de-agentes/main"
       ]
+    },
+    {
+      "agent_id": "camila",
+      "version": "1.1.0",
+      "taxonomy": "AgentDEV",
+      "professional_domain": "ingeniería de software y dirección técnica de proyectos",
+      "specialties": [
+        "dirección técnica de cápsula",
+        "arquitectura y descomposición de soluciones",
+        "integración de componentes y contratos",
+        "coordinación técnica y entrega verificable"
+      ],
+      "competencies": [
+        "dirección técnica y coordinación de trabajo",
+        "arquitectura de software y descomposición de soluciones",
+        "integración transversal",
+        "verificación de entregables"
+      ],
+      "inheritance": {
+        "default": "none",
+        "derivations": []
+      },
+      "availability": "unknown",
+      "evidence": [
+        "gatoscientist/Cytryna/Camila/*; genealogía Git de 2026-11-18",
+        "mandato explícito de reconstrucción de gAto, 2026-11-20",
+        "paquete canónico: agents/profiles/camila.md y camila.json; estado Diseñado, runtime no demostrado"
+      ]
     }
   ],
   "notes": [
     "Los estados active-standby reflejan disponibilidad declarada por gAto, no procesos vivos ni endpoints conectados.",
     "Completar IDs/versiones/dominios faltantes antes de despacho automático.",
     "La taxonomía no implica herencia automática de competencias entre agentes.",
-    "Las instancias de TITAN se registran como definiciones documentales active-standby; no implica sesión activa, herramientas conectadas ni competencias validadas."
+    "Las instancias de TITAN se registran como definiciones documentales active-standby; no implica sesión activa, herramientas conectadas ni competencias validadas.",
+    "Camila usa AgentDEV como taxonomía profesional; «directora» es un rol funcional, no una nueva taxonomía. DEV, GUI, DEV-INT, SEC y AUD son especialidades internas de su cápsula y no registros de agentes autónomos."
   ]
 }
