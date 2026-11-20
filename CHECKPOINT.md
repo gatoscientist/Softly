@@ -294,7 +294,7 @@ La primera interpretación del gráfico como comparación general de trayectoria
 
 - La continuidad recuperada es documental y trazable a GitHub; no se demuestra memoria personal integrada de Camila.
 - ConversationContext y NotesManager son mecanismos genéricos de Softly, sin namespace de Camila.
-- El puente IPC de directores es de lectura tipada; no invoca la cápsula.
+- El árbol actual contiene un puente IPC de director de lectura tipada, pero el aviso de limpieza de Cytryna del 2026-11-20 declara obsoletos puentes y adaptadores sin nombrar este archivo. El código sigue presente en main; su aplicabilidad al aviso es ambigua y no se presume disponible. En cualquier caso, no invoca la cápsula de Camila.
 - AgentCoordinator coordina turnos de modelo y herramientas; no carga ni ejecuta los cinco roles de Camila.
 - Las cinco especialidades son lentes internos documentados. No se afirma ejecución paralela, identidades separadas ni revisión independiente runtime.
 - No se modificó código de Cytryna ni el runtime de Softly. No se ejecutaron pruebas de runtime.
@@ -313,3 +313,12 @@ La primera interpretación del gráfico como comparación general de trayectoria
 - Cualquier implementación runtime, activación o ampliación de permisos requiere un mandato explícito separado.
 
 **Persistencia:** commit de esta intervención registrado en el historial Git de Softly. La continuidad debe recuperarse desde este perfil y este checkpoint; no se presupone que los commits despierten una sesión.
+
+
+### Corrección de precisión — Camila 1.1.1
+
+- Se revisaron íntegramente los perfiles y contratos históricos de Celene, Noa y Cinthia.
+- Celene documentó desarrollo e integración de IA, modelos, servicios y pipelines; Noa documentó GUI, accesibilidad e interacción; Cinthia documentó lingüística computacional y PLN/NLP.
+- Se aclaró que ese conocimiento queda preservado en los perfiles históricos, sin herencia automática. La integración dentro de un componente de IA puede ser parte de DEV; la integración transversal sigue en DEV-INT. La especialidad PLN/NLP no se absorbe artificialmente en SEC o AUD.
+- Se registró la ambigüedad entre el aviso de limpieza de Cytryna (2026-11-20), que declara obsoletos puentes y adaptadores, y la presencia de `softly_bridge.py` en el árbol actual. No se modifica ni se usa ese mecanismo para Camila.
+- Camila pasa a versión documental 1.1.1; el registro de taxonomías pasa a 1.1.0. No cambia la cápsula de cinco roles ni su estado Diseñado.

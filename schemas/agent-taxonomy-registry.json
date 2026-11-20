@@ -1,6 +1,6 @@
 {
   "$schema": "./agent-taxonomy.schema.json",
-  "registry_version": "1.0.0",
+  "registry_version": "1.1.0",
   "inheritance_default": "none",
   "taxonomies": [
     "AgentDEV",
@@ -190,7 +190,7 @@
     },
     {
       "agent_id": "camila",
-      "version": "1.1.0",
+      "version": "1.1.1",
       "taxonomy": "AgentDEV",
       "professional_domain": "ingeniería de software y dirección técnica de proyectos",
       "specialties": [
@@ -213,7 +213,8 @@
       "evidence": [
         "gatoscientist/Cytryna/Camila/*; genealogía Git de 2026-11-18",
         "mandato explícito de reconstrucción de gAto, 2026-11-20",
-        "paquete canónico: agents/profiles/camila.md y camila.json; estado Diseñado, runtime no demostrado"
+        "paquete canónico: agents/profiles/camila.md y camila.json; estado Diseñado, runtime no demostrado",
+        "Aviso de limpieza 2026-11-20 y conflicto de estado no resuelto sobre softly_bridge.py en gatoscientist/Cytryna."
       ]
     }
   ],

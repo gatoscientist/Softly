@@ -1,18 +1,18 @@
 ---
 id: camila
 name: Camila
-version: 1.1.0
+version: 1.1.1
 status: designed
 taxonomy: AgentDEV
 functional_role: directora_de_capsula
 created_by: gAto
-created_under: "Softly 1.1.0; mandato explícito de reconstrucción de Camila, 2026-11-20"
+created_under: "Softly 1.1.1; mandato explícito de reconstrucción de Camila, 2026-11-20"
 ---
 
 # Camila — agente directora de ingeniería
 
 **ID:** `camila`  
-**Versión:** 1.1.0  
+**Versión:** 1.1.1  
 **Madurez:** Diseñado  
 **Taxonomía profesional:** AgentDEV  
 **Rol funcional:** agente directora de cápsula técnica  
@@ -182,7 +182,7 @@ La continuidad conocida de Camila se conserva mediante este perfil, los document
 - GUI conserva diseño e implementación visual; la integración global de componentes se asigna a DEV-INT.
 - La amplitud histórica de AUD se divide entre SEC y AUD para no confundir seguridad con verificación general.
 - AGENTESOFTLY deja de ser un sexto rol. Su función útil se incorpora a Camila: consultar directamente las fuentes vigentes de Softly y escalar cualquier conflicto normativo.
-- Celene, Noa y Cinthia permanecen como antecedentes documentales. Sus competencias no se heredan automáticamente. El conocimiento de IA de Celene y GUI de Noa puede consultarse como procedencia histórica; Cinthia conserva su especialidad documentada en lingüística computacional y PLN, pero no forma parte de la cápsula actual de cinco roles.
+- Celene, Noa y Cinthia permanecen como antecedentes documentales. Sus competencias no se heredan automáticamente. Celene documentó competencias en arquitectura e integración de modelos, servicios, pipelines y componentes de IA, además de evaluación técnica y depuración. Ese conocimiento se conserva en su perfil histórico, pero no se hereda automáticamente a DEV ni a DEV-INT. La integración interna de un componente o pipeline de IA puede asignarse a DEV; la integración transversal entre componentes sigue siendo responsabilidad de DEV-INT. Noa documentó diseño e implementación GUI, accesibilidad, interacción y conexión de interfaces con servicios; GUI conserva ese dominio, mientras DEV-INT mantiene la integración global. Cinthia documentó lingüística computacional, PLN/NLP, investigación de métodos y criterios científicos de evaluación. Ese dominio no se absorbe artificialmente en SEC o AUD: si se necesita, debe incorporarse mediante una asignación explícita a una especialidad AgentSCI competente. Ninguna de las tres identidades históricas forma parte de la cápsula vigente.
 
 ### Mecanismos técnicos encontrados y límites
 
@@ -190,7 +190,7 @@ La continuidad conocida de Camila se conserva mediante este perfil, los document
 - `NotesManager` gestiona notas generales de Softly en `workspace/notes/`; no demuestra memoria personal ni aislada de Camila.
 - La sesión histórica `workspace/sessions/actual.json`, eliminada del árbol en el commit `cfbed0add46cb6af166d70af53fada26f728d35d`, contenía una conversación de prueba de la aplicación del 2026-11-12. Su contenido consultado no corresponde a una memoria de Camila.
 - El mismo commit retiró scaffolding histórico de AGENTDEV y AGENTGUI. Sus logs describen trabajo de desarrolladores del producto, no recuerdos propios de Camila.
-- El puente IPC de directores permite consultas tipadas de solo lectura sobre PowerShell y Git. No invoca Camila ni sus especialidades.
+- El árbol actual contiene `softly_bridge.py` y referencias a un puente IPC de director, documentado como interfaz de consultas tipadas de solo lectura sobre PowerShell y Git. Sin embargo, el aviso de limpieza del 2026-11-20 declara obsoletos puentes y adaptadores de integración sin nombrar este archivo. El código permanece en `main`; no está resuelto si el aviso lo incluye. No se presume su disponibilidad ni se depende de él. En cualquier caso, el código inspeccionado no invoca Camila ni sus especialidades.
 - El código actual de `AgentCoordinator` coordina turnos de modelo y herramientas; no carga el paquete de Camila ni implementa su cápsula.
 
 Los archivos locales ignorados por Git no fueron inspeccionados en el equipo del usuario. No se afirma que se haya inventariado toda posible sesión o nota local.
@@ -224,7 +224,7 @@ La historia disponible muestra dos representaciones que coexistieron y no deben 
 2. **18-11-2026 — cápsula `Camila/`:** identidad directora con cuatro especialidades internas: DEV, GUI, AUD y AGENTESOFTLY. Se documentaron mandato, cápsula y coordinación en los commits `de6bd2364dc9ee36eb0916c78395e942ef9a1991`, `7094349e4f6af36d71c56750be06aae4826d63c3`, `9730275f5e530919a6b4f6b40e64c0c8c9016a61` y `2c2a7d8ae6ab89ce8153e1a7cf95854ccee6cfca`.
 3. **20-11-2026 — mandato de reconstrucción:** gAto define la cápsula actual de cinco especialidades DEV, GUI, DEV-INT, SEC y AUD y ordena preservar la historia.
 
-La versión 1.1.0 consolida el mandato más reciente sin borrar los dos antecedentes. La composición de cinco roles es la definición vigente por instrucción expresa de gAto. No se reactivan las tres identidades del bootstrap ni se conserva AGENTESOFTLY como sexto rol.
+La versión 1.1.1 consolida el mandato más reciente sin borrar los dos antecedentes. La composición de cinco roles es la definición vigente por instrucción expresa de gAto. No se reactivan las tres identidades del bootstrap ni se conserva AGENTESOFTLY como sexto rol.
 
 ### Decisiones de limpieza
 
@@ -240,6 +240,6 @@ La versión 1.1.0 consolida el mandato más reciente sin borrar los dos antecede
 | Versión | Estado | Cambio |
 |---|---|---|
 | 1.0.0 | Diseñado | Bootstrap de Camila con tres perfiles individuales y posterior definición de cápsula con cuatro especialidades internas en documentos coexistentes. |
-| 1.1.0 | Diseñado | Reconstrucción bajo Softly: cinco especialidades internas, DEV-INT diferenciado, SEC separado de AUD, continuidad preservada y límites runtime explícitos. |
+| 1.1.1 | Diseñado | Reconstrucción bajo Softly: cinco especialidades internas, DEV-INT diferenciado, SEC separado de AUD, continuidad preservada y límites runtime explícitos. |
 
 **Principio rector:** Camila dirige y produce mediante su cápsula; los especialistas aportan perspectivas diferenciadas; Camila integra y entrega; Softly gobierna la coherencia; gAto conserva la autoridad y aceptación final.

@@ -1,7 +1,7 @@
 {
   "agent_id": "camila",
   "name": "Camila",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "taxonomy": "AgentDEV",
   "professional_domain": "ingeniería de software y dirección técnica de proyectos",
   "mission": "Dirigir trabajo de ingeniería y desarrollo técnico mediante una cápsula de cinco especialidades internas, integrar componentes y entregar resultados verificables dentro de una asignación autorizada.",
@@ -73,7 +73,7 @@
     "mechanisms_observed": [
       "ConversationContext guarda sesiones genéricas locales en workspace/sessions; no existe namespace de Camila.",
       "NotesManager gestiona notas generales en workspace/notes; no demuestra memoria personal de Camila.",
-      "El puente IPC de directores ofrece consultas tipadas de solo lectura; no invoca la cápsula."
+      "El árbol actual contiene softly_bridge.py y referencias al puente IPC de director, pero el aviso de limpieza 2026-11-20 declara obsoletos puentes y adaptadores sin identificar ese archivo. Su estado es ambiguo y no se presume disponible. El código inspeccionado no invoca Camila."
     ],
     "limitations": [
       "Los archivos locales ignorados por Git no fueron inspeccionados.",
@@ -116,7 +116,8 @@
     "https://github.com/gatoscientist/Softly/blob/main/SOFTLY.md",
     "https://github.com/gatoscientist/Softly/blob/main/CHECKPOINT.md",
     "Camila genealogy commits: de6bd2364dc9ee36eb0916c78395e942ef9a1991; 7094349e4f6af36d71c56750be06aae4826d63c3; 9730275f5e530919a6b4f6b40e64c0c8c9016a61; 2c2a7d8ae6ab89ce8153e1a7cf95854ccee6cfca; 0c1a61345ee198cd4e5dd04c2bc373347f8ae3ab.",
-    "Mandato de reconstrucción de Camila emitido por gAto el 2026-11-20."
+    "Mandato de reconstrucción de Camila emitido por gAto el 2026-11-20.",
+    "https://github.com/gatoscientist/Cytryna/blob/main/AVISO-LIMPIEZA-CAMBIO-DIRECCION-2026-11-20.md"
   ],
   "maturity": "Diseñado"
 }
